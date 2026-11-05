@@ -17,7 +17,7 @@
       "id": "verbs",
       "name_ru": "Формы глагола",
       "cheatsheet_ru": [
-        "ma-инфинитив (словарная форма): õppima. da-инфинитив: õppida (после tahan, pean, saan, oskan, võin).",
+        "ma-инфинитив: õppima (pean õppima). da-инфинитив: õppida (tahan, saan, oskan, võin õppida).",
         "Настоящее время: õpin, õpid, õpib, õpime, õpite, õpivad. Отрицание: ei õpi (для всех лиц).",
         "Прошедшее (имперфект): õppisin, õppisid, õppis… Отрицание: ei õppinud.",
         "Перфект: olen õppinud. Повелительное: õpi! Условное: õpiksin.",
@@ -61,17 +61,47 @@
     }
   ],
   "themes": [
-    { "id": "school", "name_ru": "Школа" },
-    { "id": "family", "name_ru": "Семья" },
-    { "id": "home", "name_ru": "Дом" },
-    { "id": "food", "name_ru": "Еда" },
-    { "id": "health", "name_ru": "Здоровье" },
-    { "id": "city", "name_ru": "Город и транспорт" },
-    { "id": "freetime", "name_ru": "Свободное время" },
-    { "id": "nature", "name_ru": "Природа и погода" }
+    {
+      "id": "school",
+      "name_ru": "Школа"
+    },
+    {
+      "id": "family",
+      "name_ru": "Семья"
+    },
+    {
+      "id": "home",
+      "name_ru": "Дом"
+    },
+    {
+      "id": "food",
+      "name_ru": "Еда"
+    },
+    {
+      "id": "health",
+      "name_ru": "Здоровье"
+    },
+    {
+      "id": "city",
+      "name_ru": "Город и транспорт"
+    },
+    {
+      "id": "freetime",
+      "name_ru": "Свободное время"
+    },
+    {
+      "id": "nature",
+      "name_ru": "Природа и погода"
+    }
   ],
   "skills": [
-    { "id": "connectors", "name_ru": "Связки и фразы для письма" },
-    { "id": "checklist", "name_ru": "Чек-листы самопроверки" }
+    {
+      "id": "connectors",
+      "name_ru": "Связки и фразы для письма"
+    },
+    {
+      "id": "checklist",
+      "name_ru": "Чек-листы самопроверки"
+    }
   ]
 }

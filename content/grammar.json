@@ -1,39 +1,2611 @@
 {
-  "_comment": "Грамматика: 30 заданий. type: choice (один верный индекс answer) или input (одна верная форма answer). Все эстонские предложения — status draft до проверки носителем.",
+  "_comment": "Расширенный банк. Новые материалы draft до проверки преподавателем.",
   "items": [
-    {"id":"g-cases-01","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Ma lähen homme ___.","hint":"(kool)","ru":"Завтра я пойду в школу.","options":["kooli","koolis","koolist","kool"],"answer":0,"explanation_ru":"Вопрос «куда?» → иллатив (sisseütlev). У слова kool краткая форма совпадает с родительным: kooli. Koolis — «где?», koolist — «откуда?», kool — именительный, после глагола движения не подходит."},
-    {"id":"g-cases-02","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Raamat on ___ peal.","hint":"(laud)","ru":"Книга лежит на столе.","options":["laud","lauda","laua","lauale"],"answer":2,"explanation_ru":"Послелог peal («на», где?) требует родительного падежа: laua peal. Это слабая ступень: laud → laua. Lauale означает «на стол» (куда?) и уже содержит значение «на»."},
-    {"id":"g-cases-03","topic":"cases","level":"B1","status":"draft","type":"input","prompt_et":"Mul on kaks ___.","hint":"(vend)","ru":"У меня два брата.","answer":"venda","explanation_ru":"После числительных больше единицы существительное стоит в партитиве единственного числа: kaks venda, kolm venda. Форма мн. ч. vennad здесь неверна."},
-    {"id":"g-cases-04","topic":"cases","level":"B1","status":"draft","type":"input","prompt_et":"Ma lähen kinno koos ___.","hint":"(sõber)","ru":"Я иду в кино вместе с другом.","answer":"sõbraga","explanation_ru":"Комитатив (kaasaütlev, «с кем?») образуется от основы родительного падежа и окончания -ga, пишется слитно: sõber → sõbra → sõbraga."},
-    {"id":"g-cases-05","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Sain kingituse ___.","hint":"(ema)","ru":"Я получил(а) подарок от мамы.","options":["emale","emalt","emast","emaga"],"answer":1,"explanation_ru":"Вопрос «от кого?» → аблатив (alaltütlev) с окончанием -lt: emalt. Emale — «маме», emast — «о маме / из-за мамы», emaga — «с мамой»."},
-    {"id":"g-cases-06","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ei osta täna ___.","hint":"(leib)","ru":"Сегодня я не куплю хлеб.","options":["leib","leiva","leiba","leivale"],"answer":2,"explanation_ru":"В отрицательном предложении прямое дополнение стоит в партитиве: leiba. Родительный leiva возможен в утвердительном предложении с целым предметом: Ma ostan leiva."},
-    {"id":"g-cases-07","topic":"cases","level":"A2","status":"draft","type":"input","prompt_et":"Ma elan ___.","hint":"(Tallinn)","ru":"Я живу в Таллинне.","answer":"Tallinnas","explanation_ru":"Вопрос «где?» → инессив (seesütlev) с окончанием -s: Tallinn → Tallinnas."},
-
-    {"id":"g-verbs-01","topic":"verbs","level":"A2","status":"draft","type":"choice","prompt_et":"Eile ma ___ kinos.","hint":"(olema)","ru":"Вчера я был(а) в кино.","options":["olen","olin","olnud","oleksin"],"answer":1,"explanation_ru":"Слово eile («вчера») указывает на прошедшее время (имперфект): olin. Olen — настоящее, oleksin — условное наклонение."},
-    {"id":"g-verbs-02","topic":"verbs","level":"A2","status":"draft","type":"input","prompt_et":"Ma ___ homme Tartusse.","hint":"(minema)","ru":"Завтра я поеду в Тарту.","answer":"lähen","explanation_ru":"Глагол minema меняет основу: настоящее время lähen, lähed, läheb…, прошедшее läksin. Форма mine- встречается только в ma-инфинитиве."},
-    {"id":"g-verbs-03","topic":"verbs","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ___ eile koju.","hint":"(tulema)","ru":"Вчера я не пришёл (пришла) домой.","options":["ei tule","ei tulnud","ei tulin","ei tuli"],"answer":1,"explanation_ru":"Отрицание в прошедшем времени: ei + причастие на -nud (tulnud). Форма не меняется по лицам: ma ei tulnud, sa ei tulnud. «Ei tulin» невозможно."},
-    {"id":"g-verbs-04","topic":"verbs","level":"A2","status":"draft","type":"choice","prompt_et":"Palun ___ mulle vett.","hint":"(andma)","ru":"Дай мне, пожалуйста, воды.","options":["anna","annad","andma","andis"],"answer":0,"explanation_ru":"Повелительное наклонение 2 л. ед. ч. — основа без окончания: anna! Annad значит «ты даёшь», andma — ma-инфинитив, andis — прошедшее время."},
-    {"id":"g-verbs-05","topic":"verbs","level":"B1","status":"draft","type":"choice","prompt_et":"Ma tahan eesti keelt ___.","hint":"(õppima)","ru":"Я хочу учить эстонский язык.","options":["õpin","õppida","õppima","õppinud"],"answer":1,"explanation_ru":"После модальных глаголов tahan, pean, saan, oskan, võin стоит da-инфинитив: õppida."},
-    {"id":"g-verbs-06","topic":"verbs","level":"B1","status":"draft","type":"choice","prompt_et":"Ma lähen kinno filmi ___.","hint":"(vaatama)","ru":"Я иду в кино смотреть фильм.","options":["vaatama","vaadata","vaatan","vaatab"],"answer":0,"explanation_ru":"Цель после глагола движения (minema, tulema) выражается ma-инфинитивом: vaatama. Da-инфинитив vaadata здесь не подходит."},
-    {"id":"g-verbs-07","topic":"verbs","level":"B1","status":"draft","type":"input","prompt_et":"Ma olen selle raamatu juba ___.","hint":"(lugema)","ru":"Я уже прочитал(а) эту книгу.","answer":"lugenud","explanation_ru":"Перфект = olema + причастие на -nud: olen lugenud. Основа lugema → lugenud."},
-
-    {"id":"g-grad-01","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"Võti on ___ sees.","hint":"(kapp)","ru":"Ключ внутри шкафа.","options":["kapi","kappi","kapa","kappa"],"answer":0,"explanation_ru":"Kapp — сильная ступень (pp), в родительном слабая ступень (p): kapi. Послелог sees требует родительного падежа: kapi sees."},
-    {"id":"g-grad-02","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"Ma olen ___.","hint":"(pood)","ru":"Я в магазине.","options":["poodis","poes","poodes","pootes"],"answer":1,"explanation_ru":"Pood → слабая основа poe-: инессив poes («в магазине»). Родительный — poe, иллатив — poodi («в магазин»)."},
-    {"id":"g-grad-03","topic":"gradation","level":"B1","status":"draft","type":"input","prompt_et":"Ma sõin tüki ___.","hint":"(kook)","ru":"Я съел(а) кусок торта.","answer":"kooki","explanation_ru":"Партитив обычно образуется от сильной ступени: kook → kooki. Родительный — слабая ступень: koogi (koogi maitse). После слова tükk нужен партитив."},
-    {"id":"g-grad-04","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ___ sulle sünnipäevaks raamatu.","hint":"(andma)","ru":"Я подарю тебе на день рождения книгу.","options":["andan","annan","annad","andis"],"answer":1,"explanation_ru":"Andma → annan: в личных формах настоящего времени слабая ступень (nd → nn). Andan — частая ошибка. Annad — форма «ты»."},
-    {"id":"g-grad-05","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"See on minu ___ aken.","hint":"(tuba)","ru":"Это окно моей комнаты.","options":["tuba","toa","tua","toal"],"answer":1,"explanation_ru":"Tuba → toa (слабая ступень, b выпадает). Родительный падеж стоит перед определяемым словом: toa aken."},
-    {"id":"g-grad-06","topic":"gradation","level":"B1","status":"draft","type":"input","prompt_et":"Ma ___ praegu raamatut.","hint":"(lugema)","ru":"Сейчас я читаю книгу.","answer":"loen","explanation_ru":"Lugema → loen: у глагола в личных формах настоящего времени слабая ступень (g выпадает, u → o)."},
-
-    {"id":"g-num-01","topic":"numerals","level":"A2","status":"draft","type":"choice","prompt_et":"Mul on kolm ___.","hint":"(kass)","ru":"У меня три кошки.","options":["kassid","kassi","kasside","kassidega"],"answer":1,"explanation_ru":"После числительного больше единицы — партитив единственного числа: kolm kassi. Форма мн. ч. kassid здесь неверна."},
-    {"id":"g-num-02","topic":"numerals","level":"A2","status":"draft","type":"input","prompt_et":"Ma olen ___ aastat vana.","hint":"(15)","ru":"Мне пятнадцать лет.","answer":"viisteist","explanation_ru":"Числа 11–19 образуются так: единица + -teist. Viis + teist = viisteist. Далее — партитив: aastat."},
-    {"id":"g-num-03","topic":"numerals","level":"B1","status":"draft","type":"choice","prompt_et":"Täna on ___ september.","hint":"(3)","ru":"Сегодня третье сентября.","options":["kolm","kolmas","kolmandas","kolmanda"],"answer":1,"explanation_ru":"Дата называется порядковым числительным: kolmas (3-й). Основные порядковые: esimene, teine, kolmas, neljas, viies."},
-    {"id":"g-num-04","topic":"numerals","level":"B1","status":"draft","type":"input","prompt_et":"Bussis on ___ inimest.","hint":"(40)","ru":"В автобусе сорок человек.","answer":"nelikümmend","explanation_ru":"Десятки: kakskümmend, kolmkümmend, nelikümmend, viiskümmend. Пишется слитно. После числительного — партитив: inimest."},
-    {"id":"g-num-05","topic":"numerals","level":"B1","status":"draft","type":"choice","prompt_et":"Kell on 5.30, ehk pool ___.","hint":"(5:30)","ru":"Сейчас половина шестого (5:30).","options":["viis","kuus","neli","seitse"],"answer":1,"explanation_ru":"Pool kuus = «половина (до) шести» = 5:30: эстонцы называют следующий час. Veerand kuus — 5:15, kolmveerand kuus — 5:45."},
-
-    {"id":"g-prep-01","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ootan sind kooli ___.","hint":"(перед)","ru":"Я жду тебя перед школой.","options":["ees","ette","eest","peal"],"answer":0,"explanation_ru":"Тройка ees (где?) – ette (куда?) – eest (откуда?). Здесь вопрос «где?», значит ees. Все три требуют родительного падежа: kooli ees."},
-    {"id":"g-prep-02","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Pärast ___ lähen koju.","hint":"(tund)","ru":"После урока я пойду домой.","options":["tund","tunni","tundi","tunnis"],"answer":2,"explanation_ru":"Pärast и enne в начале словосочетания управляют партитивом: pärast tundi, enne lõunat."},
-    {"id":"g-prep-03","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Ostsin kingituse ___ jaoks.","hint":"(sõber)","ru":"Я купил(а) подарок для друга.","options":["sõber","sõbra","sõpra","sõbraga"],"answer":1,"explanation_ru":"Jaoks («для») требует родительного падежа: sõbra jaoks. Sõpra — партитив, sõbraga — «с другом»."},
-    {"id":"g-prep-04","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Ma elan kooli ___.","hint":"(рядом)","ru":"Я живу рядом со школой.","options":["lähedal","lähedale","lähedalt","lähedus"],"answer":0,"explanation_ru":"Lähedal («близко», где?) + родительный: kooli lähedal. Lähedale — «куда», lähedalt — «откуда», lähedus — существительное «близость»."},
-    {"id":"g-prep-05","topic":"prepositions","level":"A2","status":"draft","type":"input","prompt_et":"Raamat on laua ___.","hint":"(под)","ru":"Книга лежит под столом.","answer":"all","explanation_ru":"All (где?) – alla (куда?) – alt (откуда?). Требуют родительного падежа: laua all."}
+    {
+      "id": "g-cases-01",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma lähen homme ___.",
+      "hint": "(kool)",
+      "ru": "Завтра я пойду в школу.",
+      "options": [
+        "kooli",
+        "koolis",
+        "koolist",
+        "kool"
+      ],
+      "answer": 0,
+      "explanation_ru": "Вопрос «куда?» → иллатив (sisseütlev). У слова kool краткая форма совпадает с родительным: kooli. Koolis — «где?», koolist — «откуда?», kool — именительный, после глагола движения не подходит."
+    },
+    {
+      "id": "g-cases-02",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Raamat on ___ peal.",
+      "hint": "(laud)",
+      "ru": "Книга лежит на столе.",
+      "options": [
+        "laud",
+        "lauda",
+        "laua",
+        "lauale"
+      ],
+      "answer": 2,
+      "explanation_ru": "Послелог peal («на», где?) требует родительного падежа: laua peal. Это слабая ступень: laud → laua. Lauale означает «на стол» (куда?) и уже содержит значение «на»."
+    },
+    {
+      "id": "g-cases-03",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___.",
+      "hint": "(vend)",
+      "ru": "У меня два брата.",
+      "answer": "venda",
+      "explanation_ru": "После числительных больше единицы существительное стоит в партитиве единственного числа: kaks venda, kolm venda. Форма мн. ч. vennad здесь неверна."
+    },
+    {
+      "id": "g-cases-04",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma lähen kinno koos ___.",
+      "hint": "(sõber)",
+      "ru": "Я иду в кино вместе с другом.",
+      "answer": "sõbraga",
+      "explanation_ru": "Комитатив (kaasaütlev, «с кем?») образуется от основы родительного падежа и окончания -ga, пишется слитно: sõber → sõbra → sõbraga."
+    },
+    {
+      "id": "g-cases-05",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Sain kingituse ___.",
+      "hint": "(ema)",
+      "ru": "Я получил(а) подарок от мамы.",
+      "options": [
+        "emale",
+        "emalt",
+        "emast",
+        "emaga"
+      ],
+      "answer": 1,
+      "explanation_ru": "Вопрос «от кого?» → аблатив (alaltütlev) с окончанием -lt: emalt. Emale — «маме», emast — «о маме / из-за мамы», emaga — «с мамой»."
+    },
+    {
+      "id": "g-cases-06",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma ei osta täna ___.",
+      "hint": "(leib)",
+      "ru": "Сегодня я не куплю хлеб.",
+      "options": [
+        "leib",
+        "leiva",
+        "leiba",
+        "leivale"
+      ],
+      "answer": 2,
+      "explanation_ru": "В отрицательном предложении прямое дополнение стоит в партитиве: leiba. Родительный leiva возможен в утвердительном предложении с целым предметом: Ma ostan leiva."
+    },
+    {
+      "id": "g-cases-07",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma elan ___.",
+      "hint": "(Tallinn)",
+      "ru": "Я живу в Таллинне.",
+      "answer": "Tallinnas",
+      "explanation_ru": "Вопрос «где?» → инессив (seesütlev) с окончанием -s: Tallinn → Tallinnas."
+    },
+    {
+      "id": "g-verbs-01",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Eile ma ___ kinos.",
+      "hint": "(olema)",
+      "ru": "Вчера я был(а) в кино.",
+      "options": [
+        "olen",
+        "olin",
+        "olnud",
+        "oleksin"
+      ],
+      "answer": 1,
+      "explanation_ru": "Слово eile («вчера») указывает на прошедшее время (имперфект): olin. Olen — настоящее, oleksin — условное наклонение."
+    },
+    {
+      "id": "g-verbs-02",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ homme Tartusse.",
+      "hint": "(minema)",
+      "ru": "Завтра я поеду в Тарту.",
+      "answer": "lähen",
+      "explanation_ru": "Minema: настоящее lähen, прошедшее läksin, ma-инфинитив minema, da-инфинитив minna, повелительное mine."
+    },
+    {
+      "id": "g-verbs-03",
+      "topic": "verbs",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma ___ eile koju.",
+      "hint": "(tulema)",
+      "ru": "Вчера я не пришёл (пришла) домой.",
+      "options": [
+        "ei tule",
+        "ei tulnud",
+        "ei tulin",
+        "ei tuli"
+      ],
+      "answer": 1,
+      "explanation_ru": "Отрицание в прошедшем времени: ei + причастие на -nud (tulnud). Форма не меняется по лицам: ma ei tulnud, sa ei tulnud. «Ei tulin» невозможно."
+    },
+    {
+      "id": "g-verbs-04",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Palun ___ mulle vett.",
+      "hint": "(andma)",
+      "ru": "Дай мне, пожалуйста, воды.",
+      "options": [
+        "anna",
+        "annad",
+        "andma",
+        "andis"
+      ],
+      "answer": 0,
+      "explanation_ru": "Повелительное наклонение 2 л. ед. ч. — основа без окончания: anna! Annad значит «ты даёшь», andma — ma-инфинитив, andis — прошедшее время."
+    },
+    {
+      "id": "g-verbs-05",
+      "topic": "verbs",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan eesti keelt ___.",
+      "hint": "(õppima)",
+      "ru": "Я хочу учить эстонский язык.",
+      "options": [
+        "õpin",
+        "õppida",
+        "õppima",
+        "õppinud"
+      ],
+      "answer": 1,
+      "explanation_ru": "После tahan, saan, oskan, võin нужен da-инфинитив: õppida. После pean нужен ma-инфинитив: pean õppima."
+    },
+    {
+      "id": "g-verbs-06",
+      "topic": "verbs",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma lähen kinno filmi ___.",
+      "hint": "(vaatama)",
+      "ru": "Я иду в кино смотреть фильм.",
+      "options": [
+        "vaatama",
+        "vaadata",
+        "vaatan",
+        "vaatab"
+      ],
+      "answer": 0,
+      "explanation_ru": "Цель после глагола движения (minema, tulema) выражается ma-инфинитивом: vaatama. Da-инфинитив vaadata здесь не подходит."
+    },
+    {
+      "id": "g-verbs-07",
+      "topic": "verbs",
+      "level": "B1",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen selle raamatu juba ___.",
+      "hint": "(lugema)",
+      "ru": "Я уже прочитал(а) эту книгу.",
+      "answer": "lugenud",
+      "explanation_ru": "Перфект = olema + причастие на -nud: olen lugenud. Основа lugema → lugenud."
+    },
+    {
+      "id": "g-grad-01",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Võti on ___ sees.",
+      "hint": "(kapp)",
+      "ru": "Ключ внутри шкафа.",
+      "options": [
+        "kapi",
+        "kappi",
+        "kapa",
+        "kappa"
+      ],
+      "answer": 0,
+      "explanation_ru": "Kapp — сильная ступень (pp), в родительном слабая ступень (p): kapi. Послелог sees требует родительного падежа: kapi sees."
+    },
+    {
+      "id": "g-grad-02",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma olen ___.",
+      "hint": "(pood)",
+      "ru": "Я в магазине.",
+      "options": [
+        "poodis",
+        "poes",
+        "poodes",
+        "pootes"
+      ],
+      "answer": 1,
+      "explanation_ru": "Pood → слабая основа poe-: инессив poes («в магазине»). Родительный — poe, иллатив — poodi («в магазин»)."
+    },
+    {
+      "id": "g-grad-03",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma sõin tüki ___.",
+      "hint": "(kook)",
+      "ru": "Я съел(а) кусок торта.",
+      "answer": "kooki",
+      "explanation_ru": "Партитив обычно образуется от сильной ступени: kook → kooki. Родительный — слабая ступень: koogi (koogi maitse). После слова tükk нужен партитив."
+    },
+    {
+      "id": "g-grad-04",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma ___ sulle sünnipäevaks raamatu.",
+      "hint": "(andma)",
+      "ru": "Я подарю тебе на день рождения книгу.",
+      "options": [
+        "andan",
+        "annan",
+        "annad",
+        "andis"
+      ],
+      "answer": 1,
+      "explanation_ru": "Andma → annan: в личных формах настоящего времени слабая ступень (nd → nn). Andan — частая ошибка. Annad — форма «ты»."
+    },
+    {
+      "id": "g-grad-05",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "See on minu ___ aken.",
+      "hint": "(tuba)",
+      "ru": "Это окно моей комнаты.",
+      "options": [
+        "tuba",
+        "toa",
+        "tua",
+        "toal"
+      ],
+      "answer": 1,
+      "explanation_ru": "Tuba → toa (слабая ступень, b выпадает). Родительный падеж стоит перед определяемым словом: toa aken."
+    },
+    {
+      "id": "g-grad-06",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ praegu raamatut.",
+      "hint": "(lugema)",
+      "ru": "Сейчас я читаю книгу.",
+      "answer": "loen",
+      "explanation_ru": "Lugema → loen: у глагола в личных формах настоящего времени слабая ступень (g выпадает, u → o)."
+    },
+    {
+      "id": "g-num-01",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Mul on kolm ___.",
+      "hint": "(kass)",
+      "ru": "У меня три кошки.",
+      "options": [
+        "kassid",
+        "kassi",
+        "kasside",
+        "kassidega"
+      ],
+      "answer": 1,
+      "explanation_ru": "После числительного больше единицы — партитив единственного числа: kolm kassi. Форма мн. ч. kassid здесь неверна."
+    },
+    {
+      "id": "g-num-02",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ___ aastat vana.",
+      "hint": "(15)",
+      "ru": "Мне пятнадцать лет.",
+      "answer": "viisteist",
+      "explanation_ru": "Числа 11–19 образуются так: единица + -teist. Viis + teist = viisteist. Далее — партитив: aastat."
+    },
+    {
+      "id": "g-num-03",
+      "topic": "numerals",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Täna on ___ september.",
+      "hint": "(3)",
+      "ru": "Сегодня третье сентября.",
+      "options": [
+        "kolm",
+        "kolmas",
+        "kolmandas",
+        "kolmanda"
+      ],
+      "answer": 1,
+      "explanation_ru": "Дата называется порядковым числительным: kolmas (3-й). Основные порядковые: esimene, teine, kolmas, neljas, viies."
+    },
+    {
+      "id": "g-num-04",
+      "topic": "numerals",
+      "level": "B1",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Bussis on ___ inimest.",
+      "hint": "(40)",
+      "ru": "В автобусе сорок человек.",
+      "answer": "nelikümmend",
+      "explanation_ru": "Десятки: kakskümmend, kolmkümmend, nelikümmend, viiskümmend. Пишется слитно. После числительного — партитив: inimest."
+    },
+    {
+      "id": "g-num-05",
+      "topic": "numerals",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kell on 5.30, ehk pool ___.",
+      "hint": "(5:30)",
+      "ru": "Сейчас половина шестого (5:30).",
+      "options": [
+        "viis",
+        "kuus",
+        "neli",
+        "seitse"
+      ],
+      "answer": 1,
+      "explanation_ru": "Pool kuus = «половина (до) шести» = 5:30: эстонцы называют следующий час. Veerand kuus — 5:15, kolmveerand kuus — 5:45."
+    },
+    {
+      "id": "g-prep-01",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma ootan sind kooli ___.",
+      "hint": "(перед)",
+      "ru": "Я жду тебя перед школой.",
+      "options": [
+        "ees",
+        "ette",
+        "eest",
+        "peal"
+      ],
+      "answer": 0,
+      "explanation_ru": "Тройка ees (где?) – ette (куда?) – eest (откуда?). Здесь вопрос «где?», значит ees. Все три требуют родительного падежа: kooli ees."
+    },
+    {
+      "id": "g-prep-02",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Pärast ___ lähen koju.",
+      "hint": "(tund)",
+      "ru": "После урока я пойду домой.",
+      "options": [
+        "tund",
+        "tunni",
+        "tundi",
+        "tunnis"
+      ],
+      "answer": 2,
+      "explanation_ru": "Pärast и enne в начале словосочетания управляют партитивом: pärast tundi, enne lõunat."
+    },
+    {
+      "id": "g-prep-03",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ostsin kingituse ___ jaoks.",
+      "hint": "(sõber)",
+      "ru": "Я купил(а) подарок для друга.",
+      "options": [
+        "sõber",
+        "sõbra",
+        "sõpra",
+        "sõbraga"
+      ],
+      "answer": 1,
+      "explanation_ru": "Jaoks («для») требует родительного падежа: sõbra jaoks. Sõpra — партитив, sõbraga — «с другом»."
+    },
+    {
+      "id": "g-prep-04",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma elan kooli ___.",
+      "hint": "(рядом)",
+      "ru": "Я живу рядом со школой.",
+      "options": [
+        "lähedal",
+        "lähedale",
+        "lähedalt",
+        "lähedus"
+      ],
+      "answer": 0,
+      "explanation_ru": "Lähedal («близко», где?) + родительный: kooli lähedal. Lähedale — «куда», lähedalt — «откуда», lähedus — существительное «близость»."
+    },
+    {
+      "id": "g-prep-05",
+      "topic": "prepositions",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Raamat on laua ___.",
+      "hint": "(под)",
+      "ru": "Книга лежит под столом.",
+      "answer": "all",
+      "explanation_ru": "All (где?) – alla (куда?) – alt (откуда?). Требуют родительного падежа: laua all."
+    },
+    {
+      "id": "g-expand-1",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (õppima)",
+      "answer": "õpin",
+      "explanation_ru": "Настоящее время: ma õpin. Глагол õppima — «учить»."
+    },
+    {
+      "id": "g-expand-2",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (õppima)",
+      "answer": "õpid",
+      "explanation_ru": "Настоящее время: sa õpid. Глагол õppima — «учить»."
+    },
+    {
+      "id": "g-expand-3",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (õppima)",
+      "answer": "õpib",
+      "explanation_ru": "Настоящее время: ta õpib. Глагол õppima — «учить»."
+    },
+    {
+      "id": "g-expand-4",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (õppima)",
+      "answer": "õpime",
+      "explanation_ru": "Настоящее время: me õpime. Глагол õppima — «учить»."
+    },
+    {
+      "id": "g-expand-5",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (õppima)",
+      "answer": "õpite",
+      "explanation_ru": "Настоящее время: te õpite. Глагол õppima — «учить»."
+    },
+    {
+      "id": "g-expand-6",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (õppima)",
+      "answer": "õpivad",
+      "explanation_ru": "Настоящее время: nad õpivad. Глагол õppima — «учить»."
+    },
+    {
+      "id": "g-expand-7",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (õppima)",
+      "answer": "õppisin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: õppisin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-8",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (õppima, olevik)",
+      "answer": "õpi",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei õpi."
+    },
+    {
+      "id": "g-expand-9",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (õppima)",
+      "answer": 0,
+      "options": [
+        "õppida",
+        "õppima",
+        "õpin"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan õppida."
+    },
+    {
+      "id": "g-expand-10",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (õppima)",
+      "answer": 1,
+      "options": [
+        "õppida",
+        "õppima",
+        "õpin"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean õppima."
+    },
+    {
+      "id": "g-expand-11",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (elama)",
+      "answer": "elan",
+      "explanation_ru": "Настоящее время: ma elan. Глагол elama — «жить»."
+    },
+    {
+      "id": "g-expand-12",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (elama)",
+      "answer": "elad",
+      "explanation_ru": "Настоящее время: sa elad. Глагол elama — «жить»."
+    },
+    {
+      "id": "g-expand-13",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (elama)",
+      "answer": "elab",
+      "explanation_ru": "Настоящее время: ta elab. Глагол elama — «жить»."
+    },
+    {
+      "id": "g-expand-14",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (elama)",
+      "answer": "elame",
+      "explanation_ru": "Настоящее время: me elame. Глагол elama — «жить»."
+    },
+    {
+      "id": "g-expand-15",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (elama)",
+      "answer": "elate",
+      "explanation_ru": "Настоящее время: te elate. Глагол elama — «жить»."
+    },
+    {
+      "id": "g-expand-16",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (elama)",
+      "answer": "elavad",
+      "explanation_ru": "Настоящее время: nad elavad. Глагол elama — «жить»."
+    },
+    {
+      "id": "g-expand-17",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (elama)",
+      "answer": "elasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: elasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-18",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (elama, olevik)",
+      "answer": "ela",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei ela."
+    },
+    {
+      "id": "g-expand-19",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (elama)",
+      "answer": 0,
+      "options": [
+        "elada",
+        "elama",
+        "elan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan elada."
+    },
+    {
+      "id": "g-expand-20",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (elama)",
+      "answer": 1,
+      "options": [
+        "elada",
+        "elama",
+        "elan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean elama."
+    },
+    {
+      "id": "g-expand-21",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (töötama)",
+      "answer": "töötan",
+      "explanation_ru": "Настоящее время: ma töötan. Глагол töötama — «работать»."
+    },
+    {
+      "id": "g-expand-22",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (töötama)",
+      "answer": "töötad",
+      "explanation_ru": "Настоящее время: sa töötad. Глагол töötama — «работать»."
+    },
+    {
+      "id": "g-expand-23",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (töötama)",
+      "answer": "töötab",
+      "explanation_ru": "Настоящее время: ta töötab. Глагол töötama — «работать»."
+    },
+    {
+      "id": "g-expand-24",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (töötama)",
+      "answer": "töötame",
+      "explanation_ru": "Настоящее время: me töötame. Глагол töötama — «работать»."
+    },
+    {
+      "id": "g-expand-25",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (töötama)",
+      "answer": "töötate",
+      "explanation_ru": "Настоящее время: te töötate. Глагол töötama — «работать»."
+    },
+    {
+      "id": "g-expand-26",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (töötama)",
+      "answer": "töötavad",
+      "explanation_ru": "Настоящее время: nad töötavad. Глагол töötama — «работать»."
+    },
+    {
+      "id": "g-expand-27",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (töötama)",
+      "answer": "töötasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: töötasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-28",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (töötama, olevik)",
+      "answer": "tööta",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei tööta."
+    },
+    {
+      "id": "g-expand-29",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (töötama)",
+      "answer": 0,
+      "options": [
+        "töötada",
+        "töötama",
+        "töötan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan töötada."
+    },
+    {
+      "id": "g-expand-30",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (töötama)",
+      "answer": 1,
+      "options": [
+        "töötada",
+        "töötama",
+        "töötan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean töötama."
+    },
+    {
+      "id": "g-expand-31",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (ootama)",
+      "answer": "ootan",
+      "explanation_ru": "Настоящее время: ma ootan. Глагол ootama — «ждать»."
+    },
+    {
+      "id": "g-expand-32",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (ootama)",
+      "answer": "ootad",
+      "explanation_ru": "Настоящее время: sa ootad. Глагол ootama — «ждать»."
+    },
+    {
+      "id": "g-expand-33",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (ootama)",
+      "answer": "ootab",
+      "explanation_ru": "Настоящее время: ta ootab. Глагол ootama — «ждать»."
+    },
+    {
+      "id": "g-expand-34",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (ootama)",
+      "answer": "ootame",
+      "explanation_ru": "Настоящее время: me ootame. Глагол ootama — «ждать»."
+    },
+    {
+      "id": "g-expand-35",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (ootama)",
+      "answer": "ootate",
+      "explanation_ru": "Настоящее время: te ootate. Глагол ootama — «ждать»."
+    },
+    {
+      "id": "g-expand-36",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (ootama)",
+      "answer": "ootavad",
+      "explanation_ru": "Настоящее время: nad ootavad. Глагол ootama — «ждать»."
+    },
+    {
+      "id": "g-expand-37",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (ootama)",
+      "answer": "ootasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: ootasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-38",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (ootama, olevik)",
+      "answer": "oota",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei oota."
+    },
+    {
+      "id": "g-expand-39",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (ootama)",
+      "answer": 0,
+      "options": [
+        "oodata",
+        "ootama",
+        "ootan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan oodata."
+    },
+    {
+      "id": "g-expand-40",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (ootama)",
+      "answer": 1,
+      "options": [
+        "oodata",
+        "ootama",
+        "ootan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean ootama."
+    },
+    {
+      "id": "g-expand-41",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (vaatama)",
+      "answer": "vaatan",
+      "explanation_ru": "Настоящее время: ma vaatan. Глагол vaatama — «смотреть»."
+    },
+    {
+      "id": "g-expand-42",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (vaatama)",
+      "answer": "vaatad",
+      "explanation_ru": "Настоящее время: sa vaatad. Глагол vaatama — «смотреть»."
+    },
+    {
+      "id": "g-expand-43",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (vaatama)",
+      "answer": "vaatab",
+      "explanation_ru": "Настоящее время: ta vaatab. Глагол vaatama — «смотреть»."
+    },
+    {
+      "id": "g-expand-44",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (vaatama)",
+      "answer": "vaatame",
+      "explanation_ru": "Настоящее время: me vaatame. Глагол vaatama — «смотреть»."
+    },
+    {
+      "id": "g-expand-45",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (vaatama)",
+      "answer": "vaatate",
+      "explanation_ru": "Настоящее время: te vaatate. Глагол vaatama — «смотреть»."
+    },
+    {
+      "id": "g-expand-46",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (vaatama)",
+      "answer": "vaatavad",
+      "explanation_ru": "Настоящее время: nad vaatavad. Глагол vaatama — «смотреть»."
+    },
+    {
+      "id": "g-expand-47",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (vaatama)",
+      "answer": "vaatasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: vaatasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-48",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (vaatama, olevik)",
+      "answer": "vaata",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei vaata."
+    },
+    {
+      "id": "g-expand-49",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (vaatama)",
+      "answer": 0,
+      "options": [
+        "vaadata",
+        "vaatama",
+        "vaatan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan vaadata."
+    },
+    {
+      "id": "g-expand-50",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (vaatama)",
+      "answer": 1,
+      "options": [
+        "vaadata",
+        "vaatama",
+        "vaatan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean vaatama."
+    },
+    {
+      "id": "g-expand-51",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (kuulama)",
+      "answer": "kuulan",
+      "explanation_ru": "Настоящее время: ma kuulan. Глагол kuulama — «слушать»."
+    },
+    {
+      "id": "g-expand-52",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (kuulama)",
+      "answer": "kuulad",
+      "explanation_ru": "Настоящее время: sa kuulad. Глагол kuulama — «слушать»."
+    },
+    {
+      "id": "g-expand-53",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (kuulama)",
+      "answer": "kuulab",
+      "explanation_ru": "Настоящее время: ta kuulab. Глагол kuulama — «слушать»."
+    },
+    {
+      "id": "g-expand-54",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (kuulama)",
+      "answer": "kuulame",
+      "explanation_ru": "Настоящее время: me kuulame. Глагол kuulama — «слушать»."
+    },
+    {
+      "id": "g-expand-55",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (kuulama)",
+      "answer": "kuulate",
+      "explanation_ru": "Настоящее время: te kuulate. Глагол kuulama — «слушать»."
+    },
+    {
+      "id": "g-expand-56",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (kuulama)",
+      "answer": "kuulavad",
+      "explanation_ru": "Настоящее время: nad kuulavad. Глагол kuulama — «слушать»."
+    },
+    {
+      "id": "g-expand-57",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (kuulama)",
+      "answer": "kuulasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: kuulasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-58",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (kuulama, olevik)",
+      "answer": "kuula",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei kuula."
+    },
+    {
+      "id": "g-expand-59",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (kuulama)",
+      "answer": 0,
+      "options": [
+        "kuulata",
+        "kuulama",
+        "kuulan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan kuulata."
+    },
+    {
+      "id": "g-expand-60",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (kuulama)",
+      "answer": 1,
+      "options": [
+        "kuulata",
+        "kuulama",
+        "kuulan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean kuulama."
+    },
+    {
+      "id": "g-expand-61",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (mängima)",
+      "answer": "mängin",
+      "explanation_ru": "Настоящее время: ma mängin. Глагол mängima — «играть»."
+    },
+    {
+      "id": "g-expand-62",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (mängima)",
+      "answer": "mängid",
+      "explanation_ru": "Настоящее время: sa mängid. Глагол mängima — «играть»."
+    },
+    {
+      "id": "g-expand-63",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (mängima)",
+      "answer": "mängib",
+      "explanation_ru": "Настоящее время: ta mängib. Глагол mängima — «играть»."
+    },
+    {
+      "id": "g-expand-64",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (mängima)",
+      "answer": "mängime",
+      "explanation_ru": "Настоящее время: me mängime. Глагол mängima — «играть»."
+    },
+    {
+      "id": "g-expand-65",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (mängima)",
+      "answer": "mängite",
+      "explanation_ru": "Настоящее время: te mängite. Глагол mängima — «играть»."
+    },
+    {
+      "id": "g-expand-66",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (mängima)",
+      "answer": "mängivad",
+      "explanation_ru": "Настоящее время: nad mängivad. Глагол mängima — «играть»."
+    },
+    {
+      "id": "g-expand-67",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (mängima)",
+      "answer": "mängisin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: mängisin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-68",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (mängima, olevik)",
+      "answer": "mängi",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei mängi."
+    },
+    {
+      "id": "g-expand-69",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (mängima)",
+      "answer": 0,
+      "options": [
+        "mängida",
+        "mängima",
+        "mängin"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan mängida."
+    },
+    {
+      "id": "g-expand-70",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (mängima)",
+      "answer": 1,
+      "options": [
+        "mängida",
+        "mängima",
+        "mängin"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean mängima."
+    },
+    {
+      "id": "g-expand-71",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (kirjutama)",
+      "answer": "kirjutan",
+      "explanation_ru": "Настоящее время: ma kirjutan. Глагол kirjutama — «писать»."
+    },
+    {
+      "id": "g-expand-72",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (kirjutama)",
+      "answer": "kirjutad",
+      "explanation_ru": "Настоящее время: sa kirjutad. Глагол kirjutama — «писать»."
+    },
+    {
+      "id": "g-expand-73",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (kirjutama)",
+      "answer": "kirjutab",
+      "explanation_ru": "Настоящее время: ta kirjutab. Глагол kirjutama — «писать»."
+    },
+    {
+      "id": "g-expand-74",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (kirjutama)",
+      "answer": "kirjutame",
+      "explanation_ru": "Настоящее время: me kirjutame. Глагол kirjutama — «писать»."
+    },
+    {
+      "id": "g-expand-75",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (kirjutama)",
+      "answer": "kirjutate",
+      "explanation_ru": "Настоящее время: te kirjutate. Глагол kirjutama — «писать»."
+    },
+    {
+      "id": "g-expand-76",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (kirjutama)",
+      "answer": "kirjutavad",
+      "explanation_ru": "Настоящее время: nad kirjutavad. Глагол kirjutama — «писать»."
+    },
+    {
+      "id": "g-expand-77",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (kirjutama)",
+      "answer": "kirjutasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: kirjutasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-78",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (kirjutama, olevik)",
+      "answer": "kirjuta",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei kirjuta."
+    },
+    {
+      "id": "g-expand-79",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (kirjutama)",
+      "answer": 0,
+      "options": [
+        "kirjutada",
+        "kirjutama",
+        "kirjutan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan kirjutada."
+    },
+    {
+      "id": "g-expand-80",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (kirjutama)",
+      "answer": 1,
+      "options": [
+        "kirjutada",
+        "kirjutama",
+        "kirjutan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean kirjutama."
+    },
+    {
+      "id": "g-expand-81",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (rääkima)",
+      "answer": "räägin",
+      "explanation_ru": "Настоящее время: ma räägin. Глагол rääkima — «говорить»."
+    },
+    {
+      "id": "g-expand-82",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (rääkima)",
+      "answer": "räägid",
+      "explanation_ru": "Настоящее время: sa räägid. Глагол rääkima — «говорить»."
+    },
+    {
+      "id": "g-expand-83",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (rääkima)",
+      "answer": "räägib",
+      "explanation_ru": "Настоящее время: ta räägib. Глагол rääkima — «говорить»."
+    },
+    {
+      "id": "g-expand-84",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (rääkima)",
+      "answer": "räägime",
+      "explanation_ru": "Настоящее время: me räägime. Глагол rääkima — «говорить»."
+    },
+    {
+      "id": "g-expand-85",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (rääkima)",
+      "answer": "räägite",
+      "explanation_ru": "Настоящее время: te räägite. Глагол rääkima — «говорить»."
+    },
+    {
+      "id": "g-expand-86",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (rääkima)",
+      "answer": "räägivad",
+      "explanation_ru": "Настоящее время: nad räägivad. Глагол rääkima — «говорить»."
+    },
+    {
+      "id": "g-expand-87",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (rääkima)",
+      "answer": "rääkisin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: rääkisin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-88",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (rääkima, olevik)",
+      "answer": "räägi",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei räägi."
+    },
+    {
+      "id": "g-expand-89",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (rääkima)",
+      "answer": 0,
+      "options": [
+        "rääkida",
+        "rääkima",
+        "räägin"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan rääkida."
+    },
+    {
+      "id": "g-expand-90",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (rääkima)",
+      "answer": 1,
+      "options": [
+        "rääkida",
+        "rääkima",
+        "räägin"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean rääkima."
+    },
+    {
+      "id": "g-expand-91",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (jalutama)",
+      "answer": "jalutan",
+      "explanation_ru": "Настоящее время: ma jalutan. Глагол jalutama — «гулять»."
+    },
+    {
+      "id": "g-expand-92",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (jalutama)",
+      "answer": "jalutad",
+      "explanation_ru": "Настоящее время: sa jalutad. Глагол jalutama — «гулять»."
+    },
+    {
+      "id": "g-expand-93",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (jalutama)",
+      "answer": "jalutab",
+      "explanation_ru": "Настоящее время: ta jalutab. Глагол jalutama — «гулять»."
+    },
+    {
+      "id": "g-expand-94",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (jalutama)",
+      "answer": "jalutame",
+      "explanation_ru": "Настоящее время: me jalutame. Глагол jalutama — «гулять»."
+    },
+    {
+      "id": "g-expand-95",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (jalutama)",
+      "answer": "jalutate",
+      "explanation_ru": "Настоящее время: te jalutate. Глагол jalutama — «гулять»."
+    },
+    {
+      "id": "g-expand-96",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (jalutama)",
+      "answer": "jalutavad",
+      "explanation_ru": "Настоящее время: nad jalutavad. Глагол jalutama — «гулять»."
+    },
+    {
+      "id": "g-expand-97",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (jalutama)",
+      "answer": "jalutasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: jalutasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-98",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (jalutama, olevik)",
+      "answer": "jaluta",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei jaluta."
+    },
+    {
+      "id": "g-expand-99",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (jalutama)",
+      "answer": 0,
+      "options": [
+        "jalutada",
+        "jalutama",
+        "jalutan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan jalutada."
+    },
+    {
+      "id": "g-expand-100",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (jalutama)",
+      "answer": 1,
+      "options": [
+        "jalutada",
+        "jalutama",
+        "jalutan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean jalutama."
+    },
+    {
+      "id": "g-expand-101",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (reisima)",
+      "answer": "reisin",
+      "explanation_ru": "Настоящее время: ma reisin. Глагол reisima — «путешествовать»."
+    },
+    {
+      "id": "g-expand-102",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (reisima)",
+      "answer": "reisid",
+      "explanation_ru": "Настоящее время: sa reisid. Глагол reisima — «путешествовать»."
+    },
+    {
+      "id": "g-expand-103",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (reisima)",
+      "answer": "reisib",
+      "explanation_ru": "Настоящее время: ta reisib. Глагол reisima — «путешествовать»."
+    },
+    {
+      "id": "g-expand-104",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (reisima)",
+      "answer": "reisime",
+      "explanation_ru": "Настоящее время: me reisime. Глагол reisima — «путешествовать»."
+    },
+    {
+      "id": "g-expand-105",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (reisima)",
+      "answer": "reisite",
+      "explanation_ru": "Настоящее время: te reisite. Глагол reisima — «путешествовать»."
+    },
+    {
+      "id": "g-expand-106",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (reisima)",
+      "answer": "reisivad",
+      "explanation_ru": "Настоящее время: nad reisivad. Глагол reisima — «путешествовать»."
+    },
+    {
+      "id": "g-expand-107",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (reisima)",
+      "answer": "reisisin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: reisisin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-108",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (reisima, olevik)",
+      "answer": "reisi",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei reisi."
+    },
+    {
+      "id": "g-expand-109",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (reisima)",
+      "answer": 0,
+      "options": [
+        "reisida",
+        "reisima",
+        "reisin"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan reisida."
+    },
+    {
+      "id": "g-expand-110",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (reisima)",
+      "answer": 1,
+      "options": [
+        "reisida",
+        "reisima",
+        "reisin"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean reisima."
+    },
+    {
+      "id": "g-expand-111",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ___ iga päev. (helistama)",
+      "answer": "helistan",
+      "explanation_ru": "Настоящее время: ma helistan. Глагол helistama — «звонить»."
+    },
+    {
+      "id": "g-expand-112",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Sa ___ iga päev. (helistama)",
+      "answer": "helistad",
+      "explanation_ru": "Настоящее время: sa helistad. Глагол helistama — «звонить»."
+    },
+    {
+      "id": "g-expand-113",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ta ___ iga päev. (helistama)",
+      "answer": "helistab",
+      "explanation_ru": "Настоящее время: ta helistab. Глагол helistama — «звонить»."
+    },
+    {
+      "id": "g-expand-114",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Me ___ iga päev. (helistama)",
+      "answer": "helistame",
+      "explanation_ru": "Настоящее время: me helistame. Глагол helistama — «звонить»."
+    },
+    {
+      "id": "g-expand-115",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Te ___ iga päev. (helistama)",
+      "answer": "helistate",
+      "explanation_ru": "Настоящее время: te helistate. Глагол helistama — «звонить»."
+    },
+    {
+      "id": "g-expand-116",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Nad ___ iga päev. (helistama)",
+      "answer": "helistavad",
+      "explanation_ru": "Настоящее время: nad helistavad. Глагол helistama — «звонить»."
+    },
+    {
+      "id": "g-expand-117",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Eile ma ___. (helistama)",
+      "answer": "helistasin",
+      "explanation_ru": "Прошедшее время, 1-е лицо: helistasin. Eile означает «вчера»."
+    },
+    {
+      "id": "g-expand-118",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma ei ___. (helistama, olevik)",
+      "answer": "helista",
+      "explanation_ru": "Отрицание настоящего времени: ei + форма без личного окончания: ei helista."
+    },
+    {
+      "id": "g-expand-119",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tahan ___. (helistama)",
+      "answer": 0,
+      "options": [
+        "helistada",
+        "helistama",
+        "helistan"
+      ],
+      "explanation_ru": "После tahtma нужен da-инфинитив: tahan helistada."
+    },
+    {
+      "id": "g-expand-120",
+      "topic": "verbs",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma pean ___. (helistama)",
+      "answer": 1,
+      "options": [
+        "helistada",
+        "helistama",
+        "helistan"
+      ],
+      "explanation_ru": "После pidama в значении обязанности нужен ma-инфинитив: pean helistama."
+    },
+    {
+      "id": "g-expand-121",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (raamat)",
+      "answer": "raamatut",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: raamatut. raamat — «книга»."
+    },
+    {
+      "id": "g-expand-122",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (raamat)",
+      "answer": "raamatut",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks raamatut."
+    },
+    {
+      "id": "g-expand-123",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (raamat, nimetav)",
+      "answer": "raamat",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu raamat."
+    },
+    {
+      "id": "g-expand-124",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (raamat)",
+      "answer": "raamatuta",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа raamatu + ta."
+    },
+    {
+      "id": "g-expand-125",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (raamat)",
+      "answer": "raamatu",
+      "explanation_ru": "Основные формы: raamat – raamatu – raamatut."
+    },
+    {
+      "id": "g-expand-126",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (laud)",
+      "answer": "lauda",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: lauda. laud — «стол»."
+    },
+    {
+      "id": "g-expand-127",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (laud)",
+      "answer": "lauda",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks lauda."
+    },
+    {
+      "id": "g-expand-128",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (laud, nimetav)",
+      "answer": "laud",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu laud."
+    },
+    {
+      "id": "g-expand-129",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (laud)",
+      "answer": "lauata",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа laua + ta."
+    },
+    {
+      "id": "g-expand-130",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (laud)",
+      "answer": "laua",
+      "explanation_ru": "Основные формы: laud – laua – lauda."
+    },
+    {
+      "id": "g-expand-131",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (tool)",
+      "answer": "tooli",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: tooli. tool — «стул»."
+    },
+    {
+      "id": "g-expand-132",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (tool)",
+      "answer": "tooli",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks tooli."
+    },
+    {
+      "id": "g-expand-133",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (tool, nimetav)",
+      "answer": "tool",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu tool."
+    },
+    {
+      "id": "g-expand-134",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (tool)",
+      "answer": "toolita",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа tooli + ta."
+    },
+    {
+      "id": "g-expand-135",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (tool)",
+      "answer": "tooli",
+      "explanation_ru": "Основные формы: tool – tooli – tooli."
+    },
+    {
+      "id": "g-expand-136",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (kott)",
+      "answer": "kotti",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: kotti. kott — «сумка»."
+    },
+    {
+      "id": "g-expand-137",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (kott)",
+      "answer": "kotti",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks kotti."
+    },
+    {
+      "id": "g-expand-138",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (kott, nimetav)",
+      "answer": "kott",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu kott."
+    },
+    {
+      "id": "g-expand-139",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (kott)",
+      "answer": "kotita",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа koti + ta."
+    },
+    {
+      "id": "g-expand-140",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (kott)",
+      "answer": "koti",
+      "explanation_ru": "Основные формы: kott – koti – kotti."
+    },
+    {
+      "id": "g-expand-141",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (kapp)",
+      "answer": "kappi",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: kappi. kapp — «шкаф»."
+    },
+    {
+      "id": "g-expand-142",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (kapp)",
+      "answer": "kappi",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks kappi."
+    },
+    {
+      "id": "g-expand-143",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (kapp, nimetav)",
+      "answer": "kapp",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu kapp."
+    },
+    {
+      "id": "g-expand-144",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (kapp)",
+      "answer": "kapita",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа kapi + ta."
+    },
+    {
+      "id": "g-expand-145",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (kapp)",
+      "answer": "kapi",
+      "explanation_ru": "Основные формы: kapp – kapi – kappi."
+    },
+    {
+      "id": "g-expand-146",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (telefon)",
+      "answer": "telefoni",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: telefoni. telefon — «телефон»."
+    },
+    {
+      "id": "g-expand-147",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (telefon)",
+      "answer": "telefoni",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks telefoni."
+    },
+    {
+      "id": "g-expand-148",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (telefon, nimetav)",
+      "answer": "telefon",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu telefon."
+    },
+    {
+      "id": "g-expand-149",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (telefon)",
+      "answer": "telefonita",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа telefoni + ta."
+    },
+    {
+      "id": "g-expand-150",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (telefon)",
+      "answer": "telefoni",
+      "explanation_ru": "Основные формы: telefon – telefoni – telefoni."
+    },
+    {
+      "id": "g-expand-151",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (arvuti)",
+      "answer": "arvutit",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: arvutit. arvuti — «компьютер»."
+    },
+    {
+      "id": "g-expand-152",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (arvuti)",
+      "answer": "arvutit",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks arvutit."
+    },
+    {
+      "id": "g-expand-153",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (arvuti, nimetav)",
+      "answer": "arvuti",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu arvuti."
+    },
+    {
+      "id": "g-expand-154",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (arvuti)",
+      "answer": "arvutita",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа arvuti + ta."
+    },
+    {
+      "id": "g-expand-155",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (arvuti)",
+      "answer": "arvuti",
+      "explanation_ru": "Основные формы: arvuti – arvuti – arvutit."
+    },
+    {
+      "id": "g-expand-156",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (aken)",
+      "answer": "akent",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: akent. aken — «окно»."
+    },
+    {
+      "id": "g-expand-157",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (aken)",
+      "answer": "akent",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks akent."
+    },
+    {
+      "id": "g-expand-158",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (aken, nimetav)",
+      "answer": "aken",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu aken."
+    },
+    {
+      "id": "g-expand-159",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (aken)",
+      "answer": "aknata",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа akna + ta."
+    },
+    {
+      "id": "g-expand-160",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (aken)",
+      "answer": "akna",
+      "explanation_ru": "Основные формы: aken – akna – akent."
+    },
+    {
+      "id": "g-expand-161",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (uks)",
+      "answer": "ust",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: ust. uks — «дверь»."
+    },
+    {
+      "id": "g-expand-162",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (uks)",
+      "answer": "ust",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks ust."
+    },
+    {
+      "id": "g-expand-163",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (uks, nimetav)",
+      "answer": "uks",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu uks."
+    },
+    {
+      "id": "g-expand-164",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (uks)",
+      "answer": "ukseta",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа ukse + ta."
+    },
+    {
+      "id": "g-expand-165",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (uks)",
+      "answer": "ukse",
+      "explanation_ru": "Основные формы: uks – ukse – ust."
+    },
+    {
+      "id": "g-expand-166",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul ei ole ___. (pilet)",
+      "answer": "piletit",
+      "explanation_ru": "Отрицание обладания: mul ei ole + партитив: piletit. pilet — «билет»."
+    },
+    {
+      "id": "g-expand-167",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Mul on kaks ___. (pilet)",
+      "answer": "piletit",
+      "explanation_ru": "После kaks нужен партитив единственного числа: kaks piletit."
+    },
+    {
+      "id": "g-expand-168",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "See on minu ___. (pilet, nimetav)",
+      "answer": "pilet",
+      "explanation_ru": "После minu предмет здесь стоит в именительном: minu pilet."
+    },
+    {
+      "id": "g-expand-169",
+      "topic": "cases",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Ma olen ilma ___. (pilet)",
+      "answer": "piletita",
+      "explanation_ru": "Ilma («без») употребляется с абессивом: основа pileti + ta."
+    },
+    {
+      "id": "g-expand-170",
+      "topic": "gradation",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta omastav: ___ (pilet)",
+      "answer": "pileti",
+      "explanation_ru": "Основные формы: pilet – pileti – piletit."
+    },
+    {
+      "id": "g-expand-171",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (0)",
+      "answer": "null",
+      "explanation_ru": "Число 0 словами: null."
+    },
+    {
+      "id": "g-expand-172",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (1)",
+      "answer": "üks",
+      "explanation_ru": "Число 1 словами: üks."
+    },
+    {
+      "id": "g-expand-173",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (2)",
+      "answer": "kaks",
+      "explanation_ru": "Число 2 словами: kaks."
+    },
+    {
+      "id": "g-expand-174",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (3)",
+      "answer": "kolm",
+      "explanation_ru": "Число 3 словами: kolm."
+    },
+    {
+      "id": "g-expand-175",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (4)",
+      "answer": "neli",
+      "explanation_ru": "Число 4 словами: neli."
+    },
+    {
+      "id": "g-expand-176",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (5)",
+      "answer": "viis",
+      "explanation_ru": "Число 5 словами: viis."
+    },
+    {
+      "id": "g-expand-177",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (6)",
+      "answer": "kuus",
+      "explanation_ru": "Число 6 словами: kuus."
+    },
+    {
+      "id": "g-expand-178",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (7)",
+      "answer": "seitse",
+      "explanation_ru": "Число 7 словами: seitse."
+    },
+    {
+      "id": "g-expand-179",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (8)",
+      "answer": "kaheksa",
+      "explanation_ru": "Число 8 словами: kaheksa."
+    },
+    {
+      "id": "g-expand-180",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (9)",
+      "answer": "üheksa",
+      "explanation_ru": "Число 9 словами: üheksa."
+    },
+    {
+      "id": "g-expand-181",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (10)",
+      "answer": "kümme",
+      "explanation_ru": "Число 10 словами: kümme."
+    },
+    {
+      "id": "g-expand-182",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (11)",
+      "answer": "üksteist",
+      "explanation_ru": "Число 11 словами: üksteist."
+    },
+    {
+      "id": "g-expand-183",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (12)",
+      "answer": "kaksteist",
+      "explanation_ru": "Число 12 словами: kaksteist."
+    },
+    {
+      "id": "g-expand-184",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (13)",
+      "answer": "kolmteist",
+      "explanation_ru": "Число 13 словами: kolmteist."
+    },
+    {
+      "id": "g-expand-185",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (14)",
+      "answer": "neliteist",
+      "explanation_ru": "Число 14 словами: neliteist."
+    },
+    {
+      "id": "g-expand-186",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (15)",
+      "answer": "viisteist",
+      "explanation_ru": "Число 15 словами: viisteist."
+    },
+    {
+      "id": "g-expand-187",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (16)",
+      "answer": "kuusteist",
+      "explanation_ru": "Число 16 словами: kuusteist."
+    },
+    {
+      "id": "g-expand-188",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (17)",
+      "answer": "seitseteist",
+      "explanation_ru": "Число 17 словами: seitseteist."
+    },
+    {
+      "id": "g-expand-189",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (18)",
+      "answer": "kaheksateist",
+      "explanation_ru": "Число 18 словами: kaheksateist."
+    },
+    {
+      "id": "g-expand-190",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (19)",
+      "answer": "üheksateist",
+      "explanation_ru": "Число 19 словами: üheksateist."
+    },
+    {
+      "id": "g-expand-191",
+      "topic": "numerals",
+      "level": "A2",
+      "status": "draft",
+      "type": "input",
+      "prompt_et": "Kirjuta sõnadega: ___ (20)",
+      "answer": "kakskümmend",
+      "explanation_ru": "Число 20 словами: kakskümmend."
+    },
+    {
+      "id": "g-expand-192",
+      "topic": "prepositions",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kass magab laua ___.",
+      "answer": 0,
+      "options": [
+        "all",
+        "alla",
+        "alt"
+      ],
+      "explanation_ru": "Где? all. Куда? alla. Откуда? alt.",
+      "prompt_ru": "под"
+    },
+    {
+      "id": "g-expand-193",
+      "topic": "prepositions",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kass jookseb laua ___.",
+      "answer": 1,
+      "options": [
+        "all",
+        "alla",
+        "alt"
+      ],
+      "explanation_ru": "Движение куда? alla.",
+      "prompt_ru": "под стол"
+    },
+    {
+      "id": "g-expand-194",
+      "topic": "prepositions",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kass tuleb laua ___.",
+      "answer": 2,
+      "options": [
+        "all",
+        "alla",
+        "alt"
+      ],
+      "explanation_ru": "Движение откуда? alt.",
+      "prompt_ru": "из-под"
+    },
+    {
+      "id": "g-expand-195",
+      "topic": "prepositions",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma seisan kooli ___.",
+      "answer": 0,
+      "options": [
+        "ees",
+        "ette",
+        "eest"
+      ],
+      "explanation_ru": "Положение где? ees.",
+      "prompt_ru": "перед"
+    },
+    {
+      "id": "g-expand-196",
+      "topic": "prepositions",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma lähen kooli ___.",
+      "answer": 1,
+      "options": [
+        "ees",
+        "ette",
+        "eest"
+      ],
+      "explanation_ru": "Направление куда? ette.",
+      "prompt_ru": "перед школу"
+    },
+    {
+      "id": "g-expand-197",
+      "topic": "prepositions",
+      "level": "A2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma tulen kooli ___.",
+      "answer": 2,
+      "options": [
+        "ees",
+        "ette",
+        "eest"
+      ],
+      "explanation_ru": "Исходная точка откуда? eest.",
+      "prompt_ru": "от места перед школой"
+    }
   ]
 }

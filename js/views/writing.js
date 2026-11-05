@@ -1,5 +1,6 @@
 import { h, content, config, countWords, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
+import { seriesLinks } from '../series.js';
 import { charPad, timerWidget, checklistWidget, filteredList, nextLink, splitView } from '../widgets.js';
 
 const GROUPS = { greeting: 'Приветствие', closing: 'Завершение', add: 'Добавление', contrast: 'Противопоставление', cause: 'Причина', result: 'Следствие', example: 'Пример', order: 'Порядок', opinion: 'Мнение', condition: 'Условие' };
@@ -41,13 +42,15 @@ export default {
     }
 
     const saved = store.getWriting(task.id);
-    const range = fmt.writing_practice_words;
+    const series = await seriesLinks(task, 'writing');
+    const range = task.practice_words || fmt.writing_practice_words;
     const ed = editor({ initial: saved.text || '', range, onInput: (v) => store.setWriting(task.id, { text: v }) });
     const tw = timerWidget({ seconds: fmt.writing_practice_minutes * 60, label: 'Таймер' });
     const cl = checklistWidget(data.checklist, saved.checks, (checks) => store.setWriting(task.id, { checks }));
     addChildren(root, 
       h('p', null, h('a', { href: '#/writing' }, '← Все задания'), '  ', nextLink(data.items, task.id, 'writing', 'Следующее задание →')),
       h('h1', null, 'Письмо: ' + task.title_ru),
+      series,
       splitView([h('div', { class: 'card' },
         h('p', { class: 'q-et', lang: 'et' }, task.prompt_et),
         h('p', { class: 'muted' }, task.prompt_ru),

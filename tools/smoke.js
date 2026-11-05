@@ -299,6 +299,29 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     await go('reading/r-15');
     ok((await page.locator('.source').innerText()).includes('Лицензия'), 'у текста с источником показана лицензия');
 
+    // 10j. серии заданий (parent_id) и уровни
+    for (const module of ['reading', 'listening', 'writing', 'speaking']) {
+      const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', module + '.json'), 'utf8'));
+      for (const task of data.items.filter((x) => x.parent_id)) {
+        await go(`${module}/${task.id}`);
+        ok(await page.locator('nav[aria-label="Этапы задания"]').count() === 1, `${module}/${task.id}: есть навигация по серии`);
+        ok(await page.getByRole('link', { name: /Исходное задание/ }).count() === 1, `${module}/${task.id}: есть обратная ссылка`);
+      }
+    }
+    await go('reading/r-01');
+    await page.getByRole('link', { name: /Продолжить/ }).first().click();
+    await page.waitForSelector('nav[aria-label="Этапы задания"]');
+    ok((await page.evaluate(() => location.hash)).includes('r-01-part2'), 'серия: переход к продолжению работает');
+    await go('writing/w-01-reply');
+    await page.locator('textarea').fill('Aitäh vastuse eest! Pakun uut aega.');
+    await go('writing/w-01');
+    ok(!(await page.locator('textarea').inputValue()).includes('Pakun uut aega'), 'серия: черновик продолжения отделён от исходного');
+    await go('writing/w-01-reply');
+    ok((await page.locator('textarea').inputValue()).includes('Pakun uut aega'), 'серия: черновик продолжения сохраняется');
+    await go('reading/level-B2');
+    ok((await page.locator('.chip[aria-current="true"]').innerText()) === 'B2', 'чтение: фильтр уровня B2 выбран');
+    ok(await page.locator('.card.link-card').count() > 0, 'чтение: уровень B2 содержит тексты');
+
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');
     await page.reload(); await page.waitForSelector('main h1');

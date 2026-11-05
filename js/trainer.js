@@ -39,7 +39,7 @@ export function runTrainer(area, entries, opts = {}) {
       },
     });
     setChildren(area,
-      h('p', { class: 'muted', role: 'status' }, `Задание ${i + 1} из ${total}`),
+      h('p', { class: 'muted', role: 'status' }, `Задание ${i + 1} из ${total}${q.level ? ' · ' + q.level : ''}`),
       h('progress', { max: total, value: i + 1, 'aria-label': 'Прогресс сессии' }),
       h('div', { class: 'card' }, api.el, h('div', { class: 'row' }, nextBtn)));
     api.focusPrompt();

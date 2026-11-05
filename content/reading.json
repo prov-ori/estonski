@@ -9,7 +9,7 @@
    "title_et": "Uus ring meie koolis",
    "title_ru": "Новый кружок в нашей школе",
    "explanation_ru": "Текст о школьном кружке робототехники. Типы заданий: выбор ответа, верно/неверно, соответствие. Читайте вопрос и ищите в тексте конкретное место, а не пересказывайте по памяти.",
-   "text_et": "Sügisel hakkas meie koolis tööle robootikaring. Ringi juhendaja on informaatikaõpetaja Marek, kes armastab tehnikat ja õpetab ka teisi. Esimesele kokkusaamisele tuli kolmteist õpilast. Alguses arvasid mõned, et robotite ehitamine on väga raske, kuid Marek näitas, et alustada saab lihtsate asjadega. Esimese kuu jooksul ehitasid õpilased väikese roboti, mis sõidab mööda musta joont.\n\nRing toimub kolmapäeviti pärast viiendat tundi ja kestab poolteist tundi. Osalemine on tasuta. Kes tahab, võib võtta kaasa oma sülearvuti. Kellel arvutit ei ole, saab kasutada kooli arvutit. Detsembris tahab kooli meeskond minna linna võistlusele, kus näidatakse roboteid. Marek ütleb, et võitmine ei ole kõige olulisem. Tähtis on, et õpilased õpiksid koos töötama ja ei kardaks eksida.",
+   "text_et": "Sügisel hakkas meie koolis tööle robootikaring. Ringi juhendaja on informaatikaõpetaja Marek, kes armastab tehnikat ja õpetab ka teisi. Esimesele kokkusaamisele tuli kolmteist õpilast. Alguses arvasid mõned, et robotite ehitamine on väga raske, kuid Marek näitas, et alustada saab lihtsate asjadega. Esimese kuu jooksul ehitasid õpilased väikese roboti, mis sõidab mööda musta joont.\n\nRing toimub kolmapäeviti pärast viiendat tundi ja kestab poolteist tundi. Osalemine on tasuta. Kes tahab, võib võtta kaasa oma sülearvuti. Kellel arvutit ei ole, saab kasutada kooli arvutit. Detsembris tahab kooli meeskond minna linna võistlusele, kus näidatakse roboteid. Marek ütleb, et võitmine ei ole kõige olulisem. Tähtis on, et õpilased õpiksid koos töötama ja ei kardaks eksida.\n\nMarek ei anna igale rühmale valmis juhendit. Tema arvates õpivad noored rohkem siis, kui nad peavad ise lahendusi võrdlema. See ei tähenda siiski, et õpetaja jätab nad raskustega üksi. Kui rühm jääb hätta, esitab ta küsimusi, mis aitavad vea põhjust leida. Mõnele õpilasele tundus selline tööviis alguses aeglane, sest tulemus ei olnud kohe näha. Hiljem märkasid nad, et oskavad oma valikuid paremini põhjendada.\n\nEnne võistlust tuleb koostada ka lühike esitlus. Üks õpilane kirjeldab roboti ehitust, teine selgitab programmi ning kolmas räägib ebaõnnestunud katsetest. Marek palub näidata ka seda, mida katsete järel muudeti. Ta rõhutab, et aus ülevaade õppimisest on väärtuslikum kui mulje, nagu oleks kõik esimesel korral õnnestunud.",
    "questions": [
     {
      "id": "r-01-q1",
@@ -97,6 +97,19 @@
       "Kiire ehitamine."
      ],
      "answer": 0
+    },
+    {
+     "id": "r-01-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks ei anna Marek alati valmis juhendit?",
+     "options": [
+      "Ta tahab arendada iseseisvat põhjendamist.",
+      "Tal puuduvad robootikateadmised.",
+      "Ta soovib võistlusest loobuda."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Ta tahab arendada iseseisvat põhjendamist."
     }
    ]
   },
@@ -108,7 +121,7 @@
    "title_et": "Kiri sõbrale",
    "title_ru": "Письмо подруге",
    "explanation_ru": "Личное письмо с приглашением. В таких текстах важны время, место и что взять с собой — именно об этом часто спрашивают.",
-   "text_et": "Tere, Liisa!\n\nKirjutan sulle, sest tahan sind laupäeval külla kutsuda. Meie pere sõidab laupäeval vanaema juurde maale ja ma tahaksin, et sa tuleksid kaasa. Vanaema elab väikeses külas järve ääres. Suvel saab seal ujuda, aga novembris on järv külm, nii et ujuma me ei lähe. Selle asemel jalutame metsas ja õhtul kütab vanaisa sauna.\n\nBuss väljub Tallinnast kell 9.15 ja sõit kestab poolteist tundi. Ma ootan sind bussijaamas kell 9.00. Võta kaasa soe jope ja tugevad kingad, sest metsas võib olla mudane. Süüa ei pea kaasa võtma, vanaema küpsetab pirukaid. Kui sa ei saa tulla, anna mulle palun homme teada.\n\nNägemist!\nKadri",
+   "text_et": "Tere, Liisa!\n\nKirjutan sulle, sest tahan sind laupäeval külla kutsuda. Meie pere sõidab laupäeval vanaema juurde maale ja ma tahaksin, et sa tuleksid kaasa. Vanaema elab väikeses külas järve ääres. Suvel saab seal ujuda, aga novembris on järv külm, nii et ujuma me ei lähe. Selle asemel jalutame metsas ja õhtul kütab vanaisa sauna.\n\nBuss väljub Tallinnast kell 9.15 ja sõit kestab poolteist tundi. Ma ootan sind bussijaamas kell 9.00. Võta kaasa soe jope ja tugevad kingad, sest metsas võib olla mudane. Süüa ei pea kaasa võtma, vanaema küpsetab pirukaid. Kui sa ei saa tulla, anna mulle palun homme teada.\n\nNägemist!\nKadri\n\nTahtsin veel täpsustada, et vanaema maja lähedal ei ole poodi. Kui vajad midagi erilist, osta see enne väljasõitu. Tavaliselt on bussis palju reisijaid, seepärast ostsin meie piletid juba internetist. Sulle ma eraldi maksta ei lasknud, sest kutsusin sind ise külla. Kui plaan muutub, anna palun võimalikult vara teada: pileteid saab vahetada ainult enne reisi algust.\n\nVanaisa lubas näidata meile vana vesiveskit, kuid sinna pääseb vaid mööda kitsast metsateed. Kui tugevalt sajab, jääme pigem majja ja vaatame pere fotoalbumeid. Ma ei tahaks, et peaksime üksnes esialgsest plaanist kinni pidamise pärast terve päeva märgades riietes käima. Minu jaoks on tähtsam sinuga rahulikult aega veeta kui võimalikult palju kohti läbi joosta.",
    "questions": [
     {
      "id": "r-02-q1",
@@ -190,6 +203,19 @@
      "prompt_et": "Mis kell Kadri ootab Liisat bussijaamas? Kirjuta sõnaga: kell ___.",
      "explanation_ru": "В тексте «kell 9.00» — по-эстонски üheksa. Букву ü набирайте кнопкой под полем.",
      "answer": "üheksa"
+    },
+    {
+     "id": "r-02-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Mida näitab Kadri suhtumine plaanidesse?",
+     "options": [
+      "Ta peab koosolemist täpsest programmist tähtsamaks.",
+      "Ta tahab kindlasti kõik kohad läbi käia.",
+      "Ta ootab, et Liisa ostaks mõlemale piletid."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Ta peab koosolemist täpsest programmist tähtsamaks."
     }
    ]
   },
@@ -790,11 +816,11 @@
   {
    "id": "r-expand-2",
    "topic": "school",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Raamatukogu",
    "title_ru": "Библиотека",
-   "text_et": "Kooli raamatukogu on avatud esmaspäevast reedeni kell 9–16. Laupäeval ja pühapäeval on see suletud. Õpilane võib korraga koju võtta kolm raamatut. Raamatud tuleb tagasi tuua kahe nädala pärast. Kui raamatut on kauem vaja, tuleb kirjutada raamatukoguhoidjale.",
+   "text_et": "Kooli raamatukogu on avatud esmaspäevast reedeni kell 9–16. Laupäeval ja pühapäeval on see suletud. Õpilane võib korraga koju võtta kolm raamatut. Raamatud tuleb tagasi tuua kahe nädala pärast. Kui raamatut on kauem vaja, tuleb kirjutada raamatukoguhoidjale.\n\nRaamatukoguhoidja sõnul kasutatakse ruumi üha sagedamini ka rühmatööks. See on tekitanud vaidlusi, sest osa õpilasi tahab seal vaikselt lugeda. Seetõttu katsetatakse uut korda: akende juures olevad lauad on mõeldud individuaalseks tööks, uksepoolne ala aga aruteludeks. Rühmatöö ajal tuleb siiski rääkida vaikselt. Kui keegi vajab täiesti vaikset kohta, saab ta kasutada väikest lugemistuba.\n\nUut korda ei peeta veel lõplikuks. Kuu aja pärast kogutakse kasutajatelt tagasisidet ning võrreldakse, millal tekib kõige rohkem müra. Hoidja ei soovi rühmatööd keelata, sest raamatukogu ülesanne on toetada mitmesugust õppimist. Samas rõhutab ta, et ühe rühma tegevus ei tohi muuta teiste tööd võimatuks. Ettepanekuid saab esitada nii paberil kui ka kooli veebivormi kaudu.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -822,17 +848,30 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: kell 16."
+    },
+    {
+     "id": "r-expand-2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks kogutakse kuu aja pärast tagasisidet?",
+     "options": [
+      "Et otsustada, kas proovitud töökorraldust on vaja muuta.",
+      "Et rühmatöö kindlasti keelata.",
+      "Et otsustada raamatute müügihind."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et otsustada, kas proovitud töökorraldust on vaja muuta."
     }
    ]
   },
   {
    "id": "r-expand-3",
    "topic": "city",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Bussireis",
    "title_ru": "Поездка на автобусе",
-   "text_et": "Mari sõidab laupäeval Tartusse. Buss väljub Tallinnast kell üheksa ja jõuab Tartusse kell pool kaksteist. Mari ostis pileti internetist, sest nii oli odavam. Bussijaamas kohtub ta sõbra Annaga. Nad lähevad koos muuseumisse.",
+   "text_et": "Mari sõidab laupäeval Tartusse. Buss väljub Tallinnast kell üheksa ja jõuab Tartusse kell pool kaksteist. Mari ostis pileti internetist, sest nii oli odavam. Bussijaamas kohtub ta sõbra Annaga. Nad lähevad koos muuseumisse.\n\nEnne väljasõitu kontrollis Mari, kas bussipeatus asub ikka tavapärases kohas. Tänavatööde tõttu oli peatus ajutiselt teisele poole jaamahoonet viidud. Ta jõudis seetõttu kohale varem, kuigi sõiduaeg ise ei muutunud. Mari arvates on reisirakendusest abi ainult siis, kui kasutaja loeb ka teateid, mitte üksnes suurt väljumisaega ekraanil.\n\nAnna saatis talle muuseumi aadressi ja selgitas, et bussijaamast saab sinna jalgsi. Mari pakkus algul taksot, sest kartis eksida. Anna vastas, et jalutuskäik kestab vaid viisteist minutit ning teel on selged viidad. Nad otsustasid liikuda jalgsi ja jätta taksoraha lõunasöögi jaoks. Kui ilm oleks halb või mõni neist tunneks end väsinuna, võiksid nad siiski kasutada linnabussi.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -860,17 +899,30 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: muuseumisse."
+    },
+    {
+     "id": "r-expand-3-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks loobuti algsest taksoideest?",
+     "options": [
+      "Lühike ja selgelt tähistatud tee võimaldas raha säästa.",
+      "Taksod ei sõida Tartus.",
+      "Anna ei teadnud muuseumi aadressi."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Lühike ja selgelt tähistatud tee võimaldas raha säästa."
     }
    ]
   },
   {
    "id": "r-expand-4",
    "topic": "food",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Kohvik",
    "title_ru": "Кафе",
-   "text_et": "Uus kohvik asub pargi kõrval. Lõunasööki pakutakse tööpäeviti kell 12–15. Supp maksab neli eurot ja salat kuus eurot. Vett saab tasuta. Kohvikus võib maksta nii kaardiga kui ka sularahas. Pühapäeval avatakse kohvik alles keskpäeval.",
+   "text_et": "Uus kohvik asub pargi kõrval. Lõunasööki pakutakse tööpäeviti kell 12–15. Supp maksab neli eurot ja salat kuus eurot. Vett saab tasuta. Kohvikus võib maksta nii kaardiga kui ka sularahas. Pühapäeval avatakse kohvik alles keskpäeval.\n\nKohviku omanik tahab vähendada päeva lõpus järele jääva toidu hulka. Seepärast valmistatakse lõunasööki esialgu väiksemates kogustes. Kui nõudlus osutub suuremaks, tuleb vahel uut portsjonit oodata. Mõned külastajad peavad ootamist ebamugavaks, teised hindavad seda, et toit on värske. Omanik ei väida, et uus süsteem sobib kõigile, kuid loodab tagasiside abil tasakaalu leida.\n\nMenüüs on märgitud levinumad allergeenid, ent erisoovide korral palutakse teenindajaga rääkida. Köögis kasutatakse mitmesuguseid tooraineid, mistõttu pelgalt roa nimi ei anna täielikku teavet. Koolirühmadele soovitatakse laud ja söögid ette tellida. Nii saab köök koguseid täpsemalt planeerida ning rühm ei pea kogu lõunapausi toidu valmimist ootama. Ettetellimine ei muuda vee hinda: seda pakutakse jätkuvalt tasuta.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -898,17 +950,30 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: kuus."
+    },
+    {
+     "id": "r-expand-4-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks palutakse suurel rühmal ette tellida?",
+     "options": [
+      "Et planeerida koguseid ja vähendada ooteaega.",
+      "Et muuta joogivesi tasuliseks.",
+      "Et vältida menüü näitamist."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et planeerida koguseid ja vähendada ooteaega."
     }
    ]
   },
   {
    "id": "r-expand-5",
    "topic": "nature",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Matkapäev",
    "title_ru": "Поход",
-   "text_et": "Meie klass läheb reedel metsa matkama. Koguneme kooli ees kell kaheksa. Kaasa tuleb võtta vesi, võileivad ja vihmajope. Matka juhib loodusõpetaja. Telefonid jäävad kotti, et saaksime linde kuulata. Tagasi kooli jõuame kell kolm.",
+   "text_et": "Meie klass läheb reedel metsa matkama. Koguneme kooli ees kell kaheksa. Kaasa tuleb võtta vesi, võileivad ja vihmajope. Matka juhib loodusõpetaja. Telefonid jäävad kotti, et saaksime linde kuulata. Tagasi kooli jõuame kell kolm.\n\nEnne väljasõitu jagas õpetaja klassi väikesteks rühmadeks. Iga rühm saab erineva ülesande: üks jälgib linde, teine võrdleb puude koort ning kolmas kirjeldab inimtegevuse jälgi. Õpetaja ei oota, et õpilased tunneksid kõiki liike peast. Olulisem on osata tähelepanekuid täpselt kirja panna ning eristada nähtut oletusest.\n\nRühmad lepivad kokku, kes teeb märkmeid ja kes jälgib aega. Fotosid võib teha seal, kus see ei sega loomi ega teisi matkajaid. Kui rajal leitakse prügi, teatatakse sellest õpetajale; tundmatuid või teravaid esemeid ei korjata palja käega. Pärast matka võrreldakse rühmade tulemusi. Erinevad kirjeldused ei tähenda tingimata, et keegi eksis: rühmad võivad samas paigas märgata erinevaid asju. Oma järelduse juurde tuleb siiski tuua konkreetne tähelepanek.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -936,17 +1001,30 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: kell kaheksa."
+    },
+    {
+     "id": "r-expand-5-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Mida peab õpetaja liiginimede päheõppimisest olulisemaks?",
+     "options": [
+      "Täpset vaatlemist ja põhjendatud järeldusi.",
+      "Võimalikult paljude fotode avaldamist.",
+      "Kõigi rühmade ühesuguseid kirjeldusi."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Täpset vaatlemist ja põhjendatud järeldusi."
     }
    ]
   },
   {
    "id": "r-expand-6",
    "topic": "freetime",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Ujumine",
    "title_ru": "Плавание",
-   "text_et": "Jüri käib ujumas kaks korda nädalas: teisipäeval ja neljapäeval. Trenn algab kell viis ja kestab ühe tunni. Jüri läheb ujulasse rattaga. Talvel sõidab ta bussiga. Pärast trenni sööb ta kodus õhtust.",
+   "text_et": "Jüri käib ujumas kaks korda nädalas: teisipäeval ja neljapäeval. Trenn algab kell viis ja kestab ühe tunni. Jüri läheb ujulasse rattaga. Talvel sõidab ta bussiga. Pärast trenni sööb ta kodus õhtust.\n\nJüri hakkas pidama treeningupäevikut, sest ta ei saanud aru, miks mõni trenn tundus teisest raskem. Alguses märkis ta üles ainult läbitud vahemaa. Treener soovitas lisada ka enesetunde ja eelnenud öö une pikkuse. Mõne nädala pärast märkas Jüri, et hilise magamamineku järel oli tal keskendumisega rohkem raskusi. Ta ei pidanud seda siiski tõendiks, et iga halb tulemus on ainult vähese une süü.\n\nUjumine on talle tähtis, kuid ta ei taha selle pärast muusikakoolist loobuda. Vanematega lepiti kokku, et enne uute kohustuste võtmist vaadatakse nädala ajakava tervikuna üle. Treener toetab seda mõtet: järjepidev harjutamine on tema arvates kasulikum kui lühike periood, mil õpilane püüab korraga kõiges parim olla.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -974,17 +1052,30 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: ühe tunni."
+    },
+    {
+     "id": "r-expand-6-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks lisas Jüri päevikusse une pikkuse?",
+     "options": [
+      "Et paremini mõista enesetunde ja treeningu seoseid.",
+      "Et tõestada, et ujumine pole vajalik.",
+      "Et muusikakooli õpetajale hinnet panna."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et paremini mõista enesetunde ja treeningu seoseid."
     }
    ]
   },
   {
    "id": "r-expand-7",
    "topic": "home",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Uus korter",
    "title_ru": "Новая квартира",
-   "text_et": "Liisi pere kolis uude korterisse. Korteris on kolm tuba ja suur köök, aga rõdu ei ole. Liisi kool asub nüüd kümne minuti jalutuskäigu kaugusel. Varem pidi ta kooli sõitma bussiga. Kõige rohkem meeldib Liisile tema toa suur aken.",
+   "text_et": "Liisi pere kolis uude korterisse. Korteris on kolm tuba ja suur köök, aga rõdu ei ole. Liisi kool asub nüüd kümne minuti jalutuskäigu kaugusel. Varem pidi ta kooli sõitma bussiga. Kõige rohkem meeldib Liisile tema toa suur aken.\n\nUue kodu valimisel vaatas pere rohkemat kui tubade arvu. Oluline oli ka see, kas igapäevased käigud saab tehtud ilma autota. Varasemas kodus kulus sõitudele palju aega ning vanemad pidid sageli oma tööpäeva Liisi trennide järgi korraldama. Uus korter on küll väiksem, kuid kool, pood ja bussipeatus asuvad lähedal.\n\nLiis kartis alguses, et tal ei jätku oma asjade jaoks ruumi. Enne kolimist sorteeris ta koos emaga raamatuid ja riideid. Kasutuskõlblikud asjad, mida enam vaja polnud, viidi taaskasutuskeskusse. Pere ei ostnud kohe kogu uut mööblit, vaid otsustas kõigepealt näha, kuidas nad ruume tegelikult kasutavad. Nii välditakse kiirustades tehtud oste, mis võivad hiljem läbipääsu takistada või lihtsalt tarbetuks osutuda.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -1012,17 +1103,30 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: rõdu."
+    },
+    {
+     "id": "r-expand-7-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks ei ostnud pere kohe kogu uut mööblit?",
+     "options": [
+      "Nad tahtsid kõigepealt oma tegelikke vajadusi mõista.",
+      "Korteris oli mööbli ostmine keelatud.",
+      "Nad kavatsesid järgmisel päeval ära kolida."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Nad tahtsid kõigepealt oma tegelikke vajadusi mõista."
     }
    ]
   },
   {
    "id": "r-expand-8",
    "topic": "family",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Sünnipäev",
    "title_ru": "День рождения",
-   "text_et": "Vanaema sünnipäev on pühapäeval. Pere koguneb tema juurde kell kaks. Isa küpsetab kooki ja ema toob lilli. Lapsed teevad ise kaardi. Vanaema ei taha suuri kingitusi. Ta ütleb, et kõige parem kingitus on koos veedetud aeg.",
+   "text_et": "Vanaema sünnipäev on pühapäeval. Pere koguneb tema juurde kell kaks. Isa küpsetab kooki ja ema toob lilli. Lapsed teevad ise kaardi. Vanaema ei taha suuri kingitusi. Ta ütleb, et kõige parem kingitus on koos veedetud aeg.\n\nEt ettevalmistused ei jääks ühe inimese õlgadele, koostati ühine nimekiri. Iga pereliige valis sealt ülesande, mida ta oskas ja jõudis teha. Lapsed tahtsid tellida suure ilutulestiku, kuid vanaema palus sellest loobuda. Tema jaoks oleks see olnud liiga lärmakas ning ta eelistas raha kulutada ühisele teatrikülastusele.\n\nOtsus tekitas alguses pettumust, sest lapsed olid pidanud üllatuse suurust kõige tähtsamaks. Ema soovitas mõelda sellele, kelle jaoks pidu korraldatakse. Seejärel uurisid lapsed vanaema lemmiklavastusi ja koostasid ise väikese kutse. Kuigi kingitus jäi sünnipäevaks üllatuseks, kontrolliti vanaema kalendrist enne üle, millal ta saaks teatrisse minna. Pere õppis, et tähelepanelik kingitus nõuab vahel rohkem küsimist kui salaja planeerimist.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -1050,17 +1154,30 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: lilli."
+    },
+    {
+     "id": "r-expand-8-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Mida lapsed ettevalmistuste käigus õppisid?",
+     "options": [
+      "Kingitus peaks arvestama saaja soovide ja võimalustega.",
+      "Kõige kallim kingitus on alati sobivaim.",
+      "Üllatuse puhul ei tohi kunagi midagi küsida."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Kingitus peaks arvestama saaja soovide ja võimalustega."
     }
    ]
   },
   {
    "id": "r-expand-9",
    "topic": "health",
-   "level": "A2",
+   "level": "B1",
    "status": "draft",
    "title_et": "Arsti aeg",
    "title_ru": "Запись к врачу",
-   "text_et": "Peeter helistas hommikul perearstikeskusse. Tal on juba kolm päeva kurk valus. Õde pakkus aega kolmapäevaks kell kümme. Peeter palus hilisemat aega, sest tal on hommikul kontrolltöö. Lõpuks sai ta aja samaks päevaks kell kaks.",
+   "text_et": "Peeter helistas hommikul perearstikeskusse. Tal on juba kolm päeva kurk valus. Õde pakkus aega kolmapäevaks kell kümme. Peeter palus hilisemat aega, sest tal on hommikul kontrolltöö. Lõpuks sai ta aja samaks päevaks kell kaks.\n\nTelefonivestluse järel kirjutas Peeter kokkulepitud aja kohe kalendrisse. Ta oli varem ühe kohtumise unustanud, sest lootis ainult mälule. Seekord kontrollis ta ka keskuse aadressi: samal tänaval asub mitu sarnase nimega hoonet. Ema pakkus, et tuleb kaasa, kuid Peeter soovis vastuvõtu korraldamisega ise hakkama saada.\n\nPeeter koostas küsimuste nimekirja, et ei peaks kabinetis kõike kiirustades meenutama. Ta teadis, et internetist loetu ei pruugi sobida tema konkreetse olukorraga, seetõttu ei teinud ta enne kohtumist kindlaid järeldusi. Vastuvõtu sisu selles loos ei kirjeldata: ülesanne keskendub info täpsustamisele ja asjaajamisele. Peetri jaoks oli oluline õppida küsima selgitust siis, kui mõni korraldus jääb arusaamatuks, selle asemel et viisakusest lihtsalt noogutada.",
    "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
    "questions": [
     {
@@ -1088,6 +1205,19 @@
      ],
      "answer": 0,
      "explanation_ru": "Ответ прямо указан в тексте: sest tal on hommikul kontrolltöö."
+    },
+    {
+     "id": "r-expand-9-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks koostas Peeter küsimuste nimekirja?",
+     "options": [
+      "Et olulised küsimused vastuvõtul ei ununeks.",
+      "Et arsti vastused ise ette kirjutada.",
+      "Et kohtumine ära jätta."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et olulised küsimused vastuvõtul ei ununeks."
     }
    ]
   },
@@ -2030,6 +2160,777 @@
      "prompt_et": "Mida otsitakse jaaniööl metsast? Kirjuta sõna: ___",
      "explanation_ru": "«Otsida sõnajalaõit» — цветок папоротника (партитив: sõnajalaõit).",
      "answer": "sõnajalaõit"
+    }
+   ]
+  },
+  {
+   "id": "r-01-part2",
+   "parent_id": "r-01",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Võistluspäev",
+   "title_ru": "Продолжение: Кружок робототехники: соревнование",
+   "text_et": "Detsembris sõitis Mareki robootikaring linna võistlusele. Hommikul selgus, et roboti üks ratas ei liikunud. Õpilased tahtsid kohe uue mootori osta, kuid Marek palus kõigepealt ühendusi kontrollida. Viga oligi lahtises juhtmes. Pärast parandust töötas robot jälle. Meeskond sai kolmanda koha. Tagasiteel ütlesid õpilased, et järgmisel korral jagavad nad ülesanded juba enne võistlust. Nii ei pea kõik korraga sama viga otsima.\n\nJärgmisel kohtumisel arutati mitte ainult tulemust, vaid ka töökorraldust. Üks õpilane leidis, et ülesannete jagamine piirab võimalust kõike ise proovida. Teine vastas, et selged vastutusalad ei pea tähendama teadmiste varjamist: pärast katset võiks igaüks teistele oma töö lahti seletada. Marek palus mõlemal ettepanekul tugevused ja nõrkused kirja panna.\n\nLõpuks otsustati rolle iga kahe nädala järel vahetada. Nii saab võistluse ajal igaüks oma osa eest vastutada, ent pikema aja jooksul proovivad kõik nii programmeerimist kui ka ehitamist. Õpilased koostasid kontrollnimekirja, kuhu lisati juhtmete kontroll enne varuosade ostmist. Nad ei eeldanud, et üks nimekiri välistab kõik rikked. Selle eesmärk oli aidata surve all rahulikult tegutseda ja alustada lihtsamate võimalike põhjuste kontrollimisest.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-01-part2-q1",
+     "type": "choice",
+     "prompt_et": "Mis oli roboti rikke põhjus?",
+     "options": [
+      "Lahtine juhe.",
+      "Katkine mootor.",
+      "Tühi aku."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Lahtine juhe."
+    },
+    {
+     "id": "r-01-part2-q2",
+     "type": "choice",
+     "prompt_et": "Mida tahavad õpilased järgmisel korral teisiti teha?",
+     "options": [
+      "Ülesanded varem jagada.",
+      "Uue õpetaja leida.",
+      "Võistlusest loobuda."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Ülesanded varem jagada."
+    },
+    {
+     "id": "r-01-part2-q3",
+     "type": "tf",
+     "prompt_et": "Meeskond võitis esimese koha.",
+     "answer": false,
+     "explanation_ru": "Текст сообщает обратное; сопоставьте действия и их результат."
+    },
+    {
+     "id": "r-01-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks otsustati rolle vahetada?",
+     "options": [
+      "Et ühendada selge vastutus mitmekülgse õppimisega.",
+      "Et keegi ei õpiks programmeerimist.",
+      "Et vältida kogemuste jagamist."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et ühendada selge vastutus mitmekülgse õppimisega."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-2-part2",
+   "parent_id": "r-expand-2",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kadunud raamat",
+   "title_ru": "Продолжение: Библиотека: потерянная книга",
+   "text_et": "Kaks nädalat hiljem märkas Karl, et üks raamat on kadunud. Ta otsis seda kodust ja koolikotist, kuid ei leidnud. Karl kirjutas raamatukoguhoidjale ning küsis, mida teha. Hoidja soovitas kõigepealt klassikaaslastelt küsida. Järgmisel päeval tõi Anna raamatu kooli: Karl oli selle talle lugemiseks andnud. Anna vabandas, et polnud varem meelde tuletanud. Karl viis raamatu samal päeval tagasi ja otsustas edaspidi laenatud raamatute kohta märkmeid teha.\n\nJuhtum pani Karli mõtlema, et head kavatsused ei vabasta teda vastutusest. Ta oli tahtnud sõpra aidata, kuid raamat oli endiselt tema nimele laenatud. Raamatukoguhoidja ei keelanud sõpradel lugemissoovitusi jagada. Ta soovitas siiski laenutuse ametlikult ümber vormistada, kui raamat jääb pikemaks ajaks teise lugeja kätte.\n\nKarl tegi oma telefoni märkme, kuhu pani kirja raamatu pealkirja, tagastamistähtaja ja inimese, kellele oli raamatu andnud. Ta otsustas märkmeid mitte avalikult jagada, sest seal olid ka sõprade nimed. Anna pakkus, et nad võiksid enne uusi laenutusi omavahel üle küsida, kas eelmine raamat on tagastatud. Nende eesmärk polnud teineteist kontrollida, vaid vältida olukorda, kus kumbki arvab, et asjaga tegeleb teine.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-2-part2-q1",
+     "type": "choice",
+     "prompt_et": "Kelle käes oli raamat?",
+     "options": [
+      "Anna käes.",
+      "Õpetaja käes.",
+      "Karli ema käes."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Anna käes."
+    },
+    {
+     "id": "r-expand-2-part2-q2",
+     "type": "choice",
+     "prompt_et": "Mida Karl edaspidi teeb?",
+     "options": [
+      "Teeb laenatud raamatute kohta märkmeid.",
+      "Lõpetab lugemise.",
+      "Ostab kõik raamatud ise."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Teeb laenatud raamatute kohta märkmeid."
+    },
+    {
+     "id": "r-expand-2-part2-q3",
+     "type": "tf",
+     "prompt_et": "Karl leidis raamatu kodust.",
+     "answer": false,
+     "explanation_ru": "Текст сообщает обратное; сопоставьте действия и их результат."
+    },
+    {
+     "id": "r-expand-2-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Milles seisnes Karli vastutus?",
+     "options": [
+      "Tema nimele laenatud raamatu tagastamise korraldamises.",
+      "Kõigi sõprade laenutuste keelamises.",
+      "Raamatukogu lahtiolekuaja muutmises."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Tema nimele laenatud raamatu tagastamise korraldamises."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-3-part2",
+   "parent_id": "r-expand-3",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Muutunud plaan",
+   "title_ru": "Продолжение: Поездка в Тарту: изменение планов",
+   "text_et": "Kui Mari Tartusse jõudis, ootas Anna teda bussijaamas. Nad tahtsid minna muuseumisse, kuid uksele oli pandud teade: veerikke tõttu on muuseum täna suletud. Anna pakkus, et nad võiksid hoopis botaanikaaeda minna. Mari oli nõus, sest ilm oli soe. Nad ostsid lähedal asuvast poest vett ja jalutasid aeda. Tagasisõidupilet oli Maril juba olemas. Ta pani telefoni meeldetuletuse, et jõuda õhtul õigeks ajaks bussi peale.\n\nAias kohtasid nad vabatahtlikku giidi, kes pakkus lühikest ringkäiku. Mari tahtis kohe nõustuda, kuid Anna küsis kõigepealt, kui kaua see kestab. Selgus, et tavapärane ringkäik võtaks poolteist tundi. Kuna Maril oli õhtune buss, palusid nad näidata ainult kasvuhooneid. Giid oli nõus ja selgitas, millist osa aiast nad seekord ei näe.\n\nMari arvas hiljem, et muuseumi sulgemine polnud päeva rikkunud. Samas ei järeldanud ta sellest, et ettevalmistus oleks mõttetu. Just varakult ostetud tagasisõidupilet ja tuttava abi võimaldasid neil uut plaani rahulikult valida. Anna soovitas järgmiseks külastuseks jätta ühe tegevuse vabaks, mitte täita kogu päeva täpsete kellaaegadega. Nad leppisid kokku, et enne muuseumi juurde minekut kontrollivad selle lahtiolekut uuesti.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-3-part2-q1",
+     "type": "choice",
+     "prompt_et": "Miks oli muuseum suletud?",
+     "options": [
+      "Veerikke tõttu.",
+      "Pühade tõttu.",
+      "Töötajate koosoleku tõttu."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Veerikke tõttu."
+    },
+    {
+     "id": "r-expand-3-part2-q2",
+     "type": "choice",
+     "prompt_et": "Kuidas Mari püüdis hilinemist vältida?",
+     "options": [
+      "Pani telefoni meeldetuletuse.",
+      "Ostis uue pileti.",
+      "Läks kohe bussijaama tagasi."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Pani telefoni meeldetuletuse."
+    },
+    {
+     "id": "r-expand-3-part2-q3",
+     "type": "tf",
+     "prompt_et": "Sõbrad läksid botaanikaaeda.",
+     "answer": true,
+     "explanation_ru": "Утверждение подтверждается текстом."
+    },
+    {
+     "id": "r-expand-3-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks küsis Anna ringkäigu kestust?",
+     "options": [
+      "Et sobitada uus tegevus olemasoleva ajakavaga.",
+      "Et vältida giidiga kohtumist.",
+      "Et tõestada, et aed on suletud."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et sobitada uus tegevus olemasoleva ajakavaga."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-4-part2",
+   "parent_id": "r-expand-4",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Vale tellimus",
+   "title_ru": "Продолжение: Кафе: перепутанный заказ",
+   "text_et": "Kati tellis kohvikus köögiviljasupi ja tee. Teenindaja tõi talle aga kanasupi. Kati ütles viisakalt, et tema tellis teise supi, sest ta ei söö liha. Teenindaja vabandas ja viis kausi tagasi. Köögiviljasupp oli otsa saanud. Katile pakuti sama hinnaga salatit ning ta nõustus. Arvet kontrollides nägi Kati, et sinna oli lisatud ka kohv. Teenindaja parandas arve enne maksmist. Kati tänas teda abi eest.\n\nHiljem palus kohviku juhataja Katil juhtunut täpsemalt kirjeldada. Kati rõhutas, et teda ei häirinud üksnes vale roog, vaid teadmatus, kas tema erisoov jõudis kööki. Teenindaja tunnistas, et oli tellimuse kiirustades suuliselt edasi andnud. Juhataja otsustas, et erisoovid tuleb edaspidi märkida tellimussüsteemi, mitte loota ainult mälule.\n\nKati ei soovinud juhtunust pikka avalikku vaidlust. Ta pidas piisavaks, et viga tunnistati, arve parandati ning pakuti sobiv alternatiiv. See ei tähendanud tema arvates, et igasugune eksimus oleks tähtsusetu. Usaldus taastub siis, kui klient saab aru, mida muudeti ja miks sama viga vähem tõenäoliselt kordub. Juhataja tänas konkreetse tagasiside eest, sest üldine hinnang, et teenindus oli halb, poleks aidanud vea kohta kindlaks teha.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-4-part2-q1",
+     "type": "choice",
+     "prompt_et": "Miks Kati kanasuppi ei soovinud?",
+     "options": [
+      "Ta ei söö liha.",
+      "Supp oli külm.",
+      "Tal polnud raha."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Ta ei söö liha."
+    },
+    {
+     "id": "r-expand-4-part2-q2",
+     "type": "choice",
+     "prompt_et": "Millal parandati arve?",
+     "options": [
+      "Enne maksmist.",
+      "Järgmisel päeval.",
+      "Pärast kohviku sulgemist."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Enne maksmist."
+    },
+    {
+     "id": "r-expand-4-part2-q3",
+     "type": "tf",
+     "prompt_et": "Kati sai lõpuks köögiviljasuppi.",
+     "answer": false,
+     "explanation_ru": "Текст сообщает обратное; сопоставьте действия и их результат."
+    },
+    {
+     "id": "r-expand-4-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks oli konkreetne tagasiside juhatajale kasulik?",
+     "options": [
+      "See aitas leida tellimuse edastamise puuduse.",
+      "See võimaldas kliendi erisoovi eirata.",
+      "See tõestas, et arve oli algusest peale õige."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: See aitas leida tellimuse edastamise puuduse."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-5-part2",
+   "parent_id": "r-expand-5",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Vihmane matkapäev",
+   "title_ru": "Продолжение: Поход: дождь и новый маршрут",
+   "text_et": "Reede hommikul hakkas tugevalt sadama. Loodusõpetaja otsustas pika metsaraja asemel valida lühema tee järve äärde. Ta selgitas, et märjal laudteel tuleb kõndida aeglaselt. Õpilased panid vihmajoped selga ja pakkisid telefonid kilekottidesse. Järve juures mõõtsid nad vee temperatuuri ning tegid märkmeid. Lõunapausi ajal jäi sadu järele. Kuigi matk oli plaanitust lühem, said kõik oma vaatlusülesanded tehtud. Koolis koostasid õpilased tulemustest ühise plakati.\n\nPlakati tegemisel tekkis vaidlus selle üle, kas vihm oli vaatlusi pigem seganud või rikastanud. Üks rühm oli märganud rajal vähem inimesi, teine aga rohkem tigusid. Õpetaja palus mitte teha ühe päeva põhjal üldist järeldust kogu metsa kohta. Vaatlustulemus sõltub nii ilmast, ajast kui ka sellest, kuhu vaatleja tähelepanu suunab.\n\nÕpilased lisasid plakati juurde eraldi osa piirangutest. Seal märgiti, et kõiki rajalõike ei läbitud ja osa liike jäi määramata. Mõni kartis, et selline selgitus muudab töö nõrgemaks. Õpetaja vastas, et usaldusväärne ülevaade näitab ka seda, mida andmete põhjal öelda ei saa. Järgmiseks matkaks kavandati sama järve juurde uus vaatlus teistsuguse ilmaga, et võrrelda tulemusi, mitte lihtsalt kinnitada esimest muljet.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-5-part2-q1",
+     "type": "choice",
+     "prompt_et": "Miks valiti lühem tee?",
+     "options": [
+      "Tugeva vihma tõttu.",
+      "Buss hilines.",
+      "Õpilased unustasid vee."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Tugeva vihma tõttu."
+    },
+    {
+     "id": "r-expand-5-part2-q2",
+     "type": "choice",
+     "prompt_et": "Mida tehti pärast matka koolis?",
+     "options": [
+      "Koostati ühine plakat.",
+      "Mindigi kohe koju.",
+      "Vaadati filmi."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Koostati ühine plakat."
+    },
+    {
+     "id": "r-expand-5-part2-q3",
+     "type": "tf",
+     "prompt_et": "Vaatlusülesanded jäid tegemata.",
+     "answer": false,
+     "explanation_ru": "Текст сообщает обратное; сопоставьте действия и их результат."
+    },
+    {
+     "id": "r-expand-5-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks lisati plakatile vaatluse piirangud?",
+     "options": [
+      "Et vältida andmetest kaugemale ulatuvaid järeldusi.",
+      "Et varjata kõiki tulemusi.",
+      "Et tõestada, et vihmaga pole midagi võimalik vaadelda."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et vältida andmetest kaugemale ulatuvaid järeldusi."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-6-part2",
+   "parent_id": "r-expand-6",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Uus treeninguaeg",
+   "title_ru": "Продолжение: Плавание: новое расписание",
+   "text_et": "Ujulas alustati remonti ja neljapäevane trenn viidi ajutiselt reedele. Jüri ei saanud reedel osaleda, sest tal oli muusikakool. Ta kirjutas treenerile ning küsis, kas võiks tulla kolmapäevase rühmaga. Treener lubas, kui rühmas on vaba koht. Teisipäeva õhtul sai Jüri kinnituse. Ta märkis uue aja kalendrisse ja teatas vanematele. Muudatus kehtib ainult kaks nädalat. Pärast remonti taastub endine ajakava.\n\nUue rühmaga liitudes märkas Jüri, et sama harjutust selgitati teistmoodi. Ta ei hakanud kohe vaidlema, vaid küsis, millisele oskusele uus treener tähelepanu pöörab. Selgus, et harjutuse eesmärk oli parandada hingamise rütmi, mitte saavutada võimalikult suurt kiirust. Jüri pidi seega oma tavapärast tulemusnäitajat muutma.\n\nPärast trenni kirjutas ta päevikusse, mis oli raske ja millest ta paremini aru sai. Ta ei võrrelnud eri rühmade aegu otse, sest ülesanded polnud samad. Kodus selgitas ta vanematele, et ajutine muudatus tõi lisaks ebamugavusele ka uue kogemuse. Samas palus ta kalendris alles hoida endise ajakava, et pärast remonti ei tekiks segadust. Ühekordne kinnitus ei asendanud tema arvates vajadust järgmise nädala teated uuesti üle vaadata.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-6-part2-q1",
+     "type": "choice",
+     "prompt_et": "Miks Jüri reedel trenni ei saa?",
+     "options": [
+      "Tal on muusikakool.",
+      "Ta sõidab reisile.",
+      "Ta on haige."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Tal on muusikakool."
+    },
+    {
+     "id": "r-expand-6-part2-q2",
+     "type": "choice",
+     "prompt_et": "Kui kaua kehtib muudatus?",
+     "options": [
+      "Kaks nädalat.",
+      "Kaks kuud.",
+      "Terve aasta."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Kaks nädalat."
+    },
+    {
+     "id": "r-expand-6-part2-q3",
+     "type": "tf",
+     "prompt_et": "Treener lubas Jüril kohe kindlasti kolmapäeval tulla, sõltumata vabast kohast.",
+     "answer": false,
+     "explanation_ru": "Текст сообщает обратное; сопоставьте действия и их результат."
+    },
+    {
+     "id": "r-expand-6-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks ei võrrelnud Jüri kahe rühma aegu otse?",
+     "options": [
+      "Harjutuste eesmärgid ja ülesanded erinesid.",
+      "Ta ei osanud kella vaadata.",
+      "Treener keelas päeviku kasutamise."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Harjutuste eesmärgid ja ülesanded erinesid."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-7-part2",
+   "parent_id": "r-expand-7",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Naabrite kokkulepe",
+   "title_ru": "Продолжение: Новая квартира: договорённость с соседями",
+   "text_et": "Liisi pere tahtis laupäeval uude korterisse riiuleid paigaldada. Isa pani trepikotta teate, et puurimine kestab kella kümnest kaheteistkümneni. Alumine naaber palus tööga tund aega hiljem alustada, sest tema laps magab hommikul kauem. Pere nõustus. Nad panid kõigepealt kokku laua, milleks polnud vaja puurida. Riiulid said valmis kella üheks. Õhtul tänas naaber neid arvestamise eest. Liis arvas, et edaspidi võiks suurematest töödest alati ette teatada.\n\nJärgmisel ühistu koosolekul tuli jutuks, kas remontidest peaks kõigile elanikele ühtemoodi teatama. Osa naabreid kasutas maja vestlusrühma, teised aga ei soovinud sotsiaalmeediaga liituda. Liisi isa pakkus, et tähtsam info pannakse alati ka trepikoja teadetetahvlile. Vestlusrühm võiks seda täiendada, kuid mitte asendada.\n\nArutelu käigus märgati, et ebamugavust ei tekita üksnes müra tugevus. Mõne inimese jaoks on kõige raskem teadmatus, kui kaua töö kestab. Seepärast lepiti kokku, et teates nimetatakse kavandatud algus ja lõpp ning kontakt, kellelt muudatuste kohta küsida. Keegi ei lubanud, et ühtegi ootamatut viivitust enam ei tule. Kokkuleppe mõte oli muuta suhtlus selgemaks ning anda naabritele võimalus oma päeva ette planeerida.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-7-part2-q1",
+     "type": "choice",
+     "prompt_et": "Mis kell alustati puurimist?",
+     "options": [
+      "Kell üksteist.",
+      "Kell kümme.",
+      "Kell üheksa."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Kell üksteist."
+    },
+    {
+     "id": "r-expand-7-part2-q2",
+     "type": "choice",
+     "prompt_et": "Mida tehti enne puurimist?",
+     "options": [
+      "Pandi laud kokku.",
+      "Värviti trepikoda.",
+      "Mindi poodi."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Pandi laud kokku."
+    },
+    {
+     "id": "r-expand-7-part2-q3",
+     "type": "tf",
+     "prompt_et": "Pere arvestas naabri palvega.",
+     "answer": true,
+     "explanation_ru": "Утверждение подтверждается текстом."
+    },
+    {
+     "id": "r-expand-7-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks ei piisa ainult maja vestlusrühmast?",
+     "options": [
+      "Kõik elanikud ei kasuta seda.",
+      "Paberil teated on alati keelatud.",
+      "Vestlusrühmas ei saa kellaaegu kirjutada."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Kõik elanikud ei kasuta seda."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-8-part2",
+   "parent_id": "r-expand-8",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Üllatus vanaemale",
+   "title_ru": "Продолжение: Семейный праздник: сюрприз",
+   "text_et": "Pühapäeval jõudis pere vanaema juurde õigel ajal. Lapsed olid lisaks kaardile valmistanud väikese fotoalbumi. Iga pildi alla kirjutasid nad ühe ühise mälestuse. Vanaema vaatas albumit kaua ja jutustas lugusid oma lapsepõlvest. Isa tahtis lood telefoniga salvestada, kuid küsis enne vanaemalt luba. Vanaema oli nõus. Pere otsustas järgmisel kohtumisel vanad fotod koos üle vaadata ja nimed üles kirjutada, sest kõiki inimesi ei tundnud lapsed veel ära.\n\nFotode vaatamisel selgus, et sama sündmust mäletati erinevalt. Vanaema arvas, et üks pilt on tehtud suvel, isa meenutas aga sügisest koolivaheaega. Lapsed pakkusid, et kuupäeva võiks järeldada riietusest, kuid vanaema ütles, et jaheda ilmaga kanti sooje riideid ka suvel. Nad otsustasid ebakindla kuupäeva juurde küsimärgi panna.\n\nIsa tegi albumist digikoopia, kuid ei laadinud seda kohe avalikku keskkonda. Enne lepiti kokku, kes pilte näeb ja milliseid lugusid võib edasi jagada. Üks pereliige soovis, et tema lapsepõlvefotot väljaspool peret ei näidataks. Seda soovi arvestati, kuigi pilt meeldis teistele väga. Lastele jäi meelde, et perekonnaloo talletamine ei tähenda iga mälestuse avalikuks muutmist. Ka puudulikult teada lugu võib alles hoida, kui ebaselged kohad ausalt ära märkida.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-8-part2-q1",
+     "type": "choice",
+     "prompt_et": "Mida kirjutasid lapsed fotode alla?",
+     "options": [
+      "Ühiseid mälestusi.",
+      "Retsepte.",
+      "Poe hindu."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Ühiseid mälestusi."
+    },
+    {
+     "id": "r-expand-8-part2-q2",
+     "type": "choice",
+     "prompt_et": "Miks tahetakse fotodele nimed lisada?",
+     "options": [
+      "Lapsed ei tunne kõiki inimesi ära.",
+      "Fotod on uued.",
+      "Album läheb müüki."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Lapsed ei tunne kõiki inimesi ära."
+    },
+    {
+     "id": "r-expand-8-part2-q3",
+     "type": "tf",
+     "prompt_et": "Isa salvestas vanaema juttu ilma luba küsimata.",
+     "answer": false,
+     "explanation_ru": "Текст сообщает обратное; сопоставьте действия и их результат."
+    },
+    {
+     "id": "r-expand-8-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks jäeti ühe kuupäeva juurde küsimärk?",
+     "options": [
+      "Olemasolevad mälestused ei võimaldanud kindlat vastust.",
+      "Pilt oli kindlasti võltsitud.",
+      "Keegi ei soovinud enam albumit vaadata."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Olemasolevad mälestused ei võimaldanud kindlat vastust."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-9-part2",
+   "parent_id": "r-expand-9",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Pärast vastuvõttu",
+   "title_ru": "Продолжение: Запись к врачу: после приёма",
+   "text_et": "Peeter jõudis perearstikeskusse kümme minutit enne kokkulepitud aega. Registratuuris selgus, et tema telefoninumber oli muutunud, kuid andmeid polnud uuendatud. Peeter andis uue numbri. Pärast vastuvõttu küsis ta, kuidas saada kooli jaoks tõend. Õde selgitas, et selle kohta tuleb saata keskusele sõnum. Kodus vaatas Peeter keskuse veebilehelt üle, kuhu kirjutada. Ta ei saatnud isikuandmeid juhuslikule aadressile, vaid kasutas lehel näidatud kanalit.\n\nVormi täites märkas Peeter, et osa andmeid oli juba olemas. Ta kontrollis neid siiski enne saatmist, sest varasem telefoninumber oli näidanud, et salvestatud info ei pruugi olla ajakohane. Tõendi kohta esitas ta ainult vajalikud andmed ega lisanud oma kirjale kogu vestluse kirjeldust. Kui saatmise järel saabus automaatne kinnitus, salvestas ta selle, kuid ei pidanud seda veel valmis tõendiks.\n\nJärgmisel päeval küsis klassijuhataja, millal dokument saabub. Peeter vastas, et ta on taotluse saatnud, ent lõplikku vastust pole veel saanud. Ta ei tahtnud lubada tähtaega, mida keskus polnud kinnitanud. Seejärel otsis ta veebilehelt tavapärase vastamisaja. Kui see aeg oleks möödunud, kavatses ta küsida taotluse seisu sama ametliku kanali kaudu, mitte saata järjest uusi taotlusi.",
+   "explanation_ru": "Продолжение знакомой истории. Найдите причину, действие и результат; ответы определяются только этим текстом.",
+   "questions": [
+    {
+     "id": "r-expand-9-part2-q1",
+     "type": "choice",
+     "prompt_et": "Millised andmed olid vananenud?",
+     "options": [
+      "Telefoninumber.",
+      "Nimi.",
+      "Sünniaeg."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Telefoninumber."
+    },
+    {
+     "id": "r-expand-9-part2-q2",
+     "type": "choice",
+     "prompt_et": "Miks Peeter keskuse veebilehte vaatas?",
+     "options": [
+      "Et leida õige suhtluskanal.",
+      "Et osta pilet.",
+      "Et vaadata tunniplaani."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ следует из текста: Et leida õige suhtluskanal."
+    },
+    {
+     "id": "r-expand-9-part2-q3",
+     "type": "tf",
+     "prompt_et": "Peeter jõudis vastuvõtule hilinemisega.",
+     "answer": false,
+     "explanation_ru": "Текст сообщает обратное; сопоставьте действия и их результат."
+    },
+    {
+     "id": "r-expand-9-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Miks ei pidanud Peeter automaatset kinnitust valmis tõendiks?",
+     "options": [
+      "Kinnitus näitas saatmist, mitte taotluse sisulist täitmist.",
+      "Keskus oli taotluse kindlasti tagasi lükanud.",
+      "Õpetaja ei vajanud dokumenti."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Kinnitus näitas saatmist, mitte taotluse sisulist täitmist."
+    }
+   ]
+  },
+  {
+   "id": "r-02-part2",
+   "parent_id": "r-02",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Pärast külaskäiku",
+   "title_ru": "Продолжение: письмо после поездки",
+   "text_et": "Tere, Kadri! Aitäh toreda laupäeva eest. Vanaema pirukad olid väga maitsvad. Kõige rohkem meeldis mulle metsas jalutada, kuigi mu kingad said poriseks. Märkasin kodus, et mu soe sall jäi teie esikusse. Kas sa saaksid selle esmaspäeval kooli kaasa võtta? Kui mitte, võin teisipäeval pärast tunde ise läbi tulla. Saadan sulle täna õhtul meie ühised fotod. Palun küsi enne vanavanematelt, kas võin ühe neist kooli näitusel kasutada. Nägemist! Liisa\n\nMõtlesin ka meie vestlusele vanaema lugudest. Algul tahtsin kirjutada ainult naljakamatest juhtumitest, kuid hiljem sain aru, et nii jääks tema elust üsna ühekülgne mulje. Kui teeme lugudest väikese koolitöö, võiksime eristada vanaema enda sõnu oma selgitustest. Samuti tuleks temalt küsida, milliseid teemasid ta ei soovi väljaspool peret jagada.\n\nÕpetaja lubas näitusel kasutada nii fotosid kui ka lühikesi tekstikatkeid. Ta palus siiski iga materjali juurde märkida, kust see pärineb. Ma ei taha panna pildi alla täpset aastaarvu, kui me pole selles kindlad. Võiksime kirjutada ligikaudse aja ja selgitada, mille põhjal seda arvame. Nii ei näeks töö välja täiesti veatu, kuid lugejal oleks lihtsam aru saada, mis on teada ja mis veel kontrollimist vajab.",
+   "explanation_ru": "Продолжение письма Kadri. Различайте просьбу, запасной вариант и действие, для которого ещё требуется разрешение.",
+   "questions": [
+    {
+     "id": "r-02-part2-q1",
+     "type": "choice",
+     "prompt_et": "Mis jäi esikusse?",
+     "options": [
+      "Liisa sall.",
+      "Kadri jope.",
+      "Liisa telefon."
+     ],
+     "answer": 0,
+     "explanation_ru": "Liisa пишет: mu soe sall jäi teie esikusse."
+    },
+    {
+     "id": "r-02-part2-q2",
+     "type": "choice",
+     "prompt_et": "Millal saab Liisa ise salli järele tulla?",
+     "options": [
+      "Teisipäeval pärast tunde.",
+      "Esmaspäeva hommikul.",
+      "Pühapäeva õhtul."
+     ],
+     "answer": 0,
+     "explanation_ru": "Запасной вариант: teisipäeval pärast tunde ise läbi tulla."
+    },
+    {
+     "id": "r-02-part2-q3",
+     "type": "tf",
+     "prompt_et": "Liisal on juba luba fotot näitusel kasutada.",
+     "answer": false,
+     "explanation_ru": "Она просит сначала спросить разрешение у бабушки и дедушки."
+    },
+    {
+     "id": "r-02-part2-inference-b1",
+     "type": "choice",
+     "level": "B1",
+     "prompt_et": "Mida peab Liisa koolitöö juures oluliseks?",
+     "options": [
+      "Allikate ja ebakindlate andmete selget eristamist.",
+      "Kõigi oletuste esitamist kindlate faktidena.",
+      "Ainult naljakate lugude valimist."
+     ],
+     "answer": 0,
+     "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Allikate ja ebakindlate andmete selget eristamist."
+    }
+   ]
+  },
+  {
+   "id": "r-b2-21",
+   "topic": "school",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Telefonivaba päev: katse või keeld?",
+   "title_ru": "День без телефонов: эксперимент или запрет?",
+   "text_et": "Kui õpilasesindus pakkus välja telefonivaba koolipäeva, peeti seda esialgu lihtsaks lahenduseks. Telefonid jääksid hommikul klassi lukustatud kappi ning õpilased saaksid need pärast viimast tundi tagasi. Ettepaneku toetajad lootsid, et vahetundides hakatakse rohkem suhtlema ja tundides on vähem kõrvalisi katkestusi. Vastased kartsid aga, et kõigile kehtiv piirang karistab ka neid, kes kasutavad telefoni vastutustundlikult.\n\nArutelu muutus sisulisemaks siis, kui küsiti, millist probleemi tegelikult lahendada tahetakse. Ühe õpetaja jaoks oli peamine mure salaja filmimine, teise jaoks tähelepanu hajumine. Need pole päris sama probleem ning sama abinõu ei pruugi mõlemat ühtemoodi lahendada. Õpilased tõid omakorda näiteid olukordadest, kus telefon aitab õppida või võimaldab pärast kooli muutunud plaanidest teatada.\n\nLõpuks lepiti kokku kahenädalases katses. Telefonid jäid kotti, mitte ühisesse kappi. Õpetaja võis lubada neid kindla ülesande täitmiseks kasutada. Enne katset ja selle lõpus küsiti nii õpilastelt kui ka õpetajatelt, kui sageli töö katkes ning kas vahetundide suhtlus muutus. Samuti pandi kirja erandid ja põhjused, miks kokkulepet mõnikord ei järgitud.\n\nTulemused ei olnud ühesugused. Mõnes klassis märgati rahulikumat õhkkonda, teises ei muutunud palju. Õpilasesindus hoiatas, et üksikute muljete põhjal ei saa veel väita, nagu oleks probleem lõplikult lahendatud. Ka küsitluses osalenute arv erines klassiti, mistõttu polnud õiglane tulemusi lihtsalt järjestada.\n\nKatse korraldajad soovitasid enne püsiva reegli kehtestamist eristada õppetööd toetavat kasutust harjumuspärasest sirvimisest. Nende järeldus ei olnud, et piiranguid pole vaja. Pigem peaks iga piirang vastama selgelt sõnastatud eesmärgile ning selle mõju tuleks hiljem uuesti hinnata. Muidu võib nähtav ja kergesti kontrollitav reegel asendada arutelu selle üle, mida õpilased tegelikult vajavad.\n\nVeel üks õpilane märkis, et arutellu tuleks kaasata ka need, kes küsitlusele ei vastanud. Nende vaikimist ei saa tõlgendada rahuloluna. Seetõttu kavandati järgmisele kohtumisele võimalus anda tagasisidet väikestes rühmades. Korraldajad lootsid, et nii jõuavad arutelusse ka tagasihoidlikumad õpilased, kelle kogemused võivad nähtavamate osalejate omadest erineda. Ka see ettepanek vajab katsetamist, mitte üksnes heakskiitvat otsust.",
+   "explanation_ru": "Учебный текст B2: сопоставляйте позиции, основания и ограничения выводов. Уровень — авторская оценка, требующая преподавательской проверки.",
+   "questions": [
+    {
+     "id": "r-b2-21-q1",
+     "type": "choice",
+     "prompt_et": "Miks muutus arutelu probleemi täpsustamisel sisulisemaks?",
+     "options": [
+      "Selgus, et erinevad mured võivad vajada erinevaid abinõusid.",
+      "Selgus, et kõige olulisem on õpetajate üksmeel sõltumata õpilaste kogemusest.",
+      "Selgus, et erinevad mured tuleb kõigepealt lahendada ühe üldise keeluga."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Selgus, et erinevad mured võivad vajada erinevaid abinõusid."
+    },
+    {
+     "id": "r-b2-21-q2",
+     "type": "choice",
+     "prompt_et": "Mille poolest erines katse esialgsest ettepanekust?",
+     "options": [
+      "Telefonid jäid kotti ja õppeülesandeks lubati erandeid.",
+      "Telefonid jäid kotti, kuid õppetööga seotud kasutust ei eristatud muust kasutusest.",
+      "Ühise hoiukoha asemel lubati õpilastel iseseisvalt otsustada, millal piirang kehtib."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Telefonid jäid kotti ja õppeülesandeks lubati erandeid."
+    },
+    {
+     "id": "r-b2-21-q3",
+     "type": "choice",
+     "prompt_et": "Miks ei saa klasside tulemusi lihtsalt järjestada?",
+     "options": [
+      "Vastajate arv ja klasside olukord erinesid.",
+      "Katse kestus erines igas klassis ning osa klasse alustas alles küsitluse järel.",
+      "Klasside tulemused kajastasid ainult õpetajate, mitte õpilaste tähelepanekuid."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Vastajate arv ja klasside olukord erinesid."
+    },
+    {
+     "id": "r-b2-21-q4",
+     "type": "choice",
+     "prompt_et": "Milline seisukoht võtab autori järelduse kõige paremini kokku?",
+     "options": [
+      "Reegli eesmärk peab olema selge ning mõju kontrollitav.",
+      "Ühtne reegel on põhjendatud, kui seda on lihtne kontrollida, isegi kui mõju jääb teadmata.",
+      "Õpilaste rahulolu on piirangu hindamiseks piisav ning muid andmeid pole vaja."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Reegli eesmärk peab olema selge ning mõju kontrollitav."
+    },
+    {
+     "id": "r-b2-21-q5",
+     "type": "tf",
+     "prompt_et": "Katse korraldajad soovitasid kehtestada püsiva reegli kohe, sest tulemused olid kõigis klassides võrreldavad.",
+     "answer": false,
+     "explanation_ru": "Неверно: результаты различались, число ответивших тоже; предложено дополнительно оценить эффект."
+    }
+   ]
+  },
+  {
+   "id": "r-b2-22",
+   "topic": "city",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Kelle jaoks on linnatänav?",
+   "title_ru": "Для кого городская улица?",
+   "text_et": "Linnaosa peatänava ümberkorraldamise plaan tekitas rohkem vaidlusi, kui projekteerijad olid oodanud. Kõnniteid sooviti laiendada, lisada puudega puhkealasid ning muuta üks autode sõidurada rattateeks. Plaani esitledes rõhutati turvalisust ja meeldivamat linnaruumi. Mitmed kohalikud ettevõtjad nägid aga eelkõige kaotatud parkimiskohti ning kartsid, et klientidel muutub nende juurde tulemine keerulisemaks.\n\nAvalikul arutelul selgus, et ka sõna „ligipääsetavus” tähendas osalejatele erinevaid asju. Poeomanik mõtles võimalusele autoga ukse ette sõita. Ratastoolikasutaja rääkis kõrgetest äärekividest ja kitsast läbipääsust. Lapsevanem kirjeldas ristmikku, kus roheline tuli kestis väikese lapsega ületamiseks liiga lühikest aega. Ükski neist muredest ei kadunud pelgalt teise osaleja seisukohta ümber lükates.\n\nLinn otsustas enne püsivat ehitust teha ajutise katse. Mõneks kuuks paigaldati teisaldatavad piirded ja istumiskohad. Samal ajal loendati jalakäijaid ning jälgiti, kuidas toimib kauba kohaletoimetamine. Ettevõtjatel paluti võrrelda käivet sarnase perioodiga, kuid rõhutati, et müügitulemust mõjutavad ka ilm, hinnad ja hooajalised muutused. Üksnes ühe vaikse nädala põhjal ei tahetud teha lõplikke otsuseid.\n\nKatse tõi esile probleemi, mida esialgne joonis hästi ei näidanud: hommikune kaubaauto peatus blokeeris uue rattatee. Lahenduseks pakuti kindla kasutusajaga laadimisala. Mõned elanikud pidasid seda kompromissi liiga keeruliseks, teised nägid selles võimalust eri vajadusi paremini sobitada.\n\nArutelu ei lõppenud täieliku üksmeelega. See ei tähendanud siiski, et katse oleks läbi kukkunud. Võrreldes algusega osati täpsemalt öelda, milline muudatus kellele raskusi valmistab ja millist lahendust tasub edasi proovida. Hea tänav ei pea kõigile täpselt sama võimaldama, kuid otsuste tegemisel peab olema arusaadav, kelle vajadusi arvestati ning miks mõni soov jäi täitmata.\n\nArutelule järgnenud kirjalikus kokkuvõttes eristati juba tehtud otsuseid küsimustest, mis jäid lahtiseks. See oli oluline, sest koosolekul kõlanud ettepanek võis osalejatele hiljem meenuda kinnitatud lubadusena. Linn lubas avaldada ka põhjendused nende muudatuste kohta, mida ei kavandata. Nii saavad elanikud kontrollida, kas nende seisukoht jõudis otsustajateni, isegi juhul, kui lõplik lahendus nende eelistusega ei ühti.",
+   "explanation_ru": "Учебный текст B2: сопоставляйте позиции, основания и ограничения выводов. Уровень — авторская оценка, требующая преподавательской проверки.",
+   "questions": [
+    {
+     "id": "r-b2-22-q1",
+     "type": "choice",
+     "prompt_et": "Mida näitavad erinevad arusaamad ligipääsetavusest?",
+     "options": [
+      "Sama üldmõiste võib varjata erinevaid praktilisi vajadusi.",
+      "Eri vajadused tuleks järjestada selle järgi, kui palju neid arutelul mainiti.",
+      "Sama mõiste kasutamine näitab, et erimeelsus puudutab üksnes sõnastust."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Sama üldmõiste võib varjata erinevaid praktilisi vajadusi."
+    },
+    {
+     "id": "r-b2-22-q2",
+     "type": "choice",
+     "prompt_et": "Miks ei piisa ühest vaikse müügiga nädalast?",
+     "options": [
+      "Müüki võivad mõjutada mitmed ümberkorraldusest sõltumatud tegurid.",
+      "Ümberkorralduse mõju saab hinnata ainult siis, kui kõik poed teatavad täpselt sama tulemuse.",
+      "Majandusliku mõju hindamine tuleks täielikult asendada jalakäijate loendamisega."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Müüki võivad mõjutada mitmed ümberkorraldusest sõltumatud tegurid."
+    },
+    {
+     "id": "r-b2-22-q3",
+     "type": "choice",
+     "prompt_et": "Mida näitas kaubaauto peatumise juhtum?",
+     "options": [
+      "Tegelik kasutus võib tuua esile joonisel varju jäänud vastuolusid.",
+      "Esialgses plaanis tuleks säilitada kõik detailid, et katsetulemused oleksid võrreldavad.",
+      "Ajutine lahendus osutus kasutuks, sest kõigi osalejate vajadused olid juba teada."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Tegelik kasutus võib tuua esile joonisel varju jäänud vastuolusid."
+    },
+    {
+     "id": "r-b2-22-q4",
+     "type": "choice",
+     "prompt_et": "Kuidas hindab autor üksmeele puudumist?",
+     "options": [
+      "See ei muuda katset kasutuks, kui probleemidest saadakse täpsemalt aru.",
+      "Katset võib jätkata vaid juhul, kui kõik osalejad lepivad sama lahendusega.",
+      "Üksmeele puudumine näitab, et eri kasutajate vajadusi ei ole võimalik kirjeldada."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: See ei muuda katset kasutuks, kui probleemidest saadakse täpsemalt aru."
+    },
+    {
+     "id": "r-b2-22-q5",
+     "type": "tf",
+     "prompt_et": "Autori arvates võib katse olla kasulik ka siis, kui see ei lõpe täieliku üksmeelega.",
+     "answer": true,
+     "explanation_ru": "Верно: автор подчёркивает, что эксперимент уточнил потребности и проблемы, хотя единогласия не было."
+    }
+   ]
+  },
+  {
+   "id": "r-b2-23",
+   "topic": "nature",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Parandada või asendada?",
+   "title_ru": "Починить или заменить?",
+   "text_et": "Kooli keskkonnaring korraldas töötoa, kuhu võis tuua katkisi igapäevaesemeid. Idee oli lihtne: enne uue asja ostmist võiks uurida, kas vana saab parandada. Korraldajad rõhutasid siiski, et töötuba ei ole remonditeenus ning iga eset ei saa kohapeal korda teha. Keerulisemad seadmed jäid spetsialistidele; õpilased tegelesid juhendaja abiga eelkõige lihtsate ja ohutute töödega.\n\nEsimesel kohtumisel tõi üks õpilane katkise lukuga koti. Uue koti ostmine tundus talle lihtsam, sest paranduse hinda ta ei teadnud. Juhendaja palus enne otsust võrrelda koti ülejäänud seisukorda, vajalikke materjale ja tööle kuluvat aega. Selgus, et luku vahetamine maksaks vähem kui samaväärne uus kott. Õpilane otsustas parandamise kasuks, kuid märkis, et see poleks olnud võimalik, kui sobivat lukku poleks müügil olnud.\n\nTeise eseme puhul jõuti teistsugusele järeldusele. Vana lambi varuosa polnud enam saadaval ning isetehtud lahendus poleks olnud piisavalt turvaline. Korraldajad ei nimetanud asendamist läbikukkumiseks. Nende sõnul muutub keskkonnahoid loosungiks, kui iga parandust peetakse heaks sõltumata selle riskidest või tulemusest. Tähtis on teha põhjendatud valik, mitte näidata, et ühest põhimõttest ei taganeta kunagi.\n\nPärast töötuba küsiti osalejatelt, kas nende ostukäitumine muutus. Mõni hakkas enne ostmist uurima varuosade saadavust, teine leidis, et tal pole remondi korraldamiseks piisavalt aega. Korraldajad tunnistasid, et teadlikkus üksi ei kõrvalda hinna ja teenuste kättesaadavusega seotud takistusi.\n\nJärgmiseks kavandati kaardistada lähedal asuvad parandusteenused ning panna kirja, mida iga koht vastu võtab. Nimekirja juurde taheti lisada viimase kontrollimise kuupäev, sest teenused ja hinnad võivad muutuda. Nii loodeti anda inimestele kasutatav abivahend, selle asemel et piirduda üldise soovitusega vähem tarbida.\n\nÕpilased arutasid ka seda, kuidas oma tulemusi teistele tutvustada. Nad ei tahtnud näidata ainult õnnestunud parandusi, sest nii tekiks eksitav pilt, nagu oleks iga katkine ese hõlpsasti taastatav. Näitusele lisati ka pooleli jäänud töö koos selgitusega, milline takistus tekkis. Selline aus ülevaade aitas järgmise töötoa osalejatel paremini hinnata, mida kaasa tuua ja millist abi kohapealt oodata.",
+   "explanation_ru": "Учебный текст B2: сопоставляйте позиции, основания и ограничения выводов. Уровень — авторская оценка, требующая преподавательской проверки.",
+   "questions": [
+    {
+     "id": "r-b2-23-q1",
+     "type": "choice",
+     "prompt_et": "Miks võrreldi enne koti parandamist mitut asjaolu?",
+     "options": [
+      "Et otsus põhineks tegelikel võimalustel, mitte üksnes põhimõttel.",
+      "Et parandamise rahalist kasu pidada tähtsamaks ohutusest ja varuosade saadavusest.",
+      "Et tõendada ühe näite põhjal, et sama valik sobib kõigile katkistele esemetele."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Et otsus põhineks tegelikel võimalustel, mitte üksnes põhimõttel."
+    },
+    {
+     "id": "r-b2-23-q2",
+     "type": "choice",
+     "prompt_et": "Miks ei peetud lambi asendamist läbikukkumiseks?",
+     "options": [
+      "Ohutuks paranduseks puudus sobiv varuosa.",
+      "Korraldajad eelistasid vahetada välja kõik seadmed, mille parandamine võtab aega.",
+      "Uue eseme ostmise kasuks otsustati üksnes selle madalama hinna tõttu."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Ohutuks paranduseks puudus sobiv varuosa."
+    },
+    {
+     "id": "r-b2-23-q3",
+     "type": "choice",
+     "prompt_et": "Mida näitas osalejate tagasiside?",
+     "options": [
+      "Teadmistest ei piisa, kui praktilised takistused jäävad alles.",
+      "Takistused tekivad peamiselt osalejate vähesest teadlikkusest ning teenuste korraldus pole oluline.",
+      "Töötoa mõju saab hinnata selle põhjal, mitu inimest kohe samal päeval uue eseme ostis."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Teadmistest ei piisa, kui praktilised takistused jäävad alles."
+    },
+    {
+     "id": "r-b2-23-q4",
+     "type": "choice",
+     "prompt_et": "Miks sooviti teenuste nimekirjale kontrollimise kuupäeva?",
+     "options": [
+      "Et kasutaja saaks hinnata info ajakohasust.",
+      "Et kontrollimata teenused saaksid nimekirjas püsida sama usaldusväärsena kui äsja kontrollitud.",
+      "Et lugeja saaks kuupäeva järgi kindlaks teha, milline teenus on kõige odavam."
+     ],
+     "answer": 0,
+     "explanation_ru": "Вывод поддерживается аргументами текста: Et kasutaja saaks hinnata info ajakohasust."
+    },
+    {
+     "id": "r-b2-23-q5",
+     "type": "tf",
+     "prompt_et": "Töötoa korraldajad käsitlesid parandamisest loobumist alati keskkonnahoiu ebaõnnestumisena.",
+     "answer": false,
+     "explanation_ru": "Неверно: безопасное восстановление оказалось невозможным; автор допускает обоснованную замену."
     }
    ]
   }

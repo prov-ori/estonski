@@ -5060,6 +5060,1666 @@
    ],
    "answer": 2,
    "explanation_ru": "«Откуда (из внутри)?» → seest: kapi seest."
+  },
+  {
+   "id": "v-school-01-meaning",
+   "parent_id": "v-school-01",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: õpilane ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "ученик",
+    "учитель",
+    "домашнее задание",
+    "контрольная работа"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "õpilane — ученик. Пример: Meie klassis on kakskümmend õpilast. Перевод: В нашем классе двадцать учеников."
+  },
+  {
+   "id": "v-school-01-recall",
+   "parent_id": "v-school-01",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "ученик",
+   "answer": "õpilane",
+   "explanation_ru": "õpilane — ученик. Пример: Meie klassis on kakskümmend õpilast. Перевод: В нашем классе двадцать учеников."
+  },
+  {
+   "id": "v-school-02-meaning",
+   "parent_id": "v-school-02",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: õpetaja ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "учитель",
+    "ученик",
+    "домашнее задание",
+    "контрольная работа"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "õpetaja — учитель. Пример: Õpetaja seletab uut teemat. Перевод: Учитель объясняет новую тему."
+  },
+  {
+   "id": "v-school-02-recall",
+   "parent_id": "v-school-02",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "учитель",
+   "answer": "õpetaja",
+   "explanation_ru": "õpetaja — учитель. Пример: Õpetaja seletab uut teemat. Перевод: Учитель объясняет новую тему."
+  },
+  {
+   "id": "v-school-03-meaning",
+   "parent_id": "v-school-03",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: kodutöö ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "домашнее задание",
+    "ученик",
+    "учитель",
+    "контрольная работа"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "kodutöö — домашнее задание. Пример: Ma teen kodutööd pärast kooli. Перевод: Я делаю домашнее задание после школы."
+  },
+  {
+   "id": "v-school-03-recall",
+   "parent_id": "v-school-03",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "домашнее задание",
+   "answer": "kodutöö",
+   "explanation_ru": "kodutöö — домашнее задание. Пример: Ma teen kodutööd pärast kooli. Перевод: Я делаю домашнее задание после школы."
+  },
+  {
+   "id": "v-school-04-meaning",
+   "parent_id": "v-school-04",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: kontrolltöö ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "контрольная работа",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "kontrolltöö — контрольная работа. Пример: Homme on matemaatikas kontrolltöö. Перевод: Завтра по математике контрольная работа."
+  },
+  {
+   "id": "v-school-04-recall",
+   "parent_id": "v-school-04",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "контрольная работа",
+   "answer": "kontrolltöö",
+   "explanation_ru": "kontrolltöö — контрольная работа. Пример: Homme on matemaatikas kontrolltöö. Перевод: Завтра по математике контрольная работа."
+  },
+  {
+   "id": "v-school-05-meaning",
+   "parent_id": "v-school-05",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: vahetund ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "перемена",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "vahetund — перемена. Пример: Vahetunnis läheme kooli sööklasse. Перевод: На перемене мы идём в школьную столовую."
+  },
+  {
+   "id": "v-school-05-recall",
+   "parent_id": "v-school-05",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "перемена",
+   "answer": "vahetund",
+   "explanation_ru": "vahetund — перемена. Пример: Vahetunnis läheme kooli sööklasse. Перевод: На перемене мы идём в школьную столовую."
+  },
+  {
+   "id": "v-family-06-meaning",
+   "parent_id": "v-family-06",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: vanaema ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "бабушка",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "vanaema — бабушка. Пример: Mu vanaema elab maal. Перевод: Моя бабушка живёт в деревне."
+  },
+  {
+   "id": "v-family-06-recall",
+   "parent_id": "v-family-06",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "бабушка",
+   "answer": "vanaema",
+   "explanation_ru": "vanaema — бабушка. Пример: Mu vanaema elab maal. Перевод: Моя бабушка живёт в деревне."
+  },
+  {
+   "id": "v-family-07-meaning",
+   "parent_id": "v-family-07",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: onu ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "дядя",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "onu — дядя. Пример: Mu onu töötab arstina. Перевод: Мой дядя работает врачом."
+  },
+  {
+   "id": "v-family-07-recall",
+   "parent_id": "v-family-07",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "дядя",
+   "answer": "onu",
+   "explanation_ru": "onu — дядя. Пример: Mu onu töötab arstina. Перевод: Мой дядя работает врачом."
+  },
+  {
+   "id": "v-family-08-meaning",
+   "parent_id": "v-family-08",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: nõbu ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "двоюродный брат / сестра",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "nõbu — двоюродный брат / сестра. Пример: Mu nõbu on minuvanune. Перевод: Мой двоюродный брат (сестра) моего возраста."
+  },
+  {
+   "id": "v-family-08-recall",
+   "parent_id": "v-family-08",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "двоюродный брат / сестра",
+   "answer": "nõbu",
+   "explanation_ru": "nõbu — двоюродный брат / сестра. Пример: Mu nõbu on minuvanune. Перевод: Мой двоюродный брат (сестра) моего возраста."
+  },
+  {
+   "id": "v-family-09-meaning",
+   "parent_id": "v-family-09",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: tütar ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "дочь",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "tütar — дочь. Пример: Naabri tütar käib samas koolis. Перевод: Дочь соседа ходит в ту же школу."
+  },
+  {
+   "id": "v-family-09-recall",
+   "parent_id": "v-family-09",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "дочь",
+   "answer": "tütar",
+   "explanation_ru": "tütar — дочь. Пример: Naabri tütar käib samas koolis. Перевод: Дочь соседа ходит в ту же школу."
+  },
+  {
+   "id": "v-family-10-meaning",
+   "parent_id": "v-family-10",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: sugulane ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "родственник",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "sugulane — родственник. Пример: Suvel külastame sugulasi. Перевод: Летом мы навещаем родственников."
+  },
+  {
+   "id": "v-family-10-recall",
+   "parent_id": "v-family-10",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "родственник",
+   "answer": "sugulane",
+   "explanation_ru": "sugulane — родственник. Пример: Suvel külastame sugulasi. Перевод: Летом мы навещаем родственников."
+  },
+  {
+   "id": "v-home-11-meaning",
+   "parent_id": "v-home-11",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: köök ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "кухня",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "köök — кухня. Пример: Ema valmistab köögis õhtusööki. Перевод: Мама готовит на кухне ужин."
+  },
+  {
+   "id": "v-home-11-recall",
+   "parent_id": "v-home-11",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "кухня",
+   "answer": "köök",
+   "explanation_ru": "köök — кухня. Пример: Ema valmistab köögis õhtusööki. Перевод: Мама готовит на кухне ужин."
+  },
+  {
+   "id": "v-home-12-meaning",
+   "parent_id": "v-home-12",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: korter ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "квартира",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "korter — квартира. Пример: Meie korter on viiendal korrusel. Перевод: Наша квартира на пятом этаже."
+  },
+  {
+   "id": "v-home-12-recall",
+   "parent_id": "v-home-12",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "квартира",
+   "answer": "korter",
+   "explanation_ru": "korter — квартира. Пример: Meie korter on viiendal korrusel. Перевод: Наша квартира на пятом этаже."
+  },
+  {
+   "id": "v-home-13-meaning",
+   "parent_id": "v-home-13",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: magamistuba ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "спальня",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "magamistuba — спальня. Пример: Magamistoas on voodi ja kapp. Перевод: В спальне есть кровать и шкаф."
+  },
+  {
+   "id": "v-home-13-recall",
+   "parent_id": "v-home-13",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "спальня",
+   "answer": "magamistuba",
+   "explanation_ru": "magamistuba — спальня. Пример: Magamistoas on voodi ja kapp. Перевод: В спальне есть кровать и шкаф."
+  },
+  {
+   "id": "v-home-14-meaning",
+   "parent_id": "v-home-14",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: trepp ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "лестница",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "trepp — лестница. Пример: Trepp viib teisele korrusele. Перевод: Лестница ведёт на второй этаж."
+  },
+  {
+   "id": "v-home-14-recall",
+   "parent_id": "v-home-14",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "лестница",
+   "answer": "trepp",
+   "explanation_ru": "trepp — лестница. Пример: Trepp viib teisele korrusele. Перевод: Лестница ведёт на второй этаж."
+  },
+  {
+   "id": "v-home-15-meaning",
+   "parent_id": "v-home-15",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: aken ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "окно",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "aken — окно. Пример: Palun ava aken, toas on palav. Перевод: Пожалуйста, открой окно, в комнате жарко."
+  },
+  {
+   "id": "v-home-15-recall",
+   "parent_id": "v-home-15",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "окно",
+   "answer": "aken",
+   "explanation_ru": "aken — окно. Пример: Palun ava aken, toas on palav. Перевод: Пожалуйста, открой окно, в комнате жарко."
+  },
+  {
+   "id": "v-food-16-meaning",
+   "parent_id": "v-food-16",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: hommikusöök ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "завтрак",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "hommikusöök — завтрак. Пример: Hommikusöögiks sööme putru. Перевод: На завтрак мы едим кашу."
+  },
+  {
+   "id": "v-food-16-recall",
+   "parent_id": "v-food-16",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "завтрак",
+   "answer": "hommikusöök",
+   "explanation_ru": "hommikusöök — завтрак. Пример: Hommikusöögiks sööme putru. Перевод: На завтрак мы едим кашу."
+  },
+  {
+   "id": "v-food-17-meaning",
+   "parent_id": "v-food-17",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: lõunasöök ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "обед",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "lõunasöök — обед. Пример: Lõunasöök on koolis kell kaksteist. Перевод: Обед в школе в двенадцать часов."
+  },
+  {
+   "id": "v-food-17-recall",
+   "parent_id": "v-food-17",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "обед",
+   "answer": "lõunasöök",
+   "explanation_ru": "lõunasöök — обед. Пример: Lõunasöök on koolis kell kaksteist. Перевод: Обед в школе в двенадцать часов."
+  },
+  {
+   "id": "v-food-18-meaning",
+   "parent_id": "v-food-18",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: kartul ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "картофель",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "kartul — картофель. Пример: Ma armastan praetud kartuleid. Перевод: Я люблю жареный картофель."
+  },
+  {
+   "id": "v-food-18-recall",
+   "parent_id": "v-food-18",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "картофель",
+   "answer": "kartul",
+   "explanation_ru": "kartul — картофель. Пример: Ma armastan praetud kartuleid. Перевод: Я люблю жареный картофель."
+  },
+  {
+   "id": "v-food-19-meaning",
+   "parent_id": "v-food-19",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: juust ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "сыр",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "juust — сыр. Пример: Võileival on juust ja tomat. Перевод: На бутерброде сыр и помидор."
+  },
+  {
+   "id": "v-food-19-recall",
+   "parent_id": "v-food-19",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "сыр",
+   "answer": "juust",
+   "explanation_ru": "juust — сыр. Пример: Võileival on juust ja tomat. Перевод: На бутерброде сыр и помидор."
+  },
+  {
+   "id": "v-food-20-meaning",
+   "parent_id": "v-food-20",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: supp ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "суп",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "supp — суп. Пример: Täna on lõunaks kalasupp. Перевод: Сегодня на обед рыбный суп."
+  },
+  {
+   "id": "v-food-20-recall",
+   "parent_id": "v-food-20",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "суп",
+   "answer": "supp",
+   "explanation_ru": "supp — суп. Пример: Täna on lõunaks kalasupp. Перевод: Сегодня на обед рыбный суп."
+  },
+  {
+   "id": "v-health-21-meaning",
+   "parent_id": "v-health-21",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: arst ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "врач",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "arst — врач. Пример: Arst vaatas mu kurgu üle. Перевод: Врач осмотрел моё горло."
+  },
+  {
+   "id": "v-health-21-recall",
+   "parent_id": "v-health-21",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "врач",
+   "answer": "arst",
+   "explanation_ru": "arst — врач. Пример: Arst vaatas mu kurgu üle. Перевод: Врач осмотрел моё горло."
+  },
+  {
+   "id": "v-health-22-meaning",
+   "parent_id": "v-health-22",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: haige ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "больной",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "haige — больной. Пример: Ma olin eile haige ega läinud kooli. Перевод: Вчера я болел(а) и не пошёл (пошла) в школу."
+  },
+  {
+   "id": "v-health-22-recall",
+   "parent_id": "v-health-22",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "больной",
+   "answer": "haige",
+   "explanation_ru": "haige — больной. Пример: Ma olin eile haige ega läinud kooli. Перевод: Вчера я болел(а) и не пошёл (пошла) в школу."
+  },
+  {
+   "id": "v-health-23-meaning",
+   "parent_id": "v-health-23",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: valutama ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "болеть (о части тела)",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "valutama — болеть (о части тела). Пример: Mul valutab pea. Перевод: У меня болит голова."
+  },
+  {
+   "id": "v-health-23-recall",
+   "parent_id": "v-health-23",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "болеть (о части тела)",
+   "answer": "valutama",
+   "explanation_ru": "valutama — болеть (о части тела). Пример: Mul valutab pea. Перевод: У меня болит голова."
+  },
+  {
+   "id": "v-health-24-meaning",
+   "parent_id": "v-health-24",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: palavik ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "жар, высокая температура",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "palavik — жар, высокая температура. Пример: Lapsel on palavik. Перевод: У ребёнка температура."
+  },
+  {
+   "id": "v-health-24-recall",
+   "parent_id": "v-health-24",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "жар, высокая температура",
+   "answer": "palavik",
+   "explanation_ru": "palavik — жар, высокая температура. Пример: Lapsel on palavik. Перевод: У ребёнка температура."
+  },
+  {
+   "id": "v-health-25-meaning",
+   "parent_id": "v-health-25",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: ravim ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "лекарство",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "ravim — лекарство. Пример: Võta see ravim pärast sööki. Перевод: Прими это лекарство после еды."
+  },
+  {
+   "id": "v-health-25-recall",
+   "parent_id": "v-health-25",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "лекарство",
+   "answer": "ravim",
+   "explanation_ru": "ravim — лекарство. Пример: Võta see ravim pärast sööki. Перевод: Прими это лекарство после еды."
+  },
+  {
+   "id": "v-city-26-meaning",
+   "parent_id": "v-city-26",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: buss ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "автобус",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "buss — автобус. Пример: Buss tuleb kümne minuti pärast. Перевод: Автобус придёт через десять минут."
+  },
+  {
+   "id": "v-city-26-recall",
+   "parent_id": "v-city-26",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "автобус",
+   "answer": "buss",
+   "explanation_ru": "buss — автобус. Пример: Buss tuleb kümne minuti pärast. Перевод: Автобус придёт через десять минут."
+  },
+  {
+   "id": "v-city-27-meaning",
+   "parent_id": "v-city-27",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: peatus ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "остановка",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "peatus — остановка. Пример: Järgmine peatus on kesklinn. Перевод: Следующая остановка — центр."
+  },
+  {
+   "id": "v-city-27-recall",
+   "parent_id": "v-city-27",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "остановка",
+   "answer": "peatus",
+   "explanation_ru": "peatus — остановка. Пример: Järgmine peatus on kesklinn. Перевод: Следующая остановка — центр."
+  },
+  {
+   "id": "v-city-28-meaning",
+   "parent_id": "v-city-28",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: ristmik ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "перекрёсток",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "ristmik — перекрёсток. Пример: Pööra ristmikul vasakule. Перевод: На перекрёстке поверни налево."
+  },
+  {
+   "id": "v-city-28-recall",
+   "parent_id": "v-city-28",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "перекрёсток",
+   "answer": "ristmik",
+   "explanation_ru": "ristmik — перекрёсток. Пример: Pööra ristmikul vasakule. Перевод: На перекрёстке поверни налево."
+  },
+  {
+   "id": "v-city-29-meaning",
+   "parent_id": "v-city-29",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: tänav ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "улица",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "tänav — улица. Пример: Meie kool asub Pikal tänaval. Перевод: Наша школа находится на улице Пика."
+  },
+  {
+   "id": "v-city-29-recall",
+   "parent_id": "v-city-29",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "улица",
+   "answer": "tänav",
+   "explanation_ru": "tänav — улица. Пример: Meie kool asub Pikal tänaval. Перевод: Наша школа находится на улице Пика."
+  },
+  {
+   "id": "v-city-30-meaning",
+   "parent_id": "v-city-30",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: pilet ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "билет",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "pilet — билет. Пример: Ma ostsin kinopileti. Перевод: Я купил(а) билет в кино."
+  },
+  {
+   "id": "v-city-30-recall",
+   "parent_id": "v-city-30",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "билет",
+   "answer": "pilet",
+   "explanation_ru": "pilet — билет. Пример: Ma ostsin kinopileti. Перевод: Я купил(а) билет в кино."
+  },
+  {
+   "id": "v-freetime-31-meaning",
+   "parent_id": "v-freetime-31",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: treening ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "тренировка",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "treening — тренировка. Пример: Mul on esmaspäeval treening. Перевод: У меня в понедельник тренировка."
+  },
+  {
+   "id": "v-freetime-31-recall",
+   "parent_id": "v-freetime-31",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "тренировка",
+   "answer": "treening",
+   "explanation_ru": "treening — тренировка. Пример: Mul on esmaspäeval treening. Перевод: У меня в понедельник тренировка."
+  },
+  {
+   "id": "v-freetime-32-meaning",
+   "parent_id": "v-freetime-32",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: jalutama ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "гулять, прогуливаться",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "jalutama — гулять, прогуливаться. Пример: Õhtul läheme koeraga jalutama. Перевод: Вечером мы идём гулять с собакой."
+  },
+  {
+   "id": "v-freetime-32-recall",
+   "parent_id": "v-freetime-32",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "гулять, прогуливаться",
+   "answer": "jalutama",
+   "explanation_ru": "jalutama — гулять, прогуливаться. Пример: Õhtul läheme koeraga jalutama. Перевод: Вечером мы идём гулять с собакой."
+  },
+  {
+   "id": "v-freetime-33-meaning",
+   "parent_id": "v-freetime-33",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: huvi ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "интерес, увлечение",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "huvi — интерес, увлечение. Пример: Mu suurim huvi on muusika. Перевод: Моё главное увлечение — музыка."
+  },
+  {
+   "id": "v-freetime-33-recall",
+   "parent_id": "v-freetime-33",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "интерес, увлечение",
+   "answer": "huvi",
+   "explanation_ru": "huvi — интерес, увлечение. Пример: Mu suurim huvi on muusika. Перевод: Моё главное увлечение — музыка."
+  },
+  {
+   "id": "v-freetime-34-meaning",
+   "parent_id": "v-freetime-34",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: kontsert ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "концерт",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "kontsert — концерт. Пример: Laupäeval on koolis kontsert. Перевод: В субботу в школе концерт."
+  },
+  {
+   "id": "v-freetime-34-recall",
+   "parent_id": "v-freetime-34",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "концерт",
+   "answer": "kontsert",
+   "explanation_ru": "kontsert — концерт. Пример: Laupäeval on koolis kontsert. Перевод: В субботу в школе концерт."
+  },
+  {
+   "id": "v-freetime-35-meaning",
+   "parent_id": "v-freetime-35",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: matkama ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "ходить в поход",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "matkama — ходить в поход. Пример: Suvel tahame minna matkama. Перевод: Летом мы хотим пойти в поход."
+  },
+  {
+   "id": "v-freetime-35-recall",
+   "parent_id": "v-freetime-35",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "ходить в поход",
+   "answer": "matkama",
+   "explanation_ru": "matkama — ходить в поход. Пример: Suvel tahame minna matkama. Перевод: Летом мы хотим пойти в поход."
+  },
+  {
+   "id": "v-nature-36-meaning",
+   "parent_id": "v-nature-36",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: ilm ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "погода",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "ilm — погода. Пример: Täna on ilus ilm. Перевод: Сегодня хорошая погода."
+  },
+  {
+   "id": "v-nature-36-recall",
+   "parent_id": "v-nature-36",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "погода",
+   "answer": "ilm",
+   "explanation_ru": "ilm — погода. Пример: Täna on ilus ilm. Перевод: Сегодня хорошая погода."
+  },
+  {
+   "id": "v-nature-37-meaning",
+   "parent_id": "v-nature-37",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: vihm ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "дождь",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "vihm — дождь. Пример: Hommikul sadas vihma. Перевод: Утром шёл дождь."
+  },
+  {
+   "id": "v-nature-37-recall",
+   "parent_id": "v-nature-37",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "дождь",
+   "answer": "vihm",
+   "explanation_ru": "vihm — дождь. Пример: Hommikul sadas vihma. Перевод: Утром шёл дождь."
+  },
+  {
+   "id": "v-nature-38-meaning",
+   "parent_id": "v-nature-38",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: tuul ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "ветер",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "tuul — ветер. Пример: Väljas on tugev tuul. Перевод: На улице сильный ветер."
+  },
+  {
+   "id": "v-nature-38-recall",
+   "parent_id": "v-nature-38",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "ветер",
+   "answer": "tuul",
+   "explanation_ru": "tuul — ветер. Пример: Väljas on tugev tuul. Перевод: На улице сильный ветер."
+  },
+  {
+   "id": "v-nature-39-meaning",
+   "parent_id": "v-nature-39",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: mets ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "лес",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "mets — лес. Пример: Seenel käime metsas. Перевод: За грибами мы ходим в лес."
+  },
+  {
+   "id": "v-nature-39-recall",
+   "parent_id": "v-nature-39",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "лес",
+   "answer": "mets",
+   "explanation_ru": "mets — лес. Пример: Seenel käime metsas. Перевод: За грибами мы ходим в лес."
+  },
+  {
+   "id": "v-nature-40-meaning",
+   "parent_id": "v-nature-40",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tõlge: järv ___",
+   "prompt_ru": "Выберите перевод слова.",
+   "options": [
+    "озеро",
+    "ученик",
+    "учитель",
+    "домашнее задание"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "järv — озеро. Пример: Suvel ujume järves. Перевод: Летом мы плаваем в озере."
+  },
+  {
+   "id": "v-nature-40-recall",
+   "parent_id": "v-nature-40",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kirjuta eesti keeles: ___",
+   "prompt_ru": "озеро",
+   "answer": "järv",
+   "explanation_ru": "järv — озеро. Пример: Suvel ujume järves. Перевод: Летом мы плаваем в озере."
+  },
+  {
+   "id": "g-b1b2-1",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui mul oleks rohkem aega, ___ ma ringis sagedamini.",
+   "options": [
+    "osalesin",
+    "osaleksin",
+    "osalenud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Условное следствие при oleks: osaleksin, «я бы участвовал»."
+  },
+  {
+   "id": "g-b1b2-2",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui sa oleksid varem helistanud, ___ ma sind aidata saanud.",
+   "options": [
+    "olin",
+    "olen",
+    "oleksin"
+   ],
+   "answer": 2,
+   "explanation_ru": "Нереальное условие в прошлом: oleksin saanud."
+  },
+  {
+   "id": "g-b1b2-3",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui ma oleksin teadet lugenud, ei ___ ma hiljaks jäänud.",
+   "options": [
+    "ole",
+    "oleks",
+    "olin"
+   ],
+   "answer": 1,
+   "explanation_ru": "Отрицательное условное прошедшее: ei oleks hiljaks jäänud."
+  },
+  {
+   "id": "g-b1b2-4",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Enne vastuse saatmist ___ andmeid veel kord kontrollida.",
+   "options": [
+    "tuleks",
+    "tulin",
+    "tulnud"
+   ],
+   "answer": 0,
+   "explanation_ru": "Tuleks + da-инфинитив выражает рекомендацию."
+  },
+  {
+   "id": "g-b1b2-5",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Koosolekul ___ uus töökorraldus heaks.",
+   "options": [
+    "kiitis",
+    "kiideti",
+    "kiitnud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличное прошедшее: kiideti heaks, «одобрили»."
+  },
+  {
+   "id": "g-b1b2-6",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Selles raamatukogus ___ lugejate ettepanekutega.",
+   "options": [
+    "arvestab",
+    "arvestatakse",
+    "arvestanud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличная форма настоящего: arvestatakse, «учитывают»."
+  },
+  {
+   "id": "g-b1b2-7",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vana ajakava on uuega ___.",
+   "options": [
+    "asendanud",
+    "asendatud",
+    "asendama"
+   ],
+   "answer": 1,
+   "explanation_ru": "Результат действия над объектом: on asendatud."
+  },
+  {
+   "id": "g-b1b2-8",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Õpilased olid töö juba ___, kui õpetaja saabus.",
+   "options": [
+    "lõpetanud",
+    "lõpetatud",
+    "lõpetama"
+   ],
+   "answer": 0,
+   "explanation_ru": "Плюсквамперфект: olid lõpetanud — действие предшествует другому прошедшему."
+  },
+  {
+   "id": "g-b1b2-9",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Küsimustele ___ selgitas esineja oma valikut.",
+   "options": [
+    "vastates",
+    "vastama",
+    "vastatud"
+   ],
+   "answer": 0,
+   "explanation_ru": "-des-конструкция выражает одновременное действие: vastates, «отвечая»."
+  },
+  {
+   "id": "g-b1b2-10",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta lahkus ruumist midagi ___.",
+   "options": [
+    "ütlemata",
+    "üteldes",
+    "ütlema"
+   ],
+   "answer": 0,
+   "explanation_ru": "-mata выражает несделанное действие: midagi ütlemata, «ничего не сказав»."
+  },
+  {
+   "id": "g-b1b2-11",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kõik sõltub sellest, kas meil jätkub ___. (aeg)",
+   "options": [
+    "aeg",
+    "aja",
+    "aega"
+   ],
+   "answer": 2,
+   "explanation_ru": "Jätkuma управляет партитивом: jätkub aega."
+  },
+  {
+   "id": "g-b1b2-12",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Õpilased loobusid esialgsest ___. (plaan)",
+   "options": [
+    "plaani",
+    "plaanist",
+    "plaanile"
+   ],
+   "answer": 1,
+   "explanation_ru": "Loobuma millest? — элатив: plaanist."
+  },
+  {
+   "id": "g-b1b2-13",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "See lahendus võimaldab meil ___ säästa. (aeg)",
+   "options": [
+    "aja",
+    "aega",
+    "ajale"
+   ],
+   "answer": 1,
+   "explanation_ru": "Säästma aega: партитив обозначает количество времени."
+  },
+  {
+   "id": "g-b1b2-14",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei pea seda ettepanekut ___. (mõistlik)",
+   "options": [
+    "mõistlik",
+    "mõistlikuks",
+    "mõistlikult"
+   ],
+   "answer": 1,
+   "explanation_ru": "Pidama mida milleks: считать предложение разумным — mõistlikuks."
+  },
+  {
+   "id": "g-b1b2-15",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Juhendaja jäi meie ___ rahule. (tulemus)",
+   "options": [
+    "tulemust",
+    "tulemusele",
+    "tulemusega"
+   ],
+   "answer": 2,
+   "explanation_ru": "Rahule jääma millega? — комитатив: tulemusega."
+  },
+  {
+   "id": "g-b1b2-16",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta suhtus uude ___ ettevaatlikult. (ettepanek)",
+   "options": [
+    "ettepanekust",
+    "ettepanekusse",
+    "ettepanekuga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Suhtuma millesse? — иллатив: ettepanekusse."
+  },
+  {
+   "id": "g-b1b2-17",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Erinevalt varasemast ___ koguti seekord ka tagasisidet. (katse)",
+   "options": [
+    "katsega",
+    "katsest",
+    "katsele"
+   ],
+   "answer": 1,
+   "explanation_ru": "Erinevalt millest? — элатив: katsest."
+  },
+  {
+   "id": "g-b1b2-18",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ vihmale viidi matk siiski läbi.",
+   "options": [
+    "Vaatamata",
+    "Tänu",
+    "Seoses"
+   ],
+   "answer": 0,
+   "explanation_ru": "Vaatamata millele? — уступка: несмотря на дождь."
+  },
+  {
+   "id": "g-b1b2-19",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Otsus tehti osalejate tagasiside ___.",
+   "options": [
+    "põhjal",
+    "asemel",
+    "vastu"
+   ],
+   "answer": 0,
+   "explanation_ru": "Mille põhjal? — на основании: tagasiside põhjal."
+  },
+  {
+   "id": "g-b1b2-20",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Uue koti ostmise ___ otsustas ta vana parandada.",
+   "options": [
+    "asemel",
+    "tõttu",
+    "kaudu"
+   ],
+   "answer": 0,
+   "explanation_ru": "Mille asemel? — вместо покупки нового."
+  },
+  {
+   "id": "g-b1b2-21",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Teenuse viivituse ___ vabandati kliendi ees.",
+   "options": [
+    "pärast",
+    "jaoks",
+    "kaudu"
+   ],
+   "answer": 0,
+   "explanation_ru": "Vabandama mille pärast? — извиняться за задержку."
+  },
+  {
+   "id": "g-b1b2-22",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Avaldus saadeti ametliku kanali ___.",
+   "options": [
+    "kaudu",
+    "vastu",
+    "jaoks"
+   ],
+   "answer": 0,
+   "explanation_ru": "Mille kaudu? — через официальный канал."
+  },
+  {
+   "id": "g-b1b2-23",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Me ei jõudnud kõiki ___ samal päeval kontrollida. (andmed)",
+   "options": [
+    "andmed",
+    "andmeid",
+    "andmete"
+   ],
+   "answer": 1,
+   "explanation_ru": "Andmed → партитив множественного числа andmeid."
+  },
+  {
+   "id": "g-b1b2-24",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Enne ___ avaldamist tuleb allikat kontrollida. (teade)",
+   "options": [
+    "teade",
+    "teate",
+    "teadet"
+   ],
+   "answer": 1,
+   "explanation_ru": "Перед отглагольным существительным: teate avaldamine, родительный teate."
+  },
+  {
+   "id": "g-b1b2-25",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta ei olnud uue ___ veel harjunud. (ajakava)",
+   "options": [
+    "ajakavast",
+    "ajakavaga",
+    "ajakavale"
+   ],
+   "answer": 1,
+   "explanation_ru": "Harjuma millega? — комитатив: ajakavaga."
+  },
+  {
+   "id": "g-b1b2-26",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Katse kestis kaks ja pool ___. (nädal)",
+   "options": [
+    "nädala",
+    "nädalat",
+    "nädalad"
+   ],
+   "answer": 1,
+   "explanation_ru": "После kaks ja pool — партитив единственного числа: nädalat."
+  },
+  {
+   "id": "g-b1b2-27",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Koosolek toimub kahekümne ___ märtsil. (23. kuupäev)",
+   "options": [
+    "kolmas",
+    "kolmandal",
+    "kolmanda"
+   ],
+   "answer": 1,
+   "explanation_ru": "В дате «когда?» порядковое числительное в адессиве: kahekümne kolmandal märtsil."
+  },
+  {
+   "id": "g-b1b2-28",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Küsitluses osales üle ___ inimese. (100, omastav)",
+   "options": [
+    "sada",
+    "saja",
+    "sadat"
+   ],
+   "answer": 1,
+   "explanation_ru": "Üle в значении «более» требует родительного: üle saja inimese."
   }
  ]
 }

@@ -1,4 +1,5 @@
-import { h, content, pct, setChildren, addChildren, topicMap } from '../util.js';
+import { seriesLinks } from '../series.js';
+import { h, content, countWords, pct, setChildren, addChildren, topicMap } from '../util.js';
 import { filteredList, nextLink, splitView } from '../widgets.js';
 import { textPane, evidenceFor } from '../textpane.js';
 import { questionSet, saveResults } from '../question.js';
@@ -11,7 +12,7 @@ export function textBlock(item, vocab = []) {
 
 function statusLine(t) {
   const sm = store.summary(t.questions.map((q) => q.id));
-  const lvl = `${t.level} · ${t.questions.length} вопросов`;
+  const lvl = `${t.level} · ${countWords(t.text_et)} слов · ${t.questions.length} вопросов`;
   if (!sm.answered) return `${lvl} · не пройдено`;
   return sm.ok === sm.total ? `${lvl} · решено полностью ✓` : `${lvl} · верно ${sm.ok} из ${sm.total}`;
 }
@@ -25,15 +26,19 @@ export default {
     const item = data.items.find((x) => x.id === id);
 
     if (!item) {
+      const requestedLevel = args[0] && args[0].startsWith('level-') ? args[0].slice(6) : 'B1-B2';
+      const shown = data.items.filter((t) => (requestedLevel === 'B1-B2' ? ['B1', 'B2'].includes(t.level) : t.level === requestedLevel));
       addChildren(root, 
         h('h1', null, 'Чтение'),
         h('p', { class: 'lead' }, 'Тексты с вопросами трёх типов: выбор ответа, верно/неверно, соответствие (плюс короткий ответ с клавиатуры).'),
-        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
+        h('nav', { class: 'chips', 'aria-label': 'Уровень чтения' }, ['B1-B2', 'B1', 'B2', 'A2'].map((l) => h('a', { class: 'chip', href: '#/reading/level-' + l, 'aria-current': l === requestedLevel ? 'true' : null }, l))),
+        filteredList(shown, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
           h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h2', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
       return;
     }
 
     const vocab = (await content('vocab')).items;
+    const series = await seriesLinks(item, 'reading');
     const set = questionSet(item.questions);
     const pane = textPane(item, vocab);
     const result = h('div', { role: 'status', 'aria-live': 'polite' });
@@ -56,6 +61,8 @@ export default {
     addChildren(root,
       h('p', null, h('a', { href: '#/reading' }, '← Все тексты')),
       h('h1', null, 'Чтение: ' + item.title_ru),
+      h('p', { class: 'muted' }, `${item.level} · ${countWords(item.text_et)} слов`),
+      series,
       splitView(pane, [
         h('h2', null, 'Вопросы'), set.el,
         h('div', { class: 'row' }, checkBtn, nextLink(data.items, item.id, 'reading', 'Следующий текст →'), h('a', { class: 'btn', href: '#/reading' }, 'Все тексты')),

@@ -1,5 +1,6 @@
 import { h, content, config, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
+import { seriesLinks } from '../series.js';
 import { timerWidget, recorderWidget, checklistWidget, filteredList, nextLink, splitView } from '../widgets.js';
 
 export function cardBlock(c) {
@@ -24,6 +25,7 @@ export default {
         filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => h('a', { class: 'card link-card', href: `#/speaking/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, t.situation_ru))))));
       return;
     }
+    const series = await seriesLinks(card, 'speaking');
     const saved = store.getSpeaking(card.id);
     const tw = timerWidget({ seconds: fmt.speaking_practice_minutes * 60, label: 'Таймер' });
     const rec = recorderWidget();
@@ -31,6 +33,7 @@ export default {
     addChildren(root, 
       h('p', null, h('a', { href: '#/speaking' }, '← Все карточки'), '  ', nextLink(data.items, card.id, 'speaking', 'Следующая карточка →')),
       h('h1', null, 'Говорение: ' + card.title_ru),
+      series,
       splitView([cardBlock(card), h('p', { class: 'muted' }, card.explanation_ru)],
       [h('div', { class: 'card' }, tw.el, h('p', { class: 'muted small-text' }, `Время тренировочное (${fmt.speaking_practice_minutes} мин, config/exam-format.json, не проверено на harno.ee).`)),
       h('h2', null, 'Запись и прослушивание'), rec.el,

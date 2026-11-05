@@ -3,6 +3,7 @@ import { filteredList, nextLink, splitView } from '../widgets.js';
 import { questionSet, saveResults } from '../question.js';
 import { store } from '../store.js';
 import { sourceLine } from '../textpane.js';
+import { seriesLinks } from '../series.js';
 import { findEtVoice, resetVoice, createPlayer, speechSupported } from '../speech.js';
 
 /**
@@ -74,6 +75,7 @@ export default {
           h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h2', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
       return;
     }
+    const series = await seriesLinks(item, 'listening');
     const block = listeningBlock(item);
     const set = questionSet(item.questions);
     const result = h('div', { role: 'status', 'aria-live': 'polite' });
@@ -89,6 +91,7 @@ export default {
     addChildren(root, 
       h('p', null, h('a', { href: '#/listening' }, '← Все записи')),
       h('h1', null, 'Аудирование: ' + item.title_ru),
+      series,
       splitView([h('p', { class: 'notice warn' }, SYNTH_NOTE), block.el],
         [h('h2', null, 'Вопросы'), set.el,
       h('div', { class: 'row' }, checkBtn, nextLink(data.items, item.id, 'listening', 'Следующая запись →'), h('a', { class: 'btn', href: '#/listening' }, 'Все записи')),

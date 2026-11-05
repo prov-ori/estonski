@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 2443. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 3300. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -221,7 +221,7 @@
 - `f-v-39` — jooksma: jooksma, joosta, jooksen, jookseb, jooksin, jooksnud, jookse
 - `f-v-40` — ujuma: ujuma, ujuda, ujun, ujub, ujusin, ujunud, uju
 
-## grammar.json (375)
+## grammar.json (483)
 
 - `g-cases-01` — Ma lähen homme kooli.
 - `g-cases-02` — Raamat on laua peal.
@@ -598,8 +598,116 @@
 - `g-prep-x09` — Pane raamat kapi sisse.
 - `g-prep-x10` — Raamat on kapi sees.
 - `g-prep-x11` — Võta raamat kapi seest.
+- `v-school-01-meaning` — Vali õige tõlge: õpilane ученик
+- `v-school-01-recall` — Kirjuta eesti keeles: õpilane
+- `v-school-02-meaning` — Vali õige tõlge: õpetaja учитель
+- `v-school-02-recall` — Kirjuta eesti keeles: õpetaja
+- `v-school-03-meaning` — Vali õige tõlge: kodutöö домашнее задание
+- `v-school-03-recall` — Kirjuta eesti keeles: kodutöö
+- `v-school-04-meaning` — Vali õige tõlge: kontrolltöö контрольная работа
+- `v-school-04-recall` — Kirjuta eesti keeles: kontrolltöö
+- `v-school-05-meaning` — Vali õige tõlge: vahetund перемена
+- `v-school-05-recall` — Kirjuta eesti keeles: vahetund
+- `v-family-06-meaning` — Vali õige tõlge: vanaema бабушка
+- `v-family-06-recall` — Kirjuta eesti keeles: vanaema
+- `v-family-07-meaning` — Vali õige tõlge: onu дядя
+- `v-family-07-recall` — Kirjuta eesti keeles: onu
+- `v-family-08-meaning` — Vali õige tõlge: nõbu двоюродный брат / сестра
+- `v-family-08-recall` — Kirjuta eesti keeles: nõbu
+- `v-family-09-meaning` — Vali õige tõlge: tütar дочь
+- `v-family-09-recall` — Kirjuta eesti keeles: tütar
+- `v-family-10-meaning` — Vali õige tõlge: sugulane родственник
+- `v-family-10-recall` — Kirjuta eesti keeles: sugulane
+- `v-home-11-meaning` — Vali õige tõlge: köök кухня
+- `v-home-11-recall` — Kirjuta eesti keeles: köök
+- `v-home-12-meaning` — Vali õige tõlge: korter квартира
+- `v-home-12-recall` — Kirjuta eesti keeles: korter
+- `v-home-13-meaning` — Vali õige tõlge: magamistuba спальня
+- `v-home-13-recall` — Kirjuta eesti keeles: magamistuba
+- `v-home-14-meaning` — Vali õige tõlge: trepp лестница
+- `v-home-14-recall` — Kirjuta eesti keeles: trepp
+- `v-home-15-meaning` — Vali õige tõlge: aken окно
+- `v-home-15-recall` — Kirjuta eesti keeles: aken
+- `v-food-16-meaning` — Vali õige tõlge: hommikusöök завтрак
+- `v-food-16-recall` — Kirjuta eesti keeles: hommikusöök
+- `v-food-17-meaning` — Vali õige tõlge: lõunasöök обед
+- `v-food-17-recall` — Kirjuta eesti keeles: lõunasöök
+- `v-food-18-meaning` — Vali õige tõlge: kartul картофель
+- `v-food-18-recall` — Kirjuta eesti keeles: kartul
+- `v-food-19-meaning` — Vali õige tõlge: juust сыр
+- `v-food-19-recall` — Kirjuta eesti keeles: juust
+- `v-food-20-meaning` — Vali õige tõlge: supp суп
+- `v-food-20-recall` — Kirjuta eesti keeles: supp
+- `v-health-21-meaning` — Vali õige tõlge: arst врач
+- `v-health-21-recall` — Kirjuta eesti keeles: arst
+- `v-health-22-meaning` — Vali õige tõlge: haige больной
+- `v-health-22-recall` — Kirjuta eesti keeles: haige
+- `v-health-23-meaning` — Vali õige tõlge: valutama болеть (о части тела)
+- `v-health-23-recall` — Kirjuta eesti keeles: valutama
+- `v-health-24-meaning` — Vali õige tõlge: palavik жар, высокая температура
+- `v-health-24-recall` — Kirjuta eesti keeles: palavik
+- `v-health-25-meaning` — Vali õige tõlge: ravim лекарство
+- `v-health-25-recall` — Kirjuta eesti keeles: ravim
+- `v-city-26-meaning` — Vali õige tõlge: buss автобус
+- `v-city-26-recall` — Kirjuta eesti keeles: buss
+- `v-city-27-meaning` — Vali õige tõlge: peatus остановка
+- `v-city-27-recall` — Kirjuta eesti keeles: peatus
+- `v-city-28-meaning` — Vali õige tõlge: ristmik перекрёсток
+- `v-city-28-recall` — Kirjuta eesti keeles: ristmik
+- `v-city-29-meaning` — Vali õige tõlge: tänav улица
+- `v-city-29-recall` — Kirjuta eesti keeles: tänav
+- `v-city-30-meaning` — Vali õige tõlge: pilet билет
+- `v-city-30-recall` — Kirjuta eesti keeles: pilet
+- `v-freetime-31-meaning` — Vali õige tõlge: treening тренировка
+- `v-freetime-31-recall` — Kirjuta eesti keeles: treening
+- `v-freetime-32-meaning` — Vali õige tõlge: jalutama гулять, прогуливаться
+- `v-freetime-32-recall` — Kirjuta eesti keeles: jalutama
+- `v-freetime-33-meaning` — Vali õige tõlge: huvi интерес, увлечение
+- `v-freetime-33-recall` — Kirjuta eesti keeles: huvi
+- `v-freetime-34-meaning` — Vali õige tõlge: kontsert концерт
+- `v-freetime-34-recall` — Kirjuta eesti keeles: kontsert
+- `v-freetime-35-meaning` — Vali õige tõlge: matkama ходить в поход
+- `v-freetime-35-recall` — Kirjuta eesti keeles: matkama
+- `v-nature-36-meaning` — Vali õige tõlge: ilm погода
+- `v-nature-36-recall` — Kirjuta eesti keeles: ilm
+- `v-nature-37-meaning` — Vali õige tõlge: vihm дождь
+- `v-nature-37-recall` — Kirjuta eesti keeles: vihm
+- `v-nature-38-meaning` — Vali õige tõlge: tuul ветер
+- `v-nature-38-recall` — Kirjuta eesti keeles: tuul
+- `v-nature-39-meaning` — Vali õige tõlge: mets лес
+- `v-nature-39-recall` — Kirjuta eesti keeles: mets
+- `v-nature-40-meaning` — Vali õige tõlge: järv озеро
+- `v-nature-40-recall` — Kirjuta eesti keeles: järv
+- `g-b1b2-1` — Kui mul oleks rohkem aega, osaleksin ma ringis sagedamini.
+- `g-b1b2-2` — Kui sa oleksid varem helistanud, oleksin ma sind aidata saanud.
+- `g-b1b2-3` — Kui ma oleksin teadet lugenud, ei oleks ma hiljaks jäänud.
+- `g-b1b2-4` — Enne vastuse saatmist tuleks andmeid veel kord kontrollida.
+- `g-b1b2-5` — Koosolekul kiideti uus töökorraldus heaks.
+- `g-b1b2-6` — Selles raamatukogus arvestatakse lugejate ettepanekutega.
+- `g-b1b2-7` — Vana ajakava on uuega asendatud.
+- `g-b1b2-8` — Õpilased olid töö juba lõpetanud, kui õpetaja saabus.
+- `g-b1b2-9` — Küsimustele vastates selgitas esineja oma valikut.
+- `g-b1b2-10` — Ta lahkus ruumist midagi ütlemata.
+- `g-b1b2-11` — Kõik sõltub sellest, kas meil jätkub aega. (aeg)
+- `g-b1b2-12` — Õpilased loobusid esialgsest plaanist. (plaan)
+- `g-b1b2-13` — See lahendus võimaldab meil aega säästa. (aeg)
+- `g-b1b2-14` — Ma ei pea seda ettepanekut mõistlikuks. (mõistlik)
+- `g-b1b2-15` — Juhendaja jäi meie tulemusega rahule. (tulemus)
+- `g-b1b2-16` — Ta suhtus uude ettepanekusse ettevaatlikult. (ettepanek)
+- `g-b1b2-17` — Erinevalt varasemast katsest koguti seekord ka tagasisidet. (katse)
+- `g-b1b2-18` — Vaatamata vihmale viidi matk siiski läbi.
+- `g-b1b2-19` — Otsus tehti osalejate tagasiside põhjal.
+- `g-b1b2-20` — Uue koti ostmise asemel otsustas ta vana parandada.
+- `g-b1b2-21` — Teenuse viivituse pärast vabandati kliendi ees.
+- `g-b1b2-22` — Avaldus saadeti ametliku kanali kaudu.
+- `g-b1b2-23` — Me ei jõudnud kõiki andmeid samal päeval kontrollida. (andmed)
+- `g-b1b2-24` — Enne teate avaldamist tuleb allikat kontrollida. (teade)
+- `g-b1b2-25` — Ta ei olnud uue ajakavaga veel harjunud. (ajakava)
+- `g-b1b2-26` — Katse kestis kaks ja pool nädalat. (nädal)
+- `g-b1b2-27` — Koosolek toimub kahekümne kolmandal märtsil. (23. kuupäev)
+- `g-b1b2-28` — Küsitluses osales üle saja inimese. (100, omastav)
 
-## listening.json (258)
+## listening.json (427)
 
 - `l-01` — Direktori teade
 - `l-01` — Tere, kallid õpilased! Siin räägib kooli direktor.
@@ -609,6 +717,8 @@
 - `l-01` — Kolmandaks, jõulukontsert toimub kolmandal detsembril kell kuus õhtul aulas.
 - `l-01` — Kontserdile on oodatud ka vanemad. Palun andke sellest oma vanematele teada.
 - `l-01` — Aitäh tähelepanu eest!
+- `l-01` — Kas koolituspäeval saab kooli raamatukogus iseseisvalt õppida? Mõnel õpilasel pole kodus vaikset töökohta ning ainult tundide ärajäämisest teatamine ei selgita, millised võimalused neile alles jäävad.
+- `l-01` — Raamatukogu jääb avatuks, kuid juhendatud õppetööd ei toimu. Kes soovib arvutit kasutada, peaks sellest hoidjale eelmisel päeval teada andma. Nii saame hinnata, kas kõigile jätkub kohti. See pole registreerimine tundidesse, vaid ruumi kasutamise kokkulepe.
 - `l-01-q1` — Miks reedel tunde ei ole?
 - `l-01-q1 (вариант)` — Õpetajad on koolitusel.
 - `l-01-q1 (вариант)` — Kool on remondis.
@@ -618,6 +728,10 @@
 - `l-01-q3` — Mis kell algab jõulukontsert? Kirjuta sõnaga: kell kuus õhtul.
 - `l-01-q4` — Kus kontsert toimub?
 - `l-01-q5` — Vanemad ei tohi kontserdile tulla.
+- `l-01-detail-b1` — Miks palutakse arvuti kasutamise soovist ette teatada?
+- `l-01-detail-b1 (вариант)` — Et hinnata kohtade vajadust.
+- `l-01-detail-b1 (вариант)` — Et õpilastele uus tund määrata.
+- `l-01-detail-b1 (вариант)` — Et raamatukogu sulgeda.
 - `l-02` — Telefonivestlus
 - `l-02` — Tere, Mari! Siin on Jaan. Kas sul on homme trenn?
 - `l-02` — Tere! Jah, on küll. Aga treener ütles, et homme trenni ei ole, sest saal on kinni.
@@ -627,6 +741,8 @@
 - `l-02` — Hästi. Aga ma ei saa kaua olla, sest pean koju minema kell kümme.
 - `l-02` — Pole probleemi. Film kestab kaks tundi, nii et sa jõuad hästi koju.
 - `l-02` — Tore, siis homme näeme!
+- `l-02` — Kas ostame piletid kohe või ootame teised ka ära? Kui ostame igaüks eraldi, võib juhtuda, et me ei saa kõrvuti istuda. Samas pole kõik veel kinnitanud, kas nad tulevad.
+- `l-02` — Saadame neile sõnumi ja palume enne kella viit vastata. Seejärel ostame piletid ainult neile, kes on tuleku kinnitanud. Nii ei pea me hiljem kasutamata piletite eest maksma ega kogu õhtut otsuse ootel olema.
 - `l-02-q1` — Miks homme trenni ei ole?
 - `l-02-q1 (вариант)` — Saal on kinni.
 - `l-02-q1 (вариант)` — Treener on haige.
@@ -636,6 +752,10 @@
 - `l-02-q3` — Mis kell film algab? Kirjuta sõnaga: kell seitse.
 - `l-02-q4` — Kus nad kohtuvad?
 - `l-02-q5` — Film kestab kolm tundi.
+- `l-02-detail-b1` — Kellele ostetakse lõpuks piletid?
+- `l-02-detail-b1 (вариант)` — Neile, kes on enne kokkulepitud tähtaega tuleku kinnitanud.
+- `l-02-detail-b1 (вариант)` — Kõigile klassikaaslastele sõltumata vastusest.
+- `l-02-detail-b1 (вариант)` — Ainult neile, kes jõuavad kino ette enne viit.
 - `l-03` — Poes
 - `l-03` — Tere! Kas ma saan teid aidata?
 - `l-03` — Tere! Ma otsin sooja kampsunit.
@@ -859,6 +979,163 @@
 - `l-14-q4` — Mitu kraadi sooja on? Kirjuta sõnaga: kümme kraadi.
 - `l-14-q5` — Mari telefoninumber? Kirjuta numbritega ilma tühikuteta: 5324111
 - `l-14-q6` — Karl peab helistama pühapäevaks.
+- `l-series-3` — Kontserdi uus aeg
+- `l-series-3` — Tere! Jõulukontserdi algusaeg on muutunud. Kontsert toimub endiselt kolmandal detsembril aulas, kuid algab kell seitse, mitte kell kuus.
+- `l-series-3` — Kas vanemad võivad tulla?
+- `l-series-3` — Jah, vanemad on oodatud. Palume tulla viisteist minutit varem. Sissepääs on tasuta.
+- `l-series-3` — Kas uue algusaja tõttu muutub ka proov? Mul tuleb pärast kooli bussiga koju sõita ja ma pean teadma, kas jõuan enne kontserti tagasi. Ma ei taha proovist ilma jääda.
+- `l-series-3` — Proov toimub endisel ajal. Kui transport valmistab raskusi, räägi klassijuhatajaga enne kolmapäeva. Otsime lahenduse, kuid me ei saa prooviajast loobuda, sest heli tuleb enne publiku saabumist kontrollida. Kontserdi hilisem algus ei tähenda, et kogu ettevalmistus nihkub.
+- `l-series-3-q1` — Mis kell algab kontsert?
+- `l-series-3-q2` — Kus toimub kontsert?
+- `l-series-3-q3` — Kontserdipilet maksab viis eurot.
+- `l-series-3-detail-b1` — Mis jääb muutmata?
+- `l-series-3-detail-b1 (вариант)` — Proovi aeg.
+- `l-series-3-detail-b1 (вариант)` — Kontserdi algusaeg.
+- `l-series-3-detail-b1 (вариант)` — Külaliste saabumise soovitus.
+- `l-series-4` — Tagasisõidu pilet
+- `l-series-4` — Tere! Soovin oma õhtuse bussipileti varasema vastu vahetada.
+- `l-series-4` — Mis kell soovite sõita?
+- `l-series-4` — Kell kuus. Praegune pilet on kella kaheksaks.
+- `l-series-4` — Kella kuuesele bussile on veel kohti. Piletite hinnavahe on kaks eurot.
+- `l-series-4` — Sobib. Kas saan kaardiga maksta?
+- `l-series-4` — Jah. Uus pilet saadetakse teie e-posti aadressile.
+- `l-series-4` — Kui uus pilet on saadetud, kas vana jääb ka kehtima? Ma ei tahaks kogemata vale faili bussijuhile näidata, sest mõlemad kirjad on samas telefonis.
+- `l-series-4` — Vana pilet pärast vahetust enam ei kehti. Uuel piletil kontrollige nii kuupäeva kui ka kellaaega. Soovitan selle eraldi salvestada. Kui kinnitust mõne minuti jooksul ei tule, vaadake ka rämpsposti, enne kui uut ostu alustate.
+- `l-series-4-q1` — Mis kell tahab reisija sõita?
+- `l-series-4-q2` — Kuidas saab reisija uue pileti?
+- `l-series-4-q2 (вариант)` — E-posti teel.
+- `l-series-4-q2 (вариант)` — Ainult postiga.
+- `l-series-4-q2 (вариант)` — Bussijuhilt järgmisel päeval.
+- `l-series-4-q3` — Reisija peab juurde maksma kaks eurot.
+- `l-series-4-detail-b1` — Mida peaks reisija uuel piletil kontrollima?
+- `l-series-4-detail-b1 (вариант)` — Kuupäeva ja kellaaega.
+- `l-series-4-detail-b1 (вариант)` — Ainult kirja värvi.
+- `l-series-4-detail-b1 (вариант)` — Üksnes vana pileti hinda.
+- `l-series-5` — Laua broneerimine
+- `l-series-5` — Tere! Kas saan laupäevaks neljale inimesele laua broneerida?
+- `l-series-5` — Jah. Mis kell soovite tulla?
+- `l-series-5` — Kell viis. Üks külaline ei söö liha.
+- `l-series-5` — Meil on köögiviljaroogi. Kas soovite aknaalust lauda?
+- `l-series-5` — Jah, palun. Minu nimi on Kati.
+- `l-series-5` — Panin kirja: laupäev, kell viis, neli inimest, Kati.
+- `l-series-5` — Üks külaline võib töö tõttu hilineda. Kas peaksin sellepärast kogu broneeringu hilisemaks muutma? Teised jõuavad õigeks ajaks ning sooviksid kohe tellida.
+- `l-series-5` — Kui hilineb üks inimene, pole kogu aega vaja muuta. Palun teatage aga, kui kogu seltskond jääb üle viieteistkümne minuti hiljaks. Me ei saa lauda määramata ajaks tühjana hoida. Nii väldime olukorda, kus teised külalised ootavad asjata vaba kohta.
+- `l-series-5-q1` — Mitmele inimesele broneeritakse laud?
+- `l-series-5-q2` — Millist lauda Kati soovib?
+- `l-series-5-q2 (вариант)` — Aknaalust.
+- `l-series-5-q2 (вариант)` — Ukse kõrval olevat.
+- `l-series-5-q2 (вариант)` — Õues olevat.
+- `l-series-5-q3` — Kõik külalised söövad liha.
+- `l-series-5-detail-b1` — Millal palutakse kindlasti hilinemisest teatada?
+- `l-series-5-detail-b1 (вариант)` — Kui kogu seltskond hilineb üle viieteistkümne minuti.
+- `l-series-5-detail-b1 (вариант)` — Kui üks külaline saabub ühe minuti hiljem.
+- `l-series-5-detail-b1 (вариант)` — Ainult pärast kohviku sulgemist.
+- `l-series-6` — Enne järgmist matka
+- `l-series-6` — Järgmine matk toimub pühapäeval. Seekord sõidame rongiga mere äärde.
+- `l-series-6` — Kas võtame jälle vihmajoped kaasa?
+- `l-series-6` — Jah. Isegi kui hommikul paistab päike, võib ilm muutuda.
+- `l-series-6` — Kus me kohtume?
+- `l-series-6` — Raudteejaama ees kell pool üheksa. Rong väljub üheksa. Hilinejaid rong ei oota.
+- `l-series-6` — Kas võime omal käel varem rongile minna ja teiega järgmises peatuses kohtuda? Mõnele meist oleks see kodule palju lähemal, kuid me ei taha rühma segadusse ajada.
+- `l-series-6` — See on võimalik ainult siis, kui lepime täpse peatuse eelmisel päeval kokku. Saatke mulle oma ettepanek, aga ärge pidage vaikimist nõusolekuks. Rühma nimekiri peab näitama, kes tuleb jaamast peale ja keda oodatakse järgmises peatuses.
+- `l-series-6-q1` — Kuidas minnakse mere äärde?
+- `l-series-6-q2` — Mis kell kohtutakse?
+- `l-series-6-q3` — Vihmajope tuleb kaasa võtta ka päikeselise hommikuga.
+- `l-series-6-detail-b1` — Mida ei tohi õpetaja sõnul nõusolekuks pidada?
+- `l-series-6-detail-b1 (вариант)` — Vastuse puudumist.
+- `l-series-6-detail-b1 (вариант)` — Selget kirjalikku kinnitust.
+- `l-series-6-detail-b1 (вариант)` — Kokkulepitud peatuse nime.
+- `l-series-7` — Unustatud ujumiskott
+- `l-series-7` — Tere! Unustasin eile ujulasse sinise koti.
+- `l-series-7` — Mis kotis oli?
+- `l-series-7` — Rätik ja ujumisprillid. Koti küljes on minu nimega silt.
+- `l-series-7` — Leidsime sellise koti. Saate selle administraatori käest kätte täna enne kella kaheksat.
+- `l-series-7` — Kas mu isa võib sellele järele tulla?
+- `l-series-7` — Jah. Palun öelge talle, mis nimi sildil on.
+- `l-series-7` — Kas ma peaksin oma isale koti foto saatma? Ta pole seda ise näinud ning kardab, et võib kogemata kellegi teise asjad kaasa võtta.
+- `l-series-7` — Foto võib abiks olla, aga nimega silt on olulisem. Paluge tal administraatorile öelda, mis kotis on. Me ei anna leitud asju välja ainult selle põhjal, et keegi ütleb koti värvi. Mitmel külastajal võib olla samasugune sinine kott.
+- `l-series-7-q1` — Mis värvi on kott?
+- `l-series-7-q2` — Kelle käest saab koti kätte?
+- `l-series-7-q3` — Isa võib kotile järele tulla.
+- `l-series-7-detail-b1` — Miks ei piisa koti värvi nimetamisest?
+- `l-series-7-detail-b1 (вариант)` — Sama värvi kotte võib olla mitmel inimesel.
+- `l-series-7-detail-b1 (вариант)` — Kõik leitud kotid värvitakse ümber.
+- `l-series-7-detail-b1 (вариант)` — Administraator ei väljasta ühtegi eset.
+- `l-series-8` — Riiuli tagastamine
+- `l-series-8` — Tere! Ostsin eile riiuli, kuid pakis puuduvad kruvid.
+- `l-series-8` — Kas ostutšekk on alles?
+- `l-series-8` — Jah. Soovin riiuli asemel puuduvaid kruvisid saada.
+- `l-series-8` — Palun saatke meile toote number ja foto pakendi sildist. Siis leiame õiged kruvid.
+- `l-series-8` — Kas pean kogu riiuli poodi tooma?
+- `l-series-8` — Ei, praegu pole seda vaja.
+- `l-series-8` — Kas võin riiulit seni osaliselt kokku panna? Pakendis on palju sarnaseid detaile ning ma pole kindel, millised kruvid täpselt puudu on.
+- `l-series-8` — Ärge kasutage juhuslikke asenduskruvisid. Kõigepealt võrdleme foto põhjal komplekti juhendiga. Kui oleme puuduva osa kindlaks teinud, teatame, kuidas selle kätte saate. Praegu ei saa ma veel lubada, et see jõuab teile tänase päeva jooksul.
+- `l-series-8-q1` — Mis pakist puudub?
+- `l-series-8-q2` — Mida palub töötaja saata?
+- `l-series-8-q2 (вариант)` — Toote numbri ja foto sildist.
+- `l-series-8-q2 (вариант)` — Pangakaardi foto.
+- `l-series-8-q2 (вариант)` — Kogu riiuli posti teel.
+- `l-series-8-q3` — Klient peab kohe kogu riiuli poodi tooma.
+- `l-series-8-detail-b1` — Mida töötaja ei kinnita?
+- `l-series-8-detail-b1 (вариант)` — Et puuduvad osad jõuavad kliendini täna.
+- `l-series-8-detail-b1 (вариант)` — Et juhend aitab osi tuvastada.
+- `l-series-8-detail-b1 (вариант)` — Et pakendi foto on vajalik.
+- `l-series-9` — Fotode õhtu
+- `l-series-9` — Kas vaatame laupäeval vanaema fotosid?
+- `l-series-9` — Laupäeval ma ei saa. Kas pühapäeva pärastlõuna sobib?
+- `l-series-9` — Sobib. Võtan arvuti kaasa, et fotod skannida.
+- `l-series-9` — Kelle käest skanneri saame?
+- `l-series-9` — Onu laenab meile enda oma. Aga kõigepealt küsime vanaemalt, milliseid fotosid ta lubab kopeerida.
+- `l-series-9` — Kuidas me fotode juurde lood kirja paneme? Kui kirjutame kõik lihtsalt enda sõnadega ümber, võib hiljem ununeda, kes mida tegelikult ütles ja mis on meie enda oletus.
+- `l-series-9` — Märgime iga loo juurde jutustaja nime ja vestluse kuupäeva. Kui mõni detail on ebaselge, jätame selle esialgu lahtiseks. Me ei pea kogu albumit ühe õhtuga valmis saama. Parem on mõne küsimuse juurde järgmine kord tagasi tulla.
+- `l-series-9-q1` — Millal fotosid vaadatakse?
+- `l-series-9-q2` — Kes laenab skanneri?
+- `l-series-9-q3` — Fotode kopeerimiseks küsitakse vanaema luba.
+- `l-series-9-detail-b1` — Miks tahetakse märkida jutustaja nimi?
+- `l-series-9-detail-b1 (вариант)` — Et loo päritolu oleks hiljem selge.
+- `l-series-9-detail-b1 (вариант)` — Et tõestada kõigi mälestuste täielikku täpsust.
+- `l-series-9-detail-b1 (вариант)` — Et fotosid automaatselt avaldada.
+- `l-series-10` — Raamatu pikendamine
+- `l-series-10` — Tere! Ma ei jõua raamatut homseks läbi lugeda. Kas saan tähtaega pikendada?
+- `l-series-10` — Mis raamatu pealkiri on?
+- `l-series-10` — Kevade.
+- `l-series-10` — Sellele raamatule on järjekord. Seetõttu ei saa praegu tähtaega pikendada.
+- `l-series-10` — Kas saan selle hiljem uuesti laenata?
+- `l-series-10` — Jah. Panen teid soovi korral järjekorda.
+- `l-series-10` — Mul on seda raamatut järgmisel nädalal ettekandeks vaja. Kui sama eksemplari pikendada ei saa, kas leidub mõni teine võimalus, mis aitaks töö õigeks ajaks valmis saada?
+- `l-series-10` — Saame uurida, kas teises harukogus on vaba eksemplar. See ei tähenda, et raamat tuuakse automaatselt siia. Kõigepealt kontrollime saadavust ning lepime kokku, kas lähete sellele ise järele või kasutate tellimusteenust. Praegune raamat tuleb ikkagi õigel ajal tagastada.
+- `l-series-10-q1` — Miks ei saa tähtaega pikendada?
+- `l-series-10-q1 (вариант)` — Raamatule on järjekord.
+- `l-series-10-q1 (вариант)` — Raamat on kadunud.
+- `l-series-10-q1 (вариант)` — Raamatukogu on suletud.
+- `l-series-10-q2` — Mida raamatukoguhoidja pakub?
+- `l-series-10-q2 (вариант)` — Järjekorda panemist.
+- `l-series-10-q2 (вариант)` — Raamatu ostmist.
+- `l-series-10-q2 (вариант)` — Kohe uut eksemplari.
+- `l-series-10-q3` — Lugeja saab tähtaja kohe pikendatud.
+- `l-series-10-detail-b1` — Kas teise eksemplari otsimine pikendab praegust tähtaega?
+- `l-series-10-detail-b1 (вариант)` — Ei, praegune raamat tuleb õigel ajal tagastada.
+- `l-series-10-detail-b1 (вариант)` — Jah, tähtaeg pikeneb automaatselt kuuks.
+- `l-series-10-detail-b1 (вариант)` — Jah, raamat muutub lugeja omaks.
+- `l-02-part2` — Pärast kinokülastust
+- `l-02-part2` — Kas sulle film meeldis?
+- `l-02-part2` — Jah, eriti muusika. Järgmisel nädalal võiksime uuesti kinno minna.
+- `l-02-part2` — Seekord tahaksin hoopis raamatukogu filmiklubisse minna. Seal saab pärast filmi arutada.
+- `l-02-part2` — Mis päeval klubi toimub?
+- `l-02-part2` — Kolmapäeval kell kuus. Osalemine on tasuta, kuid tuleb ette registreeruda.
+- `l-02-part2` — Sobib. Registreerin meid täna õhtul, kui sa saadad mulle lingi.
+- `l-02-part2` — Kas peaksime enne filmi arvustusi lugema? Mina tahaksin teada, kas teema võiks mulle huvi pakkuda, aga ma ei soovi, et keegi kogu lõpu ette ära jutustaks.
+- `l-02-part2` — Vaatame siis lühikest sisututvustust, mitte põhjalikku arvustust. Pärast filmi võime oma esmamuljed enne arutelu kirja panna. Nii märkame paremini, kas teiste põhjendused muudavad meie arvamust või lihtsalt kordame seda, mida keegi veenvalt ütles.
+- `l-02-part2-q1` — Kuhu sõbrad järgmisel korral lähevad?
+- `l-02-part2-q2` — Mida tuleb enne osalemist teha?
+- `l-02-part2-q2 (вариант)` — Ette registreeruda.
+- `l-02-part2-q2 (вариант)` — Pilet osta.
+- `l-02-part2-q2 (вариант)` — Film ise kaasa võtta.
+- `l-02-part2-q3` — Filmiklubi toimub kolmapäeval kell kuus.
+- `l-02-part2-detail-b1` — Miks soovitatakse esmamuljed enne arutelu kirja panna?
+- `l-02-part2-detail-b1 (вариант)` — Et eristada oma algset arvamust hilisemast mõjust.
+- `l-02-part2-detail-b1 (вариант)` — Et vältida igasugust arvamuse muutmist.
+- `l-02-part2-detail-b1 (вариант)` — Et filmi lõppu teistele ette jutustada.
 
 ## mock-exam.json (91)
 
@@ -1064,7 +1341,7 @@
 - `o-70` — Me kohtume kell kuus kino ees.
 - `o-70 (вариант)` — Kell kuus kohtume me kino ees.
 
-## reading.json (605)
+## reading.json (1157)
 
 - `r-01` — Uus ring meie koolis
 - `r-01` — Sügisel hakkas meie koolis tööle robootikaring.
@@ -1079,6 +1356,16 @@
 - `r-01` — Detsembris tahab kooli meeskond minna linna võistlusele, kus näidatakse roboteid.
 - `r-01` — Marek ütleb, et võitmine ei ole kõige olulisem.
 - `r-01` — Tähtis on, et õpilased õpiksid koos töötama ja ei kardaks eksida.
+- `r-01` — Marek ei anna igale rühmale valmis juhendit.
+- `r-01` — Tema arvates õpivad noored rohkem siis, kui nad peavad ise lahendusi võrdlema.
+- `r-01` — See ei tähenda siiski, et õpetaja jätab nad raskustega üksi.
+- `r-01` — Kui rühm jääb hätta, esitab ta küsimusi, mis aitavad vea põhjust leida.
+- `r-01` — Mõnele õpilasele tundus selline tööviis alguses aeglane, sest tulemus ei olnud kohe näha.
+- `r-01` — Hiljem märkasid nad, et oskavad oma valikuid paremini põhjendada.
+- `r-01` — Enne võistlust tuleb koostada ka lühike esitlus.
+- `r-01` — Üks õpilane kirjeldab roboti ehitust, teine selgitab programmi ning kolmas räägib ebaõnnestunud katsetest.
+- `r-01` — Marek palub näidata ka seda, mida katsete järel muudeti.
+- `r-01` — Ta rõhutab, et aus ülevaade õppimisest on väärtuslikum kui mulje, nagu oleks kõik esimesel korral õnnestunud.
 - `r-01-q1` — Kes juhendab robootikaringi?
 - `r-01-q2` — Mida tegid õpilased esimese kuu jooksul?
 - `r-01-q2 (вариант)` — Nad ehitasid väikese roboti.
@@ -1100,6 +1387,10 @@
 - `r-01-q7 (вариант)` — Võistluse võitmine.
 - `r-01-q7 (вариант)` — Uue arvuti ostmine.
 - `r-01-q7 (вариант)` — Kiire ehitamine.
+- `r-01-inference-b1` — Miks ei anna Marek alati valmis juhendit?
+- `r-01-inference-b1 (вариант)` — Ta tahab arendada iseseisvat põhjendamist.
+- `r-01-inference-b1 (вариант)` — Tal puuduvad robootikateadmised.
+- `r-01-inference-b1 (вариант)` — Ta soovib võistlusest loobuda.
 - `r-02` — Kiri sõbrale
 - `r-02` — Tere, Liisa!
 - `r-02` — Kirjutan sulle, sest tahan sind laupäeval külla kutsuda.
@@ -1114,6 +1405,15 @@
 - `r-02` — Kui sa ei saa tulla, anna mulle palun homme teada.
 - `r-02` — Nägemist!
 - `r-02` — Kadri
+- `r-02` — Tahtsin veel täpsustada, et vanaema maja lähedal ei ole poodi.
+- `r-02` — Kui vajad midagi erilist, osta see enne väljasõitu.
+- `r-02` — Tavaliselt on bussis palju reisijaid, seepärast ostsin meie piletid juba internetist.
+- `r-02` — Sulle ma eraldi maksta ei lasknud, sest kutsusin sind ise külla.
+- `r-02` — Kui plaan muutub, anna palun võimalikult vara teada: pileteid saab vahetada ainult enne reisi algust.
+- `r-02` — Vanaisa lubas näidata meile vana vesiveskit, kuid sinna pääseb vaid mööda kitsast metsateed.
+- `r-02` — Kui tugevalt sajab, jääme pigem majja ja vaatame pere fotoalbumeid.
+- `r-02` — Ma ei tahaks, et peaksime üksnes esialgsest plaanist kinni pidamise pärast terve päeva märgades riietes käima.
+- `r-02` — Minu jaoks on tähtsam sinuga rahulikult aega veeta kui võimalikult palju kohti läbi joosta.
 - `r-02-q1` — Miks Kadri kirjutab?
 - `r-02-q1 (вариант)` — Ta kutsub Liisat endaga kaasa.
 - `r-02-q1 (вариант)` — Ta küsib Liisalt kodutöö kohta.
@@ -1135,6 +1435,10 @@
 - `r-02-q6 (вариант)` — kütab õhtul sauna.
 - `r-02-q6 (вариант)` — sõidab Tallinnasse.
 - `r-02-q7` — Mis kell Kadri ootab Liisat bussijaamas? Kirjuta sõnaga: kell üheksa.
+- `r-02-inference-b1` — Mida näitab Kadri suhtumine plaanidesse?
+- `r-02-inference-b1 (вариант)` — Ta peab koosolemist täpsest programmist tähtsamaks.
+- `r-02-inference-b1 (вариант)` — Ta tahab kindlasti kõik kohad läbi käia.
+- `r-02-inference-b1 (вариант)` — Ta ootab, et Liisa ostaks mõlemale piletid.
 - `r-03` — Kooli söökla menüü
 - `r-03` — –16.
 - `r-03` — detsembrini
@@ -1335,18 +1639,45 @@
 - `r-expand-2` — Õpilane võib korraga koju võtta kolm raamatut.
 - `r-expand-2` — Raamatud tuleb tagasi tuua kahe nädala pärast.
 - `r-expand-2` — Kui raamatut on kauem vaja, tuleb kirjutada raamatukoguhoidjale.
+- `r-expand-2` — Raamatukoguhoidja sõnul kasutatakse ruumi üha sagedamini ka rühmatööks.
+- `r-expand-2` — See on tekitanud vaidlusi, sest osa õpilasi tahab seal vaikselt lugeda.
+- `r-expand-2` — Seetõttu katsetatakse uut korda: akende juures olevad lauad on mõeldud individuaalseks tööks, uksepoolne ala aga aruteludeks.
+- `r-expand-2` — Rühmatöö ajal tuleb siiski rääkida vaikselt.
+- `r-expand-2` — Kui keegi vajab täiesti vaikset kohta, saab ta kasutada väikest lugemistuba.
+- `r-expand-2` — Uut korda ei peeta veel lõplikuks.
+- `r-expand-2` — Kuu aja pärast kogutakse kasutajatelt tagasisidet ning võrreldakse, millal tekib kõige rohkem müra.
+- `r-expand-2` — Hoidja ei soovi rühmatööd keelata, sest raamatukogu ülesanne on toetada mitmesugust õppimist.
+- `r-expand-2` — Samas rõhutab ta, et ühe rühma tegevus ei tohi muuta teiste tööd võimatuks.
+- `r-expand-2` — Ettepanekuid saab esitada nii paberil kui ka kooli veebivormi kaudu.
 - `r-expand-2-q1` — Mitu raamatut võib korraga koju võtta?
 - `r-expand-2-q2` — Raamatukogu on pühapäeval avatud.
 - `r-expand-2-q3` — Mis kell raamatukogu suletakse?
+- `r-expand-2-inference-b1` — Miks kogutakse kuu aja pärast tagasisidet?
+- `r-expand-2-inference-b1 (вариант)` — Et otsustada, kas proovitud töökorraldust on vaja muuta.
+- `r-expand-2-inference-b1 (вариант)` — Et rühmatöö kindlasti keelata.
+- `r-expand-2-inference-b1 (вариант)` — Et otsustada raamatute müügihind.
 - `r-expand-3` — Bussireis
 - `r-expand-3` — Mari sõidab laupäeval Tartusse.
 - `r-expand-3` — Buss väljub Tallinnast kell üheksa ja jõuab Tartusse kell pool kaksteist.
 - `r-expand-3` — Mari ostis pileti internetist, sest nii oli odavam.
 - `r-expand-3` — Bussijaamas kohtub ta sõbra Annaga.
 - `r-expand-3` — Nad lähevad koos muuseumisse.
+- `r-expand-3` — Enne väljasõitu kontrollis Mari, kas bussipeatus asub ikka tavapärases kohas.
+- `r-expand-3` — Tänavatööde tõttu oli peatus ajutiselt teisele poole jaamahoonet viidud.
+- `r-expand-3` — Ta jõudis seetõttu kohale varem, kuigi sõiduaeg ise ei muutunud.
+- `r-expand-3` — Mari arvates on reisirakendusest abi ainult siis, kui kasutaja loeb ka teateid, mitte üksnes suurt väljumisaega ekraanil.
+- `r-expand-3` — Anna saatis talle muuseumi aadressi ja selgitas, et bussijaamast saab sinna jalgsi.
+- `r-expand-3` — Mari pakkus algul taksot, sest kartis eksida.
+- `r-expand-3` — Anna vastas, et jalutuskäik kestab vaid viisteist minutit ning teel on selged viidad.
+- `r-expand-3` — Nad otsustasid liikuda jalgsi ja jätta taksoraha lõunasöögi jaoks.
+- `r-expand-3` — Kui ilm oleks halb või mõni neist tunneks end väsinuna, võiksid nad siiski kasutada linnabussi.
 - `r-expand-3-q1` — Kellega Mari bussijaamas kohtub?
 - `r-expand-3-q2` — Mari ostis pileti bussijuhilt.
 - `r-expand-3-q3` — Kuhu Mari ja Anna lähevad?
+- `r-expand-3-inference-b1` — Miks loobuti algsest taksoideest?
+- `r-expand-3-inference-b1 (вариант)` — Lühike ja selgelt tähistatud tee võimaldas raha säästa.
+- `r-expand-3-inference-b1 (вариант)` — Taksod ei sõida Tartus.
+- `r-expand-3-inference-b1 (вариант)` — Anna ei teadnud muuseumi aadressi.
 - `r-expand-4` — Kohvik
 - `r-expand-4` — Uus kohvik asub pargi kõrval.
 - `r-expand-4` — Lõunasööki pakutakse tööpäeviti kell 12–15.
@@ -1354,9 +1685,23 @@
 - `r-expand-4` — Vett saab tasuta.
 - `r-expand-4` — Kohvikus võib maksta nii kaardiga kui ka sularahas.
 - `r-expand-4` — Pühapäeval avatakse kohvik alles keskpäeval.
+- `r-expand-4` — Kohviku omanik tahab vähendada päeva lõpus järele jääva toidu hulka.
+- `r-expand-4` — Seepärast valmistatakse lõunasööki esialgu väiksemates kogustes.
+- `r-expand-4` — Kui nõudlus osutub suuremaks, tuleb vahel uut portsjonit oodata.
+- `r-expand-4` — Mõned külastajad peavad ootamist ebamugavaks, teised hindavad seda, et toit on värske.
+- `r-expand-4` — Omanik ei väida, et uus süsteem sobib kõigile, kuid loodab tagasiside abil tasakaalu leida.
+- `r-expand-4` — Menüüs on märgitud levinumad allergeenid, ent erisoovide korral palutakse teenindajaga rääkida.
+- `r-expand-4` — Köögis kasutatakse mitmesuguseid tooraineid, mistõttu pelgalt roa nimi ei anna täielikku teavet.
+- `r-expand-4` — Koolirühmadele soovitatakse laud ja söögid ette tellida.
+- `r-expand-4` — Nii saab köök koguseid täpsemalt planeerida ning rühm ei pea kogu lõunapausi toidu valmimist ootama.
+- `r-expand-4` — Ettetellimine ei muuda vee hinda: seda pakutakse jätkuvalt tasuta.
 - `r-expand-4-q1` — Mitu eurot maksab supp?
 - `r-expand-4-q2` — Vesi on kohvikus tasuta.
 - `r-expand-4-q3` — Mitu eurot maksab salat?
+- `r-expand-4-inference-b1` — Miks palutakse suurel rühmal ette tellida?
+- `r-expand-4-inference-b1 (вариант)` — Et planeerida koguseid ja vähendada ooteaega.
+- `r-expand-4-inference-b1 (вариант)` — Et muuta joogivesi tasuliseks.
+- `r-expand-4-inference-b1 (вариант)` — Et vältida menüü näitamist.
 - `r-expand-5` — Matkapäev
 - `r-expand-5` — Meie klass läheb reedel metsa matkama.
 - `r-expand-5` — Koguneme kooli ees kell kaheksa.
@@ -1364,27 +1709,66 @@
 - `r-expand-5` — Matka juhib loodusõpetaja.
 - `r-expand-5` — Telefonid jäävad kotti, et saaksime linde kuulata.
 - `r-expand-5` — Tagasi kooli jõuame kell kolm.
+- `r-expand-5` — Enne väljasõitu jagas õpetaja klassi väikesteks rühmadeks.
+- `r-expand-5` — Iga rühm saab erineva ülesande: üks jälgib linde, teine võrdleb puude koort ning kolmas kirjeldab inimtegevuse jälgi.
+- `r-expand-5` — Õpetaja ei oota, et õpilased tunneksid kõiki liike peast.
+- `r-expand-5` — Olulisem on osata tähelepanekuid täpselt kirja panna ning eristada nähtut oletusest.
+- `r-expand-5` — Rühmad lepivad kokku, kes teeb märkmeid ja kes jälgib aega.
+- `r-expand-5` — Fotosid võib teha seal, kus see ei sega loomi ega teisi matkajaid.
+- `r-expand-5` — Kui rajal leitakse prügi, teatatakse sellest õpetajale; tundmatuid või teravaid esemeid ei korjata palja käega.
+- `r-expand-5` — Pärast matka võrreldakse rühmade tulemusi.
+- `r-expand-5` — Erinevad kirjeldused ei tähenda tingimata, et keegi eksis: rühmad võivad samas paigas märgata erinevaid asju.
+- `r-expand-5` — Oma järelduse juurde tuleb siiski tuua konkreetne tähelepanek.
 - `r-expand-5-q1` — Kes juhib matka?
 - `r-expand-5-q2` — Õpilased peavad vihmajope kaasa võtma.
 - `r-expand-5-q3` — Mis kell õpilased kogunevad?
+- `r-expand-5-inference-b1` — Mida peab õpetaja liiginimede päheõppimisest olulisemaks?
+- `r-expand-5-inference-b1 (вариант)` — Täpset vaatlemist ja põhjendatud järeldusi.
+- `r-expand-5-inference-b1 (вариант)` — Võimalikult paljude fotode avaldamist.
+- `r-expand-5-inference-b1 (вариант)` — Kõigi rühmade ühesuguseid kirjeldusi.
 - `r-expand-6` — Ujumine
 - `r-expand-6` — Jüri käib ujumas kaks korda nädalas: teisipäeval ja neljapäeval.
 - `r-expand-6` — Trenn algab kell viis ja kestab ühe tunni.
 - `r-expand-6` — Jüri läheb ujulasse rattaga.
 - `r-expand-6` — Talvel sõidab ta bussiga.
 - `r-expand-6` — Pärast trenni sööb ta kodus õhtust.
+- `r-expand-6` — Jüri hakkas pidama treeningupäevikut, sest ta ei saanud aru, miks mõni trenn tundus teisest raskem.
+- `r-expand-6` — Alguses märkis ta üles ainult läbitud vahemaa.
+- `r-expand-6` — Treener soovitas lisada ka enesetunde ja eelnenud öö une pikkuse.
+- `r-expand-6` — Mõne nädala pärast märkas Jüri, et hilise magamamineku järel oli tal keskendumisega rohkem raskusi.
+- `r-expand-6` — Ta ei pidanud seda siiski tõendiks, et iga halb tulemus on ainult vähese une süü.
+- `r-expand-6` — Ujumine on talle tähtis, kuid ta ei taha selle pärast muusikakoolist loobuda.
+- `r-expand-6` — Vanematega lepiti kokku, et enne uute kohustuste võtmist vaadatakse nädala ajakava tervikuna üle.
+- `r-expand-6` — Treener toetab seda mõtet: järjepidev harjutamine on tema arvates kasulikum kui lühike periood, mil õpilane püüab korraga kõiges parim olla.
 - `r-expand-6-q1` — Mitu korda nädalas käib Jüri ujumas?
 - `r-expand-6-q2` — Talvel läheb Jüri ujulasse rattaga.
 - `r-expand-6-q3` — Kui kaua kestab trenn?
+- `r-expand-6-inference-b1` — Miks lisas Jüri päevikusse une pikkuse?
+- `r-expand-6-inference-b1 (вариант)` — Et paremini mõista enesetunde ja treeningu seoseid.
+- `r-expand-6-inference-b1 (вариант)` — Et tõestada, et ujumine pole vajalik.
+- `r-expand-6-inference-b1 (вариант)` — Et muusikakooli õpetajale hinnet panna.
 - `r-expand-7` — Uus korter
 - `r-expand-7` — Liisi pere kolis uude korterisse.
 - `r-expand-7` — Korteris on kolm tuba ja suur köök, aga rõdu ei ole.
 - `r-expand-7` — Liisi kool asub nüüd kümne minuti jalutuskäigu kaugusel.
 - `r-expand-7` — Varem pidi ta kooli sõitma bussiga.
 - `r-expand-7` — Kõige rohkem meeldib Liisile tema toa suur aken.
+- `r-expand-7` — Uue kodu valimisel vaatas pere rohkemat kui tubade arvu.
+- `r-expand-7` — Oluline oli ka see, kas igapäevased käigud saab tehtud ilma autota.
+- `r-expand-7` — Varasemas kodus kulus sõitudele palju aega ning vanemad pidid sageli oma tööpäeva Liisi trennide järgi korraldama.
+- `r-expand-7` — Uus korter on küll väiksem, kuid kool, pood ja bussipeatus asuvad lähedal.
+- `r-expand-7` — Liis kartis alguses, et tal ei jätku oma asjade jaoks ruumi.
+- `r-expand-7` — Enne kolimist sorteeris ta koos emaga raamatuid ja riideid.
+- `r-expand-7` — Kasutuskõlblikud asjad, mida enam vaja polnud, viidi taaskasutuskeskusse.
+- `r-expand-7` — Pere ei ostnud kohe kogu uut mööblit, vaid otsustas kõigepealt näha, kuidas nad ruume tegelikult kasutavad.
+- `r-expand-7` — Nii välditakse kiirustades tehtud oste, mis võivad hiljem läbipääsu takistada või lihtsalt tarbetuks osutuda.
 - `r-expand-7-q1` — Mitu tuba on korteris?
 - `r-expand-7-q2` — Liis läheb nüüd kooli jalgsi.
 - `r-expand-7-q3` — Mida korteris ei ole?
+- `r-expand-7-inference-b1` — Miks ei ostnud pere kohe kogu uut mööblit?
+- `r-expand-7-inference-b1 (вариант)` — Nad tahtsid kõigepealt oma tegelikke vajadusi mõista.
+- `r-expand-7-inference-b1 (вариант)` — Korteris oli mööbli ostmine keelatud.
+- `r-expand-7-inference-b1 (вариант)` — Nad kavatsesid järgmisel päeval ära kolida.
 - `r-expand-8` — Sünnipäev
 - `r-expand-8` — Vanaema sünnipäev on pühapäeval.
 - `r-expand-8` — Pere koguneb tema juurde kell kaks.
@@ -1392,21 +1776,46 @@
 - `r-expand-8` — Lapsed teevad ise kaardi.
 - `r-expand-8` — Vanaema ei taha suuri kingitusi.
 - `r-expand-8` — Ta ütleb, et kõige parem kingitus on koos veedetud aeg.
+- `r-expand-8` — Et ettevalmistused ei jääks ühe inimese õlgadele, koostati ühine nimekiri.
+- `r-expand-8` — Iga pereliige valis sealt ülesande, mida ta oskas ja jõudis teha.
+- `r-expand-8` — Lapsed tahtsid tellida suure ilutulestiku, kuid vanaema palus sellest loobuda.
+- `r-expand-8` — Tema jaoks oleks see olnud liiga lärmakas ning ta eelistas raha kulutada ühisele teatrikülastusele.
+- `r-expand-8` — Otsus tekitas alguses pettumust, sest lapsed olid pidanud üllatuse suurust kõige tähtsamaks.
+- `r-expand-8` — Ema soovitas mõelda sellele, kelle jaoks pidu korraldatakse.
+- `r-expand-8` — Seejärel uurisid lapsed vanaema lemmiklavastusi ja koostasid ise väikese kutse.
+- `r-expand-8` — Kuigi kingitus jäi sünnipäevaks üllatuseks, kontrolliti vanaema kalendrist enne üle, millal ta saaks teatrisse minna.
+- `r-expand-8` — Pere õppis, et tähelepanelik kingitus nõuab vahel rohkem küsimist kui salaja planeerimist.
 - `r-expand-8-q1` — Kes küpsetab kooki?
 - `r-expand-8-q2` — Lapsed ostavad kaardi poest.
 - `r-expand-8-q3` — Mida ema toob?
+- `r-expand-8-inference-b1` — Mida lapsed ettevalmistuste käigus õppisid?
+- `r-expand-8-inference-b1 (вариант)` — Kingitus peaks arvestama saaja soovide ja võimalustega.
+- `r-expand-8-inference-b1 (вариант)` — Kõige kallim kingitus on alati sobivaim.
+- `r-expand-8-inference-b1 (вариант)` — Üllatuse puhul ei tohi kunagi midagi küsida.
 - `r-expand-9` — Arsti aeg
 - `r-expand-9` — Peeter helistas hommikul perearstikeskusse.
 - `r-expand-9` — Tal on juba kolm päeva kurk valus.
 - `r-expand-9` — Õde pakkus aega kolmapäevaks kell kümme.
 - `r-expand-9` — Peeter palus hilisemat aega, sest tal on hommikul kontrolltöö.
 - `r-expand-9` — Lõpuks sai ta aja samaks päevaks kell kaks.
+- `r-expand-9` — Telefonivestluse järel kirjutas Peeter kokkulepitud aja kohe kalendrisse.
+- `r-expand-9` — Ta oli varem ühe kohtumise unustanud, sest lootis ainult mälule.
+- `r-expand-9` — Seekord kontrollis ta ka keskuse aadressi: samal tänaval asub mitu sarnase nimega hoonet.
+- `r-expand-9` — Ema pakkus, et tuleb kaasa, kuid Peeter soovis vastuvõtu korraldamisega ise hakkama saada.
+- `r-expand-9` — Peeter koostas küsimuste nimekirja, et ei peaks kabinetis kõike kiirustades meenutama.
+- `r-expand-9` — Ta teadis, et internetist loetu ei pruugi sobida tema konkreetse olukorraga, seetõttu ei teinud ta enne kohtumist kindlaid järeldusi.
+- `r-expand-9` — Vastuvõtu sisu selles loos ei kirjeldata: ülesanne keskendub info täpsustamisele ja asjaajamisele.
+- `r-expand-9` — Peetri jaoks oli oluline õppida küsima selgitust siis, kui mõni korraldus jääb arusaamatuks, selle asemel et viisakusest lihtsalt noogutada.
 - `r-expand-9-q1` — Mis kell läheb Peeter arsti juurde?
 - `r-expand-9-q2` — Peeter sai aja kolmapäevaks.
 - `r-expand-9-q3` — Miks Peeter palus hilisemat aega?
 - `r-expand-9-q3 (вариант)` — sest tal on hommikul kontrolltöö
 - `r-expand-9-q3 (вариант)` — kell seitse
 - `r-expand-9-q3 (вариант)` — kolm päeva
+- `r-expand-9-inference-b1` — Miks koostas Peeter küsimuste nimekirja?
+- `r-expand-9-inference-b1 (вариант)` — Et olulised küsimused vastuvõtul ei ununeks.
+- `r-expand-9-inference-b1 (вариант)` — Et arsti vastused ise ette kirjutada.
+- `r-expand-9-inference-b1 (вариант)` — Et kohtumine ära jätta.
 - `r-09` — Lünktekst: kiri sõbrale
 - `r-09` — Tere, Anna!
 - `r-09` — Ma (1) ___ nüüd Tartus.
@@ -1671,8 +2080,428 @@
 - `r-18-q6 (вариант)` — Magada võib ainult hommikul.
 - `r-18-q6 (вариант)` — Magada saab ainult metsas.
 - `r-18-q7` — Mida otsitakse jaaniööl metsast? Kirjuta sõna: sõnajalaõit
+- `r-01-part2` — Võistluspäev
+- `r-01-part2` — Detsembris sõitis Mareki robootikaring linna võistlusele.
+- `r-01-part2` — Hommikul selgus, et roboti üks ratas ei liikunud.
+- `r-01-part2` — Õpilased tahtsid kohe uue mootori osta, kuid Marek palus kõigepealt ühendusi kontrollida.
+- `r-01-part2` — Viga oligi lahtises juhtmes.
+- `r-01-part2` — Pärast parandust töötas robot jälle.
+- `r-01-part2` — Meeskond sai kolmanda koha.
+- `r-01-part2` — Tagasiteel ütlesid õpilased, et järgmisel korral jagavad nad ülesanded juba enne võistlust.
+- `r-01-part2` — Nii ei pea kõik korraga sama viga otsima.
+- `r-01-part2` — Järgmisel kohtumisel arutati mitte ainult tulemust, vaid ka töökorraldust.
+- `r-01-part2` — Üks õpilane leidis, et ülesannete jagamine piirab võimalust kõike ise proovida.
+- `r-01-part2` — Teine vastas, et selged vastutusalad ei pea tähendama teadmiste varjamist: pärast katset võiks igaüks teistele oma töö lahti seletada.
+- `r-01-part2` — Marek palus mõlemal ettepanekul tugevused ja nõrkused kirja panna.
+- `r-01-part2` — Lõpuks otsustati rolle iga kahe nädala järel vahetada.
+- `r-01-part2` — Nii saab võistluse ajal igaüks oma osa eest vastutada, ent pikema aja jooksul proovivad kõik nii programmeerimist kui ka ehitamist.
+- `r-01-part2` — Õpilased koostasid kontrollnimekirja, kuhu lisati juhtmete kontroll enne varuosade ostmist.
+- `r-01-part2` — Nad ei eeldanud, et üks nimekiri välistab kõik rikked.
+- `r-01-part2` — Selle eesmärk oli aidata surve all rahulikult tegutseda ja alustada lihtsamate võimalike põhjuste kontrollimisest.
+- `r-01-part2-q1` — Mis oli roboti rikke põhjus?
+- `r-01-part2-q2` — Mida tahavad õpilased järgmisel korral teisiti teha?
+- `r-01-part2-q2 (вариант)` — Ülesanded varem jagada.
+- `r-01-part2-q2 (вариант)` — Uue õpetaja leida.
+- `r-01-part2-q2 (вариант)` — Võistlusest loobuda.
+- `r-01-part2-q3` — Meeskond võitis esimese koha.
+- `r-01-part2-inference-b1` — Miks otsustati rolle vahetada?
+- `r-01-part2-inference-b1 (вариант)` — Et ühendada selge vastutus mitmekülgse õppimisega.
+- `r-01-part2-inference-b1 (вариант)` — Et keegi ei õpiks programmeerimist.
+- `r-01-part2-inference-b1 (вариант)` — Et vältida kogemuste jagamist.
+- `r-expand-2-part2` — Kadunud raamat
+- `r-expand-2-part2` — Kaks nädalat hiljem märkas Karl, et üks raamat on kadunud.
+- `r-expand-2-part2` — Ta otsis seda kodust ja koolikotist, kuid ei leidnud.
+- `r-expand-2-part2` — Karl kirjutas raamatukoguhoidjale ning küsis, mida teha.
+- `r-expand-2-part2` — Hoidja soovitas kõigepealt klassikaaslastelt küsida.
+- `r-expand-2-part2` — Järgmisel päeval tõi Anna raamatu kooli: Karl oli selle talle lugemiseks andnud.
+- `r-expand-2-part2` — Anna vabandas, et polnud varem meelde tuletanud.
+- `r-expand-2-part2` — Karl viis raamatu samal päeval tagasi ja otsustas edaspidi laenatud raamatute kohta märkmeid teha.
+- `r-expand-2-part2` — Juhtum pani Karli mõtlema, et head kavatsused ei vabasta teda vastutusest.
+- `r-expand-2-part2` — Ta oli tahtnud sõpra aidata, kuid raamat oli endiselt tema nimele laenatud.
+- `r-expand-2-part2` — Raamatukoguhoidja ei keelanud sõpradel lugemissoovitusi jagada.
+- `r-expand-2-part2` — Ta soovitas siiski laenutuse ametlikult ümber vormistada, kui raamat jääb pikemaks ajaks teise lugeja kätte.
+- `r-expand-2-part2` — Karl tegi oma telefoni märkme, kuhu pani kirja raamatu pealkirja, tagastamistähtaja ja inimese, kellele oli raamatu andnud.
+- `r-expand-2-part2` — Ta otsustas märkmeid mitte avalikult jagada, sest seal olid ka sõprade nimed.
+- `r-expand-2-part2` — Anna pakkus, et nad võiksid enne uusi laenutusi omavahel üle küsida, kas eelmine raamat on tagastatud.
+- `r-expand-2-part2` — Nende eesmärk polnud teineteist kontrollida, vaid vältida olukorda, kus kumbki arvab, et asjaga tegeleb teine.
+- `r-expand-2-part2-q1` — Kelle käes oli raamat?
+- `r-expand-2-part2-q1 (вариант)` — Anna käes.
+- `r-expand-2-part2-q1 (вариант)` — Õpetaja käes.
+- `r-expand-2-part2-q1 (вариант)` — Karli ema käes.
+- `r-expand-2-part2-q2` — Mida Karl edaspidi teeb?
+- `r-expand-2-part2-q2 (вариант)` — Teeb laenatud raamatute kohta märkmeid.
+- `r-expand-2-part2-q2 (вариант)` — Lõpetab lugemise.
+- `r-expand-2-part2-q2 (вариант)` — Ostab kõik raamatud ise.
+- `r-expand-2-part2-q3` — Karl leidis raamatu kodust.
+- `r-expand-2-part2-inference-b1` — Milles seisnes Karli vastutus?
+- `r-expand-2-part2-inference-b1 (вариант)` — Tema nimele laenatud raamatu tagastamise korraldamises.
+- `r-expand-2-part2-inference-b1 (вариант)` — Kõigi sõprade laenutuste keelamises.
+- `r-expand-2-part2-inference-b1 (вариант)` — Raamatukogu lahtiolekuaja muutmises.
+- `r-expand-3-part2` — Muutunud plaan
+- `r-expand-3-part2` — Kui Mari Tartusse jõudis, ootas Anna teda bussijaamas.
+- `r-expand-3-part2` — Nad tahtsid minna muuseumisse, kuid uksele oli pandud teade: veerikke tõttu on muuseum täna suletud.
+- `r-expand-3-part2` — Anna pakkus, et nad võiksid hoopis botaanikaaeda minna.
+- `r-expand-3-part2` — Mari oli nõus, sest ilm oli soe.
+- `r-expand-3-part2` — Nad ostsid lähedal asuvast poest vett ja jalutasid aeda.
+- `r-expand-3-part2` — Tagasisõidupilet oli Maril juba olemas.
+- `r-expand-3-part2` — Ta pani telefoni meeldetuletuse, et jõuda õhtul õigeks ajaks bussi peale.
+- `r-expand-3-part2` — Aias kohtasid nad vabatahtlikku giidi, kes pakkus lühikest ringkäiku.
+- `r-expand-3-part2` — Mari tahtis kohe nõustuda, kuid Anna küsis kõigepealt, kui kaua see kestab.
+- `r-expand-3-part2` — Selgus, et tavapärane ringkäik võtaks poolteist tundi.
+- `r-expand-3-part2` — Kuna Maril oli õhtune buss, palusid nad näidata ainult kasvuhooneid.
+- `r-expand-3-part2` — Giid oli nõus ja selgitas, millist osa aiast nad seekord ei näe.
+- `r-expand-3-part2` — Mari arvas hiljem, et muuseumi sulgemine polnud päeva rikkunud.
+- `r-expand-3-part2` — Samas ei järeldanud ta sellest, et ettevalmistus oleks mõttetu.
+- `r-expand-3-part2` — Just varakult ostetud tagasisõidupilet ja tuttava abi võimaldasid neil uut plaani rahulikult valida.
+- `r-expand-3-part2` — Anna soovitas järgmiseks külastuseks jätta ühe tegevuse vabaks, mitte täita kogu päeva täpsete kellaaegadega.
+- `r-expand-3-part2` — Nad leppisid kokku, et enne muuseumi juurde minekut kontrollivad selle lahtiolekut uuesti.
+- `r-expand-3-part2-q1` — Miks oli muuseum suletud?
+- `r-expand-3-part2-q1 (вариант)` — Veerikke tõttu.
+- `r-expand-3-part2-q1 (вариант)` — Pühade tõttu.
+- `r-expand-3-part2-q1 (вариант)` — Töötajate koosoleku tõttu.
+- `r-expand-3-part2-q2` — Kuidas Mari püüdis hilinemist vältida?
+- `r-expand-3-part2-q2 (вариант)` — Pani telefoni meeldetuletuse.
+- `r-expand-3-part2-q2 (вариант)` — Ostis uue pileti.
+- `r-expand-3-part2-q2 (вариант)` — Läks kohe bussijaama tagasi.
+- `r-expand-3-part2-q3` — Sõbrad läksid botaanikaaeda.
+- `r-expand-3-part2-inference-b1` — Miks küsis Anna ringkäigu kestust?
+- `r-expand-3-part2-inference-b1 (вариант)` — Et sobitada uus tegevus olemasoleva ajakavaga.
+- `r-expand-3-part2-inference-b1 (вариант)` — Et vältida giidiga kohtumist.
+- `r-expand-3-part2-inference-b1 (вариант)` — Et tõestada, et aed on suletud.
+- `r-expand-4-part2` — Vale tellimus
+- `r-expand-4-part2` — Kati tellis kohvikus köögiviljasupi ja tee.
+- `r-expand-4-part2` — Teenindaja tõi talle aga kanasupi.
+- `r-expand-4-part2` — Kati ütles viisakalt, et tema tellis teise supi, sest ta ei söö liha.
+- `r-expand-4-part2` — Teenindaja vabandas ja viis kausi tagasi.
+- `r-expand-4-part2` — Köögiviljasupp oli otsa saanud.
+- `r-expand-4-part2` — Katile pakuti sama hinnaga salatit ning ta nõustus.
+- `r-expand-4-part2` — Arvet kontrollides nägi Kati, et sinna oli lisatud ka kohv.
+- `r-expand-4-part2` — Teenindaja parandas arve enne maksmist.
+- `r-expand-4-part2` — Kati tänas teda abi eest.
+- `r-expand-4-part2` — Hiljem palus kohviku juhataja Katil juhtunut täpsemalt kirjeldada.
+- `r-expand-4-part2` — Kati rõhutas, et teda ei häirinud üksnes vale roog, vaid teadmatus, kas tema erisoov jõudis kööki.
+- `r-expand-4-part2` — Teenindaja tunnistas, et oli tellimuse kiirustades suuliselt edasi andnud.
+- `r-expand-4-part2` — Juhataja otsustas, et erisoovid tuleb edaspidi märkida tellimussüsteemi, mitte loota ainult mälule.
+- `r-expand-4-part2` — Kati ei soovinud juhtunust pikka avalikku vaidlust.
+- `r-expand-4-part2` — Ta pidas piisavaks, et viga tunnistati, arve parandati ning pakuti sobiv alternatiiv.
+- `r-expand-4-part2` — See ei tähendanud tema arvates, et igasugune eksimus oleks tähtsusetu.
+- `r-expand-4-part2` — Usaldus taastub siis, kui klient saab aru, mida muudeti ja miks sama viga vähem tõenäoliselt kordub.
+- `r-expand-4-part2` — Juhataja tänas konkreetse tagasiside eest, sest üldine hinnang, et teenindus oli halb, poleks aidanud vea kohta kindlaks teha.
+- `r-expand-4-part2-q1` — Miks Kati kanasuppi ei soovinud?
+- `r-expand-4-part2-q1 (вариант)` — Ta ei söö liha.
+- `r-expand-4-part2-q1 (вариант)` — Supp oli külm.
+- `r-expand-4-part2-q1 (вариант)` — Tal polnud raha.
+- `r-expand-4-part2-q2` — Millal parandati arve?
+- `r-expand-4-part2-q2 (вариант)` — Enne maksmist.
+- `r-expand-4-part2-q2 (вариант)` — Järgmisel päeval.
+- `r-expand-4-part2-q2 (вариант)` — Pärast kohviku sulgemist.
+- `r-expand-4-part2-q3` — Kati sai lõpuks köögiviljasuppi.
+- `r-expand-4-part2-inference-b1` — Miks oli konkreetne tagasiside juhatajale kasulik?
+- `r-expand-4-part2-inference-b1 (вариант)` — See aitas leida tellimuse edastamise puuduse.
+- `r-expand-4-part2-inference-b1 (вариант)` — See võimaldas kliendi erisoovi eirata.
+- `r-expand-4-part2-inference-b1 (вариант)` — See tõestas, et arve oli algusest peale õige.
+- `r-expand-5-part2` — Vihmane matkapäev
+- `r-expand-5-part2` — Reede hommikul hakkas tugevalt sadama.
+- `r-expand-5-part2` — Loodusõpetaja otsustas pika metsaraja asemel valida lühema tee järve äärde.
+- `r-expand-5-part2` — Ta selgitas, et märjal laudteel tuleb kõndida aeglaselt.
+- `r-expand-5-part2` — Õpilased panid vihmajoped selga ja pakkisid telefonid kilekottidesse.
+- `r-expand-5-part2` — Järve juures mõõtsid nad vee temperatuuri ning tegid märkmeid.
+- `r-expand-5-part2` — Lõunapausi ajal jäi sadu järele.
+- `r-expand-5-part2` — Kuigi matk oli plaanitust lühem, said kõik oma vaatlusülesanded tehtud.
+- `r-expand-5-part2` — Koolis koostasid õpilased tulemustest ühise plakati.
+- `r-expand-5-part2` — Plakati tegemisel tekkis vaidlus selle üle, kas vihm oli vaatlusi pigem seganud või rikastanud.
+- `r-expand-5-part2` — Üks rühm oli märganud rajal vähem inimesi, teine aga rohkem tigusid.
+- `r-expand-5-part2` — Õpetaja palus mitte teha ühe päeva põhjal üldist järeldust kogu metsa kohta.
+- `r-expand-5-part2` — Vaatlustulemus sõltub nii ilmast, ajast kui ka sellest, kuhu vaatleja tähelepanu suunab.
+- `r-expand-5-part2` — Õpilased lisasid plakati juurde eraldi osa piirangutest.
+- `r-expand-5-part2` — Seal märgiti, et kõiki rajalõike ei läbitud ja osa liike jäi määramata.
+- `r-expand-5-part2` — Mõni kartis, et selline selgitus muudab töö nõrgemaks.
+- `r-expand-5-part2` — Õpetaja vastas, et usaldusväärne ülevaade näitab ka seda, mida andmete põhjal öelda ei saa.
+- `r-expand-5-part2` — Järgmiseks matkaks kavandati sama järve juurde uus vaatlus teistsuguse ilmaga, et võrrelda tulemusi, mitte lihtsalt kinnitada esimest muljet.
+- `r-expand-5-part2-q1` — Miks valiti lühem tee?
+- `r-expand-5-part2-q1 (вариант)` — Tugeva vihma tõttu.
+- `r-expand-5-part2-q1 (вариант)` — Buss hilines.
+- `r-expand-5-part2-q1 (вариант)` — Õpilased unustasid vee.
+- `r-expand-5-part2-q2` — Mida tehti pärast matka koolis?
+- `r-expand-5-part2-q2 (вариант)` — Koostati ühine plakat.
+- `r-expand-5-part2-q2 (вариант)` — Mindigi kohe koju.
+- `r-expand-5-part2-q2 (вариант)` — Vaadati filmi.
+- `r-expand-5-part2-q3` — Vaatlusülesanded jäid tegemata.
+- `r-expand-5-part2-inference-b1` — Miks lisati plakatile vaatluse piirangud?
+- `r-expand-5-part2-inference-b1 (вариант)` — Et vältida andmetest kaugemale ulatuvaid järeldusi.
+- `r-expand-5-part2-inference-b1 (вариант)` — Et varjata kõiki tulemusi.
+- `r-expand-5-part2-inference-b1 (вариант)` — Et tõestada, et vihmaga pole midagi võimalik vaadelda.
+- `r-expand-6-part2` — Uus treeninguaeg
+- `r-expand-6-part2` — Ujulas alustati remonti ja neljapäevane trenn viidi ajutiselt reedele.
+- `r-expand-6-part2` — Jüri ei saanud reedel osaleda, sest tal oli muusikakool.
+- `r-expand-6-part2` — Ta kirjutas treenerile ning küsis, kas võiks tulla kolmapäevase rühmaga.
+- `r-expand-6-part2` — Treener lubas, kui rühmas on vaba koht.
+- `r-expand-6-part2` — Teisipäeva õhtul sai Jüri kinnituse.
+- `r-expand-6-part2` — Ta märkis uue aja kalendrisse ja teatas vanematele.
+- `r-expand-6-part2` — Muudatus kehtib ainult kaks nädalat.
+- `r-expand-6-part2` — Pärast remonti taastub endine ajakava.
+- `r-expand-6-part2` — Uue rühmaga liitudes märkas Jüri, et sama harjutust selgitati teistmoodi.
+- `r-expand-6-part2` — Ta ei hakanud kohe vaidlema, vaid küsis, millisele oskusele uus treener tähelepanu pöörab.
+- `r-expand-6-part2` — Selgus, et harjutuse eesmärk oli parandada hingamise rütmi, mitte saavutada võimalikult suurt kiirust.
+- `r-expand-6-part2` — Jüri pidi seega oma tavapärast tulemusnäitajat muutma.
+- `r-expand-6-part2` — Pärast trenni kirjutas ta päevikusse, mis oli raske ja millest ta paremini aru sai.
+- `r-expand-6-part2` — Ta ei võrrelnud eri rühmade aegu otse, sest ülesanded polnud samad.
+- `r-expand-6-part2` — Kodus selgitas ta vanematele, et ajutine muudatus tõi lisaks ebamugavusele ka uue kogemuse.
+- `r-expand-6-part2` — Samas palus ta kalendris alles hoida endise ajakava, et pärast remonti ei tekiks segadust.
+- `r-expand-6-part2` — Ühekordne kinnitus ei asendanud tema arvates vajadust järgmise nädala teated uuesti üle vaadata.
+- `r-expand-6-part2-q1` — Miks Jüri reedel trenni ei saa?
+- `r-expand-6-part2-q1 (вариант)` — Tal on muusikakool.
+- `r-expand-6-part2-q1 (вариант)` — Ta sõidab reisile.
+- `r-expand-6-part2-q2` — Kui kaua kehtib muudatus?
+- `r-expand-6-part2-q3` — Treener lubas Jüril kohe kindlasti kolmapäeval tulla, sõltumata vabast kohast.
+- `r-expand-6-part2-inference-b1` — Miks ei võrrelnud Jüri kahe rühma aegu otse?
+- `r-expand-6-part2-inference-b1 (вариант)` — Harjutuste eesmärgid ja ülesanded erinesid.
+- `r-expand-6-part2-inference-b1 (вариант)` — Ta ei osanud kella vaadata.
+- `r-expand-6-part2-inference-b1 (вариант)` — Treener keelas päeviku kasutamise.
+- `r-expand-7-part2` — Naabrite kokkulepe
+- `r-expand-7-part2` — Liisi pere tahtis laupäeval uude korterisse riiuleid paigaldada.
+- `r-expand-7-part2` — Isa pani trepikotta teate, et puurimine kestab kella kümnest kaheteistkümneni.
+- `r-expand-7-part2` — Alumine naaber palus tööga tund aega hiljem alustada, sest tema laps magab hommikul kauem.
+- `r-expand-7-part2` — Pere nõustus.
+- `r-expand-7-part2` — Nad panid kõigepealt kokku laua, milleks polnud vaja puurida.
+- `r-expand-7-part2` — Riiulid said valmis kella üheks.
+- `r-expand-7-part2` — Õhtul tänas naaber neid arvestamise eest.
+- `r-expand-7-part2` — Liis arvas, et edaspidi võiks suurematest töödest alati ette teatada.
+- `r-expand-7-part2` — Järgmisel ühistu koosolekul tuli jutuks, kas remontidest peaks kõigile elanikele ühtemoodi teatama.
+- `r-expand-7-part2` — Osa naabreid kasutas maja vestlusrühma, teised aga ei soovinud sotsiaalmeediaga liituda.
+- `r-expand-7-part2` — Liisi isa pakkus, et tähtsam info pannakse alati ka trepikoja teadetetahvlile.
+- `r-expand-7-part2` — Vestlusrühm võiks seda täiendada, kuid mitte asendada.
+- `r-expand-7-part2` — Arutelu käigus märgati, et ebamugavust ei tekita üksnes müra tugevus.
+- `r-expand-7-part2` — Mõne inimese jaoks on kõige raskem teadmatus, kui kaua töö kestab.
+- `r-expand-7-part2` — Seepärast lepiti kokku, et teates nimetatakse kavandatud algus ja lõpp ning kontakt, kellelt muudatuste kohta küsida.
+- `r-expand-7-part2` — Keegi ei lubanud, et ühtegi ootamatut viivitust enam ei tule.
+- `r-expand-7-part2` — Kokkuleppe mõte oli muuta suhtlus selgemaks ning anda naabritele võimalus oma päeva ette planeerida.
+- `r-expand-7-part2-q1` — Mis kell alustati puurimist?
+- `r-expand-7-part2-q2` — Mida tehti enne puurimist?
+- `r-expand-7-part2-q2 (вариант)` — Pandi laud kokku.
+- `r-expand-7-part2-q2 (вариант)` — Värviti trepikoda.
+- `r-expand-7-part2-q2 (вариант)` — Mindi poodi.
+- `r-expand-7-part2-q3` — Pere arvestas naabri palvega.
+- `r-expand-7-part2-inference-b1` — Miks ei piisa ainult maja vestlusrühmast?
+- `r-expand-7-part2-inference-b1 (вариант)` — Kõik elanikud ei kasuta seda.
+- `r-expand-7-part2-inference-b1 (вариант)` — Paberil teated on alati keelatud.
+- `r-expand-7-part2-inference-b1 (вариант)` — Vestlusrühmas ei saa kellaaegu kirjutada.
+- `r-expand-8-part2` — Üllatus vanaemale
+- `r-expand-8-part2` — Pühapäeval jõudis pere vanaema juurde õigel ajal.
+- `r-expand-8-part2` — Lapsed olid lisaks kaardile valmistanud väikese fotoalbumi.
+- `r-expand-8-part2` — Iga pildi alla kirjutasid nad ühe ühise mälestuse.
+- `r-expand-8-part2` — Vanaema vaatas albumit kaua ja jutustas lugusid oma lapsepõlvest.
+- `r-expand-8-part2` — Isa tahtis lood telefoniga salvestada, kuid küsis enne vanaemalt luba.
+- `r-expand-8-part2` — Vanaema oli nõus.
+- `r-expand-8-part2` — Pere otsustas järgmisel kohtumisel vanad fotod koos üle vaadata ja nimed üles kirjutada, sest kõiki inimesi ei tundnud lapsed veel ära.
+- `r-expand-8-part2` — Fotode vaatamisel selgus, et sama sündmust mäletati erinevalt.
+- `r-expand-8-part2` — Vanaema arvas, et üks pilt on tehtud suvel, isa meenutas aga sügisest koolivaheaega.
+- `r-expand-8-part2` — Lapsed pakkusid, et kuupäeva võiks järeldada riietusest, kuid vanaema ütles, et jaheda ilmaga kanti sooje riideid ka suvel.
+- `r-expand-8-part2` — Nad otsustasid ebakindla kuupäeva juurde küsimärgi panna.
+- `r-expand-8-part2` — Isa tegi albumist digikoopia, kuid ei laadinud seda kohe avalikku keskkonda.
+- `r-expand-8-part2` — Enne lepiti kokku, kes pilte näeb ja milliseid lugusid võib edasi jagada.
+- `r-expand-8-part2` — Üks pereliige soovis, et tema lapsepõlvefotot väljaspool peret ei näidataks.
+- `r-expand-8-part2` — Seda soovi arvestati, kuigi pilt meeldis teistele väga.
+- `r-expand-8-part2` — Lastele jäi meelde, et perekonnaloo talletamine ei tähenda iga mälestuse avalikuks muutmist.
+- `r-expand-8-part2` — Ka puudulikult teada lugu võib alles hoida, kui ebaselged kohad ausalt ära märkida.
+- `r-expand-8-part2-q1` — Mida kirjutasid lapsed fotode alla?
+- `r-expand-8-part2-q2` — Miks tahetakse fotodele nimed lisada?
+- `r-expand-8-part2-q2 (вариант)` — Lapsed ei tunne kõiki inimesi ära.
+- `r-expand-8-part2-q2 (вариант)` — Fotod on uued.
+- `r-expand-8-part2-q2 (вариант)` — Album läheb müüki.
+- `r-expand-8-part2-q3` — Isa salvestas vanaema juttu ilma luba küsimata.
+- `r-expand-8-part2-inference-b1` — Miks jäeti ühe kuupäeva juurde küsimärk?
+- `r-expand-8-part2-inference-b1 (вариант)` — Olemasolevad mälestused ei võimaldanud kindlat vastust.
+- `r-expand-8-part2-inference-b1 (вариант)` — Pilt oli kindlasti võltsitud.
+- `r-expand-8-part2-inference-b1 (вариант)` — Keegi ei soovinud enam albumit vaadata.
+- `r-expand-9-part2` — Pärast vastuvõttu
+- `r-expand-9-part2` — Peeter jõudis perearstikeskusse kümme minutit enne kokkulepitud aega.
+- `r-expand-9-part2` — Registratuuris selgus, et tema telefoninumber oli muutunud, kuid andmeid polnud uuendatud.
+- `r-expand-9-part2` — Peeter andis uue numbri.
+- `r-expand-9-part2` — Pärast vastuvõttu küsis ta, kuidas saada kooli jaoks tõend.
+- `r-expand-9-part2` — Õde selgitas, et selle kohta tuleb saata keskusele sõnum.
+- `r-expand-9-part2` — Kodus vaatas Peeter keskuse veebilehelt üle, kuhu kirjutada.
+- `r-expand-9-part2` — Ta ei saatnud isikuandmeid juhuslikule aadressile, vaid kasutas lehel näidatud kanalit.
+- `r-expand-9-part2` — Vormi täites märkas Peeter, et osa andmeid oli juba olemas.
+- `r-expand-9-part2` — Ta kontrollis neid siiski enne saatmist, sest varasem telefoninumber oli näidanud, et salvestatud info ei pruugi olla ajakohane.
+- `r-expand-9-part2` — Tõendi kohta esitas ta ainult vajalikud andmed ega lisanud oma kirjale kogu vestluse kirjeldust.
+- `r-expand-9-part2` — Kui saatmise järel saabus automaatne kinnitus, salvestas ta selle, kuid ei pidanud seda veel valmis tõendiks.
+- `r-expand-9-part2` — Järgmisel päeval küsis klassijuhataja, millal dokument saabub.
+- `r-expand-9-part2` — Peeter vastas, et ta on taotluse saatnud, ent lõplikku vastust pole veel saanud.
+- `r-expand-9-part2` — Ta ei tahtnud lubada tähtaega, mida keskus polnud kinnitanud.
+- `r-expand-9-part2` — Seejärel otsis ta veebilehelt tavapärase vastamisaja.
+- `r-expand-9-part2` — Kui see aeg oleks möödunud, kavatses ta küsida taotluse seisu sama ametliku kanali kaudu, mitte saata järjest uusi taotlusi.
+- `r-expand-9-part2-q1` — Millised andmed olid vananenud?
+- `r-expand-9-part2-q2` — Miks Peeter keskuse veebilehte vaatas?
+- `r-expand-9-part2-q2 (вариант)` — Et leida õige suhtluskanal.
+- `r-expand-9-part2-q2 (вариант)` — Et osta pilet.
+- `r-expand-9-part2-q2 (вариант)` — Et vaadata tunniplaani.
+- `r-expand-9-part2-q3` — Peeter jõudis vastuvõtule hilinemisega.
+- `r-expand-9-part2-inference-b1` — Miks ei pidanud Peeter automaatset kinnitust valmis tõendiks?
+- `r-expand-9-part2-inference-b1 (вариант)` — Kinnitus näitas saatmist, mitte taotluse sisulist täitmist.
+- `r-expand-9-part2-inference-b1 (вариант)` — Keskus oli taotluse kindlasti tagasi lükanud.
+- `r-expand-9-part2-inference-b1 (вариант)` — Õpetaja ei vajanud dokumenti.
+- `r-02-part2` — Pärast külaskäiku
+- `r-02-part2` — Tere, Kadri!
+- `r-02-part2` — Aitäh toreda laupäeva eest.
+- `r-02-part2` — Vanaema pirukad olid väga maitsvad.
+- `r-02-part2` — Kõige rohkem meeldis mulle metsas jalutada, kuigi mu kingad said poriseks.
+- `r-02-part2` — Märkasin kodus, et mu soe sall jäi teie esikusse.
+- `r-02-part2` — Kas sa saaksid selle esmaspäeval kooli kaasa võtta?
+- `r-02-part2` — Kui mitte, võin teisipäeval pärast tunde ise läbi tulla.
+- `r-02-part2` — Saadan sulle täna õhtul meie ühised fotod.
+- `r-02-part2` — Palun küsi enne vanavanematelt, kas võin ühe neist kooli näitusel kasutada.
+- `r-02-part2` — Liisa
+- `r-02-part2` — Mõtlesin ka meie vestlusele vanaema lugudest.
+- `r-02-part2` — Algul tahtsin kirjutada ainult naljakamatest juhtumitest, kuid hiljem sain aru, et nii jääks tema elust üsna ühekülgne mulje.
+- `r-02-part2` — Kui teeme lugudest väikese koolitöö, võiksime eristada vanaema enda sõnu oma selgitustest.
+- `r-02-part2` — Samuti tuleks temalt küsida, milliseid teemasid ta ei soovi väljaspool peret jagada.
+- `r-02-part2` — Õpetaja lubas näitusel kasutada nii fotosid kui ka lühikesi tekstikatkeid.
+- `r-02-part2` — Ta palus siiski iga materjali juurde märkida, kust see pärineb.
+- `r-02-part2` — Ma ei taha panna pildi alla täpset aastaarvu, kui me pole selles kindlad.
+- `r-02-part2` — Võiksime kirjutada ligikaudse aja ja selgitada, mille põhjal seda arvame.
+- `r-02-part2` — Nii ei näeks töö välja täiesti veatu, kuid lugejal oleks lihtsam aru saada, mis on teada ja mis veel kontrollimist vajab.
+- `r-02-part2-q1` — Mis jäi esikusse?
+- `r-02-part2-q2` — Millal saab Liisa ise salli järele tulla?
+- `r-02-part2-q2 (вариант)` — Teisipäeval pärast tunde.
+- `r-02-part2-q2 (вариант)` — Esmaspäeva hommikul.
+- `r-02-part2-q2 (вариант)` — Pühapäeva õhtul.
+- `r-02-part2-q3` — Liisal on juba luba fotot näitusel kasutada.
+- `r-02-part2-inference-b1` — Mida peab Liisa koolitöö juures oluliseks?
+- `r-02-part2-inference-b1 (вариант)` — Allikate ja ebakindlate andmete selget eristamist.
+- `r-02-part2-inference-b1 (вариант)` — Kõigi oletuste esitamist kindlate faktidena.
+- `r-02-part2-inference-b1 (вариант)` — Ainult naljakate lugude valimist.
+- `r-b2-21` — Telefonivaba päev: katse või keeld?
+- `r-b2-21` — Kui õpilasesindus pakkus välja telefonivaba koolipäeva, peeti seda esialgu lihtsaks lahenduseks.
+- `r-b2-21` — Telefonid jääksid hommikul klassi lukustatud kappi ning õpilased saaksid need pärast viimast tundi tagasi.
+- `r-b2-21` — Ettepaneku toetajad lootsid, et vahetundides hakatakse rohkem suhtlema ja tundides on vähem kõrvalisi katkestusi.
+- `r-b2-21` — Vastased kartsid aga, et kõigile kehtiv piirang karistab ka neid, kes kasutavad telefoni vastutustundlikult.
+- `r-b2-21` — Arutelu muutus sisulisemaks siis, kui küsiti, millist probleemi tegelikult lahendada tahetakse.
+- `r-b2-21` — Ühe õpetaja jaoks oli peamine mure salaja filmimine, teise jaoks tähelepanu hajumine.
+- `r-b2-21` — Need pole päris sama probleem ning sama abinõu ei pruugi mõlemat ühtemoodi lahendada.
+- `r-b2-21` — Õpilased tõid omakorda näiteid olukordadest, kus telefon aitab õppida või võimaldab pärast kooli muutunud plaanidest teatada.
+- `r-b2-21` — Lõpuks lepiti kokku kahenädalases katses.
+- `r-b2-21` — Telefonid jäid kotti, mitte ühisesse kappi.
+- `r-b2-21` — Õpetaja võis lubada neid kindla ülesande täitmiseks kasutada.
+- `r-b2-21` — Enne katset ja selle lõpus küsiti nii õpilastelt kui ka õpetajatelt, kui sageli töö katkes ning kas vahetundide suhtlus muutus.
+- `r-b2-21` — Samuti pandi kirja erandid ja põhjused, miks kokkulepet mõnikord ei järgitud.
+- `r-b2-21` — Tulemused ei olnud ühesugused.
+- `r-b2-21` — Mõnes klassis märgati rahulikumat õhkkonda, teises ei muutunud palju.
+- `r-b2-21` — Õpilasesindus hoiatas, et üksikute muljete põhjal ei saa veel väita, nagu oleks probleem lõplikult lahendatud.
+- `r-b2-21` — Ka küsitluses osalenute arv erines klassiti, mistõttu polnud õiglane tulemusi lihtsalt järjestada.
+- `r-b2-21` — Katse korraldajad soovitasid enne püsiva reegli kehtestamist eristada õppetööd toetavat kasutust harjumuspärasest sirvimisest.
+- `r-b2-21` — Nende järeldus ei olnud, et piiranguid pole vaja.
+- `r-b2-21` — Pigem peaks iga piirang vastama selgelt sõnastatud eesmärgile ning selle mõju tuleks hiljem uuesti hinnata.
+- `r-b2-21` — Muidu võib nähtav ja kergesti kontrollitav reegel asendada arutelu selle üle, mida õpilased tegelikult vajavad.
+- `r-b2-21` — Veel üks õpilane märkis, et arutellu tuleks kaasata ka need, kes küsitlusele ei vastanud.
+- `r-b2-21` — Nende vaikimist ei saa tõlgendada rahuloluna.
+- `r-b2-21` — Seetõttu kavandati järgmisele kohtumisele võimalus anda tagasisidet väikestes rühmades.
+- `r-b2-21` — Korraldajad lootsid, et nii jõuavad arutelusse ka tagasihoidlikumad õpilased, kelle kogemused võivad nähtavamate osalejate omadest erineda.
+- `r-b2-21` — Ka see ettepanek vajab katsetamist, mitte üksnes heakskiitvat otsust.
+- `r-b2-21-q1` — Miks muutus arutelu probleemi täpsustamisel sisulisemaks?
+- `r-b2-21-q1 (вариант)` — Selgus, et erinevad mured võivad vajada erinevaid abinõusid.
+- `r-b2-21-q1 (вариант)` — Selgus, et kõige olulisem on õpetajate üksmeel sõltumata õpilaste kogemusest.
+- `r-b2-21-q1 (вариант)` — Selgus, et erinevad mured tuleb kõigepealt lahendada ühe üldise keeluga.
+- `r-b2-21-q2` — Mille poolest erines katse esialgsest ettepanekust?
+- `r-b2-21-q2 (вариант)` — Telefonid jäid kotti ja õppeülesandeks lubati erandeid.
+- `r-b2-21-q2 (вариант)` — Telefonid jäid kotti, kuid õppetööga seotud kasutust ei eristatud muust kasutusest.
+- `r-b2-21-q2 (вариант)` — Ühise hoiukoha asemel lubati õpilastel iseseisvalt otsustada, millal piirang kehtib.
+- `r-b2-21-q3` — Miks ei saa klasside tulemusi lihtsalt järjestada?
+- `r-b2-21-q3 (вариант)` — Vastajate arv ja klasside olukord erinesid.
+- `r-b2-21-q3 (вариант)` — Katse kestus erines igas klassis ning osa klasse alustas alles küsitluse järel.
+- `r-b2-21-q3 (вариант)` — Klasside tulemused kajastasid ainult õpetajate, mitte õpilaste tähelepanekuid.
+- `r-b2-21-q4` — Milline seisukoht võtab autori järelduse kõige paremini kokku?
+- `r-b2-21-q4 (вариант)` — Reegli eesmärk peab olema selge ning mõju kontrollitav.
+- `r-b2-21-q4 (вариант)` — Ühtne reegel on põhjendatud, kui seda on lihtne kontrollida, isegi kui mõju jääb teadmata.
+- `r-b2-21-q4 (вариант)` — Õpilaste rahulolu on piirangu hindamiseks piisav ning muid andmeid pole vaja.
+- `r-b2-21-q5` — Katse korraldajad soovitasid kehtestada püsiva reegli kohe, sest tulemused olid kõigis klassides võrreldavad.
+- `r-b2-22` — Kelle jaoks on linnatänav?
+- `r-b2-22` — Linnaosa peatänava ümberkorraldamise plaan tekitas rohkem vaidlusi, kui projekteerijad olid oodanud.
+- `r-b2-22` — Kõnniteid sooviti laiendada, lisada puudega puhkealasid ning muuta üks autode sõidurada rattateeks.
+- `r-b2-22` — Plaani esitledes rõhutati turvalisust ja meeldivamat linnaruumi.
+- `r-b2-22` — Mitmed kohalikud ettevõtjad nägid aga eelkõige kaotatud parkimiskohti ning kartsid, et klientidel muutub nende juurde tulemine keerulisemaks.
+- `r-b2-22` — Avalikul arutelul selgus, et ka sõna „ligipääsetavus” tähendas osalejatele erinevaid asju.
+- `r-b2-22` — Poeomanik mõtles võimalusele autoga ukse ette sõita.
+- `r-b2-22` — Ratastoolikasutaja rääkis kõrgetest äärekividest ja kitsast läbipääsust.
+- `r-b2-22` — Lapsevanem kirjeldas ristmikku, kus roheline tuli kestis väikese lapsega ületamiseks liiga lühikest aega.
+- `r-b2-22` — Ükski neist muredest ei kadunud pelgalt teise osaleja seisukohta ümber lükates.
+- `r-b2-22` — Linn otsustas enne püsivat ehitust teha ajutise katse.
+- `r-b2-22` — Mõneks kuuks paigaldati teisaldatavad piirded ja istumiskohad.
+- `r-b2-22` — Samal ajal loendati jalakäijaid ning jälgiti, kuidas toimib kauba kohaletoimetamine.
+- `r-b2-22` — Ettevõtjatel paluti võrrelda käivet sarnase perioodiga, kuid rõhutati, et müügitulemust mõjutavad ka ilm, hinnad ja hooajalised muutused.
+- `r-b2-22` — Üksnes ühe vaikse nädala põhjal ei tahetud teha lõplikke otsuseid.
+- `r-b2-22` — Katse tõi esile probleemi, mida esialgne joonis hästi ei näidanud: hommikune kaubaauto peatus blokeeris uue rattatee.
+- `r-b2-22` — Lahenduseks pakuti kindla kasutusajaga laadimisala.
+- `r-b2-22` — Mõned elanikud pidasid seda kompromissi liiga keeruliseks, teised nägid selles võimalust eri vajadusi paremini sobitada.
+- `r-b2-22` — Arutelu ei lõppenud täieliku üksmeelega.
+- `r-b2-22` — See ei tähendanud siiski, et katse oleks läbi kukkunud.
+- `r-b2-22` — Võrreldes algusega osati täpsemalt öelda, milline muudatus kellele raskusi valmistab ja millist lahendust tasub edasi proovida.
+- `r-b2-22` — Hea tänav ei pea kõigile täpselt sama võimaldama, kuid otsuste tegemisel peab olema arusaadav, kelle vajadusi arvestati ning miks mõni soov jäi täitmata.
+- `r-b2-22` — Arutelule järgnenud kirjalikus kokkuvõttes eristati juba tehtud otsuseid küsimustest, mis jäid lahtiseks.
+- `r-b2-22` — See oli oluline, sest koosolekul kõlanud ettepanek võis osalejatele hiljem meenuda kinnitatud lubadusena.
+- `r-b2-22` — Linn lubas avaldada ka põhjendused nende muudatuste kohta, mida ei kavandata.
+- `r-b2-22` — Nii saavad elanikud kontrollida, kas nende seisukoht jõudis otsustajateni, isegi juhul, kui lõplik lahendus nende eelistusega ei ühti.
+- `r-b2-22-q1` — Mida näitavad erinevad arusaamad ligipääsetavusest?
+- `r-b2-22-q1 (вариант)` — Sama üldmõiste võib varjata erinevaid praktilisi vajadusi.
+- `r-b2-22-q1 (вариант)` — Eri vajadused tuleks järjestada selle järgi, kui palju neid arutelul mainiti.
+- `r-b2-22-q1 (вариант)` — Sama mõiste kasutamine näitab, et erimeelsus puudutab üksnes sõnastust.
+- `r-b2-22-q2` — Miks ei piisa ühest vaikse müügiga nädalast?
+- `r-b2-22-q2 (вариант)` — Müüki võivad mõjutada mitmed ümberkorraldusest sõltumatud tegurid.
+- `r-b2-22-q2 (вариант)` — Ümberkorralduse mõju saab hinnata ainult siis, kui kõik poed teatavad täpselt sama tulemuse.
+- `r-b2-22-q2 (вариант)` — Majandusliku mõju hindamine tuleks täielikult asendada jalakäijate loendamisega.
+- `r-b2-22-q3` — Mida näitas kaubaauto peatumise juhtum?
+- `r-b2-22-q3 (вариант)` — Tegelik kasutus võib tuua esile joonisel varju jäänud vastuolusid.
+- `r-b2-22-q3 (вариант)` — Esialgses plaanis tuleks säilitada kõik detailid, et katsetulemused oleksid võrreldavad.
+- `r-b2-22-q3 (вариант)` — Ajutine lahendus osutus kasutuks, sest kõigi osalejate vajadused olid juba teada.
+- `r-b2-22-q4` — Kuidas hindab autor üksmeele puudumist?
+- `r-b2-22-q4 (вариант)` — See ei muuda katset kasutuks, kui probleemidest saadakse täpsemalt aru.
+- `r-b2-22-q4 (вариант)` — Katset võib jätkata vaid juhul, kui kõik osalejad lepivad sama lahendusega.
+- `r-b2-22-q4 (вариант)` — Üksmeele puudumine näitab, et eri kasutajate vajadusi ei ole võimalik kirjeldada.
+- `r-b2-22-q5` — Autori arvates võib katse olla kasulik ka siis, kui see ei lõpe täieliku üksmeelega.
+- `r-b2-23` — Parandada või asendada?
+- `r-b2-23` — Kooli keskkonnaring korraldas töötoa, kuhu võis tuua katkisi igapäevaesemeid.
+- `r-b2-23` — Idee oli lihtne: enne uue asja ostmist võiks uurida, kas vana saab parandada.
+- `r-b2-23` — Korraldajad rõhutasid siiski, et töötuba ei ole remonditeenus ning iga eset ei saa kohapeal korda teha.
+- `r-b2-23` — Keerulisemad seadmed jäid spetsialistidele; õpilased tegelesid juhendaja abiga eelkõige lihtsate ja ohutute töödega.
+- `r-b2-23` — Esimesel kohtumisel tõi üks õpilane katkise lukuga koti.
+- `r-b2-23` — Uue koti ostmine tundus talle lihtsam, sest paranduse hinda ta ei teadnud.
+- `r-b2-23` — Juhendaja palus enne otsust võrrelda koti ülejäänud seisukorda, vajalikke materjale ja tööle kuluvat aega.
+- `r-b2-23` — Selgus, et luku vahetamine maksaks vähem kui samaväärne uus kott.
+- `r-b2-23` — Õpilane otsustas parandamise kasuks, kuid märkis, et see poleks olnud võimalik, kui sobivat lukku poleks müügil olnud.
+- `r-b2-23` — Teise eseme puhul jõuti teistsugusele järeldusele.
+- `r-b2-23` — Vana lambi varuosa polnud enam saadaval ning isetehtud lahendus poleks olnud piisavalt turvaline.
+- `r-b2-23` — Korraldajad ei nimetanud asendamist läbikukkumiseks.
+- `r-b2-23` — Nende sõnul muutub keskkonnahoid loosungiks, kui iga parandust peetakse heaks sõltumata selle riskidest või tulemusest.
+- `r-b2-23` — Tähtis on teha põhjendatud valik, mitte näidata, et ühest põhimõttest ei taganeta kunagi.
+- `r-b2-23` — Pärast töötuba küsiti osalejatelt, kas nende ostukäitumine muutus.
+- `r-b2-23` — Mõni hakkas enne ostmist uurima varuosade saadavust, teine leidis, et tal pole remondi korraldamiseks piisavalt aega.
+- `r-b2-23` — Korraldajad tunnistasid, et teadlikkus üksi ei kõrvalda hinna ja teenuste kättesaadavusega seotud takistusi.
+- `r-b2-23` — Järgmiseks kavandati kaardistada lähedal asuvad parandusteenused ning panna kirja, mida iga koht vastu võtab.
+- `r-b2-23` — Nimekirja juurde taheti lisada viimase kontrollimise kuupäev, sest teenused ja hinnad võivad muutuda.
+- `r-b2-23` — Nii loodeti anda inimestele kasutatav abivahend, selle asemel et piirduda üldise soovitusega vähem tarbida.
+- `r-b2-23` — Õpilased arutasid ka seda, kuidas oma tulemusi teistele tutvustada.
+- `r-b2-23` — Nad ei tahtnud näidata ainult õnnestunud parandusi, sest nii tekiks eksitav pilt, nagu oleks iga katkine ese hõlpsasti taastatav.
+- `r-b2-23` — Näitusele lisati ka pooleli jäänud töö koos selgitusega, milline takistus tekkis.
+- `r-b2-23` — Selline aus ülevaade aitas järgmise töötoa osalejatel paremini hinnata, mida kaasa tuua ja millist abi kohapealt oodata.
+- `r-b2-23-q1` — Miks võrreldi enne koti parandamist mitut asjaolu?
+- `r-b2-23-q1 (вариант)` — Et otsus põhineks tegelikel võimalustel, mitte üksnes põhimõttel.
+- `r-b2-23-q1 (вариант)` — Et parandamise rahalist kasu pidada tähtsamaks ohutusest ja varuosade saadavusest.
+- `r-b2-23-q1 (вариант)` — Et tõendada ühe näite põhjal, et sama valik sobib kõigile katkistele esemetele.
+- `r-b2-23-q2` — Miks ei peetud lambi asendamist läbikukkumiseks?
+- `r-b2-23-q2 (вариант)` — Ohutuks paranduseks puudus sobiv varuosa.
+- `r-b2-23-q2 (вариант)` — Korraldajad eelistasid vahetada välja kõik seadmed, mille parandamine võtab aega.
+- `r-b2-23-q2 (вариант)` — Uue eseme ostmise kasuks otsustati üksnes selle madalama hinna tõttu.
+- `r-b2-23-q3` — Mida näitas osalejate tagasiside?
+- `r-b2-23-q3 (вариант)` — Teadmistest ei piisa, kui praktilised takistused jäävad alles.
+- `r-b2-23-q3 (вариант)` — Takistused tekivad peamiselt osalejate vähesest teadlikkusest ning teenuste korraldus pole oluline.
+- `r-b2-23-q3 (вариант)` — Töötoa mõju saab hinnata selle põhjal, mitu inimest kohe samal päeval uue eseme ostis.
+- `r-b2-23-q4` — Miks sooviti teenuste nimekirjale kontrollimise kuupäeva?
+- `r-b2-23-q4 (вариант)` — Et kasutaja saaks hinnata info ajakohasust.
+- `r-b2-23-q4 (вариант)` — Et kontrollimata teenused saaksid nimekirjas püsida sama usaldusväärsena kui äsja kontrollitud.
+- `r-b2-23-q4 (вариант)` — Et lugeja saaks kuupäeva järgi kindlaks teha, milline teenus on kõige odavam.
+- `r-b2-23-q5` — Töötoa korraldajad käsitlesid parandamisest loobumist alati keskkonnahoiu ebaõnnestumisena.
 
-## speaking.json (64)
+## speaking.json (68)
 
 - `s-01` — Ma pakun, et ...
 - `s-01` — See on hea mõte.
@@ -1738,6 +2567,10 @@
 - `s-17` — Lepime kokku.
 - `s-18` — Meil on komme ...
 - `s-18` — Ja sina?
+- `s-01-change` — Selle asemel võiksime ...
+- `s-01-change` — Meil on aega ainult ...
+- `s-01-change` — Kas leiame odavama võimaluse?
+- `s-01-change` — Niisiis kohtume ...
 
 ## vocab.json (616)
 
@@ -2358,7 +3191,7 @@
 - `v-body-308` — kael (kaela, kaela)
 - `v-body-308` — Mul valutab kael.
 
-## writing.json (119)
+## writing.json (143)
 
 - `w-01` — Sinu sõber Karl elab teises linnas. Kirjuta talle e-kiri ja kutsu ta nädalavahetusel enda juurde külla.
 - `w-01` — Millal Karl võiks tulla?
@@ -2459,6 +3292,30 @@
 - `w-18` — Miks see amet sulle meeldib?
 - `w-18` — Mida peab selleks õppima?
 - `w-18` — Kus sa tahaksid töötada?
+- `w-01-reply` — Sinu sõber Karl elab teises linnas. Kirjuta talle e-kiri ja kutsu ta nädalavahetusel enda juurde külla. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-01-reply` — Täna sõpra vastuse eest.
+- `w-01-reply` — Paku uus aeg või teine lahendus.
+- `w-01-reply` — Selgita, miks see sulle sobib.
+- `w-01-reply` — Küsi, kas uus plaan sobib.
+- `w-01-reply` — Käsitle võimalikku vastuväidet ja paku kompromiss.
+- `w-02-reply` — Õpetaja vastas sinu kirjale ja saatis kodutöö. Kirjuta vastus: täna õpetajat, täpsusta ülesande tähtaega, küsi abi ühe raske koha kohta ja selgita, millal töö esitad. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-02-reply` — Täna õpetajat.
+- `w-02-reply` — Täpsusta tähtaega.
+- `w-02-reply` — Küsi ühe ülesande kohta.
+- `w-02-reply` — Ütle, millal töö esitad.
+- `w-03-reply` — Klassikaaslane väidab, et telefonid tuleb koolis täielikult keelata. Kirjuta vastus: võta tema mõte kokku, esita üks poolt- ja üks vastuargument ning paku põhjendatud reegel. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-03-reply` — Võta teise arvamus kokku.
+- `w-03-reply` — Too üks pooltargument.
+- `w-03-reply` — Too üks vastuargument.
+- `w-03-reply` — Paku ühine reegel ja põhjenda seda.
+- `w-expand-5-reply` — Kirjuta sõbrale e-kiri. Teema: Klassiekskursioon. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-expand-6-reply` — Kirjuta sõbrale e-kiri. Teema: Õhtusöök sõpradega. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-expand-7-reply` — Kirjuta sõbrale e-kiri. Teema: Kohtumine linnas. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-expand-8-reply` — Kirjuta sõbrale e-kiri. Teema: Nädalavahetuse matk. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-expand-9-reply` — Kirjuta sõbrale e-kiri. Teema: Kolimine. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-expand-10-reply` — Kirjuta sõbrale e-kiri. Teema: Perepidu. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-expand-11-reply` — Kirjuta sõbrale e-kiri. Teema: Spordiklubi. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
+- `w-expand-12-reply` — Kirjuta sõbrale e-kiri. Teema: Tervislik päevakava. Sõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust. Põhjenda oma ettepanekut vähemalt kahe argumendiga. Arvesta adressaadi võimaliku vastuväitega ning paku selle lahendamiseks kompromiss. Kasuta selget sissejuhatust ja kokkuvõtet.
 - `c-01` — Tere, Karl!
 - `c-02` — Lugupeetud õpetaja!
 - `c-03` — Ootan sinu vastust.

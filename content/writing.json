@@ -253,6 +253,270 @@
         "Попросите ответить."
       ],
       "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+    },
+    {
+      "id": "w-01-reply",
+      "topic": "freetime",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Письмо другу: приглашение — ответ и изменение плана",
+      "prompt_et": "Sinu sõber Karl elab teises linnas. Kirjuta talle e-kiri ja kutsu ta nädalavahetusel enda juurde külla.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Ваш друг Карл живёт в другом городе. Напишите ему письмо и пригласите в гости на выходные.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-01"
+    },
+    {
+      "id": "w-02-reply",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Письмо учителю — уточнение задания",
+      "prompt_et": "Õpetaja vastas sinu kirjale ja saatis kodutöö. Kirjuta vastus: täna õpetajat, täpsusta ülesande tähtaega, küsi abi ühe raske koha kohta ja selgita, millal töö esitad.",
+      "prompt_ru": "Учитель ответил на ваше письмо о пропуске и прислал домашнее задание. Поблагодарите, уточните срок, задайте вопрос о сложном пункте и сообщите, когда сдадите работу.",
+      "content_points_et": [
+        "Täna õpetajat.",
+        "Täpsusta tähtaega.",
+        "Küsi ühe ülesande kohta.",
+        "Ütle, millal töö esitad."
+      ],
+      "content_points_ru": [
+        "Поблагодарите учителя.",
+        "Уточните срок.",
+        "Задайте конкретный вопрос.",
+        "Сообщите, когда сдадите работу."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-02"
+    },
+    {
+      "id": "w-03-reply",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "kind": "opinion",
+      "title_ru": "Телефоны на уроках — ответ на возражение",
+      "prompt_et": "Klassikaaslane väidab, et telefonid tuleb koolis täielikult keelata. Kirjuta vastus: võta tema mõte kokku, esita üks poolt- ja üks vastuargument ning paku põhjendatud reegel.",
+      "prompt_ru": "Одноклассник предлагает полностью запретить телефоны в школе. Кратко передайте его позицию, приведите аргумент за и против и предложите обоснованное правило.",
+      "content_points_et": [
+        "Võta teise arvamus kokku.",
+        "Too üks pooltargument.",
+        "Too üks vastuargument.",
+        "Paku ühine reegel ja põhjenda seda."
+      ],
+      "content_points_ru": [
+        "Передайте чужую позицию.",
+        "Приведите аргумент за.",
+        "Приведите аргумент против.",
+        "Предложите и обоснуйте правило."
+      ],
+      "explanation_ru": "Продолжение рассуждения: ответьте на конкретное возражение. Отличайте позицию другого человека от своей. Используйте ühelt poolt, teiselt poolt, siiski, seetõttu.",
+      "parent_id": "w-03"
+    },
+    {
+      "id": "w-expand-5-reply",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Школьная экскурсия — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Klassiekskursioon.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Выберите место экскурсии и согласуйте поездку. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-5"
+    },
+    {
+      "id": "w-expand-6-reply",
+      "topic": "food",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Ужин с друзьями — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Õhtusöök sõpradega.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Спланируйте ужин: блюда, покупки и обязанности. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-6"
+    },
+    {
+      "id": "w-expand-7-reply",
+      "topic": "city",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Встреча в городе — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Kohtumine linnas.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Назначьте встречу и объясните дорогу. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-7"
+    },
+    {
+      "id": "w-expand-8-reply",
+      "topic": "nature",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Поход на выходных — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Nädalavahetuse matk.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Выберите маршрут и вещи с учётом погоды. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-8"
+    },
+    {
+      "id": "w-expand-9-reply",
+      "topic": "home",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Переезд — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Kolimine.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Обсудите помощь с переездом и транспорт. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-9"
+    },
+    {
+      "id": "w-expand-10-reply",
+      "topic": "family",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Семейный праздник — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Perepidu.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Организуйте праздник и распределите обязанности. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-10"
+    },
+    {
+      "id": "w-expand-11-reply",
+      "topic": "freetime",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Спортивный клуб — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Spordiklubi.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Выберите тренировку, время и бюджет. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-11"
+    },
+    {
+      "id": "w-expand-12-reply",
+      "topic": "health",
+      "level": "B1",
+      "status": "draft",
+      "kind": "email",
+      "title_ru": "Здоровый распорядок — ответ и изменение плана",
+      "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Tervislik päevakava.\nSõber vastab, et pakutud aeg ei sobi. Kirjuta uus kiri: paku teine aeg, selgita oma valikut ja küsi kinnitust.",
+      "prompt_ru": "Договоритесь о прогулках и режиме сна. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.\nПродолжение: адресату не подходит предложенное время. Напишите ответ с новым вариантом, причиной изменения и просьбой подтвердить договорённость.",
+      "content_points_et": [
+        "Täna sõpra vastuse eest.",
+        "Paku uus aeg või teine lahendus.",
+        "Selgita, miks see sulle sobib.",
+        "Küsi, kas uus plaan sobib."
+      ],
+      "content_points_ru": [
+        "Поблагодарите за ответ.",
+        "Предложите новое время или решение.",
+        "Обоснуйте предложение.",
+        "Попросите подтвердить новый план."
+      ],
+      "explanation_ru": "Сначала выполните исходное задание. В продолжении сохраните его тему, но отреагируйте на новое ограничение. Используйте näiteks kahjuks, selle asemel, kas sulle sobib. Самопроверка по чек-листу.",
+      "parent_id": "w-expand-12"
     }
   ],
   "connectors": [

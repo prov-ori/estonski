@@ -189,6 +189,30 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
       await page.waitForSelector('.qset');
       ok(await page.locator('.question').count() === 3, item.id + ': три вопроса доступны');
     }
+    for (const module of ['reading','listening','writing','speaking']) {
+      const data = JSON.parse(fs.readFileSync(path.join(ROOT,'content',module+'.json'),'utf8'));
+      for (const task of data.items.filter(t => t.parent_id)) {
+        await page.goto(base + '#/' + module + '/' + task.id);
+        await page.waitForSelector('nav[aria-label="Этапы задания"]');
+        ok(await page.locator('main h1').count() === 1, module + '/' + task.id + ': продолжение открывается');
+        ok(await page.getByRole('link', {name:/Исходное задание/}).count() === 1, task.id + ': есть обратная ссылка');
+      }
+    }
+    await page.goto(base + '#/reading/r-01');
+    await page.waitForSelector('nav[aria-label="Этапы задания"]');
+    await page.getByRole('link', {name:/Продолжить/}).click();
+    await page.waitForURL('**/#/reading/r-01-part2');
+    ok(true, 'переход к продолжению работает');
+    await page.goto(base + '#/writing/w-01-reply');
+    await page.waitForSelector('textarea');
+    await page.locator('textarea').fill('Aitäh vastuse eest! Pakun uut aega.');
+    await page.goto(base + '#/writing/w-01');
+    await page.waitForSelector('textarea');
+    ok(!(await page.locator('textarea').inputValue()).includes('Pakun uut aega'), 'черновик продолжения отделён от исходного');
+    await page.goto(base + '#/writing/w-01-reply');
+    await page.waitForSelector('textarea');
+    ok((await page.locator('textarea').inputValue()).includes('Pakun uut aega'), 'черновик продолжения сохраняется');
+    ok(errs.length === 0, 'новые продолжения без ошибок браузера');
     await ctx.close();
   }
   await browser.close();

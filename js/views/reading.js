@@ -1,3 +1,4 @@
+import { seriesLinks } from '../series.js';
 import { h, content, pct, setChildren, addChildren } from '../util.js';
 import { questionSet, saveResults } from '../question.js';
 
@@ -13,6 +14,8 @@ export default {
     const data = await content('reading');
     const id = args[0];
     const item = data.items.find((x) => x.id === id);
+    const series = await seriesLinks(item, 'reading');
+    if (series) root.append(series);
 
     if (!item) {
       addChildren(root, 

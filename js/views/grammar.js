@@ -6,7 +6,7 @@ export default {
   title: 'Грамматика',
   async mount(root, args) {
     const [data, topicsCfg] = await Promise.all([content('grammar'), config('topics')]);
-    const topics = topicsCfg.grammar;
+    const topics = [...topicsCfg.grammar, ...topicsCfg.themes.filter(t => data.items.some(q => q.topic === t.id))];
     const filter = args[0] || 'all';
     const all = data.items;
 
@@ -26,11 +26,11 @@ export default {
     }
 
     const sheetTopic = topics.find((t) => t.id === filter);
-    addChildren(root, 
+    addChildren(root,
       h('h1', null, 'Грамматика'),
       h('p', { class: 'lead' }, 'Выберите тему, отвечайте — проверка сразу, с объяснением по-русски. В заданиях с полем ввода пользуйтесь кнопками õ ä ö ü.'),
       chips,
-      sheetTopic && h('details', { class: 'sheet' }, h('summary', null, `Памятка: ${sheetTopic.name_ru}`), h('ul', null, sheetTopic.cheatsheet_ru.map((l) => h('li', null, l)))));
+      sheetTopic?.cheatsheet_ru && h('details', { class: 'sheet' }, h('summary', null, `Памятка: ${sheetTopic.name_ru}`), h('ul', null, sheetTopic.cheatsheet_ru.map((l) => h('li', null, l)))));
 
     const area = h('div', { class: 'trainer', 'aria-live': 'off' });
     addChildren(root, area);
@@ -67,14 +67,14 @@ export default {
           nextBtn.hidden = false; nextBtn.focus();
         },
       });
-      setChildren(area, 
+      setChildren(area,
         h('p', { class: 'muted', role: 'status' }, `Задание ${i + 1} из ${queue.length}`),
         h('progress', { max: queue.length, value: i, 'aria-label': 'Прогресс сессии' }),
         h('div', { class: 'card' }, api.el, h('div', { class: 'row' }, nextBtn)));
       api.focusPrompt();
     }
     function summary() {
-      setChildren(area, 
+      setChildren(area,
         h('div', { class: 'card result' }, h('h2', null, 'Сессия завершена'), h('p', { class: 'big' }, `${score} из ${queue.length} (${pct(score, queue.length)} %)`),
           h('p', { class: 'muted' }, 'Ошибки сохранены в «Мои ошибки» — вернитесь к ним позже.')),
         h('div', { class: 'row' },

@@ -1,3 +1,4 @@
+import { seriesLinks } from '../series.js';
 import { h, content, pct, setChildren, addChildren } from '../util.js';
 import { questionSet, saveResults } from '../question.js';
 import { findEtVoice, resetVoice, createPlayer, speechSupported } from '../speech.js';
@@ -55,6 +56,8 @@ export default {
   async mount(root, args) {
     const data = await content('listening');
     const item = data.items.find((x) => x.id === args[0]);
+    const series = await seriesLinks(item, 'listening');
+    if (series) root.append(series);
     if (!item) {
       addChildren(root, 
         h('h1', null, 'Аудирование'),

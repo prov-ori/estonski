@@ -1,3 +1,4 @@
+import { seriesLinks } from '../series.js';
 import { h, content, config, addChildren } from '../util.js';
 import { store } from '../store.js';
 import { timerWidget, recorderWidget, checklistWidget } from '../widgets.js';
@@ -15,6 +16,8 @@ export default {
   async mount(root, args) {
     const [data, fmt] = await Promise.all([content('speaking'), config('exam-format')]);
     const card = data.items.find((x) => x.id === args[0]);
+    const series = await seriesLinks(card, 'speaking');
+    if (series) root.append(series);
     if (!card) {
       addChildren(root, 
         h('h1', null, 'Говорение'),

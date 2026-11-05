@@ -1,3 +1,4 @@
+import { seriesLinks } from '../series.js';
 import { h, content, config, countWords, addChildren } from '../util.js';
 import { store } from '../store.js';
 import { charPad, timerWidget, checklistWidget } from '../widgets.js';
@@ -25,6 +26,8 @@ export default {
   async mount(root, args) {
     const [data, fmt] = await Promise.all([content('writing'), config('exam-format')]);
     const task = data.items.find((x) => x.id === args[0]);
+    const series = await seriesLinks(task, 'writing');
+    if (series) root.append(series);
 
     if (!task) {
       addChildren(root, 

@@ -7,6 +7,11 @@
   <meta name="description" content="Неофициальный тренажёр для подготовки к экзамену по эстонскому как второму языку (B1): диагностика, грамматика, словарь, чтение, аудирование, письмо, говорение, пробный экзамен.">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4ed8'/%3E%3Ctext x='16' y='22' font-size='17' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EEE%3C/text%3E%3C/svg%3E">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script>
+    // применяем сохранённую тему до отрисовки, чтобы не было вспышки
+    try { var p = JSON.parse(localStorage.getItem('estonski.prefs') || '{}'); if (p.theme === 'light' || p.theme === 'dark') document.documentElement.setAttribute('data-theme', p.theme); if (p.font) document.documentElement.setAttribute('data-font', p.font); } catch (e) {}
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,6 +30,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <p class="disclaimer">Неофициальный тренажёр. Не связан с HARNO и министерством. Задания составлены автором</p>
+      <div id="prefs" class="prefs"></div>
       <p class="muted small-text">Без аккаунтов и аналитики. Прогресс хранится только в вашем браузере (localStorage). <a href="#/about">О сайте и приватности</a></p>
     </div>
   </footer>

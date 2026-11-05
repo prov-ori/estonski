@@ -41,8 +41,16 @@ export default {
     }
 
     let queue, i, score;
+    const level = h('select', { 'aria-label': 'Уровень' }, ['all','A2','B1','B2'].map(v => h('option', {value:v}, v === 'all' ? 'Все уровни' : v)));
+    const type = h('select', { 'aria-label': 'Тип задания' }, [['all','Все типы'],['input','Ввод ответа'],['choice','Выбор ответа']].map(([value,label]) => h('option',{value},label)));
+    const size = h('select', { 'aria-label': 'Длина сессии' }, [10,20,50,0].map(n => h('option',{value:n},n ? n + ' заданий' : 'Весь банк')));
+    const fresh = h('input', {type:'checkbox'});
+    root.insertBefore(h('div',{class:'card'}, h('h2',null,'Настройте тренировку'), h('div',{class:'row'}, level,type,size,h('label',null,fresh,' Только новые задания'),h('button',{type:'button',class:'btn primary',onclick:begin},'Начать заново'))),area);
     function begin() {
-      queue = shuffle(pool); i = 0; score = 0;
+      if (filter === 'mistakes') pool = missed();
+      const selected = pool.filter(q => (level.value === 'all' || q.level === level.value) && (type.value === 'all' || q.type === type.value) && (!fresh.checked || !store.getAnswer(q.id)));
+      queue = shuffle(selected).slice(0, Number(size.value) || selected.length); i = 0; score = 0;
+      if (!queue.length) { setChildren(area,h('p',{class:'notice'},'Нет заданий с такими настройками. Измените фильтры.')); return; }
       next();
     }
     function next() {
@@ -61,7 +69,7 @@ export default {
       });
       setChildren(area, 
         h('p', { class: 'muted', role: 'status' }, `Задание ${i + 1} из ${queue.length}`),
-        h('progress', { max: queue.length, value: i + 1, 'aria-label': 'Прогресс сессии' }),
+        h('progress', { max: queue.length, value: i, 'aria-label': 'Прогресс сессии' }),
         h('div', { class: 'card' }, api.el, h('div', { class: 'row' }, nextBtn)));
       api.focusPrompt();
     }

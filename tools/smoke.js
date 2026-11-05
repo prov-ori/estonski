@@ -249,6 +249,28 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     ok((await page.locator('main').innerText()).includes('не читается'), 'импорт: битый файл отклонён с сообщением');
     ok(await page.evaluate(() => Object.keys(JSON.parse(localStorage.getItem('estonski.v1')).answers).length > 5), 'импорт: битый файл не стёр прогресс');
 
+    // 10h. фильтр по темам и переход к следующему заданию
+    await go('reading');
+    ok(await page.locator('#topic-filter').count() === 1, 'чтение: есть фильтр по темам');
+    const before = await page.locator('.card.link-card').count();
+    await page.locator('#topic-filter').selectOption('city');
+    const after = await page.locator('.card.link-card').count();
+    ok(after > 0 && after < before, `чтение: фильтр по теме сокращает список (${before} → ${after})`);
+    await go('reading/r-01');
+    await page.getByRole('link', { name: /Следующий текст/ }).click();
+    await page.waitForSelector('main h1');
+    ok(!(await page.evaluate(() => location.hash)).endsWith('r-01'), 'чтение: «Следующий текст» ведёт на другое задание');
+    await go('writing/w-01');
+    ok(await page.getByRole('link', { name: /Следующее задание/ }).count() === 1, 'письмо: есть переход к следующему заданию');
+    await go('grammar/adjectives');
+    await page.getByRole('button', { name: 'Начать' }).click();
+    ok(await page.locator('.question').count() === 1, 'грамматика: тема «Прилагательные» работает');
+    await go('drills/forms');
+    await page.locator('#k').selectOption('verbs');
+    await page.locator('#m').selectOption('input');
+    await page.getByRole('button', { name: /Начать/ }).click();
+    ok(await page.locator('input.text-input').count() === 1, 'формы глаголов: режим ввода работает');
+
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');
     await page.reload(); await page.waitForSelector('main h1');

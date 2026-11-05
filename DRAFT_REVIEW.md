@@ -1,10 +1,10 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 1530. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 2316. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
-## diagnostic.json (46)
+## diagnostic.json (66)
 
 - `d-01` — Ma elan Tartus.
 - `d-02` — Mina lähen iga päev kooli.
@@ -52,8 +52,28 @@
 - `d-44` — Ta on klassi kõige tublim õpilane.
 - `d-45` — Kuigi Mari õppis palju, ei läinud kontrolltöö hästi, sest ta oli haige.
 - `d-46` — Kell on kolmveerand üks.
+- `d-47` — Me oleme koolis.
+- `d-48` — Raamat on kotis.
+- `d-49` — kolmkümmend
+- `d-50` — juust
+- `d-51` — Täna on pühapäev.
+- `d-52` — Pliiats on laua peal.
+- `d-53` — Mu isa sõidab autoga.
+- `d-54` — Ma kinkisin lilli õele.
+- `d-55` — Ma hakkan õppima.
+- `d-56` — Mul on vaja minna.
+- `d-57` — Kell on 6.45, ehk kolmveerand seitse.
+- `d-58` — Kino on avatud kell 14–22. Pilet maksab seitse eurot.
+- `d-59` — Pane raamat kapi sisse.
+- `d-60` — Ta on kurb, sest ta kaotas mängu.
+- `d-61` — Ma ei saanud tulla, sest olin haige.
+- `d-62` — See raamat on huvitavam kui too.
+- `d-63` — Ma olen siin elanud juba kolm aastat.
+- `d-64` — Ta töötab õpetajana.
+- `d-65` — Kuigi buss hilines, jõudsime õigeks ajaks kohale, sest sõitsime kiiresti.
+- `d-66` — Ta on klassi parim õpilane.
 
-## dictation.json (30)
+## dictation.json (62)
 
 - `dk-01` — Täna on ilus ilm.
 - `dk-02` — Ma elan väikeses linnas.
@@ -85,8 +105,40 @@
 - `dk-28` — Raamatukogu on pühapäeval kinni.
 - `dk-29` — Ma kirjutan sõbrale kirja.
 - `dk-30` — Täname teid abi eest!
+- `dk-31` — Mu lemmikaine on kehaline kasvatus.
+- `dk-32` — Homme ootab meid ees pikk päev.
+- `dk-33` — Kas ma võin küsida ühe küsimuse?
+- `dk-34` — Vanaema elab maal ja armastab aiatööd.
+- `dk-35` — Mu onu on pärit Pärnust.
+- `dk-36` — Meie perel on kaks koera ja üks kass.
+- `dk-37` — Köögis on laud ja neli tooli.
+- `dk-38` — Palun pese käed enne sööki.
+- `dk-39` — Mulle meeldib supp, aga ma ei armasta kala.
+- `dk-40` — Hommikusöögiks sõin võileiba ja jõin teed.
+- `dk-41` — Arst ütles, et ma pean puhkama.
+- `dk-42` — Mul on pea valus ja ma tunnen end halvasti.
+- `dk-43` — Buss jõuab peatusesse viie minuti pärast.
+- `dk-44` — Mine otse ja pööra esimesest ristmikust paremale.
+- `dk-45` — Kino asub kesklinnas, raamatukogu vastas.
+- `dk-46` — Laupäeval käisime metsas seenel.
+- `dk-47` — Ma käin kolm korda nädalas ujumas.
+- `dk-48` — Ta mängib kitarri ja laulab hästi.
+- `dk-49` — Täna sajab vihma, võta vihmavari kaasa.
+- `dk-50` — Talvel on päevad lühikesed ja ööd pikad.
+- `dk-51` — Meri on suvel soe ja ilus.
+- `dk-52` — Ma ostsin uued saapad ja sooja salli.
+- `dk-53` — Kas teil on seda jopet suuremas suuruses?
+- `dk-54` — Kas teil on midagi odavamat?
+- `dk-55` — Mu tädi on kokk ja valmistab maitsvat toitu.
+- `dk-56` — Insener töötab suures ettevõttes.
+- `dk-57` — Sünnipäeval sain kingituseks raamatu.
+- `dk-58` — Jõulude ajal tuleb kogu pere kokku.
+- `dk-59` — Meie reis algab homme hommikul vara.
+- `dk-60` — Palun näidake oma passi ja piletit.
+- `dk-61` — Ära unusta oma parooli!
+- `dk-62` — Saatsin sulle e-kirja, aga vastust ei tulnud.
 
-## forms.json (48)
+## forms.json (80)
 
 - `f-n-01` — raamat: raamat, raamatu, raamatut, raamatusse, raamatus, raamatust, raamatule, raamatul, raamatult
 - `f-n-02` — sõber: sõber, sõbra, sõpra, sõbrasse, sõbras, sõbrast, sõbrale, sõbral, sõbralt
@@ -136,8 +188,40 @@
 - `f-v-22` — ootama: ootama, oodata, ootan, ootab, ootasin, oodanud, oota
 - `f-v-23` — käima: käima, käia, käin, käib, käisin, käinud, käi
 - `f-v-24` — sõitma: sõitma, sõita, sõidan, sõidab, sõitsin, sõitnud, sõida
+- `f-n-25` — pliiats: pliiats, pliiatsi, pliiatsit, pliiatsisse, pliiatsis, pliiatsist, pliiatsile, pliiatsil, pliiatsilt
+- `f-n-26` — vihik: vihik, vihiku, vihikut, vihikusse, vihikus, vihikust, vihikule, vihikul, vihikult
+- `f-n-27` — õpik: õpik, õpiku, õpikut, õpikusse, õpikus, õpikust, õpikule, õpikul, õpikult
+- `f-n-28` — laps: laps, lapse, last, lapsesse, lapses, lapsest, lapsele, lapsel, lapselt
+- `f-n-29` — naaber: naaber, naabri, naabrit, naabrisse, naabris, naabrist, naabrile, naabril, naabrilt
+- `f-n-30` — tänav: tänav, tänava, tänavat, tänavasse, tänavas, tänavast, tänavale, tänaval, tänavalt
+- `f-n-31` — pilet: pilet, pileti, piletit, piletisse, piletis, piletist, piletile, piletil, piletilt
+- `f-n-32` — lennuk: lennuk, lennuki, lennukit, lennukisse, lennukis, lennukist, lennukile, lennukil, lennukilt
+- `f-n-33` — pidu: pidu, peo, pidu, peosse, peos, peost, peole, peol, peolt
+- `f-n-34` — hammas: hammas, hamba, hammast, hambasse, hambas, hambast, hambale, hambal, hambalt
+- `f-n-35` — käsi: käsi, käe, kätt, kätte, käes, käest, käele, käel, käelt
+- `f-n-36` — jalg: jalg, jala, jalga, jalga, jalas, jalast, jalale, jalal, jalalt
+- `f-n-37` — silm: silm, silma, silma, silma, silmas, silmast, silmale, silmal, silmalt
+- `f-n-38` — päev: päev, päeva, päeva, päeva, päevas, päevast, päevale, päeval, päevalt
+- `f-n-39` — nimi: nimi, nime, nime, nimesse, nimes, nimest, nimele, nimel, nimelt
+- `f-n-40` — aasta: aasta, aasta, aastat, aastasse, aastas, aastast, aastale, aastal, aastalt
+- `f-v-25` — helistama: helistama, helistada, helistan, helistab, helistasin, helistanud, helista
+- `f-v-26` — mängima: mängima, mängida, mängin, mängib, mängisin, mänginud, mängi
+- `f-v-27` — vaatama: vaatama, vaadata, vaatan, vaatab, vaatasin, vaadanud, vaata
+- `f-v-28` — ostma: ostma, osta, ostan, ostab, ostsin, ostnud, osta
+- `f-v-29` — pesema: pesema, pesta, pesen, peseb, pesin, pesnud, pese
+- `f-v-30` — küpsetama: küpsetama, küpsetada, küpsetan, küpsetab, küpsetasin, küpsetanud, küpseta
+- `f-v-31` — ärkama: ärkama, ärgata, ärkan, ärkab, ärkasin, ärganud, ärka
+- `f-v-32` — mõtlema: mõtlema, mõelda, mõtlen, mõtleb, mõtlesin, mõelnud, mõtle
+- `f-v-33` — leidma: leidma, leida, leian, leiab, leidsin, leidnud, leia
+- `f-v-34` — otsima: otsima, otsida, otsin, otsib, otsisin, otsinud, otsi
+- `f-v-35` — aitama: aitama, aidata, aitan, aitab, aitasin, aidanud, aita
+- `f-v-36` — kartma: kartma, karta, kardan, kardab, kartsin, kartnud, karda
+- `f-v-37` — unustama: unustama, unustada, unustan, unustab, unustasin, unustanud, unusta
+- `f-v-38` — sulgema: sulgema, sulgeda, sulen, sulgeb, sulgesin, sulgenud, sulge
+- `f-v-39` — jooksma: jooksma, joosta, jooksen, jookseb, jooksin, jooksnud, jookse
+- `f-v-40` — ujuma: ujuma, ujuda, ujun, ujub, ujusin, ujunud, uju
 
-## grammar.json (306)
+## grammar.json (375)
 
 - `g-cases-01` — Ma lähen homme kooli.
 - `g-cases-02` — Raamat on laua peal.
@@ -445,8 +529,77 @@
 - `g-expand-195` — Ma seisan kooli ees.
 - `g-expand-196` — Ma lähen kooli ette.
 - `g-expand-197` — Ma tulen kooli eest.
+- `g-adj-x01` — Mu õde on minust noorem.
+- `g-adj-x02` — See maja on suurem kui mu kool.
+- `g-adj-x03` — Ta on klassi parim õpilane.
+- `g-adj-x04` — Täna on ilm parem kui eile.
+- `g-adj-x05` — Ma elan suures majas.
+- `g-adj-x06` — Mul on väike koer.
+- `g-adj-x07` — Ma ostsin uue jope.
+- `g-adj-x08` — Ma kohtasin ilusat tüdrukut.
+- `g-adj-x09` — Ta on minust vanem.
+- `g-adj-x10` — Talvel on külmem kui sügisel.
+- `g-adj-x11` — See raamat on huvitavam kui too.
+- `g-cases-x01` — Ma lähen sõbra juurde.
+- `g-cases-x02` — Ma saatsin kirja emale.
+- `g-cases-x03` — Poiss tuli kinost.
+- `g-cases-x04` — Meie klass läheb ekskursioonile.
+- `g-cases-x05` — Eile olime ekskursioonil.
+- `g-cases-x06` — Ta elab järve ääres.
+- `g-cases-x07` — Mul on kolm õpilast.
+- `g-cases-x08` — Ta joob kohvi.
+- `g-cases-x09` — Ma panen suhkrut teesse.
+- `g-cases-x10` — Me sõidame maale.
+- `g-cases-x11` — Ma ootan sind kell kuus.
+- `g-cases-x12` — Ta andis raamatu mulle.
+- `g-cases-x13` — Ta küsis minu nime.
+- `g-cases-x14` — Kas sa tuled minuga kaasa?
+- `g-verbs-x01` — Te olete homme koolis.
+- `g-verbs-x03` — Eile me olime kinos.
+- `g-verbs-x04` — Sina tulid eile hilja.
+- `g-verbs-x05` — Nad sõitsid eile Tartusse.
+- `g-verbs-x06` — Sa pead puhkama.
+- `g-verbs-x07` — Ma saan tulla homme.
+- `g-verbs-x08` — Mul on vaja minna.
+- `g-verbs-x09` — Ma hakkan õppima.
+- `g-verbs-x10` — Ma armastan joosta.
+- `g-verbs-x11` — Mulle meeldib ujuda.
+- `g-verbs-x12` — Palun helista mulle!
+- `g-verbs-x13` — Ära karda!
+- `g-verbs-x14` — Ära tule siia!
+- `g-verbs-x15` — Ma ei saanud tulla, sest olin haige.
+- `g-verbs-x16` — Ma olen siin elanud juba kolm aastat.
+- `g-grad-x01` — Võid leiva peal.
+- `g-grad-x02` — Ma ootan poe juures.
+- `g-grad-x03` — Raamat on koti peal.
+- `g-grad-x04` — Poes on palju kaupa.
+- `g-grad-x05` — Mu õde loeb palju.
+- `g-grad-x06` — Me teeme koos kodutööd.
+- `g-grad-x07` — Ta annab mulle raamatu.
+- `g-grad-x08` — Mu isa sõidab autoga.
+- `g-grad-x09` — Me sõidame praegu.
+- `g-num-x01` — Ta on kolmkümmend kolm aastat vana.
+- `g-num-x02` — Bussis on seitsekümmend seitse inimest.
+- `g-num-x03` — Raamatus on üheksakümmend üheksa lehekülge.
+- `g-num-x04` — Kell on 6.45, ehk kolmveerand seitse.
+- `g-num-x05` — Kell on 4.15, ehk veerand viis.
+- `g-num-x06` — Täna on viies märts.
+- `g-num-x07` — Ta sündis kaheteistkümnendal detsembril.
+- `g-num-x08` — Meie klassis on üksteist tüdrukut.
+- `g-num-x09` — Kaks pluss kolm on viis.
+- `g-prep-x01` — Ma istun akna ääres.
+- `g-prep-x02` — Mine akna äärde!
+- `g-prep-x03` — Ta tuli akna äärest.
+- `g-prep-x04` — Kass peitis end diivani alla.
+- `g-prep-x05` — Ma jään koju kuni homseni.
+- `g-prep-x06` — Ma lähen koos sõbraga kinno.
+- `g-prep-x07` — Pärast kontserti lähme koju.
+- `g-prep-x08` — Ta seisab ukse ees.
+- `g-prep-x09` — Pane raamat kapi sisse.
+- `g-prep-x10` — Raamat on kapi sees.
+- `g-prep-x11` — Võta raamat kapi seest.
 
-## listening.json (151)
+## listening.json (257)
 
 - `l-01` — Direktori teade
 - `l-01` — Tere, kallid õpilased! Siin räägib kooli direktor.
@@ -599,8 +752,114 @@
 - `l-08-q4 (вариант)` — Ta oli väsinud.
 - `l-08-q5` — A tahab järgmisel nädalavahetusel kinno minna.
 - `l-08-q6` — Mis rahvuspargis nad matkasid? Kirjuta nimi: Lahemaa rahvuspargis.
+- `l-09` — Ekskursiooni teade
+- `l-09` — Tähelepanu, kaheksandate klasside õpilased!
+- `l-09` — Ekskursioon Tallinna toimub neljapäeval.
+- `l-09` — Buss väljub kooli juurest kell kaheksa hommikul, nii et palun tulge kohale kell pool kaheksa.
+- `l-09` — Võtke kaasa soe jope, lõunasöök ja vihik.
+- `l-09` — Telefone võib kasutada ainult bussis.
+- `l-09` — Ekskursioon kestab terve päeva ja tagasi jõuame kell kuus õhtul.
+- `l-09` — Kui keegi ei saa tulla, andke sellest klassijuhatajale teada hiljemalt kolmapäeval.
+- `l-09-q1` — Millal ekskursioon toimub?
+- `l-09-q2` — Mis kell tuleb kooli juurde kohale? Kirjuta sõnadega: kell pool kaheksa.
+- `l-09-q3` — Mida tuleb kaasa võtta?
+- `l-09-q3 (вариант)` — Soe jope, lõunasöök ja vihik.
+- `l-09-q3 (вариант)` — Suusad ja müts.
+- `l-09-q3 (вариант)` — Ainult raha.
+- `l-09-q3 (вариант)` — Sülearvuti.
+- `l-09-q4` — Telefoni võib kasutada kogu päeva igal pool.
+- `l-09-q5` — Mis kell jõutakse tagasi? Kirjuta sõnaga: kell kuus õhtul.
+- `l-09-q6` — Kellele tuleb teada anda, kui ei saa tulla?
+- `l-10` — Kohvikus
+- `l-10` — Tere tulemast! Mida soovite?
+- `l-10` — Tere! Ma tahaksin ühe tee ja kooki.
+- `l-10` — Meil on täna šokolaadikook ja õunapirukas.
+- `l-10` — Võtan õunapirukat, palun.
+- `l-10` — Kas soovite teele ka sidrunit?
+- `l-10` — Ei, aitäh, mulle meeldib tee ilma sidrunita.
+- `l-10` — Hästi. Kokku on neli eurot viiskümmend senti.
+- `l-10` — Kas ma saan maksta kaardiga?
+- `l-10` — Kahjuks mitte, meil on ainult sularaha.
+- `l-10` — Hea küll, siin on viis eurot.
+- `l-10` — Aitäh! Tagasi saate viiskümmend senti.
+- `l-10-q1` — Mida klient tellib?
+- `l-10-q1 (вариант)` — Tee ja õunapirukat.
+- `l-10-q1 (вариант)` — Kohvi ja šokolaadikooki.
+- `l-10-q1 (вариант)` — Suppi ja leiba.
+- `l-10-q1 (вариант)` — Mahla ja võileiba.
+- `l-10-q2` — Klient tahab teele sidrunit.
+- `l-10-q3` — Kui palju kokku maksab? Kirjuta sõnaga: neli eurot ja viiskümmend senti.
+- `l-10-q4` — Kohvikus saab maksta kaardiga.
+- `l-10-q5` — Kui palju raha klient annab?
+- `l-10-q6` — Kui palju senti saab klient tagasi? Kirjuta sõnaga: viiskümmend senti.
+- `l-11` — Rongiteade
+- `l-11` — Reisijate tähelepanu!
+- `l-11` — Rong Tallinn–Narva väljub teiselt perroonilt kell 17.40.
+- `l-11` — Rongil on täna ainult neli vagunit, seetõttu on kohti vähem.
+- `l-11` — Palun ostke pilet ette.
+- `l-11` — Kui te sõidate jalgrattaga, minge viimasesse vagunisse.
+- `l-11` — Järgmine rong väljub tund aega hiljem.
+- `l-11-q1` — Millelt perroonilt rong väljub?
+- `l-11-q2` — Mis kell rong väljub? Kirjuta numbritega: 17.40
+- `l-11-q3` — Mitu vagunit on rongil? Kirjuta sõnaga: neli vagunit.
+- `l-11-q4` — Kuhu minna jalgrattaga?
+- `l-11-q5` — Järgmine rong väljub tunni aja pärast.
+- `l-11-q6` — Kohti on rohkem kui tavaliselt.
+- `l-12` — Apteegis
+- `l-12` — Tere! Kuidas ma saan aidata?
+- `l-12` — Tere! Mul on kurk valus ja ma natuke köhin.
+- `l-12` — Kas Teil on palavik?
+- `l-12` — Ei, palavikku ei ole.
+- `l-12` — Siis soovitan neid pastille. Võtke neid kolm korda päevas.
+- `l-12` — Kui palju need maksavad?
+- `l-12` — Kuus eurot.
+- `l-12` — Hea küll, võtan ühe pakendi.
+- `l-12` — Jooge ka sooja teed ja puhake.
+- `l-12-q1` — Mis inimesel viga on?
+- `l-12-q1 (вариант)` — Kurk on valus ja ta köhib.
+- `l-12-q1 (вариант)` — Tal on palavik.
+- `l-12-q1 (вариант)` — Tal valutab pea.
+- `l-12-q2` — Inimesel on palavik.
+- `l-12-q3` — Mitu korda päevas pastille võtta?
+- `l-12-q4` — Kui palju pastillid maksavad? Kirjuta sõnaga: kuus eurot.
+- `l-12-q5` — Mida soovitab apteeker lisaks?
+- `l-12-q5 (вариант)` — Juua sooja teed ja puhata.
+- `l-12-q5 (вариант)` — Minna trenni.
+- `l-12-q5 (вариант)` — Süüa jäätist.
+- `l-12-q5 (вариант)` — Minna kooli.
+- `l-12-q6` — Klient ostab kaks pakendit.
+- `l-13` — Tee juhatamine
+- `l-13` — Vabandust, kas te oskate öelda, kus on postkontor?
+- `l-13` — Jah, muidugi. Minge sellelt tänavalt otse ristmikuni ja pöörake seal vasakule.
+- `l-13` — Ja siis?
+- `l-13` — Siis minge umbes kakssada meetrit. Postkontor on apteegi vastas.
+- `l-13` — Kas see on kaugel?
+- `l-13` — Ei, jalgsi on see viis minutit.
+- `l-13` — Suur aitäh!
+- `l-13` — Palun!
+- `l-13-q1` — Mida A otsib?
+- `l-13-q2` — Kuhu ristmikul pöörata?
+- `l-13-q3` — Mitu meetrit tuleb pärast pööret minna? Kirjuta sõnaga: kakssada meetrit.
+- `l-13-q4` — Mille vastas postkontor on?
+- `l-13-q5` — Mitu minutit on jalgsi? Kirjuta sõnaga: viis minutit.
+- `l-13-q6` — Postkontor on väga kaugel.
+- `l-14` — Matkakutse
+- `l-14` — Tere, Karl! Siin on Mari.
+- `l-14` — Tahan sind laupäeval matkale kutsuda.
+- `l-14` — Kohtume bussijaamas kell üheksa hommikul.
+- `l-14` — Sõidame bussiga Haapsallu ja seal jalutame mere ääres.
+- `l-14` — Ilmateate järgi on laupäeval päikeseline ja kümme kraadi sooja.
+- `l-14` — Võta kaasa lõunasöök ja vett.
+- `l-14` — Kui sa tuled, helista mulle reedeks.
+- `l-14` — Mu number on viis, kolm, kaks, neli, üks, üks, üks.
+- `l-14-q1` — Millal matk toimub?
+- `l-14-q2` — Mis kell kohtutakse? Kirjuta sõnaga: kell üheksa hommikul.
+- `l-14-q3` — Kuhu sõidetakse?
+- `l-14-q4` — Mitu kraadi sooja on? Kirjuta sõnaga: kümme kraadi.
+- `l-14-q5` — Mari telefoninumber? Kirjuta numbritega ilma tühikuteta: 5324111
+- `l-14-q6` — Karl peab helistama pühapäevaks.
 
-## mock-exam.json (75)
+## mock-exam.json (91)
 
 - `mock-01-l` — Bussiteade
 - `mock-01-l` — Tähelepanu, bussireisijad!
@@ -677,8 +936,24 @@
 - `mock-03-g6` — Ma ei ole seda raamatut veel lugenud.
 - `mock-03-g7` — Mul on abi vaja.
 - `mock-03-g8` — Täna on neljas september.
+- `mock-04-g1` — Me sõidame maale.
+- `mock-04-g2` — Sa oled homme koolis.
+- `mock-04-g3` — Kirjuta sõnadega: 45 → nelikümmend viis
+- `mock-04-g4` — Ta seisab ukse ees.
+- `mock-04-g5` — Mu õde loeb palju.
+- `mock-04-g6` — Mulle meeldib ujuda.
+- `mock-04-g7` — Kell on 5.15, ehk veerand kuus.
+- `mock-04-g8` — Ma ei näe sõpra.
+- `mock-05-g1` — Ta andis raamatu mulle.
+- `mock-05-g2` — Ära tule siia!
+- `mock-05-g3` — Täna on kolmas aprill.
+- `mock-05-g4` — Võta raamat kapi seest.
+- `mock-05-g5` — Mu isa sõidab autoga.
+- `mock-05-g6` — Täna on ilm parem kui eile.
+- `mock-05-g7` — Ma armastan joosta.
+- `mock-05-g8` — Ma lähen sõbra juurde.
 
-## order.json (62)
+## order.json (107)
 
 - `o-01` — Ma lähen homme kinno.
 - `o-01 (вариант)` — Homme lähen ma kinno.
@@ -742,8 +1017,53 @@
 - `o-39` — Me õpime koos kodutööd.
 - `o-39 (вариант)` — Me õpime kodutööd koos.
 - `o-40` — Ta tänas mind abi eest.
+- `o-41` — Ma õpin eesti keelt iga päev.
+- `o-41 (вариант)` — Iga päev õpin ma eesti keelt.
+- `o-42` — Meie õpetaja on väga lahke.
+- `o-43` — Kas sa tahad minuga kaasa tulla?
+- `o-44` — Täna ma ei lähe kooli.
+- `o-44 (вариант)` — Ma ei lähe täna kooli.
+- `o-45` — Mu vend mängib hästi jalgpalli.
+- `o-45 (вариант)` — Mu vend mängib jalgpalli hästi.
+- `o-46` — Pärast kooli lähen ma trenni.
+- `o-46 (вариант)` — Ma lähen pärast kooli trenni.
+- `o-47` — Eile õhtul vaatasime filmi.
+- `o-48` — Ma ostsin endale uue kampsuni.
+- `o-48 (вариант)` — Ma ostsin uue kampsuni endale.
+- `o-49` — Kus sa tavaliselt lõunat sööd?
+- `o-50` — Mu sõber elab Tartus.
+- `o-51` — Mul on homme kontrolltöö.
+- `o-51 (вариант)` — Homme on mul kontrolltöö.
+- `o-52` — Ta ei ole veel kodus.
+- `o-53` — Ma helistan sulle õhtul.
+- `o-53 (вариант)` — Õhtul helistan ma sulle.
+- `o-54` — Kas teil on vaba laud?
+- `o-55` — Palun anna mulle see raamat.
+- `o-56` — Mis sa hommikul sööd?
+- `o-56 (вариант)` — Mis sa sööd hommikul?
+- `o-57` — Ta läheb jalgsi kooli.
+- `o-57 (вариант)` — Ta läheb kooli jalgsi.
+- `o-58` — Suvel on siin väga ilus.
+- `o-58 (вариант)` — Siin on suvel väga ilus.
+- `o-59` — Ma ootan bussi peatuses.
+- `o-59 (вариант)` — Ma ootan peatuses bussi.
+- `o-60` — Õpilased kirjutavad kontrolltööd.
+- `o-61` — Mu ema töötab haiglas.
+- `o-62` — Ma ei saa täna tulla.
+- `o-62 (вариант)` — Täna ma ei saa tulla.
+- `o-63` — Nad sõidavad sageli rongiga.
+- `o-63 (вариант)` — Nad sõidavad rongiga sageli.
+- `o-64` — Kas sa tead, kus raamatukogu asub?
+- `o-65` — Ma tahaksin ühe kohvi.
+- `o-66` — Talvel sajab palju lund.
+- `o-67` — Ta pesi käed ära.
+- `o-68` — Ma lähen homme arsti juurde.
+- `o-68 (вариант)` — Homme lähen ma arsti juurde.
+- `o-69` — Mu klassis on kolm uut õpilast.
+- `o-70` — Me kohtume kell kuus kino ees.
+- `o-70 (вариант)` — Kell kuus kohtume me kino ees.
 
-## reading.json (341)
+## reading.json (479)
 
 - `r-01` — Uus ring meie koolis
 - `r-01` — Sügisel hakkas meie koolis tööle robootikaring.
@@ -1086,8 +1406,146 @@
 - `r-expand-9-q3 (вариант)` — sest tal on hommikul kontrolltöö
 - `r-expand-9-q3 (вариант)` — kell seitse
 - `r-expand-9-q3 (вариант)` — kolm päeva
+- `r-09` — Lünktekst: kiri sõbrale
+- `r-09` — Tere, Anna!
+- `r-09` — Ma (1) ___ nüüd Tartus.
+- `r-09` — Elan väikeses korteris koos (2) ___.
+- `r-09` — Kool on kodu (3) ___, nii et ma lähen sinna jalgsi.
+- `r-09` — Eile (4) ___ meil kontrolltöö, mis oli päris raske.
+- `r-09` — Täna on mul (5) ___ aega ja ma lähen sõbraga kinno.
+- `r-09` — Kirjuta mulle, (6) ___ sul läheb!
+- `r-09` — Sinu Liisa
+- `r-09-q1` — (1) elan
+- `r-09-q2` — (2) onuga
+- `r-09-q3` — (3) lähedal
+- `r-09-q4` — (4) oli
+- `r-09-q5` — (5) vaba
+- `r-09-q6` — (6) kuidas
+- `r-09-q7` — Mis linnas Liisa elab? Kirjuta sõna: Tartus
+- `r-10` — Raamatukogu teade
+- `r-10` — Tartu linnaraamatukogu teatab: alates 1.
+- `r-10` — detsembrist on raamatukogu avatud uute lahtiolekuaegadega.
+- `r-10` — Esmaspäevast reedeni oleme avatud kell 10–19, laupäeval kell 10–15.
+- `r-10` — Pühapäeval raamatukogu ei tööta.
+- `r-10` — Raamatuid saab laenutada kolmeks nädalaks ja laenutust saab pikendada internetis.
+- `r-10` — Lugejakaardi saab tasuta, kui näitad isikut tõendavat dokumenti.
+- `r-10` — Iga kuu esimesel kolmapäeval toimub lastele muinasjutuhommik kell 11.
+- `r-10` — Rohkem infot leiate meie kodulehelt.
+- `r-10-q1` — Millal on raamatukogu laupäeval avatud?
+- `r-10-q2` — Pühapäeval raamatukogu töötab.
+- `r-10-q3` — Raamatuid saab laenutada kolmeks nädalaks.
+- `r-10-q4` — Mida on vaja lugejakaardi saamiseks?
+- `r-10-q4 (вариант)` — isikut tõendavat dokumenti
+- `r-10-q4 (вариант)` — raha
+- `r-10-q4 (вариант)` — õpilaspiletit
+- `r-10-q4 (вариант)` — soovituskirja
+- `r-10-q5` — Seosta aeg ja sündmus.
+- `r-10-q5 (левая часть)` — Esmaspäevast reedeni
+- `r-10-q5 (левая часть)` — Laupäeval
+- `r-10-q5 (левая часть)` — Iga kuu esimesel kolmapäeval
+- `r-10-q5 (вариант)` — kell 10–19.
+- `r-10-q5 (вариант)` — kell 10–15.
+- `r-10-q5 (вариант)` — toimub lastele muinasjutuhommik.
+- `r-10-q5 (вариант)` — kell 12–14.
+- `r-10-q6` — Mitmeks nädalaks saab raamatuid laenutada? Kirjuta sõna: kolmeks nädalaks.
+- `r-11` — Tervislik hommikusöök
+- `r-11` — Paljud koolilapsed jätavad hommikusöögi vahele, sest neil on kiire.
+- `r-11` — See ei ole hea mõte.
+- `r-11` — Hommikusöök annab energiat ja aitab tunnis keskenduda.
+- `r-11` — Hea hommikusöök on näiteks puder, muna või võileib juustuga.
+- `r-11` — Soovitav on juua klaas vett või teed.
+- `r-11` — Magusaid jooke ja kommi tasub vältida, sest need annavad energiat ainult lühikeseks ajaks.
+- `r-11` — Kui hommikul ei ole isu, võib võtta kaasa õuna ja süüa seda esimeses vahetunnis.
+- `r-11` — Õhtul tasub magama minna õigel ajal, siis on hommikul isu parem.
+- `r-11-q1` — Miks lapsed jätavad hommikusöögi vahele?
+- `r-11-q1 (вариант)` — Neil on kiire.
+- `r-11-q1 (вариант)` — Neile ei meeldi puder.
+- `r-11-q1 (вариант)` — Kodus ei ole toitu.
+- `r-11-q1 (вариант)` — Nad ärkavad hilja.
+- `r-11-q2` — Hommikusöök aitab tunnis keskenduda.
+- `r-11-q3` — Artikkel soovitab hommikul juua magusaid jooke.
+- `r-11-q4` — Mida võib kaasa võtta, kui hommikul isu ei ole?
+- `r-11-q5` — Seosta toit ja lause.
+- `r-11-q5 (левая часть)` — Puder
+- `r-11-q5 (левая часть)` — Kommid
+- `r-11-q5 (левая часть)` — Õun
+- `r-11-q5 (вариант)` — on hea hommikusöök.
+- `r-11-q5 (вариант)` — annavad energiat vaid lühikeseks ajaks.
+- `r-11-q5 (вариант)` — võib süüa esimeses vahetunnis.
+- `r-11-q6` — Mis aitab hommikul isu parandada?
+- `r-11-q6 (вариант)` — Õigel ajal magama minek.
+- `r-11-q6 (вариант)` — Rohke kohv.
+- `r-11-q6 (вариант)` — Magus jook.
+- `r-11-q6 (вариант)` — Hiline õhtusöök.
+- `r-11-q7` — Õhtul tasub õigel ajal magama minna. Kirjuta sõna:
+- `r-12` — Kino Päike: nädala kava
+- `r-12` — Kino Päike — nädala kava
+- `r-12` — 00 Animafilm Mere lugu (lastele)
+- `r-12` — 30 Komöödia Naabrid
+- `r-12` — 00 Põnevik Öine rong
+- `r-12` — 30 Dokumentaalfilm Eesti metsad
+- `r-12` — 00 Õudusfilm Vana maja
+- `r-12` — Piletid: täiskasvanu 8 eurot, õpilane 5 eurot, lapsed alla seitsme aasta 3 eurot.
+- `r-12` — Kolmapäeviti on kõigile piletid 2 eurot odavamad.
+- `r-12` — Pileteid võib osta kassast või internetist.
+- `r-12` — Alla 12-aastased lapsed õudusfilmi ei tohi vaadata.
+- `r-12-q1` — Mis päeval on animafilm?
+- `r-12-q2` — Dokumentaalfilm algab kell 18.30.
+- `r-12-q3` — Õpilase pilet maksab 8 eurot.
+- `r-12-q4` — Kui palju maksab õpilase pilet kolmapäeval?
+- `r-12-q5` — Seosta film ja päev.
+- `r-12-q5 (левая часть)` — Komöödia
+- `r-12-q5 (левая часть)` — Põnevik
+- `r-12-q5 (левая часть)` — Õudusfilm
+- `r-12-q5 (вариант)` — teisipäeval
+- `r-12-q5 (вариант)` — kolmapäeval
+- `r-12-q5 (вариант)` — reedel
+- `r-12-q5 (вариант)` — laupäeval
+- `r-12-q6` — Kes ei tohi õudusfilmi vaadata?
+- `r-12-q6 (вариант)` — Alla 12-aastased lapsed.
+- `r-12-q6 (вариант)` — Täiskasvanud.
+- `r-12-q6 (вариант)` — Õpilased.
+- `r-12-q6 (вариант)` — Kõik inimesed.
+- `r-12-q7` — Mitu eurot maksab täiskasvanu pilet? Kirjuta sõnaga: kaheksa eurot.
+- `r-13` — Männiku matkarada
+- `r-13` — Männiku matkarada on kuus kilomeetrit pikk ja selle läbimine võtab umbes kaks tundi.
+- `r-13` — Rada algab parklast ja viib läbi metsa järve äärde.
+- `r-13` — Teel on kolm puhkekohta, kus on pingid ja lõkkekoht.
+- `r-13` — Matkal tuleb kanda mugavaid kingi ja võtta kaasa vett.
+- `r-13` — Prügi tuleb viia endaga kaasa.
+- `r-13` — Lõket tohib teha ainult selleks ettenähtud kohas.
+- `r-13` — Kui sajab vihma, võib rada olla mudane ja libe.
+- `r-13` — Rada on avatud aastaringselt.
+- `r-13-q1` — Kui pikk on matkarada?
+- `r-13-q2` — Rada viib järve äärde.
+- `r-13-q3` — Lõket võib teha kõikjal.
+- `r-13-q4` — Mida peab matkal kaasa võtma?
+- `r-13-q5` — Seosta koht või asi ja lause.
+- `r-13-q5 (левая часть)` — Parkla
+- `r-13-q5 (левая часть)` — Pingid ja lõkkekoht
+- `r-13-q5 (левая часть)` — Prügi
+- `r-13-q5 (вариант)` — on raja algus.
+- `r-13-q5 (вариант)` — on puhkekohtades.
+- `r-13-q5 (вариант)` — tuleb endaga kaasa viia.
+- `r-13-q5 (вариант)` — on järve ääres.
+- `r-13-q6` — Mitu puhkekohta on rajal? Kirjuta sõnaga: kolm puhkekohta.
+- `r-14` — Lünktekst: e-kiri õpetajale
+- `r-14` — Lugupeetud õpetaja!
+- `r-14` — Ma (1) ___ Teile, sest ma ei saa homme kooli tulla.
+- `r-14` — Ma olen (2) ___ ja arst ütles, et pean kolm päeva kodus olema.
+- `r-14` — Palun andke mulle teada, (3) ___ on kodutööks.
+- `r-14` — Ma (4) ___ kõik ülesanded kindlasti ära, kui tervis lubab.
+- `r-14` — Tänan (5) ___ mõistmise eest!
+- `r-14` — Lugupidamisega
+- `r-14` — Mari Tamm
+- `r-14-q1` — (1) kirjutan
+- `r-14-q2` — (2) haige
+- `r-14-q3` — (3) mis
+- `r-14-q4` — (4) teen
+- `r-14-q5` — (5) Teid
+- `r-14-q6` — Kes kirja kirjutas? Kirjuta perekonnanimi: Mari Tamm
 
-## speaking.json (49)
+## speaking.json (64)
 
 - `s-01` — Ma pakun, et ...
 - `s-01` — See on hea mõte.
@@ -1138,8 +1596,23 @@
 - `s-expand-5` — Kas sulle sobib ...?
 - `s-expand-5` — Võiksime ka ...
 - `s-expand-5` — Lepime siis kokku, et ...
+- `s-14` — Mis juhtus?
+- `s-14` — Ära ole kurb.
+- `s-14` — Ma mõistan sind.
+- `s-14` — Kõik saab korda.
+- `s-15` — Hommikul ...
+- `s-15` — Pärast kooli ...
+- `s-15` — Õhtul ...
+- `s-15` — Tavaliselt ...
+- `s-16` — See sobib talle.
+- `s-16` — Võtame selle.
+- `s-17` — Ma pakun ...
+- `s-17` — Mulle ei meeldi õudusfilmid.
+- `s-17` — Lepime kokku.
+- `s-18` — Meil on komme ...
+- `s-18` — Ja sina?
 
-## vocab.json (328)
+## vocab.json (616)
 
 - `v-school-01` — õpilane (õpilase, õpilast)
 - `v-school-01` — Meie klassis on kakskümmend õpilast.
@@ -1469,8 +1942,296 @@
 - `v-body-163` — Mul valutab kurk.
 - `v-body-164` — süda (südame, südant)
 - `v-body-164` — Süda lööb kiiresti.
+- `v-sport-165` — sport (spordi, sporti)
+- `v-sport-165` — Mulle meeldib sport.
+- `v-sport-166` — võistlus (võistluse, võistlust)
+- `v-sport-166` — Laupäeval on suur võistlus.
+- `v-sport-167` — meeskond (meeskonna, meeskonda)
+- `v-sport-167` — Meie meeskond võitis.
+- `v-sport-168` — mängija (mängija, mängijat)
+- `v-sport-168` — Mängija viskas palli korvi.
+- `v-sport-169` — staadion (staadioni, staadioni)
+- `v-sport-169` — Staadionil on jooksurada.
+- `v-sport-170` — pall (palli, palli)
+- `v-sport-170` — Viska mulle pall!
+- `v-sport-171` — jooksma (jookseb, jooksis)
+- `v-sport-171` — Ma jooksen hommikuti pargis.
+- `v-sport-172` — ujuma (ujub, ujus)
+- `v-sport-172` — Ta ujub basseinis.
+- `v-sport-173` — suusatama (suusatab, suusatas)
+- `v-sport-173` — Talvel läheme suusatama.
+- `v-sport-174` — uisutama (uisutab, uisutas)
+- `v-sport-174` — Uisutame jääl.
+- `v-sport-175` — võitma (võidab, võitis)
+- `v-sport-175` — Kes võitis mängu?
+- `v-sport-176` — kaotama (kaotab, kaotas)
+- `v-sport-176` — Nad kaotasid mängu.
+- `v-sport-177` — treener (treeneri, treenerit)
+- `v-sport-177` — Treener selgitab reegleid.
+- `v-sport-178` — jalgratas (jalgratta, jalgratast)
+- `v-sport-178` — Ma sõidan kooli jalgrattaga.
+- `v-sport-179` — suusad (suuskade, suuski)
+- `v-sport-179` — Mul on uued suusad.
+- `v-feelings-180` — rõõmus (rõõmsa, rõõmsat)
+- `v-feelings-180` — Ta on täna väga rõõmus.
+- `v-feelings-181` — kurb (kurva, kurba)
+- `v-feelings-181` — Film oli kurb.
+- `v-feelings-182` — vihane (vihase, vihast)
+- `v-feelings-182` — Ära ole vihane.
+- `v-feelings-183` — väsinud (väsinud, väsinut)
+- `v-feelings-183` — Ma olen pärast trenni väsinud.
+- `v-feelings-184` — naljakas (naljaka, naljakat)
+- `v-feelings-184` — See lugu on väga naljakas.
+- `v-feelings-185` — sõbralik (sõbraliku, sõbralikku)
+- `v-feelings-185` — Meie naaber on sõbralik.
+- `v-feelings-186` — tubli (tubli, tublit)
+- `v-feelings-186` — Sa oled tubli!
+- `v-feelings-187` — tark (targa, tarka)
+- `v-feelings-187` — Mu vanaisa on tark mees.
+- `v-feelings-188` — lahke (lahke, lahket)
+- `v-feelings-188` — Müüja oli väga lahke.
+- `v-feelings-189` — uudishimulik (uudishimuliku, uudishimulikku)
+- `v-feelings-189` — Väike laps on uudishimulik.
+- `v-feelings-190` — häbelik (häbeliku, häbelikku)
+- `v-feelings-190` — Ta on natuke häbelik.
+- `v-feelings-191` — rahulik (rahuliku, rahulikku)
+- `v-feelings-191` — Ta on alati rahulik.
+- `v-feelings-192` — kartma (kardab, kartis)
+- `v-feelings-192` — Ma kardan pimedust.
+- `v-feelings-193` — naeratama (naeratab, naeratas)
+- `v-feelings-193` — Ta naeratab mulle.
+- `v-time-194` — esmaspäev (esmaspäeva, esmaspäeva)
+- `v-time-194` — Esmaspäeval algab kool.
+- `v-time-195` — kolmapäev (kolmapäeva, kolmapäeva)
+- `v-time-195` — Kolmapäeval on meil ring.
+- `v-time-196` — reede (reede, reedet)
+- `v-time-196` — Reedel on lühem päev.
+- `v-time-197` — pühapäev (pühapäeva, pühapäeva)
+- `v-time-197` — Pühapäeval puhkame.
+- `v-time-198` — nädal (nädala, nädalat)
+- `v-time-198` — Nädalas on seitse päeva.
+- `v-time-199` — kuu (kuu, kuud)
+- `v-time-199` — Aastas on kaksteist kuud.
+- `v-time-200` — aasta (aasta, aastat)
+- `v-time-200` — Mu õde on kolmteist aastat vana.
+- `v-time-201` — hommik (hommiku, hommikut)
+- `v-time-201` — Hommikul söön putru.
+- `v-time-202` — õhtu (õhtu, õhtut)
+- `v-time-202` — Õhtul vaatame filmi.
+- `v-time-203` — öö (öö, ööd)
+- `v-time-203` — Öösel on pime.
+- `v-time-204` — minut (minuti, minutit)
+- `v-time-204` — Oota üks minut.
+- `v-time-205` — tund (tunni, tundi)
+- `v-time-205` — Tund kestab nelikümmend viis minutit.
+- `v-time-206` — kevad (kevade, kevadet)
+- `v-time-206` — Kevadel sulab lumi.
+- `v-time-207` — suvi (suve, suve)
+- `v-time-207` — Suvel on ööd valged.
+- `v-time-208` — sügis (sügise, sügist)
+- `v-time-208` — Sügisel langevad lehed.
+- `v-time-209` — talv (talve, talve)
+- `v-time-209` — Talv on külm.
+- `v-actions-210` — avama (avab, avas)
+- `v-actions-210` — Ava uks, palun.
+- `v-actions-211` — sulgema (sulgeb, sulges)
+- `v-actions-211` — Sulge aken, väljas on külm.
+- `v-actions-212` — leidma (leiab, leidis)
+- `v-actions-212` — Ma ei leia oma võtit.
+- `v-actions-213` — otsima (otsib, otsis)
+- `v-actions-213` — Ma otsin oma telefoni.
+- `v-actions-214` — aitama (aitab, aitas)
+- `v-actions-214` — Kas sa aitad mind?
+- `v-actions-215` — helistama (helistab, helistas)
+- `v-actions-215` — Helista mulle õhtul.
+- `v-actions-216` — mõtlema (mõtleb, mõtles)
+- `v-actions-216` — Ma mõtlen sinule.
+- `v-actions-217` — mäletama (mäletab, mäletas)
+- `v-actions-217` — Ma ei mäleta tema nime.
+- `v-actions-218` — unustama (unustab, unustas)
+- `v-actions-218` — Ma unustasin kodutöö koju.
+- `v-actions-219` — pesema (peseb, pesi)
+- `v-actions-219` — Ma pesen hommikul nägu.
+- `v-actions-220` — küpsetama (küpsetab, küpsetas)
+- `v-actions-220` — Vanaema küpsetab kooki.
+- `v-actions-221` — sööma (sööb, sõi)
+- `v-actions-221` — Me sööme lõunat koolis.
+- `v-actions-222` — jooma (joob, jõi)
+- `v-actions-222` — Ma joon palju vett.
+- `v-actions-223` — magama (magab, magas)
+- `v-actions-223` — Ma magan kaheksa tundi.
+- `v-actions-224` — ärkama (ärkab, ärkas)
+- `v-actions-224` — Ma ärkan kell seitse.
+- `v-actions-225` — algama (algab, algas)
+- `v-actions-225` — Film algab kell seitse.
+- `v-qualities-226` — suur (suure, suurt)
+- `v-qualities-226` — Meie kool on suur.
+- `v-qualities-227` — väike (väikese, väikest)
+- `v-qualities-227` — Mul on väike õde.
+- `v-qualities-228` — uus (uue, uut)
+- `v-qualities-228` — Ostsin uue telefoni.
+- `v-qualities-229` — vana (vana, vana)
+- `v-qualities-229` — See maja on väga vana.
+- `v-qualities-230` — hea (hea, head)
+- `v-qualities-230` — Täna on hea ilm.
+- `v-qualities-231` — halb (halva, halba)
+- `v-qualities-231` — Mul on halb tuju.
+- `v-qualities-232` — kiire (kiire, kiiret)
+- `v-qualities-232` — Buss on kiire.
+- `v-qualities-233` — aeglane (aeglase, aeglast)
+- `v-qualities-233` — Kilpkonn on aeglane.
+- `v-qualities-234` — raske (raske, rasket)
+- `v-qualities-234` — See ülesanne on raske.
+- `v-qualities-235` — lihtne (lihtsa, lihtsat)
+- `v-qualities-235` — Test oli lihtne.
+- `v-qualities-236` — pime (pimeda, pimedat)
+- `v-qualities-236` — Õues on pime.
+- `v-qualities-237` — tühi (tühja, tühja)
+- `v-qualities-237` — Pudel on tühi.
+- `v-qualities-238` — pikk (pika, pikka)
+- `v-qualities-238` — Ta on väga pikk poiss.
+- `v-qualities-239` — lühike (lühikese, lühikest)
+- `v-qualities-239` — See tekst on lühike.
+- `v-qualities-240` — külm (külma, külma)
+- `v-qualities-240` — Vesi on külm.
+- `v-qualities-241` — soe (sooja, sooja)
+- `v-qualities-241` — Toas on soe.
+- `v-school-242` — sõnastik (sõnastiku, sõnastikku)
+- `v-school-242` — Vaata sõna sõnastikust.
+- `v-school-243` — ülesanne (ülesande, ülesannet)
+- `v-school-243` — Tee ülesanne ära.
+- `v-school-244` — eksam (eksami, eksamit)
+- `v-school-244` — Eksam toimub aprillis.
+- `v-school-245` — küsimus (küsimuse, küsimust)
+- `v-school-245` — Mul on üks küsimus.
+- `v-family-246` — ema (ema, ema)
+- `v-family-246` — Mu ema töötab arstina.
+- `v-family-247` — isa (isa, isa)
+- `v-family-247` — Mu isa sõidab bussiga.
+- `v-family-248` — tädi (tädi, tädi)
+- `v-family-248` — Mu tädi elab Soomes.
+- `v-family-249` — vanaisa (vanaisa, vanaisa)
+- `v-family-249` — Vanaisa kütab sauna.
+- `v-family-250` — poeg (poja, poega)
+- `v-family-250` — Naabri poeg on viieaastane.
+- `v-home-251` — diivan (diivani, diivanit)
+- `v-home-251` — Diivan on toas.
+- `v-home-252` — lamp (lambi, lampi)
+- `v-home-252` — Lülita lamp sisse.
+- `v-home-253` — külmkapp (külmkapi, külmkappi)
+- `v-home-253` — Piim on külmkapis.
+- `v-home-254` — vannituba (vannitoa, vannituba)
+- `v-home-254` — Vannitoas on peegel.
+- `v-food-255` — kohv (kohvi, kohvi)
+- `v-food-255` — Isa joob hommikul kohvi.
+- `v-food-256` — võileib (võileiva, võileiba)
+- `v-food-256` — Ma söön võileiba.
+- `v-food-257` — jäätis (jäätise, jäätist)
+- `v-food-257` — Suvel söön jäätist.
+- `v-food-258` — šokolaad (šokolaadi, šokolaadi)
+- `v-food-258` — Ma armastan šokolaadi.
+- `v-food-259` — salat (salati, salatit)
+- `v-food-259` — Salat on värske.
+- `v-food-260` — kook (koogi, kooki)
+- `v-food-260` — Ema küpsetas koogi.
+- `v-health-261` — valu (valu, valu)
+- `v-health-261` — Mul on kõhus valu.
+- `v-health-262` — terve (terve, tervet)
+- `v-health-262` — Ta on jälle terve.
+- `v-health-263` — vitamiin (vitamiini, vitamiini)
+- `v-health-263` — Talvel võtan vitamiine.
+- `v-health-264` — külmetus (külmetuse, külmetust)
+- `v-health-264` — Mul on külmetus.
+- `v-city-265` — kino (kino, kino)
+- `v-city-265` — Läheme kinno.
+- `v-city-266` — muuseum (muuseumi, muuseumi)
+- `v-city-266` — Muuseum on lahti.
+- `v-city-267` — turg (turu, turgu)
+- `v-city-267` — Turul on värsked marjad.
+- `v-city-268` — foor (foori, foori)
+- `v-city-268` — Foor on punane.
+- `v-city-269` — kesklinn (kesklinna, kesklinna)
+- `v-city-269` — Buss sõidab kesklinna.
+- `v-freetime-270` — hobi (hobi, hobi)
+- `v-freetime-270` — Mu hobi on joonistamine.
+- `v-freetime-271` — tants (tantsu, tantsu)
+- `v-freetime-271` — Ma käin tantsutrennis.
+- `v-freetime-272` — laul (laulu, laulu)
+- `v-freetime-272` — See laul meeldib mulle.
+- `v-freetime-273` — kitarr (kitarri, kitarri)
+- `v-freetime-273` — Ta mängib kitarri.
+- `v-nature-274` — lind (linnu, lindu)
+- `v-nature-274` — Puu otsas laulab lind.
+- `v-nature-275` — meri (mere, merd)
+- `v-nature-275` — Suvel ujume meres.
+- `v-nature-276` — rand (ranna, randa)
+- `v-nature-276` — Läheme randa.
+- `v-nature-277` — taevas (taeva, taevast)
+- `v-nature-277` — Taevas on sinine.
+- `v-nature-278` — pilv (pilve, pilve)
+- `v-nature-278` — Taevas on täis pilvi.
+- `v-shopping-279` — pakk (paki, pakki)
+- `v-shopping-279` — Ostsin paki piima.
+- `v-shopping-280` — pudel (pudeli, pudelit)
+- `v-shopping-280` — Palun üks pudel vett.
+- `v-shopping-281` — tšekk (tšeki, tšekki)
+- `v-shopping-281` — Võta tšekk kaasa.
+- `v-shopping-282` — sularaha (sularaha, sularaha)
+- `v-shopping-282` — Kas maksate sularahaga?
+- `v-clothes-283` — saapad (saabaste, saapaid)
+- `v-clothes-283` — Mu saapad on uued.
+- `v-clothes-284` — kindad (kinnaste, kindaid)
+- `v-clothes-284` — Talvel kannan kindaid.
+- `v-clothes-285` — seelik (seeliku, seelikut)
+- `v-clothes-285` — Ta kannab seelikut.
+- `v-clothes-286` — teksapüksid (teksapükste, teksapükse)
+- `v-clothes-286` — Mul on uued teksapüksid.
+- `v-clothes-287` — pidžaama (pidžaama, pidžaamat)
+- `v-clothes-287` — Öösel kannan pidžaamat.
+- `v-work-288` — juuksur (juuksuri, juuksurit)
+- `v-work-288` — Juuksur lõikab juukseid.
+- `v-work-289` — autojuht (autojuhi, autojuhti)
+- `v-work-289` — Autojuht peatas auto.
+- `v-work-290` — kirjanik (kirjaniku, kirjanikku)
+- `v-work-290` — See kirjanik kirjutab lasteraamatuid.
+- `v-work-291` — laulja (laulja, laulja)
+- `v-work-291` — Laulja esineb laupäeval.
+- `v-work-292` — koristaja (koristaja, koristajat)
+- `v-work-292` — Koristaja pesi põranda.
+- `v-holidays-293` — küünal (küünla, küünalt)
+- `v-holidays-293` — Torti peal on küünlad.
+- `v-holidays-294` — külaline (külalise, külalist)
+- `v-holidays-294` — Meil on täna külalised.
+- `v-travel-295` — pass (passi, passi)
+- `v-travel-295` — Võta pass kaasa.
+- `v-travel-296` — kohver (kohvri, kohvrit)
+- `v-travel-296` — Kohver on raske.
+- `v-travel-297` — reisija (reisija, reisijat)
+- `v-travel-297` — Reisijad ootavad bussi.
+- `v-travel-298` — ekskursioon (ekskursiooni, ekskursiooni)
+- `v-travel-298` — Klass läheb ekskursioonile.
+- `v-tech-299` — pilt (pildi, pilti)
+- `v-tech-299` — Tegin telefoniga pildi.
+- `v-tech-300` — e-kiri (e-kirja, e-kirja)
+- `v-tech-300` — Saatsin õpetajale e-kirja.
+- `v-tech-301` — nutitelefon (nutitelefoni, nutitelefoni)
+- `v-tech-301` — Mul on uus nutitelefon.
+- `v-tech-302` — veebileht (veebilehe, veebilehte)
+- `v-tech-302` — Kooli veebileht on uus.
+- `v-tech-303` — kõrvaklapid (kõrvaklappide, kõrvaklappe)
+- `v-tech-303` — Kasuta kõrvaklappe.
+- `v-body-304` — nägu (näo, nägu)
+- `v-body-304` — Pese oma nägu.
+- `v-body-305` — juuksed (juuste, juukseid)
+- `v-body-305` — Tal on pikad juuksed.
+- `v-body-306` — sõrm (sõrme, sõrme)
+- `v-body-306` — Mul valutab sõrm.
+- `v-body-307` — põlv (põlve, põlve)
+- `v-body-307` — Mul valutab põlv.
+- `v-body-308` — kael (kaela, kaela)
+- `v-body-308` — Mul valutab kael.
 
-## writing.json (94)
+## writing.json (119)
 
 - `w-01` — Sinu sõber Karl elab teises linnas. Kirjuta talle e-kiri ja kutsu ta nädalavahetusel enda juurde külla.
 - `w-01` — Millal Karl võiks tulla?
@@ -1546,6 +2307,31 @@
 - `w-expand-11` — Millist trenni sa tahaksid proovida?
 - `w-expand-12` — Kirjuta sõbrale e-kiri. Teema: Tervislik päevakava.
 - `w-expand-12` — Kuidas me saaksime rohkem liikuda?
+- `w-13` — Sinu klass tahab minna ekskursioonile. Kirjuta klassijuhatajale ettepanek.
+- `w-13` — Kuhu te tahaksite minna?
+- `w-13` — Miks see koht on huvitav?
+- `w-13` — Mis päeval võiks ekskursioon olla?
+- `w-13` — Kuidas sinna jõuda?
+- `w-14` — Sul on varsti sünnipäev. Kirjuta sõbrale kutse.
+- `w-14` — Millal ja kus pidu toimub?
+- `w-14` — Mida te teete?
+- `w-14` — Mida peab kaasa võtma?
+- `w-15` — Sinu linnas ehitatakse uus park. Kirjuta kooliajalehele oma arvamus.
+- `w-15` — Kas sulle meeldib see idee?
+- `w-15` — Mis seal võiks olla?
+- `w-15` — Kes seda parki kasutaks?
+- `w-16` — Kas sporti peaks tegema iga päev? Kirjuta oma arvamus.
+- `w-16` — Mida sa ise teed?
+- `w-17` — Vanaema saatis sulle sünnipäevaks kingituse. Kirjuta talle tänukiri.
+- `w-17` — Mida sa said?
+- `w-17` — Kuidas see sulle meeldib?
+- `w-17` — Kuidas sul läheb?
+- `w-17` — Millal sa külla tuled?
+- `w-18` — Kelleks sa tahad saada? Kirjuta lühike tekst oma tulevasest ametist.
+- `w-18` — Kelleks sa tahad saada?
+- `w-18` — Miks see amet sulle meeldib?
+- `w-18` — Mida peab selleks õppima?
+- `w-18` — Kus sa tahaksid töötada?
 - `c-01` — Tere, Karl!
 - `c-02` — Lugupeetud õpetaja!
 - `c-03` — Ootan sinu vastust.

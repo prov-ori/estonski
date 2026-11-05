@@ -460,6 +460,144 @@
     "Попросите ответить."
    ],
    "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-13",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Предложение: школьная экскурсия",
+   "prompt_et": "Sinu klass tahab minna ekskursioonile. Kirjuta klassijuhatajale ettepanek.",
+   "prompt_ru": "Ваш класс хочет поехать на экскурсию. Напишите классному руководителю предложение.",
+   "content_points_et": [
+    "Kuhu te tahaksite minna?",
+    "Miks see koht on huvitav?",
+    "Mis päeval võiks ekskursioon olla?",
+    "Kuidas sinna jõuda?"
+   ],
+   "content_points_ru": [
+    "Куда вы хотели бы поехать?",
+    "Почему это место интересно?",
+    "В какой день могла бы быть экскурсия?",
+    "Как туда добраться?"
+   ],
+   "explanation_ru": "Полуформальное письмо-предложение: вежливое обращение, tahaksime / pakume, 2–3 причины. Закончите просьбой ответить."
+  },
+  {
+   "id": "w-14",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Приглашение на день рождения",
+   "prompt_et": "Sul on varsti sünnipäev. Kirjuta sõbrale kutse.",
+   "prompt_ru": "Скоро у вас день рождения. Напишите другу приглашение.",
+   "content_points_et": [
+    "Millal ja kus pidu toimub?",
+    "Mida te teete?",
+    "Mida peab kaasa võtma?",
+    "Palu vastata."
+   ],
+   "content_points_ru": [
+    "Когда и где будет праздник?",
+    "Что вы будете делать?",
+    "Что взять с собой?",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Приглашение: дата, время, место — в начале; затем программа. Используйте Tule!, Ootan sind!, Palun anna teada, kas tuled."
+  },
+  {
+   "id": "w-15",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Мнение: новый парк в городе",
+   "prompt_et": "Sinu linnas ehitatakse uus park. Kirjuta kooliajalehele oma arvamus.",
+   "prompt_ru": "В вашем городе строят новый парк. Напишите своё мнение в школьную газету.",
+   "content_points_et": [
+    "Kas sulle meeldib see idee?",
+    "Mis seal võiks olla?",
+    "Kes seda parki kasutaks?",
+    "Mida sa soovitad?"
+   ],
+   "content_points_ru": [
+    "Нравится ли вам эта идея?",
+    "Что там могло бы быть?",
+    "Кто бы пользовался парком?",
+    "Что вы советуете?"
+   ],
+   "explanation_ru": "Рассуждение с предложениями: minu arvates, võiks olla, näiteks. Используйте условное наклонение (võiks, tahaksin)."
+  },
+  {
+   "id": "w-16",
+   "topic": "sport",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Мнение: спорт каждый день",
+   "prompt_et": "Kas sporti peaks tegema iga päev? Kirjuta oma arvamus.",
+   "prompt_ru": "Нужно ли заниматься спортом каждый день? Напишите своё мнение.",
+   "content_points_et": [
+    "Mis on sinu arvamus?",
+    "Too kaks põhjust.",
+    "Mida sa ise teed?",
+    "Tee kokkuvõte."
+   ],
+   "content_points_ru": [
+    "Каково ваше мнение?",
+    "Приведите две причины.",
+    "Чем занимаетесь вы сами?",
+    "Сделайте вывод."
+   ],
+   "explanation_ru": "Структура: мнение, esiteks/teiseks, личный пример (mina käin ...), kokkuvõttes."
+  },
+  {
+   "id": "w-17",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Благодарственное письмо бабушке",
+   "prompt_et": "Vanaema saatis sulle sünnipäevaks kingituse. Kirjuta talle tänukiri.",
+   "prompt_ru": "Бабушка прислала вам подарок на день рождения. Напишите ей письмо с благодарностью.",
+   "content_points_et": [
+    "Mida sa said?",
+    "Kuidas see sulle meeldib?",
+    "Kuidas sul läheb?",
+    "Millal sa külla tuled?"
+   ],
+   "content_points_ru": [
+    "Что вы получили?",
+    "Как вам это нравится?",
+    "Как у вас дела?",
+    "Когда приедете в гости?"
+   ],
+   "explanation_ru": "Тёплое неформальное письмо: Armas vanaema!, aitäh kingituse eest (eest требует родительного падежа), Ootan sind külla."
+  },
+  {
+   "id": "w-18",
+   "topic": "work",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Моя будущая профессия",
+   "prompt_et": "Kelleks sa tahad saada? Kirjuta lühike tekst oma tulevasest ametist.",
+   "prompt_ru": "Кем вы хотите стать? Напишите короткий текст о будущей профессии.",
+   "content_points_et": [
+    "Kelleks sa tahad saada?",
+    "Miks see amet sulle meeldib?",
+    "Mida peab selleks õppima?",
+    "Kus sa tahaksid töötada?"
+   ],
+   "content_points_ru": [
+    "Кем вы хотите стать?",
+    "Почему вам нравится эта профессия?",
+    "Что нужно для этого учить?",
+    "Где вы хотели бы работать?"
+   ],
+   "explanation_ru": "После saama используется транслатив: tahan saada arstiks, õpetajaks. Свяжите предложения словами sest, selleks, lisaks."
   }
  ],
  "connectors": [

@@ -912,6 +912,614 @@
     "imp": "sõida"
    },
    "explanation_ru": "Основные формы глагола sõitma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-n-25",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "pliiats",
+   "ru": "карандаш",
+   "forms": {
+    "nom": "pliiats",
+    "gen": "pliiatsi",
+    "part": "pliiatsit",
+    "ill": "pliiatsisse",
+    "ine": "pliiatsis",
+    "ela": "pliiatsist",
+    "all": "pliiatsile",
+    "ade": "pliiatsil",
+    "abl": "pliiatsilt"
+   },
+   "explanation_ru": "Парадигма слова pliiats. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-26",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "vihik",
+   "ru": "тетрадь",
+   "forms": {
+    "nom": "vihik",
+    "gen": "vihiku",
+    "part": "vihikut",
+    "ill": "vihikusse",
+    "ine": "vihikus",
+    "ela": "vihikust",
+    "all": "vihikule",
+    "ade": "vihikul",
+    "abl": "vihikult"
+   },
+   "explanation_ru": "Парадигма слова vihik. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-27",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "õpik",
+   "ru": "учебник",
+   "forms": {
+    "nom": "õpik",
+    "gen": "õpiku",
+    "part": "õpikut",
+    "ill": "õpikusse",
+    "ine": "õpikus",
+    "ela": "õpikust",
+    "all": "õpikule",
+    "ade": "õpikul",
+    "abl": "õpikult"
+   },
+   "explanation_ru": "Парадигма слова õpik. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-28",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "laps",
+   "ru": "ребёнок",
+   "forms": {
+    "nom": "laps",
+    "gen": "lapse",
+    "part": "last",
+    "ill": "lapsesse",
+    "ine": "lapses",
+    "ela": "lapsest",
+    "all": "lapsele",
+    "ade": "lapsel",
+    "abl": "lapselt"
+   },
+   "explanation_ru": "Парадигма слова laps. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-29",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "naaber",
+   "ru": "сосед",
+   "forms": {
+    "nom": "naaber",
+    "gen": "naabri",
+    "part": "naabrit",
+    "ill": "naabrisse",
+    "ine": "naabris",
+    "ela": "naabrist",
+    "all": "naabrile",
+    "ade": "naabril",
+    "abl": "naabrilt"
+   },
+   "explanation_ru": "Парадигма слова naaber. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-30",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "tänav",
+   "ru": "улица",
+   "forms": {
+    "nom": "tänav",
+    "gen": "tänava",
+    "part": "tänavat",
+    "ill": "tänavasse",
+    "ine": "tänavas",
+    "ela": "tänavast",
+    "all": "tänavale",
+    "ade": "tänaval",
+    "abl": "tänavalt"
+   },
+   "explanation_ru": "Парадигма слова tänav. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-31",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "pilet",
+   "ru": "билет",
+   "forms": {
+    "nom": "pilet",
+    "gen": "pileti",
+    "part": "piletit",
+    "ill": "piletisse",
+    "ine": "piletis",
+    "ela": "piletist",
+    "all": "piletile",
+    "ade": "piletil",
+    "abl": "piletilt"
+   },
+   "explanation_ru": "Парадигма слова pilet. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-32",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "lennuk",
+   "ru": "самолёт",
+   "forms": {
+    "nom": "lennuk",
+    "gen": "lennuki",
+    "part": "lennukit",
+    "ill": "lennukisse",
+    "ine": "lennukis",
+    "ela": "lennukist",
+    "all": "lennukile",
+    "ade": "lennukil",
+    "abl": "lennukilt"
+   },
+   "explanation_ru": "Парадигма слова lennuk. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-33",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "pidu",
+   "ru": "праздник",
+   "forms": {
+    "nom": "pidu",
+    "gen": "peo",
+    "part": "pidu",
+    "ill": "peosse",
+    "ine": "peos",
+    "ela": "peost",
+    "all": "peole",
+    "ade": "peol",
+    "abl": "peolt"
+   },
+   "explanation_ru": "Парадигма слова pidu. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-34",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "hammas",
+   "ru": "зуб",
+   "forms": {
+    "nom": "hammas",
+    "gen": "hamba",
+    "part": "hammast",
+    "ill": "hambasse",
+    "ine": "hambas",
+    "ela": "hambast",
+    "all": "hambale",
+    "ade": "hambal",
+    "abl": "hambalt"
+   },
+   "explanation_ru": "Парадигма слова hammas. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-35",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "käsi",
+   "ru": "рука",
+   "forms": {
+    "nom": "käsi",
+    "gen": "käe",
+    "part": "kätt",
+    "ill": "kätte",
+    "ine": "käes",
+    "ela": "käest",
+    "all": "käele",
+    "ade": "käel",
+    "abl": "käelt"
+   },
+   "explanation_ru": "Парадигма слова käsi. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-36",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "jalg",
+   "ru": "нога",
+   "forms": {
+    "nom": "jalg",
+    "gen": "jala",
+    "part": "jalga",
+    "ill": "jalga",
+    "ine": "jalas",
+    "ela": "jalast",
+    "all": "jalale",
+    "ade": "jalal",
+    "abl": "jalalt"
+   },
+   "explanation_ru": "Парадигма слова jalg. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-37",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "silm",
+   "ru": "глаз",
+   "forms": {
+    "nom": "silm",
+    "gen": "silma",
+    "part": "silma",
+    "ill": "silma",
+    "ine": "silmas",
+    "ela": "silmast",
+    "all": "silmale",
+    "ade": "silmal",
+    "abl": "silmalt"
+   },
+   "explanation_ru": "Парадигма слова silm. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-38",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "päev",
+   "ru": "день",
+   "forms": {
+    "nom": "päev",
+    "gen": "päeva",
+    "part": "päeva",
+    "ill": "päeva",
+    "ine": "päevas",
+    "ela": "päevast",
+    "all": "päevale",
+    "ade": "päeval",
+    "abl": "päevalt"
+   },
+   "explanation_ru": "Парадигма слова päev. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-39",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "nimi",
+   "ru": "имя",
+   "forms": {
+    "nom": "nimi",
+    "gen": "nime",
+    "part": "nime",
+    "ill": "nimesse",
+    "ine": "nimes",
+    "ela": "nimest",
+    "all": "nimele",
+    "ade": "nimel",
+    "abl": "nimelt"
+   },
+   "explanation_ru": "Парадигма слова nimi. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-40",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "aasta",
+   "ru": "год",
+   "forms": {
+    "nom": "aasta",
+    "gen": "aasta",
+    "part": "aastat",
+    "ill": "aastasse",
+    "ine": "aastas",
+    "ela": "aastast",
+    "all": "aastale",
+    "ade": "aastal",
+    "abl": "aastalt"
+   },
+   "explanation_ru": "Парадигма слова aasta. Совпадающие формы в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-v-25",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "helistama",
+   "ru": "звонить",
+   "forms": {
+    "ma": "helistama",
+    "da": "helistada",
+    "pres1": "helistan",
+    "pres3": "helistab",
+    "past1": "helistasin",
+    "nud": "helistanud",
+    "imp": "helista"
+   },
+   "explanation_ru": "Основные формы глагола helistama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-26",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "mängima",
+   "ru": "играть",
+   "forms": {
+    "ma": "mängima",
+    "da": "mängida",
+    "pres1": "mängin",
+    "pres3": "mängib",
+    "past1": "mängisin",
+    "nud": "mänginud",
+    "imp": "mängi"
+   },
+   "explanation_ru": "Основные формы глагола mängima: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-27",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "vaatama",
+   "ru": "смотреть",
+   "forms": {
+    "ma": "vaatama",
+    "da": "vaadata",
+    "pres1": "vaatan",
+    "pres3": "vaatab",
+    "past1": "vaatasin",
+    "nud": "vaadanud",
+    "imp": "vaata"
+   },
+   "explanation_ru": "Основные формы глагола vaatama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-28",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "ostma",
+   "ru": "покупать",
+   "forms": {
+    "ma": "ostma",
+    "da": "osta",
+    "pres1": "ostan",
+    "pres3": "ostab",
+    "past1": "ostsin",
+    "nud": "ostnud",
+    "imp": "osta"
+   },
+   "explanation_ru": "Основные формы глагола ostma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-29",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "pesema",
+   "ru": "мыть",
+   "forms": {
+    "ma": "pesema",
+    "da": "pesta",
+    "pres1": "pesen",
+    "pres3": "peseb",
+    "past1": "pesin",
+    "nud": "pesnud",
+    "imp": "pese"
+   },
+   "explanation_ru": "Основные формы глагола pesema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-30",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "küpsetama",
+   "ru": "печь",
+   "forms": {
+    "ma": "küpsetama",
+    "da": "küpsetada",
+    "pres1": "küpsetan",
+    "pres3": "küpsetab",
+    "past1": "küpsetasin",
+    "nud": "küpsetanud",
+    "imp": "küpseta"
+   },
+   "explanation_ru": "Основные формы глагола küpsetama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-31",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "ärkama",
+   "ru": "просыпаться",
+   "forms": {
+    "ma": "ärkama",
+    "da": "ärgata",
+    "pres1": "ärkan",
+    "pres3": "ärkab",
+    "past1": "ärkasin",
+    "nud": "ärganud",
+    "imp": "ärka"
+   },
+   "explanation_ru": "Основные формы глагола ärkama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-32",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "mõtlema",
+   "ru": "думать",
+   "forms": {
+    "ma": "mõtlema",
+    "da": "mõelda",
+    "pres1": "mõtlen",
+    "pres3": "mõtleb",
+    "past1": "mõtlesin",
+    "nud": "mõelnud",
+    "imp": "mõtle"
+   },
+   "explanation_ru": "Основные формы глагола mõtlema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-33",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "leidma",
+   "ru": "находить",
+   "forms": {
+    "ma": "leidma",
+    "da": "leida",
+    "pres1": "leian",
+    "pres3": "leiab",
+    "past1": "leidsin",
+    "nud": "leidnud",
+    "imp": "leia"
+   },
+   "explanation_ru": "Основные формы глагола leidma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-34",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "otsima",
+   "ru": "искать",
+   "forms": {
+    "ma": "otsima",
+    "da": "otsida",
+    "pres1": "otsin",
+    "pres3": "otsib",
+    "past1": "otsisin",
+    "nud": "otsinud",
+    "imp": "otsi"
+   },
+   "explanation_ru": "Основные формы глагола otsima: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-35",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "aitama",
+   "ru": "помогать",
+   "forms": {
+    "ma": "aitama",
+    "da": "aidata",
+    "pres1": "aitan",
+    "pres3": "aitab",
+    "past1": "aitasin",
+    "nud": "aidanud",
+    "imp": "aita"
+   },
+   "explanation_ru": "Основные формы глагола aitama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-36",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "kartma",
+   "ru": "бояться",
+   "forms": {
+    "ma": "kartma",
+    "da": "karta",
+    "pres1": "kardan",
+    "pres3": "kardab",
+    "past1": "kartsin",
+    "nud": "kartnud",
+    "imp": "karda"
+   },
+   "explanation_ru": "Основные формы глагола kartma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-37",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "unustama",
+   "ru": "забывать",
+   "forms": {
+    "ma": "unustama",
+    "da": "unustada",
+    "pres1": "unustan",
+    "pres3": "unustab",
+    "past1": "unustasin",
+    "nud": "unustanud",
+    "imp": "unusta"
+   },
+   "explanation_ru": "Основные формы глагола unustama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-38",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "sulgema",
+   "ru": "закрывать",
+   "forms": {
+    "ma": "sulgema",
+    "da": "sulgeda",
+    "pres1": "sulen",
+    "pres3": "sulgeb",
+    "past1": "sulgesin",
+    "nud": "sulgenud",
+    "imp": "sulge"
+   },
+   "explanation_ru": "Основные формы глагола sulgema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-39",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "jooksma",
+   "ru": "бегать",
+   "forms": {
+    "ma": "jooksma",
+    "da": "joosta",
+    "pres1": "jooksen",
+    "pres3": "jookseb",
+    "past1": "jooksin",
+    "nud": "jooksnud",
+    "imp": "jookse"
+   },
+   "explanation_ru": "Основные формы глагола jooksma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-40",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "ujuma",
+   "ru": "плавать",
+   "forms": {
+    "ma": "ujuma",
+    "da": "ujuda",
+    "pres1": "ujun",
+    "pres3": "ujub",
+    "past1": "ujusin",
+    "nud": "ujunud",
+    "imp": "uju"
+   },
+   "explanation_ru": "Основные формы глагола ujuma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
   }
  ]
 }

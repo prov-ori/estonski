@@ -270,6 +270,294 @@
    "text_et": "Täname teid abi eest!",
    "ru": "Благодарим вас за помощь!",
    "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-31",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Mu lemmikaine on kehaline kasvatus.",
+   "ru": "Мой любимый предмет — физкультура.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-32",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Homme ootab meid ees pikk päev.",
+   "ru": "Завтра нас ждёт длинный день.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-33",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Kas ma võin küsida ühe küsimuse?",
+   "ru": "Могу ли я задать один вопрос?",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-34",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Vanaema elab maal ja armastab aiatööd.",
+   "ru": "Бабушка живёт в деревне и любит работу в саду.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-35",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Mu onu on pärit Pärnust.",
+   "ru": "Мой дядя родом из Пярну.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-36",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Meie perel on kaks koera ja üks kass.",
+   "ru": "У нашей семьи две собаки и одна кошка.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-37",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Köögis on laud ja neli tooli.",
+   "ru": "На кухне стол и четыре стула.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-38",
+   "topic": "body",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Palun pese käed enne sööki.",
+   "ru": "Пожалуйста, помой руки перед едой.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-39",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Mulle meeldib supp, aga ma ei armasta kala.",
+   "ru": "Я люблю суп, но не люблю рыбу.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-40",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Hommikusöögiks sõin võileiba ja jõin teed.",
+   "ru": "На завтрак я ел бутерброд и пил чай.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-41",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Arst ütles, et ma pean puhkama.",
+   "ru": "Врач сказал, что мне надо отдыхать.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-42",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Mul on pea valus ja ma tunnen end halvasti.",
+   "ru": "У меня болит голова, и я плохо себя чувствую.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-43",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Buss jõuab peatusesse viie minuti pärast.",
+   "ru": "Автобус прибудет на остановку через пять минут.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-44",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Mine otse ja pööra esimesest ristmikust paremale.",
+   "ru": "Иди прямо и на первом перекрёстке поверни направо.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-45",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Kino asub kesklinnas, raamatukogu vastas.",
+   "ru": "Кинотеатр находится в центре, напротив библиотеки.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-46",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Laupäeval käisime metsas seenel.",
+   "ru": "В субботу мы ходили в лес за грибами.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-47",
+   "topic": "sport",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Ma käin kolm korda nädalas ujumas.",
+   "ru": "Я хожу плавать три раза в неделю.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-48",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Ta mängib kitarri ja laulab hästi.",
+   "ru": "Он играет на гитаре и хорошо поёт.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-49",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Täna sajab vihma, võta vihmavari kaasa.",
+   "ru": "Сегодня идёт дождь, возьми зонт.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-50",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Talvel on päevad lühikesed ja ööd pikad.",
+   "ru": "Зимой дни короткие, а ночи длинные.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-51",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Meri on suvel soe ja ilus.",
+   "ru": "Море летом тёплое и красивое.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-52",
+   "topic": "clothes",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Ma ostsin uued saapad ja sooja salli.",
+   "ru": "Я купил(а) новые сапоги и тёплый шарф.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-53",
+   "topic": "shopping",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Kas teil on seda jopet suuremas suuruses?",
+   "ru": "У вас есть эта куртка большего размера?",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-54",
+   "topic": "shopping",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Kas teil on midagi odavamat?",
+   "ru": "У вас есть что-нибудь подешевле?",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-55",
+   "topic": "work",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Mu tädi on kokk ja valmistab maitsvat toitu.",
+   "ru": "Моя тётя повар и готовит вкусную еду.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-56",
+   "topic": "work",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Insener töötab suures ettevõttes.",
+   "ru": "Инженер работает в большой фирме.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-57",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Sünnipäeval sain kingituseks raamatu.",
+   "ru": "На день рождения я получил(а) в подарок книгу.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-58",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Jõulude ajal tuleb kogu pere kokku.",
+   "ru": "На Рождество вся семья собирается вместе.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-59",
+   "topic": "travel",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Meie reis algab homme hommikul vara.",
+   "ru": "Наша поездка начинается завтра рано утром.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-60",
+   "topic": "travel",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Palun näidake oma passi ja piletit.",
+   "ru": "Пожалуйста, предъявите паспорт и билет.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-61",
+   "topic": "tech",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Ära unusta oma parooli!",
+   "ru": "Не забудь свой пароль!",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-62",
+   "topic": "tech",
+   "level": "B1",
+   "status": "draft",
+   "text_et": "Saatsin sulle e-kirja, aga vastust ei tulnud.",
+   "ru": "Я отправил(а) тебе письмо, но ответа не пришло.",
+   "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
   }
  ]
 }

@@ -1,6 +1,6 @@
-import { h, content, config, countWords, addChildren } from '../util.js';
+import { h, content, config, countWords, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
-import { charPad, timerWidget, checklistWidget } from '../widgets.js';
+import { charPad, timerWidget, checklistWidget, filteredList, nextLink } from '../widgets.js';
 
 const GROUPS = { greeting: 'Приветствие', closing: 'Завершение', add: 'Добавление', contrast: 'Противопоставление', cause: 'Причина', result: 'Следствие', example: 'Пример', order: 'Порядок', opinion: 'Мнение', condition: 'Условие' };
 
@@ -24,6 +24,7 @@ export default {
   title: 'Письмо',
   async mount(root, args) {
     const [data, fmt] = await Promise.all([content('writing'), config('exam-format')]);
+    const topicNames = await topicMap();
     const task = data.items.find((x) => x.id === args[0]);
 
     if (!task) {
@@ -31,10 +32,10 @@ export default {
         h('h1', null, 'Письмо'),
         h('p', { class: 'lead' }, 'Выберите задание, пишите с таймером и счётчиком слов, потом проверьте себя по чек-листу.'),
         h('p', { class: 'notice warn' }, 'Автоматической оценки нет — и не будет: тренажёр не умеет надёжно оценивать тексты. Проверьте себя по чек-листу или покажите текст учителю.'),
-        h('div', { class: 'grid' }, data.items.map((t) => {
+        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => {
           const saved = store.getWriting(t.id);
           return h('a', { class: 'card link-card', href: `#/writing/${t.id}` }, h('h3', null, t.title_ru), h('p', { class: 'muted' }, t.kind === 'email' ? 'Письмо / e-mail' : 'Рассуждение'), saved.text && h('p', { class: 'muted small-text' }, `Есть черновик: ${countWords(saved.text)} слов`));
-        })),
+        }))),
         h('h2', null, 'Связки и полезные фразы'), connectors(data.connectors));
       return;
     }
@@ -45,7 +46,7 @@ export default {
     const tw = timerWidget({ seconds: fmt.writing_practice_minutes * 60, label: 'Таймер' });
     const cl = checklistWidget(data.checklist, saved.checks, (checks) => store.setWriting(task.id, { checks }));
     addChildren(root, 
-      h('p', null, h('a', { href: '#/writing' }, '← Все задания')),
+      h('p', null, h('a', { href: '#/writing' }, '← Все задания'), '  ', nextLink(data.items, task.id, 'writing', 'Следующее задание →')),
       h('h1', null, 'Письмо: ' + task.title_ru),
       h('div', { class: 'card' },
         h('p', { class: 'q-et', lang: 'et' }, task.prompt_et),

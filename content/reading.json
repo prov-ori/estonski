@@ -1090,6 +1090,558 @@
      "explanation_ru": "Ответ прямо указан в тексте: sest tal on hommikul kontrolltöö."
     }
    ]
+  },
+  {
+   "id": "r-09",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Lünktekst: kiri sõbrale",
+   "title_ru": "Текст с пропусками: письмо подруге",
+   "explanation_ru": "Задание на пропуски: выбирайте форму, которая подходит по смыслу и грамматике (время, падеж, предлог).",
+   "text_et": "Tere, Anna!\n\nMa (1) ___ nüüd Tartus. Elan väikeses korteris koos (2) ___. Kool on kodu (3) ___, nii et ma lähen sinna jalgsi. Eile (4) ___ meil kontrolltöö, mis oli päris raske. Täna on mul (5) ___ aega ja ma lähen sõbraga kinno. Kirjuta mulle, (6) ___ sul läheb!\n\nSinu Liisa",
+   "questions": [
+    {
+     "id": "r-09-q1",
+     "type": "choice",
+     "prompt_et": "(1) ___",
+     "explanation_ru": "Подлежащее ma и наречие nüüd → настоящее время 1 л.: elan.",
+     "options": [
+      "elan",
+      "elad",
+      "elab",
+      "elama"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-09-q2",
+     "type": "choice",
+     "prompt_et": "(2) ___",
+     "explanation_ru": "Koos («вместе») + комитатив: koos onuga.",
+     "options": [
+      "onuga",
+      "onu",
+      "onule",
+      "onust"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-09-q3",
+     "type": "choice",
+     "prompt_et": "(3) ___",
+     "explanation_ru": "«Рядом» (где?) → lähedal: kodu lähedal.",
+     "options": [
+      "lähedal",
+      "lähedale",
+      "lähedalt",
+      "lähedus"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-09-q4",
+     "type": "choice",
+     "prompt_et": "(4) ___",
+     "explanation_ru": "Eile — прошедшее время: oli.",
+     "options": [
+      "oli",
+      "on",
+      "olen",
+      "oleks"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-09-q5",
+     "type": "choice",
+     "prompt_et": "(5) ___",
+     "explanation_ru": "Mul on vaba aega — «у меня есть свободное время»; vaba не меняется.",
+     "options": [
+      "vaba",
+      "vabalt",
+      "vabaks",
+      "vabal"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-09-q6",
+     "type": "choice",
+     "prompt_et": "(6) ___",
+     "explanation_ru": "Придаточное вопросительное: kuidas sul läheb — «как у тебя дела».",
+     "options": [
+      "kuidas",
+      "kuhu",
+      "kellele",
+      "kunagi"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-09-q7",
+     "type": "input",
+     "prompt_et": "Mis linnas Liisa elab? Kirjuta sõna: ___",
+     "explanation_ru": "«Ma elan nüüd Tartus» — ответ в форме инессива: Tartus.",
+     "answer": "Tartus"
+    }
+   ]
+  },
+  {
+   "id": "r-10",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Raamatukogu teade",
+   "title_ru": "Объявление библиотеки",
+   "explanation_ru": "Объявление с часами работы и правилами. Ищите дни недели, часы и сроки.",
+   "text_et": "Tartu linnaraamatukogu teatab: alates 1. detsembrist on raamatukogu avatud uute lahtiolekuaegadega. Esmaspäevast reedeni oleme avatud kell 10–19, laupäeval kell 10–15. Pühapäeval raamatukogu ei tööta.\n\nRaamatuid saab laenutada kolmeks nädalaks ja laenutust saab pikendada internetis. Lugejakaardi saab tasuta, kui näitad isikut tõendavat dokumenti. Iga kuu esimesel kolmapäeval toimub lastele muinasjutuhommik kell 11. Rohkem infot leiate meie kodulehelt.",
+   "questions": [
+    {
+     "id": "r-10-q1",
+     "type": "choice",
+     "prompt_et": "Millal on raamatukogu laupäeval avatud?",
+     "explanation_ru": "«Laupäeval kell 10–15».",
+     "options": [
+      "kell 10–15",
+      "kell 10–19",
+      "kell 11–15",
+      "terve päeva"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-10-q2",
+     "type": "tf",
+     "prompt_et": "Pühapäeval raamatukogu töötab.",
+     "explanation_ru": "«Pühapäeval raamatukogu ei tööta» — в воскресенье закрыто.",
+     "answer": false
+    },
+    {
+     "id": "r-10-q3",
+     "type": "tf",
+     "prompt_et": "Raamatuid saab laenutada kolmeks nädalaks.",
+     "explanation_ru": "«Kolmeks nädalaks» — на три недели.",
+     "answer": true
+    },
+    {
+     "id": "r-10-q4",
+     "type": "choice",
+     "prompt_et": "Mida on vaja lugejakaardi saamiseks?",
+     "explanation_ru": "«Kui näitad isikut tõendavat dokumenti».",
+     "options": [
+      "isikut tõendavat dokumenti",
+      "raha",
+      "õpilaspiletit",
+      "soovituskirja"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-10-q5",
+     "type": "match",
+     "prompt_et": "Seosta aeg ja sündmus.",
+     "explanation_ru": "Пн–пт 10–19; суббота 10–15; первая среда месяца — сказки для детей.",
+     "prompt_ru": "Соедините время и событие. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Esmaspäevast reedeni",
+       "answer": 0
+      },
+      {
+       "left": "Laupäeval",
+       "answer": 1
+      },
+      {
+       "left": "Iga kuu esimesel kolmapäeval",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "kell 10–19.",
+      "kell 10–15.",
+      "toimub lastele muinasjutuhommik.",
+      "kell 12–14."
+     ]
+    },
+    {
+     "id": "r-10-q6",
+     "type": "input",
+     "prompt_et": "Mitmeks nädalaks saab raamatuid laenutada? Kirjuta sõna: ___ nädalaks.",
+     "explanation_ru": "«Kolmeks nädalaks» — translative от kolm: kolmeks.",
+     "answer": "kolmeks"
+    }
+   ]
+  },
+  {
+   "id": "r-11",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Tervislik hommikusöök",
+   "title_ru": "Здоровый завтрак",
+   "explanation_ru": "Небольшая статья с советами. Различайте факты, советы и причины (sest).",
+   "text_et": "Paljud koolilapsed jätavad hommikusöögi vahele, sest neil on kiire. See ei ole hea mõte. Hommikusöök annab energiat ja aitab tunnis keskenduda. Hea hommikusöök on näiteks puder, muna või võileib juustuga. Soovitav on juua klaas vett või teed.\n\nMagusaid jooke ja kommi tasub vältida, sest need annavad energiat ainult lühikeseks ajaks. Kui hommikul ei ole isu, võib võtta kaasa õuna ja süüa seda esimeses vahetunnis. Õhtul tasub magama minna õigel ajal, siis on hommikul isu parem.",
+   "questions": [
+    {
+     "id": "r-11-q1",
+     "type": "choice",
+     "prompt_et": "Miks lapsed jätavad hommikusöögi vahele?",
+     "explanation_ru": "«Sest neil on kiire».",
+     "options": [
+      "Neil on kiire.",
+      "Neile ei meeldi puder.",
+      "Kodus ei ole toitu.",
+      "Nad ärkavad hilja."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-11-q2",
+     "type": "tf",
+     "prompt_et": "Hommikusöök aitab tunnis keskenduda.",
+     "explanation_ru": "«Aitab tunnis keskenduda».",
+     "answer": true
+    },
+    {
+     "id": "r-11-q3",
+     "type": "tf",
+     "prompt_et": "Artikkel soovitab hommikul juua magusaid jooke.",
+     "explanation_ru": "Наоборот: «Magusaid jooke … tasub vältida».",
+     "answer": false
+    },
+    {
+     "id": "r-11-q4",
+     "type": "choice",
+     "prompt_et": "Mida võib kaasa võtta, kui hommikul isu ei ole?",
+     "explanation_ru": "«Võib võtta kaasa õuna».",
+     "options": [
+      "õuna",
+      "kommi",
+      "kooki",
+      "limonaadi"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-11-q5",
+     "type": "match",
+     "prompt_et": "Seosta toit ja lause.",
+     "explanation_ru": "Каша — хороший завтрак; конфеты дают энергию ненадолго; яблоко можно съесть на первой перемене.",
+     "prompt_ru": "Соедините продукт и предложение. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Puder",
+       "answer": 0
+      },
+      {
+       "left": "Kommid",
+       "answer": 1
+      },
+      {
+       "left": "Õun",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "on hea hommikusöök.",
+      "annavad energiat vaid lühikeseks ajaks.",
+      "võib süüa esimeses vahetunnis.",
+      "tuleb jätta koju."
+     ]
+    },
+    {
+     "id": "r-11-q6",
+     "type": "choice",
+     "prompt_et": "Mis aitab hommikul isu parandada?",
+     "explanation_ru": "«Õhtul tasub magama minna õigel ajal».",
+     "options": [
+      "Õigel ajal magama minek.",
+      "Rohke kohv.",
+      "Magus jook.",
+      "Hiline õhtusöök."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-11-q7",
+     "type": "input",
+     "prompt_et": "Õhtul tasub õigel ajal ___ minna. Kirjuta sõna:",
+     "explanation_ru": "«Magama minna» — ma-инфинитив после глагола движения (minema).",
+     "answer": "magama"
+    }
+   ]
+  },
+  {
+   "id": "r-12",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kino Päike: nädala kava",
+   "title_ru": "Кинотеатр «Päike»: программа недели",
+   "explanation_ru": "Расписание и цены: считайте скидки внимательно и ищите условия возраста.",
+   "text_et": "Kino Päike — nädala kava\n\nEsmaspäev 18.00 Animafilm Mere lugu (lastele)\nTeisipäev 19.30 Komöödia Naabrid\nKolmapäev 20.00 Põnevik Öine rong\nNeljapäev 18.30 Dokumentaalfilm Eesti metsad\nReede 21.00 Õudusfilm Vana maja\n\nPiletid: täiskasvanu 8 eurot, õpilane 5 eurot, lapsed alla seitsme aasta 3 eurot. Kolmapäeviti on kõigile piletid 2 eurot odavamad. Pileteid võib osta kassast või internetist. Alla 12-aastased lapsed õudusfilmi ei tohi vaadata.",
+   "questions": [
+    {
+     "id": "r-12-q1",
+     "type": "choice",
+     "prompt_et": "Mis päeval on animafilm?",
+     "explanation_ru": "«Esmaspäev 18.00 Animafilm».",
+     "options": [
+      "esmaspäeval",
+      "teisipäeval",
+      "neljapäeval",
+      "reedel"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-12-q2",
+     "type": "tf",
+     "prompt_et": "Dokumentaalfilm algab kell 18.30.",
+     "explanation_ru": "«Neljapäev 18.30 Dokumentaalfilm».",
+     "answer": true
+    },
+    {
+     "id": "r-12-q3",
+     "type": "tf",
+     "prompt_et": "Õpilase pilet maksab 8 eurot.",
+     "explanation_ru": "Õpilase pilet — 5 eurot, 8 eurot — täiskasvanu.",
+     "answer": false
+    },
+    {
+     "id": "r-12-q4",
+     "type": "choice",
+     "prompt_et": "Kui palju maksab õpilase pilet kolmapäeval?",
+     "explanation_ru": "Kolmapäeviti on kõigile piletid 2 eurot odavamad: 5 − 2 = 3.",
+     "options": [
+      "3 eurot",
+      "5 eurot",
+      "6 eurot",
+      "8 eurot"
+     ],
+     "answer": 0,
+     "options_lang": "ru"
+    },
+    {
+     "id": "r-12-q5",
+     "type": "match",
+     "prompt_et": "Seosta film ja päev.",
+     "explanation_ru": "Komöödia — вторник, триллер — среда, фильм ужасов — пятница.",
+     "prompt_ru": "Соедините жанр и день. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Komöödia",
+       "answer": 0
+      },
+      {
+       "left": "Põnevik",
+       "answer": 1
+      },
+      {
+       "left": "Õudusfilm",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "teisipäeval",
+      "kolmapäeval",
+      "reedel",
+      "laupäeval"
+     ]
+    },
+    {
+     "id": "r-12-q6",
+     "type": "choice",
+     "prompt_et": "Kes ei tohi õudusfilmi vaadata?",
+     "explanation_ru": "«Alla 12-aastased lapsed õudusfilmi ei tohi vaadata».",
+     "options": [
+      "Alla 12-aastased lapsed.",
+      "Täiskasvanud.",
+      "Õpilased.",
+      "Kõik inimesed."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-12-q7",
+     "type": "input",
+     "prompt_et": "Mitu eurot maksab täiskasvanu pilet? Kirjuta sõnaga: ___ eurot.",
+     "explanation_ru": "«Täiskasvanu 8 eurot» — kaheksa.",
+     "answer": "kaheksa"
+    }
+   ]
+  },
+  {
+   "id": "r-13",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Männiku matkarada",
+   "title_ru": "Тропа Männiku",
+   "explanation_ru": "Описание маршрута: длина, этапы, правила поведения.",
+   "text_et": "Männiku matkarada on kuus kilomeetrit pikk ja selle läbimine võtab umbes kaks tundi. Rada algab parklast ja viib läbi metsa järve äärde. Teel on kolm puhkekohta, kus on pingid ja lõkkekoht.\n\nMatkal tuleb kanda mugavaid kingi ja võtta kaasa vett. Prügi tuleb viia endaga kaasa. Lõket tohib teha ainult selleks ettenähtud kohas. Kui sajab vihma, võib rada olla mudane ja libe. Rada on avatud aastaringselt.",
+   "questions": [
+    {
+     "id": "r-13-q1",
+     "type": "choice",
+     "prompt_et": "Kui pikk on matkarada?",
+     "explanation_ru": "«Kuus kilomeetrit pikk».",
+     "options": [
+      "kuus kilomeetrit",
+      "kaks kilomeetrit",
+      "kolm kilomeetrit",
+      "kuus tundi"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-13-q2",
+     "type": "tf",
+     "prompt_et": "Rada viib järve äärde.",
+     "explanation_ru": "«Viib läbi metsa järve äärde».",
+     "answer": true
+    },
+    {
+     "id": "r-13-q3",
+     "type": "tf",
+     "prompt_et": "Lõket võib teha kõikjal.",
+     "explanation_ru": "«Lõket tohib teha ainult selleks ettenähtud kohas».",
+     "answer": false
+    },
+    {
+     "id": "r-13-q4",
+     "type": "choice",
+     "prompt_et": "Mida peab matkal kaasa võtma?",
+     "explanation_ru": "«Võtta kaasa vett».",
+     "options": [
+      "vett",
+      "jalgratast",
+      "suuski",
+      "telki"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-13-q5",
+     "type": "match",
+     "prompt_et": "Seosta koht või asi ja lause.",
+     "explanation_ru": "Парковка — отсюда начинается; скамейки и костровище — на местах отдыха; мусор уносят с собой.",
+     "prompt_ru": "Соедините предмет и предложение. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Parkla",
+       "answer": 0
+      },
+      {
+       "left": "Pingid ja lõkkekoht",
+       "answer": 1
+      },
+      {
+       "left": "Prügi",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "on raja algus.",
+      "on puhkekohtades.",
+      "tuleb endaga kaasa viia.",
+      "on järve ääres."
+     ]
+    },
+    {
+     "id": "r-13-q6",
+     "type": "input",
+     "prompt_et": "Mitu puhkekohta on rajal? Kirjuta sõnaga: ___ puhkekohta.",
+     "explanation_ru": "«Teel on kolm puhkekohta».",
+     "answer": "kolm"
+    }
+   ]
+  },
+  {
+   "id": "r-14",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Lünktekst: e-kiri õpetajale",
+   "title_ru": "Текст с пропусками: письмо учителю",
+   "explanation_ru": "Официальное письмо: следите за вежливыми формами (Teile, Teid) и временем глагола.",
+   "text_et": "Lugupeetud õpetaja!\n\nMa (1) ___ Teile, sest ma ei saa homme kooli tulla. Ma olen (2) ___ ja arst ütles, et pean kolm päeva kodus olema. Palun andke mulle teada, (3) ___ on kodutööks. Ma (4) ___ kõik ülesanded kindlasti ära, kui tervis lubab. Tänan (5) ___ mõistmise eest!\n\nLugupidamisega\nMari Tamm",
+   "questions": [
+    {
+     "id": "r-14-q1",
+     "type": "choice",
+     "prompt_et": "(1) ___",
+     "explanation_ru": "Настоящее время 1 л.: ma kirjutan.",
+     "options": [
+      "kirjutan",
+      "kirjutad",
+      "kirjutab",
+      "kirjutada"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-14-q2",
+     "type": "choice",
+     "prompt_et": "(2) ___",
+     "explanation_ru": "Ma olen haige — «я болен»; olema + именительный.",
+     "options": [
+      "haige",
+      "haiget",
+      "haigeks",
+      "haigena"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-14-q3",
+     "type": "choice",
+     "prompt_et": "(3) ___",
+     "explanation_ru": "Вопросительное придаточное: mis on kodutööks — «что задано».",
+     "options": [
+      "mis",
+      "kes",
+      "kus",
+      "millal"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-14-q4",
+     "type": "choice",
+     "prompt_et": "(4) ___",
+     "explanation_ru": "Будущее выражается настоящим временем: ma teen.",
+     "options": [
+      "teen",
+      "teeb",
+      "tegin",
+      "tehes"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-14-q5",
+     "type": "choice",
+     "prompt_et": "(5) ___",
+     "explanation_ru": "Tänama + партитив; вежливое «вас» — Teid.",
+     "options": [
+      "Teid",
+      "Teie",
+      "Teile",
+      "Teist"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-14-q6",
+     "type": "input",
+     "prompt_et": "Kes kirja kirjutas? Kirjuta perekonnanimi: Mari ___",
+     "explanation_ru": "Подпись внизу: Mari Tamm.",
+     "answer": "Tamm"
+    }
+   ]
   }
  ]
 }

@@ -1,4 +1,5 @@
-import { h, content, pct, setChildren, addChildren } from '../util.js';
+import { h, content, pct, setChildren, addChildren, topicMap } from '../util.js';
+import { filteredList, nextLink } from '../widgets.js';
 import { questionSet, saveResults } from '../question.js';
 import { store } from '../store.js';
 
@@ -19,6 +20,7 @@ export default {
   title: 'Чтение',
   async mount(root, args) {
     const data = await content('reading');
+    const topicNames = await topicMap();
     const id = args[0];
     const item = data.items.find((x) => x.id === id);
 
@@ -26,8 +28,8 @@ export default {
       addChildren(root, 
         h('h1', null, 'Чтение'),
         h('p', { class: 'lead' }, 'Тексты с вопросами трёх типов: выбор ответа, верно/неверно, соответствие (плюс короткий ответ с клавиатуры).'),
-        h('div', { class: 'grid' }, data.items.map((t) =>
-          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t))))));
+        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
+          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
       return;
     }
 
@@ -49,7 +51,7 @@ export default {
       textBlock(item),
       h('h2', null, 'Вопросы'),
       set.el,
-      h('div', { class: 'row' }, checkBtn, h('a', { class: 'btn', href: '#/reading' }, 'Другой текст')),
+      h('div', { class: 'row' }, checkBtn, nextLink(data.items, item.id, 'reading', 'Следующий текст →'), h('a', { class: 'btn', href: '#/reading' }, 'Все тексты')),
       result);
   },
 };

@@ -138,3 +138,28 @@ export function bar(value, max, label) {
   const p = max ? Math.round((100 * value) / max) : 0;
   return h('div', { class: 'bar', role: 'img', 'aria-label': `${label}: ${p}%` }, h('div', { class: 'bar-fill', style: `width:${p}%` }));
 }
+
+/** Список с фильтром по теме: renderItems(items) → узел. Возвращает контейнер. */
+export function filteredList(items, topicNames, renderItems) {
+  let topic = 'all';
+  const topics = [...new Set(items.map((x) => x.topic))];
+  const box = h('div', { class: 'filtered' });
+  const list = h('div');
+  const sel = h('select', { class: 'select', id: 'topic-filter', onchange: (e) => { topic = e.target.value; draw(); } },
+    h('option', { value: 'all' }, `Все темы (${items.length})`),
+    topics.map((t) => h('option', { value: t }, `${topicNames.get(t) ? topicNames.get(t).name_ru : t} (${items.filter((x) => x.topic === t).length})`)));
+  function draw() {
+    const rows = items.filter((x) => topic === 'all' || x.topic === topic);
+    list.replaceChildren(renderItems(rows));
+  }
+  box.append(h('div', { class: 'field' }, h('label', { for: 'topic-filter' }, 'Тема'), sel), list);
+  draw();
+  return box;
+}
+
+/** Ссылка на следующее задание в списке (по кругу). */
+export function nextLink(items, currentId, route, label = 'Следующее задание →') {
+  const i = items.findIndex((x) => x.id === currentId);
+  const next = items[(i + 1) % items.length];
+  return next && next.id !== currentId ? h('a', { class: 'btn primary', href: `#/${route}/${next.id}` }, label) : null;
+}

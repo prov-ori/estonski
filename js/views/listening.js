@@ -1,4 +1,5 @@
-import { h, content, pct, setChildren, addChildren } from '../util.js';
+import { h, content, pct, setChildren, addChildren, topicMap } from '../util.js';
+import { filteredList, nextLink } from '../widgets.js';
 import { questionSet, saveResults } from '../question.js';
 import { store } from '../store.js';
 import { findEtVoice, resetVoice, createPlayer, speechSupported } from '../speech.js';
@@ -62,13 +63,14 @@ export default {
   title: 'Аудирование',
   async mount(root, args) {
     const data = await content('listening');
+    const topicNames = await topicMap();
     const item = data.items.find((x) => x.id === args[0]);
     if (!item) {
       addChildren(root, 
         h('h1', null, 'Аудирование'),
         h('p', { class: 'notice warn' }, SYNTH_NOTE),
-        h('div', { class: 'grid' }, data.items.map((t) =>
-          h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t))))));
+        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
+          h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
       return;
     }
     const block = listeningBlock(item);
@@ -89,7 +91,7 @@ export default {
       h('p', { class: 'notice warn' }, SYNTH_NOTE),
       block.el,
       h('h2', null, 'Вопросы'), set.el,
-      h('div', { class: 'row' }, checkBtn, h('a', { class: 'btn', href: '#/listening' }, 'Другая запись')),
+      h('div', { class: 'row' }, checkBtn, nextLink(data.items, item.id, 'listening', 'Следующая запись →'), h('a', { class: 'btn', href: '#/listening' }, 'Все записи')),
       result);
     return () => block.destroy();
   },

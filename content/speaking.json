@@ -664,6 +664,204 @@
     "Lepime siis kokku, et ..."
    ],
    "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-13",
+   "topic": "sport",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Выбираем спортивную секцию",
+   "situation_ru": "Вы хотите записаться в спортивную секцию. Обсудите, какой спорт выбрать и когда ходить.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Millist sporti sa tahaksid teha?",
+     "Miks see sulle meeldib?",
+     "Mis päeval trenn on?",
+     "Kas sa tuled minuga?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Mulle meeldib ujumine.",
+     "See on tervislik ja lõbus.",
+     "Esmaspäeval ja neljapäeval.",
+     "Jah, tulen meelsasti."
+    ]
+   },
+   "phrases_et": [
+    "Mulle meeldib ...",
+    "Ma eelistan ...",
+    "Kas sulle sobib ...?",
+    "Siis lepime kokku."
+   ],
+   "explanation_ru": "Выражение предпочтений: mulle meeldib + da-инфинитив, ma eelistan. Назовите дни недели."
+  },
+  {
+   "id": "s-14",
+   "topic": "feelings",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Поддержать друга",
+   "situation_ru": "Друг грустит из-за плохой оценки. Выслушайте и поддержите.",
+   "role_a": {
+    "title_ru": "Ученик A (расстроенный)",
+    "prompts_et": [
+     "Ma sain halva hinde.",
+     "Ma olen väga kurb.",
+     "Ma ei tea, mida teha.",
+     "Aitäh, see aitab."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B (друг)",
+    "prompts_et": [
+     "Mis juhtus?",
+     "Ära muretse, see ei ole maailma lõpp.",
+     "Sa võid õpetajalt abi küsida.",
+     "Mina aitan sind."
+    ]
+   },
+   "phrases_et": [
+    "Mis juhtus?",
+    "Ära ole kurb.",
+    "Ma mõistan sind.",
+    "Kõik saab korda."
+   ],
+   "explanation_ru": "Эмпатия и советы: повелительное (ära muretse), могу/можешь (võid, saad)."
+  },
+  {
+   "id": "s-15",
+   "topic": "time",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Расписание дня",
+   "situation_ru": "Сравните свои дни: что вы делаете утром, днём и вечером.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Mis kell sa ärkad?",
+     "Mis kell kool algab?",
+     "Mida sa pärast kooli teed?",
+     "Mis kell sa magama lähed?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Ma ärkan kell seitse.",
+     "Kool algab kell kaheksa.",
+     "Pärast kooli lähen trenni.",
+     "Magama lähen kell kümme."
+    ]
+   },
+   "phrases_et": [
+    "Hommikul ...",
+    "Pärast kooli ...",
+    "Õhtul ...",
+    "Tavaliselt ..."
+   ],
+   "explanation_ru": "Время: kell + числительное, pool, veerand. Используйте наречия времени: hommikul, õhtul, pärast kooli."
+  },
+  {
+   "id": "s-16",
+   "topic": "clothes",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Подарок и размер",
+   "situation_ru": "Вы выбираете подарок (одежду) другу. Обсудите, что выбрать, цвет и размер.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Mida me talle kingime?",
+     "Mis värvi see on?",
+     "Mis suurust ta kannab?",
+     "Kui palju see maksab?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Kingime sooja salli.",
+     "Ta armastab sinist värvi.",
+     "Ta kannab suurust M.",
+     "See maksab viisteist eurot."
+    ]
+   },
+   "phrases_et": [
+    "Mis sa arvad?",
+    "See sobib talle.",
+    "See on liiga kallis.",
+    "Võtame selle."
+   ],
+   "explanation_ru": "Выбор и обоснование: sobib, meeldib, liiga kallis. Цвета и размеры."
+  },
+  {
+   "id": "s-17",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Выбираем фильм",
+   "situation_ru": "Вы хотите вместе пойти в кино. Выберите фильм и сеанс.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Mis filmi me vaatame?",
+     "Mis kell film algab?",
+     "Kas pilet on kallis?",
+     "Kus me kohtume?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Ma pakun komöödiat.",
+     "Film algab kell seitse.",
+     "Õpilasele on viis eurot.",
+     "Kohtume kino ees."
+    ]
+   },
+   "phrases_et": [
+    "Ma pakun ...",
+    "Mulle ei meeldi õudusfilmid.",
+    "Mis sa arvad?",
+    "Lepime kokku."
+   ],
+   "explanation_ru": "Предложения и согласие: ma pakun, mulle meeldib / ei meeldi, lepime kokku."
+  },
+  {
+   "id": "s-18",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Рождественские традиции",
+   "situation_ru": "Расскажите друг другу, как вы отмечаете праздники в своей семье.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Kuidas teie jõule tähistate?",
+     "Mida te sööte?",
+     "Kellele sa kingitusi teed?",
+     "Mis on sinu lemmikpüha?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Meil tuleb kogu pere kokku.",
+     "Sööme verivorsti ja hapukapsast.",
+     "Kingin vennale raamatu.",
+     "Mu lemmikpüha on jaanipäev."
+    ]
+   },
+   "phrases_et": [
+    "Meil on komme ...",
+    "Tavaliselt ...",
+    "Mulle meeldib see, sest ...",
+    "Ja sina?"
+   ],
+   "explanation_ru": "Рассказ о традициях: tavaliselt, meil on komme, ja sina? Не забывайте задавать встречные вопросы."
   }
  ],
  "checklist": [

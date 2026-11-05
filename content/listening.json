@@ -831,6 +831,622 @@
      "answer": "Lahemaa"
     }
    ]
+  },
+  {
+   "id": "l-09",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Ekskursiooni teade",
+   "title_ru": "Объявление об экскурсии",
+   "explanation_ru": "Объявление с датой, временем и списком вещей.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tähelepanu, kaheksandate klasside õpilased!"
+    },
+    {
+     "sp": "A",
+     "text": "Ekskursioon Tallinna toimub neljapäeval."
+    },
+    {
+     "sp": "A",
+     "text": "Buss väljub kooli juurest kell kaheksa hommikul, nii et palun tulge kohale kell pool kaheksa."
+    },
+    {
+     "sp": "A",
+     "text": "Võtke kaasa soe jope, lõunasöök ja vihik."
+    },
+    {
+     "sp": "A",
+     "text": "Telefone võib kasutada ainult bussis."
+    },
+    {
+     "sp": "A",
+     "text": "Ekskursioon kestab terve päeva ja tagasi jõuame kell kuus õhtul."
+    },
+    {
+     "sp": "A",
+     "text": "Kui keegi ei saa tulla, andke sellest klassijuhatajale teada hiljemalt kolmapäeval."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-09-q1",
+     "type": "choice",
+     "prompt_et": "Millal ekskursioon toimub?",
+     "explanation_ru": "«Neljapäeval».",
+     "options": [
+      "neljapäeval",
+      "kolmapäeval",
+      "reedel",
+      "esmaspäeval"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-09-q2",
+     "type": "input",
+     "prompt_et": "Mis kell tuleb kooli juurde kohale? Kirjuta sõnadega: kell ___.",
+     "explanation_ru": "Buss väljub 8.00, tulla tuleb «kell pool kaheksa» (7.30).",
+     "answer": "pool kaheksa"
+    },
+    {
+     "id": "l-09-q3",
+     "type": "choice",
+     "prompt_et": "Mida tuleb kaasa võtta?",
+     "explanation_ru": "«Soe jope, lõunasöök ja vihik».",
+     "options": [
+      "Soe jope, lõunasöök ja vihik.",
+      "Suusad ja müts.",
+      "Ainult raha.",
+      "Sülearvuti."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-09-q4",
+     "type": "tf",
+     "prompt_et": "Telefoni võib kasutada kogu päeva igal pool.",
+     "explanation_ru": "«Telefone võib kasutada ainult bussis».",
+     "answer": false
+    },
+    {
+     "id": "l-09-q5",
+     "type": "input",
+     "prompt_et": "Mis kell jõutakse tagasi? Kirjuta sõnaga: kell ___ õhtul.",
+     "explanation_ru": "«Tagasi jõuame kell kuus õhtul».",
+     "answer": "kuus"
+    },
+    {
+     "id": "l-09-q6",
+     "type": "choice",
+     "prompt_et": "Kellele tuleb teada anda, kui ei saa tulla?",
+     "explanation_ru": "«Klassijuhatajale».",
+     "options": [
+      "klassijuhatajale",
+      "direktorile",
+      "bussijuhile",
+      "treenerile"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "l-10",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kohvikus",
+   "title_ru": "В кафе",
+   "explanation_ru": "Диалог в кафе: заказ, цена, оплата.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tere tulemast! Mida soovite?"
+    },
+    {
+     "sp": "B",
+     "text": "Tere! Ma tahaksin ühe tee ja kooki."
+    },
+    {
+     "sp": "A",
+     "text": "Meil on täna šokolaadikook ja õunapirukas."
+    },
+    {
+     "sp": "B",
+     "text": "Võtan õunapirukat, palun."
+    },
+    {
+     "sp": "A",
+     "text": "Kas soovite teele ka sidrunit?"
+    },
+    {
+     "sp": "B",
+     "text": "Ei, aitäh, mulle meeldib tee ilma sidrunita."
+    },
+    {
+     "sp": "A",
+     "text": "Hästi. Kokku on neli eurot viiskümmend senti."
+    },
+    {
+     "sp": "B",
+     "text": "Kas ma saan maksta kaardiga?"
+    },
+    {
+     "sp": "A",
+     "text": "Kahjuks mitte, meil on ainult sularaha."
+    },
+    {
+     "sp": "B",
+     "text": "Hea küll, siin on viis eurot."
+    },
+    {
+     "sp": "A",
+     "text": "Aitäh! Tagasi saate viiskümmend senti."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-10-q1",
+     "type": "choice",
+     "prompt_et": "Mida klient tellib?",
+     "explanation_ru": "Тёплый напиток и пирог: tee ja õunapirukas.",
+     "options": [
+      "Tee ja õunapirukat.",
+      "Kohvi ja šokolaadikooki.",
+      "Suppi ja leiba.",
+      "Mahla ja võileiba."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-10-q2",
+     "type": "tf",
+     "prompt_et": "Klient tahab teele sidrunit.",
+     "explanation_ru": "«Mulle meeldib tee ilma sidrunita».",
+     "answer": false
+    },
+    {
+     "id": "l-10-q3",
+     "type": "input",
+     "prompt_et": "Kui palju kokku maksab? Kirjuta sõnaga: ___ eurot ja viiskümmend senti.",
+     "explanation_ru": "«Neli eurot viiskümmend senti».",
+     "answer": "neli"
+    },
+    {
+     "id": "l-10-q4",
+     "type": "tf",
+     "prompt_et": "Kohvikus saab maksta kaardiga.",
+     "explanation_ru": "«Kahjuks mitte, meil on ainult sularaha».",
+     "answer": false
+    },
+    {
+     "id": "l-10-q5",
+     "type": "choice",
+     "prompt_et": "Kui palju raha klient annab?",
+     "explanation_ru": "«Siin on viis eurot».",
+     "options": [
+      "viis eurot",
+      "neli eurot",
+      "kuus eurot",
+      "kümme eurot"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-10-q6",
+     "type": "input",
+     "prompt_et": "Kui palju senti saab klient tagasi? Kirjuta sõnaga: ___ senti.",
+     "explanation_ru": "«Tagasi saate viiskümmend senti».",
+     "answer": "viiskümmend"
+    }
+   ]
+  },
+  {
+   "id": "l-11",
+   "topic": "travel",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Rongiteade",
+   "title_ru": "Объявление о поезде",
+   "explanation_ru": "Объявление на вокзале: путь, время, особые условия.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Reisijate tähelepanu!"
+    },
+    {
+     "sp": "A",
+     "text": "Rong Tallinn–Narva väljub teiselt perroonilt kell 17.40."
+    },
+    {
+     "sp": "A",
+     "text": "Rongil on täna ainult neli vagunit, seetõttu on kohti vähem."
+    },
+    {
+     "sp": "A",
+     "text": "Palun ostke pilet ette."
+    },
+    {
+     "sp": "A",
+     "text": "Kui te sõidate jalgrattaga, minge viimasesse vagunisse."
+    },
+    {
+     "sp": "A",
+     "text": "Järgmine rong väljub tund aega hiljem."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-11-q1",
+     "type": "choice",
+     "prompt_et": "Millelt perroonilt rong väljub?",
+     "explanation_ru": "«Teiselt perroonilt».",
+     "options": [
+      "teiselt",
+      "esimeselt",
+      "kolmandalt",
+      "neljandalt"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-11-q2",
+     "type": "input",
+     "prompt_et": "Mis kell rong väljub? Kirjuta numbritega: ___",
+     "explanation_ru": "«Kell 17.40».",
+     "answer": "17.40"
+    },
+    {
+     "id": "l-11-q3",
+     "type": "input",
+     "prompt_et": "Mitu vagunit on rongil? Kirjuta sõnaga: ___ vagunit.",
+     "explanation_ru": "«Ainult neli vagunit».",
+     "answer": "neli"
+    },
+    {
+     "id": "l-11-q4",
+     "type": "choice",
+     "prompt_et": "Kuhu minna jalgrattaga?",
+     "explanation_ru": "«Minge viimasesse vagunisse».",
+     "options": [
+      "viimasesse vagunisse",
+      "esimesse vagunisse",
+      "bussi",
+      "jaama"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-11-q5",
+     "type": "tf",
+     "prompt_et": "Järgmine rong väljub tunni aja pärast.",
+     "explanation_ru": "«Tund aega hiljem» — позже на час.",
+     "answer": true
+    },
+    {
+     "id": "l-11-q6",
+     "type": "tf",
+     "prompt_et": "Kohti on rohkem kui tavaliselt.",
+     "explanation_ru": "«Seetõttu on kohti vähem» — мест меньше.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "id": "l-12",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Apteegis",
+   "title_ru": "В аптеке",
+   "explanation_ru": "Диалог с аптекарем: симптомы, дозировка, цена.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tere! Kuidas ma saan aidata?"
+    },
+    {
+     "sp": "B",
+     "text": "Tere! Mul on kurk valus ja ma natuke köhin."
+    },
+    {
+     "sp": "A",
+     "text": "Kas Teil on palavik?"
+    },
+    {
+     "sp": "B",
+     "text": "Ei, palavikku ei ole."
+    },
+    {
+     "sp": "A",
+     "text": "Siis soovitan neid pastille. Võtke neid kolm korda päevas."
+    },
+    {
+     "sp": "B",
+     "text": "Kui palju need maksavad?"
+    },
+    {
+     "sp": "A",
+     "text": "Kuus eurot."
+    },
+    {
+     "sp": "B",
+     "text": "Hea küll, võtan ühe pakendi."
+    },
+    {
+     "sp": "A",
+     "text": "Jooge ka sooja teed ja puhake."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-12-q1",
+     "type": "choice",
+     "prompt_et": "Mis inimesel viga on?",
+     "explanation_ru": "«Kurk on valus ja ma natuke köhin».",
+     "options": [
+      "Kurk on valus ja ta köhib.",
+      "Tal on palavik.",
+      "Tal valutab pea.",
+      "Tal on nohu."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-12-q2",
+     "type": "tf",
+     "prompt_et": "Inimesel on palavik.",
+     "explanation_ru": "«Palavikku ei ole».",
+     "answer": false
+    },
+    {
+     "id": "l-12-q3",
+     "type": "choice",
+     "prompt_et": "Mitu korda päevas pastille võtta?",
+     "explanation_ru": "«Kolm korda päevas».",
+     "options": [
+      "kolm korda",
+      "üks kord",
+      "kaks korda",
+      "viis korda"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-12-q4",
+     "type": "input",
+     "prompt_et": "Kui palju pastillid maksavad? Kirjuta sõnaga: ___ eurot.",
+     "explanation_ru": "«Kuus eurot».",
+     "answer": "kuus"
+    },
+    {
+     "id": "l-12-q5",
+     "type": "choice",
+     "prompt_et": "Mida soovitab apteeker lisaks?",
+     "explanation_ru": "«Jooge ka sooja teed ja puhake».",
+     "options": [
+      "Juua sooja teed ja puhata.",
+      "Minna trenni.",
+      "Süüa jäätist.",
+      "Minna kooli."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-12-q6",
+     "type": "tf",
+     "prompt_et": "Klient ostab kaks pakendit.",
+     "explanation_ru": "«Võtan ühe pakendi» — одну упаковку.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "id": "l-13",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Tee juhatamine",
+   "title_ru": "Как пройти",
+   "explanation_ru": "Диалог на улице: следите за направлением и расстоянием.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Vabandust, kas te oskate öelda, kus on postkontor?"
+    },
+    {
+     "sp": "B",
+     "text": "Jah, muidugi. Minge sellelt tänavalt otse ristmikuni ja pöörake seal vasakule."
+    },
+    {
+     "sp": "A",
+     "text": "Ja siis?"
+    },
+    {
+     "sp": "B",
+     "text": "Siis minge umbes kakssada meetrit. Postkontor on apteegi vastas."
+    },
+    {
+     "sp": "A",
+     "text": "Kas see on kaugel?"
+    },
+    {
+     "sp": "B",
+     "text": "Ei, jalgsi on see viis minutit."
+    },
+    {
+     "sp": "A",
+     "text": "Suur aitäh!"
+    },
+    {
+     "sp": "B",
+     "text": "Palun!"
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-13-q1",
+     "type": "choice",
+     "prompt_et": "Mida A otsib?",
+     "explanation_ru": "«Kus on postkontor?»",
+     "options": [
+      "postkontorit",
+      "apteeki",
+      "raamatukogu",
+      "kino"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-13-q2",
+     "type": "choice",
+     "prompt_et": "Kuhu ristmikul pöörata?",
+     "explanation_ru": "«Pöörake seal vasakule».",
+     "options": [
+      "vasakule",
+      "paremale",
+      "tagasi",
+      "otse"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-13-q3",
+     "type": "input",
+     "prompt_et": "Mitu meetrit tuleb pärast pööret minna? Kirjuta sõnaga: ___ meetrit.",
+     "explanation_ru": "«Kakssada meetrit» — 200 м.",
+     "answer": "kakssada"
+    },
+    {
+     "id": "l-13-q4",
+     "type": "choice",
+     "prompt_et": "Mille vastas postkontor on?",
+     "explanation_ru": "«Apteegi vastas».",
+     "options": [
+      "apteegi vastas",
+      "kooli vastas",
+      "poe vastas",
+      "kino vastas"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-13-q5",
+     "type": "input",
+     "prompt_et": "Mitu minutit on jalgsi? Kirjuta sõnaga: ___ minutit.",
+     "explanation_ru": "«Viis minutit».",
+     "answer": "viis"
+    },
+    {
+     "id": "l-13-q6",
+     "type": "tf",
+     "prompt_et": "Postkontor on väga kaugel.",
+     "explanation_ru": "«Ei, jalgsi on see viis minutit».",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "id": "l-14",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Matkakutse",
+   "title_ru": "Приглашение в поход",
+   "explanation_ru": "Голосовое сообщение: записывайте время, место, погоду и номер телефона.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tere, Karl! Siin on Mari."
+    },
+    {
+     "sp": "A",
+     "text": "Tahan sind laupäeval matkale kutsuda."
+    },
+    {
+     "sp": "A",
+     "text": "Kohtume bussijaamas kell üheksa hommikul."
+    },
+    {
+     "sp": "A",
+     "text": "Sõidame bussiga Haapsallu ja seal jalutame mere ääres."
+    },
+    {
+     "sp": "A",
+     "text": "Ilmateate järgi on laupäeval päikeseline ja kümme kraadi sooja."
+    },
+    {
+     "sp": "A",
+     "text": "Võta kaasa lõunasöök ja vett."
+    },
+    {
+     "sp": "A",
+     "text": "Kui sa tuled, helista mulle reedeks."
+    },
+    {
+     "sp": "A",
+     "text": "Mu number on viis, kolm, kaks, neli, üks, üks, üks."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-14-q1",
+     "type": "choice",
+     "prompt_et": "Millal matk toimub?",
+     "explanation_ru": "«Laupäeval».",
+     "options": [
+      "laupäeval",
+      "reedel",
+      "pühapäeval",
+      "esmaspäeval"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-14-q2",
+     "type": "input",
+     "prompt_et": "Mis kell kohtutakse? Kirjuta sõnaga: kell ___ hommikul.",
+     "explanation_ru": "«Kell üheksa hommikul».",
+     "answer": "üheksa"
+    },
+    {
+     "id": "l-14-q3",
+     "type": "choice",
+     "prompt_et": "Kuhu sõidetakse?",
+     "explanation_ru": "«Haapsallu».",
+     "options": [
+      "Haapsallu",
+      "Tartusse",
+      "Narva",
+      "Pärnusse"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-14-q4",
+     "type": "input",
+     "prompt_et": "Mitu kraadi sooja on? Kirjuta sõnaga: ___ kraadi.",
+     "explanation_ru": "«Kümme kraadi sooja».",
+     "answer": "kümme"
+    },
+    {
+     "id": "l-14-q5",
+     "type": "input",
+     "prompt_et": "Mari telefoninumber? Kirjuta numbritega ilma tühikuteta: ___",
+     "explanation_ru": "«Viis, kolm, kaks, neli, üks, üks, üks» = 5324111.",
+     "answer": "5324111"
+    },
+    {
+     "id": "l-14-q6",
+     "type": "tf",
+     "prompt_et": "Karl peab helistama pühapäevaks.",
+     "explanation_ru": "«Helista mulle reedeks» — до пятницы.",
+     "answer": false
+    }
+   ]
   }
  ]
 }

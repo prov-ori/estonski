@@ -1,6 +1,6 @@
-import { h, content, config, addChildren } from '../util.js';
+import { h, content, config, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
-import { timerWidget, recorderWidget, checklistWidget } from '../widgets.js';
+import { timerWidget, recorderWidget, checklistWidget, filteredList, nextLink } from '../widgets.js';
 
 export function cardBlock(c) {
   const role = (r) => h('div', { class: 'card role' }, h('h3', null, r.title_ru), h('ul', null, r.prompts_et.map((p) => h('li', { lang: 'et' }, p))));
@@ -14,13 +14,14 @@ export default {
   title: 'Говорение',
   async mount(root, args) {
     const [data, fmt] = await Promise.all([content('speaking'), config('exam-format')]);
+    const topicNames = await topicMap();
     const card = data.items.find((x) => x.id === args[0]);
     if (!card) {
       addChildren(root, 
         h('h1', null, 'Говорение'),
         h('p', { class: 'lead' }, 'Карточки для работы в паре. Один говорит за роль A, другой за роль B, потом меняетесь. Записывайте диалог и слушайте себя.'),
         h('p', { class: 'notice privacy' }, h('strong', null, 'Запись только у вас. '), 'Звук записывается в браузере и никуда не отправляется.'),
-        h('div', { class: 'grid' }, data.items.map((t) => h('a', { class: 'card link-card', href: `#/speaking/${t.id}` }, h('h3', null, t.title_ru), h('p', { class: 'muted' }, t.situation_ru)))));
+        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => h('a', { class: 'card link-card', href: `#/speaking/${t.id}` }, h('h3', null, t.title_ru), h('p', { class: 'muted' }, t.situation_ru))))));
       return;
     }
     const saved = store.getSpeaking(card.id);
@@ -28,7 +29,7 @@ export default {
     const rec = recorderWidget();
     const cl = checklistWidget(data.checklist, saved.checks, (checks) => store.setSpeaking(card.id, { checks }));
     addChildren(root, 
-      h('p', null, h('a', { href: '#/speaking' }, '← Все карточки')),
+      h('p', null, h('a', { href: '#/speaking' }, '← Все карточки'), '  ', nextLink(data.items, card.id, 'speaking', 'Следующая карточка →')),
       h('h1', null, 'Говорение: ' + card.title_ru),
       cardBlock(card),
       h('p', { class: 'muted' }, card.explanation_ru),

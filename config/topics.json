@@ -58,6 +58,17 @@
         "Jaoks («для») + родительный: sõbra jaoks. Läbi («через») + родительный: läbi metsa.",
         "Kõrval, lähedal, vahel — послелоги: kooli lähedal."
       ]
+    },
+    {
+      "id": "adjectives",
+      "name_ru": "Прилагательные и степени сравнения",
+      "cheatsheet_ru": [
+        "Прилагательное согласуется с существительным в падеже и числе: suur maja — suures majas.",
+        "Сравнительная степень: -m (suur — suurem, vana — vanem). Превосходная: -im (suurim) или kõige + сравнительная (kõige suurem).",
+        "Особые формы: hea — parem — parim; halb — halvem — halvim.",
+        "Сравнение: kui + именительный (suurem kui mina) или элатив (minust suurem).",
+        "Перед существительным в именительном прилагательное тоже в именительном (väike koer); с партитивным объектом — в партитиве (ilusat tüdrukut)."
+      ]
     }
   ],
   "themes": [
@@ -120,6 +131,26 @@
     {
       "id": "body",
       "name_ru": "Тело"
+    },
+    {
+      "id": "sport",
+      "name_ru": "Спорт"
+    },
+    {
+      "id": "feelings",
+      "name_ru": "Чувства и характер"
+    },
+    {
+      "id": "time",
+      "name_ru": "Время и календарь"
+    },
+    {
+      "id": "actions",
+      "name_ru": "Частые глаголы"
+    },
+    {
+      "id": "qualities",
+      "name_ru": "Частые прилагательные"
     }
   ],
   "skills": [

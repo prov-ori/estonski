@@ -623,6 +623,314 @@
      "ref": "s-05"
     }
    }
+  },
+  {
+   "id": "mock-04",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Пробный экзамен 4",
+   "explanation_ru": "Пробный экзамен собран из заданий разделов (аудирование, чтение, письмо, говорение) и нового блока «Грамматика и лексика». Процент считается только по автоматически проверяемым частям.",
+   "parts": {
+    "listening": {
+     "ref": "l-10"
+    },
+    "reading": {
+     "ref": "r-10"
+    },
+    "language": {
+     "id": "mock-04-g",
+     "title_et": "Keelekasutus",
+     "explanation_ru": "Короткие задания на грамматику; ответы вводятся с клавиатуры.",
+     "questions": [
+      {
+       "id": "mock-04-g1",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Me sõidame ___.",
+       "hint": "(maa, «в деревню»)",
+       "ru": "Мы едем в деревню.",
+       "options": [
+        "maale",
+        "maal",
+        "maalt",
+        "maa"
+       ],
+       "answer": 0,
+       "explanation_ru": "«Куда?» → аллатив на -le: maale."
+      },
+      {
+       "id": "mock-04-g2",
+       "topic": "verbs",
+       "level": "A2",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Sa ___ homme koolis.",
+       "hint": "(olema)",
+       "ru": "Ты завтра в школе.",
+       "options": [
+        "oled",
+        "olen",
+        "on",
+        "oleme"
+       ],
+       "answer": 0,
+       "explanation_ru": "2 л. ед. ч. от olema — oled."
+      },
+      {
+       "id": "mock-04-g3",
+       "topic": "numerals",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Kirjuta sõnadega: 45 → ___",
+       "answer": "nelikümmend viis",
+       "explanation_ru": "45 = nelikümmend viis."
+      },
+      {
+       "id": "mock-04-g4",
+       "topic": "prepositions",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ta seisab ukse ___.",
+       "hint": "(перед)",
+       "ru": "Он стоит перед дверью.",
+       "options": [
+        "ees",
+        "ette",
+        "eest",
+        "peal"
+       ],
+       "answer": 0,
+       "explanation_ru": "«Где (перед)?» → ees: ukse ees."
+      },
+      {
+       "id": "mock-04-g5",
+       "topic": "gradation",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Mu õde ___ palju.",
+       "hint": "(lugema, 3 л.)",
+       "ru": "Моя сестра много читает.",
+       "answer": "loeb",
+       "explanation_ru": "Lugema → loeb: слабая ступень в личных формах."
+      },
+      {
+       "id": "mock-04-g6",
+       "topic": "verbs",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Mulle meeldib ___.",
+       "hint": "(ujuma)",
+       "ru": "Мне нравится плавать.",
+       "options": [
+        "ujuda",
+        "ujuma",
+        "ujun",
+        "ujub"
+       ],
+       "answer": 0,
+       "explanation_ru": "После meeldib — da-инфинитив: ujuda."
+      },
+      {
+       "id": "mock-04-g7",
+       "topic": "numerals",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Kell on 5.15, ehk ___ kuus.",
+       "hint": "(5:15)",
+       "ru": "Четверть шестого.",
+       "options": [
+        "veerand",
+        "pool",
+        "kolmveerand",
+        "viis"
+       ],
+       "answer": 0,
+       "explanation_ru": "5:15 = veerand kuus."
+      },
+      {
+       "id": "mock-04-g8",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Ma ei näe ___.",
+       "hint": "(sõber)",
+       "ru": "Я не вижу друга.",
+       "answer": "sõpra",
+       "explanation_ru": "В отрицательном предложении объект в партитиве: sõber → sõpra."
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-13"
+    },
+    "speaking": {
+     "ref": "s-13"
+    }
+   }
+  },
+  {
+   "id": "mock-05",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Пробный экзамен 5",
+   "explanation_ru": "Пробный экзамен собран из заданий разделов (аудирование, чтение, письмо, говорение) и нового блока «Грамматика и лексика». Процент считается только по автоматически проверяемым частям.",
+   "parts": {
+    "listening": {
+     "ref": "l-12"
+    },
+    "reading": {
+     "ref": "r-11"
+    },
+    "language": {
+     "id": "mock-05-g",
+     "title_et": "Keelekasutus",
+     "explanation_ru": "Короткие задания на грамматику; ответы вводятся с клавиатуры.",
+     "questions": [
+      {
+       "id": "mock-05-g1",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ta andis raamatu ___.",
+       "hint": "(mina, «мне»)",
+       "ru": "Он дал книгу мне.",
+       "options": [
+        "mulle",
+        "mind",
+        "minuga",
+        "minult"
+       ],
+       "answer": 0,
+       "explanation_ru": "«Кому?» → аллатив: mina → mulle."
+      },
+      {
+       "id": "mock-05-g2",
+       "topic": "verbs",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ära ___ siia!",
+       "hint": "(tulema)",
+       "ru": "Не приходи сюда!",
+       "options": [
+        "tule",
+        "tulla",
+        "tuled",
+        "tulnud"
+       ],
+       "answer": 0,
+       "explanation_ru": "Ära + повелительное: Ära tule!"
+      },
+      {
+       "id": "mock-05-g3",
+       "topic": "numerals",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Täna on ___ aprill.",
+       "hint": "(3)",
+       "ru": "Сегодня третье апреля.",
+       "answer": "kolmas",
+       "explanation_ru": "Дата — порядковое числительное: kolmas."
+      },
+      {
+       "id": "mock-05-g4",
+       "topic": "prepositions",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Võta raamat kapi ___.",
+       "hint": "(из)",
+       "ru": "Достань книгу из шкафа.",
+       "options": [
+        "sees",
+        "sisse",
+        "seest",
+        "alt"
+       ],
+       "answer": 2,
+       "explanation_ru": "«Откуда (из внутри)?» → seest."
+      },
+      {
+       "id": "mock-05-g5",
+       "topic": "gradation",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Mu isa ___ autoga.",
+       "hint": "(sõitma, 3 л.)",
+       "ru": "Мой отец ездит на машине.",
+       "answer": "sõidab",
+       "explanation_ru": "Sõitma → sõidab: t → d."
+      },
+      {
+       "id": "mock-05-g6",
+       "topic": "adjectives",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Täna on ilm ___ kui eile.",
+       "hint": "(hea)",
+       "ru": "Сегодня погода лучше, чем вчера.",
+       "options": [
+        "parem",
+        "parim",
+        "hea",
+        "head"
+       ],
+       "answer": 0,
+       "explanation_ru": "Hea — parem — parim."
+      },
+      {
+       "id": "mock-05-g7",
+       "topic": "verbs",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ma armastan ___.",
+       "hint": "(jooksma)",
+       "ru": "Я люблю бегать.",
+       "options": [
+        "joosta",
+        "jooksma",
+        "jooksen",
+        "jooksnud"
+       ],
+       "answer": 0,
+       "explanation_ru": "После armastan — da-инфинитив: joosta."
+      },
+      {
+       "id": "mock-05-g8",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Ma lähen ___ juurde.",
+       "hint": "(sõber, «к другу»)",
+       "ru": "Я иду к другу.",
+       "answer": "sõbra",
+       "explanation_ru": "Juurde + родительный: sõbra juurde."
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-16"
+    },
+    "speaking": {
+     "ref": "s-15"
+    }
+   }
   }
  ]
 }

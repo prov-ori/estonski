@@ -837,6 +837,366 @@
    "options_lang": "ru",
    "answer": 0,
    "explanation_ru": "Kolmveerand üks = «три четверти до часа» = 12:45."
+  },
+  {
+   "id": "d-47",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Me ___ koolis.",
+   "hint": "(olema)",
+   "ru": "Мы в школе.",
+   "options": [
+    "oleme",
+    "olete",
+    "olen",
+    "on"
+   ],
+   "answer": 0,
+   "explanation_ru": "1 л. мн. ч. от olema — oleme."
+  },
+  {
+   "id": "d-48",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Raamat on ___.",
+   "hint": "(kott, «в сумке»)",
+   "ru": "Книга в сумке.",
+   "options": [
+    "kotis",
+    "kotti",
+    "kotist",
+    "kott"
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где?» → инессив на -s: kott → koti → kotis."
+  },
+  {
+   "id": "d-49",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "kolmkümmend",
+   "prompt_ru": "Какое это число?",
+   "options": [
+    "30",
+    "13",
+    "33",
+    "3"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Kolmkümmend = 30 (kolm + kümmend)."
+  },
+  {
+   "id": "d-50",
+   "topic": "food",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "juust",
+   "prompt_ru": "Что это?",
+   "options": [
+    "сыр",
+    "хлеб",
+    "молоко",
+    "рыба"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Juust — «сыр»."
+  },
+  {
+   "id": "d-51",
+   "topic": "time",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Täna on pühapäev.",
+   "prompt_ru": "Какой сегодня день?",
+   "options": [
+    "воскресенье",
+    "суббота",
+    "пятница",
+    "понедельник"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Pühapäev — «воскресенье»."
+  },
+  {
+   "id": "d-52",
+   "topic": "prepositions",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Pliiats on laua ___.",
+   "hint": "(на)",
+   "ru": "Карандаш лежит на столе.",
+   "options": [
+    "peal",
+    "alla",
+    "all",
+    "ees"
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где (на)?» → peal: laua peal."
+  },
+  {
+   "id": "d-53",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mu isa ___ autoga.",
+   "hint": "(sõitma)",
+   "ru": "Мой отец ездит на машине.",
+   "options": [
+    "sõitab",
+    "sõidab",
+    "sõidib",
+    "sõit"
+   ],
+   "answer": 1,
+   "explanation_ru": "Sõitma → sõidab: сильное t чередуется со слабым d."
+  },
+  {
+   "id": "d-54",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma kinkisin lilli ___.",
+   "hint": "(õde)",
+   "ru": "Я подарил(а) цветы сестре.",
+   "options": [
+    "õde",
+    "õele",
+    "õelt",
+    "õest"
+   ],
+   "answer": 1,
+   "explanation_ru": "«Кому?» → аллатив: õde → õe → õele."
+  },
+  {
+   "id": "d-55",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma hakkan ___.",
+   "hint": "(õppima)",
+   "ru": "Я начну учиться.",
+   "options": [
+    "õppima",
+    "õppida",
+    "õpin",
+    "õppinud"
+   ],
+   "answer": 0,
+   "explanation_ru": "После hakkama — ma-инфинитив."
+  },
+  {
+   "id": "d-56",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mul on vaja ___.",
+   "hint": "(minema)",
+   "ru": "Мне нужно идти.",
+   "options": [
+    "minna",
+    "minema",
+    "lähen",
+    "läinud"
+   ],
+   "answer": 0,
+   "explanation_ru": "После «on vaja» — da-инфинитив: minna."
+  },
+  {
+   "id": "d-57",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on 6.45, ehk ___ seitse.",
+   "hint": "(6:45)",
+   "ru": "Без четверти семь.",
+   "options": [
+    "pool",
+    "veerand",
+    "kolmveerand",
+    "kuus"
+   ],
+   "answer": 2,
+   "explanation_ru": "6:45 = kolmveerand seitse."
+  },
+  {
+   "id": "d-58",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kino on avatud kell 14–22. Pilet maksab seitse eurot.",
+   "prompt_ru": "Сколько стоит билет?",
+   "options": [
+    "7 евро",
+    "14 евро",
+    "22 евро",
+    "2 евро"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Seitse eurot — 7 евро."
+  },
+  {
+   "id": "d-59",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Pane raamat kapi ___.",
+   "hint": "(в, «куда?»)",
+   "ru": "Положи книгу в шкаф.",
+   "options": [
+    "sees",
+    "sisse",
+    "seest",
+    "peal"
+   ],
+   "answer": 1,
+   "explanation_ru": "«Куда (внутрь)?» → sisse."
+  },
+  {
+   "id": "d-60",
+   "topic": "feelings",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta on kurb, sest ta kaotas mängu.",
+   "prompt_ru": "Почему он грустный?",
+   "options": [
+    "проиграл игру",
+    "потерял телефон",
+    "заболел",
+    "опоздал"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Kaotas mängu — «проиграл игру»."
+  },
+  {
+   "id": "d-61",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei saanud ___, sest olin haige.",
+   "hint": "(tulema)",
+   "ru": "Я не смог прийти, потому что болел.",
+   "options": [
+    "tulla",
+    "tulema",
+    "tulin",
+    "tulnud"
+   ],
+   "answer": 0,
+   "explanation_ru": "После ei saanud — da-инфинитив: tulla."
+  },
+  {
+   "id": "d-62",
+   "topic": "adjectives",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "See raamat on ___ kui too.",
+   "hint": "(huvitav)",
+   "ru": "Эта книга интереснее той.",
+   "options": [
+    "huvitavam",
+    "huvitavaim",
+    "huvitav",
+    "huvitavat"
+   ],
+   "answer": 0,
+   "explanation_ru": "Сравнительная степень: huvitav → huvitavam."
+  },
+  {
+   "id": "d-63",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma olen siin ___ juba kolm aastat.",
+   "hint": "(elama)",
+   "ru": "Я живу здесь уже три года.",
+   "options": [
+    "elan",
+    "elasin",
+    "elanud",
+    "elada"
+   ],
+   "answer": 2,
+   "explanation_ru": "Перфект: olen elanud."
+  },
+  {
+   "id": "d-64",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta töötab ___.",
+   "hint": "(õpetaja, «в качестве»)",
+   "ru": "Он работает учителем.",
+   "options": [
+    "õpetajana",
+    "õpetajaks",
+    "õpetaja",
+    "õpetajaga"
+   ],
+   "answer": 0,
+   "explanation_ru": "Эссив на -na: «в качестве кого» — õpetajana."
+  },
+  {
+   "id": "d-65",
+   "topic": "city",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kuigi buss hilines, jõudsime õigeks ajaks kohale, sest sõitsime kiiresti.",
+   "prompt_ru": "Почему они успели?",
+   "options": [
+    "потому что ехали быстро",
+    "потому что автобус не опоздал",
+    "потому что вышли раньше",
+    "потому что был выходной"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Kuigi — «хотя»; sest sõitsime kiiresti — «потому что ехали быстро»."
+  },
+  {
+   "id": "d-66",
+   "topic": "adjectives",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta on klassi ___ õpilane.",
+   "hint": "(hea, превосходная)",
+   "ru": "Он лучший ученик класса.",
+   "options": [
+    "parim",
+    "parem",
+    "hea",
+    "parima"
+   ],
+   "answer": 0,
+   "explanation_ru": "Hea — parem — parim: превосходная степень — parim."
   }
  ]
 }

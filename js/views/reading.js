@@ -1,5 +1,5 @@
 import { seriesLinks } from '../series.js';
-import { h, content, pct, setChildren, addChildren } from '../util.js';
+import { h, content, countWords, pct, setChildren, addChildren } from '../util.js';
 import { questionSet, saveResults } from '../question.js';
 
 /** Блок «текст + вопросы» — используется и в пробном экзамене. */
@@ -18,11 +18,14 @@ export default {
     if (series) root.append(series);
 
     if (!item) {
-      addChildren(root, 
+      const requestedLevel = args[0]?.startsWith('level-') ? args[0].slice(6) : 'B1-B2';
+      const shown = data.items.filter(t => requestedLevel === 'B1-B2' ? ['B1','B2'].includes(t.level) : t.level === requestedLevel);
+      addChildren(root,
         h('h1', null, 'Чтение'),
         h('p', { class: 'lead' }, 'Тексты с вопросами трёх типов: выбор ответа, верно/неверно, соответствие (плюс короткий ответ с клавиатуры).'),
-        h('div', { class: 'grid' }, data.items.map((t) =>
-          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, `${t.questions.length} вопросов`)))));
+        h('nav', {class:'chips', 'aria-label':'Уровень чтения'}, ['B1-B2','B1','B2'].map(level => h('a',{class:'chip',href:'#/reading/level-'+level,'aria-current':level === requestedLevel ? 'true' : null},level))),
+        h('div', { class: 'grid' }, shown.map((t) =>
+          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, `${t.level} · ${countWords(t.text_et)} слов · ${t.questions.length} вопросов`)))));
       return;
     }
 
@@ -38,9 +41,10 @@ export default {
       result.scrollIntoView({ block: 'nearest' });
     } }, 'Проверить ответы');
 
-    addChildren(root, 
+    addChildren(root,
       h('p', null, h('a', { href: '#/reading' }, '← Все тексты')),
       h('h1', null, 'Чтение: ' + item.title_ru),
+      h('p', {class:'muted'}, `${item.level} · ${countWords(item.text_et)} слов`),
       textBlock(item),
       h('h2', null, 'Вопросы'),
       set.el,

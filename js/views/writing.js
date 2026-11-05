@@ -30,7 +30,7 @@ export default {
     if (series) root.append(series);
 
     if (!task) {
-      addChildren(root, 
+      addChildren(root,
         h('h1', null, 'Письмо'),
         h('p', { class: 'lead' }, 'Выберите задание, пишите с таймером и счётчиком слов, потом проверьте себя по чек-листу.'),
         h('p', { class: 'notice warn' }, 'Автоматической оценки нет — и не будет: тренажёр не умеет надёжно оценивать тексты. Проверьте себя по чек-листу или покажите текст учителю.'),
@@ -43,11 +43,11 @@ export default {
     }
 
     const saved = store.getWriting(task.id);
-    const range = fmt.writing_practice_words;
+    const range = task.practice_words || fmt.writing_practice_words;
     const ed = editor({ initial: saved.text || '', range, onInput: (v) => store.setWriting(task.id, { text: v }) });
     const tw = timerWidget({ seconds: fmt.writing_practice_minutes * 60, label: 'Таймер' });
     const cl = checklistWidget(data.checklist, saved.checks, (checks) => store.setWriting(task.id, { checks }));
-    addChildren(root, 
+    addChildren(root,
       h('p', null, h('a', { href: '#/writing' }, '← Все задания')),
       h('h1', null, 'Письмо: ' + task.title_ru),
       h('div', { class: 'card' },

@@ -3846,6 +3846,426 @@
       "prompt_ru": "озеро",
       "answer": "järv",
       "explanation_ru": "järv — озеро. Пример: Suvel ujume järves. Перевод: Летом мы плаваем в озере."
+    },
+    {
+      "id": "g-b1b2-1",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kui mul oleks rohkem aega, ___ ma ringis sagedamini.",
+      "options": [
+        "osalesin",
+        "osaleksin",
+        "osalenud"
+      ],
+      "answer": 1,
+      "explanation_ru": "Условное следствие при oleks: osaleksin, «я бы участвовал»."
+    },
+    {
+      "id": "g-b1b2-2",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kui sa oleksid varem helistanud, ___ ma sind aidata saanud.",
+      "options": [
+        "olin",
+        "olen",
+        "oleksin"
+      ],
+      "answer": 2,
+      "explanation_ru": "Нереальное условие в прошлом: oleksin saanud."
+    },
+    {
+      "id": "g-b1b2-3",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kui ma oleksin teadet lugenud, ei ___ ma hiljaks jäänud.",
+      "options": [
+        "ole",
+        "oleks",
+        "olin"
+      ],
+      "answer": 1,
+      "explanation_ru": "Отрицательное условное прошедшее: ei oleks hiljaks jäänud."
+    },
+    {
+      "id": "g-b1b2-4",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Enne vastuse saatmist ___ andmeid veel kord kontrollida.",
+      "options": [
+        "tuleks",
+        "tulin",
+        "tulnud"
+      ],
+      "answer": 0,
+      "explanation_ru": "Tuleks + da-инфинитив выражает рекомендацию."
+    },
+    {
+      "id": "g-b1b2-5",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Koosolekul ___ uus töökorraldus heaks.",
+      "options": [
+        "kiitis",
+        "kiideti",
+        "kiitnud"
+      ],
+      "answer": 1,
+      "explanation_ru": "Безличное прошедшее: kiideti heaks, «одобрили»."
+    },
+    {
+      "id": "g-b1b2-6",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Selles raamatukogus ___ lugejate ettepanekutega.",
+      "options": [
+        "arvestab",
+        "arvestatakse",
+        "arvestanud"
+      ],
+      "answer": 1,
+      "explanation_ru": "Безличная форма настоящего: arvestatakse, «учитывают»."
+    },
+    {
+      "id": "g-b1b2-7",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Vana ajakava on uuega ___.",
+      "options": [
+        "asendanud",
+        "asendatud",
+        "asendama"
+      ],
+      "answer": 1,
+      "explanation_ru": "Результат действия над объектом: on asendatud."
+    },
+    {
+      "id": "g-b1b2-8",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Õpilased olid töö juba ___, kui õpetaja saabus.",
+      "options": [
+        "lõpetanud",
+        "lõpetatud",
+        "lõpetama"
+      ],
+      "answer": 0,
+      "explanation_ru": "Плюсквамперфект: olid lõpetanud — действие предшествует другому прошедшему."
+    },
+    {
+      "id": "g-b1b2-9",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Küsimustele ___ selgitas esineja oma valikut.",
+      "options": [
+        "vastates",
+        "vastama",
+        "vastatud"
+      ],
+      "answer": 0,
+      "explanation_ru": "-des-конструкция выражает одновременное действие: vastates, «отвечая»."
+    },
+    {
+      "id": "g-b1b2-10",
+      "topic": "verbs",
+      "level": "B2",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ta lahkus ruumist midagi ___.",
+      "options": [
+        "ütlemata",
+        "üteldes",
+        "ütlema"
+      ],
+      "answer": 0,
+      "explanation_ru": "-mata выражает несделанное действие: midagi ütlemata, «ничего не сказав»."
+    },
+    {
+      "id": "g-b1b2-11",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Kõik sõltub sellest, kas meil jätkub ___. (aeg)",
+      "options": [
+        "aeg",
+        "aja",
+        "aega"
+      ],
+      "answer": 2,
+      "explanation_ru": "Jätkuma управляет партитивом: jätkub aega."
+    },
+    {
+      "id": "g-b1b2-12",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Õpilased loobusid esialgsest ___. (plaan)",
+      "options": [
+        "plaani",
+        "plaanist",
+        "plaanile"
+      ],
+      "answer": 1,
+      "explanation_ru": "Loobuma millest? — элатив: plaanist."
+    },
+    {
+      "id": "g-b1b2-13",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "See lahendus võimaldab meil ___ säästa. (aeg)",
+      "options": [
+        "aja",
+        "aega",
+        "ajale"
+      ],
+      "answer": 1,
+      "explanation_ru": "Säästma aega: партитив обозначает количество времени."
+    },
+    {
+      "id": "g-b1b2-14",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ma ei pea seda ettepanekut ___. (mõistlik)",
+      "options": [
+        "mõistlik",
+        "mõistlikuks",
+        "mõistlikult"
+      ],
+      "answer": 1,
+      "explanation_ru": "Pidama mida milleks: считать предложение разумным — mõistlikuks."
+    },
+    {
+      "id": "g-b1b2-15",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Juhendaja jäi meie ___ rahule. (tulemus)",
+      "options": [
+        "tulemust",
+        "tulemusele",
+        "tulemusega"
+      ],
+      "answer": 2,
+      "explanation_ru": "Rahule jääma millega? — комитатив: tulemusega."
+    },
+    {
+      "id": "g-b1b2-16",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ta suhtus uude ___ ettevaatlikult. (ettepanek)",
+      "options": [
+        "ettepanekust",
+        "ettepanekusse",
+        "ettepanekuga"
+      ],
+      "answer": 1,
+      "explanation_ru": "Suhtuma millesse? — иллатив: ettepanekusse."
+    },
+    {
+      "id": "g-b1b2-17",
+      "topic": "cases",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Erinevalt varasemast ___ koguti seekord ka tagasisidet. (katse)",
+      "options": [
+        "katsega",
+        "katsest",
+        "katsele"
+      ],
+      "answer": 1,
+      "explanation_ru": "Erinevalt millest? — элатив: katsest."
+    },
+    {
+      "id": "g-b1b2-18",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "___ vihmale viidi matk siiski läbi.",
+      "options": [
+        "Vaatamata",
+        "Tänu",
+        "Seoses"
+      ],
+      "answer": 0,
+      "explanation_ru": "Vaatamata millele? — уступка: несмотря на дождь."
+    },
+    {
+      "id": "g-b1b2-19",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Otsus tehti osalejate tagasiside ___.",
+      "options": [
+        "põhjal",
+        "asemel",
+        "vastu"
+      ],
+      "answer": 0,
+      "explanation_ru": "Mille põhjal? — на основании: tagasiside põhjal."
+    },
+    {
+      "id": "g-b1b2-20",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Uue koti ostmise ___ otsustas ta vana parandada.",
+      "options": [
+        "asemel",
+        "tõttu",
+        "kaudu"
+      ],
+      "answer": 0,
+      "explanation_ru": "Mille asemel? — вместо покупки нового."
+    },
+    {
+      "id": "g-b1b2-21",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Teenuse viivituse ___ vabandati kliendi ees.",
+      "options": [
+        "pärast",
+        "jaoks",
+        "kaudu"
+      ],
+      "answer": 0,
+      "explanation_ru": "Vabandama mille pärast? — извиняться за задержку."
+    },
+    {
+      "id": "g-b1b2-22",
+      "topic": "prepositions",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Avaldus saadeti ametliku kanali ___.",
+      "options": [
+        "kaudu",
+        "vastu",
+        "jaoks"
+      ],
+      "answer": 0,
+      "explanation_ru": "Mille kaudu? — через официальный канал."
+    },
+    {
+      "id": "g-b1b2-23",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Me ei jõudnud kõiki ___ samal päeval kontrollida. (andmed)",
+      "options": [
+        "andmed",
+        "andmeid",
+        "andmete"
+      ],
+      "answer": 1,
+      "explanation_ru": "Andmed → партитив множественного числа andmeid."
+    },
+    {
+      "id": "g-b1b2-24",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Enne ___ avaldamist tuleb allikat kontrollida. (teade)",
+      "options": [
+        "teade",
+        "teate",
+        "teadet"
+      ],
+      "answer": 1,
+      "explanation_ru": "Перед отглагольным существительным: teate avaldamine, родительный teate."
+    },
+    {
+      "id": "g-b1b2-25",
+      "topic": "gradation",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Ta ei olnud uue ___ veel harjunud. (ajakava)",
+      "options": [
+        "ajakavast",
+        "ajakavaga",
+        "ajakavale"
+      ],
+      "answer": 1,
+      "explanation_ru": "Harjuma millega? — комитатив: ajakavaga."
+    },
+    {
+      "id": "g-b1b2-26",
+      "topic": "numerals",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Katse kestis kaks ja pool ___. (nädal)",
+      "options": [
+        "nädala",
+        "nädalat",
+        "nädalad"
+      ],
+      "answer": 1,
+      "explanation_ru": "После kaks ja pool — партитив единственного числа: nädalat."
+    },
+    {
+      "id": "g-b1b2-27",
+      "topic": "numerals",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Koosolek toimub kahekümne ___ märtsil. (23. kuupäev)",
+      "options": [
+        "kolmas",
+        "kolmandal",
+        "kolmanda"
+      ],
+      "answer": 1,
+      "explanation_ru": "В дате «когда?» порядковое числительное в адессиве: kahekümne kolmandal märtsil."
+    },
+    {
+      "id": "g-b1b2-28",
+      "topic": "numerals",
+      "level": "B1",
+      "status": "draft",
+      "type": "choice",
+      "prompt_et": "Küsitluses osales üle ___ inimese. (100, omastav)",
+      "options": [
+        "sada",
+        "saja",
+        "sadat"
+      ],
+      "answer": 1,
+      "explanation_ru": "Üle в значении «более» требует родительного: üle saja inimese."
     }
   ]
 }

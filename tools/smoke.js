@@ -187,7 +187,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     for (const item of reading.items.filter(x => x.id.startsWith('r-expand-'))) {
       await page.goto(base + '#/reading/' + item.id);
       await page.waitForSelector('.qset');
-      ok(await page.locator('.question').count() === 3, item.id + ': три вопроса доступны');
+      ok(await page.locator('.question').count() === item.questions.length, item.id + ': все вопросы доступны');
     }
     for (const module of ['reading','listening','writing','speaking']) {
       const data = JSON.parse(fs.readFileSync(path.join(ROOT,'content',module+'.json'),'utf8'));
@@ -213,6 +213,24 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     await page.waitForSelector('textarea');
     ok((await page.locator('textarea').inputValue()).includes('Pakun uut aega'), 'черновик продолжения сохраняется');
     ok(errs.length === 0, 'новые продолжения без ошибок браузера');
+    await page.goto(base + '#/reading/level-B2');
+    await page.waitForSelector('main .link-card');
+    const b2 = JSON.parse(fs.readFileSync(path.join(ROOT,'content/reading.json'),'utf8')).items.filter(x => x.level === 'B2');
+    ok(await page.locator('main .link-card').count() === b2.length, 'фильтр B2 показывает только тексты B2');
+    for (const task of b2) {
+      await page.goto(base + '#/reading/' + task.id);
+      await page.waitForSelector('.qset');
+      ok(await page.locator('.question').count() === task.questions.length, task.id + ': все вопросы B2 доступны');
+    }
+    await page.goto(base + '#/grammar');
+    await page.waitForSelector('select[aria-label="Уровень"]');
+    ok(await page.locator('select[aria-label="Уровень"]').inputValue() === 'B1-B2', 'по умолчанию выбран B1–B2');
+    await page.selectOption('select[aria-label="Уровень"]','B2');
+    await page.getByRole('button',{name:'Начать заново',exact:true}).click();
+    ok((await page.locator('.trainer').innerText()).includes('· B2'), 'сессия B2 содержит вопрос B2');
+    await page.goto(base + '#/writing/w-01-reply');
+    await page.waitForSelector('textarea');
+    ok((await page.locator('main').innerText()).includes('180–240'), 'письмо B2 использует расширенный ориентир объёма');
     await ctx.close();
   }
   await browser.close();

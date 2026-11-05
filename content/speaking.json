@@ -404,17 +404,19 @@
     {
       "id": "s-01-change",
       "topic": "freetime",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Планируем выходные — план изменился",
-      "situation_ru": "Вы с партнёром хотите вместе провести субботу. Договоритесь, что делать, где и когда встретиться. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Вы с партнёром хотите вместе провести субботу. Договоритесь, что делать, где и когда встретиться. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -423,7 +425,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -438,17 +442,19 @@
     {
       "id": "s-02-change",
       "topic": "city",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Как пройти? — план изменился",
-      "situation_ru": "Ученик A — турист и ищет библиотеку. Ученик B объясняет дорогу. Потом поменяйтесь ролями и выберите другое место. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Ученик A — турист и ищет библиотеку. Ученик B объясняет дорогу. Потом поменяйтесь ролями и выберите другое место. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -457,7 +463,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -472,17 +480,19 @@
     {
       "id": "s-03-change",
       "topic": "school",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Выбираем кружок — план изменился",
-      "situation_ru": "Вы хотите записаться в школьный кружок. Обсудите, какой выбрать, и объясните почему. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Вы хотите записаться в школьный кружок. Обсудите, какой выбрать, и объясните почему. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -491,7 +501,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -506,17 +518,19 @@
     {
       "id": "s-04-change",
       "topic": "health",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "У врача — план изменился",
-      "situation_ru": "Ученик A — пациент, ученик B — врач. Расскажите, что болит, и получите совет. Потом поменяйтесь ролями. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Ученик A — пациент, ученик B — врач. Расскажите, что болит, и получите совет. Потом поменяйтесь ролями. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -525,7 +539,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -540,17 +556,19 @@
     {
       "id": "s-expand-5-change",
       "topic": "school",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Школьная экскурсия — план изменился",
-      "situation_ru": "Выберите место экскурсии и согласуйте поездку. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Выберите место экскурсии и согласуйте поездку. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -559,7 +577,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -574,17 +594,19 @@
     {
       "id": "s-expand-6-change",
       "topic": "food",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Ужин с друзьями — план изменился",
-      "situation_ru": "Спланируйте ужин: блюда, покупки и обязанности. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Спланируйте ужин: блюда, покупки и обязанности. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -593,7 +615,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -608,17 +632,19 @@
     {
       "id": "s-expand-7-change",
       "topic": "city",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Встреча в городе — план изменился",
-      "situation_ru": "Назначьте встречу и объясните дорогу. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Назначьте встречу и объясните дорогу. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -627,7 +653,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -642,17 +670,19 @@
     {
       "id": "s-expand-8-change",
       "topic": "nature",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Поход на выходных — план изменился",
-      "situation_ru": "Выберите маршрут и вещи с учётом погоды. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Выберите маршрут и вещи с учётом погоды. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -661,7 +691,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -676,17 +708,19 @@
     {
       "id": "s-expand-9-change",
       "topic": "home",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Переезд — план изменился",
-      "situation_ru": "Обсудите помощь с переездом и транспорт. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Обсудите помощь с переездом и транспорт. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -695,7 +729,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -710,17 +746,19 @@
     {
       "id": "s-expand-10-change",
       "topic": "family",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Семейный праздник — план изменился",
-      "situation_ru": "Организуйте праздник и распределите обязанности. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Организуйте праздник и распределите обязанности. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -729,7 +767,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -744,17 +784,19 @@
     {
       "id": "s-expand-11-change",
       "topic": "freetime",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Спортивный клуб — план изменился",
-      "situation_ru": "Выберите тренировку, время и бюджет. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Выберите тренировку, время и бюджет. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -763,7 +805,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [
@@ -778,17 +822,19 @@
     {
       "id": "s-expand-12-change",
       "topic": "health",
-      "level": "B1",
+      "level": "B2",
       "status": "draft",
       "title_ru": "Здоровый распорядок — план изменился",
-      "situation_ru": "Договоритесь о прогулках и режиме сна. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог.",
+      "situation_ru": "Договоритесь о прогулках и режиме сна. Продолжение: согласованный вариант оказался слишком дорогим, а у партнёра есть только один свободный час. Найдите выполнимую альтернативу и подтвердите итог. Уровень B2: не ограничивайтесь договорённостью. Сопоставьте преимущества и недостатки двух решений, ответьте на возражение и объясните ограничения выбранного компромисса.",
       "role_a": {
         "title_ru": "Предлагает альтернативу",
         "prompts_et": [
           "Meie esimene plaan on liiga kallis. Mida saame muuta?",
           "Paku tasuta või odavam võimalus.",
           "Kuidas jõuame ühe tunniga valmis?",
-          "Võta uus kokkulepe kokku."
+          "Võta uus kokkulepe kokku.",
+          "Põhjenda oma seisukohta kahe argumendiga.",
+          "Sõnasta partneri seisukoht oma sõnadega enne vastamist."
         ]
       },
       "role_b": {
@@ -797,7 +843,9 @@
           "Mul on ainult üks tund vaba aega.",
           "Küsi täpset aega ja kohta.",
           "Selgita, mis sulle ei sobi.",
-          "Kinnita lõplik plaan."
+          "Kinnita lõplik plaan.",
+          "Too vastunäide ja selgita, miks see on oluline.",
+          "Paku kompromiss ning nimeta selle võimalik puudus."
         ]
       },
       "phrases_et": [

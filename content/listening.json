@@ -37,6 +37,14 @@
         {
           "sp": "A",
           "text": "Aitäh tähelepanu eest!"
+        },
+        {
+          "sp": "A",
+          "text": "Kas koolituspäeval saab kooli raamatukogus iseseisvalt õppida? Mõnel õpilasel pole kodus vaikset töökohta ning ainult tundide ärajäämisest teatamine ei selgita, millised võimalused neile alles jäävad."
+        },
+        {
+          "sp": "B",
+          "text": "Raamatukogu jääb avatuks, kuid juhendatud õppetööd ei toimu. Kes soovib arvutit kasutada, peaks sellest hoidjale eelmisel päeval teada andma. Nii saame hinnata, kas kõigile jätkub kohti. See pole registreerimine tundidesse, vaid ruumi kasutamise kokkulepe."
         }
       ],
       "questions": [
@@ -92,6 +100,18 @@
           "prompt_et": "Vanemad ei tohi kontserdile tulla.",
           "explanation_ru": "«Kontserdile on oodatud ka vanemad» — родителей тоже ждут на концерте.",
           "answer": false
+        },
+        {
+          "id": "l-01-detail-b1",
+          "type": "choice",
+          "prompt_et": "Miks palutakse arvuti kasutamise soovist ette teatada?",
+          "options": [
+            "Et hinnata kohtade vajadust.",
+            "Et õpilastele uus tund määrata.",
+            "Et raamatukogu sulgeda."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Et hinnata kohtade vajadust."
         }
       ]
     },
@@ -135,6 +155,14 @@
         {
           "sp": "B",
           "text": "Tore, siis homme näeme!"
+        },
+        {
+          "sp": "A",
+          "text": "Kas ostame piletid kohe või ootame teised ka ära? Kui ostame igaüks eraldi, võib juhtuda, et me ei saa kõrvuti istuda. Samas pole kõik veel kinnitanud, kas nad tulevad."
+        },
+        {
+          "sp": "B",
+          "text": "Saadame neile sõnumi ja palume enne kella viit vastata. Seejärel ostame piletid ainult neile, kes on tuleku kinnitanud. Nii ei pea me hiljem kasutamata piletite eest maksma ega kogu õhtut otsuse ootel olema."
         }
       ],
       "questions": [
@@ -190,6 +218,18 @@
           "prompt_et": "Film kestab kolm tundi.",
           "explanation_ru": "Фильм идёт два часа: «Film kestab kaks tundi».",
           "answer": false
+        },
+        {
+          "id": "l-02-detail-b1",
+          "type": "choice",
+          "prompt_et": "Kellele ostetakse lõpuks piletid?",
+          "options": [
+            "Neile, kes on enne kokkulepitud tähtaega tuleku kinnitanud.",
+            "Kõigile klassikaaslastele sõltumata vastusest.",
+            "Ainult neile, kes jõuavad kino ette enne viit."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Neile, kes on enne kokkulepitud tähtaega tuleku kinnitanud."
         }
       ]
     },
@@ -213,6 +253,14 @@
         {
           "sp": "A",
           "text": "Jah, vanemad on oodatud. Palume tulla viisteist minutit varem. Sissepääs on tasuta."
+        },
+        {
+          "sp": "A",
+          "text": "Kas uue algusaja tõttu muutub ka proov? Mul tuleb pärast kooli bussiga koju sõita ja ma pean teadma, kas jõuan enne kontserti tagasi. Ma ei taha proovist ilma jääda."
+        },
+        {
+          "sp": "B",
+          "text": "Proov toimub endisel ajal. Kui transport valmistab raskusi, räägi klassijuhatajaga enne kolmapäeva. Otsime lahenduse, kuid me ei saa prooviajast loobuda, sest heli tuleb enne publiku saabumist kontrollida. Kontserdi hilisem algus ei tähenda, et kogu ettevalmistus nihkub."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -247,6 +295,18 @@
           "prompt_et": "Kontserdipilet maksab viis eurot.",
           "answer": false,
           "explanation_ru": "В диалоге говорится обратное."
+        },
+        {
+          "id": "l-series-3-detail-b1",
+          "type": "choice",
+          "prompt_et": "Mis jääb muutmata?",
+          "options": [
+            "Proovi aeg.",
+            "Kontserdi algusaeg.",
+            "Külaliste saabumise soovitus."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Proovi aeg."
         }
       ]
     },
@@ -282,6 +342,14 @@
         {
           "sp": "B",
           "text": "Jah. Uus pilet saadetakse teie e-posti aadressile."
+        },
+        {
+          "sp": "A",
+          "text": "Kui uus pilet on saadetud, kas vana jääb ka kehtima? Ma ei tahaks kogemata vale faili bussijuhile näidata, sest mõlemad kirjad on samas telefonis."
+        },
+        {
+          "sp": "B",
+          "text": "Vana pilet pärast vahetust enam ei kehti. Uuel piletil kontrollige nii kuupäeva kui ka kellaaega. Soovitan selle eraldi salvestada. Kui kinnitust mõne minuti jooksul ei tule, vaadake ka rämpsposti, enne kui uut ostu alustate."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -316,6 +384,18 @@
           "prompt_et": "Reisija peab juurde maksma kaks eurot.",
           "answer": true,
           "explanation_ru": "Реплики подтверждают это утверждение."
+        },
+        {
+          "id": "l-series-4-detail-b1",
+          "type": "choice",
+          "prompt_et": "Mida peaks reisija uuel piletil kontrollima?",
+          "options": [
+            "Kuupäeva ja kellaaega.",
+            "Ainult kirja värvi.",
+            "Üksnes vana pileti hinda."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Kuupäeva ja kellaaega."
         }
       ]
     },
@@ -351,6 +431,14 @@
         {
           "sp": "B",
           "text": "Panin kirja: laupäev, kell viis, neli inimest, Kati."
+        },
+        {
+          "sp": "A",
+          "text": "Üks külaline võib töö tõttu hilineda. Kas peaksin sellepärast kogu broneeringu hilisemaks muutma? Teised jõuavad õigeks ajaks ning sooviksid kohe tellida."
+        },
+        {
+          "sp": "B",
+          "text": "Kui hilineb üks inimene, pole kogu aega vaja muuta. Palun teatage aga, kui kogu seltskond jääb üle viieteistkümne minuti hiljaks. Me ei saa lauda määramata ajaks tühjana hoida. Nii väldime olukorda, kus teised külalised ootavad asjata vaba kohta."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -385,6 +473,18 @@
           "prompt_et": "Kõik külalised söövad liha.",
           "answer": false,
           "explanation_ru": "В диалоге говорится обратное."
+        },
+        {
+          "id": "l-series-5-detail-b1",
+          "type": "choice",
+          "prompt_et": "Millal palutakse kindlasti hilinemisest teatada?",
+          "options": [
+            "Kui kogu seltskond hilineb üle viieteistkümne minuti.",
+            "Kui üks külaline saabub ühe minuti hiljem.",
+            "Ainult pärast kohviku sulgemist."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Kui kogu seltskond hilineb üle viieteistkümne minuti."
         }
       ]
     },
@@ -416,6 +516,14 @@
         {
           "sp": "A",
           "text": "Raudteejaama ees kell pool üheksa. Rong väljub üheksa. Hilinejaid rong ei oota."
+        },
+        {
+          "sp": "A",
+          "text": "Kas võime omal käel varem rongile minna ja teiega järgmises peatuses kohtuda? Mõnele meist oleks see kodule palju lähemal, kuid me ei taha rühma segadusse ajada."
+        },
+        {
+          "sp": "B",
+          "text": "See on võimalik ainult siis, kui lepime täpse peatuse eelmisel päeval kokku. Saatke mulle oma ettepanek, aga ärge pidage vaikimist nõusolekuks. Rühma nimekiri peab näitama, kes tuleb jaamast peale ja keda oodatakse järgmises peatuses."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -450,6 +558,18 @@
           "prompt_et": "Vihmajope tuleb kaasa võtta ka päikeselise hommikuga.",
           "answer": true,
           "explanation_ru": "Реплики подтверждают это утверждение."
+        },
+        {
+          "id": "l-series-6-detail-b1",
+          "type": "choice",
+          "prompt_et": "Mida ei tohi õpetaja sõnul nõusolekuks pidada?",
+          "options": [
+            "Vastuse puudumist.",
+            "Selget kirjalikku kinnitust.",
+            "Kokkulepitud peatuse nime."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Vastuse puudumist."
         }
       ]
     },
@@ -485,6 +605,14 @@
         {
           "sp": "B",
           "text": "Jah. Palun öelge talle, mis nimi sildil on."
+        },
+        {
+          "sp": "A",
+          "text": "Kas ma peaksin oma isale koti foto saatma? Ta pole seda ise näinud ning kardab, et võib kogemata kellegi teise asjad kaasa võtta."
+        },
+        {
+          "sp": "B",
+          "text": "Foto võib abiks olla, aga nimega silt on olulisem. Paluge tal administraatorile öelda, mis kotis on. Me ei anna leitud asju välja ainult selle põhjal, et keegi ütleb koti värvi. Mitmel külastajal võib olla samasugune sinine kott."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -519,6 +647,18 @@
           "prompt_et": "Isa võib kotile järele tulla.",
           "answer": true,
           "explanation_ru": "Реплики подтверждают это утверждение."
+        },
+        {
+          "id": "l-series-7-detail-b1",
+          "type": "choice",
+          "prompt_et": "Miks ei piisa koti värvi nimetamisest?",
+          "options": [
+            "Sama värvi kotte võib olla mitmel inimesel.",
+            "Kõik leitud kotid värvitakse ümber.",
+            "Administraator ei väljasta ühtegi eset."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Sama värvi kotte võib olla mitmel inimesel."
         }
       ]
     },
@@ -554,6 +694,14 @@
         {
           "sp": "B",
           "text": "Ei, praegu pole seda vaja."
+        },
+        {
+          "sp": "A",
+          "text": "Kas võin riiulit seni osaliselt kokku panna? Pakendis on palju sarnaseid detaile ning ma pole kindel, millised kruvid täpselt puudu on."
+        },
+        {
+          "sp": "B",
+          "text": "Ärge kasutage juhuslikke asenduskruvisid. Kõigepealt võrdleme foto põhjal komplekti juhendiga. Kui oleme puuduva osa kindlaks teinud, teatame, kuidas selle kätte saate. Praegu ei saa ma veel lubada, et see jõuab teile tänase päeva jooksul."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -588,6 +736,18 @@
           "prompt_et": "Klient peab kohe kogu riiuli poodi tooma.",
           "answer": false,
           "explanation_ru": "В диалоге говорится обратное."
+        },
+        {
+          "id": "l-series-8-detail-b1",
+          "type": "choice",
+          "prompt_et": "Mida töötaja ei kinnita?",
+          "options": [
+            "Et puuduvad osad jõuavad kliendini täna.",
+            "Et juhend aitab osi tuvastada.",
+            "Et pakendi foto on vajalik."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Et puuduvad osad jõuavad kliendini täna."
         }
       ]
     },
@@ -619,6 +779,14 @@
         {
           "sp": "A",
           "text": "Onu laenab meile enda oma. Aga kõigepealt küsime vanaemalt, milliseid fotosid ta lubab kopeerida."
+        },
+        {
+          "sp": "A",
+          "text": "Kuidas me fotode juurde lood kirja paneme? Kui kirjutame kõik lihtsalt enda sõnadega ümber, võib hiljem ununeda, kes mida tegelikult ütles ja mis on meie enda oletus."
+        },
+        {
+          "sp": "B",
+          "text": "Märgime iga loo juurde jutustaja nime ja vestluse kuupäeva. Kui mõni detail on ebaselge, jätame selle esialgu lahtiseks. Me ei pea kogu albumit ühe õhtuga valmis saama. Parem on mõne küsimuse juurde järgmine kord tagasi tulla."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -653,6 +821,18 @@
           "prompt_et": "Fotode kopeerimiseks küsitakse vanaema luba.",
           "answer": true,
           "explanation_ru": "Реплики подтверждают это утверждение."
+        },
+        {
+          "id": "l-series-9-detail-b1",
+          "type": "choice",
+          "prompt_et": "Miks tahetakse märkida jutustaja nimi?",
+          "options": [
+            "Et loo päritolu oleks hiljem selge.",
+            "Et tõestada kõigi mälestuste täielikku täpsust.",
+            "Et fotosid automaatselt avaldada."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Et loo päritolu oleks hiljem selge."
         }
       ]
     },
@@ -688,6 +868,14 @@
         {
           "sp": "B",
           "text": "Jah. Panen teid soovi korral järjekorda."
+        },
+        {
+          "sp": "A",
+          "text": "Mul on seda raamatut järgmisel nädalal ettekandeks vaja. Kui sama eksemplari pikendada ei saa, kas leidub mõni teine võimalus, mis aitaks töö õigeks ajaks valmis saada?"
+        },
+        {
+          "sp": "B",
+          "text": "Saame uurida, kas teises harukogus on vaba eksemplar. See ei tähenda, et raamat tuuakse automaatselt siia. Kõigepealt kontrollime saadavust ning lepime kokku, kas lähete sellele ise järele või kasutate tellimusteenust. Praegune raamat tuleb ikkagi õigel ajal tagastada."
         }
       ],
       "explanation_ru": "Продолжение ситуации: различайте исходный план и окончательную договорённость. Озвучивание синтезом; это учебный диалог.",
@@ -722,6 +910,18 @@
           "prompt_et": "Lugeja saab tähtaja kohe pikendatud.",
           "answer": false,
           "explanation_ru": "В диалоге говорится обратное."
+        },
+        {
+          "id": "l-series-10-detail-b1",
+          "type": "choice",
+          "prompt_et": "Kas teise eksemplari otsimine pikendab praegust tähtaega?",
+          "options": [
+            "Ei, praegune raamat tuleb õigel ajal tagastada.",
+            "Jah, tähtaeg pikeneb automaatselt kuuks.",
+            "Jah, raamat muutub lugeja omaks."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Ei, praegune raamat tuleb õigel ajal tagastada."
         }
       ]
     },
@@ -757,6 +957,14 @@
         {
           "sp": "B",
           "text": "Sobib. Registreerin meid täna õhtul, kui sa saadad mulle lingi."
+        },
+        {
+          "sp": "A",
+          "text": "Kas peaksime enne filmi arvustusi lugema? Mina tahaksin teada, kas teema võiks mulle huvi pakkuda, aga ma ei soovi, et keegi kogu lõpu ette ära jutustaks."
+        },
+        {
+          "sp": "B",
+          "text": "Vaatame siis lühikest sisututvustust, mitte põhjalikku arvustust. Pärast filmi võime oma esmamuljed enne arutelu kirja panna. Nii märkame paremini, kas teiste põhjendused muudavad meie arvamust või lihtsalt kordame seda, mida keegi veenvalt ütles."
         }
       ],
       "explanation_ru": "Развитие телефонного разговора: новое предложение, условие участия и распределение действий.",
@@ -791,6 +999,18 @@
           "prompt_et": "Filmiklubi toimub kolmapäeval kell kuus.",
           "answer": true,
           "explanation_ru": "В диалоге прямо названы kolmapäeval kell kuus."
+        },
+        {
+          "id": "l-02-part2-detail-b1",
+          "type": "choice",
+          "prompt_et": "Miks soovitatakse esmamuljed enne arutelu kirja panna?",
+          "options": [
+            "Et eristada oma algset arvamust hilisemast mõjust.",
+            "Et vältida igasugust arvamuse muutmist.",
+            "Et filmi lõppu teistele ette jutustada."
+          ],
+          "answer": 0,
+          "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Et eristada oma algset arvamust hilisemast mõjust."
         }
       ]
     }

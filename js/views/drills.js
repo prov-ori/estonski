@@ -27,7 +27,8 @@ export default {
     if (!sub) {
       addChildren(root, h('h1', null, 'Тренажёры'),
         h('p', { class: 'lead' }, 'Тренировка отдельных навыков. Ответы записываются в «Прогресс», а ошибки учитываются в практике дня.'),
-        h('div', { class: 'grid' }, HUB.map(([id, t, d]) => h('a', { class: 'card link-card', href: `#/drills/${id}` }, h('h2', null, t), h('p', { class: 'muted' }, d)))));
+        h('div', { class: 'grid' }, [...HUB.map(([id, t, d]) => h('a', { class: 'card link-card', href: `#/drills/${id}` }, h('h2', null, t), h('p', { class: 'muted' }, d))),
+          h('a', { class: 'card link-card', href: '#/pronunciation' }, h('h2', null, 'Произношение'), h('p', { class: 'muted' }, 'Звуки õ ä ö ü, ударение, долгота, повторение фраз с записью.'))]));
       return;
     }
     const meta = HUB.find((x) => x[0] === sub);

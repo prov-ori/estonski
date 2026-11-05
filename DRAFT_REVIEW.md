@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 4093. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 4203. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -301,7 +301,7 @@
 - `f-v-39` — jooksma: jooksma, joosta, jooksen, jookseb, jooksin, jooksnud, jookse
 - `f-v-40` — ujuma: ujuma, ujuda, ujun, ujub, ujusin, ujunud, uju
 
-## grammar.json (637)
+## grammar.json (675)
 
 - `g-cases-01` — Ma lähen homme kooli.
 - `g-cases-02` — Raamat on laua peal.
@@ -940,8 +940,46 @@
 - `g-sp-14 (вариант)` — Ma ostsin kooki leiba, ja piima.
 - `g-sp-14 (вариант)` — Ma ostsin kooki, leiba, ja, piima.
 - `g-sp-15` — Vali õige tervitus.
+- `g-pro-01` — Ma näen sind.
+- `g-pro-02` — Ma kingin sulle raamatu.
+- `g-pro-03` — Tule minuga kaasa!
+- `g-pro-04` — Ma ootan teda.
+- `g-pro-05` — Ta helistas mulle eile.
+- `g-pro-06` — See on tema raamat.
+- `g-pro-07` — Ma tänan teid abi eest.
+- `g-pro-08` — Kas sa aitad meid?
+- `g-pro-09` — Ma ütlen neile tõtt.
+- `g-pro-10` — Ma näen neid.
+- `g-pro-11` — Ta andis mulle raamatu.
+- `g-pro-12` — Kas sa tuled meiega kaasa?
+- `g-time-01` — Hommikul söön putru.
+- `g-time-02` — Esmaspäeval on kontrolltöö.
+- `g-time-03` — Suvel sõidame maale.
+- `g-time-04` — Eelmisel nädalal olin haige.
+- `g-time-05` — Kolme päeva pärast on mu sünnipäev.
+- `g-time-06` — Ma nägin teda kolm päeva tagasi.
+- `g-time-07` — Järgmisel aastal ma lõpetan kooli.
+- `g-cond-01` — Ma tahaksin kohvi.
+- `g-cond-02` — Kas sa võiksid mind aidata?
+- `g-cond-03` — Kui mul oleks aega, tuleksin ma kaasa.
+- `g-cond-04` — Kui ma oleksin rikas, ostaksin ma maja.
+- `g-cond-05` — Ta tahaks meelsasti tulla, aga ei saa.
+- `g-cond-06` — Mida sa teeksid, kui sul oleks palju raha?
+- `g-cond-07` — Ma reisiksin meelsasti reisida.
+- `g-imp-01` — Jaanipäeval põletatakse lõket.
+- `g-imp-02` — Siin ei räägita vene keelt.
+- `g-imp-03` — Poes müüakse leiba.
+- `g-imp-04` — Kuidas seda sõna eesti keeles kirjutatakse?
+- `g-imp-05` — Eile vaadati filmi.
+- `g-gov-01` — Ma helistan sõbrale.
+- `g-gov-02` — Ma küsin õpetajalt abi.
+- `g-gov-03` — Ma tänan õde abi eest.
+- `g-gov-04` — Ma vajan raamatut.
+- `g-gov-05` — Ma kardan pimedust.
+- `g-gov-06` — Ma aitan venda.
+- `g-gov-07` — Ma armastan muusikat.
 
-## lessons.json (51)
+## lessons.json (83)
 
 - `ls-01 (неверно)` — Ma lähen koolis.
 - `ls-01 (верно)` — Ma lähen kooli.
@@ -994,6 +1032,38 @@
 - `ls-11 (неверно)` — Ma õpin Eesti keelt.
 - `ls-11 (верно)` — Ma õpin eesti keelt.
 - `ls-12 (неверно)` — Ma olen kaks venda.
+- `ls-13 (неверно)` — Ma ootan sina.
+- `ls-13 (верно)` — Ma ootan sind.
+- `ls-13 (неверно)` — Ma annan raamatu sind.
+- `ls-13 (верно)` — Ma annan sulle raamatu.
+- `ls-13 (неверно)` — Ta kirjutas mind kirja.
+- `ls-13 (верно)` — Ta kirjutas mulle kirja.
+- `ls-14 (неверно)` — Ma tulen esmaspäev.
+- `ls-14 (верно)` — Ma tulen esmaspäeval.
+- `ls-14 (неверно)` — Eelmine nädal ma olin haige.
+- `ls-14 (верно)` — Eelmisel nädalal olin haige.
+- `ls-15 (неверно)` — Ära tuled siia!
+- `ls-15 (верно)` — Ära tule siia!
+- `ls-15 (неверно)` — Palun annad mulle vett.
+- `ls-15 (верно)` — Palun anna mulle vett.
+- `ls-16 (неверно)` — Kui ma olen rikas, ma ostaksin maja.
+- `ls-16 (верно)` — Kui ma oleksin rikas, ostaksin ma maja.
+- `ls-16 (неверно)` — Ma tahtsin kohvi, palun.
+- `ls-16 (верно)` — Ma tahaksin kohvi, palun.
+- `ls-17 (неверно)` — Ma olen eile kinos käinud.
+- `ls-17 (верно)` — Ma käisin eile kinos.
+- `ls-17 (неверно)` — Ma ei nägin seda filmi.
+- `ls-17 (верно)` — Ma ei näinud seda filmi.
+- `ls-18 (неверно)` — Siin räägib eesti keelt.
+- `ls-18 (верно)` — Siin räägitakse eesti keelt.
+- `ls-18 (неверно)` — Siin ei räägitakse vene keelt.
+- `ls-18 (верно)` — Siin ei räägita vene keelt.
+- `ls-19 (неверно)` — Lugupeetud õpetaja! Kas sa saaksid mind aidata?
+- `ls-19 (верно)` — Lugupeetud õpetaja! Kas te saaksite mind aidata?
+- `ls-20 (неверно)` — Ma helistan sind.
+- `ls-20 (верно)` — Ma helistan sulle.
+- `ls-20 (неверно)` — Ma küsin õpetaja abi.
+- `ls-20 (верно)` — Ma küsin õpetajalt abi.
 
 ## listening.json (473)
 
@@ -1674,6 +1744,49 @@
 - `o-69` — Mu klassis on kolm uut õpilast.
 - `o-70` — Me kohtume kell kuus kino ees.
 - `o-70 (вариант)` — Kell kuus kohtume me kino ees.
+
+## pronunciation.json (40)
+
+- `pr-letter-o-tilde` — õun
+- `pr-letter-o-tilde` — õde
+- `pr-letter-o-tilde` — õpik
+- `pr-letter-o-tilde` — kõik
+- `pr-letter-o-tilde` — jõgi
+- `pr-letter-a-umlaut` — äri
+- `pr-letter-a-umlaut` — ämber
+- `pr-letter-a-umlaut` — päev
+- `pr-letter-a-umlaut` — käsi
+- `pr-letter-a-umlaut` — lähedal
+- `pr-letter-o-umlaut` — öö
+- `pr-letter-o-umlaut` — töö
+- `pr-letter-o-umlaut` — köök
+- `pr-letter-o-umlaut` — söök
+- `pr-letter-o-umlaut` — mööda
+- `pr-letter-u-umlaut` — üks
+- `pr-letter-u-umlaut` — tüdruk
+- `pr-letter-u-umlaut` — süda
+- `pr-letter-u-umlaut` — ülesanne
+- `pr-letter-u-umlaut` — küsima
+- `pr-stress` — KOOL
+- `pr-stress` — ÕPETAJA
+- `pr-stress` — RAAMATUKOGU
+- `pr-stress` — TELEFON
+- `pr-phrases` — Tere hommikust!
+- `pr-phrases` — Kuidas läheb?
+- `pr-phrases` — Mul on hea meel sind näha.
+- `pr-phrases` — Kas sa saaksid seda korrata?
+- `pr-phrases` — Ma õpin eesti keelt.
+- `pr-phrases` — Täna on ilus ilm.
+- `pr-phrases` — Mulle meeldib lugeda.
+- `pr-phrases` — Kus asub raamatukogu?
+- `pr-phrases` — Kui palju see maksab?
+- `pr-phrases` — Ma elan Tallinnas.
+- `pr-phrases` — Tänan abi eest!
+- `pr-phrases` — Mul on kaks venda ja üks õde.
+- `pr-phrases` — Pühapäeval ma puhkan.
+- `pr-phrases` — Öösel sajab vihma.
+- `pr-phrases` — Tüdruk joob õunamahla.
+- `pr-phrases` — Ülesanne on päris raske.
 
 ## reading.json (1338)
 

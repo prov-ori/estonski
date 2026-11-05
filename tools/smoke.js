@@ -42,7 +42,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
     // 1. все страницы открываются
     const ids = (file, route) => JSON.parse(fs.readFileSync(path.join(ROOT, 'content', file + '.json'), 'utf8')).items.map((x) => `${route}/${x.id}`);
-    const ALL = ['', 'daily', 'plan', 'lessons', 'drills/fix', 'diagnostic', 'grammar', 'grammar/cases', 'grammar/mistakes', 'drills', 'drills/forms', 'drills/numbers', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'mistakes', 'reference', 'progress', 'about',
+    const ALL = ['', 'daily', 'pronunciation', 'plan', 'lessons', 'drills/fix', 'diagnostic', 'grammar', 'grammar/cases', 'grammar/mistakes', 'drills', 'drills/forms', 'drills/numbers', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'mistakes', 'reference', 'progress', 'about',
       ...ids('lessons', 'lessons'), ...ids('reading', 'reading'), ...ids('listening', 'listening'), ...ids('writing', 'writing'), ...ids('speaking', 'speaking')];
     for (const r of ALL) {
       await go(r);
@@ -442,6 +442,18 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     ok(await page.locator('details.sample').count() === 1, 'письмо: есть образец ответа (свёрнут)');
     await go('speaking/s-19');
     ok((await page.locator('.pane-left').innerText()).includes('План монолога'), 'говорение: монолог с планом');
+
+    // 10m. произношение
+    await go('pronunciation');
+    ok((await page.locator('main').innerText()).includes('Долгота звуков') && (await page.locator('main').innerText()).includes('õun'), 'произношение: буквы, ударение и долгота показаны');
+    await page.getByRole('button', { name: /Начать \(10 слов\)/ }).click();
+    await page.waitForSelector('.question input.text-input');
+    ok((await page.locator('.q-et').innerText()).includes('Kirjuta sõna'), 'произношение: тренажёр написания слов');
+    await page.locator('input.text-input').fill('zzz');
+    await page.getByRole('button', { name: 'Проверить', exact: true }).click();
+    ok(await page.locator('.feedback.bad').count() === 1, 'произношение: ошибка в слове отмечена');
+    await go('lessons/ls-20');
+    ok(await page.locator('table.table td.wrong').count() >= 2, 'новый урок: таблица типичных ошибок');
 
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');

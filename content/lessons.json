@@ -751,6 +751,478 @@
    ],
    "practice": "grammar/cases",
    "explanation_ru": "В русском «у меня есть», в эстонском — «на мне (есть)»: Mul on. Это естественный способ сказать «иметь»."
+  },
+  {
+   "id": "ls-13",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Личные местоимения",
+   "intro_ru": "Местоимения склоняются: форма зависит от роли в предложении (кого? кому? с кем?).",
+   "sections": [
+    {
+     "h": "Формы",
+     "p": [
+      "Именительный: mina, sina, tema, meie (me), teie, nemad (nad). Партитив (объект): mind, sind, teda, meid, teid, neid. Аллатив («кому?»): mulle, sulle, talle, meile, teile, neile. Комитатив («с кем?»): minuga, sinuga, temaga, meiega, teiega, nendega."
+     ],
+     "examples": [
+      {
+       "et": "Ma näen sind.",
+       "ru": "Я вижу тебя."
+      },
+      {
+       "et": "Ma kingin sulle raamatu.",
+       "ru": "Я дарю тебе книгу."
+      },
+      {
+       "et": "Tule minuga kaasa!",
+       "ru": "Пойдём со мной!"
+      },
+      {
+       "et": "Ma ootan teda.",
+       "ru": "Я жду его."
+      }
+     ]
+    },
+    {
+     "h": "Родительный",
+     "p": [
+      "Родительный падеж (принадлежность): minu, sinu, tema, meie, teie, nende — minu raamat, sinu õde, tema telefon."
+     ],
+     "examples": [
+      {
+       "et": "minu raamat",
+       "ru": "моя книга"
+      },
+      {
+       "et": "tema telefon",
+       "ru": "его/её телефон"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma ootan sina.",
+     "right": "Ma ootan sind.",
+     "why": "Ootama требует партитива: sind."
+    },
+    {
+     "wrong": "Ma annan raamatu sind.",
+     "right": "Ma annan sulle raamatu.",
+     "why": "«Кому?» → аллатив: sulle."
+    },
+    {
+     "wrong": "Ta kirjutas mind kirja.",
+     "right": "Ta kirjutas mulle kirja.",
+     "why": "«Кому?» — mulle, а не mind."
+    }
+   ],
+   "practice": "grammar/cases",
+   "explanation_ru": "Местоимения склоняются: форма зависит от роли в предложении (кого? кому? с кем?)."
+  },
+  {
+   "id": "ls-14",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Выражения времени",
+   "intro_ru": "Время выражается падежом: утром, вечером, в понедельник, летом, на прошлой неделе.",
+   "sections": [
+    {
+     "h": "Адессив",
+     "p": [
+      "Часть суток, дни недели и времена года стоят в адессиве (-l): hommikul, õhtul, esmaspäeval, suvel, talvel."
+     ],
+     "examples": [
+      {
+       "et": "Hommikul söön putru.",
+       "ru": "Утром я ем кашу."
+      },
+      {
+       "et": "Esmaspäeval on kontrolltöö.",
+       "ru": "В понедельник контрольная."
+      },
+      {
+       "et": "Suvel sõidame maale.",
+       "ru": "Летом мы едем в деревню."
+      }
+     ]
+    },
+    {
+     "h": "Прошлое и будущее",
+     "p": [
+      "Eelmisel nädalal — на прошлой неделе; järgmisel kuul — в следующем месяце; kolme päeva pärast — через три дня; kolm päeva tagasi — три дня назад."
+     ],
+     "examples": [
+      {
+       "et": "Eelmisel nädalal olin haige.",
+       "ru": "На прошлой неделе я болел."
+      },
+      {
+       "et": "Kolme päeva pärast on sünnipäev.",
+       "ru": "Через три дня день рождения."
+      },
+      {
+       "et": "Ma nägin teda kolm päeva tagasi.",
+       "ru": "Я видел его три дня назад."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma tulen esmaspäev.",
+     "right": "Ma tulen esmaspäeval.",
+     "why": "Для дня недели нужен адессив."
+    },
+    {
+     "wrong": "Eelmine nädal ma olin haige.",
+     "right": "Eelmisel nädalal olin haige.",
+     "why": "Время действия — адессив: eelmisel nädalal."
+    }
+   ],
+   "practice": "drills/numbers",
+   "explanation_ru": "Время выражается падежом: утром, вечером, в понедельник, летом, на прошлой неделе."
+  },
+  {
+   "id": "ls-15",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Просьбы и повелительное наклонение",
+   "intro_ru": "Вежливые просьбы строятся с palun, повелительным или условным наклонением.",
+   "sections": [
+    {
+     "h": "Повелительное",
+     "p": [
+      "2 л. ед. ч. — основа глагола: anna, tule, ava. Запрет: ära + повелительное: Ära tule! Вежливая форма множественного числа: andke, tulge, avage."
+     ],
+     "examples": [
+      {
+       "et": "Palun anna mulle vett.",
+       "ru": "Дай мне, пожалуйста, воды."
+      },
+      {
+       "et": "Ära ole kurb!",
+       "ru": "Не грусти!"
+      },
+      {
+       "et": "Palun avage aken.",
+       "ru": "Откройте, пожалуйста, окно (вежливо)."
+      }
+     ]
+    },
+    {
+     "h": "Вежливо через вопрос",
+     "p": [
+      "Kas sa saaksid …? Kas te saaksite …? Kas ma tohin …? — вежливые просьбы и разрешения."
+     ],
+     "examples": [
+      {
+       "et": "Kas sa saaksid mind aidata?",
+       "ru": "Не мог бы ты мне помочь?"
+      },
+      {
+       "et": "Kas ma tohin akna avada?",
+       "ru": "Можно открыть окно?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ära tuled siia!",
+     "right": "Ära tule siia!",
+     "why": "После ära — основа без окончания."
+    },
+    {
+     "wrong": "Palun annad mulle vett.",
+     "right": "Palun anna mulle vett.",
+     "why": "Просьба — повелительное: anna."
+    }
+   ],
+   "practice": "grammar/transform",
+   "explanation_ru": "Вежливые просьбы строятся с palun, повелительным или условным наклонением."
+  },
+  {
+   "id": "ls-16",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Условное наклонение",
+   "intro_ru": "Условное наклонение (-ksin) нужно для вежливых просьб, желаний и условных предложений.",
+   "sections": [
+    {
+     "h": "Формы",
+     "p": [
+      "Основа + -ksin / -ksid / -ks…: tahaksin, tuleksin, läheksin, võiksid. Отрицание: ei tahaks, ei tuleks."
+     ],
+     "examples": [
+      {
+       "et": "Ma tahaksin kohvi.",
+       "ru": "Я хотел бы кофе."
+      },
+      {
+       "et": "Kas sa võiksid mind aidata?",
+       "ru": "Не мог бы ты мне помочь?"
+      },
+      {
+       "et": "Ma reisiksin meelsasti.",
+       "ru": "Я бы с удовольствием попутешествовал."
+      }
+     ]
+    },
+    {
+     "h": "Условное предложение",
+     "p": [
+      "Kui + условное … , siis + условное: Kui mul oleks aega, tuleksin ma kaasa."
+     ],
+     "examples": [
+      {
+       "et": "Kui mul oleks aega, tuleksin ma kaasa.",
+       "ru": "Если бы у меня было время, я бы пошёл."
+      },
+      {
+       "et": "Kui ma oleksin rikas, ostaksin ma maja.",
+       "ru": "Если бы я был богат, я бы купил дом."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Kui ma olen rikas, ma ostaksin maja.",
+     "right": "Kui ma oleksin rikas, ostaksin ma maja.",
+     "why": "В обеих частях нереального условия нужно условное наклонение."
+    },
+    {
+     "wrong": "Ma tahtsin kohvi, palun.",
+     "right": "Ma tahaksin kohvi, palun.",
+     "why": "Вежливая просьба — tahaksin, а не прошедшее tahtsin."
+    }
+   ],
+   "practice": "grammar/verbs",
+   "explanation_ru": "Условное наклонение (-ksin) нужно для вежливых просьб, желаний и условных предложений."
+  },
+  {
+   "id": "ls-17",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Прошедшее время и перфект",
+   "intro_ru": "Прошедшее время (имперфект) называет конкретное событие, перфект — результат или опыт без точного времени.",
+   "sections": [
+    {
+     "h": "Имперфект",
+     "p": [
+      "Используется с точным временем: eile, eelmisel nädalal, kell kaks: Eile ma läksin kinno."
+     ],
+     "examples": [
+      {
+       "et": "Eile ma läksin kinno.",
+       "ru": "Вчера я ходил в кино."
+      },
+      {
+       "et": "Eelmisel suvel olin maal.",
+       "ru": "Прошлым летом я был в деревне."
+      }
+     ]
+    },
+    {
+     "h": "Перфект",
+     "p": [
+      "Olema + причастие на -nud: olen käinud, oled lugenud. Показывает опыт или результат: Ma olen seda filmi näinud. Отрицание: ma ei ole näinud."
+     ],
+     "examples": [
+      {
+       "et": "Ma olen seda filmi näinud.",
+       "ru": "Я видел этот фильм."
+      },
+      {
+       "et": "Ma ei ole veel söönud.",
+       "ru": "Я ещё не ел."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma olen eile kinos käinud.",
+     "right": "Ma käisin eile kinos.",
+     "why": "С точным прошедшим временем (eile) нужен имперфект."
+    },
+    {
+     "wrong": "Ma ei nägin seda filmi.",
+     "right": "Ma ei näinud seda filmi.",
+     "why": "Отрицание прошедшего: ei + -nud."
+    }
+   ],
+   "practice": "grammar/verbs",
+   "explanation_ru": "Прошедшее время (имперфект) называет конкретное событие, перфект — результат или опыт без точного времени."
+  },
+  {
+   "id": "ls-18",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Безличная форма",
+   "intro_ru": "Безличная форма говорит «делают», не называя кто: räägitakse, õpitakse.",
+   "sections": [
+    {
+     "h": "Настоящее и прошедшее",
+     "p": [
+      "Настоящее: основа + -takse (räägitakse, õpitakse). Прошедшее: -ti (räägiti, vaadati). Отрицание: ei räägita."
+     ],
+     "examples": [
+      {
+       "et": "Siin räägitakse eesti keelt.",
+       "ru": "Здесь говорят по-эстонски."
+      },
+      {
+       "et": "Eile vaadati filmi.",
+       "ru": "Вчера смотрели фильм."
+      },
+      {
+       "et": "Siin ei räägita vene keelt.",
+       "ru": "Здесь не говорят по-русски."
+      }
+     ]
+    },
+    {
+     "h": "Где встречается",
+     "p": [
+      "Правила, объявления, описания традиций: Jaanipäeval põletatakse lõket. Poes müüakse leiba."
+     ],
+     "examples": [
+      {
+       "et": "Jaanipäeval põletatakse lõket.",
+       "ru": "В Иванов день жгут костёр."
+      },
+      {
+       "et": "Poes müüakse leiba.",
+       "ru": "В магазине продают хлеб."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Siin räägib eesti keelt.",
+     "right": "Siin räägitakse eesti keelt.",
+     "why": "Когда деятель не называется, нужна безличная форма."
+    },
+    {
+     "wrong": "Siin ei räägitakse vene keelt.",
+     "right": "Siin ei räägita vene keelt.",
+     "why": "После ei форма короче: räägita."
+    }
+   ],
+   "practice": "grammar/verbs",
+   "explanation_ru": "Безличная форма говорит «делают», не называя кто: räägitakse, õpitakse."
+  },
+  {
+   "id": "ls-19",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Официальное и личное письмо",
+   "intro_ru": "Официальное письмо отличается обращением, формой «вы» и завершением.",
+   "sections": [
+    {
+     "h": "Личное письмо",
+     "p": [
+      "Обращение: Tere, Karl! Завершение: Nägemist!, Kohtumiseni! «Ты» — sa, sinu."
+     ],
+     "examples": [
+      {
+       "et": "Tere, Karl!",
+       "ru": "Привет, Карл!"
+      },
+      {
+       "et": "Nägemist!",
+       "ru": "До свидания!"
+      }
+     ]
+    },
+    {
+     "h": "Официальное письмо",
+     "p": [
+      "Обращение: Lugupeetud õpetaja! Завершение: Lugupidamisega. «Вы» — te/teie; для вежливости: kas te saaksite …? В личном обращении в письмах Teie/Teile допустимо с заглавной."
+     ],
+     "examples": [
+      {
+       "et": "Lugupeetud proua Tamm!",
+       "ru": "Уважаемая госпожа Тамм!"
+      },
+      {
+       "et": "Lugupidamisega",
+       "ru": "С уважением"
+      },
+      {
+       "et": "Kas te saaksite mind aidata?",
+       "ru": "Не могли бы вы мне помочь?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Lugupeetud õpetaja! Kas sa saaksid mind aidata?",
+     "right": "Lugupeetud õpetaja! Kas te saaksite mind aidata?",
+     "why": "В официальном письме используйте вежливое «вы» (te)."
+    }
+   ],
+   "practice": "drills/fix",
+   "explanation_ru": "Официальное письмо отличается обращением, формой «вы» и завершением."
+  },
+  {
+   "id": "ls-20",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Управление глаголов",
+   "intro_ru": "Падеж после глагола нужно учить вместе с глаголом.",
+   "sections": [
+    {
+     "h": "Частые глаголы",
+     "p": [
+      "Партитив: ootama (ootan sind), aitama (aitan venda), tänama (tänan sind abi eest), armastama (armastan muusikat), kartma (kardan pimedust), vajama (vajan raamatut). Аллатив: helistama (helistan sulle), meeldima (mulle meeldib). Аблатив: küsima («спросить у кого»: küsin õpetajalt)."
+     ],
+     "examples": [
+      {
+       "et": "Ma helistan sulle.",
+       "ru": "Я позвоню тебе."
+      },
+      {
+       "et": "Ma küsin õpetajalt abi.",
+       "ru": "Я прошу у учителя помощи."
+      },
+      {
+       "et": "Ma kardan pimedust.",
+       "ru": "Я боюсь темноты."
+      },
+      {
+       "et": "Mulle meeldib jäätis.",
+       "ru": "Мне нравится мороженое."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma helistan sind.",
+     "right": "Ma helistan sulle.",
+     "why": "Helistama требует аллатива."
+    },
+    {
+     "wrong": "Ma küsin õpetaja abi.",
+     "right": "Ma küsin õpetajalt abi.",
+     "why": "«Спросить у кого» — аблатив: õpetajalt."
+    }
+   ],
+   "practice": "grammar/cases",
+   "explanation_ru": "Падеж после глагола нужно учить вместе с глаголом."
   }
  ]
 }

@@ -42,6 +42,8 @@ function walk(file, node, ctx) {
     if (node.wrong_et) addText(file, id + ' (с ошибкой)', node.wrong_et);
     if (node.model_et) sentences(node.model_et).forEach((t) => addText(file, id + ' (образец)', t));
     if (node.sample_et) sentences(node.sample_et).forEach((t) => addText(file, id + ' (образец)', t));
+    if (Array.isArray(node.words)) node.words.forEach((w) => w.et && addText(file, id, w.et));
+    if (Array.isArray(node.phrases)) node.phrases.forEach((f) => f.et && addText(file, id, f.et));
     if (Array.isArray(node.examples)) node.examples.forEach((e) => e.et && addText(file, id, e.et));
     if (Array.isArray(node.mistakes)) node.mistakes.forEach((m) => { addText(file, id + ' (неверно)', m.wrong); addText(file, id + ' (верно)', m.right); });
     if (node.answer_et) addText(file, id, node.answer_et);

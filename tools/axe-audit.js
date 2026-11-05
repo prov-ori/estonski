@@ -13,7 +13,7 @@ const srv = http.createServer((q, r) => {
   r.writeHead(200, { 'Content-Type': M[path.extname(f)] || 'text/plain' }); fs.createReadStream(f).pipe(r);
 });
 const ids = (f, route) => JSON.parse(fs.readFileSync(path.join(ROOT, 'content', f + '.json'), 'utf8')).items.slice(0, 3).map((x) => `${route}/${x.id}`);
-const ROUTES = ['', 'daily', 'plan', 'lessons', 'lessons/ls-01', 'drills/fix', 'diagnostic', 'grammar', 'grammar/cases', 'drills', 'drills/forms', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'reference', 'progress', 'about',
+const ROUTES = ['', 'daily', 'pronunciation', 'plan', 'lessons', 'lessons/ls-01', 'drills/fix', 'diagnostic', 'grammar', 'grammar/cases', 'drills', 'drills/forms', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'reference', 'progress', 'about',
   ...ids('reading', 'reading'), ...ids('listening', 'listening'), ...ids('writing', 'writing'), ...ids('speaking', 'speaking')];
 (async () => {
   await new Promise((r) => srv.listen(0, r));

@@ -8004,6 +8004,672 @@
    ],
    "answer": 0,
    "explanation_ru": "После обращения запятая; имя с заглавной."
+  },
+  {
+   "id": "g-pro-01",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma näen ___.",
+   "hint": "(sina)",
+   "ru": "Я вижу тебя.",
+   "options": [
+    "sina",
+    "sind",
+    "sulle",
+    "sinuga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Nägema + партитив; у sina партитив — sind."
+  },
+  {
+   "id": "g-pro-02",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma kingin ___ raamatu.",
+   "hint": "(sina)",
+   "ru": "Я дарю тебе книгу.",
+   "options": [
+    "sind",
+    "sulle",
+    "sinu",
+    "sinuga"
+   ],
+   "answer": 1,
+   "explanation_ru": "«Кому?» → аллатив: sulle."
+  },
+  {
+   "id": "g-pro-03",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Tule ___ kaasa!",
+   "hint": "(mina)",
+   "ru": "Пойдём со мной!",
+   "options": [
+    "mind",
+    "mulle",
+    "minuga",
+    "minu"
+   ],
+   "answer": 2,
+   "explanation_ru": "«С кем?» → комитатив: minuga."
+  },
+  {
+   "id": "g-pro-04",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ootan ___.",
+   "hint": "(tema)",
+   "ru": "Я жду его.",
+   "options": [
+    "tema",
+    "teda",
+    "talle",
+    "temaga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Ootama + партитив: tema → teda."
+  },
+  {
+   "id": "g-pro-05",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta helistas ___ eile.",
+   "hint": "(mina)",
+   "ru": "Он позвонил мне вчера.",
+   "options": [
+    "mind",
+    "mulle",
+    "minu",
+    "minuga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Helistama + аллатив: mulle."
+  },
+  {
+   "id": "g-pro-06",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "See on ___ raamat.",
+   "hint": "(tema, «его»)",
+   "ru": "Это его книга.",
+   "options": [
+    "teda",
+    "talle",
+    "tema",
+    "temaga"
+   ],
+   "answer": 2,
+   "explanation_ru": "Принадлежность — родительный: tema raamat."
+  },
+  {
+   "id": "g-pro-07",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tänan ___ abi eest.",
+   "hint": "(teie, «вас»)",
+   "ru": "Я благодарю вас за помощь.",
+   "options": [
+    "teie",
+    "teid",
+    "teile",
+    "teiega"
+   ],
+   "answer": 1,
+   "explanation_ru": "Tänama + партитив: teid."
+  },
+  {
+   "id": "g-pro-08",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kas sa aitad ___?",
+   "hint": "(meie, «нас»)",
+   "ru": "Ты нам поможешь?",
+   "options": [
+    "meie",
+    "meid",
+    "meile",
+    "meiega"
+   ],
+   "answer": 1,
+   "explanation_ru": "Aitama + партитив: meid."
+  },
+  {
+   "id": "g-pro-09",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ütlen ___ tõtt.",
+   "hint": "(nemad, «им»)",
+   "ru": "Я скажу им правду.",
+   "options": [
+    "nad",
+    "neid",
+    "neile",
+    "nendega"
+   ],
+   "answer": 2,
+   "explanation_ru": "«Кому?» → аллатив: neile."
+  },
+  {
+   "id": "g-pro-10",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma näen ___.",
+   "hint": "(nemad, «их»)",
+   "ru": "Я вижу их.",
+   "answer": "neid",
+   "explanation_ru": "Партитив от nemad — neid."
+  },
+  {
+   "id": "g-pro-11",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ta andis ___ raamatu.",
+   "hint": "(mina, «мне»)",
+   "ru": "Он дал мне книгу.",
+   "answer": "mulle",
+   "explanation_ru": "Аллатив от mina — mulle."
+  },
+  {
+   "id": "g-pro-12",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kas sa tuled ___ kaasa?",
+   "hint": "(meie, «с нами»)",
+   "ru": "Ты пойдёшь с нами?",
+   "answer": "meiega",
+   "explanation_ru": "Комитатив от meie — meiega."
+  },
+  {
+   "id": "g-time-01",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ söön putru.",
+   "hint": "(hommik)",
+   "ru": "Утром я ем кашу.",
+   "options": [
+    "Hommik",
+    "Hommikul",
+    "Hommikus",
+    "Hommikut"
+   ],
+   "answer": 1,
+   "explanation_ru": "Часть суток — адессив: hommikul."
+  },
+  {
+   "id": "g-time-02",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ on kontrolltöö.",
+   "hint": "(esmaspäev)",
+   "ru": "В понедельник контрольная.",
+   "options": [
+    "Esmaspäev",
+    "Esmaspäeval",
+    "Esmaspäevas",
+    "Esmaspäeva"
+   ],
+   "answer": 1,
+   "explanation_ru": "День недели — адессив: esmaspäeval."
+  },
+  {
+   "id": "g-time-03",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ sõidame maale.",
+   "hint": "(suvi)",
+   "ru": "Летом мы едем в деревню.",
+   "options": [
+    "Suvi",
+    "Suvel",
+    "Suves",
+    "Suve"
+   ],
+   "answer": 1,
+   "explanation_ru": "Время года — адессив: suvel."
+  },
+  {
+   "id": "g-time-04",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Eelmisel ___ olin haige.",
+   "hint": "(nädal)",
+   "ru": "На прошлой неделе я болел.",
+   "options": [
+    "nädal",
+    "nädalal",
+    "nädalas",
+    "nädalat"
+   ],
+   "answer": 1,
+   "explanation_ru": "Eelmisel nädalal — адессив, согласуется с прилагательным."
+  },
+  {
+   "id": "g-time-05",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kolme päeva ___ on mu sünnipäev.",
+   "hint": "(через)",
+   "ru": "Через три дня мой день рождения.",
+   "options": [
+    "pärast",
+    "enne",
+    "ilma",
+    "alates"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kolme päeva pärast — «через три дня»."
+  },
+  {
+   "id": "g-time-06",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma nägin teda kolm päeva ___.",
+   "hint": "(назад)",
+   "ru": "Я видел его три дня назад.",
+   "options": [
+    "tagasi",
+    "pärast",
+    "enne",
+    "kuni"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kolm päeva tagasi — «три дня назад»."
+  },
+  {
+   "id": "g-time-07",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ aastal ma lõpetan kooli.",
+   "hint": "(järgmine)",
+   "ru": "В следующем году я закончу школу.",
+   "options": [
+    "Järgmine",
+    "Järgmisel",
+    "Järgmises",
+    "Järgmist"
+   ],
+   "answer": 1,
+   "explanation_ru": "Järgmisel aastal — адессив."
+  },
+  {
+   "id": "g-cond-01",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ kohvi.",
+   "hint": "(tahtma, вежливо)",
+   "ru": "Я хотел бы кофе.",
+   "options": [
+    "tahan",
+    "tahaksin",
+    "tahtsin",
+    "tahtnud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Вежливая просьба — условное: tahaksin."
+  },
+  {
+   "id": "g-cond-02",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kas sa ___ mind aidata?",
+   "hint": "(võima)",
+   "ru": "Не мог бы ты мне помочь?",
+   "options": [
+    "võid",
+    "võiksid",
+    "võisid",
+    "võinud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Вежливый вопрос — условное: võiksid."
+  },
+  {
+   "id": "g-cond-03",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui mul ___ aega, tuleksin ma kaasa.",
+   "hint": "(olema)",
+   "ru": "Если бы у меня было время, я бы пошёл.",
+   "options": [
+    "on",
+    "oli",
+    "oleks",
+    "olen"
+   ],
+   "answer": 2,
+   "explanation_ru": "Нереальное условие: kui + oleks."
+  },
+  {
+   "id": "g-cond-04",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui ma ___ rikas, ostaksin ma maja.",
+   "hint": "(olema)",
+   "ru": "Если бы я был богат, я бы купил дом.",
+   "options": [
+    "olen",
+    "olin",
+    "oleksin",
+    "olnud"
+   ],
+   "answer": 2,
+   "explanation_ru": "Нереальное условие: kui + oleksin."
+  },
+  {
+   "id": "g-cond-05",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta ___ meelsasti tulla, aga ei saa.",
+   "hint": "(tahtma, 3 л.)",
+   "ru": "Он бы охотно пришёл, но не может.",
+   "options": [
+    "tahab",
+    "tahtis",
+    "tahaks",
+    "tahtnud"
+   ],
+   "answer": 2,
+   "explanation_ru": "Условное 3 л.: tahaks."
+  },
+  {
+   "id": "g-cond-06",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mida sa ___, kui sul oleks palju raha?",
+   "hint": "(tegema)",
+   "ru": "Что бы ты делал, если бы у тебя было много денег?",
+   "options": [
+    "teed",
+    "tegid",
+    "teeksid",
+    "teinud"
+   ],
+   "answer": 2,
+   "explanation_ru": "Условное 2 л.: teeksid."
+  },
+  {
+   "id": "g-cond-07",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ meelsasti reisida.",
+   "hint": "(reisima)",
+   "ru": "Я бы с удовольствием попутешествовал.",
+   "options": [
+    "reisin",
+    "reisisin",
+    "reisiksin",
+    "reisinud"
+   ],
+   "answer": 2,
+   "explanation_ru": "Условное 1 л.: reisiksin."
+  },
+  {
+   "id": "g-imp-01",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Jaanipäeval ___ lõket.",
+   "hint": "(põletama, безлично)",
+   "ru": "В Иванов день жгут костёр.",
+   "options": [
+    "põletab",
+    "põletatakse",
+    "põletas",
+    "põletatud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличная форма: põletatakse."
+  },
+  {
+   "id": "g-imp-02",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Siin ei ___ vene keelt.",
+   "hint": "(rääkima, безлично)",
+   "ru": "Здесь не говорят по-русски.",
+   "options": [
+    "räägib",
+    "räägita",
+    "rääkis",
+    "räägitakse"
+   ],
+   "answer": 1,
+   "explanation_ru": "Отрицание безличной формы: ei räägita."
+  },
+  {
+   "id": "g-imp-03",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Poes ___ leiba.",
+   "hint": "(müüma, безлично)",
+   "ru": "В магазине продают хлеб.",
+   "options": [
+    "müüb",
+    "müüakse",
+    "müüs",
+    "müüdud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличная форма: müüakse."
+  },
+  {
+   "id": "g-imp-04",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kuidas seda sõna eesti keeles ___?",
+   "hint": "(kirjutama, безлично)",
+   "ru": "Как это слово пишется по-эстонски?",
+   "options": [
+    "kirjutab",
+    "kirjutatakse",
+    "kirjutas",
+    "kirjutatud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличная форма: kirjutatakse."
+  },
+  {
+   "id": "g-imp-05",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Eile ___ filmi.",
+   "hint": "(vaatama, безличное прош.)",
+   "ru": "Вчера смотрели фильм.",
+   "options": [
+    "vaatas",
+    "vaadati",
+    "vaatab",
+    "vaadatakse"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличное прошедшее: vaadati."
+  },
+  {
+   "id": "g-gov-01",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma helistan ___.",
+   "hint": "(sõber)",
+   "ru": "Я позвоню другу.",
+   "options": [
+    "sõpra",
+    "sõbrale",
+    "sõbra",
+    "sõbraga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Helistama + аллатив: sõbrale."
+  },
+  {
+   "id": "g-gov-02",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma küsin ___ abi.",
+   "hint": "(õpetaja)",
+   "ru": "Я прошу у учителя помощи.",
+   "options": [
+    "õpetajat",
+    "õpetajalt",
+    "õpetajale",
+    "õpetajast"
+   ],
+   "answer": 1,
+   "explanation_ru": "Küsima («спросить у») + аблатив: õpetajalt."
+  },
+  {
+   "id": "g-gov-03",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tänan ___ abi eest.",
+   "hint": "(õde)",
+   "ru": "Я благодарю сестру за помощь.",
+   "options": [
+    "õe",
+    "õde",
+    "õele",
+    "õega"
+   ],
+   "answer": 1,
+   "explanation_ru": "Tänama + партитив: õde (совпадает с именительным)."
+  },
+  {
+   "id": "g-gov-04",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma vajan ___.",
+   "hint": "(raamat)",
+   "ru": "Мне нужна книга.",
+   "options": [
+    "raamat",
+    "raamatu",
+    "raamatut",
+    "raamatule"
+   ],
+   "answer": 2,
+   "explanation_ru": "Vajama + партитив: raamatut."
+  },
+  {
+   "id": "g-gov-05",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma kardan ___.",
+   "hint": "(pimedus)",
+   "ru": "Я боюсь темноты.",
+   "options": [
+    "pimedus",
+    "pimeduse",
+    "pimedust",
+    "pimedusest"
+   ],
+   "answer": 2,
+   "explanation_ru": "Kartma + партитив: pimedust."
+  },
+  {
+   "id": "g-gov-06",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma aitan ___.",
+   "hint": "(vend)",
+   "ru": "Я помогаю брату.",
+   "options": [
+    "vend",
+    "venna",
+    "venda",
+    "vennale"
+   ],
+   "answer": 2,
+   "explanation_ru": "Aitama + партитив: venda."
+  },
+  {
+   "id": "g-gov-07",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma armastan ___.",
+   "hint": "(muusika)",
+   "ru": "Я люблю музыку.",
+   "options": [
+    "muusika",
+    "muusikat",
+    "muusikale",
+    "muusikast"
+   ],
+   "answer": 1,
+   "explanation_ru": "Armastama + партитив: muusikat."
   }
  ]
 }

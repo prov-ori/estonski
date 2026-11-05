@@ -18,7 +18,7 @@ const MODULES = [
   ['mock', 'Пробник', 'views/mock.js'],
   ['progress', 'Прогресс', 'views/progress.js'],
 ];
-const EXTRA = { reference: 'views/reference.js', about: 'views/about.js', sources: 'views/sources.js', mistakes: 'views/mistakes.js', wordlist: 'views/wordlist.js', '': 'views/home.js' };
+const EXTRA = { pronunciation: 'views/pronunciation.js', reference: 'views/reference.js', about: 'views/about.js', sources: 'views/sources.js', mistakes: 'views/mistakes.js', wordlist: 'views/wordlist.js', '': 'views/home.js' };
 export const NAV = MODULES.map(([id, title]) => ({ id, title }));
 
 const main = document.getElementById('main');

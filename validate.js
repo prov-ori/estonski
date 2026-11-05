@@ -191,6 +191,11 @@ for (const m of (data['mock-exam']?.items || [])) {
     if (part.ref !== undefined) need(seenIds.has(part.ref), 'content/mock-exam.json', `${m.id}.${k}`, `ref «${part.ref}» не найден`);
   }
 }
+// pronunciation
+for (const p of (data.pronunciation?.items || [])) {
+  const ok = { letter: () => p.letter && p.words?.length >= 3 && p.words.every((w) => w.et && w.ru && !hasCyr(w.et)), stress: () => p.words?.length, length: () => p.pairs?.length && p.pairs.every((x) => x.words?.length >= 2 && x.words.every((w) => w.et && w.ru && !hasCyr(w.et))), phrases: () => p.phrases?.length >= 5 && p.phrases.every((f) => f.et && f.ru && !hasCyr(f.et)) }[p.kind];
+  need(ok && ok(), 'content/pronunciation.json', p.id, 'kind должен быть letter | stress | length | phrases с корректными данными');
+}
 // fixes и lessons
 for (const x of (data.fixes?.items || [])) {
   need(x.wrong_et && x.answer_et && x.wrong_et !== x.answer_et, 'content/fixes.json', x.id, 'wrong_et и answer_et обязательны и должны различаться');

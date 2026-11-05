@@ -1,6 +1,6 @@
 // Единый рендер вопросов: choice | tf | input | match.
 import { h, shuffle, norm, stripMarks, hasCyrillic, setChildren } from './util.js';
-import { charPad } from './widgets.js';
+import { charPad, speakButton } from './widgets.js';
 import { store } from './store.js';
 
 let uid = 0;
@@ -25,6 +25,7 @@ export function renderQuestion(q, opts = {}) {
     opts.number != null && h('span', { class: 'q-num' }, `${opts.number}. `),
     h('span', { class: 'q-et', lang: 'et' }, q.prompt_et),
     q.hint && h('span', { class: 'q-hint', lang: 'et' }, ' ' + q.hint),
+    q.speak && h('span', null, ' ', speakButton(q.speak, 'Прослушать слово')),
     q.prompt_ru && h('div', { class: 'q-ru muted', lang: 'ru' }, q.prompt_ru));
   root.append(prompt);
 

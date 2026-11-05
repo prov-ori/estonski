@@ -173,3 +173,6 @@ GitHub Actions (`.github/workflows/check.yml`) на каждый push запус
 Новые поля контента: `tf3` (`answer`: `true` | `false` | `"ns"`), `also_ok` у `input`, `sample_et` / `sample_notes_ru` / `practice_words` у письма, `kind: monologue | interview` у говорения, `kind: vocab` у заданий в `grammar.json` (показываются в «Словаре», а не в «Грамматике»), `forms.pln` / `forms.plp` (мн. ч.) у существительных. Файлы `content/fixes.json` и `content/lessons.json` описаны в `validate.js`.
 
 `npm run check` запускает все быстрые проверки, `npm run smoke` и `npm run axe` — проверки в браузере (нужны `npm install` и `npx playwright install chromium`).
+
+- **Произношение** (`#/pronunciation`, материалы в `content/pronunciation.json`): звуки õ ä ö ü, ударение, три степени долготы, фразы для повторения с записью, тренажёр написания слов со слуха. Озвучка зависит от голоса устройства.
+- **Уроки:** 20 (добавлены местоимения, выражения времени, просьбы, условное наклонение, прошедшее и перфект, безличная форма, формальное письмо, управление глаголов), к ним +39 заданий в `grammar.json`.

@@ -1,0 +1,77 @@
+{
+  "_comment": "Справочник тем. Поле topic в content/*.json должно совпадать с id отсюда (проверяет validate.js).",
+  "grammar": [
+    {
+      "id": "cases",
+      "name_ru": "Падежи",
+      "cheatsheet_ru": [
+        "На примере raamat (книга): nimetav raamat · omastav raamatu · osastav raamatut.",
+        "Куда? sisseütlev raamatusse · где? seesütlev raamatus · откуда? seestütlev raamatust.",
+        "На что/кому? alaleütlev raamatule · где (на)? alalütlev raamatul · от чего/кого? alaltütlev raamatult.",
+        "saav raamatuks («стать чем-то») · rajav raamatuni («до») · olev raamatuna («в качестве») · ilmajäävä raamatuta («без») · kaasaütlev raamatuga («с»).",
+        "После числительных больше единицы — партитив единственного числа: kaks venda, kolm kassi.",
+        "В отрицательном предложении прямое дополнение обычно в партитиве: Ma ei osta leiba."
+      ]
+    },
+    {
+      "id": "verbs",
+      "name_ru": "Формы глагола",
+      "cheatsheet_ru": [
+        "ma-инфинитив (словарная форма): õppima. da-инфинитив: õppida (после tahan, pean, saan, oskan, võin).",
+        "Настоящее время: õpin, õpid, õpib, õpime, õpite, õpivad. Отрицание: ei õpi (для всех лиц).",
+        "Прошедшее (имперфект): õppisin, õppisid, õppis… Отрицание: ei õppinud.",
+        "Перфект: olen õppinud. Повелительное: õpi! Условное: õpiksin.",
+        "После глагола движения цель выражается ma-инфинитивом: Lähen filmi vaatama.",
+        "Безличная форма: Siin räägitakse eesti keelt."
+      ]
+    },
+    {
+      "id": "gradation",
+      "name_ru": "Чередование ступеней",
+      "cheatsheet_ru": [
+        "У многих слов основа меняется: сильная ступень ↔ слабая ступень.",
+        "Существительные: kapp – kapi · kott – koti · kook – koogi · kaup – kauba · pood – poe · tuba – toa.",
+        "Партитив обычно от сильной ступени: kook – kooki; родительный от слабой: koogi.",
+        "Глаголы: lugema – loen · andma – annan · kandma – kannan: в личных формах настоящего слабая ступень.",
+        "Если сомневаетесь — найдите слово в словаре: там даны основные формы."
+      ]
+    },
+    {
+      "id": "numerals",
+      "name_ru": "Числительные",
+      "cheatsheet_ru": [
+        "1–10: üks, kaks, kolm, neli, viis, kuus, seitse, kaheksa, üheksa, kümme.",
+        "11–19: единица + -teist: üksteist, kaksteist, viisteist, üheksateist.",
+        "Десятки: kakskümmend, kolmkümmend, nelikümmend, viiskümmend; 100 — sada.",
+        "Порядковые: esimene, teine, kolmas, neljas, viies, kuues, seitsmes, kaheksas, üheksas, kümnes.",
+        "Время: pool kuus = 5:30, veerand kuus = 5:15, kolmveerand kuus = 5:45 (называется следующий час).",
+        "После числительного больше единицы — партитив ед. ч.: kolm kassi."
+      ]
+    },
+    {
+      "id": "prepositions",
+      "name_ru": "Предлоги и послелоги",
+      "cheatsheet_ru": [
+        "Три формы: где? ees / peal / all / juures · куда? ette / peale / alla / juurde · откуда? eest / pealt / alt / juurest.",
+        "Большинство послелогов стоят после слова в родительном: laua all, kooli ees, kapi sees.",
+        "Pärast и enne в начале предложения требуют партитива: pärast tundi, enne lõunat.",
+        "Jaoks («для») + родительный: sõbra jaoks. Läbi («через») + родительный: läbi metsa.",
+        "Kõrval, lähedal, vahel — послелоги: kooli lähedal."
+      ]
+    }
+  ],
+  "themes": [
+    { "id": "school", "name_ru": "Школа" },
+    { "id": "family", "name_ru": "Семья" },
+    { "id": "home", "name_ru": "Дом" },
+    { "id": "food", "name_ru": "Еда" },
+    { "id": "health", "name_ru": "Здоровье" },
+    { "id": "city", "name_ru": "Город и транспорт" },
+    { "id": "freetime", "name_ru": "Свободное время" },
+    { "id": "nature", "name_ru": "Природа и погода" }
+  ],
+  "skills": [
+    { "id": "connectors", "name_ru": "Связки и фразы для письма" },
+    { "id": "checklist", "name_ru": "Чек-листы самопроверки" }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+ "_comment": "Пробный экзамен. Части вложены в parts; topic/level/status наследуются.",
+ "items": [
+  {
+   "id": "mock-01",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Пробный экзамен 1",
+   "explanation_ru": "Пробный экзамен собран из оригинальных заданий в порядке частей из config/exam-format.json. Процент считается только по аудированию, чтению и языку; письмо и говорение оцениваются по чек-листам.",
+   "parts": {
+    "listening": {
+     "id": "mock-01-l",
+     "title_et": "Bussiteade",
+     "explanation_ru": "Объявление на автовокзале.",
+     "script_et": [
+      {
+       "sp": "A",
+       "text": "Tähelepanu, bussireisijad!"
+      },
+      {
+       "sp": "A",
+       "text": "Bussiliin number üksteist ei sõida sel nädalal kesklinna."
+      },
+      {
+       "sp": "A",
+       "text": "Tänavatööde pärast on Pika tänav suletud."
+      },
+      {
+       "sp": "A",
+       "text": "Bussid sõidavad Kooli tänavat mööda ja peatuvad uue peatuse juures raamatukogu ees."
+      },
+      {
+       "sp": "A",
+       "text": "Palun arvestage, et sõiduaeg on seetõttu kümme minutit pikem."
+      },
+      {
+       "sp": "A",
+       "text": "Piletid kehtivad nagu tavaliselt."
+      },
+      {
+       "sp": "A",
+       "text": "Rohkem infot leiate bussijaama kodulehelt. Aitäh!"
+      }
+     ],
+     "questions": [
+      {
+       "id": "mock-01-l1",
+       "type": "choice",
+       "prompt_et": "Miks buss kesklinna ei sõida?",
+       "explanation_ru": "Причина названа сразу: «Tänavatööde pärast on Pika tänav suletud» — из-за дорожных работ улица закрыта.",
+       "options": [
+        "Tänav on tööde pärast suletud.",
+        "Buss on katki.",
+        "Juht on haige.",
+        "Lund on palju sadanud."
+       ],
+       "answer": 0
+      },
+      {
+       "id": "mock-01-l2",
+       "type": "choice",
+       "prompt_et": "Kus on uus peatus?",
+       "explanation_ru": "«Peatuvad uue peatuse juures raamatukogu ees» — новая остановка перед библиотекой.",
+       "options": [
+        "raamatukogu ees",
+        "koolis",
+        "haigla juures",
+        "bussijaamas"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "mock-01-l3",
+       "type": "input",
+       "prompt_et": "Mitu minutit on sõit pikem? Kirjuta sõnaga: ___ minutit.",
+       "explanation_ru": "«Sõiduaeg on kümme minutit pikem» — поездка дольше на десять минут.",
+       "answer": "kümme"
+      },
+      {
+       "id": "mock-01-l4",
+       "type": "tf",
+       "prompt_et": "Piletid ei kehti.",
+       "explanation_ru": "«Piletid kehtivad nagu tavaliselt» — билеты действуют как обычно.",
+       "answer": false
+      }
+     ]
+    },
+    "reading": {
+     "id": "mock-01-r",
+     "title_et": "Tervisepäev",
+     "explanation_ru": "Информация о школьном мероприятии.",
+     "text_et": "Meie kool korraldab oktoobri lõpus tervisepäeva. Hommikul on kõigil klassidel ühine soojendus kooli staadionil. Pärast seda saab iga õpilane valida, mida teha: joosta, mängida korvpalli või minna metsa matkama. Matkarühm kogunevad kooli ees kell kümme ja jalutavad kaks tundi. Need, kes tahavad joosta, peavad võtma kaasa spordijalatsid. Lõunaks pakub kool kõigile suppi ja värsket puuvilja. Tervisepäev lõpeb kell kaks ning pärast seda lähevad õpilased koju. Päeva peamine mõte on näidata, et liikumine on lõbus ja seda ei pea tegema üksi.",
+     "questions": [
+      {
+       "id": "mock-01-r1",
+       "type": "choice",
+       "prompt_et": "Millal tervisepäev toimub?",
+       "explanation_ru": "«Oktoobri lõpus» — в конце октября.",
+       "options": [
+        "oktoobri lõpus",
+        "septembri alguses",
+        "detsembri keskel",
+        "mai lõpus"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "mock-01-r2",
+       "type": "choice",
+       "prompt_et": "Mis on päeva alguses?",
+       "explanation_ru": "«Hommikul on kõigil klassidel ühine soojendus» — утром у всех классов общая разминка.",
+       "options": [
+        "Ühine soojendus staadionil.",
+        "Matk metsa.",
+        "Korvpallivõistlus.",
+        "Lõuna koolis."
+       ],
+       "answer": 0
+      },
+      {
+       "id": "mock-01-r3",
+       "type": "tf",
+       "prompt_et": "Matkarühm jalutab kaks tundi.",
+       "explanation_ru": "«Jalutavad kaks tundi» — группа гуляет два часа.",
+       "answer": true
+      },
+      {
+       "id": "mock-01-r4",
+       "type": "tf",
+       "prompt_et": "Kool pakub lõunaks pirukaid.",
+       "explanation_ru": "Школа предлагает суп и свежие фрукты: «suppi ja värsket puuvilja».",
+       "answer": false
+      },
+      {
+       "id": "mock-01-r5",
+       "type": "match",
+       "prompt_et": "Seosta rühm ja lause.",
+       "explanation_ru": "Бегуны берут спортивную обувь, туристы собираются перед школой в десять, все получают суп и фрукты.",
+       "prompt_ru": "Соедините группу и предложение. Один вариант лишний.",
+       "items": [
+        {
+         "left": "Jooksjad",
+         "answer": 0
+        },
+        {
+         "left": "Matkajad",
+         "answer": 1
+        },
+        {
+         "left": "Kõik õpilased",
+         "answer": 2
+        }
+       ],
+       "options": [
+        "võtavad kaasa spordijalatsid.",
+        "kogunevad kooli ees kell kümme.",
+        "saavad lõunaks suppi ja puuvilja.",
+        "lähevad koju kell neli."
+       ]
+      }
+     ]
+    },
+    "language": {
+     "id": "mock-01-g",
+     "title_et": "Keelekasutus",
+     "explanation_ru": "Короткие задания на грамматику; ответы вводятся с клавиатуры.",
+     "questions": [
+      {
+       "id": "mock-01-g1",
+       "type": "choice",
+       "prompt_et": "Mu vend õpib ___. (ülikool)",
+       "explanation_ru": "Вопрос «где?» → инессив: ülikoolis.",
+       "options": [
+        "ülikool",
+        "ülikooli",
+        "ülikoolis",
+        "ülikoolist"
+       ],
+       "answer": 2,
+       "ru": "Мой брат учится в университете.",
+       "topic": "cases"
+      },
+      {
+       "id": "mock-01-g2",
+       "type": "choice",
+       "prompt_et": "Eile me ___ metsas. (jalutama)",
+       "explanation_ru": "Eile → прошедшее время: jalutasime.",
+       "options": [
+        "jalutame",
+        "jalutasime",
+        "jalutada",
+        "jalutanud"
+       ],
+       "answer": 1,
+       "ru": "Вчера мы гуляли в лесу.",
+       "topic": "verbs"
+      },
+      {
+       "id": "mock-01-g3",
+       "type": "input",
+       "prompt_et": "Kirjuta sõnadega: 13 → ___",
+       "explanation_ru": "Числа 11–19: единица + -teist. Kolm + teist = kolmteist.",
+       "answer": "kolmteist",
+       "topic": "numerals"
+      },
+      {
+       "id": "mock-01-g4",
+       "type": "choice",
+       "prompt_et": "Ta elab kooli ___.",
+       "explanation_ru": "Kõrval («рядом», где?) + родительный: kooli kõrval.",
+       "options": [
+        "kõrval",
+        "kõrvale",
+        "kõrvalt",
+        "kõrva"
+       ],
+       "answer": 0,
+       "ru": "Он живёт рядом со школой.",
+       "topic": "prepositions"
+      },
+      {
+       "id": "mock-01-g5",
+       "type": "input",
+       "prompt_et": "Me istume ___. (tuba)",
+       "explanation_ru": "Tuba → toas: слабая ступень в инессиве.",
+       "answer": "toas",
+       "ru": "Мы сидим в комнате.",
+       "topic": "gradation"
+      },
+      {
+       "id": "mock-01-g6",
+       "type": "choice",
+       "prompt_et": "Ma ei ole seda filmi veel ___. (nägema)",
+       "explanation_ru": "Перфект: ei ole + причастие на -nud: näinud.",
+       "options": [
+        "näen",
+        "nägin",
+        "näinud",
+        "näha"
+       ],
+       "answer": 2,
+       "ru": "Я ещё не видел(а) этот фильм.",
+       "topic": "verbs"
+      },
+      {
+       "id": "mock-01-g7",
+       "type": "choice",
+       "prompt_et": "Ma joon hommikul kohvi ___. (piim)",
+       "explanation_ru": "Комитатив -ga: piim → piima → piimaga («с молоком»).",
+       "options": [
+        "piim",
+        "piima",
+        "piimaga",
+        "piimas"
+       ],
+       "answer": 2,
+       "ru": "Утром я пью кофе с молоком.",
+       "topic": "cases"
+      },
+      {
+       "id": "mock-01-g8",
+       "type": "input",
+       "prompt_et": "Kirjuta sõnadega: 30 → ___",
+       "explanation_ru": "Десятки: kolmkümmend (слитно).",
+       "answer": "kolmkümmend",
+       "topic": "numerals"
+      }
+     ]
+    },
+    "writing": {
+     "id": "mock-01-w",
+     "title_ru": "Письмо классному руководителю",
+     "kind": "email",
+     "prompt_et": "Sinu klass tahab korraldada klassiõhtu. Kirjuta klassijuhatajale e-kiri ja räägi oma ideest.",
+     "prompt_ru": "Ваш класс хочет устроить вечер. Напишите классному руководителю письмо и расскажите свою идею.",
+     "content_points_et": [
+      "Mis päeval klassiõhtu võiks olla?",
+      "Mida te õhtul teete?",
+      "Mida teie vanemad või õpetaja võiksid aidata?",
+      "Palu vastata."
+     ],
+     "content_points_ru": [
+      "В какой день мог бы быть вечер?",
+      "Что вы будете делать?",
+      "Чем могут помочь родители или учитель?",
+      "Попросите ответить."
+     ],
+     "explanation_ru": "Полуформальное письмо учителю: вежливое обращение, четыре пункта, подпись."
+    },
+    "speaking": {
+     "id": "mock-01-s",
+     "title_ru": "Планируем классный вечер",
+     "situation_ru": "Вы с партнёром готовите классный вечер. Решите, где и когда он будет, что принести и кто что делает.",
+     "role_a": {
+      "title_ru": "Ученик A",
+      "prompts_et": [
+       "Mis päeval me õhtu korraldame?",
+       "Kus me kohtume?",
+       "Mida sina kaasa võtad?"
+      ]
+     },
+     "role_b": {
+      "title_ru": "Ученик B",
+      "prompts_et": [
+       "Minu arvates sobib ...",
+       "Ma pakun, et ...",
+       "Ma toon kaasa ..."
+      ]
+     },
+     "phrases_et": [
+      "Minu arvates ...",
+      "Mis sa arvad?",
+      "See on hea mõte.",
+      "Siis lepime kokku."
+     ],
+     "explanation_ru": "Диалог на согласование деталей. Самооценка — по чек-листу из раздела «Говорение»."
+    }
+   }
+  }
+ ]
+}

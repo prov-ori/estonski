@@ -1,0 +1,197 @@
+{
+ "_comment": "Тексты для чтения. Вложенные вопросы наследуют topic/level/status от текста.",
+ "items": [
+  {
+   "id": "r-01",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Uus ring meie koolis",
+   "title_ru": "Новый кружок в нашей школе",
+   "explanation_ru": "Текст о школьном кружке робототехники. Типы заданий: выбор ответа, верно/неверно, соответствие. Читайте вопрос и ищите в тексте конкретное место, а не пересказывайте по памяти.",
+   "text_et": "Sügisel hakkas meie koolis tööle robootikaring. Ringi juhendaja on informaatikaõpetaja Marek, kes armastab tehnikat ja õpetab ka teisi. Esimesele kokkusaamisele tuli kolmteist õpilast. Alguses arvasid mõned, et robotite ehitamine on väga raske, kuid Marek näitas, et alustada saab lihtsate asjadega. Esimese kuu jooksul ehitasid õpilased väikese roboti, mis sõidab mööda musta joont.\n\nRing toimub kolmapäeviti pärast viiendat tundi ja kestab poolteist tundi. Osalemine on tasuta. Kes tahab, võib võtta kaasa oma sülearvuti. Kellel arvutit ei ole, saab kasutada kooli arvutit. Detsembris tahab kooli meeskond minna linna võistlusele, kus näidatakse roboteid. Marek ütleb, et võitmine ei ole kõige olulisem. Tähtis on, et õpilased õpiksid koos töötama ja ei kardaks eksida.",
+   "questions": [
+    {
+     "id": "r-01-q1",
+     "type": "choice",
+     "prompt_et": "Kes juhendab robootikaringi?",
+     "explanation_ru": "В тексте: «Ringi juhendaja on informaatikaõpetaja Marek».",
+     "options": [
+      "informaatikaõpetaja",
+      "matemaatikaõpetaja",
+      "kooli direktor",
+      "üks õpilastest"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-01-q2",
+     "type": "choice",
+     "prompt_et": "Mida tegid õpilased esimese kuu jooksul?",
+     "explanation_ru": "«Esimese kuu jooksul ehitasid õpilased väikese roboti» — ehitama значит «строить».",
+     "options": [
+      "Nad ehitasid väikese roboti.",
+      "Nad käisid võistlusel.",
+      "Nad ostsid uued arvutid.",
+      "Nad lõpetasid ringi."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-01-q3",
+     "type": "tf",
+     "prompt_et": "Esimesele kokkusaamisele tuli kolmteist õpilast.",
+     "explanation_ru": "Прямо в тексте: «Esimesele kokkusaamisele tuli kolmteist õpilast». Kolmteist = 13.",
+     "answer": true
+    },
+    {
+     "id": "r-01-q4",
+     "type": "tf",
+     "prompt_et": "Ringis osalemiseks tuleb maksta.",
+     "explanation_ru": "В тексте: «Osalemine on tasuta» — участие бесплатное, tasuta = «бесплатно».",
+     "answer": false
+    },
+    {
+     "id": "r-01-q5",
+     "type": "tf",
+     "prompt_et": "Ring toimub igal kolmapäeval pärast viiendat tundi.",
+     "explanation_ru": "Kolmapäeviti — «по средам», то есть каждую среду. Viies tund — пятый урок.",
+     "answer": true
+    },
+    {
+     "id": "r-01-q6",
+     "type": "match",
+     "prompt_et": "Seosta isik või rühm ja lause lõpp.",
+     "explanation_ru": "Ищите в тексте: Marek «õpetab ka teisi», у кого нет компьютера — «kasutada kooli arvutit», команда школы в декабре едет на соревнование.",
+     "prompt_ru": "Соедините каждого участника с подходящим окончанием предложения. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Marek",
+       "answer": 0
+      },
+      {
+       "left": "Õpilane, kellel ei ole arvutit,",
+       "answer": 1
+      },
+      {
+       "left": "Kooli meeskond",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "õpetab ka teisi.",
+      "saab kasutada kooli arvutit.",
+      "tahab minna detsembris võistlusele.",
+      "juhib kooli."
+     ]
+    },
+    {
+     "id": "r-01-q7",
+     "type": "choice",
+     "prompt_et": "Mis on Mareki arvates kõige tähtsam?",
+     "explanation_ru": "«Tähtis on, et õpilased õpiksid koos töötama ja ei kardaks eksida» — важно учиться работать вместе и не бояться ошибаться. Победа, по словам Марека, не главное.",
+     "options": [
+      "Koos töötama õppimine ja eksimise mittekartmine.",
+      "Võistluse võitmine.",
+      "Uue arvuti ostmine.",
+      "Kiire ehitamine."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "r-02",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kiri sõbrale",
+   "title_ru": "Письмо подруге",
+   "explanation_ru": "Личное письмо с приглашением. В таких текстах важны время, место и что взять с собой — именно об этом часто спрашивают.",
+   "text_et": "Tere, Liisa!\n\nKirjutan sulle, sest tahan sind laupäeval külla kutsuda. Meie pere sõidab laupäeval vanaema juurde maale ja ma tahaksin, et sa tuleksid kaasa. Vanaema elab väikeses külas järve ääres. Suvel saab seal ujuda, aga novembris on järv külm, nii et ujuma me ei lähe. Selle asemel jalutame metsas ja õhtul kütab vanaisa sauna.\n\nBuss väljub Tallinnast kell 9.15 ja sõit kestab poolteist tundi. Ma ootan sind bussijaamas kell 9.00. Võta kaasa soe jope ja tugevad kingad, sest metsas võib olla mudane. Süüa ei pea kaasa võtma, vanaema küpsetab pirukaid. Kui sa ei saa tulla, anna mulle palun homme teada.\n\nNägemist!\nKadri",
+   "questions": [
+    {
+     "id": "r-02-q1",
+     "type": "choice",
+     "prompt_et": "Miks Kadri kirjutab?",
+     "explanation_ru": "Kadri пишет, чтобы пригласить Лиису: «tahan sind laupäeval külla kutsuda».",
+     "options": [
+      "Ta kutsub Liisat endaga kaasa.",
+      "Ta küsib kodutööd.",
+      "Ta teatab, et ei saa tulla.",
+      "Ta tänab kingituse eest."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-02-q2",
+     "type": "choice",
+     "prompt_et": "Miks nad ujuma ei lähe?",
+     "explanation_ru": "«Novembris on järv külm» — в ноябре озеро холодное.",
+     "options": [
+      "Järv on külm.",
+      "Vanaema on haige.",
+      "Sajab vihma.",
+      "Buss hilineb."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-02-q3",
+     "type": "tf",
+     "prompt_et": "Buss väljub kell 9.00.",
+     "explanation_ru": "Автобус отправляется в 9.15, в 9.00 Кадри ждёт Лиису на автовокзале.",
+     "answer": false
+    },
+    {
+     "id": "r-02-q4",
+     "type": "tf",
+     "prompt_et": "Liisa peab sööki kaasa võtma.",
+     "explanation_ru": "«Süüa ei pea kaasa võtma» — еду брать не нужно, бабушка печёт пирожки.",
+     "answer": false
+    },
+    {
+     "id": "r-02-q5",
+     "type": "tf",
+     "prompt_et": "Vanaema elab maal järve lähedal.",
+     "explanation_ru": "«Vanaema elab väikeses külas järve ääres» — бабушка живёт в маленькой деревне у озера.",
+     "answer": true
+    },
+    {
+     "id": "r-02-q6",
+     "type": "match",
+     "prompt_et": "Seosta isik ja tegevus.",
+     "explanation_ru": "Из текста: Kadri ootab на автовокзале, vanaema küpsetab pirukaid, vanaisa kütab sauna.",
+     "prompt_ru": "Соедините человека и действие. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Kadri",
+       "answer": 0
+      },
+      {
+       "left": "Vanaema",
+       "answer": 1
+      },
+      {
+       "left": "Vanaisa",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "ootab Liisat bussijaamas.",
+      "küpsetab pirukaid.",
+      "kütab õhtul sauna.",
+      "sõidab Tallinnasse."
+     ]
+    },
+    {
+     "id": "r-02-q7",
+     "type": "input",
+     "prompt_et": "Mis kell Kadri ootab Liisat bussijaamas? Kirjuta sõnaga: kell ___.",
+     "explanation_ru": "В тексте «kell 9.00» — по-эстонски üheksa. Букву ü набирайте кнопкой под полем.",
+     "answer": "üheksa"
+    }
+   ]
+  }
+ ]
+}

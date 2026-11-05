@@ -1,0 +1,22 @@
+{
+  "_comment": "ВСЕ значения в этом файле НЕ проверены по официальным источникам. Проверить на harno.ee (и в описании электронного экзамена в EIS) и только потом ставить verified: true. Сайт использует эти числа только как ТРЕНИРОВОЧНЫЕ значения для таймеров и подсчёта процента.",
+  "verified": false,
+  "check_at": "https://harno.ee",
+  "pass_threshold_percent": 60,
+  "pass_threshold_note": "Порог 60 % взят со слов заказчика (экзамен совмещён с B1-тестом, сертификат от 60 %). Проверить на harno.ee. Для пробника процент считается только по автоматически проверяемым частям.",
+  "exam_date_note": "Ближайшая сдача — апрель 2027, электронный формат (EIS) — со слов заказчика. Проверить на harno.ee.",
+  "parts_comment": "Состав и порядок частей пробника — тренировочный, не копия официальной структуры. practice_minutes — НЕ официальная длительность.",
+  "parts": [
+    { "id": "listening", "title_ru": "Аудирование", "practice_minutes": 15, "scored_automatically": true },
+    { "id": "reading",   "title_ru": "Чтение", "practice_minutes": 25, "scored_automatically": true },
+    { "id": "language",  "title_ru": "Грамматика и лексика", "practice_minutes": 15, "scored_automatically": true },
+    { "id": "writing",   "title_ru": "Письмо", "practice_minutes": 25, "scored_automatically": false },
+    { "id": "speaking",  "title_ru": "Говорение (в паре)", "practice_minutes": 10, "scored_automatically": false }
+  ],
+  "practice_points_per_answer": 1,
+  "practice_points_comment": "В пробнике 1 балл за каждый верный ответ (для сопоставления частей match — 1 балл за пару). Это условность тренажёра, не баллы экзамена.",
+  "writing_practice_words": [50, 90],
+  "writing_practice_words_comment": "Ориентир для тренировочных заданий письма, не требование экзамена.",
+  "writing_practice_minutes": 25,
+  "speaking_practice_minutes": 10
+}

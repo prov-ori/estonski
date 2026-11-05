@@ -1,0 +1,197 @@
+{
+ "_comment": "Аудирование. script_et — реплики для Web Speech API; sp A/B даёт разную высоту голоса. Озвучка синтезом не равна экзаменационным записям.",
+ "items": [
+  {
+   "id": "l-01",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Direktori teade",
+   "title_ru": "Объявление директора",
+   "explanation_ru": "Объявление в школе: несколько пунктов подряд (esiteks, teiseks, kolmandaks). Слушая, записывайте по каждому пункту ключевое слово: день, место, время.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tere, kallid õpilased! Siin räägib kooli direktor."
+    },
+    {
+     "sp": "A",
+     "text": "Teatan teile mõned olulised asjad."
+    },
+    {
+     "sp": "A",
+     "text": "Esiteks, järgmisel reedel ei ole tunde, sest õpetajad on koolitusel."
+    },
+    {
+     "sp": "A",
+     "text": "Teiseks, kooli sööklas on sel nädalal uus menüü. Esmaspäeval pakutakse kalasuppi, teisipäeval makarone ja kolmapäeval kartulipuderit."
+    },
+    {
+     "sp": "A",
+     "text": "Kolmandaks, jõulukontsert toimub kolmandal detsembril kell kuus õhtul aulas."
+    },
+    {
+     "sp": "A",
+     "text": "Kontserdile on oodatud ka vanemad. Palun andke sellest oma vanematele teada."
+    },
+    {
+     "sp": "A",
+     "text": "Aitäh tähelepanu eest!"
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-01-q1",
+     "type": "choice",
+     "prompt_et": "Miks reedel tunde ei ole?",
+     "explanation_ru": "«Sest õpetajad on koolitusel» — учителя на курсах повышения квалификации.",
+     "options": [
+      "Õpetajad on koolitusel.",
+      "Kool on remondis.",
+      "On riigipüha.",
+      "Õpilased lähevad matkale."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-01-q2",
+     "type": "choice",
+     "prompt_et": "Mida pakutakse sööklas teisipäeval?",
+     "explanation_ru": "Teisipäev — вторник: «teisipäeval makarone». Kalasupp — в понедельник, kartulipuder — в среду.",
+     "options": [
+      "makarone",
+      "kalasuppi",
+      "kartulipuderit",
+      "pannkooke"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-01-q3",
+     "type": "input",
+     "prompt_et": "Mis kell algab jõulukontsert? Kirjuta sõnaga: kell ___ õhtul.",
+     "explanation_ru": "Kontsert начинается в «kell kuus» — в шесть вечера.",
+     "answer": "kuus"
+    },
+    {
+     "id": "l-01-q4",
+     "type": "choice",
+     "prompt_et": "Kus kontsert toimub?",
+     "explanation_ru": "«Aulas» — в актовом зале (aula). Эстонский инессив: aulas.",
+     "options": [
+      "aulas",
+      "sööklas",
+      "staadionil",
+      "raamatukogus"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-01-q5",
+     "type": "tf",
+     "prompt_et": "Vanemad ei tohi kontserdile tulla.",
+     "explanation_ru": "«Kontserdile on oodatud ka vanemad» — родителей тоже ждут на концерте.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "id": "l-02",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Telefonivestlus",
+   "title_ru": "Телефонный разговор",
+   "explanation_ru": "Диалог двух друзей, меняющих планы. Следите, кто что предлагает и что остаётся неизменным (время, место встречи).",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tere, Mari! Siin on Jaan. Kas sul on homme trenn?"
+    },
+    {
+     "sp": "B",
+     "text": "Tere! Jah, on küll. Aga treener ütles, et homme trenni ei ole, sest saal on kinni."
+    },
+    {
+     "sp": "A",
+     "text": "Kahju. Kas me siis läheme hoopis kinno? Kinos on uus komöödia."
+    },
+    {
+     "sp": "B",
+     "text": "See on hea mõte. Mis kell film algab?"
+    },
+    {
+     "sp": "A",
+     "text": "Seanss on kell seitse. Kohtume kino ees kell kuus ja ostame piletid."
+    },
+    {
+     "sp": "B",
+     "text": "Hästi. Aga ma ei saa kaua olla, sest pean koju minema kell kümme."
+    },
+    {
+     "sp": "A",
+     "text": "Pole probleemi. Film kestab kaks tundi, nii et sa jõuad hästi koju."
+    },
+    {
+     "sp": "B",
+     "text": "Tore, siis homme näeme!"
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-02-q1",
+     "type": "choice",
+     "prompt_et": "Miks homme trenni ei ole?",
+     "explanation_ru": "Mari говорит: «sest saal on kinni» — потому что зал закрыт.",
+     "options": [
+      "Saal on kinni.",
+      "Treener on haige.",
+      "Mari on haige.",
+      "Sajab vihma."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-02-q2",
+     "type": "choice",
+     "prompt_et": "Kuhu nad lähevad?",
+     "explanation_ru": "«Kas me siis läheme hoopis kinno?» — вместо тренировки идут в кино.",
+     "options": [
+      "kinno",
+      "jõusaali",
+      "raamatukokku",
+      "kontserdile"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-02-q3",
+     "type": "input",
+     "prompt_et": "Mis kell film algab? Kirjuta sõnaga: kell ___.",
+     "explanation_ru": "«Seanss on kell seitse» — сеанс в семь.",
+     "answer": "seitse"
+    },
+    {
+     "id": "l-02-q4",
+     "type": "choice",
+     "prompt_et": "Kus nad kohtuvad?",
+     "explanation_ru": "«Kohtume kino ees kell kuus» — встречаются перед кинотеатром в шесть.",
+     "options": [
+      "kino ees",
+      "trennisaalis",
+      "bussijaamas",
+      "koolis"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-02-q5",
+     "type": "tf",
+     "prompt_et": "Film kestab kolm tundi.",
+     "explanation_ru": "Фильм идёт два часа: «Film kestab kaks tundi».",
+     "answer": false
+    }
+   ]
+  }
+ ]
+}

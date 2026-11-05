@@ -1,0 +1,343 @@
+{
+ "_comment": "Задания на письмо. Автооценки нет — только чек-лист самопроверки. Ориентир по словам и таймеру — из config/exam-format.json.",
+ "items": [
+  {
+   "id": "w-01",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Письмо другу: приглашение",
+   "prompt_et": "Sinu sõber Karl elab teises linnas. Kirjuta talle e-kiri ja kutsu ta nädalavahetusel enda juurde külla.",
+   "prompt_ru": "Ваш друг Карл живёт в другом городе. Напишите ему письмо и пригласите в гости на выходные.",
+   "content_points_et": [
+    "Millal Karl võiks tulla?",
+    "Mida te koos teete?",
+    "Mida ta peaks kaasa võtma?",
+    "Palu vastata."
+   ],
+   "content_points_ru": [
+    "Когда Карл мог бы приехать?",
+    "Что вы будете делать вместе?",
+    "Что ему взять с собой?",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Неформальное письмо: обращение по имени, живой тон, ответ на все четыре пункта. Каждый пункт — минимум одно предложение. Начните с Tere, Karl! и закончите, например, Ootan sinu vastust!"
+  },
+  {
+   "id": "w-02",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Письмо учителю: пропуск занятий",
+   "prompt_et": "Sa oled haige ega saa homme kooli tulla. Kirjuta oma klassijuhatajale e-kiri.",
+   "prompt_ru": "Вы больны и завтра не сможете прийти в школу. Напишите письмо классному руководителю.",
+   "content_points_et": [
+    "Miks sa kooli ei tule?",
+    "Mis päevadel sind koolis ei ole?",
+    "Kuidas saad tundides tehtu teada?",
+    "Tänu."
+   ],
+   "content_points_ru": [
+    "Почему вы не придёте?",
+    "В какие дни вас не будет?",
+    "Как узнать, что делали на уроках?",
+    "Поблагодарите."
+   ],
+   "explanation_ru": "Более формальное письмо учителю: обращение Tere, õpetaja ...! или Lugupeetud ...!, вежливые формы (palun, aitäh), подпись с именем и классом. Не забудьте пункт про домашнее задание."
+  },
+  {
+   "id": "w-03",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Мнение: телефоны на уроках",
+   "prompt_et": "Kas õpilased peaksid tunni ajal oma telefoni kasutama? Kirjuta oma arvamus.",
+   "prompt_ru": "Должны ли ученики пользоваться телефоном во время урока? Напишите своё мнение.",
+   "content_points_et": [
+    "Mis on sinu arvamus?",
+    "Too kaks põhjust.",
+    "Too üks näide.",
+    "Tee lõpus lühike kokkuvõte."
+   ],
+   "content_points_ru": [
+    "Каково ваше мнение?",
+    "Приведите две причины.",
+    "Приведите один пример.",
+    "В конце сделайте короткий вывод."
+   ],
+   "explanation_ru": "Текст-рассуждение: вступление (Minu arvates ...), две причины (esiteks, teiseks), пример (näiteks), вывод (kokkuvõttes). Лучше простые предложения без ошибок, чем сложные с ошибками."
+  }
+ ],
+ "connectors": [
+  {
+   "id": "c-01",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "greeting",
+   "et": "Tere, Karl!",
+   "ru": "Здравствуй, Карл!",
+   "explanation_ru": "Неформальное приветствие; после обращения ставится восклицательный знак или запятая."
+  },
+  {
+   "id": "c-02",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "greeting",
+   "et": "Lugupeetud õpetaja!",
+   "ru": "Уважаемый учитель!",
+   "explanation_ru": "Формальное обращение. Для конкретного человека: Lugupeetud proua Tamm!"
+  },
+  {
+   "id": "c-03",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "closing",
+   "et": "Ootan sinu vastust.",
+   "ru": "Жду твоего ответа.",
+   "explanation_ru": "Подходит для неформального письма. В формальном: Ootan teie vastust."
+  },
+  {
+   "id": "c-04",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "closing",
+   "et": "Parimate soovidega",
+   "ru": "С наилучшими пожеланиями",
+   "explanation_ru": "Закрывающая формула; после неё — имя на следующей строке."
+  },
+  {
+   "id": "c-05",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "closing",
+   "et": "Nägemist!",
+   "ru": "До свидания! (до встречи)",
+   "explanation_ru": "Короткое дружеское завершение."
+  },
+  {
+   "id": "c-06",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "add",
+   "et": "lisaks",
+   "ru": "кроме того",
+   "explanation_ru": "Ставится в начале предложения: Lisaks on seal ilus mets."
+  },
+  {
+   "id": "c-07",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "add",
+   "et": "samuti",
+   "ru": "также, тоже",
+   "explanation_ru": "Samuti ma tahan minna kinno. — «Я тоже хочу пойти в кино»."
+  },
+  {
+   "id": "c-08",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "contrast",
+   "et": "aga",
+   "ru": "но, а",
+   "explanation_ru": "Перед aga в эстонском ставится запятая."
+  },
+  {
+   "id": "c-09",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "contrast",
+   "et": "siiski",
+   "ru": "всё же, тем не менее",
+   "explanation_ru": "Ilm oli külm, aga ma läksin siiski välja."
+  },
+  {
+   "id": "c-10",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "contrast",
+   "et": "kuigi",
+   "ru": "хотя",
+   "explanation_ru": "Придаточное: Kuigi ilm oli külm, läksime jalutama. После запятой порядок слов прямой."
+  },
+  {
+   "id": "c-11",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "cause",
+   "et": "sest",
+   "ru": "потому что",
+   "explanation_ru": "Перед sest запятая: Ma jään koju, sest ma olen haige."
+  },
+  {
+   "id": "c-12",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "result",
+   "et": "seetõttu",
+   "ru": "поэтому",
+   "explanation_ru": "После seetõttu обычно глагол стоит на втором месте: Seetõttu jään ma koju."
+  },
+  {
+   "id": "c-13",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "example",
+   "et": "näiteks",
+   "ru": "например",
+   "explanation_ru": "Näiteks võib telefonist otsida sõna tähendust."
+  },
+  {
+   "id": "c-14",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "order",
+   "et": "esiteks / teiseks",
+   "ru": "во-первых / во-вторых",
+   "explanation_ru": "Для перечисления причин или аргументов в тексте-рассуждении."
+  },
+  {
+   "id": "c-15",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "opinion",
+   "et": "minu arvates",
+   "ru": "по моему мнению",
+   "explanation_ru": "Minu arvates on see hea mõte."
+  },
+  {
+   "id": "c-16",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "opinion",
+   "et": "ma arvan, et",
+   "ru": "я думаю, что",
+   "explanation_ru": "Перед et запятая: Ma arvan, et see on vajalik."
+  },
+  {
+   "id": "c-17",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "contrast",
+   "et": "ühelt poolt ... teiselt poolt",
+   "ru": "с одной стороны ... с другой стороны",
+   "explanation_ru": "Чтобы показать оба взгляда на вопрос."
+  },
+  {
+   "id": "c-18",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "order",
+   "et": "lõpuks",
+   "ru": "наконец",
+   "explanation_ru": "Последний шаг или последний аргумент."
+  },
+  {
+   "id": "c-19",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "closing",
+   "et": "kokkuvõttes",
+   "ru": "в итоге, подводя итог",
+   "explanation_ru": "Начинает заключительный абзац."
+  },
+  {
+   "id": "c-20",
+   "topic": "connectors",
+   "level": "B1",
+   "status": "draft",
+   "group": "condition",
+   "et": "kui",
+   "ru": "если, когда",
+   "explanation_ru": "Kui sa tuled, siis ma ootan sind. Перед kui в придаточном — запятая."
+  }
+ ],
+ "checklist": [
+  {
+   "id": "cl-w-01",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Задача раскрыта",
+   "explanation_ru": "Ответили ли вы на каждый пункт задания?",
+   "checks_ru": [
+    "Я ответил(а) на каждый пункт задания",
+    "Моё письмо подходит адресату (друг / учитель)",
+    "Объём примерно в рамках ориентира"
+   ]
+  },
+  {
+   "id": "cl-w-02",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Связность",
+   "explanation_ru": "Текст должен читаться как целое, а не как набор предложений.",
+   "checks_ru": [
+    "Есть начало и конец (приветствие/вступление и завершение)",
+    "Я использовал(а) связки (sest, aga, lisaks…)",
+    "Мысли идут в логичном порядке"
+   ]
+  },
+  {
+   "id": "cl-w-03",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Лексика",
+   "explanation_ru": "Богатство и точность слов.",
+   "checks_ru": [
+    "Слова подходят по смыслу и по теме",
+    "Я не повторяю одно и то же слово много раз",
+    "Я не вставил(а) русские слова вместо эстонских"
+   ]
+  },
+  {
+   "id": "cl-w-04",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Грамматика",
+   "explanation_ru": "Проверьте типичные места ошибок.",
+   "checks_ru": [
+    "Падежи после чисел, послелогов и глаголов проверены",
+    "Время глагола везде подходит",
+    "Õ, ä, ö, ü написаны правильно"
+   ]
+  },
+  {
+   "id": "cl-w-05",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Оформление",
+   "explanation_ru": "Внешний вид текста тоже входит в самопроверку.",
+   "checks_ru": [
+    "Обращение и подпись на своих местах",
+    "Предложения начинаются с заглавной буквы и заканчиваются точкой",
+    "Текст разбит на абзацы"
+   ]
+  }
+ ]
+}

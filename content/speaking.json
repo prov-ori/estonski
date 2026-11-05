@@ -1,0 +1,203 @@
+{
+ "_comment": "Карточки для работы в паре. Таймер — из config/exam-format.json. Запись остаётся только в браузере.",
+ "items": [
+  {
+   "id": "s-01",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Планируем выходные",
+   "situation_ru": "Вы с партнёром хотите вместе провести субботу. Договоритесь, что делать, где и когда встретиться.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Mida sa tahaksid laupäeval teha?",
+     "Kuhu me võiksime minna?",
+     "Mis kell me kohtume?",
+     "Mida peab kaasa võtma?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Mulle meeldib ...",
+     "Ma pakun, et läheme ...",
+     "Kas see aeg sobib sulle?",
+     "Ma võtan kaasa ..."
+    ]
+   },
+   "phrases_et": [
+    "Ma pakun, et ...",
+    "See on hea mõte.",
+    "Kahjuks ma ei saa, sest ...",
+    "Mis sa arvad?",
+    "Siis lepime kokku."
+   ],
+   "explanation_ru": "Партнёры по очереди задают вопросы и предлагают варианты. Цель — прийти к договорённости: дело, место, время. Не молчите: если не знаете слово, объясните другими словами."
+  },
+  {
+   "id": "s-02",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Как пройти?",
+   "situation_ru": "Ученик A — турист и ищет библиотеку. Ученик B объясняет дорогу. Потом поменяйтесь ролями и выберите другое место.",
+   "role_a": {
+    "title_ru": "Ученик A (турист)",
+    "prompts_et": [
+     "Vabandust, kus asub raamatukogu?",
+     "Kui kaugel see on?",
+     "Kas sinna sõidab buss?",
+     "Aitäh abi eest!"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B (местный житель)",
+    "prompts_et": [
+     "Mine otse ristmikuni.",
+     "Seal pööra paremale.",
+     "Raamatukogu on poe kõrval.",
+     "Jalgsi on see umbes viis minutit."
+    ]
+   },
+   "phrases_et": [
+    "Mine otse.",
+    "Pööra vasakule / paremale.",
+    "Ristmikul ...",
+    "See on ... kõrval / vastas.",
+    "Palun väga!"
+   ],
+   "explanation_ru": "Отрабатывайте повелительное наклонение (mine, pööra) и послелоги места. Турист переспрашивает, если не понял: Kas sa saaksid korrata?"
+  },
+  {
+   "id": "s-03",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Выбираем кружок",
+   "situation_ru": "Вы хотите записаться в школьный кружок. Обсудите, какой выбрать, и объясните почему.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Millises ringis sa tahaksid käia?",
+     "Miks see sulle meeldib?",
+     "Mis päeval ring toimub?",
+     "Kas sa tuled minuga kaasa?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Mind huvitab ...",
+     "Esiteks, ... Teiseks, ...",
+     "Mulle sobib esmaspäev / kolmapäev.",
+     "Jah, tulen / Ei, sest ..."
+    ]
+   },
+   "phrases_et": [
+    "Mind huvitab ...",
+    "Minu arvates ...",
+    "Ma eelistan ...",
+    "Esiteks ... teiseks ...",
+    "Mulle meeldib see, sest ..."
+   ],
+   "explanation_ru": "Тренируйте выражение мнения и причины: minu arvates, sest. Каждый ответ — минимум два предложения, а не одно слово."
+  },
+  {
+   "id": "s-04",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "У врача",
+   "situation_ru": "Ученик A — пациент, ученик B — врач. Расскажите, что болит, и получите совет. Потом поменяйтесь ролями.",
+   "role_a": {
+    "title_ru": "Ученик A (пациент)",
+    "prompts_et": [
+     "Mul valutab pea.",
+     "See algas eile õhtul.",
+     "Mul on ka palavik.",
+     "Kas ma võin homme kooli minna?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B (врач)",
+    "prompts_et": [
+     "Mis sind vaevab?",
+     "Kui kaua see on valutanud?",
+     "Võta see ravim pärast sööki.",
+     "Püsi paar päeva kodus."
+    ]
+   },
+   "phrases_et": [
+    "Mul valutab ...",
+    "Ma tunnen end halvasti.",
+    "Kui kaua ...?",
+    "Võta ravimit ...",
+    "Tubli, tervist!"
+   ],
+   "explanation_ru": "Лексика здоровья и вежливые вопросы. Врач задаёт уточняющие вопросы, пациент отвечает полными предложениями."
+  }
+ ],
+ "checklist": [
+  {
+   "id": "cl-s-01",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Задача выполнена",
+   "explanation_ru": "Выполнили ли вы то, что просит ситуация.",
+   "checks_ru": [
+    "Мы пришли к договорённости или завершили разговор",
+    "Я использовал(а) все подсказки карточки"
+   ]
+  },
+  {
+   "id": "cl-s-02",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Взаимодействие",
+   "explanation_ru": "Говорение в паре — это диалог.",
+   "checks_ru": [
+    "Я слушал(а) партнёра и отвечал(а) на его слова",
+    "Я задавал(а) вопросы, а не только отвечал(а)"
+   ]
+  },
+  {
+   "id": "cl-s-03",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Беглость",
+   "explanation_ru": "Речь без долгих пауз.",
+   "checks_ru": [
+    "Не было долгих пауз и «зависаний»",
+    "Если забыл(а) слово, я объяснил(а) его другими словами"
+   ]
+  },
+  {
+   "id": "cl-s-04",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Лексика и грамматика",
+   "explanation_ru": "Послушайте запись и отметьте ошибки.",
+   "checks_ru": [
+    "Слова подходят к теме",
+    "Я заметил(а) свои ошибки на записи и могу их исправить"
+   ]
+  },
+  {
+   "id": "cl-s-05",
+   "topic": "checklist",
+   "level": "B1",
+   "status": "draft",
+   "criterion_ru": "Произношение",
+   "explanation_ru": "Не нужно звучать как носитель — нужно быть понятным.",
+   "checks_ru": [
+    "Меня легко понять",
+    "Я различаю долгие и краткие звуки (kuke / kukk)"
+   ]
+  }
+ ]
+}

@@ -88,7 +88,7 @@ export function renderQuestion(q, opts = {}) {
     getValue = () => input.value;
     doGrade = () => {
       const v = input.value;
-      const ok = norm(v) === norm(q.answer);
+      const ok = [q.answer, ...(q.also_ok || [])].some((a) => norm(v) === norm(a));
       let note = '';
       if (!ok && v.trim()) {
         if (hasCyrillic(v)) note = 'В ответе есть кириллица — переключите раскладку или используйте кнопки букв. ';

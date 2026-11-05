@@ -6,7 +6,7 @@ const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => {
   const p = path.join(d, e.name);
   return e.isDirectory() ? walk(p) : [p];
 });
-const files = ['index.html', 'manifest.webmanifest', 'icon.svg',
+const files = ['index.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png',
   ...walk(path.join(ROOT, 'css')), ...walk(path.join(ROOT, 'js')), ...walk(path.join(ROOT, 'content')), ...walk(path.join(ROOT, 'config'))]
   .map((f) => (path.isAbsolute(f) ? path.relative(ROOT, f) : f)).map((f) => f.split(path.sep).join('/')).sort();
 const hash = crypto.createHash('sha1');

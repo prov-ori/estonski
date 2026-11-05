@@ -12,6 +12,7 @@ const stems = (str) => new Set((str.toLowerCase().match(/[\p{L}]{4,}/gu) || []).
  * иначе предложение текста, максимально совпадающее по словам с вопросом и верным ответом (приблизительно).
  */
 export function evidenceFor(q, text) {
+  if (q.type === 'tf3' && q.answer === 'ns') return null; // «в тексте не сказано» — подсвечивать нечего
   const t = norm(text);
   if (/^\(\d+\) ___$/.test(q.prompt_et || '') && text.includes(q.prompt_et)) return q.prompt_et; // пропуск в тексте
   const cands = [];

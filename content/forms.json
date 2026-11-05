@@ -17,7 +17,9 @@
     "ela": "raamatust",
     "all": "raamatule",
     "ade": "raamatul",
-    "abl": "raamatult"
+    "abl": "raamatult",
+    "pln": "raamatud",
+    "plp": "raamatuid"
    },
    "explanation_ru": "Парадигма слова raamat. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -37,7 +39,9 @@
     "ela": "sõbrast",
     "all": "sõbrale",
     "ade": "sõbral",
-    "abl": "sõbralt"
+    "abl": "sõbralt",
+    "pln": "sõbrad",
+    "plp": "sõpru"
    },
    "explanation_ru": "Парадигма слова sõber. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -57,7 +61,9 @@
     "ela": "autost",
     "all": "autole",
     "ade": "autol",
-    "abl": "autolt"
+    "abl": "autolt",
+    "pln": "autod",
+    "plp": "autosid"
    },
    "explanation_ru": "Парадигма слова auto. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -77,7 +83,9 @@
     "ela": "õpilasest",
     "all": "õpilasele",
     "ade": "õpilasel",
-    "abl": "õpilaselt"
+    "abl": "õpilaselt",
+    "pln": "õpilased",
+    "plp": "õpilasi"
    },
    "explanation_ru": "Парадигма слова õpilane. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -97,7 +105,9 @@
     "ela": "õpetajast",
     "all": "õpetajale",
     "ade": "õpetajal",
-    "abl": "õpetajalt"
+    "abl": "õpetajalt",
+    "pln": "õpetajad",
+    "plp": "õpetajaid"
    },
    "explanation_ru": "Парадигма слова õpetaja. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -117,7 +127,9 @@
     "ela": "vennast",
     "all": "vennale",
     "ade": "vennal",
-    "abl": "vennalt"
+    "abl": "vennalt",
+    "pln": "vennad",
+    "plp": "vendi"
    },
    "explanation_ru": "Парадигма слова vend. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -137,7 +149,9 @@
     "ela": "õest",
     "all": "õele",
     "ade": "õel",
-    "abl": "õelt"
+    "abl": "õelt",
+    "pln": "õed",
+    "plp": "õdesid"
    },
    "explanation_ru": "Парадигма слова õde. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -157,7 +171,9 @@
     "ela": "tütrest",
     "all": "tütrele",
     "ade": "tütrel",
-    "abl": "tütrelt"
+    "abl": "tütrelt",
+    "pln": "tütred",
+    "plp": "tütreid"
    },
    "explanation_ru": "Парадигма слова tütar. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -177,7 +193,9 @@
     "ela": "aknast",
     "all": "aknale",
     "ade": "aknal",
-    "abl": "aknalt"
+    "abl": "aknalt",
+    "pln": "aknad",
+    "plp": "aknaid"
    },
    "explanation_ru": "Парадигма слова aken. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -197,7 +215,9 @@
     "ela": "toast",
     "all": "toale",
     "ade": "toal",
-    "abl": "toalt"
+    "abl": "toalt",
+    "pln": "toad",
+    "plp": "tube"
    },
    "explanation_ru": "Парадигма слова tuba. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -217,7 +237,9 @@
     "ela": "köögist",
     "all": "köögile",
     "ade": "köögil",
-    "abl": "köögilt"
+    "abl": "köögilt",
+    "pln": "köögid",
+    "plp": "kööke"
    },
    "explanation_ru": "Парадигма слова köök. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -237,7 +259,9 @@
     "ela": "poest",
     "all": "poele",
     "ade": "poel",
-    "abl": "poelt"
+    "abl": "poelt",
+    "pln": "poed",
+    "plp": "poode"
    },
    "explanation_ru": "Парадигма слова pood. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -257,7 +281,9 @@
     "ela": "linnast",
     "all": "linnale",
     "ade": "linnal",
-    "abl": "linnalt"
+    "abl": "linnalt",
+    "pln": "linnad",
+    "plp": "linnu"
    },
    "explanation_ru": "Парадигма слова linn. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -277,7 +303,9 @@
     "ela": "koolist",
     "all": "koolile",
     "ade": "koolil",
-    "abl": "koolilt"
+    "abl": "koolilt",
+    "pln": "koolid",
+    "plp": "koole"
    },
    "explanation_ru": "Парадигма слова kool. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -297,7 +325,9 @@
     "ela": "raamatukogust",
     "all": "raamatukogule",
     "ade": "raamatukogul",
-    "abl": "raamatukogult"
+    "abl": "raamatukogult",
+    "pln": "raamatukogud",
+    "plp": "raamatukogusid"
    },
    "explanation_ru": "Парадигма слова raamatukogu. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -317,7 +347,9 @@
     "ela": "arvutist",
     "all": "arvutile",
     "ade": "arvutil",
-    "abl": "arvutilt"
+    "abl": "arvutilt",
+    "pln": "arvutid",
+    "plp": "arvuteid"
    },
    "explanation_ru": "Парадигма слова arvuti. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -337,7 +369,9 @@
     "ela": "majast",
     "all": "majale",
     "ade": "majal",
-    "abl": "majalt"
+    "abl": "majalt",
+    "pln": "majad",
+    "plp": "maju"
    },
    "explanation_ru": "Парадигма слова maja. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -357,7 +391,9 @@
     "ela": "metsast",
     "all": "metsale",
     "ade": "metsal",
-    "abl": "metsalt"
+    "abl": "metsalt",
+    "pln": "metsad",
+    "plp": "metsi"
    },
    "explanation_ru": "Парадигма слова mets. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -377,7 +413,9 @@
     "ela": "järvest",
     "all": "järvele",
     "ade": "järvel",
-    "abl": "järvelt"
+    "abl": "järvelt",
+    "pln": "järved",
+    "plp": "järvi"
    },
    "explanation_ru": "Парадигма слова järv. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -397,7 +435,9 @@
     "ela": "koerast",
     "all": "koerale",
     "ade": "koeral",
-    "abl": "koeralt"
+    "abl": "koeralt",
+    "pln": "koerad",
+    "plp": "koeri"
    },
    "explanation_ru": "Парадигма слова koer. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -417,7 +457,9 @@
     "ela": "lillest",
     "all": "lillele",
     "ade": "lillel",
-    "abl": "lillelt"
+    "abl": "lillelt",
+    "pln": "lilled",
+    "plp": "lilli"
    },
    "explanation_ru": "Парадигма слова lill. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -437,7 +479,9 @@
     "ela": "emast",
     "all": "emale",
     "ade": "emal",
-    "abl": "emalt"
+    "abl": "emalt",
+    "pln": "emad",
+    "plp": "emasid"
    },
    "explanation_ru": "Парадигма слова ema. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -457,7 +501,9 @@
     "ela": "isast",
     "all": "isale",
     "ade": "isal",
-    "abl": "isalt"
+    "abl": "isalt",
+    "pln": "isad",
+    "plp": "isasid"
    },
    "explanation_ru": "Парадигма слова isa. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -477,7 +523,9 @@
     "ela": "telefonist",
     "all": "telefonile",
     "ade": "telefonil",
-    "abl": "telefonilt"
+    "abl": "telefonilt",
+    "pln": "telefonid",
+    "plp": "telefone"
    },
    "explanation_ru": "Парадигма слова telefon. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
   },
@@ -929,7 +977,9 @@
     "ela": "pliiatsist",
     "all": "pliiatsile",
     "ade": "pliiatsil",
-    "abl": "pliiatsilt"
+    "abl": "pliiatsilt",
+    "pln": "pliiatsid",
+    "plp": "pliiatseid"
    },
    "explanation_ru": "Парадигма слова pliiats. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -949,7 +999,9 @@
     "ela": "vihikust",
     "all": "vihikule",
     "ade": "vihikul",
-    "abl": "vihikult"
+    "abl": "vihikult",
+    "pln": "vihikud",
+    "plp": "vihikuid"
    },
    "explanation_ru": "Парадигма слова vihik. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -969,7 +1021,9 @@
     "ela": "õpikust",
     "all": "õpikule",
     "ade": "õpikul",
-    "abl": "õpikult"
+    "abl": "õpikult",
+    "pln": "õpikud",
+    "plp": "õpikuid"
    },
    "explanation_ru": "Парадигма слова õpik. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -989,7 +1043,9 @@
     "ela": "lapsest",
     "all": "lapsele",
     "ade": "lapsel",
-    "abl": "lapselt"
+    "abl": "lapselt",
+    "pln": "lapsed",
+    "plp": "lapsi"
    },
    "explanation_ru": "Парадигма слова laps. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1009,7 +1065,9 @@
     "ela": "naabrist",
     "all": "naabrile",
     "ade": "naabril",
-    "abl": "naabrilt"
+    "abl": "naabrilt",
+    "pln": "naabrid",
+    "plp": "naabreid"
    },
    "explanation_ru": "Парадигма слова naaber. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1029,7 +1087,9 @@
     "ela": "tänavast",
     "all": "tänavale",
     "ade": "tänaval",
-    "abl": "tänavalt"
+    "abl": "tänavalt",
+    "pln": "tänavad",
+    "plp": "tänavaid"
    },
    "explanation_ru": "Парадигма слова tänav. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1049,7 +1109,9 @@
     "ela": "piletist",
     "all": "piletile",
     "ade": "piletil",
-    "abl": "piletilt"
+    "abl": "piletilt",
+    "pln": "piletid",
+    "plp": "pileteid"
    },
    "explanation_ru": "Парадигма слова pilet. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1069,7 +1131,9 @@
     "ela": "lennukist",
     "all": "lennukile",
     "ade": "lennukil",
-    "abl": "lennukilt"
+    "abl": "lennukilt",
+    "pln": "lennukid",
+    "plp": "lennukeid"
    },
    "explanation_ru": "Парадигма слова lennuk. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1089,7 +1153,9 @@
     "ela": "peost",
     "all": "peole",
     "ade": "peol",
-    "abl": "peolt"
+    "abl": "peolt",
+    "pln": "peod",
+    "plp": "pidusid"
    },
    "explanation_ru": "Парадигма слова pidu. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1109,7 +1175,9 @@
     "ela": "hambast",
     "all": "hambale",
     "ade": "hambal",
-    "abl": "hambalt"
+    "abl": "hambalt",
+    "pln": "hambad",
+    "plp": "hambaid"
    },
    "explanation_ru": "Парадигма слова hammas. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1129,7 +1197,9 @@
     "ela": "käest",
     "all": "käele",
     "ade": "käel",
-    "abl": "käelt"
+    "abl": "käelt",
+    "pln": "käed",
+    "plp": "käsi"
    },
    "explanation_ru": "Парадигма слова käsi. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1149,7 +1219,9 @@
     "ela": "jalast",
     "all": "jalale",
     "ade": "jalal",
-    "abl": "jalalt"
+    "abl": "jalalt",
+    "pln": "jalad",
+    "plp": "jalgu"
    },
    "explanation_ru": "Парадигма слова jalg. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1169,7 +1241,9 @@
     "ela": "silmast",
     "all": "silmale",
     "ade": "silmal",
-    "abl": "silmalt"
+    "abl": "silmalt",
+    "pln": "silmad",
+    "plp": "silmi"
    },
    "explanation_ru": "Парадигма слова silm. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1189,7 +1263,9 @@
     "ela": "päevast",
     "all": "päevale",
     "ade": "päeval",
-    "abl": "päevalt"
+    "abl": "päevalt",
+    "pln": "päevad",
+    "plp": "päevi"
    },
    "explanation_ru": "Парадигма слова päev. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1209,7 +1285,9 @@
     "ela": "nimest",
     "all": "nimele",
     "ade": "nimel",
-    "abl": "nimelt"
+    "abl": "nimelt",
+    "pln": "nimed",
+    "plp": "nimesid"
    },
    "explanation_ru": "Парадигма слова nimi. Совпадающие формы в тренажёре не спрашиваются."
   },
@@ -1229,7 +1307,9 @@
     "ela": "aastast",
     "all": "aastale",
     "ade": "aastal",
-    "abl": "aastalt"
+    "abl": "aastalt",
+    "pln": "aastad",
+    "plp": "aastaid"
    },
    "explanation_ru": "Парадигма слова aasta. Совпадающие формы в тренажёре не спрашиваются."
   },

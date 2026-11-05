@@ -75,6 +75,8 @@ export const CASE_INFO = {
   all: ['alaleütlev', 'на что? кому?'],
   ade: ['alalütlev', 'где? на чём?'],
   abl: ['alaltütlev', 'откуда? от кого?'],
+  pln: ['nimetav mitmus', 'мн. ч., именительный (kes? mis? — несколько)'],
+  plp: ['osastav mitmus', 'мн. ч., партитив (keda? mida? — несколько)'],
 };
 export const VERB_INFO = {
   da: ['da-инфинитив', 'после tahan, saan, oskan, võin (но pean + ma-форма)'],

@@ -8,9 +8,9 @@ export default {
   title: 'Грамматика',
   async mount(root, args) {
     const [data, topicsCfg] = await Promise.all([content('grammar'), config('topics')]);
-    const topics = [...topicsCfg.grammar, ...topicsCfg.themes.filter((t) => data.items.some((q) => q.topic === t.id))];
+    const topics = topicsCfg.grammar;
     const filter = args[0] || 'all';
-    const all = data.items;
+    const all = data.items.filter((q) => q.kind !== 'vocab'); // словарные задания — в разделе «Словарь»
     let size = '10', level = 'B1-B2', type = 'all', onlyNew = false;
 
     const countFor = (id) => all.filter((q) => q.topic === id).length;

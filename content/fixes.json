@@ -1,0 +1,381 @@
+{
+ "_comment": "Задания «Исправь ошибку»: wrong_et — предложение с одной ошибкой, answer_et — исправленное, also_ok — другие допустимые исправления.",
+ "items": [
+  {
+   "id": "fx-01",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma lähen koolis.",
+   "answer_et": "Ma lähen kooli.",
+   "also_ok": [],
+   "explanation_ru": "«Куда?» → иллатив: kooli (koolis — «где?»)."
+  },
+  {
+   "id": "fx-02",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Mul on kolm kassid.",
+   "answer_et": "Mul on kolm kassi.",
+   "also_ok": [],
+   "explanation_ru": "После числительного — партитив ед. ч.: kassi."
+  },
+  {
+   "id": "fx-03",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma ei lähen kooli.",
+   "answer_et": "Ma ei lähe kooli.",
+   "also_ok": [],
+   "explanation_ru": "После ei — основа без окончания: lähe."
+  },
+  {
+   "id": "fx-04",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ta elab Tallinn.",
+   "answer_et": "Ta elab Tallinnas.",
+   "also_ok": [],
+   "explanation_ru": "«Где?» → инессив: Tallinnas."
+  },
+  {
+   "id": "fx-05",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma pean õppida.",
+   "answer_et": "Ma pean õppima.",
+   "also_ok": [],
+   "explanation_ru": "После pean — ma-инфинитив: õppima."
+  },
+  {
+   "id": "fx-06",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma tahan õppima eesti keelt.",
+   "answer_et": "Ma tahan õppida eesti keelt.",
+   "also_ok": [
+    "Ma tahan eesti keelt õppida."
+   ],
+   "explanation_ru": "После tahan — da-инфинитив: õppida."
+  },
+  {
+   "id": "fx-07",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Eile ma lähen kinno.",
+   "answer_et": "Eile ma läksin kinno.",
+   "also_ok": [
+    "Eile läksin ma kinno."
+   ],
+   "explanation_ru": "Eile → прошедшее время: läksin."
+  },
+  {
+   "id": "fx-08",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Raamat on laud peal.",
+   "answer_et": "Raamat on laua peal.",
+   "also_ok": [],
+   "explanation_ru": "Послелог peal требует родительного: laua peal."
+  },
+  {
+   "id": "fx-09",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma ootan buss.",
+   "answer_et": "Ma ootan bussi.",
+   "also_ok": [],
+   "explanation_ru": "Ootama + партитив: bussi."
+  },
+  {
+   "id": "fx-10",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma ostsin uus telefon.",
+   "answer_et": "Ma ostsin uue telefoni.",
+   "also_ok": [],
+   "explanation_ru": "Объект в родительном; прилагательное согласуется: uue telefoni."
+  },
+  {
+   "id": "fx-11",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Mul on kaks vennad.",
+   "answer_et": "Mul on kaks venda.",
+   "also_ok": [],
+   "explanation_ru": "После kaks — партитив ед. ч.: venda."
+  },
+  {
+   "id": "fx-12",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma ei tuli eile kooli.",
+   "answer_et": "Ma ei tulnud eile kooli.",
+   "also_ok": [],
+   "explanation_ru": "Отрицание прошедшего: ei + -nud."
+  },
+  {
+   "id": "fx-13",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Meie klassis on kakskümmend õpilased.",
+   "answer_et": "Meie klassis on kakskümmend õpilast.",
+   "also_ok": [],
+   "explanation_ru": "После числительного — партитив ед. ч.: õpilast."
+  },
+  {
+   "id": "fx-14",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ta on minust vana.",
+   "answer_et": "Ta on minust vanem.",
+   "also_ok": [],
+   "explanation_ru": "Для сравнения нужна сравнительная степень: vanem."
+  },
+  {
+   "id": "fx-15",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Mulle meeldib ujuma.",
+   "answer_et": "Mulle meeldib ujuda.",
+   "also_ok": [],
+   "explanation_ru": "После meeldib — da-инфинитив: ujuda."
+  },
+  {
+   "id": "fx-16",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma elan väike majas.",
+   "answer_et": "Ma elan väikeses majas.",
+   "also_ok": [],
+   "explanation_ru": "Прилагательное согласуется с существительным: väikeses majas."
+  },
+  {
+   "id": "fx-17",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma sõidan kooli buss.",
+   "answer_et": "Ma sõidan kooli bussiga.",
+   "also_ok": [],
+   "explanation_ru": "Транспорт — комитатив: bussiga."
+  },
+  {
+   "id": "fx-18",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Mina õpin ülikool.",
+   "answer_et": "Mina õpin ülikoolis.",
+   "also_ok": [],
+   "explanation_ru": "«Где?» → инессив: ülikoolis."
+  },
+  {
+   "id": "fx-19",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma ootan sind kooli ette.",
+   "answer_et": "Ma ootan sind kooli ees.",
+   "also_ok": [],
+   "explanation_ru": "«Где?» → ees (ette — «куда»)."
+  },
+  {
+   "id": "fx-20",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma lähen arsti juures.",
+   "answer_et": "Ma lähen arsti juurde.",
+   "also_ok": [],
+   "explanation_ru": "«К кому?» → juurde."
+  },
+  {
+   "id": "fx-21",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma olen arsti juurde.",
+   "answer_et": "Ma olen arsti juures.",
+   "also_ok": [],
+   "explanation_ru": "«У кого?» → juures."
+  },
+  {
+   "id": "fx-22",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ta kirjutas mind kirja.",
+   "answer_et": "Ta kirjutas mulle kirja.",
+   "also_ok": [],
+   "explanation_ru": "«Кому?» → аллатив: mulle."
+  },
+  {
+   "id": "fx-23",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Palun annad mulle vett.",
+   "answer_et": "Palun anna mulle vett.",
+   "also_ok": [],
+   "explanation_ru": "Просьба — повелительное: anna."
+  },
+  {
+   "id": "fx-24",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Mul pole aeg.",
+   "answer_et": "Mul pole aega.",
+   "also_ok": [],
+   "explanation_ru": "После pole — партитив: aega."
+  },
+  {
+   "id": "fx-25",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Eile ma ei olnud kodu.",
+   "answer_et": "Eile ma ei olnud kodus.",
+   "also_ok": [],
+   "explanation_ru": "«Где?» → инессив: kodus."
+  },
+  {
+   "id": "fx-26",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma armastan kala sööma.",
+   "answer_et": "Ma armastan kala süüa.",
+   "also_ok": [],
+   "explanation_ru": "После armastan — da-инфинитив: süüa."
+  },
+  {
+   "id": "fx-27",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ta tuleb homme kooli ei.",
+   "answer_et": "Ta ei tule homme kooli.",
+   "also_ok": [],
+   "explanation_ru": "Отрицание: ei стоит перед глаголом, глагол — без окончания."
+  },
+  {
+   "id": "fx-28",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma tean et ta tuleb.",
+   "answer_et": "Ma tean, et ta tuleb.",
+   "also_ok": [],
+   "explanation_ru": "Запятая перед et."
+  },
+  {
+   "id": "fx-29",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma jään koju sest ma olen haige.",
+   "answer_et": "Ma jään koju, sest ma olen haige.",
+   "also_ok": [],
+   "explanation_ru": "Запятая перед sest."
+  },
+  {
+   "id": "fx-30",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Täna on Esmaspäev.",
+   "answer_et": "Täna on esmaspäev.",
+   "also_ok": [],
+   "explanation_ru": "Дни недели пишутся со строчной буквы."
+  },
+  {
+   "id": "fx-31",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma sündisin Juunis.",
+   "answer_et": "Ma sündisin juunis.",
+   "also_ok": [],
+   "explanation_ru": "Месяцы пишутся со строчной буквы."
+  },
+  {
+   "id": "fx-32",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma õpin Eesti keelt.",
+   "answer_et": "Ma õpin eesti keelt.",
+   "also_ok": [],
+   "explanation_ru": "Название языка — строчными: eesti keel."
+  },
+  {
+   "id": "fx-33",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ta joob kohv.",
+   "answer_et": "Ta joob kohvi.",
+   "also_ok": [],
+   "explanation_ru": "Неопределённое количество — партитив: kohvi."
+  },
+  {
+   "id": "fx-34",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma sõin kala ja salat.",
+   "answer_et": "Ma sõin kala ja salatit.",
+   "also_ok": [],
+   "explanation_ru": "Дополнение в партитиве: salatit."
+  },
+  {
+   "id": "fx-35",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma lähen homme poes.",
+   "answer_et": "Ma lähen homme poodi.",
+   "also_ok": [],
+   "explanation_ru": "«Куда?» → иллатив: poodi."
+  },
+  {
+   "id": "fx-36",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma tulen poes.",
+   "answer_et": "Ma tulen poest.",
+   "also_ok": [],
+   "explanation_ru": "«Откуда?» → элатив: poest."
+  },
+  {
+   "id": "fx-37",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "wrong_et": "Ma lugesin eile raamat.",
+   "answer_et": "Ma lugesin eile raamatut.",
+   "also_ok": [
+    "Ma lugesin eile raamatu."
+   ],
+   "explanation_ru": "Объект — партитив (raamatut) или родительный (raamatu, если прочитал до конца)."
+  }
+ ]
+}

@@ -4,6 +4,7 @@ import { confirmDialog } from '../dialog.js';
 import { seriesLinks } from '../series.js';
 import { charPad, timerWidget, checklistWidget, filteredList, nextLink, splitView } from '../widgets.js';
 
+const KINDS = { email: 'Письмо / e-mail', message: 'Короткое сообщение', formal: 'Официальное письмо', story: 'Рассказ', description: 'Описание', opinion: 'Рассуждение' };
 const GROUPS = { greeting: 'Приветствие', closing: 'Завершение', add: 'Добавление', contrast: 'Противопоставление', cause: 'Причина', result: 'Следствие', example: 'Пример', order: 'Порядок', opinion: 'Мнение', condition: 'Условие' };
 
 /** Редактор с счётчиком слов; используется и в пробном экзамене. */
@@ -36,7 +37,7 @@ export default {
         h('p', { class: 'notice warn' }, 'Автоматической оценки нет — и не будет: тренажёр не умеет надёжно оценивать тексты. Проверьте себя по чек-листу или покажите текст учителю.'),
         filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => {
           const saved = store.getWriting(t.id);
-          return h('a', { class: 'card link-card', href: `#/writing/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, t.kind === 'email' ? 'Письмо / e-mail' : 'Рассуждение'), saved.text && h('p', { class: 'muted small-text' }, `Есть черновик: ${countWords(saved.text)} слов`));
+          return h('a', { class: 'card link-card', href: `#/writing/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, KINDS[t.kind] || 'Письмо'), saved.text && h('p', { class: 'muted small-text' }, `Есть черновик: ${countWords(saved.text)} слов`));
         }))),
         h('h2', null, 'Связки и полезные фразы'), connectors(data.connectors));
       return;
@@ -49,7 +50,7 @@ export default {
     const tw = timerWidget({ seconds: fmt.writing_practice_minutes * 60, label: 'Таймер' });
     const cl = checklistWidget(data.checklist, saved.checks, (checks) => store.setWriting(task.id, { checks }));
     addChildren(root, 
-      h('p', null, h('a', { href: '#/writing' }, '← Все задания'), '  ', nextLink(data.items, task.id, 'writing', 'Следующее задание →')),
+      h('p', null, h('a', { href: '#/writing' }, '← Все задания'), '  ', nextLink(data.items, task.id, 'writing', 'Следующее задание →'), '  ', h('button', { class: 'btn small', type: 'button', onclick: () => window.print() }, 'Печать')),
       h('h1', null, 'Письмо: ' + task.title_ru),
       series,
       splitView([h('div', { class: 'card' },
@@ -67,7 +68,7 @@ export default {
         h('div', { class: 'row' }, h('button', { class: 'btn ghost', type: 'button', onclick: async () => { if (await confirmDialog('Очистить текст?', { ok: 'Очистить' })) { ed.ta.value = ''; ed.ta.dispatchEvent(new Event('input')); } } }, 'Очистить текст'))),
       h('h2', null, 'Самопроверка'),
       h('p', { class: 'muted' }, 'Отметьте всё, что выполнено. Это не оценка, а подсказка, что доработать.'),
-      cl.el], { leftTitle: 'задание' }));
+      cl.el, task.sample_et && h('details', { class: 'sample card' }, h('summary', null, 'Образец ответа (откройте после своей попытки)'), h('p', { lang: 'et', class: 'preline' }, task.sample_et), h('p', { class: 'muted' }, task.sample_notes_ru || ''), h('p', { class: 'muted small-text' }, 'Это один из возможных вариантов, не единственно верный.'))], { leftTitle: 'задание' }));
     return () => tw.timer.stop();
   },
 };

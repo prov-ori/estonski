@@ -1,0 +1,756 @@
+{
+ "_comment": "Мини-уроки: объяснение, примеры и типичные ошибки русскоговорящих. mistakes: wrong — неверная фраза, right — верная.",
+ "items": [
+  {
+   "id": "ls-01",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Где? Куда? Откуда? Падежи места",
+   "intro_ru": "В русском для «в школе / в школу / из школы» меняются предлоги, а в эстонском — окончание слова. Это самая частая ошибка русскоговорящих.",
+   "sections": [
+    {
+     "h": "Три падежа «внутри»",
+     "p": [
+      "Окончание показывает направление: -s — где? (inessiiv), краткая или -sse форма — куда? (illatiiv), -st — откуда? (elatiiv)."
+     ],
+     "examples": [
+      {
+       "et": "koolis",
+       "ru": "в школе"
+      },
+      {
+       "et": "kooli",
+       "ru": "в школу"
+      },
+      {
+       "et": "koolist",
+       "ru": "из школы"
+      },
+      {
+       "et": "Tallinnas",
+       "ru": "в Таллине"
+      },
+      {
+       "et": "Tallinna",
+       "ru": "в Таллин"
+      },
+      {
+       "et": "Tallinnast",
+       "ru": "из Таллина"
+      }
+     ]
+    },
+    {
+     "h": "Три падежа «на / у»",
+     "p": [
+      "Окончания -l (где), -le (куда), -lt (откуда) используются для поверхностей, мероприятий и людей."
+     ],
+     "examples": [
+      {
+       "et": "laual",
+       "ru": "на столе"
+      },
+      {
+       "et": "lauale",
+       "ru": "на стол"
+      },
+      {
+       "et": "laualt",
+       "ru": "со стола"
+      },
+      {
+       "et": "ekskursioonile",
+       "ru": "на экскурсию"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma lähen koolis.",
+     "right": "Ma lähen kooli.",
+     "why": "После lähen нужен вопрос «куда?», а не «где?»."
+    },
+    {
+     "wrong": "Ma elan Tallinna.",
+     "right": "Ma elan Tallinnas.",
+     "why": "С elan нужен вопрос «где?»."
+    },
+    {
+     "wrong": "Ma tulen poes.",
+     "right": "Ma tulen poest.",
+     "why": "С tulen нужен вопрос «откуда?»."
+    }
+   ],
+   "practice": "grammar/cases",
+   "explanation_ru": "В русском для «в школе / в школу / из школы» меняются предлоги, а в эстонском — окончание слова. Это самая частая ошибка русскоговорящих."
+  },
+  {
+   "id": "ls-02",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Партитив и числительные",
+   "intro_ru": "Партитив — «неполный» падеж. Он нужен после числительных, при отрицании и после многих глаголов.",
+   "sections": [
+    {
+     "h": "После числительного",
+     "p": [
+      "После числительного больше единицы существительное стоит в партитиве ЕДИНСТВЕННОГО числа. Во множественное число его ставить не нужно."
+     ],
+     "examples": [
+      {
+       "et": "kaks venda",
+       "ru": "два брата"
+      },
+      {
+       "et": "kolm kassi",
+       "ru": "три кошки"
+      },
+      {
+       "et": "kakskümmend õpilast",
+       "ru": "двадцать учеников"
+      }
+     ]
+    },
+    {
+     "h": "Отрицание и глаголы",
+     "p": [
+      "В отрицательных предложениях объект стоит в партитиве. Так же — после глаголов ootama, armastama, tänama и других."
+     ],
+     "examples": [
+      {
+       "et": "Ma ei näe sõpra.",
+       "ru": "Я не вижу друга."
+      },
+      {
+       "et": "Ma ootan bussi.",
+       "ru": "Я жду автобус."
+      },
+      {
+       "et": "Mul ei ole aega.",
+       "ru": "У меня нет времени."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Mul on kaks vennad.",
+     "right": "Mul on kaks venda.",
+     "why": "После kaks — партитив ед. ч., а не мн. ч."
+    },
+    {
+     "wrong": "Mul ei ole aeg.",
+     "right": "Mul ei ole aega.",
+     "why": "После ei ole нужен партитив."
+    },
+    {
+     "wrong": "Ma ootan buss.",
+     "right": "Ma ootan bussi.",
+     "why": "Ootama требует партитива."
+    }
+   ],
+   "practice": "grammar/cases",
+   "explanation_ru": "Партитив — «неполный» падеж. Он нужен после числительных, при отрицании и после многих глаголов."
+  },
+  {
+   "id": "ls-03",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Ma- и da-инфинитив",
+   "intro_ru": "В эстонском две формы начальной формы глагола. Какая нужна — зависит от глагола, который стоит перед ним.",
+   "sections": [
+    {
+     "h": "Da-инфинитив",
+     "p": [
+      "После tahan, saan, oskan, võin, armastan, meeldib, on vaja используется da-инфинитив (õppida, minna, ujuda)."
+     ],
+     "examples": [
+      {
+       "et": "Ma tahan õppida.",
+       "ru": "Я хочу учиться."
+      },
+      {
+       "et": "Kas sa oskad ujuda?",
+       "ru": "Ты умеешь плавать?"
+      },
+      {
+       "et": "Mul on vaja minna.",
+       "ru": "Мне нужно идти."
+      }
+     ]
+    },
+    {
+     "h": "Ma-инфинитив",
+     "p": [
+      "После pean (надо), hakkan (начну), а также для цели после глаголов движения (lähen, tulen) используется ma-инфинитив."
+     ],
+     "examples": [
+      {
+       "et": "Ma pean õppima.",
+       "ru": "Мне надо учиться."
+      },
+      {
+       "et": "Ma hakkan õppima.",
+       "ru": "Я начну учиться."
+      },
+      {
+       "et": "Ma lähen vaatama filmi.",
+       "ru": "Я иду смотреть фильм."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma pean õppida.",
+     "right": "Ma pean õppima.",
+     "why": "После pean — ma-инфинитив."
+    },
+    {
+     "wrong": "Ma tahan õppima.",
+     "right": "Ma tahan õppida.",
+     "why": "После tahan — da-инфинитив."
+    },
+    {
+     "wrong": "Mulle meeldib ujuma.",
+     "right": "Mulle meeldib ujuda.",
+     "why": "После meeldib — da-инфинитив."
+    }
+   ],
+   "practice": "grammar/verbs",
+   "explanation_ru": "В эстонском две формы начальной формы глагола. Какая нужна — зависит от глагола, который стоит перед ним."
+  },
+  {
+   "id": "ls-04",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Отрицание",
+   "intro_ru": "Эстонское отрицание проще русского: одна частица ei и форма без личного окончания.",
+   "sections": [
+    {
+     "h": "Настоящее время",
+     "p": [
+      "Ei + основа глагола (форма не меняется по лицам): ma ei lähe, sa ei lähe, nad ei lähe."
+     ],
+     "examples": [
+      {
+       "et": "Ma ei lähe kooli.",
+       "ru": "Я не иду в школу."
+      },
+      {
+       "et": "Nad ei ela Tartus.",
+       "ru": "Они не живут в Тарту."
+      }
+     ]
+    },
+    {
+     "h": "Прошедшее время",
+     "p": [
+      "Ei + причастие на -nud: ma ei tulnud, nad ei läinud. Форма личных окончаний не имеет."
+     ],
+     "examples": [
+      {
+       "et": "Ma ei tulnud eile.",
+       "ru": "Я вчера не пришёл."
+      },
+      {
+       "et": "Me ei näinud filmi.",
+       "ru": "Мы не видели фильм."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma ei lähen kooli.",
+     "right": "Ma ei lähe kooli.",
+     "why": "После ei — основа без окончания."
+    },
+    {
+     "wrong": "Ma ei tuli eile.",
+     "right": "Ma ei tulnud eile.",
+     "why": "Для прошедшего нужно причастие -nud."
+    },
+    {
+     "wrong": "Ta ei oli kodus.",
+     "right": "Ta ei olnud kodus.",
+     "why": "Ei oli — ошибка; нужно ei olnud."
+    }
+   ],
+   "practice": "grammar/transform",
+   "explanation_ru": "Эстонское отрицание проще русского: одна частица ei и форма без личного окончания."
+  },
+  {
+   "id": "ls-05",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Чередование ступеней",
+   "intro_ru": "У многих слов основа меняется между сильной и слабой ступенью. Это нужно выучить вместе со словом.",
+   "sections": [
+    {
+     "h": "Существительные",
+     "p": [
+      "Именительный — сильная ступень, родительный — слабая: kapp → kapi, kott → koti, pood → poe, tuba → toa."
+     ],
+     "examples": [
+      {
+       "et": "kapp – kapi",
+       "ru": "шкаф"
+      },
+      {
+       "et": "pood – poe",
+       "ru": "магазин"
+      },
+      {
+       "et": "tuba – toa",
+       "ru": "комната"
+      }
+     ]
+    },
+    {
+     "h": "Глаголы",
+     "p": [
+      "В личных формах настоящего времени глагол часто переходит в слабую ступень: lugema → loen, andma → annan, sõitma → sõidan."
+     ],
+     "examples": [
+      {
+       "et": "Ma loen raamatut.",
+       "ru": "Я читаю книгу."
+      },
+      {
+       "et": "Ma annan raamatu.",
+       "ru": "Я дам книгу."
+      },
+      {
+       "et": "Ma sõidan bussiga.",
+       "ru": "Я еду на автобусе."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma andan raamatu.",
+     "right": "Ma annan raamatu.",
+     "why": "Правильная форма — annan (nd → nn)."
+    },
+    {
+     "wrong": "Ma lugen raamatut.",
+     "right": "Ma loen raamatut.",
+     "why": "Правильная форма — loen."
+    }
+   ],
+   "practice": "grammar/gradation",
+   "explanation_ru": "У многих слов основа меняется между сильной и слабой ступенью. Это нужно выучить вместе со словом."
+  },
+  {
+   "id": "ls-06",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Числительные и время",
+   "intro_ru": "Время по-эстонски называют по «следующему» часу, поэтому половина восьмого — pool kaheksa.",
+   "sections": [
+    {
+     "h": "Время",
+     "p": [
+      "Pool + следующий час (7:30 = pool kaheksa). Veerand + следующий час (7:15 = veerand kaheksa). Kolmveerand + следующий час (7:45 = kolmveerand kaheksa)."
+     ],
+     "examples": [
+      {
+       "et": "pool kaheksa",
+       "ru": "7:30"
+      },
+      {
+       "et": "veerand kaheksa",
+       "ru": "7:15"
+      },
+      {
+       "et": "kolmveerand kaheksa",
+       "ru": "7:45"
+      }
+     ]
+    },
+    {
+     "h": "Даты",
+     "p": [
+      "Даты называют порядковым числительным: esimene, teine, kolmas, neljas, viies… Месяц пишется со строчной буквы."
+     ],
+     "examples": [
+      {
+       "et": "kolmas september",
+       "ru": "3 сентября"
+      },
+      {
+       "et": "viies märts",
+       "ru": "5 марта"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Kell on pool seitse, ehk 7.30.",
+     "right": "Kell on pool kaheksa, ehk 7.30.",
+     "why": "7:30 — pool kaheksa, а не pool seitse."
+    },
+    {
+     "wrong": "Täna on kolm september.",
+     "right": "Täna on kolmas september.",
+     "why": "Дата требует порядкового числительного."
+    }
+   ],
+   "practice": "drills/numbers",
+   "explanation_ru": "Время по-эстонски называют по «следующему» часу, поэтому половина восьмого — pool kaheksa."
+  },
+  {
+   "id": "ls-07",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Послелоги: где — куда — откуда",
+   "intro_ru": "Многие эстонские слова места образуют тройки. Они стоят после слова в родительном падеже.",
+   "sections": [
+    {
+     "h": "Тройки",
+     "p": [
+      "где — куда — откуда: ees — ette — eest, peal — peale — pealt, all — alla — alt, juures — juurde — juurest, sees — sisse — seest."
+     ],
+     "examples": [
+      {
+       "et": "kooli ees",
+       "ru": "перед школой"
+      },
+      {
+       "et": "kooli ette",
+       "ru": "к школе (перед)"
+      },
+      {
+       "et": "laua all",
+       "ru": "под столом"
+      },
+      {
+       "et": "laua alla",
+       "ru": "под стол"
+      },
+      {
+       "et": "arsti juurde",
+       "ru": "к врачу"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Raamat on laud peal.",
+     "right": "Raamat on laua peal.",
+     "why": "Послелог требует родительного падежа."
+    },
+    {
+     "wrong": "Ma lähen arsti juures.",
+     "right": "Ma lähen arsti juurde.",
+     "why": "Движение — juurde, а не juures."
+    }
+   ],
+   "practice": "grammar/prepositions",
+   "explanation_ru": "Многие эстонские слова места образуют тройки. Они стоят после слова в родительном падеже."
+  },
+  {
+   "id": "ls-08",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Множественное число",
+   "intro_ru": "Именительный мн. ч. образуется с -d; партитив мн. ч. учат вместе со словом.",
+   "sections": [
+    {
+     "h": "Именительный и партитив",
+     "p": [
+      "Именительный мн. ч.: raamat → raamatud, laps → lapsed, tuba → toad. Партитив мн. ч.: raamatuid, lapsi, tube."
+     ],
+     "examples": [
+      {
+       "et": "raamatud",
+       "ru": "книги"
+      },
+      {
+       "et": "lapsed",
+       "ru": "дети"
+      },
+      {
+       "et": "toad",
+       "ru": "комнаты"
+      },
+      {
+       "et": "lapsi",
+       "ru": "детей"
+      }
+     ]
+    },
+    {
+     "h": "С числительными",
+     "p": [
+      "После числительных мн. ч. не используется: kolm raamatut, а не kolm raamatud."
+     ],
+     "examples": [
+      {
+       "et": "kolm raamatut",
+       "ru": "три книги"
+      },
+      {
+       "et": "viis last",
+       "ru": "пять детей"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Mul on kolm raamatud.",
+     "right": "Mul on kolm raamatut.",
+     "why": "После числительного — ед. ч. партитива."
+    }
+   ],
+   "practice": "drills/forms",
+   "explanation_ru": "Именительный мн. ч. образуется с -d; партитив мн. ч. учат вместе со словом."
+  },
+  {
+   "id": "ls-09",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Вопросы и придаточные",
+   "intro_ru": "В вопросах без вопросительного слова используется kas; в придаточных порядок слов прямой, запятая обязательна.",
+   "sections": [
+    {
+     "h": "Вопрос с kas",
+     "p": [
+      "Kas + прямой порядок слов: Kas sa tuled? Ответ — jah / ei."
+     ],
+     "examples": [
+      {
+       "et": "Kas sa tuled kaasa?",
+       "ru": "Ты пойдёшь с нами?"
+      },
+      {
+       "et": "Kas sul on aega?",
+       "ru": "У тебя есть время?"
+      }
+     ]
+    },
+    {
+     "h": "Придаточные",
+     "p": [
+      "Запятая стоит перед et, sest, aga, kui, kuigi: Ma tean, et ta tuleb. Ma jään koju, sest ma olen haige."
+     ],
+     "examples": [
+      {
+       "et": "Ma tean, et ta tuleb.",
+       "ru": "Я знаю, что он придёт."
+      },
+      {
+       "et": "Kui sajab, jään koju.",
+       "ru": "Если пойдёт дождь, я останусь дома."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma tean et ta tuleb.",
+     "right": "Ma tean, et ta tuleb.",
+     "why": "Запятая перед et обязательна."
+    },
+    {
+     "wrong": "Sa tuled kaasa?",
+     "right": "Kas sa tuled kaasa?",
+     "why": "Вопрос лучше строить с kas."
+    }
+   ],
+   "practice": "grammar/conjunctions",
+   "explanation_ru": "В вопросах без вопросительного слова используется kas; в придаточных порядок слов прямой, запятая обязательна."
+  },
+  {
+   "id": "ls-10",
+   "topic": "adjectives",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Прилагательные",
+   "intro_ru": "Прилагательное согласуется с существительным в падеже и числе. Степени сравнения образуются суффиксами.",
+   "sections": [
+    {
+     "h": "Согласование",
+     "p": [
+      "suur maja → suures majas; väike koer → väikese koera."
+     ],
+     "examples": [
+      {
+       "et": "suures majas",
+       "ru": "в большом доме"
+      },
+      {
+       "et": "uue telefoni",
+       "ru": "нового телефона"
+      }
+     ]
+    },
+    {
+     "h": "Степени сравнения",
+     "p": [
+      "Сравнительная -m (suurem), превосходная -im (suurim). Hea — parem — parim. Сравнение: minust vanem."
+     ],
+     "examples": [
+      {
+       "et": "Ta on minust vanem.",
+       "ru": "Он старше меня."
+      },
+      {
+       "et": "parim õpilane",
+       "ru": "лучший ученик"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma elan väike majas.",
+     "right": "Ma elan väikeses majas.",
+     "why": "Прилагательное согласуется с существительным."
+    },
+    {
+     "wrong": "Ta on minust vana.",
+     "right": "Ta on minust vanem.",
+     "why": "Нужна сравнительная степень."
+    }
+   ],
+   "practice": "grammar/adjectives",
+   "explanation_ru": "Прилагательное согласуется с существительным в падеже и числе. Степени сравнения образуются суффиксами."
+  },
+  {
+   "id": "ls-11",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Орфография и произношение",
+   "intro_ru": "Эстонский пишется так, как слышится, но буквы õ, ä, ö, ü и двойные согласные важны.",
+   "sections": [
+    {
+     "h": "Буквы",
+     "p": [
+      "Õ, ä, ö, ü — отдельные буквы, замена на o, a, u меняет слово: kõik — «все». Ударение почти всегда на первом слоге. Артиклей и грамматического рода нет."
+     ],
+     "examples": [
+      {
+       "et": "kõik",
+       "ru": "все"
+      },
+      {
+       "et": "tüdruk",
+       "ru": "девочка"
+      },
+      {
+       "et": "päev",
+       "ru": "день"
+      }
+     ]
+    },
+    {
+     "h": "Заглавные буквы",
+     "p": [
+      "Дни недели, месяцы и названия языков — со строчной: esmaspäev, juuni, eesti keel. Имена, города и страны — с заглавной."
+     ],
+     "examples": [
+      {
+       "et": "Täna on esmaspäev.",
+       "ru": "Сегодня понедельник."
+      },
+      {
+       "et": "Tallinn on Eesti pealinn.",
+       "ru": "Таллин — столица Эстонии."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Täna on Esmaspäev.",
+     "right": "Täna on esmaspäev.",
+     "why": "Дни недели — со строчной."
+    },
+    {
+     "wrong": "Ma õpin Eesti keelt.",
+     "right": "Ma õpin eesti keelt.",
+     "why": "Название языка — со строчной."
+    }
+   ],
+   "practice": "grammar/spelling",
+   "explanation_ru": "Эстонский пишется так, как слышится, но буквы õ, ä, ö, ü и двойные согласные важны."
+  },
+  {
+   "id": "ls-12",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "«У меня есть» и владение",
+   "intro_ru": "В русском «у меня есть», в эстонском — «на мне (есть)»: Mul on. Это естественный способ сказать «иметь».",
+   "sections": [
+    {
+     "h": "Mul on",
+     "p": [
+      "Mul on = у меня есть; mul ei ole = у меня нет (после ei ole — партитив); mul pole — то же самое короче."
+     ],
+     "examples": [
+      {
+       "et": "Mul on kaks venda.",
+       "ru": "У меня два брата."
+      },
+      {
+       "et": "Mul ei ole aega.",
+       "ru": "У меня нет времени."
+      },
+      {
+       "et": "Sul on raamat.",
+       "ru": "У тебя есть книга."
+      }
+     ]
+    },
+    {
+     "h": "Нужно и надо",
+     "p": [
+      "Mul on vaja + партитив/инфинитив: Mul on vaja raamatut. Mul on vaja minna."
+     ],
+     "examples": [
+      {
+       "et": "Mul on vaja raamatut.",
+       "ru": "Мне нужна книга."
+      },
+      {
+       "et": "Mul on vaja minna.",
+       "ru": "Мне нужно идти."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ma olen kaks venda.",
+     "right": "Mul on kaks venda.",
+     "why": "Для «у меня есть» нужна конструкция mul on."
+    },
+    {
+     "wrong": "Mul ei ole aeg.",
+     "right": "Mul ei ole aega.",
+     "why": "После ei ole — партитив."
+    }
+   ],
+   "practice": "grammar/cases",
+   "explanation_ru": "В русском «у меня есть», в эстонском — «на мне (есть)»: Mul on. Это естественный способ сказать «иметь»."
+  }
+ ]
+}

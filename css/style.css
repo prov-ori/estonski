@@ -268,3 +268,12 @@ html[data-contrast="high"] .btn, html[data-contrast="high"] .opt, html[data-cont
 .pref { min-width: 0; max-width: 100%; }
 .pref .select { min-width: 0; max-width: 100%; }
 @media (max-width: 520px) { .pref { width: 100%; justify-content: space-between; } .pref .select { width: 55%; } }
+
+/* план, уроки */
+.plan { list-style: none; padding: 0; display: grid; gap: 12px; }
+.plan-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; }
+.plan-row progress { grid-column: 1 / -1; }
+.examples { padding-left: 18px; }
+.examples li { margin: 6px 0; }
+td.wrong { color: var(--bad); } td.right { color: var(--ok); font-weight: 600; }
+@media print { .pane-left { position: static !important; max-height: none !important; overflow: visible !important; } .split { display: block; } .plan progress { display: none; } }

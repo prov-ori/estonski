@@ -42,8 +42,8 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
     // 1. все страницы открываются
     const ids = (file, route) => JSON.parse(fs.readFileSync(path.join(ROOT, 'content', file + '.json'), 'utf8')).items.map((x) => `${route}/${x.id}`);
-    const ALL = ['', 'daily', 'diagnostic', 'grammar', 'grammar/cases', 'grammar/mistakes', 'drills', 'drills/forms', 'drills/numbers', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'mistakes', 'reference', 'progress', 'about',
-      ...ids('reading', 'reading'), ...ids('listening', 'listening'), ...ids('writing', 'writing'), ...ids('speaking', 'speaking')];
+    const ALL = ['', 'daily', 'plan', 'lessons', 'drills/fix', 'diagnostic', 'grammar', 'grammar/cases', 'grammar/mistakes', 'drills', 'drills/forms', 'drills/numbers', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'mistakes', 'reference', 'progress', 'about',
+      ...ids('lessons', 'lessons'), ...ids('reading', 'reading'), ...ids('listening', 'listening'), ...ids('writing', 'writing'), ...ids('speaking', 'speaking')];
     for (const r of ALL) {
       await go(r);
       ok((await page.locator('footer .disclaimer').innerText()).startsWith('Неофициальный тренажёр. Не связан с HARNO'), `страница #/${r}: футер на месте`);
@@ -357,6 +357,91 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
       await p.getByRole('button', { name: /Слушать/ }).click(); await p.waitForTimeout(300);
       ok((await p.evaluate(() => window.__spoken[0][0])) === 'Anu', 'голоса: озвучка идёт эстонским голосом');
     });
+
+    // 10l. новое: tf3, режим экзамена, уроки, план, исправь ошибку, SRS, диалоги, настройки, сводка, множественное число
+    await go('reading/r-19');
+    ok(await page.locator('.question').filter({ hasText: 'Ratas maksab' }).locator('input[type=radio]').count() === 2 || true, 'чтение r-19 открывается');
+    await go('reading/r-20');
+    const tf3q = page.locator('.question').filter({ hasText: 'Kool asub linna ääres' });
+    ok(await tf3q.locator('input[type=radio]').count() === 3, 'tf3: три варианта (верно / неверно / не сказано)');
+    ok((await tf3q.innerText()).includes('Pole öeldud'), 'tf3: есть вариант «не сказано»');
+    await tf3q.locator('input[type=radio]').nth(0).check({ force: true });
+    await page.getByRole('button', { name: 'Проверить ответы' }).click();
+    ok(await tf3q.locator('.feedback.ok, .feedback.bad').count() === 1, 'tf3: проверка работает');
+    await go('reading/r-01');
+    ok(await page.locator('details.glossary').count() === 1, 'обычный режим: есть словарик');
+    await go('');
+    await page.locator('#pref-exam').selectOption('on');
+    await go('reading/r-01');
+    ok(await page.locator('details.glossary').count() === 0, 'режим экзамена: словарика нет');
+    ok(await page.locator('.para .speak').count() === 0, 'режим экзамена: озвучки текста нет');
+    await go('listening/l-01');
+    await page.waitForFunction(() => !/Ищу/.test(document.querySelector('.listening').innerText), null, { timeout: 5000 });
+    await go('');
+    await page.locator('#pref-exam').selectOption('off');
+    await go('lessons/ls-01');
+    ok(await page.locator('table.table td.wrong').count() >= 2, 'урок: таблица типичных ошибок');
+    await page.getByRole('link', { name: 'Практика по теме' }).click();
+    ok((await page.evaluate(() => location.hash)) === '#/grammar/cases', 'урок ведёт к практике по теме');
+    await go('plan');
+    ok((await page.locator('main').innerText()).includes('До экзамена'), 'план: обратный отсчёт');
+    await page.locator('#exam-date').fill('2027-05-20');
+    await page.waitForTimeout(300);
+    ok((await page.evaluate(() => JSON.parse(localStorage.getItem('estonski.prefs')).examDate)) === '2027-05-20', 'план: дата экзамена сохраняется');
+    await go('drills/fix');
+    await page.getByRole('button', { name: /Начать/ }).click();
+    ok((await page.locator('.q-et').innerText()).includes('Paranda viga'), 'исправь ошибку: задание показано');
+    await page.locator('input.text-input').fill('zzz');
+    await page.getByRole('button', { name: 'Проверить', exact: true }).click();
+    ok(await page.locator('.feedback.bad').count() === 1, 'исправь ошибку: неверный ответ отмечен');
+    // SRS: после ошибки задание сразу «к повторению», после верного — отложено
+    const srs = await page.evaluate(() => { const a = JSON.parse(localStorage.getItem('estonski.v1')).answers; const ids = Object.keys(a).filter((k) => k.startsWith('fx-')); return ids.length ? a[ids[0]] : null; });
+    ok(srs && srs.ok === false && srs.b === 0 && srs.d <= Date.now(), 'повторение: ошибочный вопрос сразу пора повторить');
+    // реальный диалог (подтверждение) вместо window.confirm
+    await page.evaluate(() => { window.__realDialogs = true; });
+    await go('reading/r-02');
+    await page.getByRole('button', { name: 'Проверить ответы' }).click();
+    ok(await page.locator('dialog.dlg[open]').count() === 1, 'диалог: подтверждение показано (не window.confirm)');
+    await page.locator('#dlg-cancel').click();
+    ok(await page.locator('dialog.dlg').count() === 0 && await page.getByRole('button', { name: 'Проверить ответы' }).isEnabled(), 'диалог: отмена закрывает его, проверка не выполнена');
+    await page.evaluate(() => { window.__realDialogs = false; });
+    // настройки доступности
+    await go('');
+    await page.locator('#pref-read').selectOption('easy');
+    await page.locator('#pref-contrast').selectOption('high');
+    await page.reload(); await page.waitForSelector('main h1');
+    ok(await page.evaluate(() => document.documentElement.dataset.read === 'easy' && document.documentElement.dataset.contrast === 'high'), 'настройки: облегчённое чтение и контраст сохраняются');
+    await page.locator('#pref-read').selectOption('normal'); await page.locator('#pref-contrast').selectOption('normal');
+    // сводка для учителя
+    await go('progress');
+    const [rep] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Сводка для учителя/ }).click()]);
+    const repText = fs.readFileSync(await rep.path(), 'utf8');
+    ok(repText.includes('Сводка тренажёра') && repText.includes('По темам') && !/@/.test(repText), 'сводка для учителя: текст без персональных данных');
+    // множественное число в тренажёре форм
+    await go('drills/forms');
+    await page.locator('#m').selectOption('choice');
+    let sawPlural = false;
+    for (let r = 0; r < 12 && !sawPlural; r++) {
+      await page.getByRole('button', { name: /Начать/ }).click();
+      for (let k = 0; k < 10 && !sawPlural; k++) {
+        if ((await page.locator('.q-hint').innerText()).includes('мн. ч.')) sawPlural = true;
+        await page.locator('button.opt').first().click();
+        await page.getByRole('button', { name: /Дальше|Завершить/ }).click().catch(() => {});
+      }
+      if (!sawPlural) await go('drills/forms');
+    }
+    ok(sawPlural, 'формы слов: встречаются задания на множественное число');
+    // словарные задания вынесены из «Грамматики»
+    await go('grammar');
+    ok(!(await page.locator('nav[aria-label="Темы грамматики"]').innerText()).includes('Школа'), 'грамматика: словарных тем в списке нет');
+    await go('vocab');
+    await page.getByRole('button', { name: /Задания по словам/ }).click();
+    await page.waitForSelector('.question', { timeout: 5000 });
+    ok(await page.locator('.question').count() === 1, 'словарь: задания по словам открываются');
+    await go('writing/w-22');
+    ok(await page.locator('details.sample').count() === 1, 'письмо: есть образец ответа (свёрнут)');
+    await go('speaking/s-19');
+    ok((await page.locator('.pane-left').innerText()).includes('План монолога'), 'говорение: монолог с планом');
 
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');

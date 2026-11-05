@@ -2268,6 +2268,354 @@
      "explanation_ru": "Сопоставьте вопрос и уточнение собеседника: Et eristada oma algset arvamust hilisemast mõjust."
     }
    ]
+  },
+  {
+   "id": "l-15",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Lühikesed lõigud 1",
+   "title_ru": "Короткие фрагменты 1",
+   "explanation_ru": "Пять коротких фрагментов подряд, по одному вопросу на каждый — как в экзаменационных заданиях на понимание деталей.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Esimene lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Tere! Siin on hambaarsti vastuvõtt. Teie aeg on neljapäeval kell kaks. Palun tulge viis minutit varem."
+    },
+    {
+     "sp": "A",
+     "text": "Teine lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Kas sul on pliiatsit?"
+    },
+    {
+     "sp": "B",
+     "text": "Jah, siin on."
+    },
+    {
+     "sp": "A",
+     "text": "Aitäh! Ma tagastan selle tunni lõpus."
+    },
+    {
+     "sp": "A",
+     "text": "Kolmas lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Järgmine peatus on Raekoja plats. Peatuses väljuda soovijad, palun valmistuge."
+    },
+    {
+     "sp": "A",
+     "text": "Neljas lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Mul on täna sünnipäev! Tule õhtul kell kuus minu juurde. Võta kaasa hea tuju, kingitust ei ole vaja."
+    },
+    {
+     "sp": "A",
+     "text": "Viies lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Ilmateade: homme sajab kogu päeva vihma ja tuul on tugev. Võtke kindlasti vihmavari kaasa."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-15-q1",
+     "type": "choice",
+     "prompt_et": "Mis päeval on hambaarsti aeg?",
+     "explanation_ru": "Neljapäeval kell kaks.",
+     "options": [
+      "neljapäeval",
+      "kolmapäeval",
+      "reedel",
+      "teisipäeval"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-15-q2",
+     "type": "choice",
+     "prompt_et": "Mida laenatakse?",
+     "explanation_ru": "«Kas sul on pliiatsit?»",
+     "options": [
+      "pliiatsit",
+      "vihikut",
+      "kustutuskummi",
+      "kääre"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-15-q3",
+     "type": "input",
+     "prompt_et": "Mis on järgmise peatuse nimi? Kirjuta: Raekoja ___",
+     "explanation_ru": "«Järgmine peatus on Raekoja plats».",
+     "answer": "plats"
+    },
+    {
+     "id": "l-15-q4",
+     "type": "choice",
+     "prompt_et": "Mis kell sünnipäev algab?",
+     "explanation_ru": "«Tule õhtul kell kuus».",
+     "options": [
+      "kell kuus",
+      "kell viis",
+      "kell seitse",
+      "kell kaks"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-15-q5",
+     "type": "choice",
+     "prompt_et": "Mida tuleb homme kaasa võtta?",
+     "explanation_ru": "«Võtke kindlasti vihmavari kaasa».",
+     "options": [
+      "vihmavari",
+      "päikeseprillid",
+      "suusad",
+      "müts"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "l-16",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Lühikesed lõigud 2",
+   "title_ru": "Короткие фрагменты 2",
+   "explanation_ru": "Пять коротких фрагментов: школа, поликлиника, магазин, вокзал, письмо.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Esimene lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Õpilased, kontrolltöö toimub reedel teisel tunnil. Kaasa võtke pliiats ja kalkulaator."
+    },
+    {
+     "sp": "A",
+     "text": "Teine lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Tere! Mul on peavalu ja palavik. Kas arst saab mind täna vastu võtta?"
+    },
+    {
+     "sp": "B",
+     "text": "Jah, kell kolm on vaba aeg."
+    },
+    {
+     "sp": "A",
+     "text": "Kolmas lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Need kingad maksavad viiskümmend eurot, aga täna on kümme protsenti allahindlust."
+    },
+    {
+     "sp": "A",
+     "text": "Neljas lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Rong Tartu poole väljub kell üheksa nelikümmend kolmandalt perroonilt."
+    },
+    {
+     "sp": "A",
+     "text": "Viies lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Kallis vanaema! Aitäh kingituse eest. Kampsun sobib mulle väga hästi ja on nii soe."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-16-q1",
+     "type": "choice",
+     "prompt_et": "Mis päeval on kontrolltöö?",
+     "explanation_ru": "«Reedel teisel tunnil».",
+     "options": [
+      "reedel",
+      "neljapäeval",
+      "esmaspäeval",
+      "kolmapäeval"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-16-q2",
+     "type": "input",
+     "prompt_et": "Mis kell on vaba aeg? Kirjuta sõnaga: kell ___.",
+     "explanation_ru": "«Kell kolm on vaba aeg».",
+     "answer": "kolm"
+    },
+    {
+     "id": "l-16-q3",
+     "type": "choice",
+     "prompt_et": "Kui palju kingad maksavad ilma allahindluseta?",
+     "explanation_ru": "«Viiskümmend eurot».",
+     "options": [
+      "viiskümmend eurot",
+      "neljakümmend eurot",
+      "kuuskümmend eurot",
+      "kümme eurot"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-16-q4",
+     "type": "choice",
+     "prompt_et": "Mis perroonilt rong väljub?",
+     "explanation_ru": "«Kolmandalt perroonilt».",
+     "options": [
+      "kolmandalt",
+      "esimeselt",
+      "teiselt",
+      "neljandalt"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-16-q5",
+     "type": "choice",
+     "prompt_et": "Mille eest vanaema tänatakse?",
+     "explanation_ru": "«Aitäh kingituse eest».",
+     "options": [
+      "kingituse eest",
+      "külaskäigu eest",
+      "abi eest",
+      "kutse eest"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "l-17",
+   "topic": "time",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Lühikesed lõigud 3",
+   "title_ru": "Короткие фрагменты 3",
+   "explanation_ru": "Пять фрагментов: библиотека, поручение, спортзал, семья, соревнование.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Esimene lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Raamatukogu on täna lahti kella kuueni. Kes tahab raamatuid tagastada, saab seda teha ka väljas olevasse kasti."
+    },
+    {
+     "sp": "A",
+     "text": "Teine lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Mari, tule palun poodi! Osta piima, leiba ja kaks õuna. Aga ära osta komme, need on juba kodus."
+    },
+    {
+     "sp": "A",
+     "text": "Kolmas lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Selle nädala trennid on tühistatud, sest spordisaal on remondis. Uued ajad teatame esmaspäeval."
+    },
+    {
+     "sp": "A",
+     "text": "Neljas lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Mu vanem õde elab nüüd Tallinnas ja õpib ülikoolis. Mulle meeldib teda külastada."
+    },
+    {
+     "sp": "A",
+     "text": "Viies lõik."
+    },
+    {
+     "sp": "A",
+     "text": "Ujumisvõistlus algab laupäeval kell kümme. Soovitame tulla poole tunni võrra varem."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-17-q1",
+     "type": "input",
+     "prompt_et": "Mis kell raamatukogu sulgub? Kirjuta sõnaga: kell ___.",
+     "explanation_ru": "«Lahti kella kuueni».",
+     "answer": "kuus"
+    },
+    {
+     "id": "l-17-q2",
+     "type": "choice",
+     "prompt_et": "Mida ei tohi osta?",
+     "explanation_ru": "«Ära osta komme».",
+     "options": [
+      "komme",
+      "piima",
+      "leiba",
+      "õunu"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-17-q3",
+     "type": "choice",
+     "prompt_et": "Miks trennid tühistati?",
+     "explanation_ru": "«Spordisaal on remondis».",
+     "options": [
+      "Spordisaal on remondis.",
+      "Treener on haige.",
+      "On puhkus.",
+      "Sajab vihma."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-17-q4",
+     "type": "choice",
+     "prompt_et": "Kus vanem õde elab?",
+     "explanation_ru": "«Elab nüüd Tallinnas».",
+     "options": [
+      "Tallinnas",
+      "Tartus",
+      "Pärnus",
+      "Narvas"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-17-q5",
+     "type": "choice",
+     "prompt_et": "Millal soovitatakse võistlusele tulla?",
+     "explanation_ru": "«Poole tunni võrra varem».",
+     "options": [
+      "pool tundi varem",
+      "tund aega varem",
+      "kümme minutit varem",
+      "õigel ajal"
+     ],
+     "answer": 0
+    }
+   ]
   }
  ]
 }

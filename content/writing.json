@@ -26,7 +26,9 @@
    "practice_words": [
     120,
     170
-   ]
+   ],
+   "sample_et": "Tere, Karl!\n\nKuidas sul läheb? Tahan sind nädalavahetusel enda juurde külla kutsuda. Sa võiksid tulla laupäeval hommikul. Läheme koos jalutama ja õhtul vaatame filmi. Võta kaasa soe jope ja hea tuju! Palun anna mulle teada, kas sa saad tulla.\n\nNägemist!\nMari",
+   "sample_notes_ru": "Образец: приветствие, ответы на все четыре пункта задания, просьба ответить."
   },
   {
    "id": "w-02",
@@ -53,7 +55,9 @@
    "practice_words": [
     120,
     170
-   ]
+   ],
+   "sample_et": "Lugupeetud õpetaja!\n\nMa olen haige ega saa homme kooli tulla. Arst ütles, et pean kolm päeva kodus olema. Palun andke mulle teada, mis on kodutööks. Aitäh!\n\nLugupidamisega\nMari Tamm, 8. klass",
+   "sample_notes_ru": "Образец: вежливая форма (andke), причина, вопрос о домашнем задании, подпись с классом."
   },
   {
    "id": "w-03",
@@ -972,6 +976,309 @@
     180,
     240
    ]
+  },
+  {
+   "id": "w-19",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "kind": "message",
+   "title_ru": "SMS тренеру: не смогу прийти",
+   "prompt_et": "Sa ei saa täna trenni tulla. Kirjuta treenerile lühike sõnum.",
+   "prompt_ru": "Вы не можете прийти на тренировку. Напишите тренеру короткое сообщение.",
+   "content_points_et": [
+    "Miks sa ei saa tulla?",
+    "Millal sa tuled tagasi?",
+    "Vabanda."
+   ],
+   "content_points_ru": [
+    "Почему не можете прийти?",
+    "Когда вернётесь?",
+    "Извинитесь."
+   ],
+   "explanation_ru": "Короткое сообщение: приветствие, причина, извинение. 20–40 слов.",
+   "practice_words": [
+    20,
+    40
+   ],
+   "sample_et": "Tere, treener! Ma ei saa täna trenni tulla, sest olen haige. Loodan, et tulen reedel tagasi. Vabandust! Mari",
+   "sample_notes_ru": "Образец: приветствие, причина (sest), планы, извинение — всё в 24 словах."
+  },
+  {
+   "id": "w-20",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "kind": "message",
+   "title_ru": "Сообщение другу: опаздываю",
+   "prompt_et": "Sa jääd kümme minutit hiljaks. Kirjuta sõbrale sõnum.",
+   "prompt_ru": "Вы опаздываете на десять минут. Напишите другу сообщение.",
+   "content_points_et": [
+    "Miks sa hilined?",
+    "Kus sa sõpra ootad?"
+   ],
+   "content_points_ru": [
+    "Почему вы опаздываете?",
+    "Где вы встретитесь?"
+   ],
+   "explanation_ru": "Короткое сообщение с причиной и просьбой.",
+   "practice_words": [
+    20,
+    40
+   ],
+   "sample_et": "Tere! Buss hilines, nii et ma jään kümme minutit hiljaks. Oota mind kino ees, palun. Varsti näeme!",
+   "sample_notes_ru": "Образец: причина (nii et), просьба (palun), завершение."
+  },
+  {
+   "id": "w-21",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "message",
+   "title_ru": "Сообщение однокласснику: домашнее задание",
+   "prompt_et": "Sa olid täna haige. Kirjuta klassikaaslasele ja küsi, mis on kodutööks.",
+   "prompt_ru": "Вы сегодня болели. Напишите однокласснику и спросите про домашнее задание.",
+   "content_points_et": [
+    "Miks sa ei olnud koolis?",
+    "Mida sa tahad teada?",
+    "Täna."
+   ],
+   "content_points_ru": [
+    "Почему вас не было?",
+    "Что хотите узнать?",
+    "Поблагодарите."
+   ],
+   "explanation_ru": "Неформальное сообщение с вопросом и благодарностью.",
+   "practice_words": [
+    20,
+    45
+   ],
+   "sample_et": "Tere, Karl! Ma olin täna haige. Kas sa tead, mis on matemaatikas kodutööks? Aitäh juba ette! Liis",
+   "sample_notes_ru": "Образец: вопрос с kas, придаточное mis on…, благодарность juba ette."
+  },
+  {
+   "id": "w-22",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Письмо руководителю кружка",
+   "prompt_et": "Sa tahad liituda kooli robootikaringiga. Kirjuta ringi juhendajale kiri.",
+   "prompt_ru": "Вы хотите записаться в школьный кружок робототехники. Напишите руководителю письмо.",
+   "content_points_et": [
+    "Kes sa oled?",
+    "Miks sa tahad liituda?",
+    "Millal sulle sobib?",
+    "Mida sa küsida tahad?"
+   ],
+   "content_points_ru": [
+    "Кто вы?",
+    "Почему хотите записаться?",
+    "Когда вам удобно?",
+    "О чём хотите спросить?"
+   ],
+   "explanation_ru": "Вежливое письмо: Lugupeetud …, Lugupidamisega …; не используйте разговорные слова.",
+   "practice_words": [
+    50,
+    90
+   ],
+   "sample_et": "Lugupeetud Marek!\n\nMina olen Mari Tamm kaheksandast klassist. Tahaksin liituda robootikaringiga, sest mulle meeldib tehnika ja ma tahan õppida robotite ehitamist. Mul on vaba kolmapäeviti pärast tunde. Kas ringis on veel vabu kohti? Palun andke mulle teada, millal ma saan tulla.\n\nLugupidamisega\nMari Tamm",
+   "sample_notes_ru": "Образец: вежливое обращение и завершение, причина (sest), вопрос (kas), форма вежливости (andke)."
+  },
+  {
+   "id": "w-23",
+   "topic": "shopping",
+   "level": "B1",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Жалоба в магазин: наушники не работают",
+   "prompt_et": "Ostsid poest kõrvaklapid, aga need ei tööta. Kirjuta poe klienditeenindusele.",
+   "prompt_ru": "Вы купили в магазине наушники, но они не работают. Напишите в службу поддержки.",
+   "content_points_et": [
+    "Mida ja millal sa ostsid?",
+    "Milles on probleem?",
+    "Mida sa soovid?",
+    "Kas sul on tšekk?"
+   ],
+   "content_points_ru": [
+    "Что и когда вы купили?",
+    "В чём проблема?",
+    "Чего вы хотите?",
+    "Есть ли чек?"
+   ],
+   "explanation_ru": "Формальная жалоба: факт, проблема, просьба, документ (чек).",
+   "practice_words": [
+    50,
+    90
+   ],
+   "sample_et": "Tere!\n\nOstsin teie poest eile kõrvaklapid, kuid need ei tööta. Üks klapp ei anna üldse heli. Palun vahetage kõrvaklapid uute vastu või tagastage raha. Mul on tšekk alles. Ootan teie vastust.\n\nParimate soovidega\nMari Tamm",
+   "sample_notes_ru": "Образец: факт → проблема → просьба → чек. Союз kuid («но») уместен в формальном письме."
+  },
+  {
+   "id": "w-24",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Письмо библиотекарю: потерянная книга",
+   "prompt_et": "Sa kaotasid raamatukogust laenatud raamatu. Kirjuta raamatukoguhoidjale.",
+   "prompt_ru": "Вы потеряли книгу, взятую в библиотеке. Напишите библиотекарю.",
+   "content_points_et": [
+    "Millise raamatu sa kaotasid?",
+    "Mida sa teha tahad?",
+    "Vabanda."
+   ],
+   "content_points_ru": [
+    "Какую книгу вы потеряли?",
+    "Что вы хотите сделать?",
+    "Извинитесь."
+   ],
+   "explanation_ru": "Вежливое письмо с извинением и предложением решения.",
+   "practice_words": [
+    50,
+    90
+   ],
+   "sample_et": "Lugupeetud raamatukoguhoidja!\n\nKahjuks kaotasin raamatu, mille laenutasin kaks nädalat tagasi. Tahan selle eest maksta või osta uue raamatu. Palun öelge, mida ma peaksin tegema. Vabandan ebamugavuse pärast.\n\nLugupidamisega\nKarl Mägi",
+   "sample_notes_ru": "Образец: kahjuks («к сожалению»), условное peaksin для вежливости, вежливое завершение."
+  },
+  {
+   "id": "w-25",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "kind": "story",
+   "title_ru": "Рассказ: мой лучший день",
+   "prompt_et": "Kirjuta lühike lugu: minu kõige parem päev.",
+   "prompt_ru": "Напишите короткий рассказ: мой лучший день.",
+   "content_points_et": [
+    "Kus sa olid ja kellega?",
+    "Mis juhtus?",
+    "Mida sa tundsid?"
+   ],
+   "content_points_ru": [
+    "Где вы были и с кем?",
+    "Что произошло?",
+    "Что вы чувствовали?"
+   ],
+   "explanation_ru": "Рассказ в прошедшем времени: olin, läksime, sõime. Используйте слова siis, hiljem, lõpuks.",
+   "practice_words": [
+    60,
+    100
+   ],
+   "sample_et": "Mu kõige parem päev oli eelmise suve laupäev. Läksime perega mere äärde. Ilm oli päikeseline ja vesi oli soe. Ujusime, mängisime pallimängu ja sõime jäätist. Õhtul tegime lõket ja vanaisa rääkis meile vanu lugusid. Ma olin väga õnnelik, sest kõik olid koos. Tahaksin, et selliseid päevi oleks rohkem.",
+   "sample_notes_ru": "Образец: все глаголы в прошедшем времени, причина (sest), финальная мысль (tahaksin)."
+  },
+  {
+   "id": "w-26",
+   "topic": "time",
+   "level": "B1",
+   "status": "draft",
+   "kind": "story",
+   "title_ru": "Рассказ: что я делал вчера",
+   "prompt_et": "Kirjuta, mida sa eile tegid.",
+   "prompt_ru": "Напишите, что вы делали вчера.",
+   "content_points_et": [
+    "Mis kell sa ärkasid?",
+    "Mida sa koolis tegid?",
+    "Mida sa õhtul tegid?"
+   ],
+   "content_points_ru": [
+    "Когда вы проснулись?",
+    "Что делали в школе?",
+    "Что делали вечером?"
+   ],
+   "explanation_ru": "Последовательный рассказ: eile, siis, pärast kooli, õhtul.",
+   "practice_words": [
+    60,
+    100
+   ],
+   "sample_et": "Eile ärkasin kell seitse. Sõin hommikusöögiks putru ja läksin kooli. Koolis oli kolm tundi ja kontrolltöö matemaatikas. Pärast kooli käisin trennis. Õhtul tegin kodutööd ja vaatasin filmi. Magama jäin kell kümme.",
+   "sample_notes_ru": "Образец: время дня, последовательность, глаголы в прошедшем."
+  },
+  {
+   "id": "w-27",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "kind": "description",
+   "title_ru": "Описание: моя комната",
+   "prompt_et": "Kirjelda oma tuba.",
+   "prompt_ru": "Опишите свою комнату.",
+   "content_points_et": [
+    "Milline see on?",
+    "Mis seal on?",
+    "Miks see sulle meeldib?"
+   ],
+   "content_points_ru": [
+    "Какая она?",
+    "Что в ней находится?",
+    "Почему она вам нравится?"
+   ],
+   "explanation_ru": "Описание: прилагательные, послелоги места (kõrval, peal, taga).",
+   "practice_words": [
+    50,
+    90
+   ],
+   "sample_et": "Minu tuba on väike, aga hubane. Seal on voodi, laud ja suur kapp. Laua kõrval on aken, kust paistab aed. Seinal on mu lemmikbändi plakat. Mulle meeldib oma tuba, sest seal on vaikne ja ma saan rahulikult õppida.",
+   "sample_notes_ru": "Образец: прилагательные, место (kõrval, seinal), причина (sest)."
+  },
+  {
+   "id": "w-28",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "kind": "description",
+   "title_ru": "Описание: мой лучший друг",
+   "prompt_et": "Kirjelda oma parimat sõpra.",
+   "prompt_ru": "Опишите своего лучшего друга.",
+   "content_points_et": [
+    "Kes ta on?",
+    "Milline ta välja näeb?",
+    "Milline ta iseloom on?",
+    "Mida te koos teete?"
+   ],
+   "content_points_ru": [
+    "Кто он?",
+    "Как выглядит?",
+    "Какой у него характер?",
+    "Что вы делаете вместе?"
+   ],
+   "explanation_ru": "Описание человека: возраст, внешность, характер, общие интересы.",
+   "practice_words": [
+    50,
+    90
+   ],
+   "sample_et": "Mu parim sõber on Karl. Ta on kolmteist aastat vana ja elab minu naabruses. Karl on pikk, tal on lühikesed pruunid juuksed. Ta on rõõmus ja alati valmis aitama. Meile mõlemale meeldib jalgpall, seepärast käime koos trennis.",
+   "sample_notes_ru": "Образец: возраст, внешность (tal on…), характер, общие интересы; seepärast — «поэтому»."
+  },
+  {
+   "id": "w-29",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Мнение: нужна ли школьная форма",
+   "prompt_et": "Kas koolis peaks olema koolivorm? Kirjuta oma arvamus.",
+   "prompt_ru": "Нужна ли в школе форма? Напишите своё мнение.",
+   "content_points_et": [
+    "Mis on sinu arvamus?",
+    "Too kaks põhjust.",
+    "Too üks vastuargument.",
+    "Tee kokkuvõte."
+   ],
+   "content_points_ru": [
+    "Каково ваше мнение?",
+    "Приведите две причины.",
+    "Приведите один контраргумент.",
+    "Сделайте вывод."
+   ],
+   "explanation_ru": "Рассуждение: мнение, причины, контраргумент (samas), вывод (kokkuvõttes).",
+   "practice_words": [
+    70,
+    120
+   ],
+   "sample_et": "Minu arvates ei peaks koolis olema koolivormi. Esiteks tahavad õpilased väljendada oma isikupära riiete kaudu. Teiseks on vorm sageli kallis ja mitte alati mugav. Samas aitaks vorm vähendada erinevusi õpilaste vahel. Kokkuvõttes arvan, et õpilased võiksid ise riided valida, kui need on korralikud.",
+   "sample_notes_ru": "Образец: структура мнение → две причины → контраргумент (samas) → вывод; условное peaks/võiksid."
   }
  ],
  "connectors": [

@@ -5,7 +5,9 @@ import { getPrefs, setPref, applyPrefs } from './prefs.js';
 
 const MODULES = [
   ['daily', 'Практика', 'views/daily.js'],
+  ['plan', 'План', 'views/plan.js'],
   ['diagnostic', 'Диагностика', 'views/diagnostic.js'],
+  ['lessons', 'Уроки', 'views/lessons.js'],
   ['grammar', 'Грамматика', 'views/grammar.js'],
   ['drills', 'Тренажёры', 'views/drills.js'],
   ['vocab', 'Словарь', 'views/vocab.js'],
@@ -14,10 +16,9 @@ const MODULES = [
   ['writing', 'Письмо', 'views/writing.js'],
   ['speaking', 'Говорение', 'views/speaking.js'],
   ['mock', 'Пробник', 'views/mock.js'],
-  ['reference', 'Справочник', 'views/reference.js'],
   ['progress', 'Прогресс', 'views/progress.js'],
 ];
-const EXTRA = { about: 'views/about.js', sources: 'views/sources.js', mistakes: 'views/mistakes.js', wordlist: 'views/wordlist.js', '': 'views/home.js' };
+const EXTRA = { reference: 'views/reference.js', about: 'views/about.js', sources: 'views/sources.js', mistakes: 'views/mistakes.js', wordlist: 'views/wordlist.js', '': 'views/home.js' };
 export const NAV = MODULES.map(([id, title]) => ({ id, title }));
 
 const main = document.getElementById('main');

@@ -1,16 +1,26 @@
 name: check
 on: [push, pull_request]
 jobs:
-  check:
+  static:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Валидация контента
-        run: node validate.js
-      - name: Контраст цветов (WCAG AA)
-        run: node tools/contrast.js
-      - name: sw.js актуален
-        run: node tools/build-sw.js --check
+      - name: Все быстрые проверки (контент, контраст, индекс серий, sw.js)
+        run: npm run check
+  browser:
+    runs-on: ubuntu-latest
+    needs: static
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - name: Тест в браузере (все страницы, сценарии, прогресс)
+        run: npm run smoke
+      - name: Аудит доступности axe-core
+        run: npm run axe

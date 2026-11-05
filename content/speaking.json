@@ -1318,6 +1318,263 @@
    ],
    "explanation_ru": "Продолжите исходную беседу, учитывая одновременно бюджет и время. Не повторяйте прежний план без изменений; договоритесь о конкретной альтернативе.",
    "parent_id": "s-expand-12"
+  },
+  {
+   "id": "s-19",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: моя семья",
+   "situation_ru": "Расскажите о своей семье по плану.",
+   "prompts_et": [
+    "Kes sinu perekonda kuuluvad?",
+    "Mida te koos teete?",
+    "Kes on sinu lähim inimene ja miks?"
+   ],
+   "phrases_et": [
+    "Minu perre kuuluvad …",
+    "Me armastame …",
+    "Kõige lähedasem on mulle …, sest …"
+   ],
+   "model_et": "Mu perre kuuluvad ema, isa, vanem vend ja mina. Meil on ka kass nimega Miku. Nädalavahetusel käime koos metsas jalutamas või vaatame filme. Mu lähim inimene on ema, sest ta kuulab mind alati ja aitab mind.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-20",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: моё хобби",
+   "situation_ru": "Расскажите о своём увлечении.",
+   "prompts_et": [
+    "Mis on sinu hobi?",
+    "Kui kaua sa seda teed?",
+    "Miks see sulle meeldib?"
+   ],
+   "phrases_et": [
+    "Minu hobi on …",
+    "Ma olen seda teinud … aastat",
+    "Mulle meeldib see, sest …"
+   ],
+   "model_et": "Minu hobi on jalgpall. Ma mängin seda juba kuus aastat. Käin trennis kolm korda nädalas. Mulle meeldib jalgpall, sest see on lõbus ja me mängime meeskonnana. Nädalavahetusel on tavaliselt võistlus.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-21",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: моя школа",
+   "situation_ru": "Расскажите о своей школе.",
+   "prompts_et": [
+    "Mis kool see on?",
+    "Mis aine sulle kõige rohkem meeldib?",
+    "Mida sa koolis muuta tahaksid?"
+   ],
+   "phrases_et": [
+    "Ma õpin … koolis",
+    "Mulle meeldib … , sest …",
+    "Ma tahaksin muuta …"
+   ],
+   "model_et": "Ma õpin Tartu koolis 9. klassis. Mulle meeldib kõige rohkem inglise keel, sest see on huvitav. Tahaksin koolis muuta vahetunnid pikemaks, et jõuaks rahulikult süüa.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-22",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: мой город",
+   "situation_ru": "Расскажите о городе, где вы живёте.",
+   "prompts_et": [
+    "Kus sa elad?",
+    "Mis seal head on?",
+    "Mida seal puudu on?"
+   ],
+   "phrases_et": [
+    "Ma elan …",
+    "Mulle meeldib, et …",
+    "Puudu on …"
+   ],
+   "model_et": "Ma elan Narvas. See on väike linn jõe ääres. Siin on ilus loss ja park. Mulle meeldib, et kõik on lähedal. Puudu on aga rohkem kinosid ja kohvikuid noortele.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-23",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: прошлое лето",
+   "situation_ru": "Расскажите, как вы провели прошлое лето.",
+   "prompts_et": [
+    "Kus sa olid?",
+    "Mida sa tegid?",
+    "Mis sulle kõige rohkem meeldis?"
+   ],
+   "phrases_et": [
+    "Eelmisel suvel olin …",
+    "Ma tegin …",
+    "Kõige rohkem meeldis mulle …"
+   ],
+   "model_et": "Eelmisel suvel olin vanaema juures maal. Ujusin järves ja aitasin aias kasvatada tomateid. Õhtuti kütsime sauna. Kõige rohkem meeldis mulle see, et ma sain terve päeva õues olla.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-24",
+   "topic": "work",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: моё будущее",
+   "situation_ru": "Расскажите о том, кем хотите стать.",
+   "prompts_et": [
+    "Kelleks sa tahad saada?",
+    "Miks see amet sulle meeldib?",
+    "Mida sa selleks tegema pead?"
+   ],
+   "phrases_et": [
+    "Tahan saada …",
+    "See amet meeldib mulle, sest …",
+    "Selleks pean …"
+   ],
+   "model_et": "Tahan saada arstiks. Mulle meeldib inimesi aidata ja mind huvitab bioloogia. Selleks pean koolis hästi õppima ja hiljem minema ülikooli. See võtab palju aega, aga ma olen valmis.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-25",
+   "topic": "time",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: мой день",
+   "situation_ru": "Расскажите о своём обычном дне.",
+   "prompts_et": [
+    "Mis kell sa ärkad?",
+    "Mida sa pärast kooli teed?",
+    "Mis kell sa magama lähed?"
+   ],
+   "phrases_et": [
+    "Ma ärkan kell …",
+    "Pärast kooli …",
+    "Õhtul …"
+   ],
+   "model_et": "Ärkan kell seitse. Pärast hommikusööki lähen kooli. Kool lõpeb kell kolm. Pärast kooli käin trennis või teen kodutööd. Õhtul vaatan filmi ja lähen magama kell kümme.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-26",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог: моё любимое блюдо",
+   "situation_ru": "Расскажите о любимом блюде.",
+   "prompts_et": [
+    "Mis on sinu lemmikroog?",
+    "Kes seda teeb?",
+    "Kuidas see maitseb?"
+   ],
+   "phrases_et": [
+    "Minu lemmikroog on …",
+    "Seda teeb tavaliselt …",
+    "See on …"
+   ],
+   "model_et": "Minu lemmikroog on kartulipuder lihaga. Seda teeb tavaliselt vanaema. Puder on pehme ja soe ning liha on maitsev. Sööme seda pühapäeviti kogu perega.",
+   "explanation_ru": "Говорите самостоятельно 1–2 минуты по трём вопросам плана. Запишите себя, послушайте и отметьте ошибки в чек-листе."
+  },
+  {
+   "id": "s-27",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "kind": "interview",
+   "title_ru": "Интервью: знакомство",
+   "situation_ru": "Вас просят рассказать о себе в коротком интервью.",
+   "prompts_et": [
+    "Mis su nimi on?",
+    "Kui vana sa oled?",
+    "Kus sa elad?",
+    "Mida sulle meeldib teha?",
+    "Kellega sa elad?"
+   ],
+   "phrases_et": [
+    "Minu nimi on …",
+    "Ma olen … aastat vana",
+    "Ma elan …",
+    "Mulle meeldib …"
+   ],
+   "explanation_ru": "Отвечайте полными предложениями (2–3 слова недостаточно). Запишите ответы и послушайте себя."
+  },
+  {
+   "id": "s-28",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "interview",
+   "title_ru": "Интервью: школа",
+   "situation_ru": "Вам задают вопросы о школе.",
+   "prompts_et": [
+    "Mis klassis sa oled?",
+    "Millised ained sulle meeldivad?",
+    "Mis on sinu lemmikaine ja miks?",
+    "Kuidas sa kooli lähed?",
+    "Mis kell sinu koolipäev algab?"
+   ],
+   "phrases_et": [
+    "Ma olen … klassis",
+    "Mulle meeldib …, sest …",
+    "Lähen kooli …"
+   ],
+   "explanation_ru": "Отвечайте полными предложениями (2–3 слова недостаточно). Запишите ответы и послушайте себя."
+  },
+  {
+   "id": "s-29",
+   "topic": "time",
+   "level": "B1",
+   "status": "draft",
+   "kind": "interview",
+   "title_ru": "Интервью: свободное время",
+   "situation_ru": "Вам задают вопросы о свободном времени.",
+   "prompts_et": [
+    "Mida sa vabal ajal teed?",
+    "Kellega sa aega veedad?",
+    "Kas sa käid trennis või ringis?",
+    "Mida sa nädalavahetusel tegid?",
+    "Mida sa täna õhtul teed?"
+   ],
+   "phrases_et": [
+    "Vabal ajal …",
+    "Nädalavahetusel …",
+    "Täna õhtul …"
+   ],
+   "explanation_ru": "Отвечайте полными предложениями (2–3 слова недостаточно). Запишите ответы и послушайте себя."
+  },
+  {
+   "id": "s-30",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "kind": "interview",
+   "title_ru": "Интервью: планы",
+   "situation_ru": "Вам задают вопросы о планах на будущее.",
+   "prompts_et": [
+    "Mida sa pärast kooli teed?",
+    "Kus sa tahaksid elada?",
+    "Mida sa suvel teha tahad?",
+    "Kas sa tahad reisida? Kuhu?",
+    "Milline on sinu unistuste töö?"
+   ],
+   "phrases_et": [
+    "Pärast kooli …",
+    "Ma tahaksin …",
+    "Suvel …"
+   ],
+   "explanation_ru": "Отвечайте полными предложениями (2–3 слова недостаточно). Запишите ответы и послушайте себя."
   }
  ],
  "checklist": [

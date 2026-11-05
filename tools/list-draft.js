@@ -39,6 +39,11 @@ function walk(file, node, ctx) {
     }
     if (node.et && !node.type && typeof node.forms !== 'object') addText(file, id, node.forms ? `${node.et} (${node.forms})` : node.et);
     for (const k of ['example_et', 'title_et', 'prompt_et_extra']) if (node[k]) addText(file, id, node[k]);
+    if (node.wrong_et) addText(file, id + ' (с ошибкой)', node.wrong_et);
+    if (node.model_et) sentences(node.model_et).forEach((t) => addText(file, id + ' (образец)', t));
+    if (node.sample_et) sentences(node.sample_et).forEach((t) => addText(file, id + ' (образец)', t));
+    if (Array.isArray(node.examples)) node.examples.forEach((e) => e.et && addText(file, id, e.et));
+    if (Array.isArray(node.mistakes)) node.mistakes.forEach((m) => { addText(file, id + ' (неверно)', m.wrong); addText(file, id + ' (верно)', m.right); });
     if (node.answer_et) addText(file, id, node.answer_et);
     if (Array.isArray(node.also_ok)) node.also_ok.forEach((t) => addText(file, id + ' (вариант)', t));
     if (node.forms && typeof node.forms === 'object' && !Array.isArray(node.forms)) addText(file, id, `${node.et}: ${Object.values(node.forms).join(', ')}`);

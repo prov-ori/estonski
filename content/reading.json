@@ -2933,6 +2933,557 @@
      "explanation_ru": "Неверно: безопасное восстановление оказалось невозможным; автор допускает обоснованную замену."
     }
    ]
+  },
+  {
+   "id": "r-19",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Väikesed kuulutused",
+   "title_ru": "Короткие объявления",
+   "explanation_ru": "Пять коротких объявлений: нужно сопоставить людей и объявления. Типы вопросов: соответствие, «верно / неверно / не сказано».",
+   "text_et": "A\nMüün kasutatud jalgratast. Ratas on sinine, kaks aastat vana, hind 80 eurot. Helista: 5555 1111.\n\nB\nOtsin klaveriõpetajat 10-aastasele lapsele. Tunnid kord nädalas õhtuti. Helista: 5555 2222.\n\nC\nAnname tasuta ära kassipoegi. Nad on kaks kuud vanad ja söövad juba ise. Helista: 5555 3333.\n\nD\nKooli jalgpallitreening algab esmaspäeval kell 16. Tulge spordisaali. Kaasa spordijalatsid.\n\nE\nKadunud: must nahkne rahakott Tartu bussijaamas. Leidjale tasu. Helista: 5555 4444.",
+   "questions": [
+    {
+     "id": "r-19-q1",
+     "type": "match",
+     "prompt_et": "Kellele sobib milline kuulutus?",
+     "explanation_ru": "Лиис хочет купить велосипед (A), Карл хочет котёнка (C), Мари потеряла кошелёк (E), Оскар хочет играть в футбол (D). Объявление B лишнее.",
+     "prompt_ru": "Соедините человека и объявление. Одно объявление лишнее.",
+     "items": [
+      {
+       "left": "Liis tahab osta jalgratta.",
+       "answer": 0
+      },
+      {
+       "left": "Karl soovib kassipoega.",
+       "answer": 1
+      },
+      {
+       "left": "Mari kaotas rahakoti.",
+       "answer": 2
+      },
+      {
+       "left": "Oskar tahab jalgpalli mängida.",
+       "answer": 3
+      }
+     ],
+     "options": [
+      "Kuulutus A",
+      "Kuulutus C",
+      "Kuulutus E",
+      "Kuulutus D",
+      "Kuulutus B"
+     ]
+    },
+    {
+     "id": "r-19-q2",
+     "type": "tf3",
+     "prompt_et": "Ratas maksab 80 eurot.",
+     "explanation_ru": "«Hind 80 eurot» — велосипед стоит 80 евро.",
+     "answer": true
+    },
+    {
+     "id": "r-19-q3",
+     "type": "tf3",
+     "prompt_et": "Kassipoegi antakse ära raha eest.",
+     "explanation_ru": "«Anname tasuta ära» — отдают бесплатно.",
+     "answer": false
+    },
+    {
+     "id": "r-19-q4",
+     "type": "tf3",
+     "prompt_et": "Klaveriõpetajat otsitakse täiskasvanule.",
+     "explanation_ru": "«10-aastasele lapsele» — для десятилетнего ребёнка.",
+     "answer": false
+    },
+    {
+     "id": "r-19-q5",
+     "type": "tf3",
+     "prompt_et": "Jalgpallitreeningul peab olema oma pall.",
+     "explanation_ru": "В объявлении сказано только «Kaasa spordijalatsid» — про мяч ничего нет. Правило: «Pole öeldud» — выбирайте, если в тексте нет ни подтверждения, ни опровержения (не додумывайте от себя).",
+     "answer": "ns"
+    },
+    {
+     "id": "r-19-q6",
+     "type": "input",
+     "prompt_et": "Mis kell algab jalgpallitreening? Kirjuta numbriga: ___",
+     "explanation_ru": "«Esmaspäeval kell 16».",
+     "answer": "16"
+    }
+   ]
+  },
+  {
+   "id": "r-20",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "E-kiri vahetusõpilasele",
+   "title_ru": "Письмо ученику по обмену",
+   "explanation_ru": "Длинное письмо: ищите детали (время, место, имена) и различайте то, что сказано, и то, чего в тексте нет.",
+   "text_et": "Tere, Anna!\n\nMa olen väga rõõmus, et sa tuled meie kooli vahetusõpilaseks. Meie kool on väike ja asub linna keskel, nii et sa leiad selle kergesti. Esimesel päeval kohtume kell 8.30 koolimaja ees. Võta kaasa isikutunnistus ja oma vanemate kontakttelefon. Tunniplaani saad klassijuhatajalt, kelle nimi on Tiina.\n\nMeie klassis on 22 õpilast. Enamik meist räägib ka inglise keelt, nii et alguses saame sinuga seda keelt kasutada, kuid hakkame sulle ka eesti keelt õpetama. Pärast tunde käivad paljud õpilased ringides: mina käin kooris, mu sõber Karl robootikaringis.\n\nSa elad Tuuli perekonnas, kes elab koolist kahe kilomeetri kaugusel. Tuuli ema ütles, et sa võid kooli jalgsi või jalgrattaga tulla. Kui sul on küsimusi, kirjuta mulle!\n\nKohtumiseni!\nLiis",
+   "questions": [
+    {
+     "id": "r-20-q1",
+     "type": "choice",
+     "prompt_et": "Kus kohtutakse esimesel päeval?",
+     "explanation_ru": "«Kohtume kell 8.30 koolimaja ees».",
+     "options": [
+      "koolimaja ees",
+      "bussijaamas",
+      "klassiruumis",
+      "Tuuli kodus"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-20-q2",
+     "type": "tf3",
+     "prompt_et": "Kool asub linna ääres.",
+     "explanation_ru": "«Asub linna keskel».",
+     "answer": false
+    },
+    {
+     "id": "r-20-q3",
+     "type": "tf3",
+     "prompt_et": "Tunniplaani saab Anna klassijuhatajalt.",
+     "explanation_ru": "«Tunniplaani saad klassijuhatajalt».",
+     "answer": true
+    },
+    {
+     "id": "r-20-q4",
+     "type": "tf3",
+     "prompt_et": "Anna räägib hästi inglise keelt.",
+     "explanation_ru": "Сказано, что большинство учеников говорит по-английски, но об английском Анны ничего нет. Правило: «Pole öeldud» — выбирайте, если в тексте нет ни подтверждения, ни опровержения (не додумывайте от себя).",
+     "answer": "ns"
+    },
+    {
+     "id": "r-20-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik ja lause.",
+     "explanation_ru": "Лиис ходит в хор, Карл — в кружок робототехники, Тийна — классный руководитель.",
+     "prompt_ru": "Соедините человека и предложение. Одно лишнее.",
+     "items": [
+      {
+       "left": "Liis",
+       "answer": 0
+      },
+      {
+       "left": "Karl",
+       "answer": 1
+      },
+      {
+       "left": "Tiina",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "käib kooris.",
+      "käib robootikaringis.",
+      "on klassijuhataja.",
+      "on Tuuli ema."
+     ]
+    },
+    {
+     "id": "r-20-q6",
+     "type": "input",
+     "prompt_et": "Mitu õpilast on klassis? Kirjuta numbriga: ___",
+     "explanation_ru": "«Meie klassis on 22 õpilast».",
+     "answer": "22"
+    }
+   ]
+  },
+  {
+   "id": "r-21",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kuidas õppida paremini",
+   "title_ru": "Как учиться лучше",
+   "explanation_ru": "Статья из четырёх абзацев: к каждому нужно подобрать заголовок. Типы вопросов: заголовки, «верно / неверно / не сказано».",
+   "text_et": "Paljud õpilased arvavad, et õppimiseks on vaja istuda raamatu taga mitu tundi järjest. Tegelikult on parem õppida lühemate osade kaupa. Pärast iga 25 minutit tasub teha viieminutiline paus.\n\nTeiseks on tähtis uni. Kui õpilane magab liiga vähe, ei jää uus info hästi meelde. Teismelisele soovitatakse magada vähemalt kaheksa tundi.\n\nKolmandaks aitab õppida koos sõbraga. Teineteisele selgitades saab aru, mida sa tegelikult tead ja mida mitte.\n\nLõpuks ära unusta puhata ja liikuda. Jalutuskäik värskes õhus aitab mõtteid korrastada.",
+   "questions": [
+    {
+     "id": "r-21-q1",
+     "type": "match",
+     "prompt_et": "Vali igale lõigule sobiv pealkiri.",
+     "explanation_ru": "1 абзац — короткими порциями; 2 — сон; 3 — вместе с другом; 4 — движение.",
+     "prompt_ru": "Подберите заголовок к каждому абзацу. Один заголовок лишний.",
+     "items": [
+      {
+       "left": "Esimene lõik",
+       "answer": 0
+      },
+      {
+       "left": "Teine lõik",
+       "answer": 1
+      },
+      {
+       "left": "Kolmas lõik",
+       "answer": 2
+      },
+      {
+       "left": "Neljas lõik",
+       "answer": 3
+      }
+     ],
+     "options": [
+      "Õpi väikeste osadena",
+      "Uni on oluline",
+      "Õppige koos",
+      "Liikumine aitab",
+      "Telefon segab"
+     ]
+    },
+    {
+     "id": "r-21-q2",
+     "type": "tf3",
+     "prompt_et": "Õppida tuleb mitu tundi järjest.",
+     "explanation_ru": "«Parem on õppida lühemate osade kaupa».",
+     "answer": false
+    },
+    {
+     "id": "r-21-q3",
+     "type": "tf3",
+     "prompt_et": "Teismelisele soovitatakse magada vähemalt kaheksa tundi.",
+     "explanation_ru": "«Vähemalt kaheksa tundi».",
+     "answer": true
+    },
+    {
+     "id": "r-21-q4",
+     "type": "tf3",
+     "prompt_et": "Artikkel soovitab õppimisel telefoni kasutada.",
+     "explanation_ru": "Про телефон в тексте ничего нет. Правило: «Pole öeldud» — выбирайте, если в тексте нет ни подтверждения, ни опровержения (не додумывайте от себя).",
+     "answer": "ns"
+    },
+    {
+     "id": "r-21-q5",
+     "type": "input",
+     "prompt_et": "Mitu minutit õpitakse enne viieminutilist pausi? Kirjuta numbriga: ___",
+     "explanation_ru": "«Pärast iga 25 minutit».",
+     "answer": "25"
+    }
+   ]
+  },
+  {
+   "id": "r-22",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Päevik: matk rabas",
+   "title_ru": "Дневник: поход на болото",
+   "explanation_ru": "Дневниковая запись в прошедшем времени. Ищите последовательность событий и факты.",
+   "text_et": "Laupäev, 12. oktoober\n\nTäna käisime klassiga matkal rabas. Buss väljus kooli juurest kell 8. Sõit kestis tund aega. Raba ääres ootas meid giid Mati, kes rääkis, kuidas raba tekkis. Kõndisime laudteel kaks tundi. Ilm oli udune, aga see tegi raba veel salapärasemaks. Nägime kurge ja ühte rebast.\n\nMina unustasin kaasa võtta termose ja mul oli kogu aeg külm. Õnneks andis Oskar mulle oma sooja teed. Pärast matka sõime lõket tehes pirukaid. Koju jõudsime kell 5 ja olin nii väsinud, et jäin kohe magama.",
+   "questions": [
+    {
+     "id": "r-22-q1",
+     "type": "choice",
+     "prompt_et": "Mis kell buss väljus?",
+     "explanation_ru": "«Buss väljus kooli juurest kell 8».",
+     "options": [
+      "kell 8",
+      "kell 5",
+      "kell 9",
+      "kell 12"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-22-q2",
+     "type": "tf3",
+     "prompt_et": "Matk kestis terve päeva.",
+     "explanation_ru": "Сказано: 2 часа по настилу, выезд в 8, возвращение в 5, но фраза «весь день» не звучит. Правило: «Pole öeldud» — выбирайте, если в тексте нет ни подтверждения, ни опровержения (не додумывайте от себя).",
+     "answer": "ns"
+    },
+    {
+     "id": "r-22-q3",
+     "type": "tf3",
+     "prompt_et": "Ilm oli päikeseline.",
+     "explanation_ru": "«Ilm oli udune» — туманная.",
+     "answer": false
+    },
+    {
+     "id": "r-22-q4",
+     "type": "tf3",
+     "prompt_et": "Giid rääkis, kuidas raba tekkis.",
+     "explanation_ru": "«Kes rääkis, kuidas raba tekkis».",
+     "answer": true
+    },
+    {
+     "id": "r-22-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik ja tegevus.",
+     "explanation_ru": "Мати — гид; Оскар дал тёплого чаю; рассказчик забыл термос.",
+     "prompt_ru": "Соедините человека и действие. Одно лишнее.",
+     "items": [
+      {
+       "left": "Mati",
+       "answer": 0
+      },
+      {
+       "left": "Oskar",
+       "answer": 1
+      },
+      {
+       "left": "Jutustaja",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "on giid.",
+      "andis sooja teed.",
+      "unustas termose.",
+      "tegi lõket."
+     ]
+    },
+    {
+     "id": "r-22-q6",
+     "type": "input",
+     "prompt_et": "Mitu tundi kõndisid nad laudteel? Kirjuta sõnaga: ___ tundi.",
+     "explanation_ru": "«Kõndisime laudteel kaks tundi».",
+     "answer": "kaks"
+    }
+   ]
+  },
+  {
+   "id": "r-23",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Suvelaager noortele",
+   "title_ru": "Летний лагерь для подростков",
+   "explanation_ru": "Объявление-программа: цены, даты, правила. Типы вопросов: «верно / неверно / не сказано», соответствие, ввод числа.",
+   "text_et": "Suvelaager noortele 12–15\n\nToimub 15.–21. juulini Pärnu lähedal metsas. Laagri hind on 180 eurot, mis sisaldab ööbimist, toitlustust ja bussisõitu. Iga päev on programmis sport, ujumine, meisterdamine ja õhtul lõke.\n\nEsmaspäeval õpime telgi püstitama, kolmapäeval on matk ning reedel toimub suur mäng, kus meeskonnad võistlevad. Laagris on kolm juhendajat ja arst. Mobiiltelefonid kogutakse kokku ja antakse tagasi õhtuti pooleks tunniks.\n\nSoovitame kaasa võtta soojad riided, vihmajope, ujumisriided ja taskulambi. Registreerida saab kuni 30. juunini kodulehel. Kohti on 40.",
+   "questions": [
+    {
+     "id": "r-23-q1",
+     "type": "tf3",
+     "prompt_et": "Laagri hind sisaldab toitlustust.",
+     "explanation_ru": "«Mis sisaldab ööbimist, toitlustust ja bussisõitu».",
+     "answer": true
+    },
+    {
+     "id": "r-23-q2",
+     "type": "tf3",
+     "prompt_et": "Telefone tohib kasutada terve päeva.",
+     "explanation_ru": "«Kogutakse kokku ja antakse tagasi õhtuti pooleks tunniks».",
+     "answer": false
+    },
+    {
+     "id": "r-23-q3",
+     "type": "tf3",
+     "prompt_et": "Laagris on ka kokk.",
+     "explanation_ru": "В тексте названы руководители и врач, повара нет. Правило: «Pole öeldud» — выбирайте, если в тексте нет ни подтверждения, ни опровержения (не додумывайте от себя).",
+     "answer": "ns"
+    },
+    {
+     "id": "r-23-q4",
+     "type": "choice",
+     "prompt_et": "Mis toimub reedel?",
+     "explanation_ru": "«Reedel toimub suur mäng».",
+     "options": [
+      "suur mäng",
+      "matk",
+      "telkimine",
+      "ujumisvõistlus"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-23-q5",
+     "type": "match",
+     "prompt_et": "Seosta päev ja tegevus.",
+     "explanation_ru": "Понедельник — установка палатки, среда — поход, пятница — большая игра.",
+     "prompt_ru": "Соедините день и занятие. Одно лишнее.",
+     "items": [
+      {
+       "left": "Esmaspäev",
+       "answer": 0
+      },
+      {
+       "left": "Kolmapäev",
+       "answer": 1
+      },
+      {
+       "left": "Reede",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "õpime telgi püstitama.",
+      "on matk.",
+      "toimub suur mäng.",
+      "on lõpupidu."
+     ]
+    },
+    {
+     "id": "r-23-q6",
+     "type": "input",
+     "prompt_et": "Mitu kohta laagris on? Kirjuta numbriga: ___",
+     "explanation_ru": "«Kohti on 40».",
+     "answer": "40"
+    }
+   ]
+  },
+  {
+   "id": "r-24",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Intervjuu noore muusikuga",
+   "title_ru": "Интервью с юным музыкантом",
+   "explanation_ru": "Интервью в формате вопрос–ответ. Различайте, кто что говорит.",
+   "text_et": "Ajakirjanik: Kui kaua sa oled kitarri mänginud?\nKarl: Juba viis aastat. Alustasin kümneaastaselt, kui vanaisa kinkis mulle esimese kitarri.\nAjakirjanik: Kui tihti sa harjutad?\nKarl: Iga päev vähemalt tund aega. Mõnikord pikemalt, kui on konkurss.\nAjakirjanik: Kas koolis jõuab harjutada?\nKarl: See on raske. Kui on kontrolltööd, siis harjutan vähem. Aga muusika on mulle tähtsam kui puhkus.\nAjakirjanik: Mis on sinu unistus?\nKarl: Tahan kunagi mängida suures kontserdisaalis. Seniks mängin sõpradega bändis ja anname kooli peol kontserte.",
+   "questions": [
+    {
+     "id": "r-24-q1",
+     "type": "choice",
+     "prompt_et": "Kes kinkis Karlile esimese kitarri?",
+     "explanation_ru": "«Kui vanaisa kinkis mulle esimese kitarri».",
+     "options": [
+      "vanaisa",
+      "isa",
+      "õpetaja",
+      "sõber"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-24-q2",
+     "type": "tf3",
+     "prompt_et": "Karl harjutab iga päev.",
+     "explanation_ru": "«Iga päev vähemalt tund aega».",
+     "answer": true
+    },
+    {
+     "id": "r-24-q3",
+     "type": "tf3",
+     "prompt_et": "Karl ei taha kunagi suures saalis mängida.",
+     "explanation_ru": "«Tahan kunagi mängida suures kontserdisaalis».",
+     "answer": false
+    },
+    {
+     "id": "r-24-q4",
+     "type": "tf3",
+     "prompt_et": "Karli bändis on neli liiget.",
+     "explanation_ru": "Количество участников группы не названо. Правило: «Pole öeldud» — выбирайте, если в тексте нет ни подтверждения, ни опровержения (не додумывайте от себя).",
+     "answer": "ns"
+    },
+    {
+     "id": "r-24-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik ja lause.",
+     "explanation_ru": "Карл начал в десять лет; дедушка подарил гитару; группа играет на школьных вечерах.",
+     "prompt_ru": "Соедините и продолжите. Одно лишнее.",
+     "items": [
+      {
+       "left": "Karl",
+       "answer": 0
+      },
+      {
+       "left": "Vanaisa",
+       "answer": 1
+      },
+      {
+       "left": "Bänd",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "alustas kümneaastaselt.",
+      "kinkis esimese kitarri.",
+      "annab kooli peol kontserte.",
+      "võitis konkursi."
+     ]
+    },
+    {
+     "id": "r-24-q6",
+     "type": "input",
+     "prompt_et": "Mitu aastat on Karl kitarri mänginud? Kirjuta sõnaga: ___ aastat.",
+     "explanation_ru": "«Juba viis aastat».",
+     "answer": "viis"
+    }
+   ]
+  },
+  {
+   "id": "r-25",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kuidas teha pannkooke",
+   "title_ru": "Как приготовить блины",
+   "explanation_ru": "Инструкция: порядок действий и количества.",
+   "text_et": "Pannkookide jaoks on vaja kahte muna, kahte klaasi piima, ühte klaasi jahu, näpuotsatäit soola ja õli. Kõigepealt klopi munad ja piim segamini. Seejärel lisa jahu ja sool ning sega, kuni tainas on ühtlane. Lase taignal kümme minutit seista.\n\nKuumuta pann ja pane sinna veidi õli. Vala pannile väike kulbitäis taigent ja küpseta mõlemalt poolt, kuni pannkook on kuldne. Serveeri moosi, kohupiima või mett.",
+   "questions": [
+    {
+     "id": "r-25-q1",
+     "type": "choice",
+     "prompt_et": "Mida tuleb teha esimesena?",
+     "explanation_ru": "«Kõigepealt klopi munad ja piim segamini».",
+     "options": [
+      "Klopida munad ja piim segamini.",
+      "Lisada jahu.",
+      "Kuumutada pann.",
+      "Valada taigen pannile."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-25-q2",
+     "type": "tf3",
+     "prompt_et": "Taignale lisatakse suhkrut.",
+     "explanation_ru": "Сахар в списке и в шагах не упомянут. Правило: «Pole öeldud» — выбирайте, если в тексте нет ни подтверждения, ни опровержения (не додумывайте от себя).",
+     "answer": "ns"
+    },
+    {
+     "id": "r-25-q3",
+     "type": "tf3",
+     "prompt_et": "Tainas peab kümme minutit seisma.",
+     "explanation_ru": "«Lase taignal kümme minutit seista».",
+     "answer": true
+    },
+    {
+     "id": "r-25-q4",
+     "type": "tf3",
+     "prompt_et": "Pannkooke küpsetatakse ainult ühelt poolt.",
+     "explanation_ru": "«Küpseta mõlemalt poolt» — с обеих сторон.",
+     "answer": false
+    },
+    {
+     "id": "r-25-q5",
+     "type": "match",
+     "prompt_et": "Seosta koostisosa ja kogus.",
+     "explanation_ru": "Молоко — два стакана; мука — один стакан; яйца — два.",
+     "prompt_ru": "Соедините ингредиент и количество. Одно лишнее.",
+     "items": [
+      {
+       "left": "Piim",
+       "answer": 0
+      },
+      {
+       "left": "Jahu",
+       "answer": 1
+      },
+      {
+       "left": "Munad",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "kaks klaasi",
+      "üks klaas",
+      "kaks muna",
+      "kolm lusikat"
+     ]
+    },
+    {
+     "id": "r-25-q6",
+     "type": "input",
+     "prompt_et": "Mida pannile enne taigent pannakse? Kirjuta sõna: ___",
+     "explanation_ru": "«Pane sinna veidi õli».",
+     "answer": "õli"
+    }
+   ]
   }
  ]
 }

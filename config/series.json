@@ -167,6 +167,34 @@
    "module": "reading",
    "title_ru": "Починить или заменить?"
   },
+  "r-19": {
+   "module": "reading",
+   "title_ru": "Короткие объявления"
+  },
+  "r-20": {
+   "module": "reading",
+   "title_ru": "Письмо ученику по обмену"
+  },
+  "r-21": {
+   "module": "reading",
+   "title_ru": "Как учиться лучше"
+  },
+  "r-22": {
+   "module": "reading",
+   "title_ru": "Дневник: поход на болото"
+  },
+  "r-23": {
+   "module": "reading",
+   "title_ru": "Летний лагерь для подростков"
+  },
+  "r-24": {
+   "module": "reading",
+   "title_ru": "Интервью с юным музыкантом"
+  },
+  "r-25": {
+   "module": "reading",
+   "title_ru": "Как приготовить блины"
+  },
   "l-01": {
    "module": "listening",
    "title_ru": "Объявление директора"
@@ -267,6 +295,18 @@
    "module": "listening",
    "title_ru": "Продолжение: после кино",
    "parent_id": "l-02"
+  },
+  "l-15": {
+   "module": "listening",
+   "title_ru": "Короткие фрагменты 1"
+  },
+  "l-16": {
+   "module": "listening",
+   "title_ru": "Короткие фрагменты 2"
+  },
+  "l-17": {
+   "module": "listening",
+   "title_ru": "Короткие фрагменты 3"
   },
   "w-01": {
    "module": "writing",
@@ -426,6 +466,50 @@
    "module": "writing",
    "title_ru": "Здоровый распорядок — ответ и изменение плана",
    "parent_id": "w-expand-12"
+  },
+  "w-19": {
+   "module": "writing",
+   "title_ru": "SMS тренеру: не смогу прийти"
+  },
+  "w-20": {
+   "module": "writing",
+   "title_ru": "Сообщение другу: опаздываю"
+  },
+  "w-21": {
+   "module": "writing",
+   "title_ru": "Сообщение однокласснику: домашнее задание"
+  },
+  "w-22": {
+   "module": "writing",
+   "title_ru": "Письмо руководителю кружка"
+  },
+  "w-23": {
+   "module": "writing",
+   "title_ru": "Жалоба в магазин: наушники не работают"
+  },
+  "w-24": {
+   "module": "writing",
+   "title_ru": "Письмо библиотекарю: потерянная книга"
+  },
+  "w-25": {
+   "module": "writing",
+   "title_ru": "Рассказ: мой лучший день"
+  },
+  "w-26": {
+   "module": "writing",
+   "title_ru": "Рассказ: что я делал вчера"
+  },
+  "w-27": {
+   "module": "writing",
+   "title_ru": "Описание: моя комната"
+  },
+  "w-28": {
+   "module": "writing",
+   "title_ru": "Описание: мой лучший друг"
+  },
+  "w-29": {
+   "module": "writing",
+   "title_ru": "Мнение: нужна ли школьная форма"
   },
   "s-01": {
    "module": "speaking",
@@ -590,6 +674,54 @@
    "module": "speaking",
    "title_ru": "Здоровый распорядок — план изменился",
    "parent_id": "s-expand-12"
+  },
+  "s-19": {
+   "module": "speaking",
+   "title_ru": "Монолог: моя семья"
+  },
+  "s-20": {
+   "module": "speaking",
+   "title_ru": "Монолог: моё хобби"
+  },
+  "s-21": {
+   "module": "speaking",
+   "title_ru": "Монолог: моя школа"
+  },
+  "s-22": {
+   "module": "speaking",
+   "title_ru": "Монолог: мой город"
+  },
+  "s-23": {
+   "module": "speaking",
+   "title_ru": "Монолог: прошлое лето"
+  },
+  "s-24": {
+   "module": "speaking",
+   "title_ru": "Монолог: моё будущее"
+  },
+  "s-25": {
+   "module": "speaking",
+   "title_ru": "Монолог: мой день"
+  },
+  "s-26": {
+   "module": "speaking",
+   "title_ru": "Монолог: моё любимое блюдо"
+  },
+  "s-27": {
+   "module": "speaking",
+   "title_ru": "Интервью: знакомство"
+  },
+  "s-28": {
+   "module": "speaking",
+   "title_ru": "Интервью: школа"
+  },
+  "s-29": {
+   "module": "speaking",
+   "title_ru": "Интервью: свободное время"
+  },
+  "s-30": {
+   "module": "speaking",
+   "title_ru": "Интервью: планы"
   }
  }
 }

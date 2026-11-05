@@ -68,8 +68,16 @@ export default {
             h('button', { class: 'btn primary', type: 'button', disabled: !due.length && !fresh.length, onclick: () => session([...shuffle(due), ...shuffle(fresh)].slice(0, SESSION_SIZE), false) }, 'Начать сессию'),
             h('button', { class: 'btn', type: 'button', disabled: !inScope.length, onclick: () => session(shuffle(inScope).slice(0, SESSION_SIZE), true) }, 'Потренироваться без учёта сроков'),
             h('button', { class: 'btn', type: 'button', disabled: inScope.length < 5, onclick: quiz }, 'Тест с вариантами ответа'),
+            h('button', { class: 'btn', type: 'button', onclick: bankExercises }, 'Задания по словам (15)'),
             h('a', { class: 'btn ghost', href: '#/wordlist' }, 'Список слов с поиском')),
           h('p', { class: 'muted small-text' }, 'В режиме тренировки коробки не меняются.')));
+    }
+
+    async function bankExercises() {
+      const g = (await content('grammar')).items.filter((q) => q.kind === 'vocab' && (filter === 'all' || q.topic === filter));
+      const entries = g.map((q) => ({ q, module: 'grammar' }));
+      const { prioritize } = await import('../trainer.js');
+      runTrainer(area, prioritize(entries).slice(0, 15), { again: bankExercises, extraButtons: h('button', { class: 'btn', type: 'button', onclick: () => { root.replaceChildren(header(), area); menu(); } }, 'В меню') });
     }
 
     function quiz() {

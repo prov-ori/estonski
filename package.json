@@ -1,0 +1,19 @@
+{
+  "name": "estonski",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Неофициальный тренажёр для подготовки к экзамену по эстонскому как второму языку (B1)",
+  "scripts": {
+    "validate": "node validate.js",
+    "contrast": "node tools/contrast.js",
+    "build": "node tools/build-index.js && node tools/build-sw.js",
+    "check": "node validate.js && node tools/contrast.js && node tools/build-index.js --check && node tools/build-sw.js --check",
+    "smoke": "node tools/smoke.js",
+    "axe": "node tools/axe-audit.js",
+    "draft": "node tools/list-draft.js"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "playwright": "^1.63.0"
+  }
+}

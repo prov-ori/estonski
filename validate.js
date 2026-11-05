@@ -84,7 +84,8 @@ function checkQuestion(file, q) {
     case 'input':
       if (typeof q.answer !== 'string' || !q.answer.trim()) err(file, w, 'input: нужен непустой строковый answer');
       else if (hasCyr(q.answer)) err(file, w, 'input: кириллица в правильном ответе');
-      if ('answers' in q) err(file, w, 'input: поле answers запрещено — ответ ровно один');
+      if ('answers' in q) err(file, w, 'input: поле answers запрещено — основной ответ один, допустимые варианты — в also_ok');
+      if (q.also_ok !== undefined && !(Array.isArray(q.also_ok) && q.also_ok.every((x) => typeof x === 'string' && x.trim() && !hasCyr(x)))) err(file, w, 'input: also_ok должен быть массивом непустых строк без кириллицы');
       break;
     case 'match': {
       const o = q.options, it = q.items;
@@ -172,7 +173,10 @@ for (const t of (data.listening?.items || [])) {
 }
 for (const t of (data.writing?.items || [])) need(t.prompt_et && Array.isArray(t.content_points_et), 'content/writing.json', t.id, 'нужны prompt_et и content_points_et');
 need(Array.isArray(data.writing?.checklist) && data.writing.checklist.length === 5, 'content/writing.json', 'checklist', 'ожидается 5 критериев');
-for (const c of (data.speaking?.items || [])) need(c.role_a?.prompts_et?.length && c.role_b?.prompts_et?.length, 'content/speaking.json', c.id, 'нужны role_a/role_b с prompts_et');
+for (const c of (data.speaking?.items || [])) {
+  if (c.kind === 'monologue' || c.kind === 'interview') need(c.prompts_et?.length >= 3, 'content/speaking.json', c.id, 'для монолога и интервью нужен prompts_et (минимум 3)');
+  else need(c.role_a?.prompts_et?.length && c.role_b?.prompts_et?.length, 'content/speaking.json', c.id, 'нужны role_a/role_b с prompts_et');
+}
 for (const m of (data['mock-exam']?.items || [])) {
   for (const p of (fmt?.parts || [])) need(m.parts && m.parts[p.id], 'content/mock-exam.json', m.id, `нет части «${p.id}» из config/exam-format.json`);
 }
@@ -186,6 +190,16 @@ for (const m of (data['mock-exam']?.items || [])) {
   for (const [k, part] of Object.entries(m.parts || {})) {
     if (part.ref !== undefined) need(seenIds.has(part.ref), 'content/mock-exam.json', `${m.id}.${k}`, `ref «${part.ref}» не найден`);
   }
+}
+// fixes и lessons
+for (const x of (data.fixes?.items || [])) {
+  need(x.wrong_et && x.answer_et && x.wrong_et !== x.answer_et, 'content/fixes.json', x.id, 'wrong_et и answer_et обязательны и должны различаться');
+  for (const a of (x.also_ok || [])) need(a !== x.wrong_et && !hasCyr(a), 'content/fixes.json', x.id, `also_ok «${a}» совпадает с ошибочным или содержит кириллицу`);
+}
+for (const l of (data.lessons?.items || [])) {
+  need(l.title_ru && Array.isArray(l.sections) && l.sections.length && Array.isArray(l.mistakes), 'content/lessons.json', l.id, 'нужны title_ru, sections и mistakes');
+  for (const m of (l.mistakes || [])) need(m.wrong && m.right && m.wrong !== m.right && m.why, 'content/lessons.json', l.id, `ошибка «${m.wrong}»: wrong, right и why обязательны, wrong ≠ right`);
+  need(!l.practice || /^(grammar|drills)\//.test(l.practice), 'content/lessons.json', l.id, 'practice — маршрут вида grammar/<тема> или drills/<раздел>');
 }
 // forms
 for (const f of (data.forms?.items || [])) {

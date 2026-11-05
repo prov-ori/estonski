@@ -5078,7 +5078,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "õpilane — ученик. Пример: Meie klassis on kakskümmend õpilast. Перевод: В нашем классе двадцать учеников."
+   "explanation_ru": "õpilane — ученик. Пример: Meie klassis on kakskümmend õpilast. Перевод: В нашем классе двадцать учеников.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-01-recall",
@@ -5090,7 +5091,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "ученик",
    "answer": "õpilane",
-   "explanation_ru": "õpilane — ученик. Пример: Meie klassis on kakskümmend õpilast. Перевод: В нашем классе двадцать учеников."
+   "explanation_ru": "õpilane — ученик. Пример: Meie klassis on kakskümmend õpilast. Перевод: В нашем классе двадцать учеников.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-02-meaning",
@@ -5109,7 +5111,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "õpetaja — учитель. Пример: Õpetaja seletab uut teemat. Перевод: Учитель объясняет новую тему."
+   "explanation_ru": "õpetaja — учитель. Пример: Õpetaja seletab uut teemat. Перевод: Учитель объясняет новую тему.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-02-recall",
@@ -5121,7 +5124,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "учитель",
    "answer": "õpetaja",
-   "explanation_ru": "õpetaja — учитель. Пример: Õpetaja seletab uut teemat. Перевод: Учитель объясняет новую тему."
+   "explanation_ru": "õpetaja — учитель. Пример: Õpetaja seletab uut teemat. Перевод: Учитель объясняет новую тему.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-03-meaning",
@@ -5140,7 +5144,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "kodutöö — домашнее задание. Пример: Ma teen kodutööd pärast kooli. Перевод: Я делаю домашнее задание после школы."
+   "explanation_ru": "kodutöö — домашнее задание. Пример: Ma teen kodutööd pärast kooli. Перевод: Я делаю домашнее задание после школы.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-03-recall",
@@ -5152,7 +5157,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "домашнее задание",
    "answer": "kodutöö",
-   "explanation_ru": "kodutöö — домашнее задание. Пример: Ma teen kodutööd pärast kooli. Перевод: Я делаю домашнее задание после школы."
+   "explanation_ru": "kodutöö — домашнее задание. Пример: Ma teen kodutööd pärast kooli. Перевод: Я делаю домашнее задание после школы.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-04-meaning",
@@ -5171,7 +5177,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "kontrolltöö — контрольная работа. Пример: Homme on matemaatikas kontrolltöö. Перевод: Завтра по математике контрольная работа."
+   "explanation_ru": "kontrolltöö — контрольная работа. Пример: Homme on matemaatikas kontrolltöö. Перевод: Завтра по математике контрольная работа.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-04-recall",
@@ -5183,7 +5190,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "контрольная работа",
    "answer": "kontrolltöö",
-   "explanation_ru": "kontrolltöö — контрольная работа. Пример: Homme on matemaatikas kontrolltöö. Перевод: Завтра по математике контрольная работа."
+   "explanation_ru": "kontrolltöö — контрольная работа. Пример: Homme on matemaatikas kontrolltöö. Перевод: Завтра по математике контрольная работа.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-05-meaning",
@@ -5202,7 +5210,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "vahetund — перемена. Пример: Vahetunnis läheme kooli sööklasse. Перевод: На перемене мы идём в школьную столовую."
+   "explanation_ru": "vahetund — перемена. Пример: Vahetunnis läheme kooli sööklasse. Перевод: На перемене мы идём в школьную столовую.",
+   "kind": "vocab"
   },
   {
    "id": "v-school-05-recall",
@@ -5214,7 +5223,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "перемена",
    "answer": "vahetund",
-   "explanation_ru": "vahetund — перемена. Пример: Vahetunnis läheme kooli sööklasse. Перевод: На перемене мы идём в школьную столовую."
+   "explanation_ru": "vahetund — перемена. Пример: Vahetunnis läheme kooli sööklasse. Перевод: На перемене мы идём в школьную столовую.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-06-meaning",
@@ -5233,7 +5243,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "vanaema — бабушка. Пример: Mu vanaema elab maal. Перевод: Моя бабушка живёт в деревне."
+   "explanation_ru": "vanaema — бабушка. Пример: Mu vanaema elab maal. Перевод: Моя бабушка живёт в деревне.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-06-recall",
@@ -5245,7 +5256,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "бабушка",
    "answer": "vanaema",
-   "explanation_ru": "vanaema — бабушка. Пример: Mu vanaema elab maal. Перевод: Моя бабушка живёт в деревне."
+   "explanation_ru": "vanaema — бабушка. Пример: Mu vanaema elab maal. Перевод: Моя бабушка живёт в деревне.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-07-meaning",
@@ -5264,7 +5276,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "onu — дядя. Пример: Mu onu töötab arstina. Перевод: Мой дядя работает врачом."
+   "explanation_ru": "onu — дядя. Пример: Mu onu töötab arstina. Перевод: Мой дядя работает врачом.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-07-recall",
@@ -5276,7 +5289,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "дядя",
    "answer": "onu",
-   "explanation_ru": "onu — дядя. Пример: Mu onu töötab arstina. Перевод: Мой дядя работает врачом."
+   "explanation_ru": "onu — дядя. Пример: Mu onu töötab arstina. Перевод: Мой дядя работает врачом.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-08-meaning",
@@ -5295,7 +5309,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "nõbu — двоюродный брат / сестра. Пример: Mu nõbu on minuvanune. Перевод: Мой двоюродный брат (сестра) моего возраста."
+   "explanation_ru": "nõbu — двоюродный брат / сестра. Пример: Mu nõbu on minuvanune. Перевод: Мой двоюродный брат (сестра) моего возраста.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-08-recall",
@@ -5307,7 +5322,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "двоюродный брат / сестра",
    "answer": "nõbu",
-   "explanation_ru": "nõbu — двоюродный брат / сестра. Пример: Mu nõbu on minuvanune. Перевод: Мой двоюродный брат (сестра) моего возраста."
+   "explanation_ru": "nõbu — двоюродный брат / сестра. Пример: Mu nõbu on minuvanune. Перевод: Мой двоюродный брат (сестра) моего возраста.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-09-meaning",
@@ -5326,7 +5342,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "tütar — дочь. Пример: Naabri tütar käib samas koolis. Перевод: Дочь соседа ходит в ту же школу."
+   "explanation_ru": "tütar — дочь. Пример: Naabri tütar käib samas koolis. Перевод: Дочь соседа ходит в ту же школу.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-09-recall",
@@ -5338,7 +5355,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "дочь",
    "answer": "tütar",
-   "explanation_ru": "tütar — дочь. Пример: Naabri tütar käib samas koolis. Перевод: Дочь соседа ходит в ту же школу."
+   "explanation_ru": "tütar — дочь. Пример: Naabri tütar käib samas koolis. Перевод: Дочь соседа ходит в ту же школу.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-10-meaning",
@@ -5357,7 +5375,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "sugulane — родственник. Пример: Suvel külastame sugulasi. Перевод: Летом мы навещаем родственников."
+   "explanation_ru": "sugulane — родственник. Пример: Suvel külastame sugulasi. Перевод: Летом мы навещаем родственников.",
+   "kind": "vocab"
   },
   {
    "id": "v-family-10-recall",
@@ -5369,7 +5388,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "родственник",
    "answer": "sugulane",
-   "explanation_ru": "sugulane — родственник. Пример: Suvel külastame sugulasi. Перевод: Летом мы навещаем родственников."
+   "explanation_ru": "sugulane — родственник. Пример: Suvel külastame sugulasi. Перевод: Летом мы навещаем родственников.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-11-meaning",
@@ -5388,7 +5408,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "köök — кухня. Пример: Ema valmistab köögis õhtusööki. Перевод: Мама готовит на кухне ужин."
+   "explanation_ru": "köök — кухня. Пример: Ema valmistab köögis õhtusööki. Перевод: Мама готовит на кухне ужин.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-11-recall",
@@ -5400,7 +5421,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "кухня",
    "answer": "köök",
-   "explanation_ru": "köök — кухня. Пример: Ema valmistab köögis õhtusööki. Перевод: Мама готовит на кухне ужин."
+   "explanation_ru": "köök — кухня. Пример: Ema valmistab köögis õhtusööki. Перевод: Мама готовит на кухне ужин.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-12-meaning",
@@ -5419,7 +5441,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "korter — квартира. Пример: Meie korter on viiendal korrusel. Перевод: Наша квартира на пятом этаже."
+   "explanation_ru": "korter — квартира. Пример: Meie korter on viiendal korrusel. Перевод: Наша квартира на пятом этаже.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-12-recall",
@@ -5431,7 +5454,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "квартира",
    "answer": "korter",
-   "explanation_ru": "korter — квартира. Пример: Meie korter on viiendal korrusel. Перевод: Наша квартира на пятом этаже."
+   "explanation_ru": "korter — квартира. Пример: Meie korter on viiendal korrusel. Перевод: Наша квартира на пятом этаже.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-13-meaning",
@@ -5450,7 +5474,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "magamistuba — спальня. Пример: Magamistoas on voodi ja kapp. Перевод: В спальне есть кровать и шкаф."
+   "explanation_ru": "magamistuba — спальня. Пример: Magamistoas on voodi ja kapp. Перевод: В спальне есть кровать и шкаф.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-13-recall",
@@ -5462,7 +5487,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "спальня",
    "answer": "magamistuba",
-   "explanation_ru": "magamistuba — спальня. Пример: Magamistoas on voodi ja kapp. Перевод: В спальне есть кровать и шкаф."
+   "explanation_ru": "magamistuba — спальня. Пример: Magamistoas on voodi ja kapp. Перевод: В спальне есть кровать и шкаф.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-14-meaning",
@@ -5481,7 +5507,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "trepp — лестница. Пример: Trepp viib teisele korrusele. Перевод: Лестница ведёт на второй этаж."
+   "explanation_ru": "trepp — лестница. Пример: Trepp viib teisele korrusele. Перевод: Лестница ведёт на второй этаж.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-14-recall",
@@ -5493,7 +5520,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "лестница",
    "answer": "trepp",
-   "explanation_ru": "trepp — лестница. Пример: Trepp viib teisele korrusele. Перевод: Лестница ведёт на второй этаж."
+   "explanation_ru": "trepp — лестница. Пример: Trepp viib teisele korrusele. Перевод: Лестница ведёт на второй этаж.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-15-meaning",
@@ -5512,7 +5540,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "aken — окно. Пример: Palun ava aken, toas on palav. Перевод: Пожалуйста, открой окно, в комнате жарко."
+   "explanation_ru": "aken — окно. Пример: Palun ava aken, toas on palav. Перевод: Пожалуйста, открой окно, в комнате жарко.",
+   "kind": "vocab"
   },
   {
    "id": "v-home-15-recall",
@@ -5524,7 +5553,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "окно",
    "answer": "aken",
-   "explanation_ru": "aken — окно. Пример: Palun ava aken, toas on palav. Перевод: Пожалуйста, открой окно, в комнате жарко."
+   "explanation_ru": "aken — окно. Пример: Palun ava aken, toas on palav. Перевод: Пожалуйста, открой окно, в комнате жарко.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-16-meaning",
@@ -5543,7 +5573,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "hommikusöök — завтрак. Пример: Hommikusöögiks sööme putru. Перевод: На завтрак мы едим кашу."
+   "explanation_ru": "hommikusöök — завтрак. Пример: Hommikusöögiks sööme putru. Перевод: На завтрак мы едим кашу.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-16-recall",
@@ -5555,7 +5586,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "завтрак",
    "answer": "hommikusöök",
-   "explanation_ru": "hommikusöök — завтрак. Пример: Hommikusöögiks sööme putru. Перевод: На завтрак мы едим кашу."
+   "explanation_ru": "hommikusöök — завтрак. Пример: Hommikusöögiks sööme putru. Перевод: На завтрак мы едим кашу.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-17-meaning",
@@ -5574,7 +5606,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "lõunasöök — обед. Пример: Lõunasöök on koolis kell kaksteist. Перевод: Обед в школе в двенадцать часов."
+   "explanation_ru": "lõunasöök — обед. Пример: Lõunasöök on koolis kell kaksteist. Перевод: Обед в школе в двенадцать часов.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-17-recall",
@@ -5586,7 +5619,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "обед",
    "answer": "lõunasöök",
-   "explanation_ru": "lõunasöök — обед. Пример: Lõunasöök on koolis kell kaksteist. Перевод: Обед в школе в двенадцать часов."
+   "explanation_ru": "lõunasöök — обед. Пример: Lõunasöök on koolis kell kaksteist. Перевод: Обед в школе в двенадцать часов.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-18-meaning",
@@ -5605,7 +5639,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "kartul — картофель. Пример: Ma armastan praetud kartuleid. Перевод: Я люблю жареный картофель."
+   "explanation_ru": "kartul — картофель. Пример: Ma armastan praetud kartuleid. Перевод: Я люблю жареный картофель.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-18-recall",
@@ -5617,7 +5652,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "картофель",
    "answer": "kartul",
-   "explanation_ru": "kartul — картофель. Пример: Ma armastan praetud kartuleid. Перевод: Я люблю жареный картофель."
+   "explanation_ru": "kartul — картофель. Пример: Ma armastan praetud kartuleid. Перевод: Я люблю жареный картофель.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-19-meaning",
@@ -5636,7 +5672,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "juust — сыр. Пример: Võileival on juust ja tomat. Перевод: На бутерброде сыр и помидор."
+   "explanation_ru": "juust — сыр. Пример: Võileival on juust ja tomat. Перевод: На бутерброде сыр и помидор.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-19-recall",
@@ -5648,7 +5685,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "сыр",
    "answer": "juust",
-   "explanation_ru": "juust — сыр. Пример: Võileival on juust ja tomat. Перевод: На бутерброде сыр и помидор."
+   "explanation_ru": "juust — сыр. Пример: Võileival on juust ja tomat. Перевод: На бутерброде сыр и помидор.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-20-meaning",
@@ -5667,7 +5705,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "supp — суп. Пример: Täna on lõunaks kalasupp. Перевод: Сегодня на обед рыбный суп."
+   "explanation_ru": "supp — суп. Пример: Täna on lõunaks kalasupp. Перевод: Сегодня на обед рыбный суп.",
+   "kind": "vocab"
   },
   {
    "id": "v-food-20-recall",
@@ -5679,7 +5718,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "суп",
    "answer": "supp",
-   "explanation_ru": "supp — суп. Пример: Täna on lõunaks kalasupp. Перевод: Сегодня на обед рыбный суп."
+   "explanation_ru": "supp — суп. Пример: Täna on lõunaks kalasupp. Перевод: Сегодня на обед рыбный суп.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-21-meaning",
@@ -5698,7 +5738,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "arst — врач. Пример: Arst vaatas mu kurgu üle. Перевод: Врач осмотрел моё горло."
+   "explanation_ru": "arst — врач. Пример: Arst vaatas mu kurgu üle. Перевод: Врач осмотрел моё горло.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-21-recall",
@@ -5710,7 +5751,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "врач",
    "answer": "arst",
-   "explanation_ru": "arst — врач. Пример: Arst vaatas mu kurgu üle. Перевод: Врач осмотрел моё горло."
+   "explanation_ru": "arst — врач. Пример: Arst vaatas mu kurgu üle. Перевод: Врач осмотрел моё горло.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-22-meaning",
@@ -5729,7 +5771,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "haige — больной. Пример: Ma olin eile haige ega läinud kooli. Перевод: Вчера я болел(а) и не пошёл (пошла) в школу."
+   "explanation_ru": "haige — больной. Пример: Ma olin eile haige ega läinud kooli. Перевод: Вчера я болел(а) и не пошёл (пошла) в школу.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-22-recall",
@@ -5741,7 +5784,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "больной",
    "answer": "haige",
-   "explanation_ru": "haige — больной. Пример: Ma olin eile haige ega läinud kooli. Перевод: Вчера я болел(а) и не пошёл (пошла) в школу."
+   "explanation_ru": "haige — больной. Пример: Ma olin eile haige ega läinud kooli. Перевод: Вчера я болел(а) и не пошёл (пошла) в школу.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-23-meaning",
@@ -5760,7 +5804,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "valutama — болеть (о части тела). Пример: Mul valutab pea. Перевод: У меня болит голова."
+   "explanation_ru": "valutama — болеть (о части тела). Пример: Mul valutab pea. Перевод: У меня болит голова.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-23-recall",
@@ -5772,7 +5817,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "болеть (о части тела)",
    "answer": "valutama",
-   "explanation_ru": "valutama — болеть (о части тела). Пример: Mul valutab pea. Перевод: У меня болит голова."
+   "explanation_ru": "valutama — болеть (о части тела). Пример: Mul valutab pea. Перевод: У меня болит голова.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-24-meaning",
@@ -5791,7 +5837,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "palavik — жар, высокая температура. Пример: Lapsel on palavik. Перевод: У ребёнка температура."
+   "explanation_ru": "palavik — жар, высокая температура. Пример: Lapsel on palavik. Перевод: У ребёнка температура.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-24-recall",
@@ -5803,7 +5850,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "жар, высокая температура",
    "answer": "palavik",
-   "explanation_ru": "palavik — жар, высокая температура. Пример: Lapsel on palavik. Перевод: У ребёнка температура."
+   "explanation_ru": "palavik — жар, высокая температура. Пример: Lapsel on palavik. Перевод: У ребёнка температура.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-25-meaning",
@@ -5822,7 +5870,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "ravim — лекарство. Пример: Võta see ravim pärast sööki. Перевод: Прими это лекарство после еды."
+   "explanation_ru": "ravim — лекарство. Пример: Võta see ravim pärast sööki. Перевод: Прими это лекарство после еды.",
+   "kind": "vocab"
   },
   {
    "id": "v-health-25-recall",
@@ -5834,7 +5883,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "лекарство",
    "answer": "ravim",
-   "explanation_ru": "ravim — лекарство. Пример: Võta see ravim pärast sööki. Перевод: Прими это лекарство после еды."
+   "explanation_ru": "ravim — лекарство. Пример: Võta see ravim pärast sööki. Перевод: Прими это лекарство после еды.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-26-meaning",
@@ -5853,7 +5903,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "buss — автобус. Пример: Buss tuleb kümne minuti pärast. Перевод: Автобус придёт через десять минут."
+   "explanation_ru": "buss — автобус. Пример: Buss tuleb kümne minuti pärast. Перевод: Автобус придёт через десять минут.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-26-recall",
@@ -5865,7 +5916,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "автобус",
    "answer": "buss",
-   "explanation_ru": "buss — автобус. Пример: Buss tuleb kümne minuti pärast. Перевод: Автобус придёт через десять минут."
+   "explanation_ru": "buss — автобус. Пример: Buss tuleb kümne minuti pärast. Перевод: Автобус придёт через десять минут.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-27-meaning",
@@ -5884,7 +5936,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "peatus — остановка. Пример: Järgmine peatus on kesklinn. Перевод: Следующая остановка — центр."
+   "explanation_ru": "peatus — остановка. Пример: Järgmine peatus on kesklinn. Перевод: Следующая остановка — центр.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-27-recall",
@@ -5896,7 +5949,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "остановка",
    "answer": "peatus",
-   "explanation_ru": "peatus — остановка. Пример: Järgmine peatus on kesklinn. Перевод: Следующая остановка — центр."
+   "explanation_ru": "peatus — остановка. Пример: Järgmine peatus on kesklinn. Перевод: Следующая остановка — центр.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-28-meaning",
@@ -5915,7 +5969,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "ristmik — перекрёсток. Пример: Pööra ristmikul vasakule. Перевод: На перекрёстке поверни налево."
+   "explanation_ru": "ristmik — перекрёсток. Пример: Pööra ristmikul vasakule. Перевод: На перекрёстке поверни налево.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-28-recall",
@@ -5927,7 +5982,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "перекрёсток",
    "answer": "ristmik",
-   "explanation_ru": "ristmik — перекрёсток. Пример: Pööra ristmikul vasakule. Перевод: На перекрёстке поверни налево."
+   "explanation_ru": "ristmik — перекрёсток. Пример: Pööra ristmikul vasakule. Перевод: На перекрёстке поверни налево.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-29-meaning",
@@ -5946,7 +6002,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "tänav — улица. Пример: Meie kool asub Pikal tänaval. Перевод: Наша школа находится на улице Пика."
+   "explanation_ru": "tänav — улица. Пример: Meie kool asub Pikal tänaval. Перевод: Наша школа находится на улице Пика.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-29-recall",
@@ -5958,7 +6015,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "улица",
    "answer": "tänav",
-   "explanation_ru": "tänav — улица. Пример: Meie kool asub Pikal tänaval. Перевод: Наша школа находится на улице Пика."
+   "explanation_ru": "tänav — улица. Пример: Meie kool asub Pikal tänaval. Перевод: Наша школа находится на улице Пика.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-30-meaning",
@@ -5977,7 +6035,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "pilet — билет. Пример: Ma ostsin kinopileti. Перевод: Я купил(а) билет в кино."
+   "explanation_ru": "pilet — билет. Пример: Ma ostsin kinopileti. Перевод: Я купил(а) билет в кино.",
+   "kind": "vocab"
   },
   {
    "id": "v-city-30-recall",
@@ -5989,7 +6048,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "билет",
    "answer": "pilet",
-   "explanation_ru": "pilet — билет. Пример: Ma ostsin kinopileti. Перевод: Я купил(а) билет в кино."
+   "explanation_ru": "pilet — билет. Пример: Ma ostsin kinopileti. Перевод: Я купил(а) билет в кино.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-31-meaning",
@@ -6008,7 +6068,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "treening — тренировка. Пример: Mul on esmaspäeval treening. Перевод: У меня в понедельник тренировка."
+   "explanation_ru": "treening — тренировка. Пример: Mul on esmaspäeval treening. Перевод: У меня в понедельник тренировка.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-31-recall",
@@ -6020,7 +6081,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "тренировка",
    "answer": "treening",
-   "explanation_ru": "treening — тренировка. Пример: Mul on esmaspäeval treening. Перевод: У меня в понедельник тренировка."
+   "explanation_ru": "treening — тренировка. Пример: Mul on esmaspäeval treening. Перевод: У меня в понедельник тренировка.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-32-meaning",
@@ -6039,7 +6101,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "jalutama — гулять, прогуливаться. Пример: Õhtul läheme koeraga jalutama. Перевод: Вечером мы идём гулять с собакой."
+   "explanation_ru": "jalutama — гулять, прогуливаться. Пример: Õhtul läheme koeraga jalutama. Перевод: Вечером мы идём гулять с собакой.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-32-recall",
@@ -6051,7 +6114,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "гулять, прогуливаться",
    "answer": "jalutama",
-   "explanation_ru": "jalutama — гулять, прогуливаться. Пример: Õhtul läheme koeraga jalutama. Перевод: Вечером мы идём гулять с собакой."
+   "explanation_ru": "jalutama — гулять, прогуливаться. Пример: Õhtul läheme koeraga jalutama. Перевод: Вечером мы идём гулять с собакой.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-33-meaning",
@@ -6070,7 +6134,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "huvi — интерес, увлечение. Пример: Mu suurim huvi on muusika. Перевод: Моё главное увлечение — музыка."
+   "explanation_ru": "huvi — интерес, увлечение. Пример: Mu suurim huvi on muusika. Перевод: Моё главное увлечение — музыка.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-33-recall",
@@ -6082,7 +6147,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "интерес, увлечение",
    "answer": "huvi",
-   "explanation_ru": "huvi — интерес, увлечение. Пример: Mu suurim huvi on muusika. Перевод: Моё главное увлечение — музыка."
+   "explanation_ru": "huvi — интерес, увлечение. Пример: Mu suurim huvi on muusika. Перевод: Моё главное увлечение — музыка.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-34-meaning",
@@ -6101,7 +6167,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "kontsert — концерт. Пример: Laupäeval on koolis kontsert. Перевод: В субботу в школе концерт."
+   "explanation_ru": "kontsert — концерт. Пример: Laupäeval on koolis kontsert. Перевод: В субботу в школе концерт.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-34-recall",
@@ -6113,7 +6180,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "концерт",
    "answer": "kontsert",
-   "explanation_ru": "kontsert — концерт. Пример: Laupäeval on koolis kontsert. Перевод: В субботу в школе концерт."
+   "explanation_ru": "kontsert — концерт. Пример: Laupäeval on koolis kontsert. Перевод: В субботу в школе концерт.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-35-meaning",
@@ -6132,7 +6200,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "matkama — ходить в поход. Пример: Suvel tahame minna matkama. Перевод: Летом мы хотим пойти в поход."
+   "explanation_ru": "matkama — ходить в поход. Пример: Suvel tahame minna matkama. Перевод: Летом мы хотим пойти в поход.",
+   "kind": "vocab"
   },
   {
    "id": "v-freetime-35-recall",
@@ -6144,7 +6213,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "ходить в поход",
    "answer": "matkama",
-   "explanation_ru": "matkama — ходить в поход. Пример: Suvel tahame minna matkama. Перевод: Летом мы хотим пойти в поход."
+   "explanation_ru": "matkama — ходить в поход. Пример: Suvel tahame minna matkama. Перевод: Летом мы хотим пойти в поход.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-36-meaning",
@@ -6163,7 +6233,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "ilm — погода. Пример: Täna on ilus ilm. Перевод: Сегодня хорошая погода."
+   "explanation_ru": "ilm — погода. Пример: Täna on ilus ilm. Перевод: Сегодня хорошая погода.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-36-recall",
@@ -6175,7 +6246,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "погода",
    "answer": "ilm",
-   "explanation_ru": "ilm — погода. Пример: Täna on ilus ilm. Перевод: Сегодня хорошая погода."
+   "explanation_ru": "ilm — погода. Пример: Täna on ilus ilm. Перевод: Сегодня хорошая погода.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-37-meaning",
@@ -6194,7 +6266,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "vihm — дождь. Пример: Hommikul sadas vihma. Перевод: Утром шёл дождь."
+   "explanation_ru": "vihm — дождь. Пример: Hommikul sadas vihma. Перевод: Утром шёл дождь.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-37-recall",
@@ -6206,7 +6279,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "дождь",
    "answer": "vihm",
-   "explanation_ru": "vihm — дождь. Пример: Hommikul sadas vihma. Перевод: Утром шёл дождь."
+   "explanation_ru": "vihm — дождь. Пример: Hommikul sadas vihma. Перевод: Утром шёл дождь.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-38-meaning",
@@ -6225,7 +6299,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "tuul — ветер. Пример: Väljas on tugev tuul. Перевод: На улице сильный ветер."
+   "explanation_ru": "tuul — ветер. Пример: Väljas on tugev tuul. Перевод: На улице сильный ветер.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-38-recall",
@@ -6237,7 +6312,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "ветер",
    "answer": "tuul",
-   "explanation_ru": "tuul — ветер. Пример: Väljas on tugev tuul. Перевод: На улице сильный ветер."
+   "explanation_ru": "tuul — ветер. Пример: Väljas on tugev tuul. Перевод: На улице сильный ветер.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-39-meaning",
@@ -6256,7 +6332,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "mets — лес. Пример: Seenel käime metsas. Перевод: За грибами мы ходим в лес."
+   "explanation_ru": "mets — лес. Пример: Seenel käime metsas. Перевод: За грибами мы ходим в лес.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-39-recall",
@@ -6268,7 +6345,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "лес",
    "answer": "mets",
-   "explanation_ru": "mets — лес. Пример: Seenel käime metsas. Перевод: За грибами мы ходим в лес."
+   "explanation_ru": "mets — лес. Пример: Seenel käime metsas. Перевод: За грибами мы ходим в лес.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-40-meaning",
@@ -6287,7 +6365,8 @@
    ],
    "options_lang": "ru",
    "answer": 0,
-   "explanation_ru": "järv — озеро. Пример: Suvel ujume järves. Перевод: Летом мы плаваем в озере."
+   "explanation_ru": "järv — озеро. Пример: Suvel ujume järves. Перевод: Летом мы плаваем в озере.",
+   "kind": "vocab"
   },
   {
    "id": "v-nature-40-recall",
@@ -6299,7 +6378,8 @@
    "prompt_et": "Kirjuta eesti keeles: ___",
    "prompt_ru": "озеро",
    "answer": "järv",
-   "explanation_ru": "järv — озеро. Пример: Suvel ujume järves. Перевод: Летом мы плаваем в озере."
+   "explanation_ru": "järv — озеро. Пример: Suvel ujume järves. Перевод: Летом мы плаваем в озере.",
+   "kind": "vocab"
   },
   {
    "id": "g-b1b2-1",

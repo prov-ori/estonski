@@ -6,7 +6,24 @@ import { confirmDialog } from '../dialog.js';
 const MODNAME = { diagnostic: 'Диагностика', grammar: 'Грамматика', reading: 'Чтение', listening: 'Аудирование', mock: 'Пробный экзамен', drills: 'Тренажёры', vocab: 'Словарь (тест)' };
 const MODLINK = { diagnostic: '#/diagnostic', grammar: '#/grammar', reading: '#/reading', listening: '#/listening', mock: '#/mock', drills: '#/drills', vocab: '#/vocab' };
 
-function transferBox(rerender) {
+/** Текстовая сводка для учителя: без имён, только цифры. */
+function reportText(topics, byMod, byTopic) {
+  const lines = ['Сводка тренажёра Eesti keel B1 (ориентировочная, неофициальная)', `Дата: ${new Date().toLocaleDateString('ru-RU')}`, ''];
+  lines.push(`Серия занятий: ${store.streak()} дн.; ответов сегодня: ${store.todayCount()}`);
+  const diag = store.getDiag();
+  if (diag) lines.push(`Диагностика (${new Date(diag.ts).toLocaleDateString('ru-RU')}): ориентировочная зона ${diag.zoneLabel}, ${diag.got} из ${diag.max}`);
+  lines.push('', 'По разделам (верно / всего):');
+  Object.entries(byMod).forEach(([m, v]) => lines.push(`  ${MODNAME[m] || m}: ${v.r} / ${v.r + v.w}`));
+  lines.push('', 'По темам, от слабых к сильным:');
+  Object.entries(byTopic).sort((a, b) => a[1].r / (a[1].r + a[1].w) - b[1].r / (b[1].r + b[1].w)).forEach(([t, v]) => lines.push(`  ${topics.get(t) ? topics.get(t).name_ru : t}: ${pct(v.r, v.r + v.w)} % (${v.r + v.w} ответов)`));
+  const mocks = store.getMock();
+  if (mocks.length) { lines.push('', 'Пробные экзамены (ориентировочно, только автопроверяемые части):'); mocks.slice(-5).forEach((m) => lines.push(`  ${new Date(m.ts).toLocaleDateString('ru-RU')}: ${m.pct} %`)); }
+  const texts = Object.values(store.state.writing).filter((w) => w.text).length;
+  lines.push('', `Черновиков писем: ${texts}`);
+  return lines.join('\n');
+}
+
+function transferBox(rerender, report) {
   const msg = h('p', { role: 'status', 'aria-live': 'polite', class: 'muted' });
   const file = h('input', { type: 'file', accept: 'application/json,.json', id: 'imp', class: 'sr-only', tabindex: '-1', 'aria-hidden': 'true', onchange: async (e) => {
     const f = e.target.files && e.target.files[0];
@@ -23,7 +40,13 @@ function transferBox(rerender) {
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     msg.textContent = 'Файл сохранён.';
   } }, 'Скачать прогресс');
-  return h('div', null, h('div', { class: 'row' }, dl, h('button', { class: 'btn', type: 'button', onclick: () => file.click() }, 'Загрузить из файла'), file), msg);
+  const rep = h('button', { class: 'btn', type: 'button', onclick: () => {
+    const url = URL.createObjectURL(new Blob([report()], { type: 'text/plain;charset=utf-8' }));
+    const a = h('a', { href: url, download: 'svodka-dlya-uchitelya.txt' });
+    document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+    msg.textContent = 'Сводка сохранена. В ней нет имени и персональных данных.';
+  } }, 'Сводка для учителя (текст)');
+  return h('div', null, h('div', { class: 'row' }, dl, rep, h('button', { class: 'btn', type: 'button', onclick: () => file.click() }, 'Загрузить из файла'), file), msg);
 }
 
 export default {
@@ -104,7 +127,7 @@ export default {
         mocks.length > 0 && h('div', null, h('h2', null, 'Пробные экзамены'), h('ul', null, [...mocks].reverse().slice(0, 5).map((r) => h('li', null, `${fmtDate(r.ts)}: ${r.pct} % (ориентировочно)`)))),
         h('h2', null, 'Перенос между устройствами'),
         h('p', { class: 'muted' }, 'Сохраните прогресс в файл и загрузите его на другом устройстве. Файл остаётся у вас: никуда не отправляется.'),
-        transferBox(render),
+        transferBox(render, () => reportText(topics, byMod, byTopic)),
         h('h2', null, 'Сброс'), resetBox);
     };
     render();

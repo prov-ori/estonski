@@ -1,9 +1,16 @@
 import { h, content, config, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
 import { seriesLinks } from '../series.js';
-import { timerWidget, recorderWidget, checklistWidget, filteredList, nextLink, splitView } from '../widgets.js';
+import { timerWidget, recorderWidget, checklistWidget, filteredList, nextLink, splitView, speakButton } from '../widgets.js';
 
 export function cardBlock(c) {
+  if (c.kind === 'monologue' || c.kind === 'interview') {
+    return h('div', null,
+      h('p', { class: 'lead' }, c.situation_ru),
+      h('div', { class: 'card role' }, h('h2', null, c.kind === 'monologue' ? 'План монолога' : 'Вопросы интервьюера'), h('ol', null, c.prompts_et.map((p) => h('li', { lang: 'et' }, p, ' ', speakButton(p, 'Прослушать вопрос'))))),
+      h('details', null, h('summary', null, 'Полезные фразы'), h('ul', null, c.phrases_et.map((p) => h('li', { lang: 'et' }, p)))),
+      c.model_et && h('details', { class: 'sample' }, h('summary', null, 'Образец монолога (откройте после своей попытки)'), h('p', { lang: 'et' }, c.model_et), h('p', { class: 'muted small-text' }, 'Это один из возможных вариантов, не единственно верный.')));
+  }
   const role = (r) => h('div', { class: 'card role' }, h('h2', null, r.title_ru), h('ul', null, r.prompts_et.map((p) => h('li', { lang: 'et' }, p))));
   return h('div', null,
     h('p', { class: 'lead' }, c.situation_ru),
@@ -31,7 +38,7 @@ export default {
     const rec = recorderWidget();
     const cl = checklistWidget(data.checklist, saved.checks, (checks) => store.setSpeaking(card.id, { checks }));
     addChildren(root, 
-      h('p', null, h('a', { href: '#/speaking' }, '← Все карточки'), '  ', nextLink(data.items, card.id, 'speaking', 'Следующая карточка →')),
+      h('p', null, h('a', { href: '#/speaking' }, '← Все карточки'), '  ', nextLink(data.items, card.id, 'speaking', 'Следующая карточка →'), '  ', h('button', { class: 'btn small', type: 'button', onclick: () => window.print() }, 'Печать')),
       h('h1', null, 'Говорение: ' + card.title_ru),
       series,
       splitView([cardBlock(card), h('p', { class: 'muted' }, card.explanation_ru)],

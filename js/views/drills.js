@@ -10,6 +10,7 @@ const HUB = [
   ['forms', 'Формы слов', 'Падежи существительных и формы глаголов: выбор или ввод.'],
   ['numbers', 'Числительные и время', 'Числа, время (pool kaheksa), даты. Задания создаются по правилам.'],
   ['order', 'Порядок слов', 'Соберите предложение из слов.'],
+  ['fix', 'Исправь ошибку', 'В предложении одна ошибка: напечатайте верный вариант.'],
   ['dictation', 'Диктант', 'Слушайте фразу и печатайте её с клавиатуры.'],
 ];
 
@@ -37,6 +38,7 @@ export default {
     if (sub === 'forms') return forms(area);
     if (sub === 'numbers') return numbers(area);
     if (sub === 'order') return order(area);
+    if (sub === 'fix') return fixes(area);
     return dictation(area);
   },
 };
@@ -68,6 +70,20 @@ async function numbers(area) {
     while (qs.length < 10 && guard++ < 100) { const q = numberQuestion(kind); if (!qs.some((x) => x.id === q.id)) qs.push(q); }
     runTrainer(area, qs.map((q) => ({ q, module: 'drills' })), { again: start, extraButtons: h('a', { class: 'btn', href: '#/drills/numbers' }, 'Изменить настройки') });
   }
+}
+
+// ---------- исправь ошибку ----------
+async function fixes(area) {
+  const items = (await content('fixes')).items;
+  const start = () => {
+    const qs = shuffle(items).slice(0, 10).map((x) => ({
+      id: x.id, topic: x.topic, level: x.level, status: x.status, type: 'input',
+      prompt_et: `Paranda viga: ${x.wrong_et}`, answer: x.answer_et, also_ok: x.also_ok, explanation_ru: x.explanation_ru,
+    }));
+    runTrainer(area, qs.map((q) => ({ q, module: 'drills' })), { again: start });
+  };
+  setChildren(area, h('div', { class: 'card' }, h('p', null, 'В каждом предложении одна ошибка. Напечатайте всё предложение правильно (регистр и точка в конце не важны).'),
+    h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (10 заданий)'))));
 }
 
 // ---------- порядок слов ----------

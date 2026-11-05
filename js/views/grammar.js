@@ -1,6 +1,8 @@
-import { h, content, config, shuffle, pct, setChildren, addChildren } from '../util.js';
-import { renderQuestion } from '../question.js';
+import { h, content, config, shuffle, addChildren, setChildren } from '../util.js';
+import { runTrainer, prioritize } from '../trainer.js';
 import { store } from '../store.js';
+
+const SIZES = [['10', '10 заданий'], ['20', '20 заданий'], ['all', 'Все задания темы']];
 
 export default {
   title: 'Грамматика',
@@ -9,71 +11,53 @@ export default {
     const topics = topicsCfg.grammar;
     const filter = args[0] || 'all';
     const all = data.items;
+    let size = '10';
 
     const countFor = (id) => all.filter((q) => q.topic === id).length;
     const missed = () => all.filter((q) => { const a = store.getAnswer(q.id); return a && !a.ok; });
+    const acc = (id) => {
+      let r = 0, w = 0;
+      all.filter((q) => q.topic === id).forEach((q) => { const a = store.getAnswer(q.id); if (a) { r += a.r; w += a.w; } });
+      return r + w ? ` · ${Math.round((100 * r) / (r + w))} %` : '';
+    };
+    const chip = (id, label) => h('a', { class: 'chip', href: `#/grammar/${id === 'all' ? '' : id}`, 'aria-current': id === filter ? 'true' : null }, label);
+
     let pool;
     if (filter === 'mistakes') pool = missed();
     else if (filter === 'all') pool = all;
     else pool = all.filter((q) => q.topic === filter);
 
-    const chips = h('nav', { class: 'chips', 'aria-label': 'Темы грамматики' },
-      chip('all', `Все (${all.length})`),
-      topics.map((t) => chip(t.id, `${t.name_ru} (${countFor(t.id)})`)),
-      chip('mistakes', `Мои ошибки (${missed().length})`));
-    function chip(id, label) {
-      return h('a', { class: 'chip', href: `#/grammar/${id === 'all' ? '' : id}`, 'aria-current': id === filter ? 'true' : null }, label);
-    }
-
     const sheetTopic = topics.find((t) => t.id === filter);
-    addChildren(root, 
+    addChildren(root,
       h('h1', null, 'Грамматика'),
-      h('p', { class: 'lead' }, 'Выберите тему, отвечайте — проверка сразу, с объяснением по-русски. В заданиях с полем ввода пользуйтесь кнопками õ ä ö ü.'),
-      chips,
-      sheetTopic && h('details', { class: 'sheet' }, h('summary', null, `Памятка: ${sheetTopic.name_ru}`), h('ul', null, sheetTopic.cheatsheet_ru.map((l) => h('li', null, l)))));
+      h('p', { class: 'lead' }, 'Выберите тему и отвечайте: проверка сразу, с объяснением по-русски. Сначала предлагаются задания, в которых вы ошибались, и ещё не виденные. В заданиях с полем ввода пользуйтесь кнопками õ ä ö ü.'),
+      h('nav', { class: 'chips', 'aria-label': 'Темы грамматики' },
+        chip('all', `Все (${all.length})`),
+        topics.map((t) => chip(t.id, `${t.name_ru} (${countFor(t.id)})${acc(t.id)}`)),
+        chip('mistakes', `Мои ошибки (${missed().length})`)),
+      h('p', { class: 'muted small-text' }, 'Другие виды тренировки: ', h('a', { href: '#/drills' }, 'тренажёры'), ' (формы слов, числительные, порядок слов, диктант) и ', h('a', { href: '#/reference' }, 'справочник'), '.'),
+      sheetTopic && h('details', { class: 'sheet', open: true }, h('summary', null, `Памятка: ${sheetTopic.name_ru}`), h('ul', null, sheetTopic.cheatsheet_ru.map((l) => h('li', null, l)))));
 
-    const area = h('div', { class: 'trainer', 'aria-live': 'off' });
-    addChildren(root, area);
+    const area = h('div', { class: 'trainer' });
+    root.append(area);
 
-    if (!pool.length) {
-      addChildren(area, h('p', { class: 'notice' }, filter === 'mistakes' ? 'Ошибок пока нет — отличная работа! Потренируйтесь на любой теме.' : 'В этой теме пока нет заданий.'));
-      return;
+    function menu() {
+      if (!pool.length) {
+        setChildren(area, h('p', { class: 'notice' }, filter === 'mistakes' ? 'Ошибок пока нет — отлично! Потренируйтесь на любой теме.' : 'В этой теме пока нет заданий.'));
+        return;
+      }
+      const sel = h('select', { class: 'select', id: 'size', onchange: (e) => { size = e.target.value; } }, SIZES.map(([v, l]) => h('option', { value: v }, l)));
+      sel.value = size;
+      setChildren(area, h('div', { class: 'card' },
+        h('p', null, `В выбранной теме заданий: ${pool.length}`),
+        h('div', { class: 'field' }, h('label', { for: 'size' }, 'Размер сессии'), sel),
+        h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать'))));
     }
-
-    let queue, i, score;
-    function begin() {
-      queue = shuffle(pool); i = 0; score = 0;
-      next();
+    function start() {
+      let entries = prioritize(pool.map((q) => ({ q, module: 'grammar' })));
+      if (size !== 'all') entries = entries.slice(0, Number(size));
+      runTrainer(area, entries, { again: start, extraButtons: h('a', { class: 'btn', href: '#/grammar' }, 'Выбрать другую тему') });
     }
-    function next() {
-      if (i >= queue.length) return summary();
-      const q = queue[i];
-      let graded = false;
-      const nextBtn = h('button', { class: 'btn primary', type: 'button', hidden: true, onclick: () => { i++; next(); } }, i === queue.length - 1 ? 'Завершить' : 'Дальше →');
-      const api = renderQuestion(q, {
-        immediate: true, number: null,
-        onGraded: (g) => {
-          if (graded) return; graded = true;
-          if (g.ok) score++;
-          store.recordAnswer({ id: q.id, module: 'grammar', topic: q.topic, ok: g.ok });
-          nextBtn.hidden = false; nextBtn.focus();
-        },
-      });
-      setChildren(area, 
-        h('p', { class: 'muted', role: 'status' }, `Задание ${i + 1} из ${queue.length}`),
-        h('progress', { max: queue.length, value: i + 1, 'aria-label': 'Прогресс сессии' }),
-        h('div', { class: 'card' }, api.el, h('div', { class: 'row' }, nextBtn)));
-      api.focusPrompt();
-    }
-    function summary() {
-      setChildren(area, 
-        h('div', { class: 'card result' }, h('h2', null, 'Сессия завершена'), h('p', { class: 'big' }, `${score} из ${queue.length} (${pct(score, queue.length)} %)`),
-          h('p', { class: 'muted' }, 'Ошибки сохранены в «Мои ошибки» — вернитесь к ним позже.')),
-        h('div', { class: 'row' },
-          h('button', { class: 'btn primary', type: 'button', onclick: () => { if (filter === 'mistakes') location.hash = '#/grammar/mistakes'; begin(); } }, 'Ещё раз'),
-          h('a', { class: 'btn', href: '#/grammar/mistakes' }, 'Мои ошибки'),
-          h('a', { class: 'btn', href: '#/progress' }, 'Прогресс')));
-    }
-    begin();
+    menu();
   },
 };

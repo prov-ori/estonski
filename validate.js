@@ -58,6 +58,7 @@ const hasCyr = (s) => /[Ѐ-ӿ]/.test(s);
 const nn = (s) => String(s).normalize('NFC').trim().toLowerCase();
 
 function checkQuestion(file, q) {
+  if (file.endsWith('grammar.json') && q.type !== 'tf' && !/___/.test(q.prompt_et || '')) warn(file, q.id, 'нет пропуска ___ в prompt_et');
   const w = q.id;
   if (typeof q.prompt_et !== 'string' || !q.prompt_et.trim()) err(file, w, 'нет prompt_et');
   if (typeof q.prompt_et === 'string' && hasCyr(q.prompt_et)) err(file, w, 'кириллица в prompt_et (лишняя русская буква в эстонском тексте?)');
@@ -95,9 +96,6 @@ function checkQuestion(file, q) {
       if (o.length <= it.length) warn(file, w, 'match: нет лишнего варианта (угадывание станет проще)');
       break;
     }
-  }
-  if (q.type === 'choice' || q.type === 'input') {
-    if (q.prompt_et && !/___/.test(q.prompt_et) && /grammar|mock-01-g/.test(w) && !/^mock/.test(w)) warn(file, w, 'нет пропуска ___ в prompt_et');
   }
 }
 
@@ -161,7 +159,37 @@ for (const m of (data['mock-exam']?.items || [])) {
   for (const p of (fmt?.parts || [])) need(m.parts && m.parts[p.id], 'content/mock-exam.json', m.id, `нет части «${p.id}» из config/exam-format.json`);
 }
 for (const c of (data.vocab?.items || [])) need(c.et && c.ru && c.example_et, 'content/vocab.json', c.id, 'нужны et, ru, example_et');
-need((data.diagnostic?.items || []).length === 20, 'content/diagnostic.json', 'items', `ожидается 20 вопросов, найдено ${(data.diagnostic?.items || []).length}`);
+const dg = data.diagnostic?.items || [];
+const lv = (l) => dg.filter((x) => x.level === l).length;
+need(lv('A2') >= 7 && lv('B1') >= 8 && lv('B2') >= 5, 'content/diagnostic.json', 'items', `в банке нужно минимум 7 A2, 8 B1, 5 B2 (сейчас ${lv('A2')}/${lv('B1')}/${lv('B2')}) — из него случайно берётся тест из 20 вопросов`);
+
+// refs в пробных экзаменах
+for (const m of (data['mock-exam']?.items || [])) {
+  for (const [k, part] of Object.entries(m.parts || {})) {
+    if (part.ref !== undefined) need(seenIds.has(part.ref), 'content/mock-exam.json', `${m.id}.${k}`, `ref «${part.ref}» не найден`);
+  }
+}
+// forms
+for (const f of (data.forms?.items || [])) {
+  const need9 = ['nom', 'gen', 'part', 'ill', 'ine', 'ela', 'all', 'ade', 'abl'];
+  const need7 = ['ma', 'da', 'pres1', 'pres3', 'past1', 'nud', 'imp'];
+  const keys = f.id.startsWith('f-n-') ? need9 : need7;
+  for (const k of keys) need(f.forms && typeof f.forms[k] === 'string' && f.forms[k] && !hasCyr(f.forms[k]), 'content/forms.json', f.id, `нет формы «${k}» (или кириллица)`);
+}
+// order: also_ok — перестановки основного ответа
+const toks = (t) => t.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(Boolean).sort().join(' ');
+for (const o of (data.order?.items || [])) {
+  need(o.answer_et && o.ru, 'content/order.json', o.id, 'нужны answer_et и ru');
+  for (const a of (o.also_ok || [])) need(toks(a) === toks(o.answer_et), 'content/order.json', o.id, `also_ok «${a}» — не перестановка слов основного ответа`);
+  need(o.answer_et && !hasCyr(o.answer_et), 'content/order.json', o.id, 'кириллица в answer_et');
+}
+for (const o of (data.dictation?.items || [])) need(o.text_et && o.ru && !hasCyr(o.text_et), 'content/dictation.json', o.id, 'нужны text_et (без кириллицы) и ru');
+// повтор одинаковых заданий в грамматике
+const seenP = new Map();
+for (const q of (data.grammar?.items || [])) {
+  const key = nn(q.prompt_et + ' ' + (q.hint || ''));
+  if (seenP.has(key)) warn('content/grammar.json', q.id, `такой же prompt, как у ${seenP.get(key)}`); else seenP.set(key, q.id);
+}
 
 // ---- отчёт ----
 const counts = {
@@ -173,6 +201,9 @@ const counts = {
   'Письмо (задания)': data.writing?.items?.length,
   'Говорение (карточки)': data.speaking?.items?.length,
   'Пробные экзамены': data['mock-exam']?.items?.length,
+  'Формы слов (существительные + глаголы)': data.forms?.items?.length,
+  'Порядок слов': data.order?.items?.length,
+  'Диктанты': data.dictation?.items?.length,
 };
 console.log('Содержимое:');
 for (const [k, v] of Object.entries(counts)) console.log(`  ${k}: ${v ?? 0}`);

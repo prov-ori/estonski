@@ -1,9 +1,29 @@
 import { h, content, topicMap, pct, fmtDate, setChildren } from '../util.js';
-import { store } from '../store.js';
+import { store, DAILY_GOAL } from '../store.js';
 import { bar } from '../widgets.js';
 
-const MODNAME = { diagnostic: 'Диагностика', grammar: 'Грамматика', reading: 'Чтение', listening: 'Аудирование', mock: 'Пробный экзамен' };
-const MODLINK = { diagnostic: '#/diagnostic', grammar: '#/grammar', reading: '#/reading', listening: '#/listening', mock: '#/mock' };
+const MODNAME = { diagnostic: 'Диагностика', grammar: 'Грамматика', reading: 'Чтение', listening: 'Аудирование', mock: 'Пробный экзамен', drills: 'Тренажёры', vocab: 'Словарь (тест)' };
+const MODLINK = { diagnostic: '#/diagnostic', grammar: '#/grammar', reading: '#/reading', listening: '#/listening', mock: '#/mock', drills: '#/drills', vocab: '#/vocab' };
+
+function transferBox(rerender) {
+  const msg = h('p', { role: 'status', 'aria-live': 'polite', class: 'muted' });
+  const file = h('input', { type: 'file', accept: 'application/json,.json', id: 'imp', class: 'sr-only', onchange: async (e) => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    if (!window.confirm('Загрузить прогресс из файла? Текущий прогресс на этом устройстве будет заменён.')) { e.target.value = ''; return; }
+    const r = store.importJSON(await f.text());
+    if (r.ok) rerender(); else { msg.textContent = r.error; msg.className = 'notice warn'; }
+    e.target.value = '';
+  } });
+  const dl = h('button', { class: 'btn', type: 'button', onclick: () => {
+    const url = URL.createObjectURL(new Blob([store.exportJSON()], { type: 'application/json' }));
+    const a = h('a', { href: url, download: 'estonski-progress.json' });
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    msg.textContent = 'Файл сохранён.';
+  } }, 'Скачать прогресс');
+  return h('div', null, h('div', { class: 'row' }, dl, h('label', { class: 'btn', for: 'imp', tabindex: '0', role: 'button', onkeydown: (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); file.click(); } } }, 'Загрузить из файла'), file), msg);
+}
 
 export default {
   title: 'Прогресс',
@@ -37,7 +57,7 @@ export default {
       const diag = store.getDiag();
       const mocks = store.getMock();
       const name = (t) => (topics.get(t) ? topics.get(t).name_ru : t);
-      const link = (t) => (topics.get(t)?.group === 'grammar' ? `#/grammar/${t}` : topics.get(t)?.group === 'themes' ? `#/vocab/${t}` : '#/');
+      const link = (t) => { const g = topics.get(t)?.group; return g === 'grammar' ? `#/grammar/${t}` : g === 'themes' ? `#/vocab/${t}` : t === 'order' ? '#/drills/order' : t === 'dictation' ? '#/drills/dictation' : '#/drills'; };
 
       const resetBox = h('div', { class: 'reset' });
       const showConfirm = () => setChildren(resetBox, 
@@ -54,6 +74,11 @@ export default {
           ? h('p', { class: 'notice' }, 'Пока нет данных. Пройдите ', h('a', { href: '#/diagnostic' }, 'диагностику'), ' или потренируйтесь в ', h('a', { href: '#/grammar' }, 'грамматике'), '.')
           : null,
         h('p', { class: 'muted' }, 'Данные хранятся только в этом браузере. Процент — по последним и накопленным ответам; он ориентировочный.'),
+        h('h2', null, 'Активность'),
+        h('p', null, `Серия: ${store.streak()} дн. · сегодня: ${store.todayCount()} из ${DAILY_GOAL} ответов (цель на день)`),
+        h('ul', { class: 'activity' }, store.lastDays(7).map((d) => h('li', null,
+          h('span', { class: 'act-day' }, d.date.toLocaleDateString('ru-RU', { weekday: 'short', day: 'numeric', month: 'numeric' })),
+          bar(Math.min(d.n, DAILY_GOAL), DAILY_GOAL, `Активность ${d.key}`), h('span', { class: 'muted' }, ` ${d.n}`)))),
         h('h2', null, 'По разделам'),
         Object.keys(byMod).length
           ? h('table', { class: 'table' }, h('caption', { class: 'sr-only' }, 'Сводка по разделам'),
@@ -70,12 +95,15 @@ export default {
         weak.length
           ? h('ul', null, weak.map(([t, v]) => h('li', null, h('a', { href: link(t) }, name(t)), ` — ${pct(v.r, v.r + v.w)} % за ${v.r + v.w} ответов`)))
           : h('p', { class: 'muted' }, 'Слабых тем нет (учитываются темы минимум с 3 ответами и точностью ниже 70 %).'),
-        missed.length > 0 && h('div', null, h('h3', null, 'Последние ошибки'),
+        missed.length > 0 && h('div', null, h('h3', null, 'Последние ошибки'), h('p', null, h('a', { class: 'btn', href: '#/mistakes' }, 'Разобрать ошибки')),
           h('ul', null, missed.map(([id, a]) => h('li', null, h('span', { lang: 'et' }, prompts.get(id) || id), ' ', h('span', { class: 'muted small-text' }, `(${MODNAME[a.m] || a.m})`))))),
         h('h2', null, 'Словарь'),
         h('p', null, cards.length ? `Карточек в работе: ${cards.length}. В коробках 4–5: ${cards.filter((c) => c.box >= 4).length}.` : 'Карточки ещё не начаты.'),
         diag && h('div', null, h('h2', null, 'Последняя диагностика'), h('p', null, `${fmtDate(diag.ts)}: ориентировочная зона ${diag.zoneLabel}, ${diag.got} из ${diag.max}.`)),
         mocks.length > 0 && h('div', null, h('h2', null, 'Пробные экзамены'), h('ul', null, [...mocks].reverse().slice(0, 5).map((r) => h('li', null, `${fmtDate(r.ts)}: ${r.pct} % (ориентировочно)`)))),
+        h('h2', null, 'Перенос между устройствами'),
+        h('p', { class: 'muted' }, 'Сохраните прогресс в файл и загрузите его на другом устройстве. Файл остаётся у вас: никуда не отправляется.'),
+        transferBox(render),
         h('h2', null, 'Сброс'), resetBox);
     };
     render();

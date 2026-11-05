@@ -61,17 +61,87 @@
     }
   ],
   "themes": [
-    { "id": "school", "name_ru": "Школа" },
-    { "id": "family", "name_ru": "Семья" },
-    { "id": "home", "name_ru": "Дом" },
-    { "id": "food", "name_ru": "Еда" },
-    { "id": "health", "name_ru": "Здоровье" },
-    { "id": "city", "name_ru": "Город и транспорт" },
-    { "id": "freetime", "name_ru": "Свободное время" },
-    { "id": "nature", "name_ru": "Природа и погода" }
+    {
+      "id": "school",
+      "name_ru": "Школа"
+    },
+    {
+      "id": "family",
+      "name_ru": "Семья"
+    },
+    {
+      "id": "home",
+      "name_ru": "Дом"
+    },
+    {
+      "id": "food",
+      "name_ru": "Еда"
+    },
+    {
+      "id": "health",
+      "name_ru": "Здоровье"
+    },
+    {
+      "id": "city",
+      "name_ru": "Город и транспорт"
+    },
+    {
+      "id": "freetime",
+      "name_ru": "Свободное время"
+    },
+    {
+      "id": "nature",
+      "name_ru": "Природа и погода"
+    },
+    {
+      "id": "shopping",
+      "name_ru": "Покупки"
+    },
+    {
+      "id": "clothes",
+      "name_ru": "Одежда"
+    },
+    {
+      "id": "work",
+      "name_ru": "Работа и профессии"
+    },
+    {
+      "id": "holidays",
+      "name_ru": "Праздники и время"
+    },
+    {
+      "id": "travel",
+      "name_ru": "Путешествия"
+    },
+    {
+      "id": "tech",
+      "name_ru": "Техника и интернет"
+    },
+    {
+      "id": "body",
+      "name_ru": "Тело"
+    }
   ],
   "skills": [
-    { "id": "connectors", "name_ru": "Связки и фразы для письма" },
-    { "id": "checklist", "name_ru": "Чек-листы самопроверки" }
+    {
+      "id": "connectors",
+      "name_ru": "Связки и фразы для письма"
+    },
+    {
+      "id": "checklist",
+      "name_ru": "Чек-листы самопроверки"
+    },
+    {
+      "id": "drills",
+      "name_ru": "Тренажёры"
+    },
+    {
+      "id": "order",
+      "name_ru": "Порядок слов"
+    },
+    {
+      "id": "dictation",
+      "name_ru": "Диктант"
+    }
   ]
 }

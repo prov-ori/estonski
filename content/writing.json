@@ -69,6 +69,213 @@
     "В конце сделайте короткий вывод."
    ],
    "explanation_ru": "Текст-рассуждение: вступление (Minu arvates ...), две причины (esiteks, teiseks), пример (näiteks), вывод (kokkuvõttes). Лучше простые предложения без ошибок, чем сложные с ошибками."
+  },
+  {
+   "id": "w-04",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Письмо: как добраться до школы",
+   "prompt_et": "Sinu uus klassikaaslane ei tea, kuidas sinu koolini jõuda. Kirjuta talle e-kiri ja selgita teed.",
+   "prompt_ru": "Новый одноклассник не знает, как добраться до вашей школы. Напишите письмо и объясните дорогу.",
+   "content_points_et": [
+    "Millega ta võib tulla (buss, jalgsi)?",
+    "Kus on lähim peatus?",
+    "Mida ta teel näeb?",
+    "Mis kell te kohtute?"
+   ],
+   "content_points_ru": [
+    "Как он может приехать (автобус, пешком)?",
+    "Где ближайшая остановка?",
+    "Что он увидит по дороге?",
+    "Во сколько вы встретитесь?"
+   ],
+   "explanation_ru": "Описание пути: повелительное наклонение (mine, pööra), послелоги места (ees, kõrval, vastas). Начните с приветствия и закончите вежливо."
+  },
+  {
+   "id": "w-05",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Письмо другу: как прошли выходные",
+   "prompt_et": "Kirjuta sõbrale, kuidas sul nädalavahetus möödus.",
+   "prompt_ru": "Напишите другу, как у вас прошли выходные.",
+   "content_points_et": [
+    "Kus sa käisid?",
+    "Mida sa tegid?",
+    "Kellega sa olid?",
+    "Mis sulle kõige rohkem meeldis?"
+   ],
+   "content_points_ru": [
+    "Где вы были?",
+    "Что вы делали?",
+    "С кем вы были?",
+    "Что понравилось больше всего?"
+   ],
+   "explanation_ru": "Рассказ о прошлом: используйте прошедшее время (käisin, tegin, olin). Свяжите предложения словами siis, hiljem, lõpuks."
+  },
+  {
+   "id": "w-06",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Письмо: запись к врачу",
+   "prompt_et": "Sa tahad broneerida aja arsti juurde. Kirjuta arstikeskusele e-kiri.",
+   "prompt_ru": "Вы хотите записаться к врачу. Напишите письмо в поликлинику.",
+   "content_points_et": [
+    "Kes sa oled?",
+    "Mis sul viga on?",
+    "Mis päeval sulle sobib?",
+    "Kuidas sulle vastata?"
+   ],
+   "content_points_ru": [
+    "Кто вы?",
+    "Что с вами?",
+    "Какой день вам подходит?",
+    "Как вам ответить?"
+   ],
+   "explanation_ru": "Вежливое официальное письмо: Lugupeetud ..., palun, aitäh. Укажите имя, симптомы и удобное время."
+  },
+  {
+   "id": "w-07",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Мнение: нужна ли длинная перемена",
+   "prompt_et": "Kas koolis võiks olla pikem vahetund? Kirjuta oma arvamus.",
+   "prompt_ru": "Нужна ли в школе более длинная перемена? Напишите своё мнение.",
+   "content_points_et": [
+    "Mis on sinu arvamus?",
+    "Too kaks põhjust.",
+    "Too üks näide.",
+    "Tee kokkuvõte."
+   ],
+   "content_points_ru": [
+    "Каково ваше мнение?",
+    "Приведите две причины.",
+    "Приведите один пример.",
+    "Сделайте вывод."
+   ],
+   "explanation_ru": "Структура: мнение (minu arvates), причины (esiteks, teiseks), пример (näiteks), вывод (kokkuvõttes)."
+  },
+  {
+   "id": "w-08",
+   "topic": "shopping",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Письмо в магазин: куртка не подошла",
+   "prompt_et": "Ostsid internetist jope, aga see on liiga väike. Kirjuta müüjale e-kiri.",
+   "prompt_ru": "Вы купили куртку в интернете, но она слишком мала. Напишите продавцу.",
+   "content_points_et": [
+    "Mida sa ostsid ja millal?",
+    "Mis on probleem?",
+    "Mida sa soovid (vahetada või raha tagasi)?",
+    "Mida sa edasi teed?"
+   ],
+   "content_points_ru": [
+    "Что и когда вы купили?",
+    "В чём проблема?",
+    "Чего вы хотите (обмен или возврат)?",
+    "Что вы сделаете дальше?"
+   ],
+   "explanation_ru": "Вежливая просьба: palun, kas te võiksite... Опишите проблему ясно и коротко."
+  },
+  {
+   "id": "w-09",
+   "topic": "travel",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Открытка из поездки",
+   "prompt_et": "Oled puhkusel. Kirjuta oma perele postkaart või e-kiri.",
+   "prompt_ru": "Вы в отпуске. Напишите семье открытку или письмо.",
+   "content_points_et": [
+    "Kus sa oled?",
+    "Milline ilm on?",
+    "Mida sa oled teinud?",
+    "Millal sa tuled koju?"
+   ],
+   "content_points_ru": [
+    "Где вы?",
+    "Какая погода?",
+    "Что вы уже делали?",
+    "Когда вернётесь?"
+   ],
+   "explanation_ru": "Короткий неформальный текст: приветствие, 3–4 предложения о поездке, прощание. Перфект: olen käinud, olen näinud."
+  },
+  {
+   "id": "w-10",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Описание любимого блюда",
+   "prompt_et": "Kirjuta lühike tekst oma lemmikroast.",
+   "prompt_ru": "Напишите короткий текст о вашем любимом блюде.",
+   "content_points_et": [
+    "Mis roog see on?",
+    "Millest see tehakse?",
+    "Millal sa seda sööd?",
+    "Miks see sulle meeldib?"
+   ],
+   "content_points_ru": [
+    "Что это за блюдо?",
+    "Из чего оно готовится?",
+    "Когда вы его едите?",
+    "Почему оно вам нравится?"
+   ],
+   "explanation_ru": "Описание: используйте существительные в партитиве (kartulit, juustu) и связки sest, aga, lisaks."
+  },
+  {
+   "id": "w-11",
+   "topic": "tech",
+   "level": "B1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Мнение: компьютерные игры",
+   "prompt_et": "Kas arvutimängud on kasulikud või kahjulikud? Kirjuta oma arvamus.",
+   "prompt_ru": "Полезны ли компьютерные игры или вредны? Напишите своё мнение.",
+   "content_points_et": [
+    "Mis on sinu arvamus?",
+    "Too üks eelis.",
+    "Too üks puudus.",
+    "Mida sa soovitad?"
+   ],
+   "content_points_ru": [
+    "Каково ваше мнение?",
+    "Приведите одно преимущество.",
+    "Приведите один недостаток.",
+    "Что вы советуете?"
+   ],
+   "explanation_ru": "Рассуждение с двумя сторонами: ühelt poolt ... teiselt poolt ... Закончите рекомендацией."
+  },
+  {
+   "id": "w-12",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Объявление: потерянная куртка",
+   "prompt_et": "Sa kaotasid koolis jope. Kirjuta kooli infotahvlile kuulutus.",
+   "prompt_ru": "Вы потеряли в школе куртку. Напишите объявление для информационной доски.",
+   "content_points_et": [
+    "Milline jope see on (värv, suurus)?",
+    "Kus ja millal sa selle kaotasid?",
+    "Kellele helistada või kirjutada?",
+    "Tänu."
+   ],
+   "content_points_ru": [
+    "Какая это куртка (цвет, размер)?",
+    "Где и когда вы её потеряли?",
+    "Кому звонить или писать?",
+    "Поблагодарите."
+   ],
+   "explanation_ru": "Короткое объявление: заголовок, описание, контакты. Не нужны длинные вступления."
   }
  ],
  "connectors": [

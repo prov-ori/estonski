@@ -41,15 +41,22 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     const noOverflow = async (n) => ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `${n}: нет горизонтальной прокрутки`);
 
     // 1. все страницы открываются
-    for (const r of ['', 'diagnostic', 'grammar', 'grammar/cases', 'vocab', 'reading', 'reading/r-01', 'reading/r-02', 'listening', 'listening/l-01', 'listening/l-02', 'writing', 'writing/w-01', 'speaking', 'speaking/s-01', 'mock', 'progress', 'about']) {
+    const ALL = ['', 'daily', 'diagnostic', 'grammar', 'grammar/cases', 'grammar/mistakes', 'drills', 'drills/forms', 'drills/numbers', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'mistakes', 'reference', 'progress', 'about',
+      ...Array.from({ length: 8 }, (_, i) => `reading/r-0${i + 1}`), ...Array.from({ length: 8 }, (_, i) => `listening/l-0${i + 1}`),
+      ...Array.from({ length: 12 }, (_, i) => `writing/w-${String(i + 1).padStart(2, '0')}`), ...Array.from({ length: 12 }, (_, i) => `speaking/s-${String(i + 1).padStart(2, '0')}`)];
+    for (const r of ALL) {
       await go(r);
       ok((await page.locator('footer .disclaimer').innerText()).startsWith('Неофициальный тренажёр. Не связан с HARNO'), `страница #/${r}: футер на месте`);
       await noOverflow('#/' + r);
+      const txt = await page.locator('main').innerText();
+      ok(!(r === 'reference' ? /\[object|\bundefined\b|NaN/ : /\[object|\bundefined\b|\bnull\b|NaN/).test(txt), `страница #/${r}: нет служебного мусора в тексте`);
     }
     await shot('home');
 
     // 2. грамматика: ответ → сохранение → после перезагрузки в прогрессе
     await go('grammar/cases');
+    await page.getByRole('button', { name: 'Начать' }).click();
+    ok(!(await page.getByRole('button', { name: /Дальше|Завершить/ }).isVisible().catch(() => false)), 'грамматика: кнопка «Дальше» скрыта до ответа');
     const first = page.locator('.question');
     const isInput = await first.locator('input.text-input').count();
     if (isInput) { await first.locator('input.text-input').fill('zzz'); await page.getByRole('button', { name: 'Проверить' }).click(); }
@@ -63,6 +70,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
     // 3. ввод õ ä ö ü кнопками
     await go('grammar/cases');
+    await page.getByRole('button', { name: 'Начать' }).click();
     for (let k = 0; k < 8 && !(await page.locator('input.text-input').count()); k++) { await page.locator('button.opt').first().click(); await page.getByRole('button', { name: /Дальше|Завершить/ }).click(); }
     if (await page.locator('input.text-input').count()) {
       await page.locator('input.text-input').focus();
@@ -134,7 +142,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
     // 10. пробный экзамен без таймера
     await go('mock');
-    await page.getByRole('checkbox').uncheck();
+    await page.getByRole('checkbox', { name: /Использовать таймер/ }).uncheck();
     await page.getByRole('button', { name: 'Начать пробный экзамен' }).click();
     for (let k = 0; k < 5; k++) {
       await page.waitForSelector('h1:has-text("Часть")');
@@ -146,6 +154,89 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     ok((await page.locator('main').innerText()).includes('Разбор ошибок'), 'пробный: есть разбор ошибок');
     ok(await page.locator('.threshold .marker').count() === 1, 'пробный: отметка порога на шкале');
     await shot('mock-result');
+
+
+    // 10b. практика дня
+    await go('daily');
+    await page.getByRole('button', { name: 'Начать сессию' }).click();
+    for (let k = 0; k < 10; k++) {
+      const q = page.locator('.question');
+      if (await q.locator('input.text-input').count()) { await q.locator('input.text-input').fill('x'); await page.getByRole('button', { name: 'Проверить' }).click(); }
+      else await q.locator('button.opt').first().click();
+      await page.getByRole('button', { name: /Дальше|Завершить/ }).click();
+    }
+    await page.waitForSelector('text=Сессия завершена');
+    ok(true, 'практика дня: сессия из 10 заданий пройдена');
+    await go('daily');
+    const todayN = Number(((await page.locator('main').innerText()).match(/Сегодня: (\d+) из 10/) || [])[1]);
+    ok(todayN >= 10, `практика дня: дневная цель считается (сегодня ${todayN})`);
+    await go('mistakes');
+    ok((await page.locator('main').innerText()).includes('Заданий с ошибками') || (await page.locator('main').innerText()).includes('Ошибок нет'), 'мои ошибки: страница работает');
+
+    // 10c. тренажёры
+    await go('drills/forms');
+    await page.getByRole('button', { name: /Начать/ }).click();
+    await page.locator('button.opt').first().click();
+    ok(await page.locator('.feedback.ok, .feedback.bad').count() === 1, 'формы слов: мгновенная проверка');
+    await go('drills/numbers');
+    await page.getByRole('button', { name: /Начать/ }).click();
+    ok(await page.locator('.question').count() === 1, 'числительные: задание показано');
+    await go('drills/order');
+    await page.getByRole('button', { name: /Начать/ }).click();
+    const tokenCount = await page.locator('.tokens:not(.built) .token').count();
+    for (let k = 0; k < tokenCount; k++) await page.locator('.tokens:not(.built) .token').first().click();
+    await page.getByRole('button', { name: 'Проверить' }).click();
+    ok(await page.locator('.feedback.ok, .feedback.bad').count() === 1, 'порядок слов: проверка работает');
+    await go('drills/dictation');
+    await page.getByRole('button', { name: /Начать/ }).click();
+    ok((await page.locator('main').innerText()).includes('режим переписывания'), 'диктант: запасной режим без эстонского голоса');
+    await page.locator('input.text-input').fill('zzz');
+    await page.getByRole('button', { name: 'Проверить' }).click();
+    ok((await page.locator('.diff').count()) === 1, 'диктант: показан разбор ошибок по словам');
+
+    // 10d. словарь: тест и список слов
+    await go('vocab');
+    await page.getByRole('button', { name: 'Тест с вариантами ответа' }).click();
+    await page.locator('button.opt').first().click();
+    ok(await page.locator('.feedback').count() === 1, 'словарь: тест с вариантами работает');
+    await go('wordlist');
+    await page.locator('#q').fill('raamat');
+    ok((await page.locator('#cnt').innerText()).includes('Найдено слов: 1') || (await page.locator('.words li').count()) >= 1, 'список слов: поиск работает');
+
+    // 10e. пробный 2 (ссылки на задания других разделов)
+    await go('mock');
+    await page.locator('#mock').selectOption('mock-02');
+    await page.getByRole('checkbox', { name: /Использовать таймер/ }).uncheck();
+    await page.getByRole('button', { name: 'Начать пробный экзамен' }).click();
+    for (let k = 0; k < 5; k++) { await page.waitForSelector('h1:has-text("Часть")'); await page.getByRole('button', { name: /Завершить (часть|экзамен)/ }).click(); }
+    await page.waitForSelector('text=Ориентировочно:');
+    ok(true, 'пробный экзамен 2 (с ref-заданиями) пройден');
+
+    // 10f. тема и размер текста
+    await go('');
+    await page.locator('#pref-theme').selectOption('dark');
+    await page.locator('#pref-font').selectOption('large');
+    await page.reload(); await page.waitForSelector('main h1');
+    ok(await page.evaluate(() => document.documentElement.getAttribute('data-theme') === 'dark' && document.documentElement.getAttribute('data-font') === 'large'), 'тема и размер текста сохраняются');
+    await page.locator('#pref-theme').selectOption('light');
+    await page.locator('#pref-font').selectOption('normal');
+
+    // 10g. экспорт и импорт прогресса
+    await go('progress');
+    const [dl] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Скачать прогресс' }).click()]);
+    const dlPath = await dl.path();
+    const exported = JSON.parse(fs.readFileSync(dlPath, 'utf8'));
+    ok(exported.v === 1 && Object.keys(exported.answers).length > 5, 'экспорт: файл прогресса содержит ответы');
+    await page.evaluate(() => localStorage.removeItem('estonski.v1'));
+    await page.reload(); await page.waitForSelector('main h1');
+    await go('progress');
+    await page.locator('#imp').setInputFiles(dlPath);
+    await page.waitForTimeout(300);
+    ok(await page.evaluate(() => Object.keys(JSON.parse(localStorage.getItem('estonski.v1')).answers).length > 5), 'импорт: прогресс восстановлен из файла');
+    const bad = path.join(path.dirname(dlPath), 'bad.json'); fs.writeFileSync(bad, '{not json');
+    await page.locator('#imp').setInputFiles(bad); await page.waitForTimeout(300);
+    ok((await page.locator('main').innerText()).includes('не читается'), 'импорт: битый файл отклонён с сообщением');
+    ok(await page.evaluate(() => Object.keys(JSON.parse(localStorage.getItem('estonski.v1')).answers).length > 5), 'импорт: битый файл не стёр прогресс');
 
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');
@@ -168,6 +259,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     p2.on('pageerror', (e) => e2.push(e.message));
     await p2.goto(base + '#/grammar/cases');
     await p2.waitForSelector('main h1');
+    await p2.getByRole('button', { name: 'Начать' }).click();
     await p2.locator('button.opt, input.text-input').first().click();
     ok(e2.length === 0, 'без localStorage: нет ошибок, тренажёр работает');
     ok((await p2.locator('main').innerText()).includes('не даёт сохранять'), 'без localStorage: пользователь предупреждён');

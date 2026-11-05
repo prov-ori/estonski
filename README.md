@@ -10,22 +10,27 @@
 index.html              каркас страницы
 css/style.css           стили (mobile-first, светлая и тёмная тема, контраст AA)
 js/
-  app.js                роутер (#/раздел/аргумент), меню
+  app.js                роутер (#/раздел/аргумент), меню, тема и размер текста, service worker
   util.js               h(), таймер, загрузка JSON, наследование topic/level/status
-  store.js              localStorage (try/catch, запасной режим в памяти)
+  store.js              localStorage (try/catch, запасной режим в памяти), серия дней, экспорт/импорт
   question.js           единый рендер вопросов: choice | tf | input | match
+  trainer.js            общий тренажёр «вопрос за вопросом» с приоритетом ошибок
+  gen.js                генераторы: числительные, время, даты, формы слов, лексический тест
+  index.js              индекс вопросов и ссылок (ref) для пробных экзаменов
   widgets.js            панель букв õäöü, таймер, запись голоса, чек-лист
-  speech.js             Web Speech API (et-EE) для аудирования
-  views/                home, about, diagnostic, grammar, vocab, reading,
-                        listening, writing, speaking, mock, progress
+  speech.js             Web Speech API (et-EE) для аудирования и диктанта
+  views/                home, about, daily, diagnostic, grammar, drills, vocab, wordlist,
+                        reading, listening, writing, speaking, mock, mistakes, reference, progress
 config/
   exam-format.json      ВСЕ «фактические» числа формата экзамена (verified: false)
   topics.json           справочник тем + памятки по грамматике
 content/                весь контент (код его только читает)
   grammar.json  diagnostic.json  vocab.json  reading.json  listening.json
   writing.json  speaking.json    mock-exam.json
+  forms.json (таблицы форм)  order.json (порядок слов)  dictation.json
+sw.js, manifest.webmanifest, icon.svg   офлайн-режим (sw.js создаёт tools/build-sw.js)
 validate.js             проверка JSON
-tools/                  smoke.js (тест в браузере), contrast.js, list-draft.js
+tools/                  smoke.js (тест в браузере), contrast.js, list-draft.js, build-sw.js
 CONTENT_TODO.md         план наполнения
 DRAFT_REVIEW.md         все эстонские предложения со статусом draft (генерируется)
 ```
@@ -87,6 +92,11 @@ node validate.js
 - **Письмо** — `content/writing.json → items` (`prompt_et`, `prompt_ru`, `content_points_et/ru`); связки — `connectors`, чек-лист — `checklist`.
 - **Говорение** — `content/speaking.json → items` (`situation_ru`, `role_a`, `role_b`, `phrases_et`).
 - **Пробный экзамен** — `content/mock-exam.json`: части `listening / reading / language / writing / speaking` в `parts`. Список и порядок частей берётся из `config/exam-format.json`.
+- **Формы слов** — запись `{id:"f-n-NN", topic:"cases", et, ru, forms:{nom,gen,part,ill,ine,ela,all,ade,abl}, …}` (существительное) или `{id:"f-v-NN", topic:"verbs", et, ru, forms:{ma,da,pres1,pres3,past1,nud,imp}, …}` (глагол) в `content/forms.json`. Вопросы тренажёра строятся автоматически; совпадающие формы не спрашиваются.
+- **Порядок слов** — `content/order.json`: `answer_et` (основной вариант), `also_ok` (другие допустимые порядки: те же слова, `validate.js` проверяет), `ru`.
+- **Диктант** — `content/dictation.json`: `text_et`, `ru`.
+- **Пробный экзамен** — часть можно задать ссылкой на задание другого раздела: `"reading": {"ref": "r-05"}`.
+- **Числительные, время, даты, лексический тест** — генерируются кодом (`js/gen.js`) из правил и из карточек, контент добавлять не нужно.
 - **Новая тема** — добавьте её в `config/topics.json` (`grammar`, `themes` или `skills`).
 
 ## Формат экзамена: что не проверено
@@ -102,10 +112,12 @@ node validate.js          # JSON: уникальные id, один верный
 node tools/contrast.js    # контраст цветов WCAG AA
 node tools/smoke.js       # тест в Chromium (нужен Playwright): все страницы, консоль, прогресс после перезагрузки
 node tools/list-draft.js  # обновить DRAFT_REVIEW.md
+node tools/build-sw.js    # пересобрать sw.js (после любых изменений файлов сайта!)
 ```
 
 ## Ограничения
 
 - Синтез речи (Web Speech API) — не записи с экзамена; эстонского голоса на устройстве может не быть (тогда текст показывается после попытки).
 - Запись голоса требует HTTPS (GitHub Pages даёт его) и разрешения на микрофон.
-- Офлайн-режима (service worker) пока нет.
+- Офлайн-режим: после первого открытия сайт работает без сети (service worker, `sw.js`). После правки файлов запускайте `node tools/build-sw.js`, иначе у пользователей может остаться старая версия.
+- Диктант и озвучка зависят от эстонского голоса в системе; без него работает режим переписывания.

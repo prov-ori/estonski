@@ -1,0 +1,12 @@
+{
+  "name": "Eesti keel B1 — тренажёр",
+  "short_name": "Eesti B1",
+  "description": "Неофициальный тренажёр для подготовки к экзамену по эстонскому как второму языку (B1).",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6fb",
+  "theme_color": "#1d4ed8",
+  "lang": "ru",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

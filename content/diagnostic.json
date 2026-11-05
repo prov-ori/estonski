@@ -1,33 +1,842 @@
 {
-  "_comment": "Диагностика: 20 вопросов (A2: 7, B1: 8, B2: 5). Пороги зон — условные параметры автора, НЕ связаны с экзаменом.",
-  "zone_rules": {
-    "_comment": "above: доля верных на B1 >= b1_min И на B2 >= b2_min. b1: на A2 >= a2_min И на B1 >= b1_min. Иначе A2.",
-    "above": { "b1_min": 0.75, "b2_min": 0.6 },
-    "b1": { "a2_min": 0.7, "b1_min": 0.5 },
-    "weak_topic_below": 0.6
+ "_comment": "Диагностика: 20 вопросов (A2: 7, B1: 8, B2: 5). Пороги зон — условные параметры автора, НЕ связаны с экзаменом.",
+ "zone_rules": {
+  "_comment": "above: доля верных на B1 >= b1_min И на B2 >= b2_min. b1: на A2 >= a2_min И на B1 >= b1_min. Иначе A2.",
+  "above": {
+   "b1_min": 0.75,
+   "b2_min": 0.6
   },
-  "items": [
-    {"id":"d-01","topic":"cases","level":"A2","status":"draft","type":"choice","prompt_et":"Ma elan ___.","hint":"(Tartu)","options":["Tartus","Tartu","Tartusse","Tartust"],"answer":0,"explanation_ru":"Вопрос «где?» → инессив на -s: Tartus. Tartusse — «в Тарту», Tartust — «из Тарту»."},
-    {"id":"d-02","topic":"verbs","level":"A2","status":"draft","type":"choice","prompt_et":"Mina ___ iga päev kooli.","hint":"(minema)","options":["lähen","läheme","läksin","minna"],"answer":0,"explanation_ru":"Подлежащее mina («я») и «каждый день» → настоящее время 1 л. ед. ч.: lähen. Läheme — «мы», läksin — прошедшее."},
-    {"id":"d-03","topic":"school","level":"A2","status":"draft","type":"choice","prompt_et":"Tund algab kell kaheksa.","prompt_ru":"Что значит слово «algab»?","options":["начинается","заканчивается","отменяется","повторяется"],"options_lang":"ru","answer":0,"explanation_ru":"Algama — «начинаться». Противоположное значение — lõppema («заканчиваться»)."},
-    {"id":"d-04","topic":"numerals","level":"A2","status":"draft","type":"choice","prompt_et":"nelikümmend kaks","prompt_ru":"Какое это число?","options":["24","42","44","14"],"options_lang":"ru","answer":1,"explanation_ru":"Nelikümmend = 40, kaks = 2, вместе 42. Двадцать четыре — kakskümmend neli."},
-    {"id":"d-05","topic":"prepositions","level":"A2","status":"draft","type":"choice","prompt_et":"Bussipeatus on haigla ___.","hint":"(у, рядом)","options":["juures","juurde","juurest","peale"],"answer":0,"explanation_ru":"Juures (где?) – juurde (куда?) – juurest (откуда?). Здесь «где?», значит juures."},
-    {"id":"d-06","topic":"freetime","level":"A2","status":"draft","type":"choice","prompt_et":"Mari käib laupäeviti ujumas. Pühapäeval ta puhkab.","prompt_ru":"Когда Мари ходит плавать?","options":["по субботам","по воскресеньям","каждый день","никогда"],"options_lang":"ru","answer":0,"explanation_ru":"Laupäeviti — «по субботам» (суффикс -ti даёт значение повторяемости). Pühapäeval — «в воскресенье», в этот день Мари отдыхает."},
-    {"id":"d-07","topic":"food","level":"A2","status":"draft","type":"choice","prompt_et":"hommikusöök","prompt_ru":"Что означает это слово?","options":["завтрак","обед","ужин","перекус"],"options_lang":"ru","answer":0,"explanation_ru":"Hommik — утро, söök — еда: hommikusöök = «завтрак». Обед — lõunasöök, ужин — õhtusöök."},
-
-    {"id":"d-08","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"See on ___ mantel.","hint":"(poiss)","ru":"Это пальто мальчика.","options":["poissi","poisi","poisse","poissa"],"answer":1,"explanation_ru":"Poiss в родительном падеже имеет слабую ступень: poisi (ss → s). Родительный стоит перед определяемым словом."},
-    {"id":"d-09","topic":"verbs","level":"B1","status":"draft","type":"choice","prompt_et":"Ta ei ___ eile kooli.","hint":"(minema)","ru":"Вчера он не ходил в школу.","options":["läheb","läinud","läks","minna"],"answer":1,"explanation_ru":"Отрицание прошедшего времени: ei + причастие на -nud: ei läinud. Форма ei läks невозможна."},
-    {"id":"d-10","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ootan ___.","hint":"(buss)","ru":"Я жду автобус.","options":["buss","bussi","bussile","bussis"],"answer":1,"explanation_ru":"Глагол ootama («ждать») требует партитива: bussi."},
-    {"id":"d-11","topic":"numerals","level":"B1","status":"draft","type":"choice","prompt_et":"Ta elab ___ korrusel.","hint":"(5)","ru":"Он живёт на пятом этаже.","options":["viies","viiendal","viiendale","viiendalt"],"answer":1,"explanation_ru":"Порядковое числительное согласуется с существительным: viiendal korrusel («на пятом этаже», где?)."},
-    {"id":"d-12","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Me kõndisime läbi ___.","hint":"(mets)","ru":"Мы шли через лес.","options":["mets","metsa","metsas","metsast"],"answer":1,"explanation_ru":"Läbi («через») требует родительного падежа: läbi metsa."},
-    {"id":"d-13","topic":"city","level":"B1","status":"draft","type":"choice","prompt_et":"Pööra ristmikul vasakule.","prompt_ru":"Что такое «ristmik»?","options":["перекрёсток","остановка","тротуар","светофор"],"options_lang":"ru","answer":0,"explanation_ru":"Ristmik — «перекрёсток». Pööra vasakule — «поверни налево»."},
-    {"id":"d-14","topic":"school","level":"B1","status":"draft","type":"choice","prompt_et":"Tule kell kuus. Võta kaasa vihik ja pliiats. Teeme koos kodutööd.","prompt_ru":"Что нужно взять с собой?","options":["тетрадь и карандаш","учебник и ластик","ноутбук","ничего не нужно"],"options_lang":"ru","answer":0,"explanation_ru":"Vihik — «тетрадь», pliiats — «карандаш»; Võta kaasa — «возьми с собой»."},
-    {"id":"d-16","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ___ rasket kotti.","hint":"(kandma)","ru":"Я несу тяжёлую сумку.","options":["kandan","kannan","kandn","kanda"],"answer":1,"explanation_ru":"Kandma → kannan: слабая ступень в 1 л. ед. ч. настоящего времени (nd → nn). Kanda — da-инфинитив."},
-
-    {"id":"d-15","topic":"verbs","level":"B2","status":"draft","type":"choice","prompt_et":"Kui mul oleks aega, ___ ma sinuga kinno.","hint":"(minema)","ru":"Если бы у меня было время, я пошёл бы с тобой в кино.","options":["lähen","läksin","läheksin","olen läinud"],"answer":2,"explanation_ru":"Условное наклонение с -ks-: läheksin. Оно употребляется в главной части после kui mul oleks…"},
-    {"id":"d-17","topic":"cases","level":"B2","status":"draft","type":"choice","prompt_et":"Mu õde tahab saada ___.","hint":"(arst)","ru":"Моя сестра хочет стать врачом.","options":["arst","arsti","arstiks","arstina"],"answer":2,"explanation_ru":"Saada («стать») требует транслатива (saav) на -ks: arstiks. Arstina («в качестве врача») отвечает на другой вопрос."},
-    {"id":"d-18","topic":"verbs","level":"B2","status":"draft","type":"choice","prompt_et":"Siin ___ eesti keelt.","hint":"(rääkima)","ru":"Здесь говорят по-эстонски.","options":["räägib","räägitakse","rääkis","räägitud"],"answer":1,"explanation_ru":"Безличная форма (umbisikuline tegumood) настоящего времени: räägitakse — «говорят» без указания лица."},
-    {"id":"d-19","topic":"nature","level":"B2","status":"draft","type":"choice","prompt_et":"Kuigi ilm oli külm, läksime randa jalutama, sest lõpuks paistis päike.","prompt_ru":"Почему они пошли гулять?","options":["потому что выглянуло солнце","потому что стало тепло","потому что был выходной","потому что закончился дождь"],"options_lang":"ru","answer":0,"explanation_ru":"Kuigi значит «хотя»: погода была холодной, но пошли, sest («потому что») lõpuks paistis päike — «наконец выглянуло солнце»."},
-    {"id":"d-20","topic":"numerals","level":"B2","status":"draft","type":"choice","prompt_et":"Kell on veerand kaheksa.","prompt_ru":"Сколько времени?","options":["7:15","8:15","7:45","8:45"],"options_lang":"ru","answer":0,"explanation_ru":"Veerand kaheksa = «четверть (до) восьми» = 7:15. Называется следующий час. Kolmveerand kaheksa — 7:45."}
-  ]
+  "b1": {
+   "a2_min": 0.7,
+   "b1_min": 0.5
+  },
+  "weak_topic_below": 0.6
+ },
+ "items": [
+  {
+   "id": "d-01",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma elan ___.",
+   "hint": "(Tartu)",
+   "options": [
+    "Tartus",
+    "Tartu",
+    "Tartusse",
+    "Tartust"
+   ],
+   "answer": 0,
+   "explanation_ru": "Вопрос «где?» → инессив на -s: Tartus. Tartusse — «в Тарту», Tartust — «из Тарту»."
+  },
+  {
+   "id": "d-02",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mina ___ iga päev kooli.",
+   "hint": "(minema)",
+   "options": [
+    "lähen",
+    "läheme",
+    "läksin",
+    "minna"
+   ],
+   "answer": 0,
+   "explanation_ru": "Подлежащее mina («я») и «каждый день» → настоящее время 1 л. ед. ч.: lähen. Läheme — «мы», läksin — прошедшее."
+  },
+  {
+   "id": "d-03",
+   "topic": "school",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Tund algab kell kaheksa.",
+   "prompt_ru": "Что значит слово «algab»?",
+   "options": [
+    "начинается",
+    "заканчивается",
+    "отменяется",
+    "повторяется"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Algama — «начинаться». Противоположное значение — lõppema («заканчиваться»)."
+  },
+  {
+   "id": "d-04",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "nelikümmend kaks",
+   "prompt_ru": "Какое это число?",
+   "options": [
+    "24",
+    "42",
+    "44",
+    "14"
+   ],
+   "options_lang": "ru",
+   "answer": 1,
+   "explanation_ru": "Nelikümmend = 40, kaks = 2, вместе 42. Двадцать четыре — kakskümmend neli."
+  },
+  {
+   "id": "d-05",
+   "topic": "prepositions",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Bussipeatus on haigla ___.",
+   "hint": "(у, рядом)",
+   "options": [
+    "juures",
+    "juurde",
+    "juurest",
+    "peale"
+   ],
+   "answer": 0,
+   "explanation_ru": "Juures (где?) – juurde (куда?) – juurest (откуда?). Здесь «где?», значит juures."
+  },
+  {
+   "id": "d-06",
+   "topic": "freetime",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mari käib laupäeviti ujumas. Pühapäeval ta puhkab.",
+   "prompt_ru": "Когда Мари ходит плавать?",
+   "options": [
+    "по субботам",
+    "по воскресеньям",
+    "каждый день",
+    "никогда"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Laupäeviti — «по субботам» (суффикс -ti даёт значение повторяемости). Pühapäeval — «в воскресенье», в этот день Мари отдыхает."
+  },
+  {
+   "id": "d-07",
+   "topic": "food",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "hommikusöök",
+   "prompt_ru": "Что означает это слово?",
+   "options": [
+    "завтрак",
+    "обед",
+    "ужин",
+    "перекус"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Hommik — утро, söök — еда: hommikusöök = «завтрак». Обед — lõunasöök, ужин — õhtusöök."
+  },
+  {
+   "id": "d-08",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "See on ___ mantel.",
+   "hint": "(poiss)",
+   "ru": "Это пальто мальчика.",
+   "options": [
+    "poissi",
+    "poisi",
+    "poisse",
+    "poissa"
+   ],
+   "answer": 1,
+   "explanation_ru": "Poiss в родительном падеже имеет слабую ступень: poisi (ss → s). Родительный стоит перед определяемым словом."
+  },
+  {
+   "id": "d-09",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta ei ___ eile kooli.",
+   "hint": "(minema)",
+   "ru": "Вчера он не ходил в школу.",
+   "options": [
+    "läheb",
+    "läinud",
+    "läks",
+    "minna"
+   ],
+   "answer": 1,
+   "explanation_ru": "Отрицание прошедшего времени: ei + причастие на -nud: ei läinud. Форма ei läks невозможна."
+  },
+  {
+   "id": "d-10",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ootan ___.",
+   "hint": "(buss)",
+   "ru": "Я жду автобус.",
+   "options": [
+    "buss",
+    "bussi",
+    "bussile",
+    "bussis"
+   ],
+   "answer": 1,
+   "explanation_ru": "Глагол ootama («ждать») требует партитива: bussi."
+  },
+  {
+   "id": "d-11",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta elab ___ korrusel.",
+   "hint": "(5)",
+   "ru": "Он живёт на пятом этаже.",
+   "options": [
+    "viies",
+    "viiendal",
+    "viiendale",
+    "viiendalt"
+   ],
+   "answer": 1,
+   "explanation_ru": "Порядковое числительное согласуется с существительным: viiendal korrusel («на пятом этаже», где?)."
+  },
+  {
+   "id": "d-12",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Me kõndisime läbi ___.",
+   "hint": "(mets)",
+   "ru": "Мы шли через лес.",
+   "options": [
+    "mets",
+    "metsa",
+    "metsas",
+    "metsast"
+   ],
+   "answer": 1,
+   "explanation_ru": "Läbi («через») требует родительного падежа: läbi metsa."
+  },
+  {
+   "id": "d-13",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Pööra ristmikul vasakule.",
+   "prompt_ru": "Что такое «ristmik»?",
+   "options": [
+    "перекрёсток",
+    "остановка",
+    "тротуар",
+    "светофор"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Ristmik — «перекрёсток». Pööra vasakule — «поверни налево»."
+  },
+  {
+   "id": "d-14",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Tule kell kuus. Võta kaasa vihik ja pliiats. Teeme koos kodutööd.",
+   "prompt_ru": "Что нужно взять с собой?",
+   "options": [
+    "тетрадь и карандаш",
+    "учебник и ластик",
+    "ноутбук",
+    "ничего не нужно"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Vihik — «тетрадь», pliiats — «карандаш»; Võta kaasa — «возьми с собой»."
+  },
+  {
+   "id": "d-16",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ rasket kotti.",
+   "hint": "(kandma)",
+   "ru": "Я несу тяжёлую сумку.",
+   "options": [
+    "kandan",
+    "kannan",
+    "kandn",
+    "kanda"
+   ],
+   "answer": 1,
+   "explanation_ru": "Kandma → kannan: слабая ступень в 1 л. ед. ч. настоящего времени (nd → nn). Kanda — da-инфинитив."
+  },
+  {
+   "id": "d-15",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui mul oleks aega, ___ ma sinuga kinno.",
+   "hint": "(minema)",
+   "ru": "Если бы у меня было время, я пошёл бы с тобой в кино.",
+   "options": [
+    "lähen",
+    "läksin",
+    "läheksin",
+    "olen läinud"
+   ],
+   "answer": 2,
+   "explanation_ru": "Условное наклонение с -ks-: läheksin. Оно употребляется в главной части после kui mul oleks…"
+  },
+  {
+   "id": "d-17",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mu õde tahab saada ___.",
+   "hint": "(arst)",
+   "ru": "Моя сестра хочет стать врачом.",
+   "options": [
+    "arst",
+    "arsti",
+    "arstiks",
+    "arstina"
+   ],
+   "answer": 2,
+   "explanation_ru": "Saada («стать») требует транслатива (saav) на -ks: arstiks. Arstina («в качестве врача») отвечает на другой вопрос."
+  },
+  {
+   "id": "d-18",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Siin ___ eesti keelt.",
+   "hint": "(rääkima)",
+   "ru": "Здесь говорят по-эстонски.",
+   "options": [
+    "räägib",
+    "räägitakse",
+    "rääkis",
+    "räägitud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличная форма (umbisikuline tegumood) настоящего времени: räägitakse — «говорят» без указания лица."
+  },
+  {
+   "id": "d-19",
+   "topic": "nature",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kuigi ilm oli külm, läksime randa jalutama, sest lõpuks paistis päike.",
+   "prompt_ru": "Почему они пошли гулять?",
+   "options": [
+    "потому что выглянуло солнце",
+    "потому что стало тепло",
+    "потому что был выходной",
+    "потому что закончился дождь"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Kuigi значит «хотя»: погода была холодной, но пошли, sest («потому что») lõpuks paistis päike — «наконец выглянуло солнце»."
+  },
+  {
+   "id": "d-20",
+   "topic": "numerals",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on veerand kaheksa.",
+   "prompt_ru": "Сколько времени?",
+   "options": [
+    "7:15",
+    "8:15",
+    "7:45",
+    "8:45"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Veerand kaheksa = «четверть (до) восьми» = 7:15. Называется следующий час. Kolmveerand kaheksa — 7:45."
+  },
+  {
+   "id": "d-21",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mu nimi ___ Anna.",
+   "hint": "(olema)",
+   "ru": "Меня зовут Анна.",
+   "options": [
+    "on",
+    "olen",
+    "oled",
+    "oleme"
+   ],
+   "answer": 0,
+   "explanation_ru": "3 л. ед. ч. от olema — on: mu nimi on…"
+  },
+  {
+   "id": "d-22",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Raamat on ___.",
+   "hint": "(laud, «на столе»)",
+   "ru": "Книга на столе.",
+   "options": [
+    "laual",
+    "lauale",
+    "laualt",
+    "laud"
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где (на)?» → адессив на -l: laual."
+  },
+  {
+   "id": "d-23",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Viis ja kolm on ___.",
+   "hint": "(5 + 3)",
+   "ru": "Пять и три — это …",
+   "options": [
+    "kaheksa",
+    "seitse",
+    "üheksa",
+    "kuus"
+   ],
+   "answer": 0,
+   "explanation_ru": "5 + 3 = 8 = kaheksa."
+  },
+  {
+   "id": "d-24",
+   "topic": "school",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Õpetaja ütleb: «Avage õpik!»",
+   "prompt_ru": "Что нужно сделать?",
+   "options": [
+    "открыть учебник",
+    "закрыть учебник",
+    "купить учебник",
+    "потерять учебник"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Avama — «открывать»; õpik — «учебник»."
+  },
+  {
+   "id": "d-25",
+   "topic": "food",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tahan klaasi piima.",
+   "prompt_ru": "Что хочет человек?",
+   "options": [
+    "стакан молока",
+    "чашку чая",
+    "кусок хлеба",
+    "тарелку супа"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Klaas — «стакан», piim — «молоко»."
+  },
+  {
+   "id": "d-26",
+   "topic": "prepositions",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Koer on maja ___.",
+   "hint": "(перед)",
+   "ru": "Собака перед домом.",
+   "options": [
+    "ees",
+    "ette",
+    "eest",
+    "peale"
+   ],
+   "answer": 0,
+   "explanation_ru": "ees («где?») + родительный: maja ees."
+  },
+  {
+   "id": "d-27",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei ___ kala.",
+   "hint": "(sööma)",
+   "ru": "Я не ем рыбу.",
+   "options": [
+    "söön",
+    "sööb",
+    "söö",
+    "sõin"
+   ],
+   "answer": 2,
+   "explanation_ru": "Отрицание настоящего времени: ei + основа: ei söö."
+  },
+  {
+   "id": "d-28",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on pool kaks.",
+   "prompt_ru": "Сколько времени?",
+   "options": [
+    "1:30",
+    "2:30",
+    "2:00",
+    "1:45"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Pool kaks = «половина (до) двух» = 1:30."
+  },
+  {
+   "id": "d-29",
+   "topic": "family",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "vanaisa",
+   "prompt_ru": "Кто это?",
+   "options": [
+    "дедушка",
+    "дядя",
+    "брат",
+    "отец"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Vanaisa — «дедушка» (vana + isa)."
+  },
+  {
+   "id": "d-30",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tänan ___.",
+   "hint": "(sõber)",
+   "ru": "Я благодарю друга.",
+   "options": [
+    "sõber",
+    "sõbra",
+    "sõpra",
+    "sõbrale"
+   ],
+   "answer": 2,
+   "explanation_ru": "Tänama + партитив: sõpra."
+  },
+  {
+   "id": "d-31",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ eile kaua.",
+   "hint": "(magama)",
+   "ru": "Вчера я долго спал(а).",
+   "options": [
+    "magan",
+    "magasin",
+    "magaksin",
+    "maganud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Eile — прошедшее: magasin."
+  },
+  {
+   "id": "d-32",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta ___ kodutööd.",
+   "hint": "(tegema)",
+   "ru": "Он делает домашнее задание.",
+   "options": [
+    "tegeb",
+    "teeb",
+    "teha",
+    "tegi"
+   ],
+   "answer": 1,
+   "explanation_ru": "Tegema → teeb: g выпадает в слабой ступени."
+  },
+  {
+   "id": "d-33",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta sündis ___ juunil.",
+   "hint": "(7)",
+   "ru": "Он родился седьмого июня.",
+   "options": [
+    "seitsmendal",
+    "seitse",
+    "seitsmes",
+    "seitsmendas"
+   ],
+   "answer": 0,
+   "explanation_ru": "Дата: порядковое числительное в адессиве: seitsmendal juunil."
+  },
+  {
+   "id": "d-34",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma lähen sõbra ___.",
+   "hint": "(к)",
+   "ru": "Я иду к другу.",
+   "options": [
+    "juures",
+    "juurde",
+    "juurest",
+    "peal"
+   ],
+   "answer": 1,
+   "explanation_ru": "«К кому?» → juurde: sõbra juurde."
+  },
+  {
+   "id": "d-35",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta on pärit ___.",
+   "hint": "(Venemaa)",
+   "ru": "Он родом из России.",
+   "options": [
+    "Venemaal",
+    "Venemaalt",
+    "Venemaale",
+    "Venemaa"
+   ],
+   "answer": 1,
+   "explanation_ru": "Pärit + аблатив: Venemaalt."
+  },
+  {
+   "id": "d-36",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Raamatukogu on avatud E–R kell 10–18. Laupäeval kell 10–14. Pühapäeval on kinni.",
+   "prompt_ru": "Когда библиотека закрыта?",
+   "options": [
+    "в воскресенье",
+    "в субботу",
+    "в пятницу",
+    "в понедельник"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "E–R — с понедельника по пятницу; laupäev — суббота; pühapäev — воскресенье: kinni — «закрыто»."
+  },
+  {
+   "id": "d-37",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mul on palavik ja köha.",
+   "prompt_ru": "Что, вероятно, нужно сделать?",
+   "options": [
+    "пойти к врачу",
+    "пойти на дискотеку",
+    "купить билет",
+    "сделать пробежку"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Palavik — «температура», köha — «кашель»: стоит обратиться к врачу (arst)."
+  },
+  {
+   "id": "d-38",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ sulle homme helistada.",
+   "hint": "(saama, «смогу»)",
+   "ru": "Завтра я смогу тебе позвонить.",
+   "options": [
+    "saan",
+    "saa",
+    "saada",
+    "sain"
+   ],
+   "answer": 0,
+   "explanation_ru": "Модальное saan + da-инфинитив (helistada)."
+  },
+  {
+   "id": "d-39",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mul on kolm koera ja kaks ___.",
+   "hint": "(kass)",
+   "ru": "У меня три собаки и две кошки.",
+   "options": [
+    "kassi",
+    "kassid",
+    "kassidega",
+    "kasside"
+   ],
+   "answer": 0,
+   "explanation_ru": "После kaks — партитив ед. ч.: kassi."
+  },
+  {
+   "id": "d-40",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui ma oleksin teadnud, ___ ma sulle helistanud.",
+   "hint": "(«позвонил бы»)",
+   "ru": "Если бы я знал, я бы тебе позвонил.",
+   "options": [
+    "oleksin",
+    "olen",
+    "olin",
+    "oleks"
+   ],
+   "answer": 0,
+   "explanation_ru": "Условное прошедшее: oleksin helistanud."
+  },
+  {
+   "id": "d-41",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ootan ___ juba tund aega.",
+   "hint": "(sõbrad)",
+   "ru": "Я жду друзей уже час.",
+   "options": [
+    "sõpru",
+    "sõbrad",
+    "sõprade",
+    "sõpradega"
+   ],
+   "answer": 0,
+   "explanation_ru": "Ootama + партитив мн. ч.: sõpru."
+  },
+  {
+   "id": "d-42",
+   "topic": "freetime",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "siiski",
+   "prompt_ru": "Что означает слово?",
+   "options": [
+    "всё же",
+    "поэтому",
+    "например",
+    "кроме того"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Siiski — «всё же, тем не менее»."
+  },
+  {
+   "id": "d-43",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta on minust ___.",
+   "hint": "(pikk, сравнит. ст.)",
+   "ru": "Он выше меня.",
+   "options": [
+    "pikem",
+    "pikim",
+    "pikk",
+    "pikemaks"
+   ],
+   "answer": 0,
+   "explanation_ru": "Сравнительная степень образуется с -m: pikem (а превосходная — pikim)."
+  },
+  {
+   "id": "d-44",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta on klassi kõige ___ õpilane.",
+   "hint": "(tubli)",
+   "ru": "Он самый старательный ученик в классе.",
+   "options": [
+    "tubli",
+    "tublim",
+    "tublimat",
+    "tublima"
+   ],
+   "answer": 1,
+   "explanation_ru": "Превосходная степень: kõige + сравнительная форма на -im: tublim."
+  },
+  {
+   "id": "d-45",
+   "topic": "school",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kuigi Mari õppis palju, ei läinud kontrolltöö hästi, sest ta oli haige.",
+   "prompt_ru": "Почему работа прошла плохо?",
+   "options": [
+    "потому что он болел",
+    "потому что мало учил",
+    "потому что работа была трудной",
+    "потому что опоздал"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Kuigi — «хотя»; sest ta oli haige — «потому что он был болен»."
+  },
+  {
+   "id": "d-46",
+   "topic": "numerals",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on kolmveerand üks.",
+   "prompt_ru": "Сколько времени?",
+   "options": [
+    "12:45",
+    "1:45",
+    "12:15",
+    "1:15"
+   ],
+   "options_lang": "ru",
+   "answer": 0,
+   "explanation_ru": "Kolmveerand üks = «три четверти до часа» = 12:45."
+  }
+ ]
 }

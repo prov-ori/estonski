@@ -2,6 +2,8 @@
 import { h, content, config, shuffle, norm, fmtDate, setChildren, addChildren } from '../util.js';
 import { store } from '../store.js';
 import { charPad } from '../widgets.js';
+import { runTrainer } from '../trainer.js';
+import { vocabQuiz } from '../gen.js';
 
 const DAY = 86400000;
 const INTERVAL_DAYS = [1, 2, 4, 8, 16]; // коробки 1..5
@@ -11,6 +13,7 @@ export function rate(id, ok, now = Date.now()) {
   const prev = store.getCard(id);
   const box = ok ? Math.min(5, (prev ? prev.box : 0) + 1) : 1;
   store.setCard(id, { box, due: ok ? now + INTERVAL_DAYS[box - 1] * DAY : now });
+  store.touch(1);
 }
 
 export default {
@@ -63,8 +66,16 @@ export default {
           h('div', { class: 'field' }, h('label', { for: 'dir' }, 'Режим'), modeSel),
           h('div', { class: 'row' },
             h('button', { class: 'btn primary', type: 'button', disabled: !due.length && !fresh.length, onclick: () => session([...shuffle(due), ...shuffle(fresh)].slice(0, SESSION_SIZE), false) }, 'Начать сессию'),
-            h('button', { class: 'btn', type: 'button', disabled: !inScope.length, onclick: () => session(shuffle(inScope).slice(0, SESSION_SIZE), true) }, 'Потренироваться без учёта сроков')),
+            h('button', { class: 'btn', type: 'button', disabled: !inScope.length, onclick: () => session(shuffle(inScope).slice(0, SESSION_SIZE), true) }, 'Потренироваться без учёта сроков'),
+            h('button', { class: 'btn', type: 'button', disabled: inScope.length < 5, onclick: quiz }, 'Тест с вариантами ответа'),
+            h('a', { class: 'btn ghost', href: '#/wordlist' }, 'Список слов с поиском')),
           h('p', { class: 'muted small-text' }, 'В режиме тренировки коробки не меняются.')));
+    }
+
+    function quiz() {
+      const qd = dir === 'et-ru' ? 'et-ru' : 'ru-et';
+      const qs = vocabQuiz(inScope, qd, 10);
+      runTrainer(area, qs.map((q) => ({ q, module: 'vocab' })), { again: quiz, extraButtons: h('button', { class: 'btn', type: 'button', onclick: () => { root.replaceChildren(header(), area); menu(); } }, 'В меню') });
     }
 
     function session(queue, practice) {

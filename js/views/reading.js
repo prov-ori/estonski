@@ -1,10 +1,18 @@
 import { h, content, pct, setChildren, addChildren } from '../util.js';
 import { questionSet, saveResults } from '../question.js';
+import { store } from '../store.js';
 
 /** Блок «текст + вопросы» — используется и в пробном экзамене. */
 export function textBlock(item, { start = 1 } = {}) {
   const paras = item.text_et.split(/\n\s*\n/).map((p) => h('p', { lang: 'et' }, p.split('\n').flatMap((l, i, a) => (i < a.length - 1 ? [l, h('br')] : [l]))));
   return h('article', { class: 'text card', 'aria-label': item.title_et }, h('h2', { lang: 'et' }, item.title_et), paras);
+}
+
+function statusLine(t) {
+  const sm = store.summary(t.questions.map((q) => q.id));
+  const lvl = `${t.level} · ${t.questions.length} вопросов`;
+  if (!sm.answered) return `${lvl} · не пройдено`;
+  return sm.ok === sm.total ? `${lvl} · решено полностью ✓` : `${lvl} · верно ${sm.ok} из ${sm.total}`;
 }
 
 export default {
@@ -19,7 +27,7 @@ export default {
         h('h1', null, 'Чтение'),
         h('p', { class: 'lead' }, 'Тексты с вопросами трёх типов: выбор ответа, верно/неверно, соответствие (плюс короткий ответ с клавиатуры).'),
         h('div', { class: 'grid' }, data.items.map((t) =>
-          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, `${t.questions.length} вопросов`)))));
+          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t))))));
       return;
     }
 

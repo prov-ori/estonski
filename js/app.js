@@ -3,17 +3,20 @@ import { h, config, setChildren } from './util.js';
 import { store } from './store.js';
 
 const MODULES = [
+  ['daily', 'Практика', 'views/daily.js'],
   ['diagnostic', 'Диагностика', 'views/diagnostic.js'],
   ['grammar', 'Грамматика', 'views/grammar.js'],
+  ['drills', 'Тренажёры', 'views/drills.js'],
   ['vocab', 'Словарь', 'views/vocab.js'],
   ['reading', 'Чтение', 'views/reading.js'],
   ['listening', 'Аудирование', 'views/listening.js'],
   ['writing', 'Письмо', 'views/writing.js'],
   ['speaking', 'Говорение', 'views/speaking.js'],
-  ['mock', 'Пробный экзамен', 'views/mock.js'],
+  ['mock', 'Пробник', 'views/mock.js'],
+  ['reference', 'Справочник', 'views/reference.js'],
   ['progress', 'Прогресс', 'views/progress.js'],
 ];
-const EXTRA = { about: 'views/about.js', '': 'views/home.js' };
+const EXTRA = { about: 'views/about.js', mistakes: 'views/mistakes.js', wordlist: 'views/wordlist.js', '': 'views/home.js' };
 export const NAV = MODULES.map(([id, title]) => ({ id, title }));
 
 const main = document.getElementById('main');
@@ -80,6 +83,35 @@ async function render() {
   }
 }
 
+// ---- оформление: тема и размер текста (хранится отдельно от прогресса) ----
+const PREF_KEY = 'estonski.prefs';
+function readPrefs() {
+  try { return { theme: 'auto', font: 'normal', ...JSON.parse(localStorage.getItem(PREF_KEY) || '{}') }; } catch { return { theme: 'auto', font: 'normal' }; }
+}
+function applyPrefs(p) {
+  const r = document.documentElement;
+  if (p.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', p.theme);
+  r.setAttribute('data-font', p.font);
+}
+function buildPrefs() {
+  const prefs = readPrefs();
+  const save = () => { applyPrefs(prefs); try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch { /* ignore */ } };
+  const mk = (id, label, key, opts) => {
+    const s = h('select', { class: 'select', id, onchange: (e) => { prefs[key] = e.target.value; save(); } }, opts.map(([v, l]) => h('option', { value: v }, l)));
+    s.value = prefs[key];
+    return h('div', { class: 'pref' }, h('label', { for: id }, label), s);
+  };
+  const box = document.getElementById('prefs');
+  if (box) setChildren(box, mk('pref-theme', 'Тема', 'theme', [['auto', 'Как в системе'], ['light', 'Светлая'], ['dark', 'Тёмная']]), mk('pref-font', 'Размер текста', 'font', [['normal', 'Обычный'], ['large', 'Крупный'], ['xlarge', 'Очень крупный']]));
+  applyPrefs(prefs);
+}
+
+buildPrefs();
 buildNav();
 window.addEventListener('hashchange', render);
 render();
+
+// офлайн-режим: service worker (необязателен, сайт работает и без него)
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
+}

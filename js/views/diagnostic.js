@@ -1,4 +1,4 @@
-import { h, content, config, topicMap, pct, fmtDate, setChildren } from '../util.js';
+import { h, content, topicMap, pct, fmtDate, setChildren, shuffle } from '../util.js';
 import { renderQuestion } from '../question.js';
 import { store } from '../store.js';
 
@@ -19,7 +19,15 @@ export default {
   async mount(root) {
     const data = await content('diagnostic');
     const topics = await topicMap();
-    const items = data.items;
+    const bank = data.items;
+    const QUOTA = { A2: 7, B1: 8, B2: 5 }; // состав одного теста
+    let items = [];
+    const sample = () => {
+      const out = [];
+      for (const [lvl, n] of Object.entries(QUOTA)) out.push(...shuffle(bank.filter((q) => q.level === lvl)).slice(0, n));
+      // порядок: от лёгких к сложным, внутри уровня случайно
+      return ['A2', 'B1', 'B2'].flatMap((l) => out.filter((q) => q.level === l));
+    };
     const answers = [];
     let idx = 0;
 
@@ -27,7 +35,7 @@ export default {
       const last = store.getDiag();
       setChildren(root, 
         h('h1', null, 'Диагностика'),
-        h('p', { class: 'lead' }, `${items.length} вопросов разного уровня (A2, B1, выше). Во время теста правильные ответы не показываются — они появятся в конце.`),
+        h('p', { class: 'lead' }, `20 вопросов разного уровня (A2, B1, выше), каждый раз случайные из банка в ${bank.length} вопросов. Во время теста правильные ответы не показываются — они появятся в конце.`),
         h('p', { class: 'notice warn' }, 'Это не оценка экзамена и не прогноз результата. Двадцати вопросов мало для точной оценки: итог — только ориентировочная зона и список тем, на которые стоит обратить внимание.'),
         last && h('p', { class: 'muted' }, `Прошлый результат (${fmtDate(last.ts)}): ${last.zoneLabel}, ${last.got} из ${last.max}.`),
         h('button', { class: 'btn primary', type: 'button', onclick: start }, last ? 'Пройти заново' : 'Начать'));
@@ -35,6 +43,7 @@ export default {
 
     function start() {
       answers.length = 0;
+      items = sample();
       items.forEach((q) => answers.push(renderQuestion(q, { number: null })));
       idx = 0;
       show();

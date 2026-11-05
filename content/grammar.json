@@ -1,39 +1,1775 @@
 {
-  "_comment": "Грамматика: 30 заданий. type: choice (один верный индекс answer) или input (одна верная форма answer). Все эстонские предложения — status draft до проверки носителем.",
-  "items": [
-    {"id":"g-cases-01","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Ma lähen homme ___.","hint":"(kool)","ru":"Завтра я пойду в школу.","options":["kooli","koolis","koolist","kool"],"answer":0,"explanation_ru":"Вопрос «куда?» → иллатив (sisseütlev). У слова kool краткая форма совпадает с родительным: kooli. Koolis — «где?», koolist — «откуда?», kool — именительный, после глагола движения не подходит."},
-    {"id":"g-cases-02","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Raamat on ___ peal.","hint":"(laud)","ru":"Книга лежит на столе.","options":["laud","lauda","laua","lauale"],"answer":2,"explanation_ru":"Послелог peal («на», где?) требует родительного падежа: laua peal. Это слабая ступень: laud → laua. Lauale означает «на стол» (куда?) и уже содержит значение «на»."},
-    {"id":"g-cases-03","topic":"cases","level":"B1","status":"draft","type":"input","prompt_et":"Mul on kaks ___.","hint":"(vend)","ru":"У меня два брата.","answer":"venda","explanation_ru":"После числительных больше единицы существительное стоит в партитиве единственного числа: kaks venda, kolm venda. Форма мн. ч. vennad здесь неверна."},
-    {"id":"g-cases-04","topic":"cases","level":"B1","status":"draft","type":"input","prompt_et":"Ma lähen kinno koos ___.","hint":"(sõber)","ru":"Я иду в кино вместе с другом.","answer":"sõbraga","explanation_ru":"Комитатив (kaasaütlev, «с кем?») образуется от основы родительного падежа и окончания -ga, пишется слитно: sõber → sõbra → sõbraga."},
-    {"id":"g-cases-05","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Sain kingituse ___.","hint":"(ema)","ru":"Я получил(а) подарок от мамы.","options":["emale","emalt","emast","emaga"],"answer":1,"explanation_ru":"Вопрос «от кого?» → аблатив (alaltütlev) с окончанием -lt: emalt. Emale — «маме», emast — «о маме / из-за мамы», emaga — «с мамой»."},
-    {"id":"g-cases-06","topic":"cases","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ei osta täna ___.","hint":"(leib)","ru":"Сегодня я не куплю хлеб.","options":["leib","leiva","leiba","leivale"],"answer":2,"explanation_ru":"В отрицательном предложении прямое дополнение стоит в партитиве: leiba. Родительный leiva возможен в утвердительном предложении с целым предметом: Ma ostan leiva."},
-    {"id":"g-cases-07","topic":"cases","level":"A2","status":"draft","type":"input","prompt_et":"Ma elan ___.","hint":"(Tallinn)","ru":"Я живу в Таллинне.","answer":"Tallinnas","explanation_ru":"Вопрос «где?» → инессив (seesütlev) с окончанием -s: Tallinn → Tallinnas."},
-
-    {"id":"g-verbs-01","topic":"verbs","level":"A2","status":"draft","type":"choice","prompt_et":"Eile ma ___ kinos.","hint":"(olema)","ru":"Вчера я был(а) в кино.","options":["olen","olin","olnud","oleksin"],"answer":1,"explanation_ru":"Слово eile («вчера») указывает на прошедшее время (имперфект): olin. Olen — настоящее, oleksin — условное наклонение."},
-    {"id":"g-verbs-02","topic":"verbs","level":"A2","status":"draft","type":"input","prompt_et":"Ma ___ homme Tartusse.","hint":"(minema)","ru":"Завтра я поеду в Тарту.","answer":"lähen","explanation_ru":"Глагол minema меняет основу: настоящее время lähen, lähed, läheb…, прошедшее läksin. Форма mine- встречается только в ma-инфинитиве."},
-    {"id":"g-verbs-03","topic":"verbs","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ___ eile koju.","hint":"(tulema)","ru":"Вчера я не пришёл (пришла) домой.","options":["ei tule","ei tulnud","ei tulin","ei tuli"],"answer":1,"explanation_ru":"Отрицание в прошедшем времени: ei + причастие на -nud (tulnud). Форма не меняется по лицам: ma ei tulnud, sa ei tulnud. «Ei tulin» невозможно."},
-    {"id":"g-verbs-04","topic":"verbs","level":"A2","status":"draft","type":"choice","prompt_et":"Palun ___ mulle vett.","hint":"(andma)","ru":"Дай мне, пожалуйста, воды.","options":["anna","annad","andma","andis"],"answer":0,"explanation_ru":"Повелительное наклонение 2 л. ед. ч. — основа без окончания: anna! Annad значит «ты даёшь», andma — ma-инфинитив, andis — прошедшее время."},
-    {"id":"g-verbs-05","topic":"verbs","level":"B1","status":"draft","type":"choice","prompt_et":"Ma tahan eesti keelt ___.","hint":"(õppima)","ru":"Я хочу учить эстонский язык.","options":["õpin","õppida","õppima","õppinud"],"answer":1,"explanation_ru":"После модальных глаголов tahan, pean, saan, oskan, võin стоит da-инфинитив: õppida."},
-    {"id":"g-verbs-06","topic":"verbs","level":"B1","status":"draft","type":"choice","prompt_et":"Ma lähen kinno filmi ___.","hint":"(vaatama)","ru":"Я иду в кино смотреть фильм.","options":["vaatama","vaadata","vaatan","vaatab"],"answer":0,"explanation_ru":"Цель после глагола движения (minema, tulema) выражается ma-инфинитивом: vaatama. Da-инфинитив vaadata здесь не подходит."},
-    {"id":"g-verbs-07","topic":"verbs","level":"B1","status":"draft","type":"input","prompt_et":"Ma olen selle raamatu juba ___.","hint":"(lugema)","ru":"Я уже прочитал(а) эту книгу.","answer":"lugenud","explanation_ru":"Перфект = olema + причастие на -nud: olen lugenud. Основа lugema → lugenud."},
-
-    {"id":"g-grad-01","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"Võti on ___ sees.","hint":"(kapp)","ru":"Ключ внутри шкафа.","options":["kapi","kappi","kapa","kappa"],"answer":0,"explanation_ru":"Kapp — сильная ступень (pp), в родительном слабая ступень (p): kapi. Послелог sees требует родительного падежа: kapi sees."},
-    {"id":"g-grad-02","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"Ma olen ___.","hint":"(pood)","ru":"Я в магазине.","options":["poodis","poes","poodes","pootes"],"answer":1,"explanation_ru":"Pood → слабая основа poe-: инессив poes («в магазине»). Родительный — poe, иллатив — poodi («в магазин»)."},
-    {"id":"g-grad-03","topic":"gradation","level":"B1","status":"draft","type":"input","prompt_et":"Ma sõin tüki ___.","hint":"(kook)","ru":"Я съел(а) кусок торта.","answer":"kooki","explanation_ru":"Партитив обычно образуется от сильной ступени: kook → kooki. Родительный — слабая ступень: koogi (koogi maitse). После слова tükk нужен партитив."},
-    {"id":"g-grad-04","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ___ sulle sünnipäevaks raamatu.","hint":"(andma)","ru":"Я подарю тебе на день рождения книгу.","options":["andan","annan","annad","andis"],"answer":1,"explanation_ru":"Andma → annan: в личных формах настоящего времени слабая ступень (nd → nn). Andan — частая ошибка. Annad — форма «ты»."},
-    {"id":"g-grad-05","topic":"gradation","level":"B1","status":"draft","type":"choice","prompt_et":"See on minu ___ aken.","hint":"(tuba)","ru":"Это окно моей комнаты.","options":["tuba","toa","tua","toal"],"answer":1,"explanation_ru":"Tuba → toa (слабая ступень, b выпадает). Родительный падеж стоит перед определяемым словом: toa aken."},
-    {"id":"g-grad-06","topic":"gradation","level":"B1","status":"draft","type":"input","prompt_et":"Ma ___ praegu raamatut.","hint":"(lugema)","ru":"Сейчас я читаю книгу.","answer":"loen","explanation_ru":"Lugema → loen: у глагола в личных формах настоящего времени слабая ступень (g выпадает, u → o)."},
-
-    {"id":"g-num-01","topic":"numerals","level":"A2","status":"draft","type":"choice","prompt_et":"Mul on kolm ___.","hint":"(kass)","ru":"У меня три кошки.","options":["kassid","kassi","kasside","kassidega"],"answer":1,"explanation_ru":"После числительного больше единицы — партитив единственного числа: kolm kassi. Форма мн. ч. kassid здесь неверна."},
-    {"id":"g-num-02","topic":"numerals","level":"A2","status":"draft","type":"input","prompt_et":"Ma olen ___ aastat vana.","hint":"(15)","ru":"Мне пятнадцать лет.","answer":"viisteist","explanation_ru":"Числа 11–19 образуются так: единица + -teist. Viis + teist = viisteist. Далее — партитив: aastat."},
-    {"id":"g-num-03","topic":"numerals","level":"B1","status":"draft","type":"choice","prompt_et":"Täna on ___ september.","hint":"(3)","ru":"Сегодня третье сентября.","options":["kolm","kolmas","kolmandas","kolmanda"],"answer":1,"explanation_ru":"Дата называется порядковым числительным: kolmas (3-й). Основные порядковые: esimene, teine, kolmas, neljas, viies."},
-    {"id":"g-num-04","topic":"numerals","level":"B1","status":"draft","type":"input","prompt_et":"Bussis on ___ inimest.","hint":"(40)","ru":"В автобусе сорок человек.","answer":"nelikümmend","explanation_ru":"Десятки: kakskümmend, kolmkümmend, nelikümmend, viiskümmend. Пишется слитно. После числительного — партитив: inimest."},
-    {"id":"g-num-05","topic":"numerals","level":"B1","status":"draft","type":"choice","prompt_et":"Kell on 5.30, ehk pool ___.","hint":"(5:30)","ru":"Сейчас половина шестого (5:30).","options":["viis","kuus","neli","seitse"],"answer":1,"explanation_ru":"Pool kuus = «половина (до) шести» = 5:30: эстонцы называют следующий час. Veerand kuus — 5:15, kolmveerand kuus — 5:45."},
-
-    {"id":"g-prep-01","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Ma ootan sind kooli ___.","hint":"(перед)","ru":"Я жду тебя перед школой.","options":["ees","ette","eest","peal"],"answer":0,"explanation_ru":"Тройка ees (где?) – ette (куда?) – eest (откуда?). Здесь вопрос «где?», значит ees. Все три требуют родительного падежа: kooli ees."},
-    {"id":"g-prep-02","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Pärast ___ lähen koju.","hint":"(tund)","ru":"После урока я пойду домой.","options":["tund","tunni","tundi","tunnis"],"answer":2,"explanation_ru":"Pärast и enne в начале словосочетания управляют партитивом: pärast tundi, enne lõunat."},
-    {"id":"g-prep-03","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Ostsin kingituse ___ jaoks.","hint":"(sõber)","ru":"Я купил(а) подарок для друга.","options":["sõber","sõbra","sõpra","sõbraga"],"answer":1,"explanation_ru":"Jaoks («для») требует родительного падежа: sõbra jaoks. Sõpra — партитив, sõbraga — «с другом»."},
-    {"id":"g-prep-04","topic":"prepositions","level":"B1","status":"draft","type":"choice","prompt_et":"Ma elan kooli ___.","hint":"(рядом)","ru":"Я живу рядом со школой.","options":["lähedal","lähedale","lähedalt","lähedus"],"answer":0,"explanation_ru":"Lähedal («близко», где?) + родительный: kooli lähedal. Lähedale — «куда», lähedalt — «откуда», lähedus — существительное «близость»."},
-    {"id":"g-prep-05","topic":"prepositions","level":"A2","status":"draft","type":"input","prompt_et":"Raamat on laua ___.","hint":"(под)","ru":"Книга лежит под столом.","answer":"all","explanation_ru":"All (где?) – alla (куда?) – alt (откуда?). Требуют родительного падежа: laua all."}
-  ]
+ "_comment": "Грамматика: 30 заданий. type: choice (один верный индекс answer) или input (одна верная форма answer). Все эстонские предложения — status draft до проверки носителем.",
+ "items": [
+  {
+   "id": "g-cases-01",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma lähen homme ___.",
+   "hint": "(kool)",
+   "ru": "Завтра я пойду в школу.",
+   "options": [
+    "kooli",
+    "koolis",
+    "koolist",
+    "kool"
+   ],
+   "answer": 0,
+   "explanation_ru": "Вопрос «куда?» → иллатив (sisseütlev). У слова kool краткая форма совпадает с родительным: kooli. Koolis — «где?», koolist — «откуда?», kool — именительный, после глагола движения не подходит."
+  },
+  {
+   "id": "g-cases-02",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Raamat on ___ peal.",
+   "hint": "(laud)",
+   "ru": "Книга лежит на столе.",
+   "options": [
+    "laud",
+    "lauda",
+    "laua",
+    "lauale"
+   ],
+   "answer": 2,
+   "explanation_ru": "Послелог peal («на», где?) требует родительного падежа: laua peal. Это слабая ступень: laud → laua. Lauale означает «на стол» (куда?) и уже содержит значение «на»."
+  },
+  {
+   "id": "g-cases-03",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Mul on kaks ___.",
+   "hint": "(vend)",
+   "ru": "У меня два брата.",
+   "answer": "venda",
+   "explanation_ru": "После числительных больше единицы существительное стоит в партитиве единственного числа: kaks venda, kolm venda. Форма мн. ч. vennad здесь неверна."
+  },
+  {
+   "id": "g-cases-04",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma lähen kinno koos ___.",
+   "hint": "(sõber)",
+   "ru": "Я иду в кино вместе с другом.",
+   "answer": "sõbraga",
+   "explanation_ru": "Комитатив (kaasaütlev, «с кем?») образуется от основы родительного падежа и окончания -ga, пишется слитно: sõber → sõbra → sõbraga."
+  },
+  {
+   "id": "g-cases-05",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Sain kingituse ___.",
+   "hint": "(ema)",
+   "ru": "Я получил(а) подарок от мамы.",
+   "options": [
+    "emale",
+    "emalt",
+    "emast",
+    "emaga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Вопрос «от кого?» → аблатив (alaltütlev) с окончанием -lt: emalt. Emale — «маме», emast — «о маме / из-за мамы», emaga — «с мамой»."
+  },
+  {
+   "id": "g-cases-06",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei osta täna ___.",
+   "hint": "(leib)",
+   "ru": "Сегодня я не куплю хлеб.",
+   "options": [
+    "leib",
+    "leiva",
+    "leiba",
+    "leivale"
+   ],
+   "answer": 2,
+   "explanation_ru": "В отрицательном предложении прямое дополнение стоит в партитиве: leiba. Родительный leiva возможен в утвердительном предложении с целым предметом: Ma ostan leiva."
+  },
+  {
+   "id": "g-cases-07",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma elan ___.",
+   "hint": "(Tallinn)",
+   "ru": "Я живу в Таллинне.",
+   "answer": "Tallinnas",
+   "explanation_ru": "Вопрос «где?» → инессив (seesütlev) с окончанием -s: Tallinn → Tallinnas."
+  },
+  {
+   "id": "g-verbs-01",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Eile ma ___ kinos.",
+   "hint": "(olema)",
+   "ru": "Вчера я был(а) в кино.",
+   "options": [
+    "olen",
+    "olin",
+    "olnud",
+    "oleksin"
+   ],
+   "answer": 1,
+   "explanation_ru": "Слово eile («вчера») указывает на прошедшее время (имперфект): olin. Olen — настоящее, oleksin — условное наклонение."
+  },
+  {
+   "id": "g-verbs-02",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma ___ homme Tartusse.",
+   "hint": "(minema)",
+   "ru": "Завтра я поеду в Тарту.",
+   "answer": "lähen",
+   "explanation_ru": "Глагол minema меняет основу: настоящее время lähen, lähed, läheb…, прошедшее läksin. Форма mine- встречается только в ma-инфинитиве."
+  },
+  {
+   "id": "g-verbs-03",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ eile koju.",
+   "hint": "(tulema)",
+   "ru": "Вчера я не пришёл (пришла) домой.",
+   "options": [
+    "ei tule",
+    "ei tulnud",
+    "ei tulin",
+    "ei tuli"
+   ],
+   "answer": 1,
+   "explanation_ru": "Отрицание в прошедшем времени: ei + причастие на -nud (tulnud). Форма не меняется по лицам: ma ei tulnud, sa ei tulnud. «Ei tulin» невозможно."
+  },
+  {
+   "id": "g-verbs-04",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Palun ___ mulle vett.",
+   "hint": "(andma)",
+   "ru": "Дай мне, пожалуйста, воды.",
+   "options": [
+    "anna",
+    "annad",
+    "andma",
+    "andis"
+   ],
+   "answer": 0,
+   "explanation_ru": "Повелительное наклонение 2 л. ед. ч. — основа без окончания: anna! Annad значит «ты даёшь», andma — ma-инфинитив, andis — прошедшее время."
+  },
+  {
+   "id": "g-verbs-05",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tahan eesti keelt ___.",
+   "hint": "(õppima)",
+   "ru": "Я хочу учить эстонский язык.",
+   "options": [
+    "õpin",
+    "õppida",
+    "õppima",
+    "õppinud"
+   ],
+   "answer": 1,
+   "explanation_ru": "После модальных глаголов tahan, pean, saan, oskan, võin стоит da-инфинитив: õppida."
+  },
+  {
+   "id": "g-verbs-06",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma lähen kinno filmi ___.",
+   "hint": "(vaatama)",
+   "ru": "Я иду в кино смотреть фильм.",
+   "options": [
+    "vaatama",
+    "vaadata",
+    "vaatan",
+    "vaatab"
+   ],
+   "answer": 0,
+   "explanation_ru": "Цель после глагола движения (minema, tulema) выражается ma-инфинитивом: vaatama. Da-инфинитив vaadata здесь не подходит."
+  },
+  {
+   "id": "g-verbs-07",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma olen selle raamatu juba ___.",
+   "hint": "(lugema)",
+   "ru": "Я уже прочитал(а) эту книгу.",
+   "answer": "lugenud",
+   "explanation_ru": "Перфект = olema + причастие на -nud: olen lugenud. Основа lugema → lugenud."
+  },
+  {
+   "id": "g-grad-01",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Võti on ___ sees.",
+   "hint": "(kapp)",
+   "ru": "Ключ внутри шкафа.",
+   "options": [
+    "kapi",
+    "kappi",
+    "kapa",
+    "kappa"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kapp — сильная ступень (pp), в родительном слабая ступень (p): kapi. Послелог sees требует родительного падежа: kapi sees."
+  },
+  {
+   "id": "g-grad-02",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma olen ___.",
+   "hint": "(pood)",
+   "ru": "Я в магазине.",
+   "options": [
+    "poodis",
+    "poes",
+    "poodes",
+    "pootes"
+   ],
+   "answer": 1,
+   "explanation_ru": "Pood → слабая основа poe-: инессив poes («в магазине»). Родительный — poe, иллатив — poodi («в магазин»)."
+  },
+  {
+   "id": "g-grad-03",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma sõin tüki ___.",
+   "hint": "(kook)",
+   "ru": "Я съел(а) кусок торта.",
+   "answer": "kooki",
+   "explanation_ru": "Партитив обычно образуется от сильной ступени: kook → kooki. Родительный — слабая ступень: koogi (koogi maitse). После слова tükk нужен партитив."
+  },
+  {
+   "id": "g-grad-04",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ sulle sünnipäevaks raamatu.",
+   "hint": "(andma)",
+   "ru": "Я подарю тебе на день рождения книгу.",
+   "options": [
+    "andan",
+    "annan",
+    "annad",
+    "andis"
+   ],
+   "answer": 1,
+   "explanation_ru": "Andma → annan: в личных формах настоящего времени слабая ступень (nd → nn). Andan — частая ошибка. Annad — форма «ты»."
+  },
+  {
+   "id": "g-grad-05",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "See on minu ___ aken.",
+   "hint": "(tuba)",
+   "ru": "Это окно моей комнаты.",
+   "options": [
+    "tuba",
+    "toa",
+    "tua",
+    "toal"
+   ],
+   "answer": 1,
+   "explanation_ru": "Tuba → toa (слабая ступень, b выпадает). Родительный падеж стоит перед определяемым словом: toa aken."
+  },
+  {
+   "id": "g-grad-06",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma ___ praegu raamatut.",
+   "hint": "(lugema)",
+   "ru": "Сейчас я читаю книгу.",
+   "answer": "loen",
+   "explanation_ru": "Lugema → loen: у глагола в личных формах настоящего времени слабая ступень (g выпадает, u → o)."
+  },
+  {
+   "id": "g-num-01",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mul on kolm ___.",
+   "hint": "(kass)",
+   "ru": "У меня три кошки.",
+   "options": [
+    "kassid",
+    "kassi",
+    "kasside",
+    "kassidega"
+   ],
+   "answer": 1,
+   "explanation_ru": "После числительного больше единицы — партитив единственного числа: kolm kassi. Форма мн. ч. kassid здесь неверна."
+  },
+  {
+   "id": "g-num-02",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma olen ___ aastat vana.",
+   "hint": "(15)",
+   "ru": "Мне пятнадцать лет.",
+   "answer": "viisteist",
+   "explanation_ru": "Числа 11–19 образуются так: единица + -teist. Viis + teist = viisteist. Далее — партитив: aastat."
+  },
+  {
+   "id": "g-num-03",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Täna on ___ september.",
+   "hint": "(3)",
+   "ru": "Сегодня третье сентября.",
+   "options": [
+    "kolm",
+    "kolmas",
+    "kolmandas",
+    "kolmanda"
+   ],
+   "answer": 1,
+   "explanation_ru": "Дата называется порядковым числительным: kolmas (3-й). Основные порядковые: esimene, teine, kolmas, neljas, viies."
+  },
+  {
+   "id": "g-num-04",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Bussis on ___ inimest.",
+   "hint": "(40)",
+   "ru": "В автобусе сорок человек.",
+   "answer": "nelikümmend",
+   "explanation_ru": "Десятки: kakskümmend, kolmkümmend, nelikümmend, viiskümmend. Пишется слитно. После числительного — партитив: inimest."
+  },
+  {
+   "id": "g-num-05",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on 5.30, ehk pool ___.",
+   "hint": "(5:30)",
+   "ru": "Сейчас половина шестого (5:30).",
+   "options": [
+    "viis",
+    "kuus",
+    "neli",
+    "seitse"
+   ],
+   "answer": 1,
+   "explanation_ru": "Pool kuus = «половина (до) шести» = 5:30: эстонцы называют следующий час. Veerand kuus — 5:15, kolmveerand kuus — 5:45."
+  },
+  {
+   "id": "g-prep-01",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ootan sind kooli ___.",
+   "hint": "(перед)",
+   "ru": "Я жду тебя перед школой.",
+   "options": [
+    "ees",
+    "ette",
+    "eest",
+    "peal"
+   ],
+   "answer": 0,
+   "explanation_ru": "Тройка ees (где?) – ette (куда?) – eest (откуда?). Здесь вопрос «где?», значит ees. Все три требуют родительного падежа: kooli ees."
+  },
+  {
+   "id": "g-prep-02",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Pärast ___ lähen koju.",
+   "hint": "(tund)",
+   "ru": "После урока я пойду домой.",
+   "options": [
+    "tund",
+    "tunni",
+    "tundi",
+    "tunnis"
+   ],
+   "answer": 2,
+   "explanation_ru": "Pärast и enne в начале словосочетания управляют партитивом: pärast tundi, enne lõunat."
+  },
+  {
+   "id": "g-prep-03",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ostsin kingituse ___ jaoks.",
+   "hint": "(sõber)",
+   "ru": "Я купил(а) подарок для друга.",
+   "options": [
+    "sõber",
+    "sõbra",
+    "sõpra",
+    "sõbraga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Jaoks («для») требует родительного падежа: sõbra jaoks. Sõpra — партитив, sõbraga — «с другом»."
+  },
+  {
+   "id": "g-prep-04",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma elan kooli ___.",
+   "hint": "(рядом)",
+   "ru": "Я живу рядом со школой.",
+   "options": [
+    "lähedal",
+    "lähedale",
+    "lähedalt",
+    "lähedus"
+   ],
+   "answer": 0,
+   "explanation_ru": "Lähedal («близко», где?) + родительный: kooli lähedal. Lähedale — «куда», lähedalt — «откуда», lähedus — существительное «близость»."
+  },
+  {
+   "id": "g-prep-05",
+   "topic": "prepositions",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Raamat on laua ___.",
+   "hint": "(под)",
+   "ru": "Книга лежит под столом.",
+   "answer": "all",
+   "explanation_ru": "All (где?) – alla (куда?) – alt (откуда?). Требуют родительного падежа: laua all."
+  },
+  {
+   "id": "g-cases-08",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma elan väikeses ___.",
+   "hint": "(linn)",
+   "ru": "Я живу в маленьком городе.",
+   "options": [
+    "linnas",
+    "linna",
+    "linnast",
+    "linnale"
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где?» → инессив на -s: linnas. Прилагательное согласуется с существительным и тоже стоит в инессиве: väikeses linnas."
+  },
+  {
+   "id": "g-cases-09",
+   "topic": "cases",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ta tuleb ___.",
+   "hint": "(kool, «откуда?»)",
+   "ru": "Он идёт из школы.",
+   "answer": "koolist",
+   "explanation_ru": "«Откуда?» → элатив на -st: kool → koolist."
+  },
+  {
+   "id": "g-cases-10",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma annan raamatu ___.",
+   "hint": "(õde)",
+   "ru": "Я отдаю книгу сестре.",
+   "options": [
+    "õde",
+    "õe",
+    "õele",
+    "õelt"
+   ],
+   "answer": 2,
+   "explanation_ru": "«Кому?» → аллатив на -le от основы родительного: õde → õe → õele."
+  },
+  {
+   "id": "g-cases-11",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma panin raamatu ___.",
+   "hint": "(kott, «куда?»)",
+   "ru": "Я положил(а) книгу в сумку.",
+   "answer": "kotti",
+   "explanation_ru": "Краткий иллатив («во что?»): kott → kotti. Родительный koti, инессив kotis («в сумке»)."
+  },
+  {
+   "id": "g-cases-12",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei näe ___.",
+   "hint": "(sõber)",
+   "ru": "Я не вижу друга.",
+   "options": [
+    "sõber",
+    "sõbra",
+    "sõpra",
+    "sõbrale"
+   ],
+   "answer": 2,
+   "explanation_ru": "В отрицательном предложении объект стоит в партитиве: sõpra. У слова sõber чередуются основы: sõbra (род.) и sõpra (парт.)."
+  },
+  {
+   "id": "g-cases-13",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mul on kaks ___.",
+   "hint": "(õde)",
+   "ru": "У меня две сестры.",
+   "options": [
+    "õed",
+    "õde",
+    "õe",
+    "õdesid"
+   ],
+   "answer": 1,
+   "explanation_ru": "После kaks — партитив единственного числа: õde. Форма õed (мн. ч.) здесь неверна."
+  },
+  {
+   "id": "g-cases-14",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma kirjutan ___.",
+   "hint": "(pliiats, «чем?»)",
+   "ru": "Я пишу карандашом.",
+   "answer": "pliiatsiga",
+   "explanation_ru": "Комитатив на -ga присоединяется к основе родительного: pliiats → pliiatsi → pliiatsiga."
+  },
+  {
+   "id": "g-cases-15",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Raamat on ___.",
+   "hint": "(kott, «где?»)",
+   "ru": "Книга в сумке.",
+   "options": [
+    "kotis",
+    "kotti",
+    "kotist",
+    "kotile"
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где?» → инессив на -s: kott → koti → kotis. Kotti — «в сумку», kotist — «из сумки»."
+  },
+  {
+   "id": "g-cases-16",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma käin trennis koos ___.",
+   "hint": "(õde)",
+   "ru": "Я хожу на тренировку вместе с сестрой.",
+   "options": [
+    "õde",
+    "õega",
+    "õele",
+    "õest"
+   ],
+   "answer": 1,
+   "explanation_ru": "Koos («вместе») + комитатив на -ga: õde → õe → õega."
+  },
+  {
+   "id": "g-cases-17",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma kinkisin lilli ___.",
+   "hint": "(vanaema)",
+   "ru": "Я подарил(а) цветы бабушке.",
+   "options": [
+    "vanaema",
+    "vanaemalt",
+    "vanaemale",
+    "vanaemast"
+   ],
+   "answer": 2,
+   "explanation_ru": "«Кому?» → аллатив на -le: vanaemale. Vanaemalt — «от бабушки»."
+  },
+  {
+   "id": "g-cases-18",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma ootan ___.",
+   "hint": "(õpetaja)",
+   "ru": "Я жду учителя.",
+   "answer": "õpetajat",
+   "explanation_ru": "Глагол ootama требует партитива: õpetaja → õpetajat."
+  },
+  {
+   "id": "g-cases-19",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ostan kolm ___.",
+   "hint": "(leib)",
+   "ru": "Я куплю три хлеба.",
+   "options": [
+    "leib",
+    "leiba",
+    "leivad",
+    "leivu"
+   ],
+   "answer": 1,
+   "explanation_ru": "После kolm — партитив единственного числа: leiba."
+  },
+  {
+   "id": "g-cases-20",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mu sõber elab ___.",
+   "hint": "(Pärnu)",
+   "ru": "Мой друг живёт в Пярну.",
+   "options": [
+    "Pärnu",
+    "Pärnus",
+    "Pärnusse",
+    "Pärnust"
+   ],
+   "answer": 1,
+   "explanation_ru": "«Где?» → инессив на -s: Pärnus. Pärnusse — «в Пярну» (куда), Pärnust — «из Пярну»."
+  },
+  {
+   "id": "g-cases-21",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta töötab ___.",
+   "hint": "(õpetaja, «в качестве»)",
+   "ru": "Он работает учителем.",
+   "options": [
+    "õpetajaks",
+    "õpetajana",
+    "õpetaja",
+    "õpetajaga"
+   ],
+   "answer": 1,
+   "explanation_ru": "Эссив на -na отвечает на вопрос «кем, в качестве кого?»: õpetajana. Транслатив -ks — «стать кем-то»."
+  },
+  {
+   "id": "g-cases-22",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma jäin ___.",
+   "hint": "(haige)",
+   "ru": "Я заболел(а).",
+   "options": [
+    "haige",
+    "haiget",
+    "haigeks",
+    "haigena"
+   ],
+   "answer": 2,
+   "explanation_ru": "Jääma («стать, остаться») + транслатив на -ks: jäin haigeks."
+  },
+  {
+   "id": "g-cases-23",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Mul on ___ vaja.",
+   "hint": "(raamat)",
+   "ru": "Мне нужна книга.",
+   "answer": "raamatut",
+   "explanation_ru": "Конструкция «mul on … vaja» требует партитива: raamatut."
+  },
+  {
+   "id": "g-cases-24",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tulin ___.",
+   "hint": "(Tallinn)",
+   "ru": "Я приехал(а) из Таллина.",
+   "options": [
+    "Tallinnas",
+    "Tallinnast",
+    "Tallinna",
+    "Tallinnasse"
+   ],
+   "answer": 1,
+   "explanation_ru": "«Откуда?» → элатив на -st: Tallinnast."
+  },
+  {
+   "id": "g-verbs-08",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Sina ___ eesti keelt hästi.",
+   "hint": "(rääkima)",
+   "ru": "Ты хорошо говоришь по-эстонски.",
+   "options": [
+    "räägin",
+    "räägid",
+    "räägib",
+    "räägime"
+   ],
+   "answer": 1,
+   "explanation_ru": "2 л. ед. ч. настоящего времени оканчивается на -d: räägid."
+  },
+  {
+   "id": "g-verbs-09",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Tema ___ kodus.",
+   "hint": "(olema)",
+   "ru": "Он дома.",
+   "options": [
+    "olen",
+    "oled",
+    "on",
+    "oleme"
+   ],
+   "answer": 2,
+   "explanation_ru": "3 л. от olema — on (и ед., и мн. ч.)."
+  },
+  {
+   "id": "g-verbs-10",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Me ___ täna kinos.",
+   "hint": "(olema)",
+   "ru": "Мы сегодня в кино.",
+   "answer": "oleme",
+   "explanation_ru": "1 л. мн. ч. настоящего времени оканчивается на -me: oleme."
+  },
+  {
+   "id": "g-verbs-11",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Eile ma ___ palju.",
+   "hint": "(õppima)",
+   "ru": "Вчера я много учился.",
+   "options": [
+    "õpin",
+    "õppisin",
+    "õpiksin",
+    "õppinud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Eile — прошедшее время: õppisin (õppima → õppisin)."
+  },
+  {
+   "id": "g-verbs-12",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Eile ta ___ kooli.",
+   "hint": "(minema, прошедшее)",
+   "ru": "Вчера он пошёл в школу.",
+   "answer": "läks",
+   "explanation_ru": "Прошедшее время от minema: läksin, läksid, läks…"
+  },
+  {
+   "id": "g-verbs-13",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma olen juba ___.",
+   "hint": "(sööma)",
+   "ru": "Я уже поел(а).",
+   "options": [
+    "söön",
+    "sõin",
+    "söönud",
+    "süüa"
+   ],
+   "answer": 2,
+   "explanation_ru": "Перфект = olema + причастие на -nud: olen söönud."
+  },
+  {
+   "id": "g-verbs-14",
+   "topic": "verbs",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tahan ___ vett.",
+   "hint": "(jooma)",
+   "ru": "Я хочу пить воду.",
+   "options": [
+    "joon",
+    "juua",
+    "jooma",
+    "jõin"
+   ],
+   "answer": 1,
+   "explanation_ru": "После tahan — da-инфинитив: juua (jooma → juua)."
+  },
+  {
+   "id": "g-verbs-15",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Palun ___ aken.",
+   "hint": "(sulgema, повелит.)",
+   "ru": "Закрой, пожалуйста, окно.",
+   "answer": "sulge",
+   "explanation_ru": "Повелительное наклонение 2 л. ед. ч.: sulge! (sulgema → sulge)."
+  },
+  {
+   "id": "g-verbs-16",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei ___ eile kirja.",
+   "hint": "(kirjutama)",
+   "ru": "Вчера я не писал(а) письмо.",
+   "options": [
+    "kirjuta",
+    "kirjutanud",
+    "kirjutasin",
+    "kirjutada"
+   ],
+   "answer": 1,
+   "explanation_ru": "Отрицание прошедшего времени: ei + причастие на -nud: ei kirjutanud."
+  },
+  {
+   "id": "g-verbs-17",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kas sa oskad ___?",
+   "hint": "(ujuma)",
+   "ru": "Ты умеешь плавать?",
+   "options": [
+    "ujun",
+    "ujuda",
+    "ujuma",
+    "ujunud"
+   ],
+   "answer": 1,
+   "explanation_ru": "После oskan — da-инфинитив: ujuda."
+  },
+  {
+   "id": "g-verbs-18",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma lähen ___.",
+   "hint": "(ujuma)",
+   "ru": "Я иду плавать.",
+   "options": [
+    "ujuda",
+    "ujuma",
+    "ujun",
+    "ujub"
+   ],
+   "answer": 1,
+   "explanation_ru": "Цель после minema — ma-инфинитив: lähen ujuma."
+  },
+  {
+   "id": "g-verbs-19",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Mu õde ___ eesti keelt.",
+   "hint": "(õppima, 3 л. наст.)",
+   "ru": "Моя сестра учит эстонский язык.",
+   "answer": "õpib",
+   "explanation_ru": "3 л. ед. ч. настоящего времени оканчивается на -b: õpib."
+  },
+  {
+   "id": "g-verbs-20",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ meelsasti kaasa, aga mul pole aega.",
+   "hint": "(tulema)",
+   "ru": "Я бы охотно пошёл, но у меня нет времени.",
+   "options": [
+    "tulen",
+    "tulin",
+    "tuleksin",
+    "tulnud"
+   ],
+   "answer": 2,
+   "explanation_ru": "Условное наклонение: tuleksin («пришёл бы»)."
+  },
+  {
+   "id": "g-verbs-21",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Koolis ___ palju.",
+   "hint": "(õppima, безличная форма)",
+   "ru": "В школе много учатся.",
+   "options": [
+    "õpib",
+    "õpitakse",
+    "õppis",
+    "õppinud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Безличная форма настоящего времени оканчивается на -takse: õpitakse."
+  },
+  {
+   "id": "g-verbs-22",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ kodutööd kohe!",
+   "hint": "(tegema)",
+   "ru": "Делай домашнее задание сразу!",
+   "options": [
+    "Teen",
+    "Tee",
+    "Teha",
+    "Tegin"
+   ],
+   "answer": 1,
+   "explanation_ru": "Повелительное наклонение 2 л. ед. ч.: tee! (tegema → tee)."
+  },
+  {
+   "id": "g-verbs-23",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma ___ eile telefoniga.",
+   "hint": "(rääkima, прош. вр.)",
+   "ru": "Вчера я говорил(а) по телефону.",
+   "answer": "rääkisin",
+   "explanation_ru": "Прошедшее время 1 л. ед. ч.: rääkima → rääkisin."
+  },
+  {
+   "id": "g-verbs-24",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta ___ homme Tallinna.",
+   "hint": "(sõitma)",
+   "ru": "Завтра он поедет в Таллин.",
+   "options": [
+    "sõidab",
+    "sõitis",
+    "sõitnud",
+    "sõita"
+   ],
+   "answer": 0,
+   "explanation_ru": "Будущее выражается настоящим временем и обстоятельством (homme): sõidab."
+  },
+  {
+   "id": "g-verbs-25",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kahjuks ma ei ___ tulla.",
+   "hint": "(saama)",
+   "ru": "К сожалению, я не смогу прийти.",
+   "options": [
+    "saan",
+    "saa",
+    "saada",
+    "sain"
+   ],
+   "answer": 1,
+   "explanation_ru": "Отрицание настоящего: ei + основа без личного окончания: ei saa."
+  },
+  {
+   "id": "g-grad-07",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Raamat on ___ taga.",
+   "hint": "(kapp)",
+   "ru": "Книга за шкафом.",
+   "options": [
+    "kapp",
+    "kapi",
+    "kappi",
+    "kapis"
+   ],
+   "answer": 1,
+   "explanation_ru": "Послелог taga требует родительного; у kapp он образуется от слабой ступени: kapi taga."
+  },
+  {
+   "id": "g-grad-08",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ma panin raamatu ___.",
+   "hint": "(kapp, «куда?»)",
+   "ru": "Я положил(а) книгу в шкаф.",
+   "answer": "kappi",
+   "explanation_ru": "Краткий иллатив образуется от сильной ступени: kapp → kappi (а родительный — kapi)."
+  },
+  {
+   "id": "g-grad-09",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tulen ___.",
+   "hint": "(pood, «откуда?»)",
+   "ru": "Я иду из магазина.",
+   "options": [
+    "poest",
+    "poodist",
+    "poodi",
+    "poes"
+   ],
+   "answer": 0,
+   "explanation_ru": "У pood слабая основа poe-: элатив poest."
+  },
+  {
+   "id": "g-grad-10",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma lähen ___.",
+   "hint": "(pood, «куда?»)",
+   "ru": "Я иду в магазин.",
+   "options": [
+    "poodi",
+    "poe",
+    "poes",
+    "poest"
+   ],
+   "answer": 0,
+   "explanation_ru": "Краткий иллатив — от сильной ступени: pood → poodi."
+  },
+  {
+   "id": "g-grad-11",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta rääkis mulle huvitava ___.",
+   "hint": "(lugu)",
+   "ru": "Он рассказал мне интересную историю.",
+   "options": [
+    "lugu",
+    "loo",
+    "lugusid",
+    "lugudes"
+   ],
+   "answer": 1,
+   "explanation_ru": "Родительный (объект) от lugu — слабая ступень: loo (g выпадает). Singular подтверждает прилагательное huvitava."
+  },
+  {
+   "id": "g-grad-12",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ta ___ raamatut.",
+   "hint": "(lugema, 3 л. наст.)",
+   "ru": "Он читает книгу.",
+   "answer": "loeb",
+   "explanation_ru": "Lugema → loeb: в личных формах настоящего слабая ступень (g выпадает, u → o)."
+  },
+  {
+   "id": "g-grad-13",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta ___ rasket kotti.",
+   "hint": "(kandma)",
+   "ru": "Он несёт тяжёлую сумку.",
+   "options": [
+    "kandab",
+    "kannab",
+    "kanda",
+    "kandas"
+   ],
+   "answer": 1,
+   "explanation_ru": "Kandma → kannab: слабая ступень в личных формах настоящего (nd → nn)."
+  },
+  {
+   "id": "g-grad-14",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ kodutööd.",
+   "hint": "(tegema)",
+   "ru": "Я делаю домашнее задание.",
+   "options": [
+    "tegen",
+    "teen",
+    "tee",
+    "teha"
+   ],
+   "answer": 1,
+   "explanation_ru": "Tegema → teen: g выпадает в слабой ступени."
+  },
+  {
+   "id": "g-grad-15",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ta ___ kodutööd.",
+   "hint": "(tegema, 3 л. наст.)",
+   "ru": "Он делает домашнее задание.",
+   "answer": "teeb",
+   "explanation_ru": "Tegema → teeb: слабая ступень, как и в teen."
+  },
+  {
+   "id": "g-grad-16",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ filmi.",
+   "hint": "(nägema)",
+   "ru": "Я вижу фильм.",
+   "options": [
+    "nägen",
+    "näen",
+    "näeb",
+    "näha"
+   ],
+   "answer": 1,
+   "explanation_ru": "Nägema → näen: g выпадает в слабой ступени."
+  },
+  {
+   "id": "g-grad-17",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ___ bussiga.",
+   "hint": "(sõitma)",
+   "ru": "Я еду на автобусе.",
+   "options": [
+    "sõitan",
+    "sõidan",
+    "sõitn",
+    "sõita"
+   ],
+   "answer": 1,
+   "explanation_ru": "Sõitma → sõidan: сильное t чередуется со слабым d."
+  },
+  {
+   "id": "g-grad-18",
+   "topic": "gradation",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tahan ___ bussi.",
+   "hint": "(ootama)",
+   "ru": "Я хочу дождаться автобуса.",
+   "options": [
+    "ootada",
+    "oodata",
+    "ootama",
+    "ootan"
+   ],
+   "answer": 1,
+   "explanation_ru": "В da-инфинитиве слабая ступень: ootama → oodata."
+  },
+  {
+   "id": "g-num-06",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Mul on ___ õpikut.",
+   "hint": "(2)",
+   "ru": "У меня два учебника.",
+   "answer": "kaks",
+   "explanation_ru": "2 = kaks. После числительного — партитив: õpikut."
+  },
+  {
+   "id": "g-num-07",
+   "topic": "numerals",
+   "level": "A2",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Nädalas on ___ päeva.",
+   "hint": "(7)",
+   "ru": "В неделе семь дней.",
+   "answer": "seitse",
+   "explanation_ru": "7 = seitse."
+  },
+  {
+   "id": "g-num-08",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Aastas on ___ kuud.",
+   "hint": "(12)",
+   "ru": "В году двенадцать месяцев.",
+   "answer": "kaksteist",
+   "explanation_ru": "12 = kaks + teist = kaksteist."
+  },
+  {
+   "id": "g-num-09",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Klassis on ___ õpilast.",
+   "hint": "(24)",
+   "ru": "В классе двадцать четыре ученика.",
+   "answer": "kakskümmend neli",
+   "explanation_ru": "Двузначные числа: десяток + единица, через пробел: kakskümmend neli."
+  },
+  {
+   "id": "g-num-10",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Raamat maksab ___ eurot.",
+   "hint": "(18)",
+   "ru": "Книга стоит восемнадцать евро.",
+   "answer": "kaheksateist",
+   "explanation_ru": "18 = kaheksa + teist = kaheksateist."
+  },
+  {
+   "id": "g-num-11",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on 7.15, ehk ___ kaheksa.",
+   "hint": "(7:15)",
+   "ru": "Сейчас четверть восьмого.",
+   "options": [
+    "pool",
+    "veerand",
+    "kolmveerand",
+    "viis"
+   ],
+   "answer": 1,
+   "explanation_ru": "7:15 = veerand kaheksa («четверть восьмого»): называется следующий час."
+  },
+  {
+   "id": "g-num-12",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on 8.45, ehk ___ üheksa.",
+   "hint": "(8:45)",
+   "ru": "Сейчас без четверти девять.",
+   "options": [
+    "pool",
+    "veerand",
+    "kolmveerand",
+    "kümme"
+   ],
+   "answer": 2,
+   "explanation_ru": "8:45 = kolmveerand üheksa («три четверти до девяти»)."
+  },
+  {
+   "id": "g-num-13",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta sündis ___ mail.",
+   "hint": "(1)",
+   "ru": "Он родился первого мая.",
+   "options": [
+    "esimene",
+    "esimesel",
+    "esimeses",
+    "esimest"
+   ],
+   "answer": 1,
+   "explanation_ru": "Дата: порядковое числительное в адессиве: esimesel mail."
+  },
+  {
+   "id": "g-num-14",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma elan ___ korrusel.",
+   "hint": "(3)",
+   "ru": "Я живу на третьем этаже.",
+   "options": [
+    "kolmas",
+    "kolmandal",
+    "kolmandas",
+    "kolme"
+   ],
+   "answer": 1,
+   "explanation_ru": "Порядковое числительное согласуется с существительным: kolmandal korrusel."
+  },
+  {
+   "id": "g-num-15",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Täna on ___ aprill.",
+   "hint": "(2)",
+   "ru": "Сегодня второе апреля.",
+   "options": [
+    "kaks",
+    "teine",
+    "teist",
+    "kahes"
+   ],
+   "answer": 1,
+   "explanation_ru": "Дата называется порядковым числительным: teine aprill."
+  },
+  {
+   "id": "g-num-16",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mul on ___ sõpra.",
+   "hint": "(5)",
+   "ru": "У меня пять друзей.",
+   "options": [
+    "viis",
+    "viit",
+    "viie",
+    "viiel"
+   ],
+   "answer": 0,
+   "explanation_ru": "Числительное стоит в именительном (viis), существительное — в партитиве ед. ч.: viis sõpra."
+  },
+  {
+   "id": "g-num-17",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ühes sajandis on ___ aastat.",
+   "hint": "(100)",
+   "ru": "В одном веке сто лет.",
+   "answer": "sada",
+   "explanation_ru": "100 = sada."
+  },
+  {
+   "id": "g-num-18",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Täna on ___ detsember.",
+   "hint": "(10)",
+   "ru": "Сегодня десятое декабря.",
+   "options": [
+    "kümme",
+    "kümnes",
+    "kümnenda",
+    "kümnendas"
+   ],
+   "answer": 1,
+   "explanation_ru": "Дата: порядковое числительное — kümnes (10-й)."
+  },
+  {
+   "id": "g-num-19",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ta on ___ aastat vana.",
+   "hint": "(66)",
+   "ru": "Ему шестьдесят шесть лет.",
+   "answer": "kuuskümmend kuus",
+   "explanation_ru": "66 = kuuskümmend kuus."
+  },
+  {
+   "id": "g-num-20",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell on 12.30, ehk pool ___.",
+   "hint": "(12:30)",
+   "ru": "Сейчас половина первого.",
+   "options": [
+    "kaksteist",
+    "üks",
+    "kaks",
+    "kolm"
+   ],
+   "answer": 1,
+   "explanation_ru": "12:30 = pool üks: называется следующий час."
+  },
+  {
+   "id": "g-num-21",
+   "topic": "numerals",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Kell on 3.30, ehk pool ___.",
+   "hint": "(3:30)",
+   "ru": "Сейчас половина четвёртого.",
+   "answer": "neli",
+   "explanation_ru": "3:30 = pool neli («половина четвёртого»)."
+  },
+  {
+   "id": "g-prep-06",
+   "topic": "prepositions",
+   "level": "A2",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kass on diivani ___.",
+   "hint": "(на)",
+   "ru": "Кошка на диване.",
+   "options": [
+    "peal",
+    "peale",
+    "pealt",
+    "all"
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где?» → peal (родительный: diivani peal). Peale — «куда», pealt — «откуда»."
+  },
+  {
+   "id": "g-prep-07",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma panen raamatu laua ___.",
+   "hint": "(на, «куда?»)",
+   "ru": "Я положу книгу на стол.",
+   "options": [
+    "peal",
+    "peale",
+    "pealt",
+    "ees"
+   ],
+   "answer": 1,
+   "explanation_ru": "«Куда?» → peale: laua peale."
+  },
+  {
+   "id": "g-prep-08",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Raamat kukkus laua ___.",
+   "hint": "(со)",
+   "ru": "Книга упала со стола.",
+   "options": [
+    "peal",
+    "peale",
+    "pealt",
+    "alt"
+   ],
+   "answer": 2,
+   "explanation_ru": "«Откуда (с поверхности)?» → pealt: laua pealt."
+  },
+  {
+   "id": "g-prep-09",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tulin sõbra ___.",
+   "hint": "(от)",
+   "ru": "Я пришёл от друга.",
+   "options": [
+    "juures",
+    "juurde",
+    "juurest",
+    "ees"
+   ],
+   "answer": 2,
+   "explanation_ru": "«От кого?» → juurest: sõbra juurest."
+  },
+  {
+   "id": "g-prep-10",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma lähen arsti ___.",
+   "hint": "(к)",
+   "ru": "Я иду к врачу.",
+   "options": [
+    "juures",
+    "juurde",
+    "juurest",
+    "taga"
+   ],
+   "answer": 1,
+   "explanation_ru": "«К кому?» → juurde: arsti juurde."
+  },
+  {
+   "id": "g-prep-11",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta istub minu ___.",
+   "hint": "(рядом)",
+   "ru": "Он сидит рядом со мной.",
+   "options": [
+    "kõrval",
+    "kõrvale",
+    "kõrvalt",
+    "kõrvast"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kõrval («рядом», где?) + родительный: minu kõrval."
+  },
+  {
+   "id": "g-prep-12",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ lõunat läheme jalutama.",
+   "hint": "(перед)",
+   "ru": "Перед обедом мы идём гулять.",
+   "options": [
+    "Enne",
+    "Pärast",
+    "Ilma",
+    "Koos"
+   ],
+   "answer": 0,
+   "explanation_ru": "Enne («перед») + партитив: enne lõunat. Pärast означало бы «после»."
+  },
+  {
+   "id": "g-prep-13",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta kõndis ___ tänavat.",
+   "hint": "(по)",
+   "ru": "Он шёл по улице.",
+   "options": [
+    "mööda",
+    "läbi",
+    "üle",
+    "ümber"
+   ],
+   "answer": 0,
+   "explanation_ru": "Mööda («по, вдоль») + партитив: mööda tänavat."
+  },
+  {
+   "id": "g-prep-14",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Me jalutasime ___ parki.",
+   "hint": "(через)",
+   "ru": "Мы прошли через парк.",
+   "options": [
+    "läbi",
+    "mööda",
+    "enne",
+    "pärast"
+   ],
+   "answer": 0,
+   "explanation_ru": "Läbi («через») + родительный: läbi pargi."
+  },
+  {
+   "id": "g-prep-15",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma loen artiklit ___ kohta.",
+   "hint": "(koer)",
+   "ru": "Я читаю статью о собаке.",
+   "options": [
+    "koer",
+    "koera",
+    "koerast",
+    "koerale"
+   ],
+   "answer": 1,
+   "explanation_ru": "Kohta («о») + родительный: koera kohta."
+  },
+  {
+   "id": "g-prep-16",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Mets on maja ___.",
+   "hint": "(вокруг)",
+   "ru": "Лес вокруг дома.",
+   "options": [
+    "ümber",
+    "taga",
+    "ees",
+    "vastas"
+   ],
+   "answer": 0,
+   "explanation_ru": "Ümber («вокруг») + родительный: maja ümber."
+  },
+  {
+   "id": "g-prep-17",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kool on poe ___.",
+   "hint": "(напротив)",
+   "ru": "Школа напротив магазина.",
+   "options": [
+    "vastas",
+    "kõrval",
+    "taga",
+    "peal"
+   ],
+   "answer": 0,
+   "explanation_ru": "Vastas («напротив») + родительный: poe vastas."
+  },
+  {
+   "id": "g-prep-18",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma olen siin ___ hommikust.",
+   "hint": "(с)",
+   "ru": "Я здесь с утра.",
+   "options": [
+    "alates",
+    "kuni",
+    "enne",
+    "ilma"
+   ],
+   "answer": 0,
+   "explanation_ru": "Alates («с, начиная с») + партитив: alates hommikust."
+  },
+  {
+   "id": "g-prep-19",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma töötan ___ kella viieni.",
+   "hint": "(до)",
+   "ru": "Я работаю до пяти часов.",
+   "options": [
+    "kuni",
+    "alates",
+    "pärast",
+    "ilma"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kuni («до») употребляется с терминативом на -ni: kuni kella viieni."
+  },
+  {
+   "id": "g-prep-20",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta tuli kooli ___ raamatuta.",
+   "hint": "(без)",
+   "ru": "Он пришёл в школу без книги.",
+   "options": [
+    "ilma",
+    "koos",
+    "enne",
+    "ümber"
+   ],
+   "answer": 0,
+   "explanation_ru": "Ilma («без») в паре с абессивом на -ta: ilma raamatuta."
+  },
+  {
+   "id": "g-prep-21",
+   "topic": "prepositions",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Ostsin kingituse ___ jaoks.",
+   "hint": "(õde)",
+   "ru": "Я купил(а) подарок для сестры.",
+   "answer": "õe",
+   "explanation_ru": "Jaoks («для») + родительный: õde → õe → õe jaoks."
+  }
+ ]
 }

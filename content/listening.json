@@ -192,6 +192,645 @@
      "answer": false
     }
    ]
+  },
+  {
+   "id": "l-03",
+   "topic": "shopping",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Poes",
+   "title_ru": "В магазине",
+   "explanation_ru": "Диалог продавца и покупателя. Следите за цифрами и причиной выбора.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tere! Kas ma saan teid aidata?"
+    },
+    {
+     "sp": "B",
+     "text": "Tere! Ma otsin sooja kampsunit."
+    },
+    {
+     "sp": "A",
+     "text": "Meil on kampsuneid kolmes värvis: sinine, roheline ja hall."
+    },
+    {
+     "sp": "B",
+     "text": "Kui palju sinine maksab?"
+    },
+    {
+     "sp": "A",
+     "text": "Sinine kampsun maksab nelikümmend viis eurot."
+    },
+    {
+     "sp": "B",
+     "text": "See on mulle liiga kallis. Kas teil on odavamaid?"
+    },
+    {
+     "sp": "A",
+     "text": "Jah, hall kampsun maksab kakskümmend kaheksa eurot, sest täna on allahindlus."
+    },
+    {
+     "sp": "B",
+     "text": "Hea küll, ma võtan halli. Kas ma saan kaardiga maksta?"
+    },
+    {
+     "sp": "A",
+     "text": "Muidugi, kassa on seal."
+    },
+    {
+     "sp": "B",
+     "text": "Aitäh!"
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-03-q1",
+     "type": "choice",
+     "prompt_et": "Mida klient otsib?",
+     "explanation_ru": "«Ma otsin sooja kampsunit».",
+     "options": [
+      "sooja kampsunit",
+      "uut jopet",
+      "kingi",
+      "sallu"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-03-q2",
+     "type": "choice",
+     "prompt_et": "Mitmes värvis on kampsuneid?",
+     "explanation_ru": "«Kampsuneid kolmes värvis» — в трёх цветах.",
+     "options": [
+      "kolmes",
+      "kahes",
+      "neljas",
+      "viies"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-03-q3",
+     "type": "input",
+     "prompt_et": "Kui palju maksab sinine kampsun? Kirjuta sõnadega: ___ eurot.",
+     "explanation_ru": "«Nelikümmend viis eurot» — 45 евро.",
+     "answer": "nelikümmend viis"
+    },
+    {
+     "id": "l-03-q4",
+     "type": "tf",
+     "prompt_et": "Hall kampsun on odavam kui sinine.",
+     "explanation_ru": "Серый стоит 28 евро, синий — 45.",
+     "answer": true
+    },
+    {
+     "id": "l-03-q5",
+     "type": "choice",
+     "prompt_et": "Miks hall kampsun on odav?",
+     "explanation_ru": "«Sest täna on allahindlus» — сегодня скидка.",
+     "options": [
+      "Täna on allahindlus.",
+      "See on vana.",
+      "See on väike.",
+      "See on katki."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-03-q6",
+     "type": "tf",
+     "prompt_et": "Klient maksab sularahas.",
+     "explanation_ru": "Клиент спрашивает: «Kas ma saan kaardiga maksta?» — платит картой.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "id": "l-04",
+   "topic": "travel",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Lennujaama teade",
+   "title_ru": "Объявление в аэропорту",
+   "explanation_ru": "Объявление о задержке рейса: ищите старое и новое время.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tähelepanu, lennureisijad!"
+    },
+    {
+     "sp": "A",
+     "text": "Lend Tallinnast Helsingisse hilineb."
+    },
+    {
+     "sp": "A",
+     "text": "Algne väljumisaeg oli kell 14.20, uus väljumisaeg on kell 15.05."
+    },
+    {
+     "sp": "A",
+     "text": "Palun minge väravasse number seitse."
+    },
+    {
+     "sp": "A",
+     "text": "Reisijad, kes on juba pagasi andnud, ei pea midagi tegema."
+    },
+    {
+     "sp": "A",
+     "text": "Kui teil on küsimusi, pöörduge infoletti, mis asub teisel korrusel."
+    },
+    {
+     "sp": "A",
+     "text": "Vabandame ebamugavuse pärast."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-04-q1",
+     "type": "choice",
+     "prompt_et": "Kuhu lend läheb?",
+     "explanation_ru": "«Lend Tallinnast Helsingisse».",
+     "options": [
+      "Helsingisse",
+      "Riiga",
+      "Stockholmi",
+      "Tartusse"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-04-q2",
+     "type": "tf",
+     "prompt_et": "Lend väljub õigel ajal.",
+     "explanation_ru": "«Lend hilineb» — рейс задерживается.",
+     "answer": false
+    },
+    {
+     "id": "l-04-q3",
+     "type": "input",
+     "prompt_et": "Mis värav? Kirjuta sõnaga: värav number ___.",
+     "explanation_ru": "«Väravasse number seitse» — выход номер семь.",
+     "answer": "seitse"
+    },
+    {
+     "id": "l-04-q4",
+     "type": "choice",
+     "prompt_et": "Kus asub infoleti?",
+     "explanation_ru": "«Infoletti, mis asub teisel korrusel».",
+     "options": [
+      "teisel korrusel",
+      "esimesel korrusel",
+      "väravas seitse",
+      "bussijaamas"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-04-q5",
+     "type": "input",
+     "prompt_et": "Mis kell on uus väljumisaeg? Kirjuta numbritega: ___",
+     "explanation_ru": "«Uus väljumisaeg on kell 15.05».",
+     "answer": "15.05"
+    },
+    {
+     "id": "l-04-q6",
+     "type": "tf",
+     "prompt_et": "Pagasi andnud reisijad peavad uuesti pagasi andma.",
+     "explanation_ru": "«Ei pea midagi tegema» — ничего делать не нужно.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "id": "l-05",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kodutöö",
+   "title_ru": "Домашнее задание",
+   "explanation_ru": "Монолог учителя о домашнем задании: ищите числа, сроки, формат сдачи.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Kallid õpilased!"
+    },
+    {
+     "sp": "A",
+     "text": "Homseks on kodutööks kaks ülesannet."
+    },
+    {
+     "sp": "A",
+     "text": "Esiteks, lugege õpikust lehekülge kolmkümmend kaks."
+    },
+    {
+     "sp": "A",
+     "text": "Teiseks, kirjutage kümme lauset oma lemmikloomast."
+    },
+    {
+     "sp": "A",
+     "text": "Kui teil ei ole lemmiklooma, kirjutage sellest, mis loom teile meeldiks."
+    },
+    {
+     "sp": "A",
+     "text": "Tööd tuleb tuua paberil."
+    },
+    {
+     "sp": "A",
+     "text": "Kontrolltöö on järgmisel neljapäeval ja see tuleb teemast Minu kodu."
+    },
+    {
+     "sp": "A",
+     "text": "Kellel on küsimusi, võib pärast tundi minu juurde tulla."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-05-q1",
+     "type": "choice",
+     "prompt_et": "Mitu ülesannet on kodutööks?",
+     "explanation_ru": "«Kaks ülesannet».",
+     "options": [
+      "kaks",
+      "üks",
+      "kolm",
+      "neli"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-05-q2",
+     "type": "input",
+     "prompt_et": "Mitu lauset tuleb kirjutada? Kirjuta sõnaga: ___ lauset.",
+     "explanation_ru": "«Kümme lauset».",
+     "answer": "kümme"
+    },
+    {
+     "id": "l-05-q3",
+     "type": "tf",
+     "prompt_et": "Tööd tuleb tuua arvutis.",
+     "explanation_ru": "«Tööd tuleb tuua paberil» — на бумаге.",
+     "answer": false
+    },
+    {
+     "id": "l-05-q4",
+     "type": "choice",
+     "prompt_et": "Millal on kontrolltöö?",
+     "explanation_ru": "«Järgmisel neljapäeval».",
+     "options": [
+      "järgmisel neljapäeval",
+      "homme",
+      "täna",
+      "järgmisel esmaspäeval"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-05-q5",
+     "type": "choice",
+     "prompt_et": "Mis on kontrolltöö teema?",
+     "explanation_ru": "«Teemast Minu kodu».",
+     "options": [
+      "Minu kodu",
+      "Minu perekond",
+      "Minu kool",
+      "Minu hobi"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-05-q6",
+     "type": "tf",
+     "prompt_et": "Õpilased võivad pärast tundi küsimusi esitada.",
+     "explanation_ru": "«Kellel on küsimusi, võib pärast tundi minu juurde tulla».",
+     "answer": true
+    },
+    {
+     "id": "l-05-q7",
+     "type": "input",
+     "prompt_et": "Mitmendat lehekülge tuleb lugeda? Kirjuta sõnadega: ___",
+     "explanation_ru": "«Lehekülge kolmkümmend kaks» — страница 32.",
+     "answer": "kolmkümmend kaks"
+    }
+   ]
+  },
+  {
+   "id": "l-06",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Telefon arstikeskusesse",
+   "title_ru": "Звонок в поликлинику",
+   "explanation_ru": "Запись к врачу по телефону: ищите причину, время и имя.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Perearsti vastuvõtt, tere!"
+    },
+    {
+     "sp": "B",
+     "text": "Tere! Ma tahaksin broneerida aja oma pojale. Ta on haige."
+    },
+    {
+     "sp": "A",
+     "text": "Mis tal viga on?"
+    },
+    {
+     "sp": "B",
+     "text": "Tal on palavik ja kõht valutab."
+    },
+    {
+     "sp": "A",
+     "text": "Arst saab teid vastu võtta homme kell kümme."
+    },
+    {
+     "sp": "B",
+     "text": "Kahjuks ma ei saa hommikul, sest töötan. Kas pärastlõunal on aega?"
+    },
+    {
+     "sp": "A",
+     "text": "Jah, kell kolm on vaba aeg."
+    },
+    {
+     "sp": "B",
+     "text": "See sobib."
+    },
+    {
+     "sp": "A",
+     "text": "Palun öelge lapse nimi."
+    },
+    {
+     "sp": "B",
+     "text": "Tema nimi on Mihkel."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-06-q1",
+     "type": "choice",
+     "prompt_et": "Miks ema helistab?",
+     "explanation_ru": "«Ma tahaksin broneerida aja oma pojale».",
+     "options": [
+      "Ta tahab broneerida aja pojale.",
+      "Ta tahab rohtu osta.",
+      "Ta tahab arstiga rääkida lennust.",
+      "Ta tahab tühistada aja."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-06-q2",
+     "type": "choice",
+     "prompt_et": "Mis poisil viga on?",
+     "explanation_ru": "«Tal on palavik ja kõht valutab».",
+     "options": [
+      "Tal on palavik ja kõht valutab.",
+      "Tal on köha.",
+      "Tal valutab jalg.",
+      "Tal on nohu."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-06-q3",
+     "type": "tf",
+     "prompt_et": "Ema saab tulla hommikul.",
+     "explanation_ru": "«Kahjuks ma ei saa hommikul, sest töötan».",
+     "answer": false
+    },
+    {
+     "id": "l-06-q4",
+     "type": "input",
+     "prompt_et": "Mis kell broneeritakse aeg? Kirjuta sõnaga: kell ___.",
+     "explanation_ru": "«Kell kolm on vaba aeg» — в три часа.",
+     "answer": "kolm"
+    },
+    {
+     "id": "l-06-q5",
+     "type": "input",
+     "prompt_et": "Mis on poisi nimi?",
+     "explanation_ru": "«Tema nimi on Mihkel».",
+     "answer": "Mihkel"
+    },
+    {
+     "id": "l-06-q6",
+     "type": "choice",
+     "prompt_et": "Miks ema hommikul ei saa?",
+     "explanation_ru": "«Sest töötan».",
+     "options": [
+      "Ta töötab.",
+      "Ta magab.",
+      "Ta on haige.",
+      "Ta on bussis."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "l-07",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Ilmateade",
+   "title_ru": "Прогноз погоды",
+   "explanation_ru": "Прогноз погоды: в таких записях важны части суток и числа градусов.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Ilmateade homseks."
+    },
+    {
+     "sp": "A",
+     "text": "Hommikul on Eestis pilves ja kohati sajab vihma."
+    },
+    {
+     "sp": "A",
+     "text": "Päeval läheb ilm selgemaks ja pärastlõunal paistab päike."
+    },
+    {
+     "sp": "A",
+     "text": "Tuul on lõunatuul, kuni kuus meetrit sekundis."
+    },
+    {
+     "sp": "A",
+     "text": "Õhutemperatuur on kaheksa kuni kaksteist kraadi sooja."
+    },
+    {
+     "sp": "A",
+     "text": "Õhtul läheb jahedamaks ja öösel on kuni kolm kraadi sooja."
+    },
+    {
+     "sp": "A",
+     "text": "Ülehomme tuleb külmem ilm ja põhjaosas võib sadada lund."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-07-q1",
+     "type": "choice",
+     "prompt_et": "Milline ilm on hommikul?",
+     "explanation_ru": "«Hommikul on pilves ja kohati sajab vihma».",
+     "options": [
+      "Pilves ja kohati sajab vihma.",
+      "Päikeseline.",
+      "Sajab lund.",
+      "Torm."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-07-q2",
+     "type": "tf",
+     "prompt_et": "Pärastlõunal paistab päike.",
+     "explanation_ru": "«Pärastlõunal paistab päike».",
+     "answer": true
+    },
+    {
+     "id": "l-07-q3",
+     "type": "input",
+     "prompt_et": "Mitu kraadi sooja on päeval kõige rohkem? Kirjuta sõnaga: ___ kraadi.",
+     "explanation_ru": "«Kaheksa kuni kaksteist kraadi sooja» — максимум двенадцать.",
+     "answer": "kaksteist"
+    },
+    {
+     "id": "l-07-q4",
+     "type": "choice",
+     "prompt_et": "Mis tuul homme puhub?",
+     "explanation_ru": "«Tuul on lõunatuul».",
+     "options": [
+      "lõunatuul",
+      "põhjatuul",
+      "idatuul",
+      "läänetuul"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-07-q5",
+     "type": "tf",
+     "prompt_et": "Ülehomme on soojem ilm.",
+     "explanation_ru": "«Ülehomme tuleb külmem ilm» — холоднее.",
+     "answer": false
+    },
+    {
+     "id": "l-07-q6",
+     "type": "choice",
+     "prompt_et": "Kus võib ülehomme sadada lund?",
+     "explanation_ru": "«Põhjaosas võib sadada lund».",
+     "options": [
+      "põhjaosas",
+      "lõunaosas",
+      "kogu riigis",
+      "saartel"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "l-08",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Nädalavahetus",
+   "title_ru": "Выходные",
+   "explanation_ru": "Разговор об выходных в прошедшем времени. Различайте, кто что делал.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Tere, Liis! Mida sa nädalavahetusel tegid?"
+    },
+    {
+     "sp": "B",
+     "text": "Laupäeval käisin vanaema juures ja pühapäeval olin matkal."
+    },
+    {
+     "sp": "A",
+     "text": "Kus te matkasite?"
+    },
+    {
+     "sp": "B",
+     "text": "Lahemaa rahvuspargis. Ilm oli ilus ja nägime isegi hirve."
+    },
+    {
+     "sp": "A",
+     "text": "Tore! Mina olin terve nädalavahetuse kodus, sest olin natuke haige."
+    },
+    {
+     "sp": "B",
+     "text": "Kahju. Kas sul on nüüd parem?"
+    },
+    {
+     "sp": "A",
+     "text": "Jah, aitäh. Järgmisel nädalavahetusel tahan minna kinno."
+    },
+    {
+     "sp": "B",
+     "text": "Mine, seal on uus film. Ma võin sinuga kaasa tulla."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-08-q1",
+     "type": "choice",
+     "prompt_et": "Kus Liis laupäeval käis?",
+     "explanation_ru": "«Laupäeval käisin vanaema juures».",
+     "options": [
+      "vanaema juures",
+      "matkal",
+      "kinos",
+      "koolis"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-08-q2",
+     "type": "choice",
+     "prompt_et": "Kus Liis pühapäeval oli?",
+     "explanation_ru": "«Pühapäeval olin matkal».",
+     "options": [
+      "matkal",
+      "kinos",
+      "kodus",
+      "arsti juures"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-08-q3",
+     "type": "tf",
+     "prompt_et": "Liis nägi matkal hirve.",
+     "explanation_ru": "«Nägime isegi hirve».",
+     "answer": true
+    },
+    {
+     "id": "l-08-q4",
+     "type": "choice",
+     "prompt_et": "Miks A oli nädalavahetusel kodus?",
+     "explanation_ru": "«Sest olin natuke haige».",
+     "options": [
+      "Ta oli haige.",
+      "Ta õppis.",
+      "Ta ootas külalisi.",
+      "Ta oli väsinud."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "l-08-q5",
+     "type": "tf",
+     "prompt_et": "A tahab järgmisel nädalavahetusel kinno minna.",
+     "explanation_ru": "«Tahan minna kinno».",
+     "answer": true
+    },
+    {
+     "id": "l-08-q6",
+     "type": "input",
+     "prompt_et": "Mis rahvuspargis nad matkasid? Kirjuta nimi: ___ rahvuspargis.",
+     "explanation_ru": "«Lahemaa rahvuspargis».",
+     "answer": "Lahemaa"
+    }
+   ]
   }
  ]
 }

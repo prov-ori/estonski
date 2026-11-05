@@ -192,6 +192,600 @@
      "answer": "üheksa"
     }
    ]
+  },
+  {
+   "id": "r-03",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Kooli söökla menüü",
+   "title_ru": "Меню школьной столовой",
+   "explanation_ru": "Объявление с меню: читайте таблицу по дням и ищите нужный день, не читая всё подряд.",
+   "text_et": "Kooli söökla menüü 12.–16. detsembrini\n\nEsmaspäev: kanasupp, riis ja kala\nTeisipäev: borš, kartulipuder ja kotlet\nKolmapäev: seenesupp, makaronid juustuga\nNeljapäev: kalasupp, kartul ja salat\nReede: pannkoogid moosiga\n\nIga päev on laual leib, piim ja puuviljad. Taimetoitlastele on igal päeval eraldi roog. Lõunat saab kell 11.30–13.30. Kui sa oled millegi suhtes allergiline, ütle sellest kokale.",
+   "questions": [
+    {
+     "id": "r-03-q1",
+     "type": "choice",
+     "prompt_et": "Mida pakutakse neljapäeval?",
+     "explanation_ru": "В строке «Neljapäev» — kalasupp, kartul ja salat.",
+     "options": [
+      "kalasuppi, kartulit ja salatit",
+      "kanasuppi ja riisi",
+      "pannkooke moosiga",
+      "makarone juustuga"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-03-q2",
+     "type": "tf",
+     "prompt_et": "Reedel pakutakse pannkooke.",
+     "explanation_ru": "«Reede: pannkoogid moosiga» — в пятницу блинчики с вареньем.",
+     "answer": true
+    },
+    {
+     "id": "r-03-q3",
+     "type": "tf",
+     "prompt_et": "Taimetoitlastele ei ole eraldi rooga.",
+     "explanation_ru": "«Taimetoitlastele on igal päeval eraldi roog» — для вегетарианцев каждый день есть отдельное блюдо.",
+     "answer": false
+    },
+    {
+     "id": "r-03-q4",
+     "type": "choice",
+     "prompt_et": "Mis kell saab lõunat?",
+     "explanation_ru": "«Lõunat saab kell 11.30–13.30».",
+     "options": [
+      "11.30–13.30",
+      "10.00–12.00",
+      "12.00–15.00",
+      "13.30–15.30"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-03-q5",
+     "type": "match",
+     "prompt_et": "Seosta päev ja roog.",
+     "explanation_ru": "Ищите строки с днями недели: esmaspäev — kanasupp, kolmapäev — seenesupp, reede — pannkoogid.",
+     "prompt_ru": "Соедините день и блюдо. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Esmaspäev",
+       "answer": 0
+      },
+      {
+       "left": "Kolmapäev",
+       "answer": 1
+      },
+      {
+       "left": "Reede",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "kanasupp",
+      "seenesupp",
+      "pannkoogid",
+      "borš"
+     ]
+    },
+    {
+     "id": "r-03-q6",
+     "type": "choice",
+     "prompt_et": "Mida peab tegema allergiline õpilane?",
+     "explanation_ru": "«Ütle sellest kokale» — сказать повару.",
+     "options": [
+      "Ütlema sellest kokale.",
+      "Jääma koju.",
+      "Sööma ainult leiba.",
+      "Küsima õpetajalt luba."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-03-q7",
+     "type": "input",
+     "prompt_et": "Mis päeval on borš? Kirjuta päev: ___",
+     "explanation_ru": "Борщ во вторник: «Teisipäev: borš». Ответ на вопрос «когда?» — teisipäeval.",
+     "answer": "teisipäeval"
+    }
+   ]
+  },
+  {
+   "id": "r-04",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Mari külastab arsti",
+   "title_ru": "Мари идёт к врачу",
+   "explanation_ru": "Рассказ в прошедшем времени. Следите за последовательностью: что было сначала, что потом.",
+   "text_et": "Eelmisel nädalal jäi Mari haigeks. Tal oli köha, nohu ja kerge palavik. Esimesel päeval ootas ta, et haigus läheb ise üle, kuid kolmandal päeval läks ta perearsti juurde. Arst kuulas Mari kopse, vaatas ta kurku ja ütles, et see on tavaline külmetus.\n\nMari sai retsepti ja pidi apteegist ostma köharohtu. Arst soovitas kolm päeva kodus olla ja palju sooja teed juua. Mari ema kirjutas klassijuhatajale, et Mari ei tule nädala lõpuni kooli. Reedeks tundis Mari end juba paremini ja pühapäeval läks ta sõbraga jalutama.",
+   "questions": [
+    {
+     "id": "r-04-q1",
+     "type": "choice",
+     "prompt_et": "Millal läks Mari arsti juurde?",
+     "explanation_ru": "«Kolmandal päeval läks ta perearsti juurde» — на третий день.",
+     "options": [
+      "kolmandal päeval",
+      "esimesel päeval",
+      "reedel",
+      "pühapäeval"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-04-q2",
+     "type": "tf",
+     "prompt_et": "Mari oli haige juba mitu nädalat.",
+     "explanation_ru": "Мари заболела на прошлой неделе, а не несколько недель назад.",
+     "answer": false
+    },
+    {
+     "id": "r-04-q3",
+     "type": "tf",
+     "prompt_et": "Arst ütles, et see on tavaline külmetus.",
+     "explanation_ru": "«Ütles, et see on tavaline külmetus» — обычная простуда.",
+     "answer": true
+    },
+    {
+     "id": "r-04-q4",
+     "type": "choice",
+     "prompt_et": "Mida soovitas arst?",
+     "explanation_ru": "«Kolm päeva kodus olla ja palju sooja teed juua».",
+     "options": [
+      "Kolm päeva kodus olla ja sooja teed juua.",
+      "Minna iga päev trenni.",
+      "Süüa ainult leiba.",
+      "Minna kohe kooli."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-04-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik ja tegevus.",
+     "explanation_ru": "Врач смотрел горло, мама писала классному руководителю, Мари должна была купить лекарство.",
+     "prompt_ru": "Соедините человека и действие. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Arst",
+       "answer": 0
+      },
+      {
+       "left": "Mari ema",
+       "answer": 1
+      },
+      {
+       "left": "Mari",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "vaatas Mari kurku.",
+      "kirjutas klassijuhatajale.",
+      "pidi ostma apteegist rohtu.",
+      "läks reedel trenni."
+     ]
+    },
+    {
+     "id": "r-04-q6",
+     "type": "choice",
+     "prompt_et": "Mida tegi Mari pühapäeval?",
+     "explanation_ru": "«Pühapäeval läks ta sõbraga jalutama» — в воскресенье пошла гулять с другом.",
+     "options": [
+      "Läks sõbraga jalutama.",
+      "Käis arsti juures.",
+      "Jäi haigeks.",
+      "Läks kooli."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-04-q7",
+     "type": "input",
+     "prompt_et": "Mitu päeva soovitas arst kodus olla? Kirjuta sõnaga: ___ päeva.",
+     "explanation_ru": "«Kolm päeva» — три дня.",
+     "answer": "kolm"
+    }
+   ]
+  },
+  {
+   "id": "r-05",
+   "topic": "travel",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Teade rongireisijatele",
+   "title_ru": "Объявление для пассажиров поезда",
+   "explanation_ru": "Информационное объявление: числа и условия (когда, сколько, для кого). Обращайте внимание на время и цену.",
+   "text_et": "Teade reisijatele! Alates esmaspäevast sõidab rong Tallinn–Tartu uue sõiduplaani järgi. Esimene rong väljub Tallinnast kell 6.10 ja viimane kell 22.40. Sõit kestab umbes kaks tundi.\n\nPileteid saab osta jaamast, rongist või internetist. Rongis ostetud pilet on kolm eurot kallim. Õpilastele maksab pilet pool hinda, kui neil on õpilaspilet kaasas. Jalgrattaid võib rongi kaasa võtta, kuid nende jaoks on ainult kümme kohta. Rohkem infot leiate jaamast või kodulehelt.",
+   "questions": [
+    {
+     "id": "r-05-q1",
+     "type": "choice",
+     "prompt_et": "Mis kell väljub esimene rong Tallinnast?",
+     "explanation_ru": "«Esimene rong väljub Tallinnast kell 6.10».",
+     "options": [
+      "6.10",
+      "22.40",
+      "10.00",
+      "6.40"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-05-q2",
+     "type": "tf",
+     "prompt_et": "Sõit kestab umbes kaks tundi.",
+     "explanation_ru": "«Sõit kestab umbes kaks tundi».",
+     "answer": true
+    },
+    {
+     "id": "r-05-q3",
+     "type": "tf",
+     "prompt_et": "Rongis ostetud pilet on odavam.",
+     "explanation_ru": "Наоборот: «Rongis ostetud pilet on kolm eurot kallim» — дороже на три евро.",
+     "answer": false
+    },
+    {
+     "id": "r-05-q4",
+     "type": "choice",
+     "prompt_et": "Kuidas saab õpilane soodsama pileti?",
+     "explanation_ru": "«Õpilastele maksab pilet pool hinda, kui neil on õpilaspilet kaasas».",
+     "options": [
+      "Tal peab olema õpilaspilet kaasas.",
+      "Ta peab ostma pileti rongist.",
+      "Ta peab sõitma hommikul.",
+      "Ta peab võtma jalgratta kaasa."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-05-q5",
+     "type": "match",
+     "prompt_et": "Seosta sõna ja lause lõpp.",
+     "explanation_ru": "Последний поезд — 22.40; со студенческим билетом цена в половину; для велосипедов всего десять мест.",
+     "prompt_ru": "Соедините начало и конец. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Viimane rong",
+       "answer": 0
+      },
+      {
+       "left": "Õpilaspiletiga",
+       "answer": 1
+      },
+      {
+       "left": "Jalgrataste jaoks",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "väljub kell 22.40.",
+      "maksab pilet pool hinda.",
+      "on ainult kümme kohta.",
+      "ei ole kohti."
+     ]
+    },
+    {
+     "id": "r-05-q6",
+     "type": "input",
+     "prompt_et": "Mitu eurot kallim on rongis ostetud pilet? Kirjuta sõnaga: ___ eurot.",
+     "explanation_ru": "«Kolm eurot kallim» — на три евро дороже.",
+     "answer": "kolm"
+    },
+    {
+     "id": "r-05-q7",
+     "type": "choice",
+     "prompt_et": "Kust saab pileteid osta?",
+     "explanation_ru": "«Pileteid saab osta jaamast, rongist või internetist».",
+     "options": [
+      "Jaamast, rongist ja internetist.",
+      "Ainult rongist.",
+      "Ainult internetist.",
+      "Ainult bussijaamast."
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "r-06",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Minu uus hobi",
+   "title_ru": "Моё новое увлечение",
+   "explanation_ru": "Личный рассказ о хобби. Следите за числами и днями недели.",
+   "text_et": "Kolm kuud tagasi hakkasin ma käima ronimisseinal. Alguses oli see väga raske, sest mu käed said kiiresti väsinud. Treener Katrin ütles, et ma ei pea kohe kõrgele ronima. Tähtis on õppida õigesti liikuma.\n\nNüüd käin seal kolm korda nädalas: esmaspäeval, kolmapäeval ja reedel. Mulle meeldib, et seal on palju sõbralikke inimesi. Me aitame üksteist ja räägime ronimise ajal palju. Mu parim sõber Tõnu tuleb sageli kaasa, kuid ta kardab kõrgust, nii et ta ronib madalamal. Järgmisel suvel tahame koos mägedes ronida, aga selleks peame veel palju treenima.",
+   "questions": [
+    {
+     "id": "r-06-q1",
+     "type": "choice",
+     "prompt_et": "Millal hakkas jutustaja ronimisseinal käima?",
+     "explanation_ru": "«Kolm kuud tagasi».",
+     "options": [
+      "kolm kuud tagasi",
+      "kolm aastat tagasi",
+      "eelmisel suvel",
+      "eile"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-06-q2",
+     "type": "tf",
+     "prompt_et": "Alguses oli ronimine väga kerge.",
+     "explanation_ru": "«Alguses oli see väga raske» — сначала было очень тяжело.",
+     "answer": false
+    },
+    {
+     "id": "r-06-q3",
+     "type": "tf",
+     "prompt_et": "Jutustaja käib ronimisseinal kolm korda nädalas.",
+     "explanation_ru": "«Käin seal kolm korda nädalas».",
+     "answer": true
+    },
+    {
+     "id": "r-06-q4",
+     "type": "choice",
+     "prompt_et": "Miks Tõnu ronib madalamal?",
+     "explanation_ru": "«Ta kardab kõrgust».",
+     "options": [
+      "Ta kardab kõrgust.",
+      "Ta on haige.",
+      "Ta on algaja ja ei tea reegleid.",
+      "Treener keelab kõrgele ronida."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-06-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik ja lause.",
+     "explanation_ru": "Катрин — тренер, Тыну — лучший друг, рассказчик хочет полезть в горы.",
+     "prompt_ru": "Соедините человека и предложение. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Katrin",
+       "answer": 0
+      },
+      {
+       "left": "Tõnu",
+       "answer": 1
+      },
+      {
+       "left": "Jutustaja",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "on treener.",
+      "on jutustaja parim sõber.",
+      "tahab järgmisel suvel mägedes ronida.",
+      "ronib iga päev."
+     ]
+    },
+    {
+     "id": "r-06-q6",
+     "type": "choice",
+     "prompt_et": "Mis jutustajale ronimisseinal meeldib?",
+     "explanation_ru": "«Seal on palju sõbralikke inimesi».",
+     "options": [
+      "Seal on palju sõbralikke inimesi.",
+      "Seal on odav.",
+      "Seal ei ole treenerit.",
+      "Seal on vaikne."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-06-q7",
+     "type": "input",
+     "prompt_et": "Mis päeval ta käib: esmaspäeval, kolmapäeval ja ___?",
+     "explanation_ru": "Три дня: понедельник, среда и пятница — reedel.",
+     "answer": "reedel"
+    }
+   ]
+  },
+  {
+   "id": "r-07",
+   "topic": "tech",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Direktori teade",
+   "title_ru": "Сообщение директора",
+   "explanation_ru": "Сообщение ученикам с несколькими просьбами. Сопоставляйте просьбу и адресата.",
+   "text_et": "Tere, kallid õpilased! Meie kooli arvutiklass on remondis kuni novembri lõpuni. Sel ajal toimuvad infotehnoloogia tunnid tavalises klassiruumis. Palun võtke igaks tunniks kaasa oma vihik ja pliiats. Kui kellelgi on sülearvuti, võib selle kaasa võtta, kuid see ei ole kohustuslik.\n\nKooli wifi parool on muutunud: uue parooli saate klassijuhatajalt. Ärge kasutage tunni ajal telefoni, kui õpetaja ei ole seda lubanud. Küsimuste korral kirjutage õpetaja Marekile. Head õppimist!\n\nDirektor",
+   "questions": [
+    {
+     "id": "r-07-q1",
+     "type": "choice",
+     "prompt_et": "Mis juhtus arvutiklassiga?",
+     "explanation_ru": "«Arvutiklass on remondis».",
+     "options": [
+      "See on remondis.",
+      "See on suletud kogu aastaks.",
+      "See kolis teise kooli.",
+      "See on uus."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-07-q2",
+     "type": "tf",
+     "prompt_et": "Infotehnoloogia tunnid ei toimu üldse.",
+     "explanation_ru": "Уроки проходят в обычном классе.",
+     "answer": false
+    },
+    {
+     "id": "r-07-q3",
+     "type": "tf",
+     "prompt_et": "Sülearvuti kaasavõtmine on kohustuslik.",
+     "explanation_ru": "«See ei ole kohustuslik» — не обязательно.",
+     "answer": false
+    },
+    {
+     "id": "r-07-q4",
+     "type": "choice",
+     "prompt_et": "Kellelt saab uue wifi parooli?",
+     "explanation_ru": "«Uue parooli saate klassijuhatajalt».",
+     "options": [
+      "klassijuhatajalt",
+      "direktorilt",
+      "õpetaja Marekilt",
+      "sõbralt"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-07-q5",
+     "type": "match",
+     "prompt_et": "Seosta asi ja nõue.",
+     "explanation_ru": "Тетрадь и карандаш — на каждый урок; телефон — нельзя без разрешения; вопросы — учителю Мареку.",
+     "prompt_ru": "Соедините предмет и правило. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Vihik ja pliiats",
+       "answer": 0
+      },
+      {
+       "left": "Telefon",
+       "answer": 1
+      },
+      {
+       "left": "Küsimused",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "tuleb võtta igaks tunniks kaasa.",
+      "ei tohi tunnis kasutada ilma loata.",
+      "tuleb kirjutada õpetaja Marekile.",
+      "tuleb jätta koju."
+     ]
+    },
+    {
+     "id": "r-07-q6",
+     "type": "input",
+     "prompt_et": "Kellele saab küsimusi kirjutada? Kirjuta nimi: õpetaja ___.",
+     "explanation_ru": "«Küsimuste korral kirjutage õpetaja Marekile» — ответ в форме аллатива: Marekile.",
+     "answer": "Marekile"
+    },
+    {
+     "id": "r-07-q7",
+     "type": "choice",
+     "prompt_et": "Kes kirjutas teate?",
+     "explanation_ru": "Подпись внизу: «Direktor».",
+     "options": [
+      "direktor",
+      "klassijuhataja",
+      "õpetaja Marek",
+      "õpilane"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "r-08",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Esimene lumi",
+   "title_ru": "Первый снег",
+   "explanation_ru": "Небольшой рассказ в прошедшем времени. Ищите причину и следствие (sest, nii et).",
+   "text_et": "Eile hommikul ärkasin ja nägin aknast, et maas on lumi. See oli sel aastal esimene lumi. Väljas oli vaikne ja kõik oli valge. Panin sooja jope selga ja läksin õue. Väike vend tuli kaasa ja me ehitasime lumememme.\n\nLumi oli natuke märg, nii et lumememme sai teha kergesti. Hiljem tuli naabri tüdruk ja tõi porgandi lumememme ninaks. Õhtuks läks ilm soojemaks ja lumi sulas. Vend oli kurb, aga ema ütles, et varsti sajab uuesti.",
+   "questions": [
+    {
+     "id": "r-08-q1",
+     "type": "choice",
+     "prompt_et": "Mida nägi jutustaja hommikul aknast?",
+     "explanation_ru": "«Nägin aknast, et maas on lumi».",
+     "options": [
+      "Maas oli lumi.",
+      "Sadas vihma.",
+      "Päike paistis.",
+      "Oli udu."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-08-q2",
+     "type": "tf",
+     "prompt_et": "See oli sel aastal esimene lumi.",
+     "explanation_ru": "«See oli sel aastal esimene lumi».",
+     "answer": true
+    },
+    {
+     "id": "r-08-q3",
+     "type": "tf",
+     "prompt_et": "Lumememm ehitati üksi.",
+     "explanation_ru": "Вместе с младшим братом: «Väike vend tuli kaasa».",
+     "answer": false
+    },
+    {
+     "id": "r-08-q4",
+     "type": "choice",
+     "prompt_et": "Miks sai lumememme kergesti teha?",
+     "explanation_ru": "«Lumi oli natuke märg, nii et lumememme sai teha kergesti».",
+     "options": [
+      "Lumi oli märg.",
+      "Lund oli väga vähe.",
+      "Ilm oli väga külm.",
+      "Naaber aitas."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-08-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik ja tegevus.",
+     "explanation_ru": "Соседская девочка принесла морковку; брат был грустным; мама сказала, что скоро снова пойдёт снег.",
+     "prompt_ru": "Соедините человека и действие. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Naabri tüdruk",
+       "answer": 0
+      },
+      {
+       "left": "Vend",
+       "answer": 1
+      },
+      {
+       "left": "Ema",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "tõi porgandi.",
+      "oli õhtul kurb.",
+      "ütles, et varsti sajab uuesti.",
+      "ehitas maja."
+     ]
+    },
+    {
+     "id": "r-08-q6",
+     "type": "choice",
+     "prompt_et": "Mis juhtus õhtul?",
+     "explanation_ru": "«Õhtuks läks ilm soojemaks ja lumi sulas».",
+     "options": [
+      "Ilm läks soojemaks ja lumi sulas.",
+      "Sadas rohkem lund.",
+      "Lumememm kukkus ümber.",
+      "Tuli torm."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-08-q7",
+     "type": "input",
+     "prompt_et": "Millele tõi naabri tüdruk porgandi ninaks? Kirjuta sõna: ___",
+     "explanation_ru": "Морковку принесли «lumememme ninaks» — снеговику вместо носа.",
+     "answer": "lumememme"
+    }
+   ]
   }
  ]
 }

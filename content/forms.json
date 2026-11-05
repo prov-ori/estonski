@@ -1,0 +1,917 @@
+{
+ "_comment": "Таблицы форм для тренажёра «Формы слов». Вопросы генерируются из форм; совпадающие формы не спрашиваются.",
+ "items": [
+  {
+   "id": "f-n-01",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "raamat",
+   "ru": "книга",
+   "forms": {
+    "nom": "raamat",
+    "gen": "raamatu",
+    "part": "raamatut",
+    "ill": "raamatusse",
+    "ine": "raamatus",
+    "ela": "raamatust",
+    "all": "raamatule",
+    "ade": "raamatul",
+    "abl": "raamatult"
+   },
+   "explanation_ru": "Парадигма слова raamat. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-02",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "sõber",
+   "ru": "друг",
+   "forms": {
+    "nom": "sõber",
+    "gen": "sõbra",
+    "part": "sõpra",
+    "ill": "sõbrasse",
+    "ine": "sõbras",
+    "ela": "sõbrast",
+    "all": "sõbrale",
+    "ade": "sõbral",
+    "abl": "sõbralt"
+   },
+   "explanation_ru": "Парадигма слова sõber. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-03",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "auto",
+   "ru": "автомобиль",
+   "forms": {
+    "nom": "auto",
+    "gen": "auto",
+    "part": "autot",
+    "ill": "autosse",
+    "ine": "autos",
+    "ela": "autost",
+    "all": "autole",
+    "ade": "autol",
+    "abl": "autolt"
+   },
+   "explanation_ru": "Парадигма слова auto. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-04",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "õpilane",
+   "ru": "ученик",
+   "forms": {
+    "nom": "õpilane",
+    "gen": "õpilase",
+    "part": "õpilast",
+    "ill": "õpilasse",
+    "ine": "õpilases",
+    "ela": "õpilasest",
+    "all": "õpilasele",
+    "ade": "õpilasel",
+    "abl": "õpilaselt"
+   },
+   "explanation_ru": "Парадигма слова õpilane. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-05",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "õpetaja",
+   "ru": "учитель",
+   "forms": {
+    "nom": "õpetaja",
+    "gen": "õpetaja",
+    "part": "õpetajat",
+    "ill": "õpetajasse",
+    "ine": "õpetajas",
+    "ela": "õpetajast",
+    "all": "õpetajale",
+    "ade": "õpetajal",
+    "abl": "õpetajalt"
+   },
+   "explanation_ru": "Парадигма слова õpetaja. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-06",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "vend",
+   "ru": "брат",
+   "forms": {
+    "nom": "vend",
+    "gen": "venna",
+    "part": "venda",
+    "ill": "vennasse",
+    "ine": "vennas",
+    "ela": "vennast",
+    "all": "vennale",
+    "ade": "vennal",
+    "abl": "vennalt"
+   },
+   "explanation_ru": "Парадигма слова vend. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-07",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "õde",
+   "ru": "сестра",
+   "forms": {
+    "nom": "õde",
+    "gen": "õe",
+    "part": "õde",
+    "ill": "õesse",
+    "ine": "ões",
+    "ela": "õest",
+    "all": "õele",
+    "ade": "õel",
+    "abl": "õelt"
+   },
+   "explanation_ru": "Парадигма слова õde. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-08",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "tütar",
+   "ru": "дочь",
+   "forms": {
+    "nom": "tütar",
+    "gen": "tütre",
+    "part": "tütart",
+    "ill": "tütresse",
+    "ine": "tütres",
+    "ela": "tütrest",
+    "all": "tütrele",
+    "ade": "tütrel",
+    "abl": "tütrelt"
+   },
+   "explanation_ru": "Парадигма слова tütar. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-09",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "aken",
+   "ru": "окно",
+   "forms": {
+    "nom": "aken",
+    "gen": "akna",
+    "part": "akent",
+    "ill": "aknasse",
+    "ine": "aknas",
+    "ela": "aknast",
+    "all": "aknale",
+    "ade": "aknal",
+    "abl": "aknalt"
+   },
+   "explanation_ru": "Парадигма слова aken. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-10",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "tuba",
+   "ru": "комната",
+   "forms": {
+    "nom": "tuba",
+    "gen": "toa",
+    "part": "tuba",
+    "ill": "tuppa",
+    "ine": "toas",
+    "ela": "toast",
+    "all": "toale",
+    "ade": "toal",
+    "abl": "toalt"
+   },
+   "explanation_ru": "Парадигма слова tuba. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-11",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "köök",
+   "ru": "кухня",
+   "forms": {
+    "nom": "köök",
+    "gen": "köögi",
+    "part": "kööki",
+    "ill": "kööki",
+    "ine": "köögis",
+    "ela": "köögist",
+    "all": "köögile",
+    "ade": "köögil",
+    "abl": "köögilt"
+   },
+   "explanation_ru": "Парадигма слова köök. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-12",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "pood",
+   "ru": "магазин",
+   "forms": {
+    "nom": "pood",
+    "gen": "poe",
+    "part": "poodi",
+    "ill": "poodi",
+    "ine": "poes",
+    "ela": "poest",
+    "all": "poele",
+    "ade": "poel",
+    "abl": "poelt"
+   },
+   "explanation_ru": "Парадигма слова pood. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-13",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "linn",
+   "ru": "город",
+   "forms": {
+    "nom": "linn",
+    "gen": "linna",
+    "part": "linna",
+    "ill": "linna",
+    "ine": "linnas",
+    "ela": "linnast",
+    "all": "linnale",
+    "ade": "linnal",
+    "abl": "linnalt"
+   },
+   "explanation_ru": "Парадигма слова linn. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-14",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "kool",
+   "ru": "школа",
+   "forms": {
+    "nom": "kool",
+    "gen": "kooli",
+    "part": "kooli",
+    "ill": "kooli",
+    "ine": "koolis",
+    "ela": "koolist",
+    "all": "koolile",
+    "ade": "koolil",
+    "abl": "koolilt"
+   },
+   "explanation_ru": "Парадигма слова kool. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-15",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "raamatukogu",
+   "ru": "библиотека",
+   "forms": {
+    "nom": "raamatukogu",
+    "gen": "raamatukogu",
+    "part": "raamatukogu",
+    "ill": "raamatukokku",
+    "ine": "raamatukogus",
+    "ela": "raamatukogust",
+    "all": "raamatukogule",
+    "ade": "raamatukogul",
+    "abl": "raamatukogult"
+   },
+   "explanation_ru": "Парадигма слова raamatukogu. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-16",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "arvuti",
+   "ru": "компьютер",
+   "forms": {
+    "nom": "arvuti",
+    "gen": "arvuti",
+    "part": "arvutit",
+    "ill": "arvutisse",
+    "ine": "arvutis",
+    "ela": "arvutist",
+    "all": "arvutile",
+    "ade": "arvutil",
+    "abl": "arvutilt"
+   },
+   "explanation_ru": "Парадигма слова arvuti. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-17",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "maja",
+   "ru": "дом",
+   "forms": {
+    "nom": "maja",
+    "gen": "maja",
+    "part": "maja",
+    "ill": "majja",
+    "ine": "majas",
+    "ela": "majast",
+    "all": "majale",
+    "ade": "majal",
+    "abl": "majalt"
+   },
+   "explanation_ru": "Парадигма слова maja. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-18",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "mets",
+   "ru": "лес",
+   "forms": {
+    "nom": "mets",
+    "gen": "metsa",
+    "part": "metsa",
+    "ill": "metsa",
+    "ine": "metsas",
+    "ela": "metsast",
+    "all": "metsale",
+    "ade": "metsal",
+    "abl": "metsalt"
+   },
+   "explanation_ru": "Парадигма слова mets. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-19",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "järv",
+   "ru": "озеро",
+   "forms": {
+    "nom": "järv",
+    "gen": "järve",
+    "part": "järve",
+    "ill": "järve",
+    "ine": "järves",
+    "ela": "järvest",
+    "all": "järvele",
+    "ade": "järvel",
+    "abl": "järvelt"
+   },
+   "explanation_ru": "Парадигма слова järv. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-20",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "koer",
+   "ru": "собака",
+   "forms": {
+    "nom": "koer",
+    "gen": "koera",
+    "part": "koera",
+    "ill": "koera",
+    "ine": "koeras",
+    "ela": "koerast",
+    "all": "koerale",
+    "ade": "koeral",
+    "abl": "koeralt"
+   },
+   "explanation_ru": "Парадигма слова koer. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-21",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "lill",
+   "ru": "цветок",
+   "forms": {
+    "nom": "lill",
+    "gen": "lille",
+    "part": "lille",
+    "ill": "lille",
+    "ine": "lilles",
+    "ela": "lillest",
+    "all": "lillele",
+    "ade": "lillel",
+    "abl": "lillelt"
+   },
+   "explanation_ru": "Парадигма слова lill. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-22",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "ema",
+   "ru": "мама",
+   "forms": {
+    "nom": "ema",
+    "gen": "ema",
+    "part": "ema",
+    "ill": "emasse",
+    "ine": "emas",
+    "ela": "emast",
+    "all": "emale",
+    "ade": "emal",
+    "abl": "emalt"
+   },
+   "explanation_ru": "Парадигма слова ema. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-23",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "isa",
+   "ru": "папа",
+   "forms": {
+    "nom": "isa",
+    "gen": "isa",
+    "part": "isa",
+    "ill": "isasse",
+    "ine": "isas",
+    "ela": "isast",
+    "all": "isale",
+    "ade": "isal",
+    "abl": "isalt"
+   },
+   "explanation_ru": "Парадигма слова isa. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-n-24",
+   "topic": "cases",
+   "level": "B1",
+   "status": "draft",
+   "et": "telefon",
+   "ru": "телефон",
+   "forms": {
+    "nom": "telefon",
+    "gen": "telefoni",
+    "part": "telefoni",
+    "ill": "telefoni",
+    "ine": "telefonis",
+    "ela": "telefonist",
+    "all": "telefonile",
+    "ade": "telefonil",
+    "abl": "telefonilt"
+   },
+   "explanation_ru": "Парадигма слова telefon. Совпадающие формы (например, родительный и партитив) в тренажёре не спрашиваются."
+  },
+  {
+   "id": "f-v-01",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "õppima",
+   "ru": "учиться",
+   "forms": {
+    "ma": "õppima",
+    "da": "õppida",
+    "pres1": "õpin",
+    "pres3": "õpib",
+    "past1": "õppisin",
+    "nud": "õppinud",
+    "imp": "õpi"
+   },
+   "explanation_ru": "Основные формы глагола õppima: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-02",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "tegema",
+   "ru": "делать",
+   "forms": {
+    "ma": "tegema",
+    "da": "teha",
+    "pres1": "teen",
+    "pres3": "teeb",
+    "past1": "tegin",
+    "nud": "teinud",
+    "imp": "tee"
+   },
+   "explanation_ru": "Основные формы глагола tegema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-03",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "minema",
+   "ru": "идти, ехать",
+   "forms": {
+    "ma": "minema",
+    "da": "minna",
+    "pres1": "lähen",
+    "pres3": "läheb",
+    "past1": "läksin",
+    "nud": "läinud",
+    "imp": "mine"
+   },
+   "explanation_ru": "Основные формы глагола minema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-04",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "tulema",
+   "ru": "приходить",
+   "forms": {
+    "ma": "tulema",
+    "da": "tulla",
+    "pres1": "tulen",
+    "pres3": "tuleb",
+    "past1": "tulin",
+    "nud": "tulnud",
+    "imp": "tule"
+   },
+   "explanation_ru": "Основные формы глагола tulema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-05",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "olema",
+   "ru": "быть",
+   "forms": {
+    "ma": "olema",
+    "da": "olla",
+    "pres1": "olen",
+    "pres3": "on",
+    "past1": "olin",
+    "nud": "olnud",
+    "imp": "ole"
+   },
+   "explanation_ru": "Основные формы глагола olema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-06",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "lugema",
+   "ru": "читать",
+   "forms": {
+    "ma": "lugema",
+    "da": "lugeda",
+    "pres1": "loen",
+    "pres3": "loeb",
+    "past1": "lugesin",
+    "nud": "lugenud",
+    "imp": "loe"
+   },
+   "explanation_ru": "Основные формы глагола lugema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-07",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "kirjutama",
+   "ru": "писать",
+   "forms": {
+    "ma": "kirjutama",
+    "da": "kirjutada",
+    "pres1": "kirjutan",
+    "pres3": "kirjutab",
+    "past1": "kirjutasin",
+    "nud": "kirjutanud",
+    "imp": "kirjuta"
+   },
+   "explanation_ru": "Основные формы глагола kirjutama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-08",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "sööma",
+   "ru": "есть (кушать)",
+   "forms": {
+    "ma": "sööma",
+    "da": "süüa",
+    "pres1": "söön",
+    "pres3": "sööb",
+    "past1": "sõin",
+    "nud": "söönud",
+    "imp": "söö"
+   },
+   "explanation_ru": "Основные формы глагола sööma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-09",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "jooma",
+   "ru": "пить",
+   "forms": {
+    "ma": "jooma",
+    "da": "juua",
+    "pres1": "joon",
+    "pres3": "joob",
+    "past1": "jõin",
+    "nud": "joonud",
+    "imp": "joo"
+   },
+   "explanation_ru": "Основные формы глагола jooma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-10",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "nägema",
+   "ru": "видеть",
+   "forms": {
+    "ma": "nägema",
+    "da": "näha",
+    "pres1": "näen",
+    "pres3": "näeb",
+    "past1": "nägin",
+    "nud": "näinud",
+    "imp": "näe"
+   },
+   "explanation_ru": "Основные формы глагола nägema: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-11",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "andma",
+   "ru": "давать",
+   "forms": {
+    "ma": "andma",
+    "da": "anda",
+    "pres1": "annan",
+    "pres3": "annab",
+    "past1": "andsin",
+    "nud": "andnud",
+    "imp": "anna"
+   },
+   "explanation_ru": "Основные формы глагола andma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-12",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "võtma",
+   "ru": "брать",
+   "forms": {
+    "ma": "võtma",
+    "da": "võtta",
+    "pres1": "võtan",
+    "pres3": "võtab",
+    "past1": "võtsin",
+    "nud": "võtnud",
+    "imp": "võta"
+   },
+   "explanation_ru": "Основные формы глагола võtma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-13",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "saama",
+   "ru": "получать, мочь",
+   "forms": {
+    "ma": "saama",
+    "da": "saada",
+    "pres1": "saan",
+    "pres3": "saab",
+    "past1": "sain",
+    "nud": "saanud",
+    "imp": "saa"
+   },
+   "explanation_ru": "Основные формы глагола saama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-14",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "tahtma",
+   "ru": "хотеть",
+   "forms": {
+    "ma": "tahtma",
+    "da": "tahta",
+    "pres1": "tahan",
+    "pres3": "tahab",
+    "past1": "tahtsin",
+    "nud": "tahtnud",
+    "imp": "taha"
+   },
+   "explanation_ru": "Основные формы глагола tahtma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-15",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "elama",
+   "ru": "жить",
+   "forms": {
+    "ma": "elama",
+    "da": "elada",
+    "pres1": "elan",
+    "pres3": "elab",
+    "past1": "elasin",
+    "nud": "elanud",
+    "imp": "ela"
+   },
+   "explanation_ru": "Основные формы глагола elama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-16",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "töötama",
+   "ru": "работать",
+   "forms": {
+    "ma": "töötama",
+    "da": "töötada",
+    "pres1": "töötan",
+    "pres3": "töötab",
+    "past1": "töötasin",
+    "nud": "töötanud",
+    "imp": "tööta"
+   },
+   "explanation_ru": "Основные формы глагола töötama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-17",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "rääkima",
+   "ru": "говорить",
+   "forms": {
+    "ma": "rääkima",
+    "da": "rääkida",
+    "pres1": "räägin",
+    "pres3": "räägib",
+    "past1": "rääkisin",
+    "nud": "rääkinud",
+    "imp": "räägi"
+   },
+   "explanation_ru": "Основные формы глагола rääkima: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-18",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "magama",
+   "ru": "спать",
+   "forms": {
+    "ma": "magama",
+    "da": "magada",
+    "pres1": "magan",
+    "pres3": "magab",
+    "past1": "magasin",
+    "nud": "maganud",
+    "imp": "maga"
+   },
+   "explanation_ru": "Основные формы глагола magama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-19",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "küsima",
+   "ru": "спрашивать",
+   "forms": {
+    "ma": "küsima",
+    "da": "küsida",
+    "pres1": "küsin",
+    "pres3": "küsib",
+    "past1": "küsisin",
+    "nud": "küsinud",
+    "imp": "küsi"
+   },
+   "explanation_ru": "Основные формы глагола küsima: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-20",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "vastama",
+   "ru": "отвечать",
+   "forms": {
+    "ma": "vastama",
+    "da": "vastata",
+    "pres1": "vastan",
+    "pres3": "vastab",
+    "past1": "vastasin",
+    "nud": "vastanud",
+    "imp": "vasta"
+   },
+   "explanation_ru": "Основные формы глагола vastama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-21",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "kuulama",
+   "ru": "слушать",
+   "forms": {
+    "ma": "kuulama",
+    "da": "kuulata",
+    "pres1": "kuulan",
+    "pres3": "kuulab",
+    "past1": "kuulasin",
+    "nud": "kuulanud",
+    "imp": "kuula"
+   },
+   "explanation_ru": "Основные формы глагола kuulama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-22",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "ootama",
+   "ru": "ждать",
+   "forms": {
+    "ma": "ootama",
+    "da": "oodata",
+    "pres1": "ootan",
+    "pres3": "ootab",
+    "past1": "ootasin",
+    "nud": "oodanud",
+    "imp": "oota"
+   },
+   "explanation_ru": "Основные формы глагола ootama: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-23",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "käima",
+   "ru": "ходить",
+   "forms": {
+    "ma": "käima",
+    "da": "käia",
+    "pres1": "käin",
+    "pres3": "käib",
+    "past1": "käisin",
+    "nud": "käinud",
+    "imp": "käi"
+   },
+   "explanation_ru": "Основные формы глагола käima: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-v-24",
+   "topic": "verbs",
+   "level": "B1",
+   "status": "draft",
+   "et": "sõitma",
+   "ru": "ехать",
+   "forms": {
+    "ma": "sõitma",
+    "da": "sõita",
+    "pres1": "sõidan",
+    "pres3": "sõidab",
+    "past1": "sõitsin",
+    "nud": "sõitnud",
+    "imp": "sõida"
+   },
+   "explanation_ru": "Основные формы глагола sõitma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  }
+ ]
+}

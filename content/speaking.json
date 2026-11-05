@@ -136,6 +136,270 @@
     "Tubli, tervist!"
    ],
    "explanation_ru": "Лексика здоровья и вежливые вопросы. Врач задаёт уточняющие вопросы, пациент отвечает полными предложениями."
+  },
+  {
+   "id": "s-05",
+   "topic": "shopping",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Покупаем одежду",
+   "situation_ru": "Ученик A — покупатель, ученик B — продавец. Выберите вещь, обсудите размер и цену. Потом поменяйтесь ролями.",
+   "role_a": {
+    "title_ru": "Ученик A (покупатель)",
+    "prompts_et": [
+     "Tere! Ma otsin sooja jopet.",
+     "Kui palju see maksab?",
+     "Kas teil on suuremat suurust?",
+     "Ma võtan selle."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B (продавец)",
+    "prompts_et": [
+     "Tere! Mis suurust te otsite?",
+     "See maksab kolmkümmend eurot.",
+     "Jah, meil on ka suurem.",
+     "Kassa on seal."
+    ]
+   },
+   "phrases_et": [
+    "Kas ma võin proovida?",
+    "See on liiga kallis.",
+    "Mul on vaja ...",
+    "Palun!"
+   ],
+   "explanation_ru": "Отрабатываем вежливые просьбы и числа. Продавец предлагает варианты, покупатель решает."
+  },
+  {
+   "id": "s-06",
+   "topic": "travel",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Покупка билета",
+   "situation_ru": "Ученик A покупает билет на поезд, ученик B — кассир. Уточните время, цену и место.",
+   "role_a": {
+    "title_ru": "Ученик A (пассажир)",
+    "prompts_et": [
+     "Palun üks pilet Tartusse.",
+     "Mis kell rong väljub?",
+     "Kui palju pilet maksab?",
+     "Kas õpilasel on soodustus?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B (кассир)",
+    "prompts_et": [
+     "Millal te sõita tahate?",
+     "Rong väljub kell kümme.",
+     "Pilet maksab kaheksa eurot.",
+     "Õpilasele on pool hinda."
+    ]
+   },
+   "phrases_et": [
+    "Üks pilet, palun.",
+    "Tagasi või ainult ühele poole?",
+    "Millisest perroonilt?",
+    "Aitäh!"
+   ],
+   "explanation_ru": "Практика чисел и времени. Не забывайте переспрашивать: Kas sa saaksid korrata?"
+  },
+  {
+   "id": "s-07",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Заказ в кафе",
+   "situation_ru": "Ученик A — посетитель, ученик B — официант. Закажите еду и напитки и спросите про счёт.",
+   "role_a": {
+    "title_ru": "Ученик A (посетитель)",
+    "prompts_et": [
+     "Tere! Üks laud kahele, palun.",
+     "Mida te soovitate?",
+     "Ma võtan suppi ja teed.",
+     "Palun arve."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B (официант)",
+    "prompts_et": [
+     "Tere tulemast! Palun istuge.",
+     "Täna on hea kalasupp.",
+     "Kas soovite ka midagi juua?",
+     "Kokku on kaksteist eurot."
+    ]
+   },
+   "phrases_et": [
+    "Ma tahaksin ...",
+    "Kas teil on taimetoitu?",
+    "Maitses väga hästi.",
+    "Aitäh, nägemist!"
+   ],
+   "explanation_ru": "Вежливые формы с tahaksin, palun. Заказывайте блюда с партитивом: suppi, teed."
+  },
+  {
+   "id": "s-08",
+   "topic": "tech",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Телефон в школе",
+   "situation_ru": "Обсудите, должны ли ученики пользоваться телефоном в школе. Выскажите мнение и причины.",
+   "role_a": {
+    "title_ru": "Ученик A (за)",
+    "prompts_et": [
+     "Minu arvates võib telefoni kasutada vahetunnis.",
+     "Esiteks, ...",
+     "Näiteks, ...",
+     "Mis sina arvad?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B (против)",
+    "prompts_et": [
+     "Mina arvan, et telefon segab.",
+     "Sest ...",
+     "Seda ma ei usu, sest ...",
+     "Äkki võiks leppida kokku?"
+    ]
+   },
+   "phrases_et": [
+    "Minu arvates ...",
+    "Ma ei ole nõus.",
+    "Ühelt poolt ... teiselt poolt ...",
+    "Kokkuvõttes ..."
+   ],
+   "explanation_ru": "Выражение мнения и согласие/несогласие. Старайтесь называть причину каждый раз (sest)."
+  },
+  {
+   "id": "s-09",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Планируем день рождения",
+   "situation_ru": "Вы организуете вечеринку для друга. Решите, где, когда и что готовить.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Millal me peo korraldame?",
+     "Kes tuleb külla?",
+     "Mida me sööme?",
+     "Mida me kingime?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Pakun, et laupäeval.",
+     "Kutsume kogu klassi.",
+     "Ma küpsetan koogi.",
+     "Kingime raamatu."
+    ]
+   },
+   "phrases_et": [
+    "See on hea mõte.",
+    "Kes toob ...?",
+    "Mis sa arvad?",
+    "Siis lepime kokku."
+   ],
+   "explanation_ru": "Планирование: предложения (pakun), вопросы (kes, mida, millal)."
+  },
+  {
+   "id": "s-10",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Погода и планы",
+   "situation_ru": "Обсудите, что делать в выходные, если погода плохая или хорошая.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Milline ilm laupäeval tuleb?",
+     "Mida me teeme, kui sajab?",
+     "Kui ilm on ilus, kuhu läheme?",
+     "Mis kell kohtume?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Ilmateate järgi sajab vihma.",
+     "Siis läheme kinno.",
+     "Kui on päikseline, läheme metsa.",
+     "Kohtume kell kaks."
+    ]
+   },
+   "phrases_et": [
+    "Kui ..., siis ...",
+    "Mulle meeldib ...",
+    "Mis oleks, kui ...?",
+    "Hea küll."
+   ],
+   "explanation_ru": "Условные предложения с kui ... siis. Отрабатываем лексику погоды."
+  },
+  {
+   "id": "s-11",
+   "topic": "work",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Кем я хочу стать",
+   "situation_ru": "Расскажите партнёру о будущей профессии и задайте вопросы о его планах.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Kelleks sa tahad saada?",
+     "Miks see amet sulle meeldib?",
+     "Mida peab selleks õppima?",
+     "Kas sa tead kedagi sellel ametil?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Tahan saada ...",
+     "See amet meeldib mulle, sest ...",
+     "Selleks pean õppima ...",
+     "Mu onu töötab ...-na."
+    ]
+   },
+   "phrases_et": [
+    "Ma tahaksin ...",
+    "Mind huvitab ...",
+    "Selleks on vaja ...",
+    "Mis sinu plaan on?"
+   ],
+   "explanation_ru": "Говорим о будущем: tahan saada + транслатив (arstiks, kokaks)."
+  },
+  {
+   "id": "s-12",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Описываем комнату",
+   "situation_ru": "Один описывает свою комнату, другой задаёт вопросы и рисует/представляет её.",
+   "role_a": {
+    "title_ru": "Ученик A",
+    "prompts_et": [
+     "Minu toas on voodi ja laud.",
+     "Aken on laua kõrval.",
+     "Kapp on ukse taga.",
+     "Mulle meeldib mu tuba, sest ..."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Ученик B",
+    "prompts_et": [
+     "Mis värvi sinu tuba on?",
+     "Kus asub voodi?",
+     "Kas toas on arvuti?",
+     "Mida sa toas teed?"
+    ]
+   },
+   "phrases_et": [
+    "... on ... kõrval",
+    "... on ... peal",
+    "Seal on ...",
+    "Mulle meeldib ..."
+   ],
+   "explanation_ru": "Послелоги места (peal, all, kõrval, taga). Описывайте предметы полными предложениями."
   }
  ],
  "checklist": [

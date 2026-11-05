@@ -317,6 +317,312 @@
      "explanation_ru": "Диалог на согласование деталей. Самооценка — по чек-листу из раздела «Говорение»."
     }
    }
+  },
+  {
+   "id": "mock-02",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Пробный экзамен 2",
+   "explanation_ru": "Пробный экзамен собран из заданий разделов (аудирование, чтение, письмо, говорение) и нового блока «Грамматика и лексика». Процент считается только по автоматически проверяемым частям.",
+   "parts": {
+    "listening": {
+     "ref": "l-05"
+    },
+    "reading": {
+     "ref": "r-05"
+    },
+    "language": {
+     "id": "mock-02-g",
+     "title_et": "Keelekasutus",
+     "explanation_ru": "Короткие задания на грамматику; ответы вводятся с клавиатуры.",
+     "questions": [
+      {
+       "id": "mock-02-g1",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ma sõidan Tartusse ___.",
+       "hint": "(rong, «на поезде»)",
+       "ru": "Я еду в Тарту на поезде.",
+       "options": [
+        "rongil",
+        "rongiga",
+        "rongist",
+        "rongi"
+       ],
+       "answer": 1,
+       "explanation_ru": "Транспорт, «на чём?» → комитатив на -ga: rongiga."
+      },
+      {
+       "id": "mock-02-g2",
+       "topic": "verbs",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Eile me ___ kinos.",
+       "hint": "(käima)",
+       "ru": "Вчера мы ходили в кино.",
+       "options": [
+        "käime",
+        "käisime",
+        "käia",
+        "käinud"
+       ],
+       "answer": 1,
+       "explanation_ru": "Eile → прошедшее: käisime."
+      },
+      {
+       "id": "mock-02-g3",
+       "topic": "numerals",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Kirjuta sõnadega: 21 → ___",
+       "answer": "kakskümmend üks",
+       "explanation_ru": "Двузначные числа: десяток + единица: kakskümmend üks."
+      },
+      {
+       "id": "mock-02-g4",
+       "topic": "prepositions",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ma ootan sind raamatukogu ___.",
+       "hint": "(у, возле)",
+       "ru": "Я жду тебя у библиотеки.",
+       "options": [
+        "juures",
+        "juurde",
+        "juurest",
+        "peale"
+       ],
+       "answer": 0,
+       "explanation_ru": "«Где?» → juures: raamatukogu juures."
+      },
+      {
+       "id": "mock-02-g5",
+       "topic": "gradation",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Ma ostsin leiva ___.",
+       "hint": "(pood, «в магазине»)",
+       "ru": "Я купил(а) хлеб в магазине.",
+       "answer": "poes",
+       "explanation_ru": "Pood → слабая основа poe-: poes."
+      },
+      {
+       "id": "mock-02-g6",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ta tuli ___ koju.",
+       "hint": "(töö, «с работы»)",
+       "ru": "Он пришёл домой с работы.",
+       "options": [
+        "töö",
+        "tööl",
+        "töölt",
+        "tööle"
+       ],
+       "answer": 2,
+       "explanation_ru": "«С чего?» → аблатив на -lt: töölt."
+      },
+      {
+       "id": "mock-02-g7",
+       "topic": "numerals",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Kell on 10.30, ehk pool ___.",
+       "hint": "(10:30)",
+       "ru": "Сейчас половина одиннадцатого.",
+       "options": [
+        "kümme",
+        "üksteist",
+        "üheksa",
+        "kaksteist"
+       ],
+       "answer": 1,
+       "explanation_ru": "10:30 = pool üksteist: называется следующий час."
+      },
+      {
+       "id": "mock-02-g8",
+       "topic": "verbs",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Eile ma ___ kodutööd.",
+       "hint": "(tegema, прош. вр.)",
+       "ru": "Вчера я делал(а) домашнее задание.",
+       "answer": "tegin",
+       "explanation_ru": "Прошедшее время 1 л. ед. ч.: tegema → tegin."
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-04"
+    },
+    "speaking": {
+     "ref": "s-06"
+    }
+   }
+  },
+  {
+   "id": "mock-03",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Пробный экзамен 3",
+   "explanation_ru": "Пробный экзамен собран из заданий разделов (аудирование, чтение, письмо, говорение) и нового блока «Грамматика и лексика». Процент считается только по автоматически проверяемым частям.",
+   "parts": {
+    "listening": {
+     "ref": "l-06"
+    },
+    "reading": {
+     "ref": "r-04"
+    },
+    "language": {
+     "id": "mock-03-g",
+     "title_et": "Keelekasutus",
+     "explanation_ru": "Короткие задания на грамматику; ответы вводятся с клавиатуры.",
+     "questions": [
+      {
+       "id": "mock-03-g1",
+       "topic": "cases",
+       "level": "A2",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ma olen ___.",
+       "hint": "(kool, «в школе»)",
+       "ru": "Я в школе.",
+       "options": [
+        "kooli",
+        "koolis",
+        "koolist",
+        "koolile"
+       ],
+       "answer": 1,
+       "explanation_ru": "«Где?» → инессив на -s: koolis."
+      },
+      {
+       "id": "mock-03-g2",
+       "topic": "verbs",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Homme ma ___ kinno.",
+       "hint": "(minema)",
+       "ru": "Завтра я пойду в кино.",
+       "options": [
+        "läksin",
+        "lähen",
+        "läinud",
+        "minna"
+       ],
+       "answer": 1,
+       "explanation_ru": "Будущее выражается настоящим временем: lähen."
+      },
+      {
+       "id": "mock-03-g3",
+       "topic": "numerals",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Kirjuta sõnadega: 50 → ___",
+       "answer": "viiskümmend",
+       "explanation_ru": "Десятки: viiskümmend (слитно)."
+      },
+      {
+       "id": "mock-03-g4",
+       "topic": "prepositions",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Pärast ___ lähen trenni.",
+       "hint": "(kool)",
+       "ru": "После школы я иду на тренировку.",
+       "options": [
+        "kool",
+        "kooli",
+        "koolis",
+        "koolist"
+       ],
+       "answer": 1,
+       "explanation_ru": "Pärast + партитив: kool → kooli (у этого слова партитив совпадает с родительным)."
+      },
+      {
+       "id": "mock-03-g5",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Ma ootan ___.",
+       "hint": "(sõber)",
+       "ru": "Я жду друга.",
+       "answer": "sõpra",
+       "explanation_ru": "Ootama + партитив: sõber → sõpra."
+      },
+      {
+       "id": "mock-03-g6",
+       "topic": "verbs",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Ma ei ole seda raamatut veel ___.",
+       "hint": "(lugema)",
+       "ru": "Я ещё не читал(а) эту книгу.",
+       "options": [
+        "loen",
+        "lugesin",
+        "lugenud",
+        "lugeda"
+       ],
+       "answer": 2,
+       "explanation_ru": "Перфект с отрицанием: ei ole + причастие на -nud: lugenud."
+      },
+      {
+       "id": "mock-03-g7",
+       "topic": "cases",
+       "level": "B1",
+       "status": "draft",
+       "type": "choice",
+       "prompt_et": "Mul on ___ vaja.",
+       "hint": "(abi, «помощь»)",
+       "ru": "Мне нужна помощь.",
+       "options": [
+        "abi",
+        "abid",
+        "abile",
+        "abist"
+       ],
+       "answer": 0,
+       "explanation_ru": "Mul on … vaja + партитив; у слова abi партитив совпадает с именительным: abi."
+      },
+      {
+       "id": "mock-03-g8",
+       "topic": "numerals",
+       "level": "B1",
+       "status": "draft",
+       "type": "input",
+       "prompt_et": "Täna on ___ september.",
+       "hint": "(4)",
+       "ru": "Сегодня четвёртое сентября.",
+       "answer": "neljas",
+       "explanation_ru": "Дата: порядковое числительное: neljas."
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-06"
+    },
+    "speaking": {
+     "ref": "s-05"
+    }
+   }
   }
  ]
 }

@@ -37,8 +37,11 @@ function walk(file, node, ctx) {
       if (node.type === 'choice' && node.options_lang !== 'ru' && node.options.some((o) => o.split(' ').length >= 3)) node.options.forEach((o) => addText(file, id + ' (вариант)', o));
       if (node.type === 'match') { node.items.forEach((i) => addText(file, id + ' (левая часть)', i.left)); node.options.forEach((o) => addText(file, id + ' (вариант)', o)); }
     }
-    if (node.et && !node.type) addText(file, id, node.forms ? `${node.et} (${node.forms})` : node.et);
+    if (node.et && !node.type && typeof node.forms !== 'object') addText(file, id, node.forms ? `${node.et} (${node.forms})` : node.et);
     for (const k of ['example_et', 'title_et', 'prompt_et_extra']) if (node[k]) addText(file, id, node[k]);
+    if (node.answer_et) addText(file, id, node.answer_et);
+    if (Array.isArray(node.also_ok)) node.also_ok.forEach((t) => addText(file, id + ' (вариант)', t));
+    if (node.forms && typeof node.forms === 'object' && !Array.isArray(node.forms)) addText(file, id, `${node.et}: ${Object.values(node.forms).join(', ')}`);
     if (node.text_et) sentences(node.text_et).forEach((s) => addText(file, id, s));
     if (Array.isArray(node.script_et)) node.script_et.forEach((l) => addText(file, id, l.text));
     if (!node.type && node.prompt_et) addText(file, id, node.prompt_et);

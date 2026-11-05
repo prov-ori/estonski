@@ -1,5 +1,6 @@
 import { h, content, pct, setChildren, addChildren } from '../util.js';
 import { questionSet, saveResults } from '../question.js';
+import { store } from '../store.js';
 import { findEtVoice, resetVoice, createPlayer, speechSupported } from '../speech.js';
 
 /**
@@ -50,6 +51,13 @@ export function listeningBlock(item, { onVoice } = {}) {
 
 export const SYNTH_NOTE = 'Озвучка — это синтез речи вашего устройства (Web Speech API), а не записи с экзамена. Голос, темп, паузы и качество звука на экзамене будут другими; тренажёр помогает привыкнуть к слуховому восприятию, но не имитирует экзаменационные записи.';
 
+function statusLine(t) {
+  const sm = store.summary(t.questions.map((q) => q.id));
+  const lvl = `${t.level} · ${t.questions.length} вопросов`;
+  if (!sm.answered) return `${lvl} · не пройдено`;
+  return sm.ok === sm.total ? `${lvl} · решено полностью ✓` : `${lvl} · верно ${sm.ok} из ${sm.total}`;
+}
+
 export default {
   title: 'Аудирование',
   async mount(root, args) {
@@ -60,7 +68,7 @@ export default {
         h('h1', null, 'Аудирование'),
         h('p', { class: 'notice warn' }, SYNTH_NOTE),
         h('div', { class: 'grid' }, data.items.map((t) =>
-          h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, `${t.questions.length} вопросов`)))));
+          h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t))))));
       return;
     }
     const block = listeningBlock(item);

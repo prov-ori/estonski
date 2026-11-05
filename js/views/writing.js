@@ -1,6 +1,6 @@
 import { h, content, config, countWords, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
-import { charPad, timerWidget, checklistWidget, filteredList, nextLink } from '../widgets.js';
+import { charPad, timerWidget, checklistWidget, filteredList, nextLink, splitView } from '../widgets.js';
 
 const GROUPS = { greeting: 'Приветствие', closing: 'Завершение', add: 'Добавление', contrast: 'Противопоставление', cause: 'Причина', result: 'Следствие', example: 'Пример', order: 'Порядок', opinion: 'Мнение', condition: 'Условие' };
 
@@ -34,7 +34,7 @@ export default {
         h('p', { class: 'notice warn' }, 'Автоматической оценки нет — и не будет: тренажёр не умеет надёжно оценивать тексты. Проверьте себя по чек-листу или покажите текст учителю.'),
         filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => {
           const saved = store.getWriting(t.id);
-          return h('a', { class: 'card link-card', href: `#/writing/${t.id}` }, h('h3', null, t.title_ru), h('p', { class: 'muted' }, t.kind === 'email' ? 'Письмо / e-mail' : 'Рассуждение'), saved.text && h('p', { class: 'muted small-text' }, `Есть черновик: ${countWords(saved.text)} слов`));
+          return h('a', { class: 'card link-card', href: `#/writing/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, t.kind === 'email' ? 'Письмо / e-mail' : 'Рассуждение'), saved.text && h('p', { class: 'muted small-text' }, `Есть черновик: ${countWords(saved.text)} слов`));
         }))),
         h('h2', null, 'Связки и полезные фразы'), connectors(data.connectors));
       return;
@@ -48,13 +48,14 @@ export default {
     addChildren(root, 
       h('p', null, h('a', { href: '#/writing' }, '← Все задания'), '  ', nextLink(data.items, task.id, 'writing', 'Следующее задание →')),
       h('h1', null, 'Письмо: ' + task.title_ru),
-      h('div', { class: 'card' },
+      splitView([h('div', { class: 'card' },
         h('p', { class: 'q-et', lang: 'et' }, task.prompt_et),
         h('p', { class: 'muted' }, task.prompt_ru),
         h('p', null, h('strong', null, 'Раскройте в тексте:')),
         h('ul', null, task.content_points_et.map((p, i) => h('li', null, h('span', { lang: 'et' }, p), ' ', h('span', { class: 'muted' }, `— ${task.content_points_ru[i]}`)))),
         h('details', null, h('summary', null, 'Подсказка по заданию'), h('p', null, task.explanation_ru))),
-      h('div', { class: 'card' },
+        h('h2', null, 'Связки и полезные фразы'), connectors(data.connectors)],
+      [h('div', { class: 'card' },
         tw.el,
         h('p', { class: 'muted small-text' }, `Время тренировочное (${fmt.writing_practice_minutes} мин, config/exam-format.json, не проверено на harno.ee). Таймер не ограничивает ввод.`),
         ed.el,
@@ -62,8 +63,7 @@ export default {
         h('div', { class: 'row' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => { if (window.confirm('Очистить текст?')) { ed.ta.value = ''; ed.ta.dispatchEvent(new Event('input')); } } }, 'Очистить текст'))),
       h('h2', null, 'Самопроверка'),
       h('p', { class: 'muted' }, 'Отметьте всё, что выполнено. Это не оценка, а подсказка, что доработать.'),
-      cl.el,
-      h('h2', null, 'Связки и полезные фразы'), connectors(data.connectors));
+      cl.el], { leftTitle: 'задание' }));
     return () => tw.timer.stop();
   },
 };

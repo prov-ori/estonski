@@ -34,5 +34,11 @@ self.addEventListener('fetch', (e) => {
   );
 });
 `;
-fs.writeFileSync(path.join(ROOT, 'sw.js'), src);
-console.log(`sw.js: ${files.length} файлов, версия ${version}`);
+if (process.argv.includes('--check')) {
+  const cur = fs.existsSync(path.join(ROOT, 'sw.js')) ? fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8') : '';
+  if (!cur.includes(`'estonski-${version}'`)) { console.error('sw.js устарел: файлы сайта изменились. Запустите node tools/build-sw.js и закоммитьте sw.js.'); process.exit(1); }
+  console.log(`sw.js актуален (версия ${version})`);
+} else {
+  fs.writeFileSync(path.join(ROOT, 'sw.js'), src);
+  console.log(`sw.js: ${files.length} файлов, версия ${version}`);
+}

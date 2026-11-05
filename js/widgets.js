@@ -163,3 +163,37 @@ export function nextLink(items, currentId, route, label = 'Следующее з
   const next = items[(i + 1) % items.length];
   return next && next.id !== currentId ? h('a', { class: 'btn primary', href: `#/${route}/${next.id}` }, label) : null;
 }
+
+/** Включает широкую раскладку страницы (две колонки). Класс снимается роутером при смене страницы. */
+export function wideLayout() {
+  const m = document.getElementById('main');
+  if (m) m.classList.add('wide');
+}
+
+/**
+ * Две колонки: материал (текст, задание, карточка) слева, ответы справа.
+ * На узком экране — друг под другом; материал можно свернуть, а кнопка «↑ …» возвращает к нему.
+ */
+export function splitView(left, right, { leftTitle = 'Материал' } = {}) {
+  wideLayout();
+  const body = h('div', { class: 'pane-body' }, left);
+  const toggle = h('button', {
+    type: 'button', class: 'btn small pane-toggle', 'aria-expanded': 'true',
+    onclick: () => {
+      const c = leftPane.classList.toggle('collapsed');
+      toggle.setAttribute('aria-expanded', String(!c));
+      toggle.textContent = c ? `Показать: ${leftTitle}` : `Свернуть: ${leftTitle}`;
+    },
+  }, `Свернуть: ${leftTitle}`);
+  const leftPane = h('section', { class: 'pane pane-left', 'aria-label': leftTitle, tabindex: '0' }, toggle, body);
+  const toText = h('div', { class: 'to-text-wrap' }, h('button', {
+    type: 'button', class: 'btn small primary to-text',
+    onclick: () => {
+      if (leftPane.classList.contains('collapsed')) toggle.click();
+      leftPane.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      leftPane.focus({ preventScroll: true });
+    },
+  }, `↑ ${leftTitle}`));
+  const rightPane = h('section', { class: 'pane pane-right', 'aria-label': 'Задания и ответы' }, right, toText);
+  return h('div', { class: 'split' }, leftPane, rightPane);
+}

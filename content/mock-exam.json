@@ -51,9 +51,9 @@
        "explanation_ru": "Причина названа сразу: «Tänavatööde pärast on Pika tänav suletud» — из-за дорожных работ улица закрыта.",
        "options": [
         "Tänav on tööde pärast suletud.",
-        "Buss on katki.",
-        "Juht on haige.",
-        "Lund on palju sadanud."
+        "Bussijuhid on täna streigis.",
+        "Bussid on remondis terve nädala.",
+        "Lumi katab teed sel nädalal."
        ],
        "answer": 0
       },

@@ -2,7 +2,7 @@ import { h, content, config, addChildren } from '../util.js';
 import { numberWord, ordinalWord, timeWords, monthName } from '../gen.js';
 import { CASE_INFO } from '../gen.js';
 
-const table = (head, rows, cap) => h('div', { class: 'table-wrap' }, h('table', { class: 'table' }, h('caption', { class: 'sr-only' }, cap),
+const table = (head, rows, cap) => h('div', { class: 'table-wrap', tabindex: '0', role: 'region', 'aria-label': cap }, h('table', { class: 'table' }, h('caption', { class: 'sr-only' }, cap),
   h('thead', null, h('tr', null, head.map((x) => h('th', { scope: 'col' }, x)))),
   h('tbody', null, rows.map((r) => h('tr', null, r.map((c, i) => (i === 0 ? h('th', { scope: 'row', lang: 'et' }, c) : h('td', { lang: 'et' }, c))))))));
 

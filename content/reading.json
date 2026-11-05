@@ -31,9 +31,9 @@
      "explanation_ru": "«Esimese kuu jooksul ehitasid õpilased väikese roboti» — ehitama значит «строить».",
      "options": [
       "Nad ehitasid väikese roboti.",
-      "Nad käisid võistlusel.",
-      "Nad ostsid uued arvutid.",
-      "Nad lõpetasid ringi."
+      "Nad võitsid linna võistluse.",
+      "Nad ostsid kooli uued arvutid.",
+      "Nad lõpetasid ringi esimesel kuul."
      ],
      "answer": 0
     },
@@ -117,9 +117,9 @@
      "explanation_ru": "Kadri пишет, чтобы пригласить Лиису: «tahan sind laupäeval külla kutsuda».",
      "options": [
       "Ta kutsub Liisat endaga kaasa.",
-      "Ta küsib kodutööd.",
-      "Ta teatab, et ei saa tulla.",
-      "Ta tänab kingituse eest."
+      "Ta küsib Liisalt kodutöö kohta.",
+      "Ta teatab, et ei saa laupäeval tulla.",
+      "Ta tänab Liisat kingituse eest."
      ],
      "answer": 0
     },
@@ -336,9 +336,9 @@
      "explanation_ru": "«Kolm päeva kodus olla ja palju sooja teed juua».",
      "options": [
       "Kolm päeva kodus olla ja sooja teed juua.",
-      "Minna iga päev trenni.",
-      "Süüa ainult leiba.",
-      "Minna kohe kooli."
+      "Minna iga päev kooli ja trenni teha.",
+      "Süüa nädal aega ainult leiba ja vett.",
+      "Minna kohe tagasi kooli ja õppida."
      ],
      "answer": 0
     },
@@ -435,8 +435,8 @@
      "explanation_ru": "«Õpilastele maksab pilet pool hinda, kui neil on õpilaspilet kaasas».",
      "options": [
       "Tal peab olema õpilaspilet kaasas.",
-      "Ta peab ostma pileti rongist.",
-      "Ta peab sõitma hommikul.",
+      "Ta peab pileti ostma rongist ise.",
+      "Ta peab sõitma ainult hommikuti.",
       "Ta peab võtma jalgratta kaasa."
      ],
      "answer": 0
@@ -574,9 +574,9 @@
      "explanation_ru": "«Seal on palju sõbralikke inimesi».",
      "options": [
       "Seal on palju sõbralikke inimesi.",
-      "Seal on odav.",
-      "Seal ei ole treenerit.",
-      "Seal on vaikne."
+      "Seal on väga odav ja vaikne.",
+      "Seal ei ole kunagi treenerit.",
+      "Seal saab ronida ainult üksi."
      ],
      "answer": 0
     },
@@ -1640,6 +1640,396 @@
      "prompt_et": "Kes kirja kirjutas? Kirjuta perekonnanimi: Mari ___",
      "explanation_ru": "Подпись внизу: Mari Tamm.",
      "answer": "Tamm"
+    }
+   ]
+  },
+  {
+   "id": "r-15",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Eesti vanasõnad",
+   "title_ru": "Эстонские пословицы",
+   "explanation_ru": "Пословицы — краткие и часто встречаются в текстах. Важно понимать смысл, а не переводить дословно.",
+   "source": {
+    "title": "Эстонские пословицы (vanasõnad)",
+    "kind": "public-domain",
+    "license": "фольклор, общественное достояние",
+    "adapted": false,
+    "note": "Народное творчество; подборка и вопросы составлены автором."
+   },
+   "text_et": "Tasa sõuad, kaugele jõuad.\nHommik on õhtust targem.\nKes teisele auku kaevab, see ise sisse kukub.\nParem hilja kui mitte kunagi.\nSõber on hädas tuntud.\nParem varblane peos kui tuvi katusel.\nEga töö ei ole hunt, metsa ei jookse.\nKes ei tööta, see ei söö.",
+   "questions": [
+    {
+     "id": "r-15-q1",
+     "type": "match",
+     "prompt_et": "Seosta vanasõna ja tähendus.",
+     "explanation_ru": "Tasa sõuad — «тихо гребёшь»: не торопись; hommik on õhtust targem — «утро мудренее вечера»; parem hilja kui mitte kunagi — «лучше поздно, чем никогда».",
+     "prompt_ru": "Соедините пословицу и смысл. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Tasa sõuad, kaugele jõuad.",
+       "answer": 0
+      },
+      {
+       "left": "Hommik on õhtust targem.",
+       "answer": 1
+      },
+      {
+       "left": "Parem hilja kui mitte kunagi.",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "Ära kiirusta, siis jõuad kaugele.",
+      "Otsuseid tasub teha pärast und.",
+      "Parem teha asi hiljem kui üldse mitte.",
+      "Alati tuleb vara tõusta."
+     ]
+    },
+    {
+     "id": "r-15-q2",
+     "type": "choice",
+     "prompt_et": "Mida tähendab vanasõna «Sõber on hädas tuntud»?",
+     "explanation_ru": "Друг познаётся в беде: настоящих друзей видно, когда трудно.",
+     "options": [
+      "Tõelised sõbrad aitavad rasketel hetkedel.",
+      "Sõpru on väga raske leida elus.",
+      "Sõbrad tülitsevad ja lähevad lahku.",
+      "Hädas ei saa kunagi sõpra usaldada."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-15-q3",
+     "type": "tf",
+     "prompt_et": "Vanasõna «Kes ei tööta, see ei söö» räägib töö tähtsusest.",
+     "explanation_ru": "Кто не работает, тот не ест: пословица говорит о важности труда.",
+     "answer": true
+    },
+    {
+     "id": "r-15-q4",
+     "type": "tf",
+     "prompt_et": "Vanasõna «Ega töö ei ole hunt, metsa ei jookse» tähendab, et tööd tuleb kohe teha.",
+     "explanation_ru": "Смысл другой: «работа не волк, в лес не убежит» — с делом можно не спешить.",
+     "answer": false
+    },
+    {
+     "id": "r-15-q5",
+     "type": "choice",
+     "prompt_et": "Mis vanasõna räägib sellest, et kindel asi on parem kui kahtlane lootus?",
+     "explanation_ru": "«Parem varblane peos kui tuvi katusel» — лучше синица в руках, чем журавль в небе.",
+     "options": [
+      "Parem varblane peos kui tuvi katusel.",
+      "Tasa sõuad, kaugele jõuad.",
+      "Hommik on õhtust targem.",
+      "Kes ei tööta, see ei söö."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-15-q6",
+     "type": "input",
+     "prompt_et": "Kes teisele auku kaevab, see ise ___ kukub. Kirjuta puuduv sõna:",
+     "explanation_ru": "Пословица: «Кто другому яму роет, сам в неё упадёт» — недостающее слово sisse.",
+     "answer": "sisse"
+    }
+   ]
+  },
+  {
+   "id": "r-16",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Blogipostitus: minu esimene nädal uues koolis",
+   "title_ru": "Блог: моя первая неделя в новой школе",
+   "explanation_ru": "Длинный текст-блог в прошедшем времени. Следите за причинами (sest), последовательностью и именами героев.",
+   "text_et": "Eelmisel nädalal läksin esimest korda uude kooli. Me kolisime Tartust Pärnusse, sest mu ema sai seal uue töö. Alguses olin väga närviline, sest ma ei tundnud siin kedagi. Hommikul ootas mind koolimaja ees klassijuhataja Kati. Ta tutvustas mind klassile ja palus kahel õpilasel mulle kooli näidata. Üks neist, Oskar, oli väga sõbralik ja naljakas. Ta rääkis, et nende koolis on iga reede vaba vahetund: õpilased võivad minna spordisaali või raamatukokku, kuhu nad ise tahavad. See meeldis mulle väga.\n\nKõige raskem oli matemaatika, sest siin õpitakse teemasid teises järjekorras kui Tartus ja ma ei saanud tunnis kõigest aru. Kati ütles, et ma ei peaks muretsema. Ta andis mulle vihiku, kus on kõik teemad, mida klass on juba õppinud. Õhtul istusin kaks tundi laua taga ja tegin ülesandeid. Täna oli juba parem. Nädalavahetusel lähen Oskariga randa, sest ta lubas mulle linna näidata.",
+   "questions": [
+    {
+     "id": "r-16-q1",
+     "type": "choice",
+     "prompt_et": "Miks perekond Pärnusse kolis?",
+     "explanation_ru": "«Mu ema sai seal uue töö» — маме предложили новую работу.",
+     "options": [
+      "Ema sai seal uue töö.",
+      "Isa tahtis elada mere ääres.",
+      "Kool Tartus suleti.",
+      "Vanaema elab Pärnus."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-16-q2",
+     "type": "tf",
+     "prompt_et": "Jutustaja tundis uues koolis juba mitut õpilast.",
+     "explanation_ru": "«Ma ei tundnud siin kedagi» — рассказчик никого не знал.",
+     "answer": false
+    },
+    {
+     "id": "r-16-q3",
+     "type": "choice",
+     "prompt_et": "Kes tutvustas jutustajat klassile?",
+     "explanation_ru": "«Klassijuhataja Kati. Ta tutvustas mind klassile» — классная руководительница Кати.",
+     "options": [
+      "klassijuhataja Kati",
+      "Oskar",
+      "direktor",
+      "ema"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-16-q4",
+     "type": "choice",
+     "prompt_et": "Mis toimub koolis igal reedel?",
+     "explanation_ru": "«Iga reede vaba vahetund» — по пятницам свободная перемена.",
+     "options": [
+      "Vaba vahetund spordisaalis või raamatukogus.",
+      "Lühendatud tunnid.",
+      "Ekskursioon linna.",
+      "Kontrolltöö matemaatikas."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-16-q5",
+     "type": "tf",
+     "prompt_et": "Matemaatika oli jutustajale kõige raskem aine.",
+     "explanation_ru": "«Kõige raskem oli matemaatika».",
+     "answer": true
+    },
+    {
+     "id": "r-16-q6",
+     "type": "match",
+     "prompt_et": "Seosta isik ja tegevus.",
+     "explanation_ru": "Кати дала тетрадь с темами; Оскар обещал показать город; рассказчик два часа решал задачи.",
+     "prompt_ru": "Соедините человека и действие. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Kati",
+       "answer": 0
+      },
+      {
+       "left": "Oskar",
+       "answer": 1
+      },
+      {
+       "left": "Jutustaja",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "andis vihiku teemadega.",
+      "lubas linna näidata.",
+      "tegi õhtul kaks tundi ülesandeid.",
+      "töötab uues koolis."
+     ]
+    },
+    {
+     "id": "r-16-q7",
+     "type": "input",
+     "prompt_et": "Kuhu jutustaja nädalavahetusel Oskariga läheb? Kirjuta sõna: ___",
+     "explanation_ru": "«Nädalavahetusel lähen Oskariga randa» — ответ в форме иллатива: randa.",
+     "answer": "randa"
+    }
+   ]
+  },
+  {
+   "id": "r-17",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Koolis hakati prügi sorteerima",
+   "title_ru": "В школе начали сортировать мусор",
+   "explanation_ru": "Заметка в стиле новостей (текст вымышленный, написан автором). Ищите кто, что, когда и каков результат.",
+   "text_et": "Päikese kool alustas sel sügisel prügi sorteerimise projekti. Projekti idee tuli üheksanda klassi õpilastelt, kes märkasid, et kooli prügikastides on palju paberit ja plastpudeleid. Õpilased kirjutasid direktorile ettepaneku ja direktor kiitis selle heaks.\n\nNüüd on igal korrusel neli prügikasti: paberile, plastile, klaasile ja segaprügile. Iga klass vastutab ühe nädala jooksul oma korruse eest. Õpetajate sõnul on segaprügi hulk esimese kuuga vähenenud poole võrra. Kool saab kogutud paberi eest väikese summa ja plaanib selle raha eest osta aia jaoks lilli.\n\nProjekti juht, üheksanda klassi õpilane Mari, ütleb, et kõige raskem on olnud uue korraga harjuda. «Alguses unustasid paljud pudeli õigesse kasti panna,» rääkis ta. «Nüüd teavad kõik, kuhu mis kuulub.» Järgmisena soovivad õpilased õppida komposteerima toidujäätmeid, et sööklas tekkivat prügi veelgi vähendada.",
+   "questions": [
+    {
+     "id": "r-17-q1",
+     "type": "choice",
+     "prompt_et": "Kellelt tuli projekti idee?",
+     "explanation_ru": "«Projekti idee tuli üheksanda klassi õpilastelt» — идея от учеников девятого класса.",
+     "options": [
+      "üheksanda klassi õpilastelt",
+      "direktorilt",
+      "õpetajatelt",
+      "linnavalitsuselt"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-17-q2",
+     "type": "tf",
+     "prompt_et": "Direktor ei kiitnud õpilaste ettepanekut heaks.",
+     "explanation_ru": "«Direktor kiitis selle heaks» — директор одобрил предложение.",
+     "answer": false
+    },
+    {
+     "id": "r-17-q3",
+     "type": "choice",
+     "prompt_et": "Mitu prügikasti on igal korrusel?",
+     "explanation_ru": "«Igal korrusel neli prügikasti».",
+     "options": [
+      "neli",
+      "kaks",
+      "kolm",
+      "viis"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-17-q4",
+     "type": "tf",
+     "prompt_et": "Segaprügi hulk on esimese kuuga vähenenud.",
+     "explanation_ru": "«Segaprügi hulk esimese kuuga vähenenud poole võrra» — количество смешанного мусора сократилось вдвое.",
+     "answer": true
+    },
+    {
+     "id": "r-17-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik või rühm ja lause.",
+     "explanation_ru": "Каждый класс отвечает за этаж; школа получает деньги за бумагу; Мари — руководитель проекта.",
+     "prompt_ru": "Соедините участника и предложение. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Iga klass",
+       "answer": 0
+      },
+      {
+       "left": "Kool",
+       "answer": 1
+      },
+      {
+       "left": "Mari",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "vastutab ühe nädala oma korruse eest.",
+      "saab kogutud paberi eest raha.",
+      "on projekti juht.",
+      "kirjutab ajalehele."
+     ]
+    },
+    {
+     "id": "r-17-q6",
+     "type": "choice",
+     "prompt_et": "Mis on Mari sõnul olnud kõige raskem?",
+     "explanation_ru": "«Kõige raskem on olnud uue korraga harjuda» — привыкнуть к новому порядку.",
+     "options": [
+      "Uue korraga harjuda.",
+      "Raha koguda.",
+      "Direktorit veenda.",
+      "Prügi tassida."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-17-q7",
+     "type": "input",
+     "prompt_et": "Mida õpilased järgmisena õppida soovivad? Kirjuta sõna: ___ toidujäätmeid.",
+     "explanation_ru": "«Õppida komposteerima toidujäätmeid» — компостировать пищевые отходы.",
+     "answer": "komposteerima"
+    }
+   ]
+  },
+  {
+   "id": "r-18",
+   "topic": "holidays",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Jaanipäev Eestis",
+   "title_ru": "Ивановов день в Эстонии",
+   "explanation_ru": "Описательный текст о празднике. Различайте факты (даты, обычаи) и легенды (папоротник).",
+   "text_et": "Jaanipäev on üks Eesti tähtsamaid pühi. Seda tähistatakse 23. ja 24. juunil, kui päevad on aasta kõige pikemad ja ööd peaaegu valged. Paljud eestlased sõidavad jaaniks linnast maale, et olla koos perega.\n\nJaaniõhtu tähtsaim osa on lõke. Lõkke ümber lauldakse, tantsitakse ja süüakse grillitud liha. Lastele meeldib hüpata üle väikese lõkke või mängida aias mänge. Naised punuvad lilledest pärgi ja panevad need pähe, mehed kannavad tammelehtedest pärgi.\n\nVana kombe järgi tuleb jaaniööl metsas otsida sõnajalaõit, mis toob õnne, kuid tegelikult sõnajalad ei õitse. Paljud arvavad, et jaanipäeval ei tohi magada. Kes ärkvel püsib, näeb päikest tõusmas. Hommikul on tavaliselt kõik väsinud, kuid rõõmsad.",
+   "questions": [
+    {
+     "id": "r-18-q1",
+     "type": "choice",
+     "prompt_et": "Millal tähistatakse jaanipäeva?",
+     "explanation_ru": "«Seda tähistatakse 23. ja 24. juunil».",
+     "options": [
+      "23. ja 24. juunil",
+      "1. ja 2. mail",
+      "24. ja 25. detsembril",
+      "20. augustil"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-18-q2",
+     "type": "tf",
+     "prompt_et": "Jaanipäeval on päevad aasta kõige lühemad.",
+     "explanation_ru": "«Päevad on aasta kõige pikemad» — самые длинные.",
+     "answer": false
+    },
+    {
+     "id": "r-18-q3",
+     "type": "choice",
+     "prompt_et": "Mis on jaaniõhtu tähtsaim osa?",
+     "explanation_ru": "«Jaaniõhtu tähtsaim osa on lõke» — костёр.",
+     "options": [
+      "lõke",
+      "kontsert",
+      "paraad",
+      "jalgpallimäng"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-18-q4",
+     "type": "tf",
+     "prompt_et": "Lapsed hüppavad üle väikese lõkke.",
+     "explanation_ru": "«Lastele meeldib hüpata üle väikese lõkke».",
+     "answer": true
+    },
+    {
+     "id": "r-18-q5",
+     "type": "match",
+     "prompt_et": "Seosta isik või asi ja lause.",
+     "explanation_ru": "Женщины плетут венки из цветов; мужчины носят венки из дубовых листьев; цветок папоротника приносит счастье (по легенде).",
+     "prompt_ru": "Соедините и продолжите предложение. Один вариант лишний.",
+     "items": [
+      {
+       "left": "Naised",
+       "answer": 0
+      },
+      {
+       "left": "Mehed",
+       "answer": 1
+      },
+      {
+       "left": "Sõnajalaõis",
+       "answer": 2
+      }
+     ],
+     "options": [
+      "punuvad lilledest pärgi.",
+      "kannavad tammelehtedest pärgi.",
+      "toob legendi järgi õnne.",
+      "kasvab metsas kogu aasta."
+     ]
+    },
+    {
+     "id": "r-18-q6",
+     "type": "choice",
+     "prompt_et": "Mida paljud arvavad jaanipäeval magamisest?",
+     "explanation_ru": "«Jaanipäeval ei tohi magada» — в этот день нельзя спать.",
+     "options": [
+      "Magada ei tohi.",
+      "Magada tuleb kaua.",
+      "Magada võib ainult hommikul.",
+      "Magada saab ainult metsas."
+     ],
+     "answer": 0
+    },
+    {
+     "id": "r-18-q7",
+     "type": "input",
+     "prompt_et": "Mida otsitakse jaaniööl metsast? Kirjuta sõna: ___",
+     "explanation_ru": "«Otsida sõnajalaõit» — цветок папоротника (партитив: sõnajalaõit).",
+     "answer": "sõnajalaõit"
     }
    ]
   }

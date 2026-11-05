@@ -7,7 +7,7 @@ const MODLINK = { diagnostic: '#/diagnostic', grammar: '#/grammar', reading: '#/
 
 function transferBox(rerender) {
   const msg = h('p', { role: 'status', 'aria-live': 'polite', class: 'muted' });
-  const file = h('input', { type: 'file', accept: 'application/json,.json', id: 'imp', class: 'sr-only', onchange: async (e) => {
+  const file = h('input', { type: 'file', accept: 'application/json,.json', id: 'imp', class: 'sr-only', tabindex: '-1', 'aria-hidden': 'true', onchange: async (e) => {
     const f = e.target.files && e.target.files[0];
     if (!f) return;
     if (!window.confirm('Загрузить прогресс из файла? Текущий прогресс на этом устройстве будет заменён.')) { e.target.value = ''; return; }
@@ -22,7 +22,7 @@ function transferBox(rerender) {
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     msg.textContent = 'Файл сохранён.';
   } }, 'Скачать прогресс');
-  return h('div', null, h('div', { class: 'row' }, dl, h('label', { class: 'btn', for: 'imp', tabindex: '0', role: 'button', onkeydown: (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); file.click(); } } }, 'Загрузить из файла'), file), msg);
+  return h('div', null, h('div', { class: 'row' }, dl, h('button', { class: 'btn', type: 'button', onclick: () => file.click() }, 'Загрузить из файла'), file), msg);
 }
 
 export default {

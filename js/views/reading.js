@@ -1,12 +1,12 @@
 import { h, content, pct, setChildren, addChildren, topicMap } from '../util.js';
-import { filteredList, nextLink } from '../widgets.js';
+import { filteredList, nextLink, splitView } from '../widgets.js';
+import { textPane, evidenceFor } from '../textpane.js';
 import { questionSet, saveResults } from '../question.js';
 import { store } from '../store.js';
 
-/** Блок «текст + вопросы» — используется и в пробном экзамене. */
-export function textBlock(item, { start = 1 } = {}) {
-  const paras = item.text_et.split(/\n\s*\n/).map((p) => h('p', { lang: 'et' }, p.split('\n').flatMap((l, i, a) => (i < a.length - 1 ? [l, h('br')] : [l]))));
-  return h('article', { class: 'text card', 'aria-label': item.title_et }, h('h2', { lang: 'et' }, item.title_et), paras);
+/** Блок текста (используется и в пробном экзамене): с источником, словариком и подсветкой. */
+export function textBlock(item, vocab = []) {
+  return textPane(item, vocab);
 }
 
 function statusLine(t) {
@@ -29,11 +29,13 @@ export default {
         h('h1', null, 'Чтение'),
         h('p', { class: 'lead' }, 'Тексты с вопросами трёх типов: выбор ответа, верно/неверно, соответствие (плюс короткий ответ с клавиатуры).'),
         filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
-          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
+          h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h2', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
       return;
     }
 
+    const vocab = (await content('vocab')).items;
     const set = questionSet(item.questions);
+    const pane = textPane(item, vocab);
     const result = h('div', { role: 'status', 'aria-live': 'polite' });
     const checkBtn = h('button', { class: 'btn primary', type: 'button', onclick: () => {
       const un = set.items.length - set.answeredCount();
@@ -41,17 +43,22 @@ export default {
       const r = set.gradeAll();
       saveResults(r.results, 'reading');
       checkBtn.disabled = true;
+      // «Показать в тексте»: подсвечиваем место, где находится ответ
+      set.items.forEach(({ q, api }) => {
+        const ev = evidenceFor(q, item.text_et);
+        const fbEl = api.el.querySelector('.feedback');
+        if (ev && fbEl) fbEl.append(h('div', { class: 'row' }, h('button', { class: 'btn small', type: 'button', onclick: () => pane.highlight(ev) }, 'Показать в тексте')));
+      });
       setChildren(result, h('div', { class: 'card result' }, h('p', { class: 'big' }, `Верно: ${r.got} из ${r.max} (${pct(r.got, r.max)} %)`), h('p', { class: 'muted' }, item.explanation_ru)));
       result.scrollIntoView({ block: 'nearest' });
     } }, 'Проверить ответы');
 
-    addChildren(root, 
+    addChildren(root,
       h('p', null, h('a', { href: '#/reading' }, '← Все тексты')),
       h('h1', null, 'Чтение: ' + item.title_ru),
-      textBlock(item),
-      h('h2', null, 'Вопросы'),
-      set.el,
-      h('div', { class: 'row' }, checkBtn, nextLink(data.items, item.id, 'reading', 'Следующий текст →'), h('a', { class: 'btn', href: '#/reading' }, 'Все тексты')),
-      result);
+      splitView(pane, [
+        h('h2', null, 'Вопросы'), set.el,
+        h('div', { class: 'row' }, checkBtn, nextLink(data.items, item.id, 'reading', 'Следующий текст →'), h('a', { class: 'btn', href: '#/reading' }, 'Все тексты')),
+        result], { leftTitle: 'текст' }));
   },
 };

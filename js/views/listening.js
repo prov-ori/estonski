@@ -1,7 +1,8 @@
 import { h, content, pct, setChildren, addChildren, topicMap } from '../util.js';
-import { filteredList, nextLink } from '../widgets.js';
+import { filteredList, nextLink, splitView } from '../widgets.js';
 import { questionSet, saveResults } from '../question.js';
 import { store } from '../store.js';
+import { sourceLine } from '../textpane.js';
 import { findEtVoice, resetVoice, createPlayer, speechSupported } from '../speech.js';
 
 /**
@@ -15,7 +16,7 @@ export function listeningBlock(item, { onVoice } = {}) {
     h('summary', null, 'Текст записи'),
     item.script_et.map((l) => h('p', { lang: 'et' }, item.script_et.some((x) => x.sp === 'B') ? h('strong', null, `${l.sp}: `) : null, l.text)));
   const controls = h('div', { class: 'row' });
-  const el = h('div', { class: 'card listening' }, status, controls, plays, transcript);
+  const el = h('div', { class: 'card listening' }, status, controls, plays, transcript, item.source && sourceLine(item.source));
   let player = null, count = 0, voiceFound = false;
 
   function reveal() { transcript.hidden = false; transcript.open = true; }
@@ -70,7 +71,7 @@ export default {
         h('h1', null, 'Аудирование'),
         h('p', { class: 'notice warn' }, SYNTH_NOTE),
         filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
-          h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h3', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
+          h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h2', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
       return;
     }
     const block = listeningBlock(item);
@@ -88,11 +89,10 @@ export default {
     addChildren(root, 
       h('p', null, h('a', { href: '#/listening' }, '← Все записи')),
       h('h1', null, 'Аудирование: ' + item.title_ru),
-      h('p', { class: 'notice warn' }, SYNTH_NOTE),
-      block.el,
-      h('h2', null, 'Вопросы'), set.el,
+      splitView([h('p', { class: 'notice warn' }, SYNTH_NOTE), block.el],
+        [h('h2', null, 'Вопросы'), set.el,
       h('div', { class: 'row' }, checkBtn, nextLink(data.items, item.id, 'listening', 'Следующая запись →'), h('a', { class: 'btn', href: '#/listening' }, 'Все записи')),
-      result);
+      result], { leftTitle: 'запись' }));
     return () => block.destroy();
   },
 };

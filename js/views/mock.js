@@ -2,7 +2,7 @@
 import { h, content, config, countWords, pct, fmtDate, setChildren } from '../util.js';
 import { questionSet } from '../question.js';
 import { store } from '../store.js';
-import { timerWidget, recorderWidget, checklistWidget } from '../widgets.js';
+import { timerWidget, recorderWidget, checklistWidget, splitView } from '../widgets.js';
 import { resolvePart } from '../index.js';
 import { textBlock } from './reading.js';
 import { listeningBlock, SYNTH_NOTE } from './listening.js';
@@ -87,12 +87,12 @@ export default {
       if (p.id === 'listening') {
         const block = listeningBlock(q);
         const set = questionSet(q.questions);
-        body.append(h('p', { class: 'notice warn' }, SYNTH_NOTE), block.el, set.el);
+        body.append(splitView([h('p', { class: 'notice warn' }, SYNTH_NOTE), block.el], [set.el], { leftTitle: 'запись' }));
         return { destroy: () => block.destroy(), collect: () => { const r = set.gradeAll({ reveal: false }); return { ...r, fallback: !block.hasVoice() }; } };
       }
       if (p.id === 'reading') {
         const set = questionSet(q.questions);
-        body.append(textBlock(q), h('h2', null, 'Вопросы'), set.el);
+        body.append(splitView(textBlock(q), [h('h2', null, 'Вопросы'), set.el], { leftTitle: 'текст' }));
         return { collect: () => set.gradeAll({ reveal: false }) };
       }
       if (p.id === 'language') {
@@ -103,12 +103,12 @@ export default {
       if (p.id === 'writing') {
         let text = '';
         const ed = editor({ range: fmt.writing_practice_words, onInput: (v) => { text = v; } });
-        body.append(h('div', { class: 'card' }, h('p', { class: 'q-et', lang: 'et' }, q.prompt_et), h('p', { class: 'muted' }, q.prompt_ru),
-          h('ul', null, q.content_points_et.map((x, i) => h('li', null, h('span', { lang: 'et' }, x), ' ', h('span', { class: 'muted' }, `— ${q.content_points_ru[i]}`))))), ed.el);
+        body.append(splitView(h('div', { class: 'card' }, h('p', { class: 'q-et', lang: 'et' }, q.prompt_et), h('p', { class: 'muted' }, q.prompt_ru),
+          h('ul', null, q.content_points_et.map((x, i) => h('li', null, h('span', { lang: 'et' }, x), ' ', h('span', { class: 'muted' }, `— ${q.content_points_ru[i]}`))))), ed.el, { leftTitle: 'задание' }));
         return { collect: () => ({ text }) };
       }
       const rec = recorderWidget();
-      body.append(cardBlock(q), rec.el);
+      body.append(splitView(cardBlock(q), rec.el, { leftTitle: 'карточка' }));
       return { destroy: () => rec.destroy(), collect: () => ({}) };
     }
 

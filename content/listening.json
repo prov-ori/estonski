@@ -291,9 +291,9 @@
      "explanation_ru": "«Sest täna on allahindlus» — сегодня скидка.",
      "options": [
       "Täna on allahindlus.",
-      "See on vana.",
-      "See on väike.",
-      "See on katki."
+      "See on vanem mudel.",
+      "See on väiksem suurus.",
+      "See on katki läinud."
      ],
      "answer": 0
     },
@@ -584,9 +584,9 @@
      "explanation_ru": "«Tal on palavik ja kõht valutab».",
      "options": [
       "Tal on palavik ja kõht valutab.",
-      "Tal on köha.",
-      "Tal valutab jalg.",
-      "Tal on nohu."
+      "Tal on köha ja nohu juba kaua.",
+      "Tal valutab jalg ja ka selg.",
+      "Tal on nohu ja kurk on valus."
      ],
      "answer": 0
     },
@@ -1189,9 +1189,9 @@
      "explanation_ru": "«Kurk on valus ja ma natuke köhin».",
      "options": [
       "Kurk on valus ja ta köhib.",
-      "Tal on palavik.",
-      "Tal valutab pea.",
-      "Tal on nohu."
+      "Tal on palavik ja valutab pea.",
+      "Tal valutab kõht ja on nohu.",
+      "Tal on nohu ja valutab kõrv."
      ],
      "answer": 0
     },

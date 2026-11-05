@@ -271,6 +271,34 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     await page.getByRole('button', { name: /Начать/ }).click();
     ok(await page.locator('input.text-input').count() === 1, 'формы глаголов: режим ввода работает');
 
+    // 10i. раскладка «материал слева — вопросы справа»
+    await go('reading/r-01');
+    const lay = await page.evaluate(() => {
+      const l = document.querySelector('.pane-left').getBoundingClientRect(), r = document.querySelector('.pane-right').getBoundingClientRect();
+      return { sideBySide: r.left > l.left + 50 && Math.abs(r.top - l.top) < 40, stacked: r.top > l.bottom - 5 };
+    });
+    if (vp.width >= 1000) ok(lay.sideBySide, 'раскладка: текст слева, вопросы справа (компьютер)');
+    else ok(lay.stacked, 'раскладка: на телефоне вопросы под текстом');
+    if (vp.width < 1000) {
+      await page.getByRole('button', { name: /Свернуть: текст/ }).click();
+      ok(!(await page.locator('.pane-left .text').isVisible()), 'телефон: текст сворачивается');
+      await page.getByRole('button', { name: /Показать: текст/ }).click();
+      ok(await page.locator('.pane-left .text').isVisible(), 'телефон: текст разворачивается');
+    }
+    await page.locator('.question').first().locator('input[type=radio]').first().check({ force: true });
+    await page.getByRole('button', { name: 'Проверить ответы' }).click();
+    await page.getByRole('button', { name: 'Показать в тексте' }).first().click();
+    ok(await page.locator('mark.evidence').count() === 1, 'подсветка места ответа в тексте работает');
+    for (const r of ['writing/w-01', 'speaking/s-01', 'listening/l-01']) {
+      await go(r);
+      const sbs = await page.evaluate(() => { const l = document.querySelector('.pane-left').getBoundingClientRect(), rr = document.querySelector('.pane-right').getBoundingClientRect(); return rr.left > l.left + 50 ? 'side' : 'stack'; });
+      ok(sbs === (vp.width >= 1000 ? 'side' : 'stack'), `раскладка #/${r}: ${sbs}`);
+    }
+    await go('sources');
+    ok((await page.locator('main').innerText()).includes('Эстонские пословицы'), 'страница «Источники» показывает материал с источником');
+    await go('reading/r-15');
+    ok((await page.locator('.source').innerText()).includes('Лицензия'), 'у текста с источником показана лицензия');
+
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');
     await page.reload(); await page.waitForSelector('main h1');

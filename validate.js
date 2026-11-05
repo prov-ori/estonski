@@ -70,6 +70,7 @@ function checkQuestion(file, q) {
       if (new Set(o.map(nn)).size !== o.length) err(file, w, 'choice: повторяющиеся варианты — неоднозначный правильный ответ');
       if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= o.length) err(file, w, `choice: answer должен быть индексом 0..${o.length - 1}`);
       if ('answers' in q) err(file, w, 'choice: поле answers запрещено — ответ ровно один');
+      if (o.every((x) => x.split(/\s+/).length >= 3)) { const L = o.map((x) => x.length); if (L[q.answer] === Math.max(...L) && L.filter((l) => l === L[q.answer]).length === 1) warn(file, w, 'верный вариант самый длинный — подсказка для угадывания'); }
       if (q.options_lang !== 'ru') for (const x of o) if (typeof x === 'string' && hasCyr(x)) err(file, w, `кириллица в эстонском варианте «${x}» (добавьте options_lang: "ru", если вариант русский)`);
       break;
     }
@@ -99,6 +100,18 @@ function checkQuestion(file, q) {
   }
 }
 
+const SRC_KINDS = new Set(['open', 'public-domain', 'exam', 'news', 'textbook', 'blog', 'other']);
+const SRC_NEED_PERMISSION = new Set(['exam', 'news', 'textbook', 'blog', 'other']);
+function checkSource(file, id, src) {
+  if (!src || typeof src !== 'object') return err(file, id, 'source должен быть объектом');
+  if (!src.title) err(file, id, 'source.title обязателен');
+  if (!SRC_KINDS.has(src.kind)) err(file, id, `source.kind «${src.kind}» — допустимо: ${[...SRC_KINDS].join(' | ')}`);
+  if (src.kind === 'open' && (!src.license || !src.url)) err(file, id, 'source (open): нужны license и url');
+  if (src.kind === 'public-domain' && !src.license) err(file, id, 'source (public-domain): укажите, почему материал свободен (license)');
+  if (SRC_NEED_PERMISSION.has(src.kind) && (!src.permission || !src.url)) err(file, id, `source (${src.kind}): нужны url и permission — как получено разрешение на использование`);
+  if (src.retrieved && !/^\d{4}-\d{2}-\d{2}$/.test(src.retrieved)) err(file, id, 'source.retrieved — дата YYYY-MM-DD');
+}
+
 function walk(file, node, ctx, where) {
   if (Array.isArray(node)) { node.forEach((n, i) => walk(file, n, ctx, `${where}[${i}]`)); return; }
   if (!node || typeof node !== 'object') return;
@@ -118,6 +131,7 @@ function walk(file, node, ctx, where) {
       else if (!TOPICS.has(eff.topic)) err(file, id, `topic «${eff.topic}» отсутствует в config/topics.json`);
       if (!eff.level) err(file, id, 'нет level');
       else if (!LEVELS.has(eff.level)) err(file, id, `level «${eff.level}» — допустимо A2 | B1 | B2`);
+      if (node.source !== undefined) checkSource(file, id, node.source);
       if (node.type !== undefined) {
         if (!QTYPES.has(node.type)) err(file, id, `неизвестный type «${node.type}»`);
         else checkQuestion(file, node);

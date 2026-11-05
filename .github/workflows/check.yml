@@ -1,0 +1,16 @@
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Валидация контента
+        run: node validate.js
+      - name: Контраст цветов (WCAG AA)
+        run: node tools/contrast.js
+      - name: sw.js актуален
+        run: node tools/build-sw.js --check

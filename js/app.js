@@ -16,7 +16,7 @@ const MODULES = [
   ['reference', 'Справочник', 'views/reference.js'],
   ['progress', 'Прогресс', 'views/progress.js'],
 ];
-const EXTRA = { about: 'views/about.js', mistakes: 'views/mistakes.js', wordlist: 'views/wordlist.js', '': 'views/home.js' };
+const EXTRA = { about: 'views/about.js', sources: 'views/sources.js', mistakes: 'views/mistakes.js', wordlist: 'views/wordlist.js', '': 'views/home.js' };
 export const NAV = MODULES.map(([id, title]) => ({ id, title }));
 
 const main = document.getElementById('main');
@@ -51,6 +51,7 @@ async function render() {
   if (typeof cleanup === 'function') { try { cleanup(); } catch { /* ignore */ } }
   cleanup = null;
   setActive(name);
+  main.classList.remove('wide');
   setChildren(main, h('p', { class: 'muted' }, 'Загрузка…'));
   if (!file) {
     setChildren(main, h('h1', null, 'Страница не найдена'), h('p', null, h('a', { href: '#/' }, 'На главную')));

@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 2316. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 2443. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -599,7 +599,7 @@
 - `g-prep-x10` — Raamat on kapi sees.
 - `g-prep-x11` — Võta raamat kapi seest.
 
-## listening.json (257)
+## listening.json (258)
 
 - `l-01` — Direktori teade
 - `l-01` — Tere, kallid õpilased! Siin räägib kooli direktor.
@@ -653,9 +653,9 @@
 - `l-03-q4` — Hall kampsun on odavam kui sinine.
 - `l-03-q5` — Miks hall kampsun on odav?
 - `l-03-q5 (вариант)` — Täna on allahindlus.
-- `l-03-q5 (вариант)` — See on vana.
-- `l-03-q5 (вариант)` — See on väike.
-- `l-03-q5 (вариант)` — See on katki.
+- `l-03-q5 (вариант)` — See on vanem mudel.
+- `l-03-q5 (вариант)` — See on väiksem suurus.
+- `l-03-q5 (вариант)` — See on katki läinud.
 - `l-03-q6` — Klient maksab sularahas.
 - `l-04` — Lennujaama teade
 - `l-04` — Tähelepanu, lennureisijad!
@@ -704,9 +704,9 @@
 - `l-06-q1 (вариант)` — Ta tahab arstiga rääkida lennust.
 - `l-06-q1 (вариант)` — Ta tahab tühistada aja.
 - `l-06-q2` — Mis poisil viga on?
-- `l-06-q2 (вариант)` — Tal on köha.
-- `l-06-q2 (вариант)` — Tal valutab jalg.
-- `l-06-q2 (вариант)` — Tal on nohu.
+- `l-06-q2 (вариант)` — Tal on köha ja nohu juba kaua.
+- `l-06-q2 (вариант)` — Tal valutab jalg ja ka selg.
+- `l-06-q2 (вариант)` — Tal on nohu ja kurk on valus.
 - `l-06-q3` — Ema saab tulla hommikul.
 - `l-06-q4` — Mis kell broneeritakse aeg? Kirjuta sõnaga: kell kolm.
 - `l-06-q5` — Mis on poisi nimi?
@@ -817,8 +817,9 @@
 - `l-12` — Jooge ka sooja teed ja puhake.
 - `l-12-q1` — Mis inimesel viga on?
 - `l-12-q1 (вариант)` — Kurk on valus ja ta köhib.
-- `l-12-q1 (вариант)` — Tal on palavik.
-- `l-12-q1 (вариант)` — Tal valutab pea.
+- `l-12-q1 (вариант)` — Tal on palavik ja valutab pea.
+- `l-12-q1 (вариант)` — Tal valutab kõht ja on nohu.
+- `l-12-q1 (вариант)` — Tal on nohu ja valutab kõrv.
 - `l-12-q2` — Inimesel on palavik.
 - `l-12-q3` — Mitu korda päevas pastille võtta?
 - `l-12-q4` — Kui palju pastillid maksavad? Kirjuta sõnaga: kuus eurot.
@@ -871,9 +872,9 @@
 - `mock-01-l` — Rohkem infot leiate bussijaama kodulehelt. Aitäh!
 - `mock-01-l1` — Miks buss kesklinna ei sõida?
 - `mock-01-l1 (вариант)` — Tänav on tööde pärast suletud.
-- `mock-01-l1 (вариант)` — Buss on katki.
-- `mock-01-l1 (вариант)` — Juht on haige.
-- `mock-01-l1 (вариант)` — Lund on palju sadanud.
+- `mock-01-l1 (вариант)` — Bussijuhid on täna streigis.
+- `mock-01-l1 (вариант)` — Bussid on remondis terve nädala.
+- `mock-01-l1 (вариант)` — Lumi katab teed sel nädalal.
 - `mock-01-l2` — Kus on uus peatus?
 - `mock-01-l3` — Mitu minutit on sõit pikem? Kirjuta sõnaga: kümme minutit.
 - `mock-01-l4` — Piletid ei kehti.
@@ -1063,7 +1064,7 @@
 - `o-70` — Me kohtume kell kuus kino ees.
 - `o-70 (вариант)` — Kell kuus kohtume me kino ees.
 
-## reading.json (479)
+## reading.json (605)
 
 - `r-01` — Uus ring meie koolis
 - `r-01` — Sügisel hakkas meie koolis tööle robootikaring.
@@ -1081,9 +1082,9 @@
 - `r-01-q1` — Kes juhendab robootikaringi?
 - `r-01-q2` — Mida tegid õpilased esimese kuu jooksul?
 - `r-01-q2 (вариант)` — Nad ehitasid väikese roboti.
-- `r-01-q2 (вариант)` — Nad käisid võistlusel.
-- `r-01-q2 (вариант)` — Nad ostsid uued arvutid.
-- `r-01-q2 (вариант)` — Nad lõpetasid ringi.
+- `r-01-q2 (вариант)` — Nad võitsid linna võistluse.
+- `r-01-q2 (вариант)` — Nad ostsid kooli uued arvutid.
+- `r-01-q2 (вариант)` — Nad lõpetasid ringi esimesel kuul.
 - `r-01-q4` — Ringis osalemiseks tuleb maksta.
 - `r-01-q5` — Ring toimub igal kolmapäeval pärast viiendat tundi.
 - `r-01-q6` — Seosta isik või rühm ja lause lõpp.
@@ -1115,9 +1116,9 @@
 - `r-02` — Kadri
 - `r-02-q1` — Miks Kadri kirjutab?
 - `r-02-q1 (вариант)` — Ta kutsub Liisat endaga kaasa.
-- `r-02-q1 (вариант)` — Ta küsib kodutööd.
-- `r-02-q1 (вариант)` — Ta teatab, et ei saa tulla.
-- `r-02-q1 (вариант)` — Ta tänab kingituse eest.
+- `r-02-q1 (вариант)` — Ta küsib Liisalt kodutöö kohta.
+- `r-02-q1 (вариант)` — Ta teatab, et ei saa laupäeval tulla.
+- `r-02-q1 (вариант)` — Ta tänab Liisat kingituse eest.
 - `r-02-q2` — Miks nad ujuma ei lähe?
 - `r-02-q2 (вариант)` — Järv on külm.
 - `r-02-q2 (вариант)` — Vanaema on haige.
@@ -1182,9 +1183,9 @@
 - `r-04-q3` — Arst ütles, et see on tavaline külmetus.
 - `r-04-q4` — Mida soovitas arst?
 - `r-04-q4 (вариант)` — Kolm päeva kodus olla ja sooja teed juua.
-- `r-04-q4 (вариант)` — Minna iga päev trenni.
-- `r-04-q4 (вариант)` — Süüa ainult leiba.
-- `r-04-q4 (вариант)` — Minna kohe kooli.
+- `r-04-q4 (вариант)` — Minna iga päev kooli ja trenni teha.
+- `r-04-q4 (вариант)` — Süüa nädal aega ainult leiba ja vett.
+- `r-04-q4 (вариант)` — Minna kohe tagasi kooli ja õppida.
 - `r-04-q5 (левая часть)` — Arst
 - `r-04-q5 (левая часть)` — Mari ema
 - `r-04-q5 (левая часть)` — Mari
@@ -1212,8 +1213,8 @@
 - `r-05-q3` — Rongis ostetud pilet on odavam.
 - `r-05-q4` — Kuidas saab õpilane soodsama pileti?
 - `r-05-q4 (вариант)` — Tal peab olema õpilaspilet kaasas.
-- `r-05-q4 (вариант)` — Ta peab ostma pileti rongist.
-- `r-05-q4 (вариант)` — Ta peab sõitma hommikul.
+- `r-05-q4 (вариант)` — Ta peab pileti ostma rongist ise.
+- `r-05-q4 (вариант)` — Ta peab sõitma ainult hommikuti.
 - `r-05-q4 (вариант)` — Ta peab võtma jalgratta kaasa.
 - `r-05-q5` — Seosta sõna ja lause lõpp.
 - `r-05-q5 (левая часть)` — Viimane rong
@@ -1261,9 +1262,9 @@
 - `r-06-q5 (вариант)` — ronib iga päev.
 - `r-06-q6` — Mis jutustajale ronimisseinal meeldib?
 - `r-06-q6 (вариант)` — Seal on palju sõbralikke inimesi.
-- `r-06-q6 (вариант)` — Seal on odav.
-- `r-06-q6 (вариант)` — Seal ei ole treenerit.
-- `r-06-q6 (вариант)` — Seal on vaikne.
+- `r-06-q6 (вариант)` — Seal on väga odav ja vaikne.
+- `r-06-q6 (вариант)` — Seal ei ole kunagi treenerit.
+- `r-06-q6 (вариант)` — Seal saab ronida ainult üksi.
 - `r-06-q7` — Mis päeval ta käib: esmaspäeval, kolmapäeval ja reedel?
 - `r-07` — Direktori teade
 - `r-07` — Tere, kallid õpilased!
@@ -1544,6 +1545,132 @@
 - `r-14-q4` — (4) teen
 - `r-14-q5` — (5) Teid
 - `r-14-q6` — Kes kirja kirjutas? Kirjuta perekonnanimi: Mari Tamm
+- `r-15` — Eesti vanasõnad
+- `r-15` — Tasa sõuad, kaugele jõuad.
+- `r-15` — Hommik on õhtust targem.
+- `r-15` — Kes teisele auku kaevab, see ise sisse kukub.
+- `r-15` — Parem hilja kui mitte kunagi.
+- `r-15` — Sõber on hädas tuntud.
+- `r-15` — Parem varblane peos kui tuvi katusel.
+- `r-15` — Ega töö ei ole hunt, metsa ei jookse.
+- `r-15` — Kes ei tööta, see ei söö.
+- `r-15-q1` — Seosta vanasõna ja tähendus.
+- `r-15-q1 (вариант)` — Ära kiirusta, siis jõuad kaugele.
+- `r-15-q1 (вариант)` — Otsuseid tasub teha pärast und.
+- `r-15-q1 (вариант)` — Parem teha asi hiljem kui üldse mitte.
+- `r-15-q1 (вариант)` — Alati tuleb vara tõusta.
+- `r-15-q2` — Mida tähendab vanasõna «Sõber on hädas tuntud»?
+- `r-15-q2 (вариант)` — Tõelised sõbrad aitavad rasketel hetkedel.
+- `r-15-q2 (вариант)` — Sõpru on väga raske leida elus.
+- `r-15-q2 (вариант)` — Sõbrad tülitsevad ja lähevad lahku.
+- `r-15-q2 (вариант)` — Hädas ei saa kunagi sõpra usaldada.
+- `r-15-q3` — Vanasõna «Kes ei tööta, see ei söö» räägib töö tähtsusest.
+- `r-15-q4` — Vanasõna «Ega töö ei ole hunt, metsa ei jookse» tähendab, et tööd tuleb kohe teha.
+- `r-15-q5` — Mis vanasõna räägib sellest, et kindel asi on parem kui kahtlane lootus?
+- `r-15-q6` — Kes teisele auku kaevab, see ise sisse kukub. Kirjuta puuduv sõna:
+- `r-16` — Blogipostitus: minu esimene nädal uues koolis
+- `r-16` — Eelmisel nädalal läksin esimest korda uude kooli.
+- `r-16` — Me kolisime Tartust Pärnusse, sest mu ema sai seal uue töö.
+- `r-16` — Alguses olin väga närviline, sest ma ei tundnud siin kedagi.
+- `r-16` — Hommikul ootas mind koolimaja ees klassijuhataja Kati.
+- `r-16` — Ta tutvustas mind klassile ja palus kahel õpilasel mulle kooli näidata.
+- `r-16` — Üks neist, Oskar, oli väga sõbralik ja naljakas.
+- `r-16` — Ta rääkis, et nende koolis on iga reede vaba vahetund: õpilased võivad minna spordisaali või raamatukokku, kuhu nad ise tahavad.
+- `r-16` — See meeldis mulle väga.
+- `r-16` — Kõige raskem oli matemaatika, sest siin õpitakse teemasid teises järjekorras kui Tartus ja ma ei saanud tunnis kõigest aru.
+- `r-16` — Kati ütles, et ma ei peaks muretsema.
+- `r-16` — Ta andis mulle vihiku, kus on kõik teemad, mida klass on juba õppinud.
+- `r-16` — Õhtul istusin kaks tundi laua taga ja tegin ülesandeid.
+- `r-16` — Täna oli juba parem.
+- `r-16` — Nädalavahetusel lähen Oskariga randa, sest ta lubas mulle linna näidata.
+- `r-16-q1` — Miks perekond Pärnusse kolis?
+- `r-16-q1 (вариант)` — Ema sai seal uue töö.
+- `r-16-q1 (вариант)` — Isa tahtis elada mere ääres.
+- `r-16-q1 (вариант)` — Kool Tartus suleti.
+- `r-16-q1 (вариант)` — Vanaema elab Pärnus.
+- `r-16-q2` — Jutustaja tundis uues koolis juba mitut õpilast.
+- `r-16-q3` — Kes tutvustas jutustajat klassile?
+- `r-16-q4` — Mis toimub koolis igal reedel?
+- `r-16-q4 (вариант)` — Vaba vahetund spordisaalis või raamatukogus.
+- `r-16-q4 (вариант)` — Lühendatud tunnid.
+- `r-16-q4 (вариант)` — Ekskursioon linna.
+- `r-16-q4 (вариант)` — Kontrolltöö matemaatikas.
+- `r-16-q5` — Matemaatika oli jutustajale kõige raskem aine.
+- `r-16-q6 (левая часть)` — Kati
+- `r-16-q6 (левая часть)` — Oskar
+- `r-16-q6 (вариант)` — andis vihiku teemadega.
+- `r-16-q6 (вариант)` — lubas linna näidata.
+- `r-16-q6 (вариант)` — tegi õhtul kaks tundi ülesandeid.
+- `r-16-q6 (вариант)` — töötab uues koolis.
+- `r-16-q7` — Kuhu jutustaja nädalavahetusel Oskariga läheb? Kirjuta sõna: randa
+- `r-17` — Koolis hakati prügi sorteerima
+- `r-17` — Päikese kool alustas sel sügisel prügi sorteerimise projekti.
+- `r-17` — Projekti idee tuli üheksanda klassi õpilastelt, kes märkasid, et kooli prügikastides on palju paberit ja plastpudeleid.
+- `r-17` — Õpilased kirjutasid direktorile ettepaneku ja direktor kiitis selle heaks.
+- `r-17` — Nüüd on igal korrusel neli prügikasti: paberile, plastile, klaasile ja segaprügile.
+- `r-17` — Iga klass vastutab ühe nädala jooksul oma korruse eest.
+- `r-17` — Õpetajate sõnul on segaprügi hulk esimese kuuga vähenenud poole võrra.
+- `r-17` — Kool saab kogutud paberi eest väikese summa ja plaanib selle raha eest osta aia jaoks lilli.
+- `r-17` — Projekti juht, üheksanda klassi õpilane Mari, ütleb, et kõige raskem on olnud uue korraga harjuda.
+- `r-17` — «Alguses unustasid paljud pudeli õigesse kasti panna,» rääkis ta.
+- `r-17` — » Järgmisena soovivad õpilased õppida komposteerima toidujäätmeid, et sööklas tekkivat prügi veelgi vähendada.
+- `r-17-q1` — Kellelt tuli projekti idee?
+- `r-17-q1 (вариант)` — üheksanda klassi õpilastelt
+- `r-17-q1 (вариант)` — direktorilt
+- `r-17-q1 (вариант)` — õpetajatelt
+- `r-17-q1 (вариант)` — linnavalitsuselt
+- `r-17-q2` — Direktor ei kiitnud õpilaste ettepanekut heaks.
+- `r-17-q3` — Mitu prügikasti on igal korrusel?
+- `r-17-q4` — Segaprügi hulk on esimese kuuga vähenenud.
+- `r-17-q5` — Seosta isik või rühm ja lause.
+- `r-17-q5 (левая часть)` — Iga klass
+- `r-17-q5 (левая часть)` — Kool
+- `r-17-q5 (вариант)` — vastutab ühe nädala oma korruse eest.
+- `r-17-q5 (вариант)` — saab kogutud paberi eest raha.
+- `r-17-q5 (вариант)` — on projekti juht.
+- `r-17-q5 (вариант)` — kirjutab ajalehele.
+- `r-17-q6` — Mis on Mari sõnul olnud kõige raskem?
+- `r-17-q6 (вариант)` — Uue korraga harjuda.
+- `r-17-q6 (вариант)` — Raha koguda.
+- `r-17-q6 (вариант)` — Direktorit veenda.
+- `r-17-q6 (вариант)` — Prügi tassida.
+- `r-17-q7` — Mida õpilased järgmisena õppida soovivad? Kirjuta sõna: komposteerima toidujäätmeid.
+- `r-18` — Jaanipäev Eestis
+- `r-18` — Jaanipäev on üks Eesti tähtsamaid pühi.
+- `r-18` — Seda tähistatakse 23.
+- `r-18` — ja 24.
+- `r-18` — juunil, kui päevad on aasta kõige pikemad ja ööd peaaegu valged.
+- `r-18` — Paljud eestlased sõidavad jaaniks linnast maale, et olla koos perega.
+- `r-18` — Jaaniõhtu tähtsaim osa on lõke.
+- `r-18` — Lõkke ümber lauldakse, tantsitakse ja süüakse grillitud liha.
+- `r-18` — Lastele meeldib hüpata üle väikese lõkke või mängida aias mänge.
+- `r-18` — Naised punuvad lilledest pärgi ja panevad need pähe, mehed kannavad tammelehtedest pärgi.
+- `r-18` — Vana kombe järgi tuleb jaaniööl metsas otsida sõnajalaõit, mis toob õnne, kuid tegelikult sõnajalad ei õitse.
+- `r-18` — Paljud arvavad, et jaanipäeval ei tohi magada.
+- `r-18` — Kes ärkvel püsib, näeb päikest tõusmas.
+- `r-18` — Hommikul on tavaliselt kõik väsinud, kuid rõõmsad.
+- `r-18-q1` — Millal tähistatakse jaanipäeva?
+- `r-18-q1 (вариант)` — 23. ja 24. juunil
+- `r-18-q1 (вариант)` — 1. ja 2. mail
+- `r-18-q1 (вариант)` — 24. ja 25. detsembril
+- `r-18-q1 (вариант)` — 20. augustil
+- `r-18-q2` — Jaanipäeval on päevad aasta kõige lühemad.
+- `r-18-q3` — Mis on jaaniõhtu tähtsaim osa?
+- `r-18-q4` — Lapsed hüppavad üle väikese lõkke.
+- `r-18-q5` — Seosta isik või asi ja lause.
+- `r-18-q5 (левая часть)` — Naised
+- `r-18-q5 (левая часть)` — Mehed
+- `r-18-q5 (левая часть)` — Sõnajalaõis
+- `r-18-q5 (вариант)` — punuvad lilledest pärgi.
+- `r-18-q5 (вариант)` — kannavad tammelehtedest pärgi.
+- `r-18-q5 (вариант)` — toob legendi järgi õnne.
+- `r-18-q5 (вариант)` — kasvab metsas kogu aasta.
+- `r-18-q6` — Mida paljud arvavad jaanipäeval magamisest?
+- `r-18-q6 (вариант)` — Magada ei tohi.
+- `r-18-q6 (вариант)` — Magada tuleb kaua.
+- `r-18-q6 (вариант)` — Magada võib ainult hommikul.
+- `r-18-q6 (вариант)` — Magada saab ainult metsas.
+- `r-18-q7` — Mida otsitakse jaaniööl metsast? Kirjuta sõna: sõnajalaõit
 
 ## speaking.json (64)
 

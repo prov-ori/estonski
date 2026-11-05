@@ -1,5 +1,5 @@
 // Файл создан tools/build-sw.js — не редактируйте вручную.
-const CACHE = 'estonski-1ad3f03bd9';
+const CACHE = 'estonski-0295f2d519';
 const FILES = [
  "./",
  "config/exam-format.json",
@@ -24,6 +24,7 @@ const FILES = [
  "js/question.js",
  "js/speech.js",
  "js/store.js",
+ "js/textpane.js",
  "js/trainer.js",
  "js/util.js",
  "js/views/about.js",
@@ -38,6 +39,7 @@ const FILES = [
  "js/views/progress.js",
  "js/views/reading.js",
  "js/views/reference.js",
+ "js/views/sources.js",
  "js/views/speaking.js",
  "js/views/vocab.js",
  "js/views/wordlist.js",

@@ -1,9 +1,9 @@
 import { h, content, config, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
-import { timerWidget, recorderWidget, checklistWidget, filteredList, nextLink } from '../widgets.js';
+import { timerWidget, recorderWidget, checklistWidget, filteredList, nextLink, splitView } from '../widgets.js';
 
 export function cardBlock(c) {
-  const role = (r) => h('div', { class: 'card role' }, h('h3', null, r.title_ru), h('ul', null, r.prompts_et.map((p) => h('li', { lang: 'et' }, p))));
+  const role = (r) => h('div', { class: 'card role' }, h('h2', null, r.title_ru), h('ul', null, r.prompts_et.map((p) => h('li', { lang: 'et' }, p))));
   return h('div', null,
     h('p', { class: 'lead' }, c.situation_ru),
     h('div', { class: 'grid two' }, role(c.role_a), role(c.role_b)),
@@ -21,7 +21,7 @@ export default {
         h('h1', null, 'Говорение'),
         h('p', { class: 'lead' }, 'Карточки для работы в паре. Один говорит за роль A, другой за роль B, потом меняетесь. Записывайте диалог и слушайте себя.'),
         h('p', { class: 'notice privacy' }, h('strong', null, 'Запись только у вас. '), 'Звук записывается в браузере и никуда не отправляется.'),
-        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => h('a', { class: 'card link-card', href: `#/speaking/${t.id}` }, h('h3', null, t.title_ru), h('p', { class: 'muted' }, t.situation_ru))))));
+        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => h('a', { class: 'card link-card', href: `#/speaking/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, t.situation_ru))))));
       return;
     }
     const saved = store.getSpeaking(card.id);
@@ -31,11 +31,10 @@ export default {
     addChildren(root, 
       h('p', null, h('a', { href: '#/speaking' }, '← Все карточки'), '  ', nextLink(data.items, card.id, 'speaking', 'Следующая карточка →')),
       h('h1', null, 'Говорение: ' + card.title_ru),
-      cardBlock(card),
-      h('p', { class: 'muted' }, card.explanation_ru),
-      h('div', { class: 'card' }, tw.el, h('p', { class: 'muted small-text' }, `Время тренировочное (${fmt.speaking_practice_minutes} мин, config/exam-format.json, не проверено на harno.ee).`)),
+      splitView([cardBlock(card), h('p', { class: 'muted' }, card.explanation_ru)],
+      [h('div', { class: 'card' }, tw.el, h('p', { class: 'muted small-text' }, `Время тренировочное (${fmt.speaking_practice_minutes} мин, config/exam-format.json, не проверено на harno.ee).`)),
       h('h2', null, 'Запись и прослушивание'), rec.el,
-      h('h2', null, 'Самооценка'), h('p', { class: 'muted' }, 'Прослушайте запись и отметьте выполненное. Оценки от тренажёра нет.'), cl.el);
+      h('h2', null, 'Самооценка'), h('p', { class: 'muted' }, 'Прослушайте запись и отметьте выполненное. Оценки от тренажёра нет.'), cl.el], { leftTitle: 'карточка' }));
     return () => { tw.timer.stop(); rec.destroy(); };
   },
 };

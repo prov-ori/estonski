@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 348. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 646. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -27,7 +27,7 @@
 - `d-19` — Kuigi ilm oli külm, läksime randa jalutama, sest lõpuks paistis päike.
 - `d-20` — Kell on veerand kaheksa.
 
-## grammar.json (30)
+## grammar.json (227)
 
 - `g-cases-01` — Ma lähen homme kooli.
 - `g-cases-02` — Raamat on laua peal.
@@ -59,6 +59,203 @@
 - `g-prep-03` — Ostsin kingituse sõbra jaoks.
 - `g-prep-04` — Ma elan kooli lähedal.
 - `g-prep-05` — Raamat on laua all.
+- `g-expand-1` — Ma õpin iga päev. (õppima)
+- `g-expand-2` — Sa õpid iga päev. (õppima)
+- `g-expand-3` — Ta õpib iga päev. (õppima)
+- `g-expand-4` — Me õpime iga päev. (õppima)
+- `g-expand-5` — Te õpite iga päev. (õppima)
+- `g-expand-6` — Nad õpivad iga päev. (õppima)
+- `g-expand-7` — Eile ma õppisin. (õppima)
+- `g-expand-8` — Ma ei õpi. (õppima, olevik)
+- `g-expand-9` — Ma tahan õppida. (õppima)
+- `g-expand-10` — Ma pean õppima. (õppima)
+- `g-expand-11` — Ma elan iga päev. (elama)
+- `g-expand-12` — Sa elad iga päev. (elama)
+- `g-expand-13` — Ta elab iga päev. (elama)
+- `g-expand-14` — Me elame iga päev. (elama)
+- `g-expand-15` — Te elate iga päev. (elama)
+- `g-expand-16` — Nad elavad iga päev. (elama)
+- `g-expand-17` — Eile ma elasin. (elama)
+- `g-expand-18` — Ma ei ela. (elama, olevik)
+- `g-expand-19` — Ma tahan elada. (elama)
+- `g-expand-20` — Ma pean elama. (elama)
+- `g-expand-21` — Ma töötan iga päev. (töötama)
+- `g-expand-22` — Sa töötad iga päev. (töötama)
+- `g-expand-23` — Ta töötab iga päev. (töötama)
+- `g-expand-24` — Me töötame iga päev. (töötama)
+- `g-expand-25` — Te töötate iga päev. (töötama)
+- `g-expand-26` — Nad töötavad iga päev. (töötama)
+- `g-expand-27` — Eile ma töötasin. (töötama)
+- `g-expand-28` — Ma ei tööta. (töötama, olevik)
+- `g-expand-29` — Ma tahan töötada. (töötama)
+- `g-expand-30` — Ma pean töötama. (töötama)
+- `g-expand-31` — Ma ootan iga päev. (ootama)
+- `g-expand-32` — Sa ootad iga päev. (ootama)
+- `g-expand-33` — Ta ootab iga päev. (ootama)
+- `g-expand-34` — Me ootame iga päev. (ootama)
+- `g-expand-35` — Te ootate iga päev. (ootama)
+- `g-expand-36` — Nad ootavad iga päev. (ootama)
+- `g-expand-37` — Eile ma ootasin. (ootama)
+- `g-expand-38` — Ma ei oota. (ootama, olevik)
+- `g-expand-39` — Ma tahan oodata. (ootama)
+- `g-expand-40` — Ma pean ootama. (ootama)
+- `g-expand-41` — Ma vaatan iga päev. (vaatama)
+- `g-expand-42` — Sa vaatad iga päev. (vaatama)
+- `g-expand-43` — Ta vaatab iga päev. (vaatama)
+- `g-expand-44` — Me vaatame iga päev. (vaatama)
+- `g-expand-45` — Te vaatate iga päev. (vaatama)
+- `g-expand-46` — Nad vaatavad iga päev. (vaatama)
+- `g-expand-47` — Eile ma vaatasin. (vaatama)
+- `g-expand-48` — Ma ei vaata. (vaatama, olevik)
+- `g-expand-49` — Ma tahan vaadata. (vaatama)
+- `g-expand-50` — Ma pean vaatama. (vaatama)
+- `g-expand-51` — Ma kuulan iga päev. (kuulama)
+- `g-expand-52` — Sa kuulad iga päev. (kuulama)
+- `g-expand-53` — Ta kuulab iga päev. (kuulama)
+- `g-expand-54` — Me kuulame iga päev. (kuulama)
+- `g-expand-55` — Te kuulate iga päev. (kuulama)
+- `g-expand-56` — Nad kuulavad iga päev. (kuulama)
+- `g-expand-57` — Eile ma kuulasin. (kuulama)
+- `g-expand-58` — Ma ei kuula. (kuulama, olevik)
+- `g-expand-59` — Ma tahan kuulata. (kuulama)
+- `g-expand-60` — Ma pean kuulama. (kuulama)
+- `g-expand-61` — Ma mängin iga päev. (mängima)
+- `g-expand-62` — Sa mängid iga päev. (mängima)
+- `g-expand-63` — Ta mängib iga päev. (mängima)
+- `g-expand-64` — Me mängime iga päev. (mängima)
+- `g-expand-65` — Te mängite iga päev. (mängima)
+- `g-expand-66` — Nad mängivad iga päev. (mängima)
+- `g-expand-67` — Eile ma mängisin. (mängima)
+- `g-expand-68` — Ma ei mängi. (mängima, olevik)
+- `g-expand-69` — Ma tahan mängida. (mängima)
+- `g-expand-70` — Ma pean mängima. (mängima)
+- `g-expand-71` — Ma kirjutan iga päev. (kirjutama)
+- `g-expand-72` — Sa kirjutad iga päev. (kirjutama)
+- `g-expand-73` — Ta kirjutab iga päev. (kirjutama)
+- `g-expand-74` — Me kirjutame iga päev. (kirjutama)
+- `g-expand-75` — Te kirjutate iga päev. (kirjutama)
+- `g-expand-76` — Nad kirjutavad iga päev. (kirjutama)
+- `g-expand-77` — Eile ma kirjutasin. (kirjutama)
+- `g-expand-78` — Ma ei kirjuta. (kirjutama, olevik)
+- `g-expand-79` — Ma tahan kirjutada. (kirjutama)
+- `g-expand-80` — Ma pean kirjutama. (kirjutama)
+- `g-expand-81` — Ma räägin iga päev. (rääkima)
+- `g-expand-82` — Sa räägid iga päev. (rääkima)
+- `g-expand-83` — Ta räägib iga päev. (rääkima)
+- `g-expand-84` — Me räägime iga päev. (rääkima)
+- `g-expand-85` — Te räägite iga päev. (rääkima)
+- `g-expand-86` — Nad räägivad iga päev. (rääkima)
+- `g-expand-87` — Eile ma rääkisin. (rääkima)
+- `g-expand-88` — Ma ei räägi. (rääkima, olevik)
+- `g-expand-89` — Ma tahan rääkida. (rääkima)
+- `g-expand-90` — Ma pean rääkima. (rääkima)
+- `g-expand-91` — Ma jalutan iga päev. (jalutama)
+- `g-expand-92` — Sa jalutad iga päev. (jalutama)
+- `g-expand-93` — Ta jalutab iga päev. (jalutama)
+- `g-expand-94` — Me jalutame iga päev. (jalutama)
+- `g-expand-95` — Te jalutate iga päev. (jalutama)
+- `g-expand-96` — Nad jalutavad iga päev. (jalutama)
+- `g-expand-97` — Eile ma jalutasin. (jalutama)
+- `g-expand-98` — Ma ei jaluta. (jalutama, olevik)
+- `g-expand-99` — Ma tahan jalutada. (jalutama)
+- `g-expand-100` — Ma pean jalutama. (jalutama)
+- `g-expand-101` — Ma reisin iga päev. (reisima)
+- `g-expand-102` — Sa reisid iga päev. (reisima)
+- `g-expand-103` — Ta reisib iga päev. (reisima)
+- `g-expand-104` — Me reisime iga päev. (reisima)
+- `g-expand-105` — Te reisite iga päev. (reisima)
+- `g-expand-106` — Nad reisivad iga päev. (reisima)
+- `g-expand-107` — Eile ma reisisin. (reisima)
+- `g-expand-108` — Ma ei reisi. (reisima, olevik)
+- `g-expand-109` — Ma tahan reisida. (reisima)
+- `g-expand-110` — Ma pean reisima. (reisima)
+- `g-expand-111` — Ma helistan iga päev. (helistama)
+- `g-expand-112` — Sa helistad iga päev. (helistama)
+- `g-expand-113` — Ta helistab iga päev. (helistama)
+- `g-expand-114` — Me helistame iga päev. (helistama)
+- `g-expand-115` — Te helistate iga päev. (helistama)
+- `g-expand-116` — Nad helistavad iga päev. (helistama)
+- `g-expand-117` — Eile ma helistasin. (helistama)
+- `g-expand-118` — Ma ei helista. (helistama, olevik)
+- `g-expand-119` — Ma tahan helistada. (helistama)
+- `g-expand-120` — Ma pean helistama. (helistama)
+- `g-expand-121` — Mul ei ole raamatut. (raamat)
+- `g-expand-122` — Mul on kaks raamatut. (raamat)
+- `g-expand-123` — See on minu raamat. (raamat, nimetav)
+- `g-expand-124` — Ma olen ilma raamatuta. (raamat)
+- `g-expand-125` — Kirjuta omastav: raamatu (raamat)
+- `g-expand-126` — Mul ei ole lauda. (laud)
+- `g-expand-127` — Mul on kaks lauda. (laud)
+- `g-expand-128` — See on minu laud. (laud, nimetav)
+- `g-expand-129` — Ma olen ilma lauata. (laud)
+- `g-expand-130` — Kirjuta omastav: laua (laud)
+- `g-expand-131` — Mul ei ole tooli. (tool)
+- `g-expand-132` — Mul on kaks tooli. (tool)
+- `g-expand-133` — See on minu tool. (tool, nimetav)
+- `g-expand-134` — Ma olen ilma toolita. (tool)
+- `g-expand-135` — Kirjuta omastav: tooli (tool)
+- `g-expand-136` — Mul ei ole kotti. (kott)
+- `g-expand-137` — Mul on kaks kotti. (kott)
+- `g-expand-138` — See on minu kott. (kott, nimetav)
+- `g-expand-139` — Ma olen ilma kotita. (kott)
+- `g-expand-140` — Kirjuta omastav: koti (kott)
+- `g-expand-141` — Mul ei ole kappi. (kapp)
+- `g-expand-142` — Mul on kaks kappi. (kapp)
+- `g-expand-143` — See on minu kapp. (kapp, nimetav)
+- `g-expand-144` — Ma olen ilma kapita. (kapp)
+- `g-expand-145` — Kirjuta omastav: kapi (kapp)
+- `g-expand-146` — Mul ei ole telefoni. (telefon)
+- `g-expand-147` — Mul on kaks telefoni. (telefon)
+- `g-expand-148` — See on minu telefon. (telefon, nimetav)
+- `g-expand-149` — Ma olen ilma telefonita. (telefon)
+- `g-expand-150` — Kirjuta omastav: telefoni (telefon)
+- `g-expand-151` — Mul ei ole arvutit. (arvuti)
+- `g-expand-152` — Mul on kaks arvutit. (arvuti)
+- `g-expand-153` — See on minu arvuti. (arvuti, nimetav)
+- `g-expand-154` — Ma olen ilma arvutita. (arvuti)
+- `g-expand-155` — Kirjuta omastav: arvuti (arvuti)
+- `g-expand-156` — Mul ei ole akent. (aken)
+- `g-expand-157` — Mul on kaks akent. (aken)
+- `g-expand-158` — See on minu aken. (aken, nimetav)
+- `g-expand-159` — Ma olen ilma aknata. (aken)
+- `g-expand-160` — Kirjuta omastav: akna (aken)
+- `g-expand-161` — Mul ei ole ust. (uks)
+- `g-expand-162` — Mul on kaks ust. (uks)
+- `g-expand-163` — See on minu uks. (uks, nimetav)
+- `g-expand-164` — Ma olen ilma ukseta. (uks)
+- `g-expand-165` — Kirjuta omastav: ukse (uks)
+- `g-expand-166` — Mul ei ole piletit. (pilet)
+- `g-expand-167` — Mul on kaks piletit. (pilet)
+- `g-expand-168` — See on minu pilet. (pilet, nimetav)
+- `g-expand-169` — Ma olen ilma piletita. (pilet)
+- `g-expand-170` — Kirjuta omastav: pileti (pilet)
+- `g-expand-171` — Kirjuta sõnadega: null (0)
+- `g-expand-172` — Kirjuta sõnadega: üks (1)
+- `g-expand-173` — Kirjuta sõnadega: kaks (2)
+- `g-expand-174` — Kirjuta sõnadega: kolm (3)
+- `g-expand-175` — Kirjuta sõnadega: neli (4)
+- `g-expand-176` — Kirjuta sõnadega: viis (5)
+- `g-expand-177` — Kirjuta sõnadega: kuus (6)
+- `g-expand-178` — Kirjuta sõnadega: seitse (7)
+- `g-expand-179` — Kirjuta sõnadega: kaheksa (8)
+- `g-expand-180` — Kirjuta sõnadega: üheksa (9)
+- `g-expand-181` — Kirjuta sõnadega: kümme (10)
+- `g-expand-182` — Kirjuta sõnadega: üksteist (11)
+- `g-expand-183` — Kirjuta sõnadega: kaksteist (12)
+- `g-expand-184` — Kirjuta sõnadega: kolmteist (13)
+- `g-expand-185` — Kirjuta sõnadega: neliteist (14)
+- `g-expand-186` — Kirjuta sõnadega: viisteist (15)
+- `g-expand-187` — Kirjuta sõnadega: kuusteist (16)
+- `g-expand-188` — Kirjuta sõnadega: seitseteist (17)
+- `g-expand-189` — Kirjuta sõnadega: kaheksateist (18)
+- `g-expand-190` — Kirjuta sõnadega: üheksateist (19)
+- `g-expand-191` — Kirjuta sõnadega: kakskümmend (20)
+- `g-expand-192` — Kass magab laua all.
+- `g-expand-193` — Kass jookseb laua alla.
+- `g-expand-194` — Kass tuleb laua alt.
+- `g-expand-195` — Ma seisan kooli ees.
+- `g-expand-196` — Ma lähen kooli ette.
+- `g-expand-197` — Ma tulen kooli eest.
 
 ## listening.json (35)
 
@@ -160,7 +357,7 @@
 - `mock-01-s` — See on hea mõte.
 - `mock-01-s` — Siis lepime kokku.
 
-## reading.json (69)
+## reading.json (147)
 
 - `r-01` — Uus ring meie koolis
 - `r-01` — Sügisel hakkas meie koolis tööle robootikaring.
@@ -231,8 +428,86 @@
 - `r-02-q6 (вариант)` — kütab õhtul sauna.
 - `r-02-q6 (вариант)` — sõidab Tallinnasse.
 - `r-02-q7` — Mis kell Kadri ootab Liisat bussijaamas? Kirjuta sõnaga: kell üheksa.
+- `r-expand-2` — Raamatukogu
+- `r-expand-2` — Kooli raamatukogu on avatud esmaspäevast reedeni kell 9–16.
+- `r-expand-2` — Laupäeval ja pühapäeval on see suletud.
+- `r-expand-2` — Õpilane võib korraga koju võtta kolm raamatut.
+- `r-expand-2` — Raamatud tuleb tagasi tuua kahe nädala pärast.
+- `r-expand-2` — Kui raamatut on kauem vaja, tuleb kirjutada raamatukoguhoidjale.
+- `r-expand-2-q1` — Mitu raamatut võib korraga koju võtta?
+- `r-expand-2-q2` — Raamatukogu on pühapäeval avatud.
+- `r-expand-2-q3` — Mis kell raamatukogu suletakse?
+- `r-expand-3` — Bussireis
+- `r-expand-3` — Mari sõidab laupäeval Tartusse.
+- `r-expand-3` — Buss väljub Tallinnast kell üheksa ja jõuab Tartusse kell pool kaksteist.
+- `r-expand-3` — Mari ostis pileti internetist, sest nii oli odavam.
+- `r-expand-3` — Bussijaamas kohtub ta sõbra Annaga.
+- `r-expand-3` — Nad lähevad koos muuseumisse.
+- `r-expand-3-q1` — Kellega Mari bussijaamas kohtub?
+- `r-expand-3-q2` — Mari ostis pileti bussijuhilt.
+- `r-expand-3-q3` — Kuhu Mari ja Anna lähevad?
+- `r-expand-4` — Kohvik
+- `r-expand-4` — Uus kohvik asub pargi kõrval.
+- `r-expand-4` — Lõunasööki pakutakse tööpäeviti kell 12–15.
+- `r-expand-4` — Supp maksab neli eurot ja salat kuus eurot.
+- `r-expand-4` — Vett saab tasuta.
+- `r-expand-4` — Kohvikus võib maksta nii kaardiga kui ka sularahas.
+- `r-expand-4` — Pühapäeval avatakse kohvik alles keskpäeval.
+- `r-expand-4-q1` — Mitu eurot maksab supp?
+- `r-expand-4-q2` — Vesi on kohvikus tasuta.
+- `r-expand-4-q3` — Mitu eurot maksab salat?
+- `r-expand-5` — Matkapäev
+- `r-expand-5` — Meie klass läheb reedel metsa matkama.
+- `r-expand-5` — Koguneme kooli ees kell kaheksa.
+- `r-expand-5` — Kaasa tuleb võtta vesi, võileivad ja vihmajope.
+- `r-expand-5` — Matka juhib loodusõpetaja.
+- `r-expand-5` — Telefonid jäävad kotti, et saaksime linde kuulata.
+- `r-expand-5` — Tagasi kooli jõuame kell kolm.
+- `r-expand-5-q1` — Kes juhib matka?
+- `r-expand-5-q2` — Õpilased peavad vihmajope kaasa võtma.
+- `r-expand-5-q3` — Mis kell õpilased kogunevad?
+- `r-expand-6` — Ujumine
+- `r-expand-6` — Jüri käib ujumas kaks korda nädalas: teisipäeval ja neljapäeval.
+- `r-expand-6` — Trenn algab kell viis ja kestab ühe tunni.
+- `r-expand-6` — Jüri läheb ujulasse rattaga.
+- `r-expand-6` — Talvel sõidab ta bussiga.
+- `r-expand-6` — Pärast trenni sööb ta kodus õhtust.
+- `r-expand-6-q1` — Mitu korda nädalas käib Jüri ujumas?
+- `r-expand-6-q2` — Talvel läheb Jüri ujulasse rattaga.
+- `r-expand-6-q3` — Kui kaua kestab trenn?
+- `r-expand-7` — Uus korter
+- `r-expand-7` — Liisi pere kolis uude korterisse.
+- `r-expand-7` — Korteris on kolm tuba ja suur köök, aga rõdu ei ole.
+- `r-expand-7` — Liisi kool asub nüüd kümne minuti jalutuskäigu kaugusel.
+- `r-expand-7` — Varem pidi ta kooli sõitma bussiga.
+- `r-expand-7` — Kõige rohkem meeldib Liisile tema toa suur aken.
+- `r-expand-7-q1` — Mitu tuba on korteris?
+- `r-expand-7-q2` — Liis läheb nüüd kooli jalgsi.
+- `r-expand-7-q3` — Mida korteris ei ole?
+- `r-expand-8` — Sünnipäev
+- `r-expand-8` — Vanaema sünnipäev on pühapäeval.
+- `r-expand-8` — Pere koguneb tema juurde kell kaks.
+- `r-expand-8` — Isa küpsetab kooki ja ema toob lilli.
+- `r-expand-8` — Lapsed teevad ise kaardi.
+- `r-expand-8` — Vanaema ei taha suuri kingitusi.
+- `r-expand-8` — Ta ütleb, et kõige parem kingitus on koos veedetud aeg.
+- `r-expand-8-q1` — Kes küpsetab kooki?
+- `r-expand-8-q2` — Lapsed ostavad kaardi poest.
+- `r-expand-8-q3` — Mida ema toob?
+- `r-expand-9` — Arsti aeg
+- `r-expand-9` — Peeter helistas hommikul perearstikeskusse.
+- `r-expand-9` — Tal on juba kolm päeva kurk valus.
+- `r-expand-9` — Õde pakkus aega kolmapäevaks kell kümme.
+- `r-expand-9` — Peeter palus hilisemat aega, sest tal on hommikul kontrolltöö.
+- `r-expand-9` — Lõpuks sai ta aja samaks päevaks kell kaks.
+- `r-expand-9-q1` — Mis kell läheb Peeter arsti juurde?
+- `r-expand-9-q2` — Peeter sai aja kolmapäevaks.
+- `r-expand-9-q3` — Miks Peeter palus hilisemat aega?
+- `r-expand-9-q3 (вариант)` — sest tal on hommikul kontrolltöö
+- `r-expand-9-q3 (вариант)` — kell seitse
+- `r-expand-9-q3 (вариант)` — kolm päeva
 
-## speaking.json (20)
+## speaking.json (24)
 
 - `s-01` — Ma pakun, et ...
 - `s-01` — See on hea mõte.
@@ -254,6 +529,10 @@
 - `s-04` — Kui kaua ...?
 - `s-04` — Võta ravimit ...
 - `s-04` — Tubli, tervist!
+- `s-expand-5` — Ma eelistan seda, sest ...
+- `s-expand-5` — Kas sulle sobib ...?
+- `s-expand-5` — Võiksime ka ...
+- `s-expand-5` — Lepime siis kokku, et ...
 
 ## vocab.json (80)
 
@@ -338,7 +617,7 @@
 - `v-nature-40` — järv (järve, järve)
 - `v-nature-40` — Suvel ujume järves.
 
-## writing.json (35)
+## writing.json (54)
 
 - `w-01` — Sinu sõber Karl elab teises linnas. Kirjuta talle e-kiri ja kutsu ta nädalavahetusel enda juurde külla.
 - `w-01` — Millal Karl võiks tulla?
@@ -355,6 +634,25 @@
 - `w-03` — Too kaks põhjust.
 - `w-03` — Too üks näide.
 - `w-03` — Tee lõpus lühike kokkuvõte.
+- `w-expand-5` — Kirjuta sõbrale e-kiri. Teema: Klassiekskursioon.
+- `w-expand-5` — Kuhu me võiksime klassiga minna?
+- `w-expand-5` — Selgita, miks sa seda pakud.
+- `w-expand-5` — Täpsusta aega ja kohta.
+- `w-expand-5` — Palu sõbral vastata.
+- `w-expand-6` — Kirjuta sõbrale e-kiri. Teema: Õhtusöök sõpradega.
+- `w-expand-6` — Mida me õhtusöögiks valmistame?
+- `w-expand-7` — Kirjuta sõbrale e-kiri. Teema: Kohtumine linnas.
+- `w-expand-7` — Kus ja mis kell me kohtume?
+- `w-expand-8` — Kirjuta sõbrale e-kiri. Teema: Nädalavahetuse matk.
+- `w-expand-8` — Mida me matkale kaasa võtame?
+- `w-expand-9` — Kirjuta sõbrale e-kiri. Teema: Kolimine.
+- `w-expand-9` — Kuidas me saame asjad uude koju viia?
+- `w-expand-10` — Kirjuta sõbrale e-kiri. Teema: Perepidu.
+- `w-expand-10` — Kuidas me sünnipäeva tähistame?
+- `w-expand-11` — Kirjuta sõbrale e-kiri. Teema: Spordiklubi.
+- `w-expand-11` — Millist trenni sa tahaksid proovida?
+- `w-expand-12` — Kirjuta sõbrale e-kiri. Teema: Tervislik päevakava.
+- `w-expand-12` — Kuidas me saaksime rohkem liikuda?
 - `c-01` — Tere, Karl!
 - `c-02` — Lugupeetud õpetaja!
 - `c-03` — Ootan sinu vastust.

@@ -81,8 +81,8 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
     // 3. ввод õ ä ö ü кнопками
     await go('grammar/cases');
+    await page.locator('#type').selectOption('input');
     await page.getByRole('button', { name: 'Начать' }).click();
-    for (let k = 0; k < 8 && !(await page.locator('input.text-input').count()); k++) { await page.locator('button.opt').first().click(); await page.getByRole('button', { name: /Дальше|Завершить/ }).click(); }
     if (await page.locator('input.text-input').count()) {
       await page.locator('input.text-input').focus();
       await page.getByRole('button', { name: 'Вставить õ' }).click();
@@ -122,8 +122,8 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
     // 7. аудирование: в headless нет голоса → запасной вариант
     await go('listening/l-01');
-    await page.waitForSelector('text=нет эстонского голоса', { timeout: 4000 }).catch(() => {});
-    const noVoice = (await page.locator('.listening').innerText()).includes('нет эстонского голоса');
+    await page.waitForSelector('text=нет эстонского', { timeout: 4000 }).catch(() => {});
+    const noVoice = (await page.locator('.listening').innerText()).includes('нет эстонского');
     ok(noVoice || (await page.locator('.listening').innerText()).includes('Голос:'), 'аудирование: статус голоса показан');
     await page.getByRole('button', { name: 'Проверить ответы' }).click();
     ok(await page.locator('.transcript:not([hidden])').count() === 1, 'аудирование: стенограмма открылась после попытки');
@@ -321,6 +321,42 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     await go('reading/level-B2');
     ok((await page.locator('.chip[aria-current="true"]').innerText()) === 'B2', 'чтение: фильтр уровня B2 выбран');
     ok(await page.locator('.card.link-card').count() > 0, 'чтение: уровень B2 содержит тексты');
+
+    // 10k. голоса: нет эстонского → финский → выбор любого
+    const voiceCase = async (voices, check) => {
+      const c = await browser.newContext({ viewport: vp });
+      await c.addInitScript((vs) => {
+        const fake = vs.map((v) => ({ name: v.name, lang: v.lang, voiceURI: v.name, default: false, localService: true }));
+        window.__spoken = [];
+        window.SpeechSynthesisUtterance = class { constructor(text) { this.text = text; } };
+        Object.defineProperty(window, 'speechSynthesis', { value: { getVoices: () => fake, speak: (u) => { window.__spoken.push([u.voice && u.voice.name, u.text]); setTimeout(() => u.onend && u.onend(), 5); }, cancel() {}, addEventListener() {}, removeEventListener() {}, speaking: false }, configurable: true });
+      }, voices);
+      const p = await c.newPage();
+      await p.goto(base + '#/listening/l-01'); await p.waitForSelector('.listening');
+      await p.waitForFunction(() => !/Ищу/.test(document.querySelector('.listening').innerText), null, { timeout: 5000 });
+      await check(p);
+      await c.close();
+    };
+    await voiceCase([{ name: 'English', lang: 'en-US' }], async (p) => {
+      ok((await p.locator('.listening').innerText()).includes('нет эстонского или финского голоса'), 'голоса: только английский — честное сообщение');
+      ok(await p.locator('select[id^=voice-]').count() === 1, 'голоса: можно выбрать любой голос устройства');
+      await p.locator('select[id^=voice-]').selectOption('English');
+      await p.waitForSelector('text=Выбран голос не эстонский');
+      await p.getByRole('button', { name: /Слушать/ }).click();
+      await p.waitForTimeout(300);
+      ok((await p.evaluate(() => window.__spoken.length)) > 0 && (await p.evaluate(() => window.__spoken[0][0])) === 'English', 'голоса: выбранный голос используется для озвучки');
+    });
+    await voiceCase([{ name: 'English', lang: 'en-US' }, { name: 'Satu', lang: 'fi-FI' }], async (p) => {
+      ok((await p.locator('.listening').innerText()).includes('используется финский'), 'голоса: финский подставляется автоматически');
+      await p.getByRole('button', { name: /Слушать/ }).click(); await p.waitForTimeout(300);
+      ok((await p.evaluate(() => window.__spoken[0][0])) === 'Satu', 'голоса: озвучка идёт финским голосом');
+      ok(await p.locator('.voice-help').count() === 1, 'голоса: есть инструкция по установке эстонского');
+    });
+    await voiceCase([{ name: 'Anu', lang: 'et-EE' }, { name: 'Satu', lang: 'fi-FI' }], async (p) => {
+      ok(!(await p.locator('.listening').innerText()).includes('используется финский'), 'голоса: эстонский голос приоритетнее финского');
+      await p.getByRole('button', { name: /Слушать/ }).click(); await p.waitForTimeout(300);
+      ok((await p.evaluate(() => window.__spoken[0][0])) === 'Anu', 'голоса: озвучка идёт эстонским голосом');
+    });
 
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');

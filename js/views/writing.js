@@ -1,5 +1,6 @@
 import { h, content, config, countWords, addChildren, topicMap } from '../util.js';
 import { store } from '../store.js';
+import { confirmDialog } from '../dialog.js';
 import { seriesLinks } from '../series.js';
 import { charPad, timerWidget, checklistWidget, filteredList, nextLink, splitView } from '../widgets.js';
 
@@ -63,7 +64,7 @@ export default {
         h('p', { class: 'muted small-text' }, `Время тренировочное (${fmt.writing_practice_minutes} мин, config/exam-format.json, не проверено на harno.ee). Таймер не ограничивает ввод.`),
         ed.el,
         h('p', { class: 'muted small-text' }, 'Черновик сохраняется автоматически, только в вашем браузере.'),
-        h('div', { class: 'row' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => { if (window.confirm('Очистить текст?')) { ed.ta.value = ''; ed.ta.dispatchEvent(new Event('input')); } } }, 'Очистить текст'))),
+        h('div', { class: 'row' }, h('button', { class: 'btn ghost', type: 'button', onclick: async () => { if (await confirmDialog('Очистить текст?', { ok: 'Очистить' })) { ed.ta.value = ''; ed.ta.dispatchEvent(new Event('input')); } } }, 'Очистить текст'))),
       h('h2', null, 'Самопроверка'),
       h('p', { class: 'muted' }, 'Отметьте всё, что выполнено. Это не оценка, а подсказка, что доработать.'),
       cl.el], { leftTitle: 'задание' }));

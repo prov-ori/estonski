@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 3300. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 3454. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -221,7 +221,7 @@
 - `f-v-39` — jooksma: jooksma, joosta, jooksen, jookseb, jooksin, jooksnud, jookse
 - `f-v-40` — ujuma: ujuma, ujuda, ujun, ujub, ujusin, ujunud, uju
 
-## grammar.json (483)
+## grammar.json (637)
 
 - `g-cases-01` — Ma lähen homme kooli.
 - `g-cases-02` — Raamat on laua peal.
@@ -706,6 +706,160 @@
 - `g-b1b2-26` — Katse kestis kaks ja pool nädalat. (nädal)
 - `g-b1b2-27` — Koosolek toimub kahekümne kolmandal märtsil. (23. kuupäev)
 - `g-b1b2-28` — Küsitluses osales üle saja inimese. (100, omastav)
+- `g-conj-01` — Ma jään koju, sest ma olen haige.
+- `g-conj-02` — Ma tahan minna kinno, aga mul pole raha.
+- `g-conj-03` — Kui sajab vihma, jääme koju.
+- `g-conj-04` — Ma tean, et ta elab Tartus.
+- `g-conj-05` — Kas sa tahad teed või kohvi?
+- `g-conj-06` — Ma olen väsinud, kuigi ma lähen trenni.
+- `g-conj-07` — Ma ei tule, sest ma pean õppima.
+- `g-conj-08` — Ta ütles, et ta ei saa tulla.
+- `g-conj-09` — Ma lähen poodi ja ostan leiba.
+- `g-conj-10` — Kui ma koju jõuan, siis ma helistan sulle.
+- `g-conj-11` — Ilm on külm, aga me läheme õue.
+- `g-conj-12` — Ta on noor, aga väga tark.
+- `g-conj-13` — Ma ei tea, kas ta tuleb.
+- `g-conj-14` — Kuigi ta oli haige, tuli ta kooli.
+- `g-conj-15` — Ma õpin eesti keelt, sest ma tahan siin elada.
+- `g-conj-16` — Ma ootasin, kuni buss tuli.
+- `g-conj-17` — Pärast seda, kui ma lõpetasin kooli, läksin tööle.
+- `g-conj-18` — Ta oli väga väsinud, seetõttu ta läks varakult magama.
+- `g-tr-01` — Muuda eitavaks: Ma lähen kooli.
+- `g-tr-02` — Muuda eitavaks: Ta tuleb homme.
+- `g-tr-03` — Muuda eitavaks: Me sööme kala.
+- `g-tr-04` — Muuda eitavaks: Sa õpid eesti keelt.
+- `g-tr-05` — Muuda eitavaks: Nad elavad Tartus.
+- `g-tr-06` — Muuda eitavaks: Ma loen raamatut.
+- `g-tr-07` — Muuda eitavaks: Ta teeb kodutööd.
+- `g-tr-08` — Muuda eitavaks: Te räägite eesti keelt.
+- `g-tr-09` — Muuda minevikku: Ma olen kodus.
+- `g-tr-10` — Muuda minevikku: Ta läheb kooli.
+- `g-tr-11` — Muuda minevikku: Me sööme lõunat.
+- `g-tr-12` — Muuda minevikku: Sa tuled õhtul.
+- `g-tr-13` — Muuda minevikku: Nad mängivad jalgpalli.
+- `g-tr-14` — Muuda minevikku: Ma näen sind.
+- `g-tr-15` — Muuda minevikku: Ta joob teed.
+- `g-tr-16` — Muuda minevikku: Me teeme ülesande.
+- `g-tr-17` — Muuda eitavaks (minevik): Ma tulin eile.
+- `g-tr-18` — Muuda eitavaks (minevik): Ta läks koju.
+- `g-tr-19` — Muuda eitavaks (minevik): Me nägime filmi.
+- `g-tr-20` — Muuda eitavaks (minevik): Nad sõid õhtust.
+- `g-tr-21` — Muuda mitmusesse: Siin on kass.
+- `g-tr-22` — Muuda mitmusesse: Mul on vend.
+- `g-tr-23` — Muuda mitmusesse: Seal on laps.
+- `g-tr-24` — Muuda mitmusesse: Koer haugub.
+- `g-tr-25` — Muuda mitmusesse: Õpilane kirjutab.
+- `g-tr-26` — Muuda küsimuseks: Sa tuled kaasa.
+- `g-tr-27` — Muuda küsimuseks: Ta elab Tallinnas.
+- `g-tr-28` — Muuda küsimuseks: Nad on kodus.
+- `g-tr-29` — Muuda küsimuseks: Sul on aega.
+- `g-tr-30` — Muuda käskivaks: Sa tuled siia.
+- `g-tr-31` — Muuda käskivaks: Sa ütled seda.
+- `g-err-01` — Vali lause, kus ei ole viga.
+- `g-err-01 (вариант)` — Mul on kaks vennad.
+- `g-err-01 (вариант)` — Mul on kaks vend.
+- `g-err-01 (вариант)` — Mul on kaks vendade.
+- `g-err-02 (вариант)` — Ma ei tulnud eile kooli.
+- `g-err-02 (вариант)` — Ma ei tulin eile kooli.
+- `g-err-02 (вариант)` — Ma tulnud eile kooli ei.
+- `g-err-02 (вариант)` — Ma ei tuli eile kooli.
+- `g-err-03 (вариант)` — Raamat on laud peal.
+- `g-err-03 (вариант)` — Raamat on lauda peal.
+- `g-err-03 (вариант)` — Raamat on lauas peal.
+- `g-err-04 (вариант)` — Ma tahan õppida eesti keelt.
+- `g-err-04 (вариант)` — Ma tahan õppima eesti keelt.
+- `g-err-04 (вариант)` — Ma tahan õpin eesti keelt.
+- `g-err-04 (вариант)` — Ma tahan õppinud eesti keelt.
+- `g-err-05 (вариант)` — Ma pean homme õppima.
+- `g-err-05 (вариант)` — Ma pean homme õppida.
+- `g-err-05 (вариант)` — Ma pean homme õpin.
+- `g-err-05 (вариант)` — Ma pean homme õppinud.
+- `g-err-06 (вариант)` — Ta elab Tallinnas.
+- `g-err-06 (вариант)` — Ta elab Tallinn.
+- `g-err-06 (вариант)` — Ta elab Tallinna.
+- `g-err-06 (вариант)` — Ta elab Tallinnasse.
+- `g-err-07 (вариант)` — Ma ootan sind kooli ette.
+- `g-err-07 (вариант)` — Ma ootan sind kool ees.
+- `g-err-07 (вариант)` — Ma ootan sind koolis ees.
+- `g-err-08 (вариант)` — Ma ostsin uue telefoni.
+- `g-err-08 (вариант)` — Ma ostsin uus telefon.
+- `g-err-08 (вариант)` — Ma ostsin uue telefon.
+- `g-err-08 (вариант)` — Ma ostsin uuel telefonil.
+- `g-err-09 (вариант)` — Meil on kaksteist õpilast.
+- `g-err-09 (вариант)` — Meil on kaksteist õpilased.
+- `g-err-09 (вариант)` — Meil on kaksteist õpilane.
+- `g-err-09 (вариант)` — Meil on kaksteist õpilaste.
+- `g-err-10 (вариант)` — Eile ma olin kodus.
+- `g-err-10 (вариант)` — Eile ma olen kodus.
+- `g-err-10 (вариант)` — Eile ma oli kodus.
+- `g-err-10 (вариант)` — Eile ma olla kodus.
+- `g-err-11 (вариант)` — Ma lähen homme kinno.
+- `g-err-11 (вариант)` — Ma lähen homme kino.
+- `g-err-11 (вариант)` — Ma lähen homme kinos.
+- `g-err-11 (вариант)` — Ma lähen homme kinost.
+- `g-err-12 (вариант)` — Ta on minust vana.
+- `g-err-12 (вариант)` — Ta on minuga vanem.
+- `g-err-12 (вариант)` — Ta on minu vanem.
+- `g-err-13 (вариант)` — Mulle meeldib ujuma.
+- `g-err-13 (вариант)` — Mina meeldib ujuda.
+- `g-err-13 (вариант)` — Mulle meeldin ujuda.
+- `g-err-14 (вариант)` — Ma elan väikeses majas.
+- `g-err-14 (вариант)` — Ma elan väike majas.
+- `g-err-14 (вариант)` — Ma elan väikest majas.
+- `g-err-14 (вариант)` — Ma elan väikese maja.
+- `g-err-15 (вариант)` — Ta ei ole kodus.
+- `g-err-15 (вариант)` — Ta ei on kodus.
+- `g-err-15 (вариант)` — Ta ei oli kodus.
+- `g-err-15 (вариант)` — Ta pole ei kodus.
+- `g-err-16 (вариант)` — Nad sõidavad bussiga.
+- `g-err-16 (вариант)` — Nad sõidavad buss.
+- `g-err-16 (вариант)` — Nad sõidavad busiga.
+- `g-err-16 (вариант)` — Nad sõidavad bussga.
+- `g-err-17 (вариант)` — Mu õde õpib ülikoolis.
+- `g-err-17 (вариант)` — Mu õde õpib ülikool.
+- `g-err-17 (вариант)` — Mu õde õpib ülikooli.
+- `g-err-17 (вариант)` — Mu õde õpib ülikoolile.
+- `g-err-18 (вариант)` — Mul ei ole aega.
+- `g-err-18 (вариант)` — Mul ei ole aeg.
+- `g-err-18 (вариант)` — Mul pole aeg.
+- `g-err-18 (вариант)` — Mul ei on aega.
+- `g-err-19 (вариант)` — Ta kirjutas mulle kirja.
+- `g-err-19 (вариант)` — Ta kirjutas mind kirja.
+- `g-err-19 (вариант)` — Ta kirjutas minu kirja.
+- `g-err-19 (вариант)` — Ta kirjutas minule kiri.
+- `g-err-20 (вариант)` — Palun annad mulle vett.
+- `g-err-20 (вариант)` — Palun anna mind vett.
+- `g-err-20 (вариант)` — Palun anda mulle vett.
+- `g-sp-01` — Täna on esmaspäev.
+- `g-sp-02` — Ma sündisin juunis.
+- `g-sp-03` — Ma õpin eesti keelt.
+- `g-sp-04` — Vali lause õige kirjavahemärkidega.
+- `g-sp-04 (вариант)` — Ma tean, et ta tuleb.
+- `g-sp-04 (вариант)` — Ma tean et ta tuleb.
+- `g-sp-04 (вариант)` — Ma tean et, ta tuleb.
+- `g-sp-04 (вариант)` — Ma, tean et ta tuleb.
+- `g-sp-05 (вариант)` — Ma jään koju sest ma olen haige.
+- `g-sp-05 (вариант)` — Ma jään koju sest, ma olen haige.
+- `g-sp-05 (вариант)` — Ma jään, koju sest ma olen haige.
+- `g-sp-06 (вариант)` — Tahan minna, aga mul pole aega.
+- `g-sp-06 (вариант)` — Tahan minna aga mul pole aega.
+- `g-sp-06 (вариант)` — Tahan minna aga, mul pole aega.
+- `g-sp-06 (вариант)` — Tahan, minna aga mul pole aega.
+- `g-sp-07` — Vali õige kirjapilt.
+- `g-sp-11 (вариант)` — Kui sajab vihma, jään koju.
+- `g-sp-11 (вариант)` — Kui sajab vihma jään koju.
+- `g-sp-11 (вариант)` — Kui, sajab vihma jään koju.
+- `g-sp-11 (вариант)` — Kui sajab vihma jään, koju.
+- `g-sp-13` — Vali õige lause.
+- `g-sp-13 (вариант)` — Tallinn on Eesti pealinn.
+- `g-sp-13 (вариант)` — tallinn on eesti pealinn.
+- `g-sp-13 (вариант)` — Tallinn on eesti Pealinn.
+- `g-sp-13 (вариант)` — Tallinn On Eesti pealinn.
+- `g-sp-14 (вариант)` — Ma ostsin kooki, leiba ja piima.
+- `g-sp-14 (вариант)` — Ma ostsin, kooki, leiba, ja piima.
+- `g-sp-14 (вариант)` — Ma ostsin kooki leiba, ja piima.
+- `g-sp-14 (вариант)` — Ma ostsin kooki, leiba, ja, piima.
+- `g-sp-15` — Vali õige tervitus.
 
 ## listening.json (427)
 

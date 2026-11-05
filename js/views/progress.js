@@ -1,6 +1,7 @@
 import { h, content, topicMap, pct, fmtDate, setChildren } from '../util.js';
 import { store, DAILY_GOAL } from '../store.js';
 import { bar } from '../widgets.js';
+import { confirmDialog } from '../dialog.js';
 
 const MODNAME = { diagnostic: 'Диагностика', grammar: 'Грамматика', reading: 'Чтение', listening: 'Аудирование', mock: 'Пробный экзамен', drills: 'Тренажёры', vocab: 'Словарь (тест)' };
 const MODLINK = { diagnostic: '#/diagnostic', grammar: '#/grammar', reading: '#/reading', listening: '#/listening', mock: '#/mock', drills: '#/drills', vocab: '#/vocab' };
@@ -10,7 +11,7 @@ function transferBox(rerender) {
   const file = h('input', { type: 'file', accept: 'application/json,.json', id: 'imp', class: 'sr-only', tabindex: '-1', 'aria-hidden': 'true', onchange: async (e) => {
     const f = e.target.files && e.target.files[0];
     if (!f) return;
-    if (!window.confirm('Загрузить прогресс из файла? Текущий прогресс на этом устройстве будет заменён.')) { e.target.value = ''; return; }
+    if (!(await confirmDialog('Загрузить прогресс из файла? Текущий прогресс на этом устройстве будет заменён.', { ok: 'Загрузить' }))) { e.target.value = ''; return; }
     const r = store.importJSON(await f.text());
     if (r.ok) rerender(); else { msg.textContent = r.error; msg.className = 'notice warn'; }
     e.target.value = '';

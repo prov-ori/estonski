@@ -2,12 +2,14 @@ import { seriesLinks } from '../series.js';
 import { h, content, countWords, pct, setChildren, addChildren, topicMap } from '../util.js';
 import { filteredList, nextLink, splitView } from '../widgets.js';
 import { textPane, evidenceFor } from '../textpane.js';
+import { isExamMode } from '../prefs.js';
 import { questionSet, saveResults } from '../question.js';
 import { store } from '../store.js';
+import { confirmDialog } from '../dialog.js';
 
 /** Блок текста (используется и в пробном экзамене): с источником, словариком и подсветкой. */
-export function textBlock(item, vocab = []) {
-  return textPane(item, vocab);
+export function textBlock(item, vocab = [], opts = {}) {
+  return textPane(item, vocab, opts);
 }
 
 function statusLine(t) {
@@ -40,11 +42,12 @@ export default {
     const vocab = (await content('vocab')).items;
     const series = await seriesLinks(item, 'reading');
     const set = questionSet(item.questions);
-    const pane = textPane(item, vocab);
+    const exam = isExamMode();
+    const pane = textPane(item, exam ? [] : vocab, { exam });
     const result = h('div', { role: 'status', 'aria-live': 'polite' });
-    const checkBtn = h('button', { class: 'btn primary', type: 'button', onclick: () => {
+    const checkBtn = h('button', { class: 'btn primary', type: 'button', onclick: async () => {
       const un = set.items.length - set.answeredCount();
-      if (un && !window.confirm(`Без ответа: ${un}. Проверить всё равно?`)) return;
+      if (un && !(await confirmDialog(`Без ответа: ${un}. Проверить всё равно?`))) return;
       const r = set.gradeAll();
       saveResults(r.results, 'reading');
       checkBtn.disabled = true;
@@ -52,7 +55,7 @@ export default {
       set.items.forEach(({ q, api }) => {
         const ev = evidenceFor(q, item.text_et);
         const fbEl = api.el.querySelector('.feedback');
-        if (ev && fbEl) fbEl.append(h('div', { class: 'row' }, h('button', { class: 'btn small', type: 'button', onclick: () => pane.highlight(ev) }, 'Показать в тексте')));
+        if (!exam && ev && fbEl) fbEl.append(h('div', { class: 'row' }, h('button', { class: 'btn small', type: 'button', onclick: () => pane.highlight(ev) }, 'Показать в тексте')));
       });
       setChildren(result, h('div', { class: 'card result' }, h('p', { class: 'big' }, `Верно: ${r.got} из ${r.max} (${pct(r.got, r.max)} %)`), h('p', { class: 'muted' }, item.explanation_ru)));
       result.scrollIntoView({ block: 'nearest' });
@@ -62,6 +65,7 @@ export default {
       h('p', null, h('a', { href: '#/reading' }, '← Все тексты')),
       h('h1', null, 'Чтение: ' + item.title_ru),
       h('p', { class: 'muted' }, `${item.level} · ${countWords(item.text_et)} слов`),
+      exam && h('p', { class: 'notice' }, 'Режим экзамена: словарик, озвучка и подсветка места ответа отключены. Выключить — внизу страницы, «Режим экзамена».'),
       series,
       splitView(pane, [
         h('h2', null, 'Вопросы'), set.el,

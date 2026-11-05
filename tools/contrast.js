@@ -25,7 +25,8 @@ const text = [
 ];
 const ui = [['line-strong', 'surface'], ['line-strong', 'bg'], ['focus', 'bg'], ['focus', 'surface'], ['primary', 'surface'], ['ok', 'ok-bg'], ['bad', 'bad-bg']];
 let fail = 0;
-for (const [name, pal] of [['light', light], ['dark', dark]]) {
+const high = { ...light, ...vars(css.match(/html\[data-contrast="high"\]\s*\{([^}]*)\}/)[1]) };
+for (const [name, pal] of [['light', light], ['dark', dark], ['high-contrast', high]]) {
   console.log(`\n== ${name} ==`);
   for (const [a, b] of text) { const r = ratio(pal[a], pal[b]); const okk = r >= 4.5; if (!okk) fail++; console.log(`${okk ? 'OK  ' : 'FAIL'} text ${a} on ${b}: ${r.toFixed(2)}`); }
   for (const [a, b] of ui) { const r = ratio(pal[a], pal[b]); const okk = r >= 3; if (!okk) fail++; console.log(`${okk ? 'OK  ' : 'FAIL'} ui   ${a} vs ${b}: ${r.toFixed(2)}`); }

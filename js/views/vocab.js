@@ -1,7 +1,7 @@
 // Карточки с системой Лейтнера: 5 коробок. Верно → коробка+1, интервал растёт; неверно → коробка 1, повтор в этой же сессии.
 import { h, content, config, shuffle, norm, fmtDate, setChildren, addChildren } from '../util.js';
 import { store } from '../store.js';
-import { charPad } from '../widgets.js';
+import { charPad, speakButton } from '../widgets.js';
 import { runTrainer } from '../trainer.js';
 import { vocabQuiz } from '../gen.js';
 
@@ -88,10 +88,10 @@ export default {
         if (!q.length) return end();
         const c = q[0];
         const reverse = dir !== 'et-ru';
-        const front = reverse ? h('p', { class: 'card-front', lang: 'ru' }, c.ru) : h('p', { class: 'card-front', lang: 'et' }, c.et, c.forms && h('span', { class: 'forms' }, ` (${c.forms})`));
+        const front = reverse ? h('p', { class: 'card-front', lang: 'ru' }, c.ru) : h('p', { class: 'card-front', lang: 'et' }, c.et, c.forms && h('span', { class: 'forms' }, ` (${c.forms})`), speakButton(c.et, 'Прослушать слово'));
         const back = h('div', { class: 'card-back', hidden: true, 'aria-live': 'polite' },
-          reverse ? h('p', { class: 'card-front', lang: 'et' }, c.et, c.forms && h('span', { class: 'forms' }, ` (${c.forms})`)) : h('p', { class: 'card-front', lang: 'ru' }, c.ru),
-          h('p', { lang: 'et' }, c.example_et), h('p', { class: 'muted' }, c.example_ru), h('p', { class: 'muted small-text' }, c.explanation_ru));
+          reverse ? h('p', { class: 'card-front', lang: 'et' }, c.et, c.forms && h('span', { class: 'forms' }, ` (${c.forms})`), speakButton(c.et, 'Прослушать слово')) : h('p', { class: 'card-front', lang: 'ru' }, c.ru),
+          h('p', { lang: 'et' }, c.example_et, ' ', speakButton(c.example_et, 'Прослушать пример')), h('p', { class: 'muted' }, c.example_ru), h('p', { class: 'muted small-text' }, c.explanation_ru));
         const resolve = (ok) => {
           if (!practice) rate(c.id, ok);
           q.shift();

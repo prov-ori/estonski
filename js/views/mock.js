@@ -2,6 +2,7 @@
 import { h, content, config, countWords, pct, fmtDate, setChildren } from '../util.js';
 import { questionSet } from '../question.js';
 import { store } from '../store.js';
+import { confirmDialog, alertDialog } from '../dialog.js';
 import { timerWidget, recorderWidget, checklistWidget, splitView } from '../widgets.js';
 import { resolvePart } from '../index.js';
 import { textBlock } from './reading.js';
@@ -47,9 +48,9 @@ export default {
         hist.length > 0 && h('div', null, h('h2', null, 'Прошлые попытки'), h('ul', null, [...hist].reverse().slice(0, 5).map((r) => h('li', null, `${fmtDate(r.ts)} — ${r.pct} % (${r.got}/${r.max})${r.partial ? ', частичный' : ''}`)))));
     }
 
-    function begin() {
+    async function begin() {
       parts = fmt.parts.filter((p) => selected.has(p.id));
-      if (!parts.length) { window.alert('Выберите хотя бы одну часть.'); return; }
+      if (!parts.length) { await alertDialog('Выберите хотя бы одну часть.'); return; }
       Object.keys(done).forEach((k) => delete done[k]);
       partIdx = 0; notice = '';
       armGuard();
@@ -78,21 +79,21 @@ export default {
         notice && h('p', { class: 'notice warn', role: 'status' }, notice),
         tw && h('div', { class: 'sticky-timer card' }, tw.el),
         body,
-        h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: () => { if (window.confirm('Завершить часть и перейти дальше? Вернуться будет нельзя.')) finishPart(false); } }, partIdx === parts.length - 1 ? 'Завершить экзамен' : 'Завершить часть →')));
+        h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: async () => { if (await confirmDialog('Завершить часть и перейти дальше? Вернуться будет нельзя.')) finishPart(false); } }, partIdx === parts.length - 1 ? 'Завершить экзамен' : 'Завершить часть →')));
       const h1 = root.querySelector('h1'); if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
       window.scrollTo(0, 0);
     }
 
     function build(p, q, body) {
       if (p.id === 'listening') {
-        const block = listeningBlock(q);
+        const block = listeningBlock(q, { maxPlays: 2 });
         const set = questionSet(q.questions);
         body.append(splitView([h('p', { class: 'notice warn' }, SYNTH_NOTE), block.el], [set.el], { leftTitle: 'запись' }));
         return { destroy: () => block.destroy(), collect: () => { const r = set.gradeAll({ reveal: false }); return { ...r, fallback: !block.hasVoice() }; } };
       }
       if (p.id === 'reading') {
         const set = questionSet(q.questions);
-        body.append(splitView(textBlock(q), [h('h2', null, 'Вопросы'), set.el], { leftTitle: 'текст' }));
+        body.append(splitView(textBlock(q, [], { exam: true }), [h('h2', null, 'Вопросы'), set.el], { leftTitle: 'текст' }));
         return { collect: () => set.gradeAll({ reveal: false }) };
       }
       if (p.id === 'language') {

@@ -5,6 +5,8 @@ import { store } from './store.js';
 
 let uid = 0;
 const TF_OPTIONS = ['Õige — верно', 'Vale — неверно'];
+const TF3_OPTIONS = ['Õige — верно', 'Vale — неверно', 'Pole öeldud — в тексте не сказано'];
+const TF3_INDEX = { true: 0, false: 1, ns: 2 };
 
 /**
  * opts: {number, immediate, onGraded(g)}
@@ -14,7 +16,7 @@ const TF_OPTIONS = ['Õige — верно', 'Vale — неверно'];
 export function renderQuestion(q, opts = {}) {
   const id = `q${++uid}`;
   const promptId = `${id}-p`;
-  const fb = h('div', { class: 'feedback', role: 'status', 'aria-live': 'polite' });
+  const fb = opts.live === false ? h('div', { class: 'feedback' }) : h('div', { class: 'feedback', role: 'status', 'aria-live': 'polite' });
   const root = h('div', { class: 'question', 'data-qid': q.id });
   let locked = false;
   let api;
@@ -38,17 +40,17 @@ export function renderQuestion(q, opts = {}) {
     opts.onGraded && opts.onGraded(g);
   };
 
-  if (q.type === 'choice' || q.type === 'tf') {
-    const labels = q.type === 'tf' ? TF_OPTIONS : q.options;
-    const correct = q.type === 'tf' ? (q.answer ? 0 : 1) : q.answer;
-    const order = q.type === 'tf' || q.fixed ? labels.map((_, i) => i) : shuffle(labels.map((_, i) => i));
+  if (q.type === 'choice' || q.type === 'tf' || q.type === 'tf3') {
+    const labels = q.type === 'tf' ? TF_OPTIONS : q.type === 'tf3' ? TF3_OPTIONS : q.options;
+    const correct = q.type === 'tf' ? (q.answer ? 0 : 1) : q.type === 'tf3' ? TF3_INDEX[String(q.answer)] : q.answer;
+    const order = q.type === 'tf' || q.type === 'tf3' || q.fixed ? labels.map((_, i) => i) : shuffle(labels.map((_, i) => i));
     let chosen = null;
     const nodes = [];
-    const group = h('div', { class: 'options', role: q.type === 'tf' || !opts.immediate ? 'radiogroup' : 'group', 'aria-labelledby': promptId });
+    const group = h('div', { class: 'options', role: q.type === 'tf' || q.type === 'tf3' || !opts.immediate ? 'radiogroup' : 'group', 'aria-labelledby': promptId });
     const mark = (n, text) => { const m = n.querySelector('.mark'); if (m) m.textContent = text; };
 
     order.forEach((i) => {
-      const text = h('span', { class: 'opt-text', lang: q.type === 'tf' ? 'ru' : optLang }, labels[i]);
+      const text = h('span', { class: 'opt-text', lang: q.type === 'tf' || q.type === 'tf3' ? 'ru' : optLang }, labels[i]);
       const m = h('span', { class: 'mark' });
       let node, input;
       if (opts.immediate) {
@@ -154,7 +156,7 @@ export function renderQuestion(q, opts = {}) {
       fb.className = 'feedback ' + (g.ok ? 'ok' : 'bad');
       setChildren(fb, 
         h('strong', null, !g.answered ? 'Нет ответа. ' : g.ok ? 'Верно. ' : g.got > 0 ? `Частично верно (${g.got} из ${g.max}). ` : 'Неверно. '),
-        !g.ok && h('span', null, 'Правильный ответ: ', h('span', { lang: q.type === 'match' ? 'et' : (q.type === 'tf' ? 'ru' : (q.options_lang || 'et')), class: 'ans' }, g.correct), '. '),
+        !g.ok && h('span', null, 'Правильный ответ: ', h('span', { lang: q.type === 'match' ? 'et' : (q.type === 'tf' || q.type === 'tf3' ? 'ru' : (q.options_lang || 'et')), class: 'ans' }, g.correct), '. '),
         g.note || '',
         h('span', { class: 'expl' }, q.explanation_ru),
         q.ru && h('div', { class: 'q-tr' }, 'Перевод: ', q.ru)
@@ -177,7 +179,7 @@ function shuffleIdx(n, key) {
  * Проверка — вручную: gradeAll({reveal}).
  */
 export function questionSet(questions, { start = 1, onChange } = {}) {
-  const items = questions.map((q, i) => ({ q, api: renderQuestion(q, { number: start + i, onChange }) }));
+  const items = questions.map((q, i) => ({ q, api: renderQuestion(q, { number: start + i, onChange, live: false }) }));
   const el = h('div', { class: 'qset' }, items.map((x) => x.api.el));
   return {
     el, items,

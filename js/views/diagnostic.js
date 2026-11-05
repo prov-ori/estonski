@@ -1,6 +1,7 @@
 import { h, content, topicMap, pct, fmtDate, setChildren, shuffle } from '../util.js';
 import { renderQuestion } from '../question.js';
 import { store } from '../store.js';
+import { confirmDialog } from '../dialog.js';
 
 function computeZone(byLevel, rules) {
   const acc = (l) => (byLevel[l] && byLevel[l].max ? byLevel[l].got / byLevel[l].max : 0);
@@ -66,9 +67,9 @@ export default {
       api.focusPrompt();
     }
 
-    function finish() {
+    async function finish() {
       const unanswered = answers.filter((a) => !a.answered()).length;
-      if (unanswered && !window.confirm(`Без ответа осталось вопросов: ${unanswered}. Они будут засчитаны как неверные. Завершить?`)) return;
+      if (unanswered && !(await confirmDialog(`Без ответа осталось вопросов: ${unanswered}. Они будут засчитаны как неверные. Завершить?`, { ok: 'Завершить' }))) return;
       const byLevel = {}, byTopic = {};
       let got = 0, max = 0;
       const rec = [];

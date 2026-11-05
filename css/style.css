@@ -233,3 +233,38 @@ mark.evidence { background: #ffe066; color: #1b2030; padding: 0 2px; border-radi
 }
 .card > h2:first-child, .text.card > h2 { margin-top: 0; }
 .role.card h2 { font-size: 1.05rem; margin: 0 0 .4em; }
+
+/* облегчённое чтение и повышенная контрастность */
+html[data-read="easy"] body { letter-spacing: .03em; word-spacing: .14em; line-height: 1.9; }
+html[data-read="easy"] p, html[data-read="easy"] li { max-width: 68ch; }
+html[data-contrast="high"] {
+  --bg: #ffffff; --surface: #ffffff; --text: #000000; --muted: #1a1a1a;
+  --primary: #0030a8; --on-primary: #ffffff; --primary-soft: #dce6ff;
+  --line: #000000; --line-strong: #000000;
+  --ok: #004d1f; --ok-bg: #d9f2e3; --bad: #8a0000; --bad-bg: #ffe0e0; --warn: #4d2e00; --warn-bg: #ffecb8;
+  --focus: #000000; color-scheme: light;
+}
+html[data-contrast="high"] .btn, html[data-contrast="high"] .opt, html[data-contrast="high"] .card { border-width: 2px; border-color: #000; }
+
+/* диалоги */
+.dlg { border: 2px solid var(--line-strong); border-radius: var(--radius); background: var(--surface); color: var(--text); padding: 20px; max-width: min(92vw, 440px); }
+.dlg::backdrop { background: rgba(0, 0, 0, .55); }
+.dlg-text { margin-top: 0; font-size: 1.05rem; }
+
+/* крупные цели нажатия на сенсорных экранах */
+@media (pointer: coarse) {
+  .btn.small, .chip, summary, .select, .btn.char { min-height: 44px; }
+  .btn.small { padding: 8px 14px; }
+  summary { display: flex; align-items: center; }
+}
+.para { display: flex; gap: 6px; align-items: flex-start; }
+.para p { flex: 1; margin-top: .4em; }
+.btn.speak { min-width: 36px; padding: 2px 8px; }
+
+.voice-help { flex-basis: 100%; }
+.voice-help ul { margin: 6px 0; padding-left: 20px; }
+.listening .field { flex-basis: 100%; }
+
+.pref { min-width: 0; max-width: 100%; }
+.pref .select { min-width: 0; max-width: 100%; }
+@media (max-width: 520px) { .pref { width: 100%; justify-content: space-between; } .pref .select { width: 55%; } }

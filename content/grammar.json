@@ -6720,6 +6720,1210 @@
    ],
    "answer": 1,
    "explanation_ru": "Üle в значении «более» требует родительного: üle saja inimese."
+  },
+  {
+   "id": "g-conj-01",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma jään koju, ___ ma olen haige.",
+   "ru": "Я остаюсь дома, потому что болен.",
+   "options": [
+    "sest",
+    "aga",
+    "või",
+    "kuigi"
+   ],
+   "answer": 0,
+   "explanation_ru": "Sest («потому что») вводит причину."
+  },
+  {
+   "id": "g-conj-02",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tahan minna kinno, ___ mul pole raha.",
+   "ru": "Я хочу в кино, но у меня нет денег.",
+   "options": [
+    "aga",
+    "sest",
+    "et",
+    "kui"
+   ],
+   "answer": 0,
+   "explanation_ru": "Aga («но») противопоставляет."
+  },
+  {
+   "id": "g-conj-03",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ sajab vihma, jääme koju.",
+   "ru": "Если идёт дождь, мы остаёмся дома.",
+   "options": [
+    "Kui",
+    "Sest",
+    "Aga",
+    "Et"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kui — «если» (условие)."
+  },
+  {
+   "id": "g-conj-04",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma tean, ___ ta elab Tartus.",
+   "ru": "Я знаю, что он живёт в Тарту.",
+   "options": [
+    "et",
+    "sest",
+    "kuigi",
+    "või"
+   ],
+   "answer": 0,
+   "explanation_ru": "Et — «что» после глаголов знания и речи."
+  },
+  {
+   "id": "g-conj-05",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kas sa tahad teed ___ kohvi?",
+   "ru": "Ты хочешь чай или кофе?",
+   "options": [
+    "või",
+    "ja",
+    "aga",
+    "et"
+   ],
+   "answer": 0,
+   "explanation_ru": "Või — «или»."
+  },
+  {
+   "id": "g-conj-06",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma olen väsinud, ___ ma lähen trenni.",
+   "ru": "Я устал(а), но всё равно иду на тренировку.",
+   "options": [
+    "kuigi",
+    "sest",
+    "et",
+    "siis"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kuigi («хотя») вводит уступку: Kuigi ma olen väsinud, lähen ma trenni."
+  },
+  {
+   "id": "g-conj-07",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei tule, ___ ma pean õppima.",
+   "ru": "Я не приду, потому что мне надо учиться.",
+   "options": [
+    "sest",
+    "aga",
+    "kui",
+    "ja"
+   ],
+   "answer": 0,
+   "explanation_ru": "Sest объясняет причину."
+  },
+  {
+   "id": "g-conj-08",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta ütles, ___ ta ei saa tulla.",
+   "ru": "Он сказал, что не сможет прийти.",
+   "options": [
+    "et",
+    "sest",
+    "aga",
+    "kuigi"
+   ],
+   "answer": 0,
+   "explanation_ru": "Et вводит содержание речи."
+  },
+  {
+   "id": "g-conj-09",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma lähen poodi ___ ostan leiba.",
+   "ru": "Я иду в магазин и куплю хлеб.",
+   "options": [
+    "ja",
+    "või",
+    "sest",
+    "kuigi"
+   ],
+   "answer": 0,
+   "explanation_ru": "Ja — «и» соединяет действия."
+  },
+  {
+   "id": "g-conj-10",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui ma koju jõuan, ___ ma helistan sulle.",
+   "ru": "Когда приду домой, я позвоню тебе.",
+   "options": [
+    "siis",
+    "sest",
+    "aga",
+    "kuigi"
+   ],
+   "answer": 0,
+   "explanation_ru": "В паре kui … siis … «siis» вводит главную часть."
+  },
+  {
+   "id": "g-conj-11",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ilm on külm, ___ me läheme õue.",
+   "ru": "Погода холодная, но мы идём на улицу.",
+   "options": [
+    "aga",
+    "sest",
+    "et",
+    "või"
+   ],
+   "answer": 0,
+   "explanation_ru": "Aga — противопоставление двух частей."
+  },
+  {
+   "id": "g-conj-12",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta on noor, ___ väga tark.",
+   "ru": "Он молод, но очень умён.",
+   "options": [
+    "aga",
+    "sest",
+    "kui",
+    "et"
+   ],
+   "answer": 0,
+   "explanation_ru": "Aga соединяет контрастные признаки."
+  },
+  {
+   "id": "g-conj-13",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ei tea, ___ ta tuleb.",
+   "ru": "Я не знаю, придёт ли он.",
+   "options": [
+    "kas",
+    "et",
+    "sest",
+    "kuigi"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kas в придаточном вопросе означает «ли»."
+  },
+  {
+   "id": "g-conj-14",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "___ ta oli haige, tuli ta kooli.",
+   "ru": "Хотя он был болен, он пришёл в школу.",
+   "options": [
+    "Kuigi",
+    "Sest",
+    "Kui",
+    "Et"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kuigi — «хотя»."
+  },
+  {
+   "id": "g-conj-15",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma õpin eesti keelt, ___ ma tahan siin elada.",
+   "ru": "Я учу эстонский, потому что хочу здесь жить.",
+   "options": [
+    "sest",
+    "aga",
+    "või",
+    "kuigi"
+   ],
+   "answer": 0,
+   "explanation_ru": "Sest вводит причину."
+  },
+  {
+   "id": "g-conj-16",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma ootasin, ___ buss tuli.",
+   "ru": "Я ждал(а), пока пришёл автобус.",
+   "options": [
+    "kuni",
+    "sest",
+    "aga",
+    "kuigi"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kuni — «пока»."
+  },
+  {
+   "id": "g-conj-17",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Pärast seda, ___ ma lõpetasin kooli, läksin tööle.",
+   "ru": "После того как я закончил школу, я пошёл работать.",
+   "options": [
+    "kui",
+    "kuni",
+    "sest",
+    "et"
+   ],
+   "answer": 0,
+   "explanation_ru": "Pärast seda, kui … — «после того как …»."
+  },
+  {
+   "id": "g-conj-18",
+   "topic": "conjunctions",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ta oli väga väsinud, ___ ta läks varakult magama.",
+   "ru": "Он был очень уставшим, поэтому лёг спать рано.",
+   "options": [
+    "seetõttu",
+    "kuigi",
+    "sest",
+    "kui"
+   ],
+   "answer": 0,
+   "explanation_ru": "Seetõttu — «поэтому»; после него глагол стоит на втором месте."
+  },
+  {
+   "id": "g-tr-01",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Ma lähen kooli.",
+   "answer": "Ma ei lähe kooli.",
+   "explanation_ru": "Отрицание настоящего: ei + основа без окончания: lähe."
+  },
+  {
+   "id": "g-tr-02",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Ta tuleb homme.",
+   "answer": "Ta ei tule homme.",
+   "explanation_ru": "Ei + основа: tule."
+  },
+  {
+   "id": "g-tr-03",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Me sööme kala.",
+   "answer": "Me ei söö kala.",
+   "explanation_ru": "Ei + основа: söö."
+  },
+  {
+   "id": "g-tr-04",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Sa õpid eesti keelt.",
+   "answer": "Sa ei õpi eesti keelt.",
+   "explanation_ru": "Ei + основа: õpi."
+  },
+  {
+   "id": "g-tr-05",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Nad elavad Tartus.",
+   "answer": "Nad ei ela Tartus.",
+   "explanation_ru": "Ei + основа: ela (форма одна для всех лиц)."
+  },
+  {
+   "id": "g-tr-06",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Ma loen raamatut.",
+   "answer": "Ma ei loe raamatut.",
+   "explanation_ru": "Ei + основа: loe."
+  },
+  {
+   "id": "g-tr-07",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Ta teeb kodutööd.",
+   "answer": "Ta ei tee kodutööd.",
+   "explanation_ru": "Ei + основа: tee."
+  },
+  {
+   "id": "g-tr-08",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks: Te räägite eesti keelt.",
+   "answer": "Te ei räägi eesti keelt.",
+   "explanation_ru": "Ei + основа: räägi."
+  },
+  {
+   "id": "g-tr-09",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Ma olen kodus.",
+   "answer": "Ma olin kodus.",
+   "explanation_ru": "Прошедшее время от olema: olin."
+  },
+  {
+   "id": "g-tr-10",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Ta läheb kooli.",
+   "answer": "Ta läks kooli.",
+   "explanation_ru": "Миневик 3 л. от minema: läks."
+  },
+  {
+   "id": "g-tr-11",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Me sööme lõunat.",
+   "answer": "Me sõime lõunat.",
+   "explanation_ru": "Минevik от sööma: sõime."
+  },
+  {
+   "id": "g-tr-12",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Sa tuled õhtul.",
+   "answer": "Sa tulid õhtul.",
+   "explanation_ru": "Минevik 2 л. ед. ч.: tulid."
+  },
+  {
+   "id": "g-tr-13",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Nad mängivad jalgpalli.",
+   "answer": "Nad mängisid jalgpalli.",
+   "explanation_ru": "Минevik 3 л. мн. ч.: mängisid."
+  },
+  {
+   "id": "g-tr-14",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Ma näen sind.",
+   "answer": "Ma nägin sind.",
+   "explanation_ru": "Минevik от nägema: nägin."
+  },
+  {
+   "id": "g-tr-15",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Ta joob teed.",
+   "answer": "Ta jõi teed.",
+   "explanation_ru": "Минevik от jooma: jõi."
+  },
+  {
+   "id": "g-tr-16",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda minevikku: Me teeme ülesande.",
+   "answer": "Me tegime ülesande.",
+   "explanation_ru": "Минevik от tegema: tegime."
+  },
+  {
+   "id": "g-tr-17",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks (minevik): Ma tulin eile.",
+   "answer": "Ma ei tulnud eile.",
+   "explanation_ru": "Отрицание прошедшего: ei + -nud: tulnud."
+  },
+  {
+   "id": "g-tr-18",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks (minevik): Ta läks koju.",
+   "answer": "Ta ei läinud koju.",
+   "explanation_ru": "Ei + läinud."
+  },
+  {
+   "id": "g-tr-19",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks (minevik): Me nägime filmi.",
+   "answer": "Me ei näinud filmi.",
+   "explanation_ru": "Ei + näinud."
+  },
+  {
+   "id": "g-tr-20",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda eitavaks (minevik): Nad sõid õhtust.",
+   "answer": "Nad ei söönud õhtust.",
+   "explanation_ru": "Ei + söönud."
+  },
+  {
+   "id": "g-tr-21",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda mitmusesse: Siin on kass.",
+   "answer": "Siin on kassid.",
+   "explanation_ru": "Именительный мн. ч. с -d: kassid."
+  },
+  {
+   "id": "g-tr-22",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda mitmusesse: Mul on vend.",
+   "answer": "Mul on vennad.",
+   "explanation_ru": "Мн. ч.: vennad."
+  },
+  {
+   "id": "g-tr-23",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda mitmusesse: Seal on laps.",
+   "answer": "Seal on lapsed.",
+   "explanation_ru": "Мн. ч.: lapsed."
+  },
+  {
+   "id": "g-tr-24",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda mitmusesse: Koer haugub.",
+   "answer": "Koerad haugavad.",
+   "explanation_ru": "Мн. ч. подлежащего требует мн. ч. сказуемого: haugavad."
+  },
+  {
+   "id": "g-tr-25",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda mitmusesse: Õpilane kirjutab.",
+   "answer": "Õpilased kirjutavad.",
+   "explanation_ru": "Мн. ч.: õpilased kirjutavad."
+  },
+  {
+   "id": "g-tr-26",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda küsimuseks: Sa tuled kaasa.",
+   "answer": "Kas sa tuled kaasa?",
+   "explanation_ru": "Вопрос без вопросительного слова: Kas + прямой порядок."
+  },
+  {
+   "id": "g-tr-27",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda küsimuseks: Ta elab Tallinnas.",
+   "answer": "Kas ta elab Tallinnas?",
+   "explanation_ru": "Kas + прямой порядок слов."
+  },
+  {
+   "id": "g-tr-28",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda küsimuseks: Nad on kodus.",
+   "answer": "Kas nad on kodus?",
+   "explanation_ru": "Kas + прямой порядок слов."
+  },
+  {
+   "id": "g-tr-29",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda küsimuseks: Sul on aega.",
+   "answer": "Kas sul on aega?",
+   "explanation_ru": "Kas + прямой порядок слов."
+  },
+  {
+   "id": "g-tr-30",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda käskivaks: Sa tuled siia.",
+   "answer": "Tule siia!",
+   "explanation_ru": "Повелительное — основа: tule!"
+  },
+  {
+   "id": "g-tr-31",
+   "topic": "transform",
+   "level": "B1",
+   "status": "draft",
+   "type": "input",
+   "prompt_et": "Muuda käskivaks: Sa ütled seda.",
+   "answer": "Ütle seda!",
+   "explanation_ru": "Повелительное — основа: ütle!"
+  },
+  {
+   "id": "g-err-01",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Mul on kaks venda.",
+    "Mul on kaks vennad.",
+    "Mul on kaks vend.",
+    "Mul on kaks vendade."
+   ],
+   "answer": 0,
+   "explanation_ru": "После kaks — партитив ед. ч.: venda."
+  },
+  {
+   "id": "g-err-02",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ma ei tulnud eile kooli.",
+    "Ma ei tulin eile kooli.",
+    "Ma tulnud eile kooli ei.",
+    "Ma ei tuli eile kooli."
+   ],
+   "answer": 0,
+   "explanation_ru": "Отрицание прошедшего: ei + -nud."
+  },
+  {
+   "id": "g-err-03",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Raamat on laua peal.",
+    "Raamat on laud peal.",
+    "Raamat on lauda peal.",
+    "Raamat on lauas peal."
+   ],
+   "answer": 0,
+   "explanation_ru": "Peal требует родительного падежа: laua peal."
+  },
+  {
+   "id": "g-err-04",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ma tahan õppida eesti keelt.",
+    "Ma tahan õppima eesti keelt.",
+    "Ma tahan õpin eesti keelt.",
+    "Ma tahan õppinud eesti keelt."
+   ],
+   "answer": 0,
+   "explanation_ru": "После tahan — da-инфинитив: õppida."
+  },
+  {
+   "id": "g-err-05",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ma pean homme õppima.",
+    "Ma pean homme õppida.",
+    "Ma pean homme õpin.",
+    "Ma pean homme õppinud."
+   ],
+   "answer": 0,
+   "explanation_ru": "После pean — ma-инфинитив: õppima."
+  },
+  {
+   "id": "g-err-06",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ta elab Tallinnas.",
+    "Ta elab Tallinn.",
+    "Ta elab Tallinna.",
+    "Ta elab Tallinnasse."
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где?» → инессив: Tallinnas."
+  },
+  {
+   "id": "g-err-07",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ma ootan sind kooli ees.",
+    "Ma ootan sind kooli ette.",
+    "Ma ootan sind kool ees.",
+    "Ma ootan sind koolis ees."
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где?» → ees (ette — «куда»); послелог требует родительного: kooli ees."
+  },
+  {
+   "id": "g-err-08",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ma ostsin uue telefoni.",
+    "Ma ostsin uus telefon.",
+    "Ma ostsin uue telefon.",
+    "Ma ostsin uuel telefonil."
+   ],
+   "answer": 0,
+   "explanation_ru": "Прилагательное согласуется с существительным: uue telefoni."
+  },
+  {
+   "id": "g-err-09",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Meil on kaksteist õpilast.",
+    "Meil on kaksteist õpilased.",
+    "Meil on kaksteist õpilane.",
+    "Meil on kaksteist õpilaste."
+   ],
+   "answer": 0,
+   "explanation_ru": "После числительного — партитив ед. ч.: õpilast."
+  },
+  {
+   "id": "g-err-10",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Eile ma olin kodus.",
+    "Eile ma olen kodus.",
+    "Eile ma oli kodus.",
+    "Eile ma olla kodus."
+   ],
+   "answer": 0,
+   "explanation_ru": "Прошедшее время 1 л.: olin."
+  },
+  {
+   "id": "g-err-11",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ma lähen homme kinno.",
+    "Ma lähen homme kino.",
+    "Ma lähen homme kinos.",
+    "Ma lähen homme kinost."
+   ],
+   "answer": 0,
+   "explanation_ru": "«Куда?» → иллатив: kinno."
+  },
+  {
+   "id": "g-err-12",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ta on minust vanem.",
+    "Ta on minust vana.",
+    "Ta on minuga vanem.",
+    "Ta on minu vanem."
+   ],
+   "answer": 0,
+   "explanation_ru": "Сравнение: сравнительная степень + elatiiv: minust vanem."
+  },
+  {
+   "id": "g-err-13",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Mulle meeldib ujuda.",
+    "Mulle meeldib ujuma.",
+    "Mina meeldib ujuda.",
+    "Mulle meeldin ujuda."
+   ],
+   "answer": 0,
+   "explanation_ru": "Meeldib + da-инфинитив; кому — аллатив: mulle."
+  },
+  {
+   "id": "g-err-14",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ma elan väikeses majas.",
+    "Ma elan väike majas.",
+    "Ma elan väikest majas.",
+    "Ma elan väikese maja."
+   ],
+   "answer": 0,
+   "explanation_ru": "Прилагательное согласуется в падеже: väikeses majas."
+  },
+  {
+   "id": "g-err-15",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ta ei ole kodus.",
+    "Ta ei on kodus.",
+    "Ta ei oli kodus.",
+    "Ta pole ei kodus."
+   ],
+   "answer": 0,
+   "explanation_ru": "Отрицание настоящего: ei ole."
+  },
+  {
+   "id": "g-err-16",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Nad sõidavad bussiga.",
+    "Nad sõidavad buss.",
+    "Nad sõidavad busiga.",
+    "Nad sõidavad bussga."
+   ],
+   "answer": 0,
+   "explanation_ru": "Комитатив: bussi + ga = bussiga (две s)."
+  },
+  {
+   "id": "g-err-17",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Mu õde õpib ülikoolis.",
+    "Mu õde õpib ülikool.",
+    "Mu õde õpib ülikooli.",
+    "Mu õde õpib ülikoolile."
+   ],
+   "answer": 0,
+   "explanation_ru": "«Где?» → инессив: ülikoolis."
+  },
+  {
+   "id": "g-err-18",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Mul ei ole aega.",
+    "Mul ei ole aeg.",
+    "Mul pole aeg.",
+    "Mul ei on aega."
+   ],
+   "answer": 0,
+   "explanation_ru": "После ei ole — партитив: aega."
+  },
+  {
+   "id": "g-err-19",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Ta kirjutas mulle kirja.",
+    "Ta kirjutas mind kirja.",
+    "Ta kirjutas minu kirja.",
+    "Ta kirjutas minule kiri."
+   ],
+   "answer": 0,
+   "explanation_ru": "Кому — аллатив mulle; объект — kirja."
+  },
+  {
+   "id": "g-err-20",
+   "topic": "errors",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause, kus ei ole viga.",
+   "ru": "Выберите предложение без ошибки.",
+   "options": [
+    "Palun anna mulle vett.",
+    "Palun annad mulle vett.",
+    "Palun anna mind vett.",
+    "Palun anda mulle vett."
+   ],
+   "answer": 0,
+   "explanation_ru": "Просьба: повелительное anna."
+  },
+  {
+   "id": "g-sp-01",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Täna on ___.",
+   "ru": "Сегодня понедельник.",
+   "options": [
+    "esmaspäev",
+    "Esmaspäev",
+    "esmaspaev",
+    "esmasbäev"
+   ],
+   "answer": 0,
+   "explanation_ru": "Дни недели пишутся со строчной буквы: esmaspäev."
+  },
+  {
+   "id": "g-sp-02",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma sündisin ___.",
+   "ru": "Я родился в июне.",
+   "options": [
+    "juunis",
+    "Juunis",
+    "juunnis",
+    "junis"
+   ],
+   "answer": 0,
+   "explanation_ru": "Месяцы пишутся со строчной: juunis."
+  },
+  {
+   "id": "g-sp-03",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Ma õpin ___ keelt.",
+   "ru": "Я учу эстонский язык.",
+   "options": [
+    "eesti",
+    "Eesti",
+    "EESTI",
+    "eesTi"
+   ],
+   "answer": 0,
+   "explanation_ru": "Название языка — строчными: eesti keel."
+  },
+  {
+   "id": "g-sp-04",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause õige kirjavahemärkidega.",
+   "options": [
+    "Ma tean, et ta tuleb.",
+    "Ma tean et ta tuleb.",
+    "Ma tean et, ta tuleb.",
+    "Ma, tean et ta tuleb."
+   ],
+   "answer": 0,
+   "explanation_ru": "Запятая ставится перед et."
+  },
+  {
+   "id": "g-sp-05",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause õige kirjavahemärkidega.",
+   "options": [
+    "Ma jään koju, sest ma olen haige.",
+    "Ma jään koju sest ma olen haige.",
+    "Ma jään koju sest, ma olen haige.",
+    "Ma jään, koju sest ma olen haige."
+   ],
+   "answer": 0,
+   "explanation_ru": "Запятая ставится перед sest."
+  },
+  {
+   "id": "g-sp-06",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause õige kirjavahemärkidega.",
+   "options": [
+    "Tahan minna, aga mul pole aega.",
+    "Tahan minna aga mul pole aega.",
+    "Tahan minna aga, mul pole aega.",
+    "Tahan, minna aga mul pole aega."
+   ],
+   "answer": 0,
+   "explanation_ru": "Запятая ставится перед aga."
+  },
+  {
+   "id": "g-sp-07",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige kirjapilt.",
+   "ru": "«все»",
+   "options": [
+    "kõik",
+    "koik",
+    "kõig",
+    "kõikk"
+   ],
+   "answer": 0,
+   "explanation_ru": "Kõik — «все»; õ обязательна."
+  },
+  {
+   "id": "g-sp-08",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige kirjapilt.",
+   "ru": "«девочка»",
+   "options": [
+    "tüdruk",
+    "tudruk",
+    "tüdrug",
+    "tüdrukk"
+   ],
+   "answer": 0,
+   "explanation_ru": "Tüdruk — с ü."
+  },
+  {
+   "id": "g-sp-09",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige kirjapilt.",
+   "ru": "«день»",
+   "options": [
+    "päev",
+    "paev",
+    "päeb",
+    "peäv"
+   ],
+   "answer": 0,
+   "explanation_ru": "Päev — с ä."
+  },
+  {
+   "id": "g-sp-10",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige kirjapilt.",
+   "ru": "«задание»",
+   "options": [
+    "ülesanne",
+    "ulesanne",
+    "ülesane",
+    "ülessane"
+   ],
+   "answer": 0,
+   "explanation_ru": "Ülesanne — ü и двойное n."
+  },
+  {
+   "id": "g-sp-11",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause õige kirjavahemärkidega.",
+   "options": [
+    "Kui sajab vihma, jään koju.",
+    "Kui sajab vihma jään koju.",
+    "Kui, sajab vihma jään koju.",
+    "Kui sajab vihma jään, koju."
+   ],
+   "answer": 0,
+   "explanation_ru": "Придаточная часть отделяется запятой."
+  },
+  {
+   "id": "g-sp-12",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige kirjapilt.",
+   "ru": "«март»",
+   "options": [
+    "märts",
+    "Märts",
+    "marts",
+    "märtz"
+   ],
+   "answer": 0,
+   "explanation_ru": "Месяцы со строчной; märts — с ä."
+  },
+  {
+   "id": "g-sp-13",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige lause.",
+   "options": [
+    "Tallinn on Eesti pealinn.",
+    "tallinn on eesti pealinn.",
+    "Tallinn on eesti Pealinn.",
+    "Tallinn On Eesti pealinn."
+   ],
+   "answer": 0,
+   "explanation_ru": "Города и страны пишутся с заглавной."
+  },
+  {
+   "id": "g-sp-14",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali lause õige kirjavahemärkidega.",
+   "options": [
+    "Ma ostsin kooki, leiba ja piima.",
+    "Ma ostsin, kooki, leiba, ja piima.",
+    "Ma ostsin kooki leiba, ja piima.",
+    "Ma ostsin kooki, leiba, ja, piima."
+   ],
+   "answer": 0,
+   "explanation_ru": "В простом перечислении перед ja запятой нет."
+  },
+  {
+   "id": "g-sp-15",
+   "topic": "spelling",
+   "level": "B1",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vali õige tervitus.",
+   "options": [
+    "Tere, Mari!",
+    "Tere Mari!",
+    "tere, Mari!",
+    "Tere, mari!"
+   ],
+   "answer": 0,
+   "explanation_ru": "После обращения запятая; имя с заглавной."
   }
  ]
 }

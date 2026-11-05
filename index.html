@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <script>
     // применяем сохранённую тему до отрисовки, чтобы не было вспышки
-    try { var p = JSON.parse(localStorage.getItem('estonski.prefs') || '{}'); if (p.theme === 'light' || p.theme === 'dark') document.documentElement.setAttribute('data-theme', p.theme); if (p.font) document.documentElement.setAttribute('data-font', p.font); } catch (e) {}
+    try { var p = JSON.parse(localStorage.getItem('estonski.prefs') || '{}'); if (p.theme === 'light' || p.theme === 'dark') document.documentElement.setAttribute('data-theme', p.theme); if (p.font) document.documentElement.setAttribute('data-font', p.font); if (p.read) document.documentElement.setAttribute('data-read', p.read); if (p.contrast) document.documentElement.setAttribute('data-contrast', p.contrast); } catch (e) {}
   </script>
   <link rel="stylesheet" href="css/style.css">
 </head>

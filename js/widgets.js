@@ -197,3 +197,11 @@ export function splitView(left, right, { leftTitle = 'Материал' } = {}) 
   const rightPane = h('section', { class: 'pane pane-right', 'aria-label': 'Задания и ответы' }, right, toText);
   return h('div', { class: 'split' }, leftPane, rightPane);
 }
+
+/** Кнопка «🔊»: появляется, только если на устройстве есть эстонский голос. */
+export function speakButton(text, label = 'Прослушать') {
+  const btn = h('button', { type: 'button', class: 'btn small ghost speak', 'aria-label': label, title: label, hidden: true,
+    onclick: () => { import('./speech.js').then((m) => m.speakText(text)); } }, '🔊');
+  import('./speech.js').then((m) => m.findEtVoice()).then((v) => { if (v) btn.hidden = false; });
+  return btn;
+}

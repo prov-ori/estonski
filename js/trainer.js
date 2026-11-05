@@ -3,15 +3,18 @@ import { h, shuffle, pct, setChildren } from './util.js';
 import { renderQuestion } from './question.js';
 import { store } from './store.js';
 
-/** Сначала ошибки, затем не виденные, затем остальные; внутри групп порядок случайный. */
+/** Сначала задания к повторению (ошибки и подошедший срок), затем ещё не виденные, затем остальные; внутри групп порядок случайный. */
 export function prioritize(entries) {
-  const g = { missed: [], fresh: [], rest: [] };
+  const g = { due: [], fresh: [], rest: [] };
   for (const e of entries) {
     const a = store.getAnswer(e.q.id);
-    (!a ? g.fresh : !a.ok ? g.missed : g.rest).push(e);
+    (!a ? g.fresh : store.isDue(e.q.id) ? g.due : g.rest).push(e);
   }
-  return [...shuffle(g.missed), ...shuffle(g.fresh), ...shuffle(g.rest)];
+  return [...shuffle(g.due), ...shuffle(g.fresh), ...shuffle(g.rest)];
 }
+
+/** Сколько заданий из списка нужно повторить сегодня. */
+export const dueCount = (entries) => entries.filter((e) => store.getAnswer(e.q.id) && store.isDue(e.q.id)).length;
 
 /**
  * entries: [{q, module}]. opts: {onDone(score,total), again(), extraButtons, record=true}

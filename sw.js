@@ -1,8 +1,9 @@
 // Файл создан tools/build-sw.js — не редактируйте вручную.
-const CACHE = 'estonski-ca75f9cd5c';
+const CACHE = 'estonski-415b89a1d8';
 const FILES = [
  "./",
  "config/exam-format.json",
+ "config/series.json",
  "config/topics.json",
  "content/diagnostic.json",
  "content/dictation.json",
@@ -19,8 +20,10 @@ const FILES = [
  "icon.svg",
  "index.html",
  "js/app.js",
+ "js/dialog.js",
  "js/gen.js",
  "js/index.js",
+ "js/prefs.js",
  "js/question.js",
  "js/series.js",
  "js/speech.js",

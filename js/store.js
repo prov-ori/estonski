@@ -48,6 +48,14 @@ function save() {
 }
 
 export const DAILY_GOAL = 10;
+const DAY_MS = 86400000;
+const Q_INTERVAL_DAYS = [1, 3, 7, 14, 30]; // интервалы повторения вопросов по коробкам 1..5
+
+/** Обновляет коробку и срок повторения вопроса: верно → выше коробка, неверно → снова сегодня. */
+function srs(prev, ok, now) {
+  const box = ok ? Math.min(5, ((prev && prev.b) || 0) + 1) : 0;
+  return { b: box, d: ok ? now + Q_INTERVAL_DAYS[box - 1] * DAY_MS : now };
+}
 export function dayKey(date = new Date()) {
   const p = (n) => String(n).padStart(2, '0');
   return `${date.getFullYear()}-${p(date.getMonth() + 1)}-${p(date.getDate())}`;
@@ -59,14 +67,14 @@ export const store = {
 
   recordAnswer({ id, module, topic, ok }) {
     const prev = state.answers[id] || { r: 0, w: 0 };
-    state.answers[id] = { m: module, t: topic, ok: !!ok, r: prev.r + (ok ? 1 : 0), w: prev.w + (ok ? 0 : 1), ts: Date.now() };
+    state.answers[id] = { m: module, t: topic, ok: !!ok, r: prev.r + (ok ? 1 : 0), w: prev.w + (ok ? 0 : 1), ts: Date.now(), ...srs(prev, ok, Date.now()) };
     bump(1);
     save();
   },
   recordMany(list) {
     for (const a of list) {
       const prev = state.answers[a.id] || { r: 0, w: 0 };
-      state.answers[a.id] = { m: a.module, t: a.topic, ok: !!a.ok, r: prev.r + (a.ok ? 1 : 0), w: prev.w + (a.ok ? 0 : 1), ts: Date.now() };
+      state.answers[a.id] = { m: a.module, t: a.topic, ok: !!a.ok, r: prev.r + (a.ok ? 1 : 0), w: prev.w + (a.ok ? 0 : 1), ts: Date.now(), ...srs(prev, a.ok, Date.now()) };
     }
     bump(list.length);
     save();
@@ -105,6 +113,13 @@ export const store = {
     }
   },
   getAnswer: (id) => state.answers[id] || null,
+  /** Нужно ли повторить вопрос сейчас (старые записи без срока: верные — через 3 дня после ответа). */
+  isDue(id, now = Date.now()) {
+    const a = state.answers[id];
+    if (!a) return false;
+    const d = a.d !== undefined ? a.d : (a.ok ? a.ts + 3 * DAY_MS : 0);
+    return d <= now;
+  },
   /** Сводка по набору вопросов: сколько отвечено и сколько верно в последний раз. */
   summary(ids) {
     let answered = 0, ok = 0;

@@ -1,0 +1,595 @@
+{
+ "_comment": "Создан tools/build-index.js — не редактируйте вручную.",
+ "items": {
+  "r-01": {
+   "module": "reading",
+   "title_ru": "Новый кружок в нашей школе"
+  },
+  "r-02": {
+   "module": "reading",
+   "title_ru": "Письмо подруге"
+  },
+  "r-03": {
+   "module": "reading",
+   "title_ru": "Меню школьной столовой"
+  },
+  "r-04": {
+   "module": "reading",
+   "title_ru": "Мари идёт к врачу"
+  },
+  "r-05": {
+   "module": "reading",
+   "title_ru": "Объявление для пассажиров поезда"
+  },
+  "r-06": {
+   "module": "reading",
+   "title_ru": "Моё новое увлечение"
+  },
+  "r-07": {
+   "module": "reading",
+   "title_ru": "Сообщение директора"
+  },
+  "r-08": {
+   "module": "reading",
+   "title_ru": "Первый снег"
+  },
+  "r-expand-2": {
+   "module": "reading",
+   "title_ru": "Библиотека"
+  },
+  "r-expand-3": {
+   "module": "reading",
+   "title_ru": "Поездка на автобусе"
+  },
+  "r-expand-4": {
+   "module": "reading",
+   "title_ru": "Кафе"
+  },
+  "r-expand-5": {
+   "module": "reading",
+   "title_ru": "Поход"
+  },
+  "r-expand-6": {
+   "module": "reading",
+   "title_ru": "Плавание"
+  },
+  "r-expand-7": {
+   "module": "reading",
+   "title_ru": "Новая квартира"
+  },
+  "r-expand-8": {
+   "module": "reading",
+   "title_ru": "День рождения"
+  },
+  "r-expand-9": {
+   "module": "reading",
+   "title_ru": "Запись к врачу"
+  },
+  "r-09": {
+   "module": "reading",
+   "title_ru": "Текст с пропусками: письмо подруге"
+  },
+  "r-10": {
+   "module": "reading",
+   "title_ru": "Объявление библиотеки"
+  },
+  "r-11": {
+   "module": "reading",
+   "title_ru": "Здоровый завтрак"
+  },
+  "r-12": {
+   "module": "reading",
+   "title_ru": "Кинотеатр «Päike»: программа недели"
+  },
+  "r-13": {
+   "module": "reading",
+   "title_ru": "Тропа Männiku"
+  },
+  "r-14": {
+   "module": "reading",
+   "title_ru": "Текст с пропусками: письмо учителю"
+  },
+  "r-15": {
+   "module": "reading",
+   "title_ru": "Эстонские пословицы"
+  },
+  "r-16": {
+   "module": "reading",
+   "title_ru": "Блог: моя первая неделя в новой школе"
+  },
+  "r-17": {
+   "module": "reading",
+   "title_ru": "В школе начали сортировать мусор"
+  },
+  "r-18": {
+   "module": "reading",
+   "title_ru": "Ивановов день в Эстонии"
+  },
+  "r-01-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Кружок робототехники: соревнование",
+   "parent_id": "r-01"
+  },
+  "r-expand-2-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Библиотека: потерянная книга",
+   "parent_id": "r-expand-2"
+  },
+  "r-expand-3-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Поездка в Тарту: изменение планов",
+   "parent_id": "r-expand-3"
+  },
+  "r-expand-4-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Кафе: перепутанный заказ",
+   "parent_id": "r-expand-4"
+  },
+  "r-expand-5-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Поход: дождь и новый маршрут",
+   "parent_id": "r-expand-5"
+  },
+  "r-expand-6-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Плавание: новое расписание",
+   "parent_id": "r-expand-6"
+  },
+  "r-expand-7-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Новая квартира: договорённость с соседями",
+   "parent_id": "r-expand-7"
+  },
+  "r-expand-8-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Семейный праздник: сюрприз",
+   "parent_id": "r-expand-8"
+  },
+  "r-expand-9-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: Запись к врачу: после приёма",
+   "parent_id": "r-expand-9"
+  },
+  "r-02-part2": {
+   "module": "reading",
+   "title_ru": "Продолжение: письмо после поездки",
+   "parent_id": "r-02"
+  },
+  "r-b2-21": {
+   "module": "reading",
+   "title_ru": "День без телефонов: эксперимент или запрет?"
+  },
+  "r-b2-22": {
+   "module": "reading",
+   "title_ru": "Для кого городская улица?"
+  },
+  "r-b2-23": {
+   "module": "reading",
+   "title_ru": "Починить или заменить?"
+  },
+  "l-01": {
+   "module": "listening",
+   "title_ru": "Объявление директора"
+  },
+  "l-02": {
+   "module": "listening",
+   "title_ru": "Телефонный разговор"
+  },
+  "l-03": {
+   "module": "listening",
+   "title_ru": "В магазине"
+  },
+  "l-04": {
+   "module": "listening",
+   "title_ru": "Объявление в аэропорту"
+  },
+  "l-05": {
+   "module": "listening",
+   "title_ru": "Домашнее задание"
+  },
+  "l-06": {
+   "module": "listening",
+   "title_ru": "Звонок в поликлинику"
+  },
+  "l-07": {
+   "module": "listening",
+   "title_ru": "Прогноз погоды"
+  },
+  "l-08": {
+   "module": "listening",
+   "title_ru": "Выходные"
+  },
+  "l-09": {
+   "module": "listening",
+   "title_ru": "Объявление об экскурсии"
+  },
+  "l-10": {
+   "module": "listening",
+   "title_ru": "В кафе"
+  },
+  "l-11": {
+   "module": "listening",
+   "title_ru": "Объявление о поезде"
+  },
+  "l-12": {
+   "module": "listening",
+   "title_ru": "В аптеке"
+  },
+  "l-13": {
+   "module": "listening",
+   "title_ru": "Как пройти"
+  },
+  "l-14": {
+   "module": "listening",
+   "title_ru": "Приглашение в поход"
+  },
+  "l-series-3": {
+   "module": "listening",
+   "title_ru": "Объявление директора: перенос концерта",
+   "parent_id": "l-01"
+  },
+  "l-series-4": {
+   "module": "listening",
+   "title_ru": "Поездка в Тарту: обратный билет",
+   "parent_id": "r-expand-3"
+  },
+  "l-series-5": {
+   "module": "listening",
+   "title_ru": "Кафе: бронирование",
+   "parent_id": "r-expand-4"
+  },
+  "l-series-6": {
+   "module": "listening",
+   "title_ru": "Поход: подготовка следующего маршрута",
+   "parent_id": "r-expand-5"
+  },
+  "l-series-7": {
+   "module": "listening",
+   "title_ru": "Плавание: забытая сумка",
+   "parent_id": "r-expand-6"
+  },
+  "l-series-8": {
+   "module": "listening",
+   "title_ru": "Новая квартира: возврат полки",
+   "parent_id": "r-expand-7"
+  },
+  "l-series-9": {
+   "module": "listening",
+   "title_ru": "Семейный праздник: вечер фотографий",
+   "parent_id": "r-expand-8"
+  },
+  "l-series-10": {
+   "module": "listening",
+   "title_ru": "Библиотека: продление книги",
+   "parent_id": "r-expand-2"
+  },
+  "l-02-part2": {
+   "module": "listening",
+   "title_ru": "Продолжение: после кино",
+   "parent_id": "l-02"
+  },
+  "w-01": {
+   "module": "writing",
+   "title_ru": "Письмо другу: приглашение"
+  },
+  "w-02": {
+   "module": "writing",
+   "title_ru": "Письмо учителю: пропуск занятий"
+  },
+  "w-03": {
+   "module": "writing",
+   "title_ru": "Мнение: телефоны на уроках"
+  },
+  "w-04": {
+   "module": "writing",
+   "title_ru": "Письмо: как добраться до школы"
+  },
+  "w-05": {
+   "module": "writing",
+   "title_ru": "Письмо другу: как прошли выходные"
+  },
+  "w-06": {
+   "module": "writing",
+   "title_ru": "Письмо: запись к врачу"
+  },
+  "w-07": {
+   "module": "writing",
+   "title_ru": "Мнение: нужна ли длинная перемена"
+  },
+  "w-08": {
+   "module": "writing",
+   "title_ru": "Письмо в магазин: куртка не подошла"
+  },
+  "w-09": {
+   "module": "writing",
+   "title_ru": "Открытка из поездки"
+  },
+  "w-10": {
+   "module": "writing",
+   "title_ru": "Описание любимого блюда"
+  },
+  "w-11": {
+   "module": "writing",
+   "title_ru": "Мнение: компьютерные игры"
+  },
+  "w-12": {
+   "module": "writing",
+   "title_ru": "Объявление: потерянная куртка"
+  },
+  "w-expand-5": {
+   "module": "writing",
+   "title_ru": "Школьная экскурсия"
+  },
+  "w-expand-6": {
+   "module": "writing",
+   "title_ru": "Ужин с друзьями"
+  },
+  "w-expand-7": {
+   "module": "writing",
+   "title_ru": "Встреча в городе"
+  },
+  "w-expand-8": {
+   "module": "writing",
+   "title_ru": "Поход на выходных"
+  },
+  "w-expand-9": {
+   "module": "writing",
+   "title_ru": "Переезд"
+  },
+  "w-expand-10": {
+   "module": "writing",
+   "title_ru": "Семейный праздник"
+  },
+  "w-expand-11": {
+   "module": "writing",
+   "title_ru": "Спортивный клуб"
+  },
+  "w-expand-12": {
+   "module": "writing",
+   "title_ru": "Здоровый распорядок"
+  },
+  "w-13": {
+   "module": "writing",
+   "title_ru": "Предложение: школьная экскурсия"
+  },
+  "w-14": {
+   "module": "writing",
+   "title_ru": "Приглашение на день рождения"
+  },
+  "w-15": {
+   "module": "writing",
+   "title_ru": "Мнение: новый парк в городе"
+  },
+  "w-16": {
+   "module": "writing",
+   "title_ru": "Мнение: спорт каждый день"
+  },
+  "w-17": {
+   "module": "writing",
+   "title_ru": "Благодарственное письмо бабушке"
+  },
+  "w-18": {
+   "module": "writing",
+   "title_ru": "Моя будущая профессия"
+  },
+  "w-01-reply": {
+   "module": "writing",
+   "title_ru": "Письмо другу: приглашение — ответ и изменение плана",
+   "parent_id": "w-01"
+  },
+  "w-02-reply": {
+   "module": "writing",
+   "title_ru": "Письмо учителю — уточнение задания",
+   "parent_id": "w-02"
+  },
+  "w-03-reply": {
+   "module": "writing",
+   "title_ru": "Телефоны на уроках — ответ на возражение",
+   "parent_id": "w-03"
+  },
+  "w-expand-5-reply": {
+   "module": "writing",
+   "title_ru": "Школьная экскурсия — ответ и изменение плана",
+   "parent_id": "w-expand-5"
+  },
+  "w-expand-6-reply": {
+   "module": "writing",
+   "title_ru": "Ужин с друзьями — ответ и изменение плана",
+   "parent_id": "w-expand-6"
+  },
+  "w-expand-7-reply": {
+   "module": "writing",
+   "title_ru": "Встреча в городе — ответ и изменение плана",
+   "parent_id": "w-expand-7"
+  },
+  "w-expand-8-reply": {
+   "module": "writing",
+   "title_ru": "Поход на выходных — ответ и изменение плана",
+   "parent_id": "w-expand-8"
+  },
+  "w-expand-9-reply": {
+   "module": "writing",
+   "title_ru": "Переезд — ответ и изменение плана",
+   "parent_id": "w-expand-9"
+  },
+  "w-expand-10-reply": {
+   "module": "writing",
+   "title_ru": "Семейный праздник — ответ и изменение плана",
+   "parent_id": "w-expand-10"
+  },
+  "w-expand-11-reply": {
+   "module": "writing",
+   "title_ru": "Спортивный клуб — ответ и изменение плана",
+   "parent_id": "w-expand-11"
+  },
+  "w-expand-12-reply": {
+   "module": "writing",
+   "title_ru": "Здоровый распорядок — ответ и изменение плана",
+   "parent_id": "w-expand-12"
+  },
+  "s-01": {
+   "module": "speaking",
+   "title_ru": "Планируем выходные"
+  },
+  "s-02": {
+   "module": "speaking",
+   "title_ru": "Как пройти?"
+  },
+  "s-03": {
+   "module": "speaking",
+   "title_ru": "Выбираем кружок"
+  },
+  "s-04": {
+   "module": "speaking",
+   "title_ru": "У врача"
+  },
+  "s-05": {
+   "module": "speaking",
+   "title_ru": "Покупаем одежду"
+  },
+  "s-06": {
+   "module": "speaking",
+   "title_ru": "Покупка билета"
+  },
+  "s-07": {
+   "module": "speaking",
+   "title_ru": "Заказ в кафе"
+  },
+  "s-08": {
+   "module": "speaking",
+   "title_ru": "Телефон в школе"
+  },
+  "s-09": {
+   "module": "speaking",
+   "title_ru": "Планируем день рождения"
+  },
+  "s-10": {
+   "module": "speaking",
+   "title_ru": "Погода и планы"
+  },
+  "s-11": {
+   "module": "speaking",
+   "title_ru": "Кем я хочу стать"
+  },
+  "s-12": {
+   "module": "speaking",
+   "title_ru": "Описываем комнату"
+  },
+  "s-expand-5": {
+   "module": "speaking",
+   "title_ru": "Школьная экскурсия"
+  },
+  "s-expand-6": {
+   "module": "speaking",
+   "title_ru": "Ужин с друзьями"
+  },
+  "s-expand-7": {
+   "module": "speaking",
+   "title_ru": "Встреча в городе"
+  },
+  "s-expand-8": {
+   "module": "speaking",
+   "title_ru": "Поход на выходных"
+  },
+  "s-expand-9": {
+   "module": "speaking",
+   "title_ru": "Переезд"
+  },
+  "s-expand-10": {
+   "module": "speaking",
+   "title_ru": "Семейный праздник"
+  },
+  "s-expand-11": {
+   "module": "speaking",
+   "title_ru": "Спортивный клуб"
+  },
+  "s-expand-12": {
+   "module": "speaking",
+   "title_ru": "Здоровый распорядок"
+  },
+  "s-13": {
+   "module": "speaking",
+   "title_ru": "Выбираем спортивную секцию"
+  },
+  "s-14": {
+   "module": "speaking",
+   "title_ru": "Поддержать друга"
+  },
+  "s-15": {
+   "module": "speaking",
+   "title_ru": "Расписание дня"
+  },
+  "s-16": {
+   "module": "speaking",
+   "title_ru": "Подарок и размер"
+  },
+  "s-17": {
+   "module": "speaking",
+   "title_ru": "Выбираем фильм"
+  },
+  "s-18": {
+   "module": "speaking",
+   "title_ru": "Рождественские традиции"
+  },
+  "s-01-change": {
+   "module": "speaking",
+   "title_ru": "Планируем выходные — план изменился",
+   "parent_id": "s-01"
+  },
+  "s-02-change": {
+   "module": "speaking",
+   "title_ru": "Как пройти? — план изменился",
+   "parent_id": "s-02"
+  },
+  "s-03-change": {
+   "module": "speaking",
+   "title_ru": "Выбираем кружок — план изменился",
+   "parent_id": "s-03"
+  },
+  "s-04-change": {
+   "module": "speaking",
+   "title_ru": "У врача — план изменился",
+   "parent_id": "s-04"
+  },
+  "s-expand-5-change": {
+   "module": "speaking",
+   "title_ru": "Школьная экскурсия — план изменился",
+   "parent_id": "s-expand-5"
+  },
+  "s-expand-6-change": {
+   "module": "speaking",
+   "title_ru": "Ужин с друзьями — план изменился",
+   "parent_id": "s-expand-6"
+  },
+  "s-expand-7-change": {
+   "module": "speaking",
+   "title_ru": "Встреча в городе — план изменился",
+   "parent_id": "s-expand-7"
+  },
+  "s-expand-8-change": {
+   "module": "speaking",
+   "title_ru": "Поход на выходных — план изменился",
+   "parent_id": "s-expand-8"
+  },
+  "s-expand-9-change": {
+   "module": "speaking",
+   "title_ru": "Переезд — план изменился",
+   "parent_id": "s-expand-9"
+  },
+  "s-expand-10-change": {
+   "module": "speaking",
+   "title_ru": "Семейный праздник — план изменился",
+   "parent_id": "s-expand-10"
+  },
+  "s-expand-11-change": {
+   "module": "speaking",
+   "title_ru": "Спортивный клуб — план изменился",
+   "parent_id": "s-expand-11"
+  },
+  "s-expand-12-change": {
+   "module": "speaking",
+   "title_ru": "Здоровый распорядок — план изменился",
+   "parent_id": "s-expand-12"
+  }
+ }
+}

@@ -1,4 +1,5 @@
 import { h, content, config, norm, setChildren, addChildren } from '../util.js';
+import { speakButton } from '../widgets.js';
 
 export default {
   title: 'Список слов',
@@ -16,7 +17,7 @@ export default {
       const rows = data.items.filter((c) => (topic === 'all' || c.topic === topic) && (!nq || norm(c.et).includes(nq) || norm(c.ru).includes(nq) || norm(c.forms).includes(nq)));
       count.textContent = `Найдено слов: ${rows.length} из ${data.items.length}`;
       setChildren(list, rows.length ? h('ul', { class: 'words' }, rows.map((c) => h('li', null,
-        h('div', null, h('strong', { lang: 'et' }, c.et), ' ', h('span', { class: 'forms', lang: 'et' }, `(${c.forms})`), ' — ', c.ru),
+        h('div', null, h('strong', { lang: 'et' }, c.et), ' ', h('span', { class: 'forms', lang: 'et' }, `(${c.forms})`), ' — ', c.ru, ' ', speakButton(c.et, 'Прослушать слово')),
         h('div', { class: 'muted small-text', lang: 'et' }, c.example_et), h('div', { class: 'muted small-text' }, `${c.example_ru} · ${name(c.topic)}${c.status === 'draft' ? ' · черновик' : ''}`)))) : h('p', { class: 'notice' }, 'Ничего не найдено.'));
     }
     addChildren(root, h('p', null, h('a', { href: '#/vocab' }, '← К карточкам')), h('h1', null, 'Список слов'),

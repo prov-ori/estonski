@@ -1,5 +1,6 @@
 // Панель текста: абзацы, источник, подсветка доказательств, словарик из карточек сайта.
 import { h } from './util.js';
+import { speakButton } from './widgets.js';
 
 const norm = (s) => s.toLowerCase().replace(/\s+/g, ' ').trim();
 const WORD = /[\p{L}]+/gu;
@@ -24,7 +25,7 @@ export function evidenceFor(q, text) {
   // запасной вариант: самое похожее предложение
   const key = stems(q.prompt_et + ' ' + (q.type === 'choice' && q.options ? q.options[q.answer] : ''));
   let best = null, bestScore = 1;
-  for (const line of text.split(/\n+/)) for (const sent of line.split(/(?<=[.!?])\s+/)) {
+  for (const line of text.split(/\n+/)) for (const sent of (line.match(/[^.!?]+[.!?]*\s*/g) || [line])) {
     const ss = stems(sent);
     let score = 0;
     key.forEach((w) => { if (ss.has(w)) score++; });
@@ -68,9 +69,12 @@ export function glossaryFor(text, vocab) {
 /**
  * item: {title_et, text_et, source?}. Возвращает элемент с методами highlight(phrase), clear().
  */
-export function textPane(item, vocab = []) {
+export function textPane(item, vocab = [], { exam = false } = {}) {
   const body = h('div', { class: 'text-body' });
-  const draw = (phrase) => { body.replaceChildren(...paragraphNodes(item.text_et, phrase)); };
+  const draw = (phrase) => {
+    const paras = paragraphNodes(item.text_et, phrase);
+    body.replaceChildren(...(exam ? paras : paras.map((p, i) => h('div', { class: 'para' }, p, speakButton(item.text_et.split(/\n\s*\n/)[i], 'Прослушать абзац')))));
+  };
   draw(null);
   const gl = vocab.length ? glossaryFor(item.text_et, vocab) : [];
   const el = h('article', { class: 'text card', 'aria-label': item.title_et },

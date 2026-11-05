@@ -1,6 +1,7 @@
 // Роутер и каркас. Маршруты вида #/grammar/cases.
-import { h, config, setChildren } from './util.js';
+import { h, setChildren } from './util.js';
 import { store } from './store.js';
+import { getPrefs, setPref, applyPrefs } from './prefs.js';
 
 const MODULES = [
   ['daily', 'Практика', 'views/daily.js'],
@@ -84,26 +85,21 @@ async function render() {
   }
 }
 
-// ---- оформление: тема и размер текста (хранится отдельно от прогресса) ----
-const PREF_KEY = 'estonski.prefs';
-function readPrefs() {
-  try { return { theme: 'auto', font: 'normal', ...JSON.parse(localStorage.getItem(PREF_KEY) || '{}') }; } catch { return { theme: 'auto', font: 'normal' }; }
-}
-function applyPrefs(p) {
-  const r = document.documentElement;
-  if (p.theme === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', p.theme);
-  r.setAttribute('data-font', p.font);
-}
+// ---- оформление и режимы (js/prefs.js) ----
 function buildPrefs() {
-  const prefs = readPrefs();
-  const save = () => { applyPrefs(prefs); try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch { /* ignore */ } };
+  const prefs = getPrefs();
   const mk = (id, label, key, opts) => {
-    const s = h('select', { class: 'select', id, onchange: (e) => { prefs[key] = e.target.value; save(); } }, opts.map(([v, l]) => h('option', { value: v }, l)));
+    const s = h('select', { class: 'select', id, onchange: (e) => setPref(key, e.target.value) }, opts.map(([v, l]) => h('option', { value: v }, l)));
     s.value = prefs[key];
     return h('div', { class: 'pref' }, h('label', { for: id }, label), s);
   };
   const box = document.getElementById('prefs');
-  if (box) setChildren(box, mk('pref-theme', 'Тема', 'theme', [['auto', 'Как в системе'], ['light', 'Светлая'], ['dark', 'Тёмная']]), mk('pref-font', 'Размер текста', 'font', [['normal', 'Обычный'], ['large', 'Крупный'], ['xlarge', 'Очень крупный']]));
+  if (box) setChildren(box,
+    mk('pref-theme', 'Тема', 'theme', [['auto', 'Как в системе'], ['light', 'Светлая'], ['dark', 'Тёмная']]),
+    mk('pref-font', 'Размер текста', 'font', [['normal', 'Обычный'], ['large', 'Крупный'], ['xlarge', 'Очень крупный']]),
+    mk('pref-read', 'Чтение', 'read', [['normal', 'Обычное'], ['easy', 'Облегчённое']]),
+    mk('pref-contrast', 'Контраст', 'contrast', [['normal', 'Обычный'], ['high', 'Повышенный']]),
+    mk('pref-exam', 'Режим экзамена', 'exam', [['off', 'Выкл.'], ['on', 'Вкл. (без подсказок)']]));
   applyPrefs(prefs);
 }
 

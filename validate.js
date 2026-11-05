@@ -8,7 +8,7 @@ const path = require('path');
 const ROOT = __dirname;
 const LEVELS = new Set(['A2', 'B1', 'B2']);
 const STATUSES = new Set(['draft', 'reviewed']);
-const QTYPES = new Set(['choice', 'tf', 'input', 'match']);
+const QTYPES = new Set(['choice', 'tf', 'tf3', 'input', 'match']);
 const INHERIT = ['topic', 'level', 'status'];
 const errors = [];
 const warns = [];
@@ -57,8 +57,9 @@ const stats = {};
 const hasCyr = (s) => /[Ѐ-ӿ]/.test(s);
 const nn = (s) => String(s).normalize('NFC').trim().toLowerCase();
 
+const eff_topic_of = (q) => q.topic || '';
 function checkQuestion(file, q) {
-  if (file.endsWith('grammar.json') && q.type !== 'tf' && !/___/.test(q.prompt_et || '')) warn(file, q.id, 'нет пропуска ___ в prompt_et');
+  if (file.endsWith('grammar.json') && q.type !== 'tf' && !['transform', 'errors', 'spelling'].includes(eff_topic_of(q)) && !/___/.test(q.prompt_et || '')) warn(file, q.id, 'нет пропуска ___ в prompt_et');
   const w = q.id;
   if (typeof q.prompt_et !== 'string' || !q.prompt_et.trim()) err(file, w, 'нет prompt_et');
   if (typeof q.prompt_et === 'string' && hasCyr(q.prompt_et)) err(file, w, 'кириллица в prompt_et (лишняя русская буква в эстонском тексте?)');
@@ -67,7 +68,7 @@ function checkQuestion(file, q) {
       const o = q.options;
       if (!Array.isArray(o) || o.length < 3) { err(file, w, 'choice: нужно минимум 3 options'); break; }
       if (o.some((x) => typeof x !== 'string' || !x.trim())) err(file, w, 'choice: пустой вариант');
-      if (new Set(o.map(nn)).size !== o.length) err(file, w, 'choice: повторяющиеся варианты — неоднозначный правильный ответ');
+      if (new Set(o.map((x) => String(x).normalize('NFC').trim())).size !== o.length) err(file, w, 'choice: повторяющиеся варианты — неоднозначный правильный ответ');
       if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= o.length) err(file, w, `choice: answer должен быть индексом 0..${o.length - 1}`);
       if ('answers' in q) err(file, w, 'choice: поле answers запрещено — ответ ровно один');
       if (o.every((x) => x.split(/\s+/).length >= 3)) { const L = o.map((x) => x.length); if (L[q.answer] === Math.max(...L) && L.filter((l) => l === L[q.answer]).length === 1) warn(file, w, 'верный вариант самый длинный — подсказка для угадывания'); }
@@ -76,6 +77,9 @@ function checkQuestion(file, q) {
     }
     case 'tf':
       if (typeof q.answer !== 'boolean') err(file, w, 'tf: answer должен быть true/false');
+      break;
+    case 'tf3':
+      if (![true, false, 'ns'].includes(q.answer)) err(file, w, "tf3: answer должен быть true, false или 'ns'");
       break;
     case 'input':
       if (typeof q.answer !== 'string' || !q.answer.trim()) err(file, w, 'input: нужен непустой строковый answer');
@@ -204,6 +208,12 @@ for (const q of (data.grammar?.items || [])) {
   const key = nn(q.prompt_et + ' ' + (q.hint || ''));
   if (seenP.has(key)) warn('content/grammar.json', q.id, `такой же prompt, как у ${seenP.get(key)}`); else seenP.set(key, q.id);
 }
+
+// индекс серий должен быть актуален
+try {
+  const r = require('child_process').spawnSync('node', [path.join(ROOT, 'tools', 'build-index.js'), '--check'], { encoding: 'utf8' });
+  if (r.status !== 0) errors.push('config/series.json устарел — запустите node tools/build-index.js');
+} catch (e) { warns.push('не удалось проверить config/series.json'); }
 
 // ---- отчёт ----
 const counts = {

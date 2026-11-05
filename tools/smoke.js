@@ -24,7 +24,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 (async () => {
   await new Promise((r) => server.listen(0, r));
   const base = `http://localhost:${server.address().port}/`;
-  const browser = await chromium.launch({ args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
+  const browser = await chromium.launch({ executablePath: process.env.BROWSER_EXECUTABLE || undefined, args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
 
   for (const [label, vp] of [['mobile', { width: 390, height: 800 }], ['desktop', { width: 1280, height: 900 }]]) {
     console.log(`\n=== ${label} ${vp.width}px ===`);
@@ -174,6 +174,21 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     await ctx2.close();
 
     ok(errs.length === 0, `консоль без ошибок и предупреждений${errs.length ? ': ' + errs.slice(0, 5).join(' | ') : ''}`);
+    await page.goto(base + '#/grammar');
+    await page.waitForSelector('select[aria-label="Длина сессии"]');
+    await page.selectOption('select[aria-label="Тип задания"]', 'input');
+    await page.selectOption('select[aria-label="Длина сессии"]', '20');
+    await page.getByRole('button', {name:'Начать заново', exact:true}).click();
+    ok((await page.locator('main').innerText()).includes('Задание 1 из 20'), 'длина сессии применяется');
+    await page.getByRole('button', {name:'Проверить', exact:true}).click();
+    ok((await page.locator('.feedback').innerText()).includes('Сначала заполните'), 'пустой ответ не блокирует вопрос');
+    ok(await page.locator('.text-input').isEditable(), 'пустой ответ можно исправить');
+    const reading = JSON.parse(fs.readFileSync(path.join(ROOT,'content/reading.json'),'utf8'));
+    for (const item of reading.items.filter(x => x.id.startsWith('r-expand-'))) {
+      await page.goto(base + '#/reading/' + item.id);
+      await page.waitForSelector('.qset');
+      ok(await page.locator('.question').count() === 3, item.id + ': три вопроса доступны');
+    }
     await ctx.close();
   }
   await browser.close();

@@ -77,7 +77,7 @@ export const CASE_INFO = {
   abl: ['alaltütlev', 'откуда? от кого?'],
 };
 export const VERB_INFO = {
-  da: ['da-инфинитив', 'после tahan, pean, saan, oskan'],
+  da: ['da-инфинитив', 'после tahan, saan, oskan, võin (но pean + ma-форма)'],
   pres1: ['1 л. ед. ч. настоящего (ma …)', 'я …'],
   pres3: ['3 л. ед. ч. настоящего (ta …)', 'он/она …'],
   past1: ['1 л. ед. ч. прошедшего (ma … eile)', 'я … (вчера)'],

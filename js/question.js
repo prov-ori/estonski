@@ -32,6 +32,7 @@ export function renderQuestion(q, opts = {}) {
   const finish = () => {
     if (locked) return;
     const g = api.grade();
+    if (!g.answered) { fb.className = 'feedback bad'; fb.textContent = 'Сначала заполните ответ.'; api.focus(); return; }
     api.lock();
     api.showResult(g);
     opts.onGraded && opts.onGraded(g);

@@ -2,7 +2,7 @@ import { h, content, config, shuffle, addChildren, setChildren } from '../util.j
 import { runTrainer, prioritize } from '../trainer.js';
 import { store } from '../store.js';
 
-const SIZES = [['10', '10 заданий'], ['20', '20 заданий'], ['all', 'Все задания темы']];
+const SIZES = [['10', '10 заданий'], ['20', '20 заданий'], ['50', '50 заданий'], ['all', 'Все задания темы']];
 
 export default {
   title: 'Грамматика',
@@ -11,7 +11,7 @@ export default {
     const topics = topicsCfg.grammar;
     const filter = args[0] || 'all';
     const all = data.items;
-    let size = '10';
+    let size = '10', level = 'all', type = 'all', onlyNew = false;
 
     const countFor = (id) => all.filter((q) => q.topic === id).length;
     const missed = () => all.filter((q) => { const a = store.getAnswer(q.id); return a && !a.ok; });
@@ -46,15 +46,24 @@ export default {
         setChildren(area, h('p', { class: 'notice' }, filter === 'mistakes' ? 'Ошибок пока нет — отлично! Потренируйтесь на любой теме.' : 'В этой теме пока нет заданий.'));
         return;
       }
-      const sel = h('select', { class: 'select', id: 'size', onchange: (e) => { size = e.target.value; } }, SIZES.map(([v, l]) => h('option', { value: v }, l)));
-      sel.value = size;
+      const mk = (id, label, opts, val, on) => {
+        const el = h('select', { class: 'select', id, onchange: (e) => on(e.target.value) }, opts.map(([v, l]) => h('option', { value: v }, l)));
+        el.value = val;
+        return h('div', { class: 'field' }, h('label', { for: id }, label), el);
+      };
       setChildren(area, h('div', { class: 'card' },
         h('p', null, `В выбранной теме заданий: ${pool.length}`),
-        h('div', { class: 'field' }, h('label', { for: 'size' }, 'Размер сессии'), sel),
+        h('div', { class: 'grid two' },
+          mk('size', 'Размер сессии', SIZES, size, (v) => { size = v; }),
+          mk('level', 'Уровень', [['all', 'Все уровни'], ['A2', 'A2'], ['B1', 'B1'], ['B2', 'B2']], level, (v) => { level = v; }),
+          mk('type', 'Тип задания', [['all', 'Все типы'], ['choice', 'Выбор ответа'], ['input', 'Ввод с клавиатуры']], type, (v) => { type = v; })),
+        h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: onlyNew, onchange: (e) => { onlyNew = e.target.checked; } }), h('span', null, 'Только новые задания (ещё не решались)')),
         h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать'))));
     }
     function start() {
-      let entries = prioritize(pool.map((q) => ({ q, module: 'grammar' })));
+      const picked = pool.filter((q) => (level === 'all' || q.level === level) && (type === 'all' || q.type === type) && (!onlyNew || !store.getAnswer(q.id)));
+      if (!picked.length) { setChildren(area, h('p', { class: 'notice' }, 'Нет заданий с такими настройками. Измените фильтры.'), h('div', { class: 'row' }, h('button', { class: 'btn', type: 'button', onclick: menu }, 'Назад к настройкам'))); return; }
+      let entries = prioritize(picked.map((q) => ({ q, module: 'grammar' })));
       if (size !== 'all') entries = entries.slice(0, Number(size));
       runTrainer(area, entries, { again: start, extraButtons: h('a', { class: 'btn', href: '#/grammar' }, 'Выбрать другую тему') });
     }

@@ -400,6 +400,270 @@
     "Mulle meeldib ..."
    ],
    "explanation_ru": "Послелоги места (peal, all, kõrval, taga). Описывайте предметы полными предложениями."
+  },
+  {
+   "id": "s-expand-5",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Школьная экскурсия",
+   "situation_ru": "Выберите место экскурсии и согласуйте поездку.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Kuhu me võiksime klassiga minna?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-expand-6",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Ужин с друзьями",
+   "situation_ru": "Спланируйте ужин: блюда, покупки и обязанности.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Mida me õhtusöögiks valmistame?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-expand-7",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Встреча в городе",
+   "situation_ru": "Назначьте встречу и объясните дорогу.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Kus ja mis kell me kohtume?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-expand-8",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Поход на выходных",
+   "situation_ru": "Выберите маршрут и вещи с учётом погоды.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Mida me matkale kaasa võtame?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-expand-9",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Переезд",
+   "situation_ru": "Обсудите помощь с переездом и транспорт.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Kuidas me saame asjad uude koju viia?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-expand-10",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Семейный праздник",
+   "situation_ru": "Организуйте праздник и распределите обязанности.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Kuidas me sünnipäeva tähistame?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-expand-11",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Спортивный клуб",
+   "situation_ru": "Выберите тренировку, время и бюджет.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Millist trenni sa tahaksid proovida?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
+  },
+  {
+   "id": "s-expand-12",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "title_ru": "Здоровый распорядок",
+   "situation_ru": "Договоритесь о прогулках и режиме сна.",
+   "role_a": {
+    "title_ru": "Организатор",
+    "prompts_et": [
+     "Kuidas me saaksime rohkem liikuda?",
+     "Millal sulle sobib?",
+     "Kui palju see maksab?",
+     "Mida me teeme, kui plaan muutub?"
+    ]
+   },
+   "role_b": {
+    "title_ru": "Партнёр",
+    "prompts_et": [
+     "Paku teine võimalus.",
+     "Selgita oma eelistust.",
+     "Küsi lisainfot.",
+     "Tee kokkuleppest kokkuvõte."
+    ]
+   },
+   "phrases_et": [
+    "Ma eelistan seda, sest ...",
+    "Kas sulle sobib ...?",
+    "Võiksime ka ...",
+    "Lepime siis kokku, et ..."
+   ],
+   "explanation_ru": "Предложите вариант, объясните причину, отреагируйте на возражение и подтвердите договорённость. Оцените выполнение задачи по чек-листу."
   }
  ],
  "checklist": [

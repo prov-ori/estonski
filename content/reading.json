@@ -786,6 +786,310 @@
      "answer": "lumememme"
     }
    ]
+  },
+  {
+   "id": "r-expand-2",
+   "topic": "school",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Raamatukogu",
+   "title_ru": "Библиотека",
+   "text_et": "Kooli raamatukogu on avatud esmaspäevast reedeni kell 9–16. Laupäeval ja pühapäeval on see suletud. Õpilane võib korraga koju võtta kolm raamatut. Raamatud tuleb tagasi tuua kahe nädala pärast. Kui raamatut on kauem vaja, tuleb kirjutada raamatukoguhoidjale.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-2-q1",
+     "type": "input",
+     "prompt_et": "Mitu raamatut võib korraga koju võtta?",
+     "answer": "kolm",
+     "explanation_ru": "В тексте указан ответ: kolm."
+    },
+    {
+     "id": "r-expand-2-q2",
+     "type": "tf",
+     "prompt_et": "Raamatukogu on pühapäeval avatud.",
+     "answer": false,
+     "explanation_ru": "Утверждение противоречит тексту. Перечитайте соответствующее предложение."
+    },
+    {
+     "id": "r-expand-2-q3",
+     "type": "choice",
+     "prompt_et": "Mis kell raamatukogu suletakse?",
+     "options": [
+      "kell 16",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: kell 16."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-3",
+   "topic": "city",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Bussireis",
+   "title_ru": "Поездка на автобусе",
+   "text_et": "Mari sõidab laupäeval Tartusse. Buss väljub Tallinnast kell üheksa ja jõuab Tartusse kell pool kaksteist. Mari ostis pileti internetist, sest nii oli odavam. Bussijaamas kohtub ta sõbra Annaga. Nad lähevad koos muuseumisse.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-3-q1",
+     "type": "input",
+     "prompt_et": "Kellega Mari bussijaamas kohtub?",
+     "answer": "Annaga",
+     "explanation_ru": "В тексте указан ответ: Annaga."
+    },
+    {
+     "id": "r-expand-3-q2",
+     "type": "tf",
+     "prompt_et": "Mari ostis pileti bussijuhilt.",
+     "answer": false,
+     "explanation_ru": "Утверждение противоречит тексту. Перечитайте соответствующее предложение."
+    },
+    {
+     "id": "r-expand-3-q3",
+     "type": "choice",
+     "prompt_et": "Kuhu Mari ja Anna lähevad?",
+     "options": [
+      "muuseumisse",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: muuseumisse."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-4",
+   "topic": "food",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Kohvik",
+   "title_ru": "Кафе",
+   "text_et": "Uus kohvik asub pargi kõrval. Lõunasööki pakutakse tööpäeviti kell 12–15. Supp maksab neli eurot ja salat kuus eurot. Vett saab tasuta. Kohvikus võib maksta nii kaardiga kui ka sularahas. Pühapäeval avatakse kohvik alles keskpäeval.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-4-q1",
+     "type": "input",
+     "prompt_et": "Mitu eurot maksab supp?",
+     "answer": "neli",
+     "explanation_ru": "В тексте указан ответ: neli."
+    },
+    {
+     "id": "r-expand-4-q2",
+     "type": "tf",
+     "prompt_et": "Vesi on kohvikus tasuta.",
+     "answer": true,
+     "explanation_ru": "Утверждение подтверждается текстом."
+    },
+    {
+     "id": "r-expand-4-q3",
+     "type": "choice",
+     "prompt_et": "Mitu eurot maksab salat?",
+     "options": [
+      "kuus",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: kuus."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-5",
+   "topic": "nature",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Matkapäev",
+   "title_ru": "Поход",
+   "text_et": "Meie klass läheb reedel metsa matkama. Koguneme kooli ees kell kaheksa. Kaasa tuleb võtta vesi, võileivad ja vihmajope. Matka juhib loodusõpetaja. Telefonid jäävad kotti, et saaksime linde kuulata. Tagasi kooli jõuame kell kolm.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-5-q1",
+     "type": "input",
+     "prompt_et": "Kes juhib matka?",
+     "answer": "loodusõpetaja",
+     "explanation_ru": "В тексте указан ответ: loodusõpetaja."
+    },
+    {
+     "id": "r-expand-5-q2",
+     "type": "tf",
+     "prompt_et": "Õpilased peavad vihmajope kaasa võtma.",
+     "answer": true,
+     "explanation_ru": "Утверждение подтверждается текстом."
+    },
+    {
+     "id": "r-expand-5-q3",
+     "type": "choice",
+     "prompt_et": "Mis kell õpilased kogunevad?",
+     "options": [
+      "kell kaheksa",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: kell kaheksa."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-6",
+   "topic": "freetime",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Ujumine",
+   "title_ru": "Плавание",
+   "text_et": "Jüri käib ujumas kaks korda nädalas: teisipäeval ja neljapäeval. Trenn algab kell viis ja kestab ühe tunni. Jüri läheb ujulasse rattaga. Talvel sõidab ta bussiga. Pärast trenni sööb ta kodus õhtust.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-6-q1",
+     "type": "input",
+     "prompt_et": "Mitu korda nädalas käib Jüri ujumas?",
+     "answer": "kaks",
+     "explanation_ru": "В тексте указан ответ: kaks."
+    },
+    {
+     "id": "r-expand-6-q2",
+     "type": "tf",
+     "prompt_et": "Talvel läheb Jüri ujulasse rattaga.",
+     "answer": false,
+     "explanation_ru": "Утверждение противоречит тексту. Перечитайте соответствующее предложение."
+    },
+    {
+     "id": "r-expand-6-q3",
+     "type": "choice",
+     "prompt_et": "Kui kaua kestab trenn?",
+     "options": [
+      "ühe tunni",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: ühe tunni."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-7",
+   "topic": "home",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Uus korter",
+   "title_ru": "Новая квартира",
+   "text_et": "Liisi pere kolis uude korterisse. Korteris on kolm tuba ja suur köök, aga rõdu ei ole. Liisi kool asub nüüd kümne minuti jalutuskäigu kaugusel. Varem pidi ta kooli sõitma bussiga. Kõige rohkem meeldib Liisile tema toa suur aken.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-7-q1",
+     "type": "input",
+     "prompt_et": "Mitu tuba on korteris?",
+     "answer": "kolm",
+     "explanation_ru": "В тексте указан ответ: kolm."
+    },
+    {
+     "id": "r-expand-7-q2",
+     "type": "tf",
+     "prompt_et": "Liis läheb nüüd kooli jalgsi.",
+     "answer": true,
+     "explanation_ru": "Утверждение подтверждается текстом."
+    },
+    {
+     "id": "r-expand-7-q3",
+     "type": "choice",
+     "prompt_et": "Mida korteris ei ole?",
+     "options": [
+      "rõdu",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: rõdu."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-8",
+   "topic": "family",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Sünnipäev",
+   "title_ru": "День рождения",
+   "text_et": "Vanaema sünnipäev on pühapäeval. Pere koguneb tema juurde kell kaks. Isa küpsetab kooki ja ema toob lilli. Lapsed teevad ise kaardi. Vanaema ei taha suuri kingitusi. Ta ütleb, et kõige parem kingitus on koos veedetud aeg.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-8-q1",
+     "type": "input",
+     "prompt_et": "Kes küpsetab kooki?",
+     "answer": "isa",
+     "explanation_ru": "В тексте указан ответ: isa."
+    },
+    {
+     "id": "r-expand-8-q2",
+     "type": "tf",
+     "prompt_et": "Lapsed ostavad kaardi poest.",
+     "answer": false,
+     "explanation_ru": "Утверждение противоречит тексту. Перечитайте соответствующее предложение."
+    },
+    {
+     "id": "r-expand-8-q3",
+     "type": "choice",
+     "prompt_et": "Mida ema toob?",
+     "options": [
+      "lilli",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: lilli."
+    }
+   ]
+  },
+  {
+   "id": "r-expand-9",
+   "topic": "health",
+   "level": "A2",
+   "status": "draft",
+   "title_et": "Arsti aeg",
+   "title_ru": "Запись к врачу",
+   "text_et": "Peeter helistas hommikul perearstikeskusse. Tal on juba kolm päeva kurk valus. Õde pakkus aega kolmapäevaks kell kümme. Peeter palus hilisemat aega, sest tal on hommikul kontrolltöö. Lõpuks sai ta aja samaks päevaks kell kaks.",
+   "explanation_ru": "Найдите в тексте точные сведения; не добавляйте предположений.",
+   "questions": [
+    {
+     "id": "r-expand-9-q1",
+     "type": "input",
+     "prompt_et": "Mis kell läheb Peeter arsti juurde?",
+     "answer": "kell kaks",
+     "explanation_ru": "В тексте указан ответ: kell kaks."
+    },
+    {
+     "id": "r-expand-9-q2",
+     "type": "tf",
+     "prompt_et": "Peeter sai aja kolmapäevaks.",
+     "answer": true,
+     "explanation_ru": "Утверждение подтверждается текстом."
+    },
+    {
+     "id": "r-expand-9-q3",
+     "type": "choice",
+     "prompt_et": "Miks Peeter palus hilisemat aega?",
+     "options": [
+      "sest tal on hommikul kontrolltöö",
+      "kell seitse",
+      "kolm päeva"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ответ прямо указан в тексте: sest tal on hommikul kontrolltöö."
+    }
+   ]
   }
  ]
 }

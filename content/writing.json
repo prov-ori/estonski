@@ -276,6 +276,190 @@
     "Поблагодарите."
    ],
    "explanation_ru": "Короткое объявление: заголовок, описание, контакты. Не нужны длинные вступления."
+  },
+  {
+   "id": "w-expand-5",
+   "topic": "school",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Школьная экскурсия",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Klassiekskursioon.",
+   "prompt_ru": "Выберите место экскурсии и согласуйте поездку. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Kuhu me võiksime klassiga minna?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-expand-6",
+   "topic": "food",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Ужин с друзьями",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Õhtusöök sõpradega.",
+   "prompt_ru": "Спланируйте ужин: блюда, покупки и обязанности. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Mida me õhtusöögiks valmistame?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-expand-7",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Встреча в городе",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Kohtumine linnas.",
+   "prompt_ru": "Назначьте встречу и объясните дорогу. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Kus ja mis kell me kohtume?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-expand-8",
+   "topic": "nature",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Поход на выходных",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Nädalavahetuse matk.",
+   "prompt_ru": "Выберите маршрут и вещи с учётом погоды. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Mida me matkale kaasa võtame?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-expand-9",
+   "topic": "home",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Переезд",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Kolimine.",
+   "prompt_ru": "Обсудите помощь с переездом и транспорт. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Kuidas me saame asjad uude koju viia?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-expand-10",
+   "topic": "family",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Семейный праздник",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Perepidu.",
+   "prompt_ru": "Организуйте праздник и распределите обязанности. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Kuidas me sünnipäeva tähistame?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-expand-11",
+   "topic": "freetime",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Спортивный клуб",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Spordiklubi.",
+   "prompt_ru": "Выберите тренировку, время и бюджет. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Millist trenni sa tahaksid proovida?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
+  },
+  {
+   "id": "w-expand-12",
+   "topic": "health",
+   "level": "B1",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Здоровый распорядок",
+   "prompt_et": "Kirjuta sõbrale e-kiri. Teema: Tervislik päevakava.",
+   "prompt_ru": "Договоритесь о прогулках и режиме сна. Напишите другу письмо: предложите план, обоснуйте выбор, уточните детали и попросите ответить.",
+   "content_points_et": [
+    "Kuidas me saaksime rohkem liikuda?",
+    "Selgita, miks sa seda pakud.",
+    "Täpsusta aega ja kohta.",
+    "Palu sõbral vastata."
+   ],
+   "content_points_ru": [
+    "Предложите конкретный план.",
+    "Объясните свой выбор.",
+    "Уточните время и место.",
+    "Попросите ответить."
+   ],
+   "explanation_ru": "Используйте обращение, связный основной текст и завершение. Проверьте порядок слов и формы глаголов. Автоматической оценки письма нет."
   }
  ],
  "connectors": [

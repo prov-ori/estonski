@@ -24,7 +24,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 (async () => {
   await new Promise((r) => server.listen(0, r));
   const base = `http://localhost:${server.address().port}/`;
-  const browser = await chromium.launch({ args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
+  const browser = await chromium.launch({ executablePath: process.env.BROWSER_EXECUTABLE || undefined, args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
 
   for (const [label, vp] of [['mobile', { width: 390, height: 800 }], ['desktop', { width: 1280, height: 900 }]]) {
     console.log(`\n=== ${label} ${vp.width}px ===`);
@@ -41,9 +41,9 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     const noOverflow = async (n) => ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `${n}: нет горизонтальной прокрутки`);
 
     // 1. все страницы открываются
+    const ids = (file, route) => JSON.parse(fs.readFileSync(path.join(ROOT, 'content', file + '.json'), 'utf8')).items.map((x) => `${route}/${x.id}`);
     const ALL = ['', 'daily', 'diagnostic', 'grammar', 'grammar/cases', 'grammar/mistakes', 'drills', 'drills/forms', 'drills/numbers', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'mistakes', 'reference', 'progress', 'about',
-      ...Array.from({ length: 8 }, (_, i) => `reading/r-0${i + 1}`), ...Array.from({ length: 8 }, (_, i) => `listening/l-0${i + 1}`),
-      ...Array.from({ length: 12 }, (_, i) => `writing/w-${String(i + 1).padStart(2, '0')}`), ...Array.from({ length: 12 }, (_, i) => `speaking/s-${String(i + 1).padStart(2, '0')}`)];
+      ...ids('reading', 'reading'), ...ids('listening', 'listening'), ...ids('writing', 'writing'), ...ids('speaking', 'speaking')];
     for (const r of ALL) {
       await go(r);
       ok((await page.locator('footer .disclaimer').innerText()).startsWith('Неофициальный тренажёр. Не связан с HARNO'), `страница #/${r}: футер на месте`);
@@ -67,6 +67,17 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     await page.reload(); await page.waitForSelector('main h1');
     await go('progress');
     ok((await page.locator('main').innerText()).includes('Падежи'), 'прогресс: тема «Падежи» после перезагрузки');
+
+    // 2b. фильтры грамматики и пустой ответ
+    await go('grammar');
+    await page.locator('#type').selectOption('input');
+    await page.locator('#size').selectOption('20');
+    await page.getByRole('button', { name: 'Начать' }).click();
+    ok((await page.locator('main').innerText()).includes('Задание 1 из 20'), 'грамматика: размер сессии применяется');
+    ok(await page.locator('input.text-input').count() === 1, 'грамматика: фильтр «ввод с клавиатуры» даёт задания с вводом');
+    await page.getByRole('button', { name: 'Проверить', exact: true }).click();
+    ok((await page.locator('.feedback').innerText()).includes('Сначала заполните'), 'пустой ответ не засчитывается и не блокирует вопрос');
+    ok(await page.locator('.text-input').isEditable(), 'после пустого ответа поле остаётся доступным для ввода');
 
     // 3. ввод õ ä ö ü кнопками
     await go('grammar/cases');

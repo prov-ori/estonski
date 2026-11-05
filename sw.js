@@ -1,5 +1,5 @@
 // Файл создан tools/build-sw.js — не редактируйте вручную.
-const CACHE = 'estonski-2ce4d56e08';
+const CACHE = 'estonski-74f2d83a27';
 const FILES = [
  "./",
  "config/exam-format.json",

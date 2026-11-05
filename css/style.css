@@ -277,3 +277,5 @@ html[data-contrast="high"] .btn, html[data-contrast="high"] .opt, html[data-cont
 .examples li { margin: 6px 0; }
 td.wrong { color: var(--bad); } td.right { color: var(--ok); font-weight: 600; }
 @media print { .pane-left { position: static !important; max-height: none !important; overflow: visible !important; } .split { display: block; } .plan progress { display: none; } }
+
+.audio-pos { width: 100%; max-width: 360px; flex-basis: 100%; }

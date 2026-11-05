@@ -455,6 +455,44 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
     await go('lessons/ls-20');
     ok(await page.locator('table.table td.wrong').count() >= 2, 'новый урок: таблица типичных ошибок');
 
+    // 10n. запись аудирования: работает без голосов в системе; запасной переход, если файл не загрузился
+    const wavBuf = (sec) => { const sr = 8000, n = sr * sec; const b = Buffer.alloc(44 + n * 2); b.write('RIFF', 0); b.writeUInt32LE(36 + n * 2, 4); b.write('WAVEfmt ', 8); b.writeUInt32LE(16, 16); b.writeUInt16LE(1, 20); b.writeUInt16LE(1, 22); b.writeUInt32LE(sr, 24); b.writeUInt32LE(sr * 2, 28); b.writeUInt16LE(2, 32); b.writeUInt16LE(16, 34); b.write('data', 36); b.writeUInt32LE(n * 2, 40); for (let i = 0; i < n; i++) b.writeInt16LE(Math.round(8000 * Math.sin(i / 8)), 44 + i * 2); return b; };
+    const audioCase = async ({ fileOk, voices = [], exam = false }, check) => {
+      const c = await browser.newContext({ viewport: vp });
+      await c.addInitScript(({ vs, exam }) => {
+        const fake = vs.map((v) => ({ name: v.name, lang: v.lang, voiceURI: v.name, default: false, localService: true }));
+        Object.defineProperty(window, 'speechSynthesis', { value: { getVoices: () => fake, speak() {}, cancel() {}, addEventListener() {}, removeEventListener() {}, speaking: false }, configurable: true });
+        if (exam) localStorage.setItem('estonski.prefs', JSON.stringify({ exam: 'on' }));
+      }, { vs: voices, exam });
+      await c.route('**/config/audio.json', (r) => r.fulfill({ contentType: 'application/json', body: JSON.stringify({ engine: 'test', items: { 'l-01': { file: 'audio/l-01.mp3', hash: 'x', seconds: 1 } } }) }));
+      await c.route('**/audio/l-01.mp3', (r) => (fileOk ? r.fulfill({ contentType: 'audio/wav', body: wavBuf(1) }) : r.fulfill({ status: 404, body: 'nf' })));
+      const p = await c.newPage();
+      await p.goto(base + '#/listening/l-01'); await p.waitForSelector('.listening');
+      await check(p);
+      await c.close();
+    };
+    await audioCase({ fileOk: true }, async (p) => {
+      await p.waitForSelector('text=Запись тренажёра');
+      ok(true, 'запись: без голосов в системе доступна запись тренажёра');
+      await p.getByRole('button', { name: /Слушать/ }).click();
+      await p.waitForFunction(() => /Готово/.test(document.querySelector('.listening').innerText), null, { timeout: 8000 });
+      ok(true, 'запись: воспроизводится до конца');
+      ok((await p.locator('.listening').innerText()).includes('Прослушиваний: 1'), 'запись: счётчик прослушиваний');
+    });
+    await audioCase({ fileOk: false, voices: [{ name: 'Satu', lang: 'fi-FI' }] }, async (p) => {
+      await p.waitForFunction(() => /финский/.test(document.querySelector('.listening').innerText), null, { timeout: 8000 });
+      ok(true, 'запись: если файл не загрузился, включается голос устройства');
+    });
+    await audioCase({ fileOk: true, exam: true }, async (p) => {
+      await p.waitForSelector('text=Запись тренажёра');
+      for (let k = 0; k < 2; k++) {
+        await p.getByRole('button', { name: /Слушать/ }).click();
+        await p.waitForFunction((n) => new RegExp('Прослушиваний: ' + n).test(document.querySelector('.listening').innerText), k + 1);
+        await p.waitForFunction(() => /Готово|Лимит/.test(document.querySelector('.listening').innerText), null, { timeout: 8000 });
+      }
+      ok(await p.getByRole('button', { name: /Слушать/ }).isDisabled(), 'запись: режим экзамена ограничивает двумя прослушиваниями');
+    });
+
     // 11. клавиатура: первый Tab — ссылка «К содержимому»
     await go('');
     await page.reload(); await page.waitForSelector('main h1');

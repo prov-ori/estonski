@@ -196,6 +196,25 @@ for (const p of (data.pronunciation?.items || [])) {
   const ok = { letter: () => p.letter && p.words?.length >= 3 && p.words.every((w) => w.et && w.ru && !hasCyr(w.et)), stress: () => p.words?.length, length: () => p.pairs?.length && p.pairs.every((x) => x.words?.length >= 2 && x.words.every((w) => w.et && w.ru && !hasCyr(w.et))), phrases: () => p.phrases?.length >= 5 && p.phrases.every((f) => f.et && f.ru && !hasCyr(f.et)) }[p.kind];
   need(ok && ok(), 'content/pronunciation.json', p.id, 'kind должен быть letter | stress | length | phrases с корректными данными');
 }
+// аудиозаписи для аудирования (config/audio.json создаёт tools/gen-audio.js)
+{
+  const { scriptHash } = require('./tools/gen-audio.js');
+  const audio = readJSON('config/audio.json');
+  const listening = data.listening?.items || [];
+  const idxItems = (audio && audio.items) || {};
+  let missing = 0;
+  for (const it of listening) {
+    const a = idxItems[it.id];
+    if (!a) { missing++; continue; }
+    need(a.file && fs.existsSync(path.join(ROOT, a.file)), 'config/audio.json', it.id, `файл записи «${a.file}» не найден`);
+    need(a.hash === scriptHash(it.script_et), 'config/audio.json', it.id, 'запись устарела: текст задания изменился — запустите node tools/gen-audio.js');
+  }
+  for (const id of Object.keys(idxItems)) need(listening.some((x) => x.id === id), 'config/audio.json', id, 'запись для несуществующего задания');
+  if (missing) {
+    const msg = `нет аудиозаписи у ${missing} из ${listening.length} заданий аудирования (сайт использует голос устройства; создайте записи: node tools/gen-audio.js)`;
+    if (process.argv.includes('--require-audio')) errors.push('config/audio.json: ' + msg); else warns.push('config/audio.json: ' + msg);
+  }
+}
 // fixes и lessons
 for (const x of (data.fixes?.items || [])) {
   need(x.wrong_et && x.answer_et && x.wrong_et !== x.answer_et, 'content/fixes.json', x.id, 'wrong_et и answer_et обязательны и должны различаться');

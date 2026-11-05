@@ -1,0 +1,41 @@
+name: audio
+# Создаёт аудиозаписи для «Аудирования» (espeak-ng + ffmpeg) и коммитит их в ту же ветку.
+# Запускается вручную (Actions → audio → Run workflow) и при изменении текстов аудирования.
+on:
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'Пересоздать все записи (иначе только отсутствующие и устаревшие)'
+        type: boolean
+        default: false
+  push:
+    paths:
+      - 'content/listening.json'
+      - 'tools/gen-audio.js'
+permissions:
+  contents: write
+concurrency:
+  group: audio-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Установить espeak-ng и ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y espeak-ng ffmpeg
+      - name: Создать записи
+        run: node tools/gen-audio.js ${{ inputs.all && '--all' || '' }}
+      - name: Обновить индексы (series, sw.js)
+        run: npm run build
+      - name: Проверить, что у каждого задания есть актуальная запись
+        run: node validate.js --require-audio
+      - name: Закоммитить записи
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio config/audio.json sw.js
+          if git diff --cached --quiet; then echo "Изменений нет"; else git commit -m "Update listening audio recordings (espeak-ng)"; git push; fi

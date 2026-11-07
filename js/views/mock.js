@@ -141,7 +141,7 @@ export default {
           : h('p', { class: 'notice' }, 'Автоматически проверяемые части не выбирались — процента нет.'),
         h('p', { class: 'notice warn' }, 'Цифра — ориентир только по автоматически проверяемым частям. Письмо и говорение в процент не входят. Порог взят из config/exam-format.json (verified: ' + fmt.verified + ') — это не предсказание результата и не оценка экзамена.'),
         rows.length > 0 && h('h2', null, 'По частям'),
-        h('ul', null, rows.map(({ p, r }) => h('li', null, `${p.title_ru}: ${r.got} из ${r.max}`, r.byTimer ? ' (время вышло)' : '', r.fallback ? ' — голоса нет, текст был показан, часть засчитана как чтение' : ''))),
+        h('ul', null, rows.map(({ p, r }) => h('li', null, `${p.title_ru}: ${r.got} из ${r.max}`, r.byTimer ? ' (время вышло)' : '', r.fallback ? ' — запись не прослушана или открыт текст; это не проверка аудирования' : ''))),
         writeDone && h('div', null, h('h2', null, `${writeDone.title_ru} (самооценка)`),
           done.writing && done.writing.text
             ? h('div', { class: 'card' }, h('p', { class: 'muted' }, `Ваш текст: ${countWords(done.writing.text)} слов.`), h('p', { lang: 'et', class: 'preline' }, done.writing.text))

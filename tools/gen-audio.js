@@ -51,10 +51,10 @@ if (!/\bet\b/.test(voices)) { console.error('В espeak-ng нет эстонск�
 const args = process.argv.slice(2);
 const only = args.includes('--only') ? args[args.indexOf('--only') + 1].split(',') : null;
 const all = args.includes('--all');
-const items = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'listening.json'), 'utf8')).items;
+const items = [...JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'listening.json'), 'utf8')).items, ...JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'mock-exam.json'), 'utf8')).items.map(x=>x.parts.listening).filter(x=>x.script_et)];
 const idx = fs.existsSync(IDX) ? JSON.parse(fs.readFileSync(IDX, 'utf8')) : { _comment: '', engine: 'espeak-ng', items: {} };
-idx._comment = 'Создано tools/gen-audio.js — не редактируйте вручную. hash — sha1 реплик задания.';
-idx.engine = 'espeak-ng';
+idx._comment = 'Аудиозаписи: tools/gen-neural-audio.py или tools/gen-audio.js. hash — sha1 реплик задания.';
+idx.engine = 'mixed (see each entry)';
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 let made = 0;
@@ -63,6 +63,10 @@ for (const it of items) {
   const hash = scriptHash(it.script_et);
   const file = path.join('audio', `${it.id}.mp3`);
   const cur = idx.items[it.id];
+  if (cur?.engine === 'neural') {
+    if (cur.hash !== hash) { console.error(it.id + ': нейрозапись устарела; запустите python tools/gen-neural-audio.py'); process.exitCode = 1; }
+    continue;
+  }
   if (!all && cur && cur.hash === hash && fs.existsSync(path.join(ROOT, file))) continue;
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'estaudio-'));
   const wavs = it.script_et.map((l, i) => {
@@ -74,7 +78,7 @@ for (const it of items) {
   const filt = wavs.map((_, i) => `[${i}:a]aresample=22050,apad=pad_dur=${PAUSE}[a${i}]`).join(';') + ';' + wavs.map((_, i) => `[a${i}]`).join('') + `concat=n=${wavs.length}:v=0:a=1[out]`;
   run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', ...inputs, '-filter_complex', filt, '-map', '[out]', '-ac', '1', '-c:a', 'libmp3lame', '-b:a', '56k', path.join(ROOT, file)]);
   const secs = parseFloat(run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', path.join(ROOT, file)]));
-  idx.items[it.id] = { file: file.split(path.sep).join('/'), hash, seconds: Math.round(secs * 10) / 10 };
+  idx.items[it.id] = { engine: 'espeak-ng', file: file.split(path.sep).join('/'), hash, seconds: Math.round(secs * 10) / 10 };
   fs.rmSync(tmp, { recursive: true, force: true });
   made++;
   console.log(`✓ ${it.id}: ${idx.items[it.id].seconds} с`);
@@ -82,5 +86,6 @@ for (const it of items) {
 // удаляем записи заданий, которых больше нет
 const ids = new Set(items.map((i) => i.id));
 for (const id of Object.keys(idx.items)) if (!ids.has(id)) { try { fs.unlinkSync(path.join(ROOT, idx.items[id].file)); } catch { /* ignore */ } delete idx.items[id]; }
-fs.writeFileSync(IDX, JSON.stringify(idx, null, 1) + '\n');
+idx.engine = Object.values(idx.items).every(x=>x.engine==='neural') ? 'neural' : 'mixed (see each entry)';
+fs.writeFileSync(IDX, JSON.stringify(idx, null, 2) + '\n');
 console.log(`Готово: создано ${made}, всего записей ${Object.keys(idx.items).length} из ${items.length}.`);

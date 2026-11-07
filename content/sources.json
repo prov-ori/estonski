@@ -1,0 +1,1513 @@
+{
+  "_comment": "External originals linked, not reproduced. Independent levelled study tasks. Checked 2026-11-05.",
+  "items": [
+    {
+      "id": "source-bike-B1",
+      "topic": "city",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Велосипед и шлем: понять объявление",
+      "publisher": "Tallinn",
+      "kind": "Новости",
+      "published_on": "2025-06-03",
+      "url": "https://www.tallinn.ee/et/haridus/uudis/tallinn-kutsub-lapsevanemaid-taotlema-jalgratta-ja-kiivritoetust",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kellele on teade suunatud?",
+          "rubric_ru": "Назовите адресата и возраст ребёнка по публикации 2025 года. Не выдавайте старые условия за действующие сегодня."
+        },
+        {
+          "prompt_et": "Millised tingimused puudutavad juhiluba ja ostuarvet?",
+          "rubric_ru": "Разделите два условия и укажите, к каким годам относится каждое."
+        },
+        {
+          "prompt_et": "Miks ei saa toetuse suurust pidada jalgratta hinnaks?",
+          "rubric_ru": "Различайте максимальную поддержку и полную цену покупки."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-bike-B2",
+      "topic": "city",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Велосипед и шлем: понять объявление",
+      "publisher": "Tallinn",
+      "kind": "Новости",
+      "published_on": "2025-06-03",
+      "url": "https://www.tallinn.ee/et/haridus/uudis/tallinn-kutsub-lapsevanemaid-taotlema-jalgratta-ja-kiivritoetust",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kellele on teade suunatud?",
+          "rubric_ru": "Назовите адресата и возраст ребёнка по публикации 2025 года. Не выдавайте старые условия за действующие сегодня."
+        },
+        {
+          "prompt_et": "Millised tingimused puudutavad juhiluba ja ostuarvet?",
+          "rubric_ru": "Разделите два условия и укажите, к каким годам относится каждое."
+        },
+        {
+          "prompt_et": "Miks ei saa toetuse suurust pidada jalgratta hinnaks?",
+          "rubric_ru": "Различайте максимальную поддержку и полную цену покупки."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-bike-C1",
+      "topic": "city",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Велосипед и шлем: понять объявление",
+      "publisher": "Tallinn",
+      "kind": "Новости",
+      "published_on": "2025-06-03",
+      "url": "https://www.tallinn.ee/et/haridus/uudis/tallinn-kutsub-lapsevanemaid-taotlema-jalgratta-ja-kiivritoetust",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kellele on teade suunatud?",
+          "rubric_ru": "Назовите адресата и возраст ребёнка по публикации 2025 года. Не выдавайте старые условия за действующие сегодня."
+        },
+        {
+          "prompt_et": "Millised tingimused puudutavad juhiluba ja ostuarvet?",
+          "rubric_ru": "Разделите два условия и укажите, к каким годам относится каждое."
+        },
+        {
+          "prompt_et": "Miks ei saa toetuse suurust pidada jalgratta hinnaks?",
+          "rubric_ru": "Различайте максимальную поддержку и полную цену покупки."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "source-library-news-B1",
+      "topic": "freetime",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Библиотеки: проверить выводы из новости",
+      "publisher": "ERR · редактор Kaspar Viilup",
+      "kind": "Новости",
+      "published_on": "2026",
+      "url": "https://kultuur.err.ee/1610031493/moodunud-aastal-kasvas-rahvaraamatukogude-laenutuste-arv-117-000-vorra",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Milliseid aastaid võrreldakse?",
+          "rubric_ru": "Укажите базовый и отчётный годы; различайте дату новости и год данных."
+        },
+        {
+          "prompt_et": "Kas ürituste ja nende osalejate arv muutus samas suunas?",
+          "rubric_ru": "Проверьте оба показателя: их изменение не обязательно совпадает."
+        },
+        {
+          "prompt_et": "Miks ei tähenda laenutus tingimata üht lugejat?",
+          "rubric_ru": "Объясните различие единиц подсчёта, не придумывая число уникальных людей."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-library-news-B2",
+      "topic": "freetime",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Библиотеки: проверить выводы из новости",
+      "publisher": "ERR · редактор Kaspar Viilup",
+      "kind": "Новости",
+      "published_on": "2026",
+      "url": "https://kultuur.err.ee/1610031493/moodunud-aastal-kasvas-rahvaraamatukogude-laenutuste-arv-117-000-vorra",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Milliseid aastaid võrreldakse?",
+          "rubric_ru": "Укажите базовый и отчётный годы; различайте дату новости и год данных."
+        },
+        {
+          "prompt_et": "Kas ürituste ja nende osalejate arv muutus samas suunas?",
+          "rubric_ru": "Проверьте оба показателя: их изменение не обязательно совпадает."
+        },
+        {
+          "prompt_et": "Miks ei tähenda laenutus tingimata üht lugejat?",
+          "rubric_ru": "Объясните различие единиц подсчёта, не придумывая число уникальных людей."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-library-news-C1",
+      "topic": "freetime",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Библиотеки: проверить выводы из новости",
+      "publisher": "ERR · редактор Kaspar Viilup",
+      "kind": "Новости",
+      "published_on": "2026",
+      "url": "https://kultuur.err.ee/1610031493/moodunud-aastal-kasvas-rahvaraamatukogude-laenutuste-arv-117-000-vorra",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Milliseid aastaid võrreldakse?",
+          "rubric_ru": "Укажите базовый и отчётный годы; различайте дату новости и год данных."
+        },
+        {
+          "prompt_et": "Kas ürituste ja nende osalejate arv muutus samas suunas?",
+          "rubric_ru": "Проверьте оба показателя: их изменение не обязательно совпадает."
+        },
+        {
+          "prompt_et": "Miks ei tähenda laenutus tingimata üht lugejat?",
+          "rubric_ru": "Объясните различие единиц подсчёта, не придумывая число уникальных людей."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "source-reading-blog-B1",
+      "topic": "family",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Чтение вслух: рекомендации и аргументы",
+      "publisher": "Piret Kaminskas · Harno Rajaleidja",
+      "kind": "Блог",
+      "published_on": "2024-12-09",
+      "url": "https://blogi.harno.ee/miks-lapsele-ettelugemine-on-midagi-olulisemat-kui-lihtsalt-tore-traditsioon/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Millist rolli omistatakse ühisele arutelule?",
+          "rubric_ru": "Передайте мысль своими словами и отделите рекомендацию автора от собственного опыта."
+        },
+        {
+          "prompt_et": "Kuidas seostab autor eeskuju ja lugemisharjumust?",
+          "rubric_ru": "Найдите причинную связь и не превращайте её в безусловную гарантию результата."
+        },
+        {
+          "prompt_et": "Kas ettelugemine peaks iseseisva lugemise asendama?",
+          "rubric_ru": "Уточните отношение двух видов чтения по оригиналу."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-reading-blog-B2",
+      "topic": "family",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Чтение вслух: рекомендации и аргументы",
+      "publisher": "Piret Kaminskas · Harno Rajaleidja",
+      "kind": "Блог",
+      "published_on": "2024-12-09",
+      "url": "https://blogi.harno.ee/miks-lapsele-ettelugemine-on-midagi-olulisemat-kui-lihtsalt-tore-traditsioon/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Millist rolli omistatakse ühisele arutelule?",
+          "rubric_ru": "Передайте мысль своими словами и отделите рекомендацию автора от собственного опыта."
+        },
+        {
+          "prompt_et": "Kuidas seostab autor eeskuju ja lugemisharjumust?",
+          "rubric_ru": "Найдите причинную связь и не превращайте её в безусловную гарантию результата."
+        },
+        {
+          "prompt_et": "Kas ettelugemine peaks iseseisva lugemise asendama?",
+          "rubric_ru": "Уточните отношение двух видов чтения по оригиналу."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-reading-blog-C1",
+      "topic": "family",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Чтение вслух: рекомендации и аргументы",
+      "publisher": "Piret Kaminskas · Harno Rajaleidja",
+      "kind": "Блог",
+      "published_on": "2024-12-09",
+      "url": "https://blogi.harno.ee/miks-lapsele-ettelugemine-on-midagi-olulisemat-kui-lihtsalt-tore-traditsioon/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Millist rolli omistatakse ühisele arutelule?",
+          "rubric_ru": "Передайте мысль своими словами и отделите рекомендацию автора от собственного опыта."
+        },
+        {
+          "prompt_et": "Kuidas seostab autor eeskuju ja lugemisharjumust?",
+          "rubric_ru": "Найдите причинную связь и не превращайте её в безусловную гарантию результата."
+        },
+        {
+          "prompt_et": "Kas ettelugemine peaks iseseisva lugemise asendama?",
+          "rubric_ru": "Уточните отношение двух видов чтения по оригиналу."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "source-reading-interview-B1",
+      "topic": "freetime",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Интервью: личное чтение и общая культура",
+      "publisher": "Signe Heiberg · ERR; интервью Marju Lauristin",
+      "kind": "Интервью",
+      "published_on": "2026",
+      "url": "https://kultuur.err.ee/1609970045/lauristin-raamatukoguhoidja-on-oluline-solmpunkt-raamatuilma-ja-lugeja-vahel",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kuidas seostub isiklik lugemiskogemus ühise kultuuriruumiga?",
+          "rubric_ru": "Покажите переход между индивидуальным и общественным уровнем рассуждения."
+        },
+        {
+          "prompt_et": "Mis roll on raamatukoguhoidjal peale laenutamise?",
+          "rubric_ru": "Переформулируйте роль специалиста без длинной цитаты."
+        },
+        {
+          "prompt_et": "Kuidas eristad intervjueerija küsimust vastaja seisukohast?",
+          "rubric_ru": "Определите, кому принадлежит выбранная мысль; вопрос не равен утверждению отвечающего."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-reading-interview-B2",
+      "topic": "freetime",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Интервью: личное чтение и общая культура",
+      "publisher": "Signe Heiberg · ERR; интервью Marju Lauristin",
+      "kind": "Интервью",
+      "published_on": "2026",
+      "url": "https://kultuur.err.ee/1609970045/lauristin-raamatukoguhoidja-on-oluline-solmpunkt-raamatuilma-ja-lugeja-vahel",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kuidas seostub isiklik lugemiskogemus ühise kultuuriruumiga?",
+          "rubric_ru": "Покажите переход между индивидуальным и общественным уровнем рассуждения."
+        },
+        {
+          "prompt_et": "Mis roll on raamatukoguhoidjal peale laenutamise?",
+          "rubric_ru": "Переформулируйте роль специалиста без длинной цитаты."
+        },
+        {
+          "prompt_et": "Kuidas eristad intervjueerija küsimust vastaja seisukohast?",
+          "rubric_ru": "Определите, кому принадлежит выбранная мысль; вопрос не равен утверждению отвечающего."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-reading-interview-C1",
+      "topic": "freetime",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Интервью: личное чтение и общая культура",
+      "publisher": "Signe Heiberg · ERR; интервью Marju Lauristin",
+      "kind": "Интервью",
+      "published_on": "2026",
+      "url": "https://kultuur.err.ee/1609970045/lauristin-raamatukoguhoidja-on-oluline-solmpunkt-raamatuilma-ja-lugeja-vahel",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kuidas seostub isiklik lugemiskogemus ühise kultuuriruumiga?",
+          "rubric_ru": "Покажите переход между индивидуальным и общественным уровнем рассуждения."
+        },
+        {
+          "prompt_et": "Mis roll on raamatukoguhoidjal peale laenutamise?",
+          "rubric_ru": "Переформулируйте роль специалиста без длинной цитаты."
+        },
+        {
+          "prompt_et": "Kuidas eristad intervjueerija küsimust vastaja seisukohast?",
+          "rubric_ru": "Определите, кому принадлежит выбранная мысль; вопрос не равен утверждению отвечающего."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-guidance-B1",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Текстовый ИИ: помощь и самостоятельный вклад",
+      "publisher": "TÜ Pärnu kolledž",
+      "kind": "Университетская публикация",
+      "published_on": "2026-09-17",
+      "url": "https://parnu.ut.ee/et/uudis/uliopilastoode-juhendis-tapsustusid-tehisintellekti-kasutamise-reeglid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Mida peab üliõpilane suutma kaitsmisel põhjendada?",
+          "rubric_ru": "Свяжите ответственность с решениями автора работы."
+        },
+        {
+          "prompt_et": "Mille poolest erineb keeleline toimetamine järelduste delegeerimisest?",
+          "rubric_ru": "Сравните помощь с выражением мысли и передачу содержательного решения."
+        },
+        {
+          "prompt_et": "Miks peab õppija ise allikatega tutvuma?",
+          "rubric_ru": "Объясните роль проверки и понимания; ответ не должен сводиться к наличию ссылки."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-guidance-B2",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Текстовый ИИ: помощь и самостоятельный вклад",
+      "publisher": "TÜ Pärnu kolledž",
+      "kind": "Университетская публикация",
+      "published_on": "2026-09-17",
+      "url": "https://parnu.ut.ee/et/uudis/uliopilastoode-juhendis-tapsustusid-tehisintellekti-kasutamise-reeglid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Mida peab üliõpilane suutma kaitsmisel põhjendada?",
+          "rubric_ru": "Свяжите ответственность с решениями автора работы."
+        },
+        {
+          "prompt_et": "Mille poolest erineb keeleline toimetamine järelduste delegeerimisest?",
+          "rubric_ru": "Сравните помощь с выражением мысли и передачу содержательного решения."
+        },
+        {
+          "prompt_et": "Miks peab õppija ise allikatega tutvuma?",
+          "rubric_ru": "Объясните роль проверки и понимания; ответ не должен сводиться к наличию ссылки."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-guidance-C1",
+      "topic": "school",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Текстовый ИИ: помощь и самостоятельный вклад",
+      "publisher": "TÜ Pärnu kolledž",
+      "kind": "Университетская публикация",
+      "published_on": "2026-09-17",
+      "url": "https://parnu.ut.ee/et/uudis/uliopilastoode-juhendis-tapsustusid-tehisintellekti-kasutamise-reeglid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Mida peab üliõpilane suutma kaitsmisel põhjendada?",
+          "rubric_ru": "Свяжите ответственность с решениями автора работы."
+        },
+        {
+          "prompt_et": "Mille poolest erineb keeleline toimetamine järelduste delegeerimisest?",
+          "rubric_ru": "Сравните помощь с выражением мысли и передачу содержательного решения."
+        },
+        {
+          "prompt_et": "Miks peab õppija ise allikatega tutvuma?",
+          "rubric_ru": "Объясните роль проверки и понимания; ответ не должен сводиться к наличию ссылки."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "source-statistics-B1",
+      "topic": "freetime",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Книжная статистика: прочитать таблицу",
+      "publisher": "Statistikaamet",
+      "kind": "Статистика",
+      "published_on": "2026-05-26",
+      "url": "https://www.stat.ee/et/avasta-statistikat/valdkonnad/kultuur/raamatukogud-ja-raamatud",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Millised aastad ja ühikud on näitajate juures?",
+          "rubric_ru": "Проверьте подписи каждого показателя: годы и единицы могут различаться."
+        },
+        {
+          "prompt_et": "Võrdle tabelis kahe järjestikuse aasta trükitud ja e-raamatute nimetusi.",
+          "rubric_ru": "Назовите выбранные годы и два изменения; не путайте названия и экземпляры."
+        },
+        {
+          "prompt_et": "Miks ei tõesta väljaannete arv iseenesest inimeste lugemissagedust?",
+          "rubric_ru": "Различайте предложение книг и поведение читателей."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-statistics-B2",
+      "topic": "freetime",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Книжная статистика: прочитать таблицу",
+      "publisher": "Statistikaamet",
+      "kind": "Статистика",
+      "published_on": "2026-05-26",
+      "url": "https://www.stat.ee/et/avasta-statistikat/valdkonnad/kultuur/raamatukogud-ja-raamatud",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Millised aastad ja ühikud on näitajate juures?",
+          "rubric_ru": "Проверьте подписи каждого показателя: годы и единицы могут различаться."
+        },
+        {
+          "prompt_et": "Võrdle tabelis kahe järjestikuse aasta trükitud ja e-raamatute nimetusi.",
+          "rubric_ru": "Назовите выбранные годы и два изменения; не путайте названия и экземпляры."
+        },
+        {
+          "prompt_et": "Miks ei tõesta väljaannete arv iseenesest inimeste lugemissagedust?",
+          "rubric_ru": "Различайте предложение книг и поведение читателей."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-statistics-C1",
+      "topic": "freetime",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Книжная статистика: прочитать таблицу",
+      "publisher": "Statistikaamet",
+      "kind": "Статистика",
+      "published_on": "2026-05-26",
+      "url": "https://www.stat.ee/et/avasta-statistikat/valdkonnad/kultuur/raamatukogud-ja-raamatud",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Millised aastad ja ühikud on näitajate juures?",
+          "rubric_ru": "Проверьте подписи каждого показателя: годы и единицы могут различаться."
+        },
+        {
+          "prompt_et": "Võrdle tabelis kahe järjestikuse aasta trükitud ja e-raamatute nimetusi.",
+          "rubric_ru": "Назовите выбранные годы и два изменения; не путайте названия и экземпляры."
+        },
+        {
+          "prompt_et": "Miks ei tõesta väljaannete arv iseenesest inimeste lugemissagedust?",
+          "rubric_ru": "Различайте предложение книг и поведение читателей."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "harno-B1-reading",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Harno: Чтение B1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B1-taseme eksam, затем Lugemine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        }
+      ]
+    },
+    {
+      "id": "harno-B1-listening",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Harno: Аудирование B1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B1-taseme eksam, затем Kuulamine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        }
+      ]
+    },
+    {
+      "id": "harno-B1-writing",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Harno: Письмо B1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B1-taseme eksam, затем Kirjutamine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        }
+      ]
+    },
+    {
+      "id": "harno-B1-speaking",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Harno: Говорение B1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B1-taseme eksam, затем Rääkimine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        }
+      ]
+    },
+    {
+      "id": "harno-B2-reading",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Harno: Чтение B2",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B2-taseme eksam, затем Lugemine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        }
+      ]
+    },
+    {
+      "id": "harno-B2-listening",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Harno: Аудирование B2",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B2-taseme eksam, затем Kuulamine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        }
+      ]
+    },
+    {
+      "id": "harno-B2-writing",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Harno: Письмо B2",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B2-taseme eksam, затем Kirjutamine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        }
+      ]
+    },
+    {
+      "id": "harno-B2-speaking",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Harno: Говорение B2",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele B2-taseme eksam, затем Rääkimine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        }
+      ]
+    },
+    {
+      "id": "harno-C1-reading",
+      "topic": "school",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Harno: Чтение C1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele C1-taseme eksam, затем Lugemine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        }
+      ]
+    },
+    {
+      "id": "harno-C1-listening",
+      "topic": "school",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Harno: Аудирование C1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele C1-taseme eksam, затем Kuulamine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        }
+      ]
+    },
+    {
+      "id": "harno-C1-writing",
+      "topic": "school",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Harno: Письмо C1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele C1-taseme eksam, затем Kirjutamine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        }
+      ]
+    },
+    {
+      "id": "harno-C1-speaking",
+      "topic": "school",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Harno: Говорение C1",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Официальные образцы",
+      "url": "https://harno.ee/eesti-keele-tasemeeksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "На странице Harno откройте раздел Eesti keele C1-taseme eksam, затем Rääkimine. Выберите образец по ссылке в этом разделе. Для аудирования откройте также соответствующий näidishelifail. Год реального экзамена для этих образцов не подтверждён.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-course-B1",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Учебное пособие: осмысленное использование ИИ",
+      "publisher": "Tartu Ülikool",
+      "kind": "Учебное пособие",
+      "published_on": "2024",
+      "url": "https://sisu.ut.ee/ti/oppematerjali-avaleht/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kuidas põhjendavad autorid õppematerjali ajakohasuse piire?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Miks eristatakse üldisi põhimõtteid kiiresti muutuvatest tööriistadest?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Mida tähendab sisuliselt põhjendatud kasutamine selles sissejuhatuses?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-course-B2",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Учебное пособие: осмысленное использование ИИ",
+      "publisher": "Tartu Ülikool",
+      "kind": "Учебное пособие",
+      "published_on": "2024",
+      "url": "https://sisu.ut.ee/ti/oppematerjali-avaleht/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kuidas põhjendavad autorid õppematerjali ajakohasuse piire?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Miks eristatakse üldisi põhimõtteid kiiresti muutuvatest tööriistadest?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Mida tähendab sisuliselt põhjendatud kasutamine selles sissejuhatuses?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-course-C1",
+      "topic": "school",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Учебное пособие: осмысленное использование ИИ",
+      "publisher": "Tartu Ülikool",
+      "kind": "Учебное пособие",
+      "published_on": "2024",
+      "url": "https://sisu.ut.ee/ti/oppematerjali-avaleht/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Kuidas põhjendavad autorid õppematerjali ajakohasuse piire?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Miks eristatakse üldisi põhimõtteid kiiresti muutuvatest tööriistadest?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Mida tähendab sisuliselt põhjendatud kasutamine selles sissejuhatuses?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-article-B1",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Преподавание в эпоху ИИ: оценить предложение",
+      "publisher": "Kristjan-Julius Laak · Universitas Tartuensis",
+      "kind": "Статья",
+      "published_on": "2024-04-11",
+      "url": "https://ajakiri.ut.ee/4637/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Milliseid erinevaid põhjuseid esitatakse õppejõudude ettevaatlikkusele?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Miks ei asenda üldpädevused autori käsitluses teadmisi?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Kuidas muutub koduse ettevalmistuse ja kohapealse hindamise suhe?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        },
+        {
+          "prompt_et": "Sõnasta kaks täpsustavat küsimust teksti autorile.",
+          "rubric_ru": "Вопросы должны запрашивать недостающую информацию, а не повторять уже данную."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-article-B2",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Преподавание в эпоху ИИ: оценить предложение",
+      "publisher": "Kristjan-Julius Laak · Universitas Tartuensis",
+      "kind": "Статья",
+      "published_on": "2024-04-11",
+      "url": "https://ajakiri.ut.ee/4637/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Milliseid erinevaid põhjuseid esitatakse õppejõudude ettevaatlikkusele?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Miks ei asenda üldpädevused autori käsitluses teadmisi?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Kuidas muutub koduse ettevalmistuse ja kohapealse hindamise suhe?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        },
+        {
+          "prompt_et": "Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.",
+          "rubric_ru": "Сохраните факты, логические связи и подходящий регистр. Объём — учебный ориентир."
+        }
+      ]
+    },
+    {
+      "id": "source-ai-article-C1",
+      "topic": "school",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Преподавание в эпоху ИИ: оценить предложение",
+      "publisher": "Kristjan-Julius Laak · Universitas Tartuensis",
+      "kind": "Статья",
+      "published_on": "2024-04-11",
+      "url": "https://ajakiri.ut.ee/4637/",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте полный оригинал в соседней вкладке. Вопросы ниже составлены для тренажёра. Уровень относится к заданиям; текст издателя не упрощён. Для B1 можно пользоваться словарём.",
+      "explanation_ru": "Полный текст остаётся у издателя. Ответы проверяются по критериям самостоятельно или с преподавателем.",
+      "tasks": [
+        {
+          "prompt_et": "Milliseid erinevaid põhjuseid esitatakse õppejõudude ettevaatlikkusele?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Miks ei asenda üldpädevused autori käsitluses teadmisi?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Kuidas muutub koduse ettevalmistuse ja kohapealse hindamise suhe?",
+          "rubric_ru": "Опирайтесь на конкретный фрагмент оригинала. Отделите утверждение автора от своей интерпретации и сохраните его оговорки."
+        },
+        {
+          "prompt_et": "Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.",
+          "rubric_ru": "Назовите предпосылку, опору в тексте и альтернативное толкование; отмечайте степень уверенности."
+        },
+        {
+          "prompt_et": "Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?",
+          "rubric_ru": "Отделите наблюдение от причинности, факт от оценки; проверьте обобщения и пропущенные данные."
+        },
+        {
+          "prompt_et": "Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.",
+          "rubric_ru": "Сопоставьте аргументы, ограничения и контраргумент. Формальная рекомендация должна сохранять оговорки, а не усиливать вывод. Объём учебный."
+        }
+      ]
+    },
+    {
+      "id": "archive-2025-B1",
+      "topic": "school",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Архив 2025: основной школьный экзамен",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Архив экзаменов",
+      "url": "https://www.harno.ee/lopueksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте раздел материалов за 2025 год и выберите Eesti keel teise keelena. Используйте файл задания вместе с опубликованными ключами. Это вход в официальный архив; конкретный PDF в тренажёр не скопирован.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Tee loetust viie lausega kokkuvõte.",
+          "rubric_ru": "Укажите тему, адресата и три существенные детали. Пишите своими словами."
+        },
+        {
+          "prompt_et": "Vali viis vajalikku sõna ja kasuta igaüht uues lauses.",
+          "rubric_ru": "Проверьте значение в контексте, форму слова и естественность примера."
+        }
+      ],
+      "published_on": "2025"
+    },
+    {
+      "id": "archive-2025-B2",
+      "topic": "school",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Архив 2025: государственный экзамен",
+      "publisher": "Haridus- ja Noorteamet",
+      "kind": "Архив экзаменов",
+      "url": "https://harno.ee/eksamid-testid-ja-uuringud/eksamid-testid-ja-lopudokumendid/riigieksamid",
+      "checked_on": "2026-11-05",
+      "guide_ru": "Откройте раздел материалов за 2025 год и выберите Eesti keel teise keelena. Используйте файл задания вместе с опубликованными ключами. Это вход в официальный архив; конкретный PDF в тренажёр не скопирован.",
+      "explanation_ru": "Исходные задания и ключи принадлежат официальному источнику. Здесь сохраняется ваш разбор; результат не является официальной оценкой.",
+      "tasks": [
+        {
+          "prompt_et": "Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.",
+          "rubric_ru": "Укажите конкретный файл или задание, чтобы позже вернуться к тому же материалу."
+        },
+        {
+          "prompt_et": "Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.",
+          "rubric_ru": "Сохраните первоначальные ответы; для устной части запишите план выступления, для письма — полный текст."
+        },
+        {
+          "prompt_et": "Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.",
+          "rubric_ru": "Не придумывайте ключ: если он не опубликован, отметьте неопределённость и попросите преподавателя проверить ответ."
+        },
+        {
+          "prompt_et": "Kirjelda kolme raskust ja leia igaühele parandamise viis.",
+          "rubric_ru": "Различайте языковую ошибку, неверное понимание инструкции и нехватку времени."
+        },
+        {
+          "prompt_et": "Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.",
+          "rubric_ru": "Разделите тезис, аргумент и пример. Укажите, где в оригинале нашли опору."
+        },
+        {
+          "prompt_et": "Esita üks põhjendatud vastuväide ja sellele võimalik vastus.",
+          "rubric_ru": "Возражайте реальной позиции, а не её преувеличенной версии."
+        }
+      ],
+      "published_on": "2025"
+    }
+  ]
+}

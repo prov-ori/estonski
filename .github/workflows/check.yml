@@ -22,5 +22,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: Тест в браузере (все страницы, сценарии, прогресс)
         run: npm run smoke
+      - name: Аудио и адаптивная раскладка
+        run: npm run test:audio
       - name: Аудит доступности axe-core
         run: npm run axe

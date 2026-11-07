@@ -8,7 +8,7 @@ const { chromium } = require('playwright');
 
 const ROOT = path.join(__dirname, '..');
 const shotsDir = process.argv.includes('--shots') ? process.argv[process.argv.indexOf('--shots') + 1] : null;
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css', '.json': 'application/json; charset=utf-8' };
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css', '.json': 'application/json; charset=utf-8', '.mp3':'audio/mpeg' };
 
 const server = http.createServer((req, res) => {
   const u = decodeURIComponent(req.url.split('?')[0]);
@@ -28,12 +28,16 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
   for (const [label, vp] of [['mobile', { width: 390, height: 800 }], ['desktop', { width: 1280, height: 900 }]]) {
     console.log(`\n=== ${label} ${vp.width}px ===`);
-    const ctx = await browser.newContext({ viewport: vp, permissions: ['microphone'], deviceScaleFactor: 1 });
+    const ctx = await browser.newContext({ serviceWorkers:'block', viewport: vp, permissions: ['microphone'], deviceScaleFactor: 1 });
     const page = await ctx.newPage();
     const errs = [];
-    page.on('console', (m) => { if (['error', 'warning'].includes(m.type())) errs.push(`${m.type()}: ${m.text()}`); });
+    page.on('console', (m) => { if (['error', 'warning'].includes(m.type()) && m.text() !== 'Service Worker registration blocked by Playwright') errs.push(`${m.type()}: ${m.text()}`); });
     page.on('pageerror', (e) => errs.push('pageerror: ' + e.message));
-    page.on('requestfailed', (r) => errs.push('requestfailed: ' + r.url()));
+    page.on('requestfailed', (r) => {
+      // Navigating away explicitly cancels pending media downloads in destroy().
+      if (/\.mp3(?:$|\?)/.test(r.url()) && r.failure()?.errorText === 'net::ERR_ABORTED') return;
+      errs.push('requestfailed: ' + r.url() + ' ' + r.failure()?.errorText);
+    });
     page.on('response', (r) => { if (r.status() >= 400) errs.push(`HTTP ${r.status()} ${r.url()}`); });
     page.on('dialog', (d) => d.accept());
     const shot = async (n) => { if (shotsDir) { fs.mkdirSync(shotsDir, { recursive: true }); await page.screenshot({ path: path.join(shotsDir, `${label}-${n}.png`), fullPage: true }); } };
@@ -122,9 +126,8 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
 
     // 7. аудирование: в headless нет голоса → запасной вариант
     await go('listening/l-01');
-    await page.waitForSelector('text=нет эстонского', { timeout: 4000 }).catch(() => {});
-    const noVoice = (await page.locator('.listening').innerText()).includes('нет эстонского');
-    ok(noVoice || (await page.locator('.listening').innerText()).includes('Голос:'), 'аудирование: статус голоса показан');
+    await page.waitForSelector('.listening audio');
+    ok((await page.locator('.listening').innerText()).includes('Запись тренажёра'), 'аудирование: доступна готовая запись');
     await page.getByRole('button', { name: 'Проверить ответы' }).click();
     ok(await page.locator('.transcript:not([hidden])').count() === 1, 'аудирование: стенограмма открылась после попытки');
     ok((await page.locator('main').innerText()).includes('не записи с экзамена'), 'аудирование: честная оговорка про синтез');
@@ -331,6 +334,7 @@ const ok = (c, msg) => { console.log(`${c ? '  ok  ' : ' FAIL '} ${msg}`); if (!
         window.SpeechSynthesisUtterance = class { constructor(text) { this.text = text; } };
         Object.defineProperty(window, 'speechSynthesis', { value: { getVoices: () => fake, speak: (u) => { window.__spoken.push([u.voice && u.voice.name, u.text]); setTimeout(() => u.onend && u.onend(), 5); }, cancel() {}, addEventListener() {}, removeEventListener() {}, speaking: false }, configurable: true });
       }, voices);
+      await c.route('**/config/audio.json', r=>r.fulfill({contentType:'application/json',body:JSON.stringify({items:{}})}));
       const p = await c.newPage();
       await p.goto(base + '#/listening/l-01'); await p.waitForSelector('.listening');
       await p.waitForFunction(() => !/Ищу/.test(document.querySelector('.listening').innerText), null, { timeout: 5000 });

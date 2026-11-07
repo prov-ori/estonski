@@ -13,12 +13,12 @@ const srv = http.createServer((q, r) => {
   r.writeHead(200, { 'Content-Type': M[path.extname(f)] || 'text/plain' }); fs.createReadStream(f).pipe(r);
 });
 const ids = (f, route) => JSON.parse(fs.readFileSync(path.join(ROOT, 'content', f + '.json'), 'utf8')).items.slice(0, 3).map((x) => `${route}/${x.id}`);
-const ROUTES = ['', 'daily', 'pronunciation', 'plan', 'lessons', 'lessons/ls-01', 'drills/fix', 'diagnostic', 'grammar', 'grammar/cases', 'drills', 'drills/forms', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'reference', 'progress', 'about',
+const ROUTES = ['originals','originals/source-ai-article-C1', '', 'daily', 'pronunciation', 'plan', 'lessons', 'lessons/ls-01', 'drills/fix', 'diagnostic', 'grammar', 'grammar/cases', 'drills', 'drills/forms', 'drills/order', 'drills/dictation', 'vocab', 'wordlist', 'reading', 'listening', 'writing', 'speaking', 'mock', 'reference', 'progress', 'about',
   ...ids('reading', 'reading'), ...ids('listening', 'listening'), ...ids('writing', 'writing'), ...ids('speaking', 'speaking')];
 (async () => {
   await new Promise((r) => srv.listen(0, r));
   const base = `http://localhost:${srv.address().port}/`;
-  const b = await chromium.launch();
+  const b = await chromium.launch({executablePath:process.env.BROWSER_EXECUTABLE || undefined});
   const found = new Map();
   for (const scheme of ['light', 'dark']) for (const [vn, vp] of [['mobile', { width: 390, height: 800 }], ['desktop', { width: 1366, height: 800 }]]) {
     const ctx = await b.newContext({ viewport: vp, colorScheme: scheme });

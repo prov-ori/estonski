@@ -1,5 +1,5 @@
 // Файл создан tools/build-sw.js — не редактируйте вручную.
-const CACHE = 'estonski-c2ef49bd8c';
+const CACHE = 'estonski-ef8c7ff211';
 const FILES = [
  "./",
  "apple-touch-icon.png",
@@ -18,6 +18,7 @@ const FILES = [
  "content/order.json",
  "content/pronunciation.json",
  "content/reading.json",
+ "content/sources.json",
  "content/speaking.json",
  "content/vocab.json",
  "content/writing.json",
@@ -30,6 +31,7 @@ const FILES = [
  "js/dialog.js",
  "js/gen.js",
  "js/index.js",
+ "js/open-tasks.js",
  "js/prefs.js",
  "js/question.js",
  "js/series.js",
@@ -48,6 +50,7 @@ const FILES = [
  "js/views/listening.js",
  "js/views/mistakes.js",
  "js/views/mock.js",
+ "js/views/originals.js",
  "js/views/plan.js",
  "js/views/progress.js",
  "js/views/pronunciation.js",
@@ -74,8 +77,8 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
   e.respondWith(
     fetch(req).then((res) => {
-      if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(req, copy)); }
+      if (res.status === 200) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {}); }
       return res;
-    }).catch(() => caches.match(req).then((r) => r || caches.match('./')))
+    }).catch(() => caches.match(req).then((r) => r || (req.mode === 'navigate' ? caches.match('./') : Response.error())))
   );
 });

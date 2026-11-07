@@ -21,7 +21,7 @@ export function listeningBlock(item, { onVoice, maxPlays } = {}) {
     item.script_et.map((l) => h('p', { lang: 'et' }, item.script_et.some((x) => x.sp === 'B') ? h('strong', null, `${l.sp}: `) : null, l.text)));
   const controls = h('div', { class: 'row' });
   const el = h('div', { class: 'card listening' }, status, controls, plays, transcript, item.source && sourceLine(item.source));
-  let player = null, count = 0, voiceFound = false;
+  let player = null, count = 0, voiceFound = false, destroyed = false, generation = 0, heard = false, revealed = false;
   let mode = 'audio', audioFailed = false, audioEl = null;
 
   /** Запись из config/audio.json (создаёт tools/gen-audio.js), если она есть для этого задания. */
@@ -30,44 +30,68 @@ export function listeningBlock(item, { onVoice, maxPlays } = {}) {
   }
   function stopAudio() { if (audioEl) { try { audioEl.pause(); audioEl.currentTime = 0; } catch { /* ignore */ } } }
 
-  /** Воспроизведение готовой записи: одинаково работает на любом устройстве и в любом браузере. */
-  function initAudio(entry, deviceVoice) {
+  // MP3 playback never waits for or requires system speech voices.
+  function initAudio(entry) {
     voiceFound = true;
     onVoice && onVoice(true);
-    audioEl = new Audio(entry.file);
-    audioEl.preload = 'auto';
-    const pos = h('progress', { max: 100, value: 0, 'aria-label': 'Позиция записи', class: 'audio-pos' });
-    const rate = h('select', { class: 'select', id: 'rate-' + item.id, 'aria-label': 'Скорость записи' },
-      h('option', { value: '0.8' }, 'Медленно'), h('option', { value: '1', selected: true }, 'Обычно'));
-    setChildren(status, `Запись тренажёра (синтезированная речь${entry.seconds ? `, около ${Math.round(entry.seconds)} с` : ''}). Звучит одинаково на любом устройстве.`);
-    audioEl.addEventListener('timeupdate', () => { if (audioEl.duration) pos.value = (100 * audioEl.currentTime) / audioEl.duration; });
-    audioEl.addEventListener('ended', () => { pos.value = 100; playBtn.disabled = playBtn.dataset.spent === '1'; stopBtn.disabled = true; status.textContent = playBtn.dataset.spent === '1' ? 'Лимит прослушиваний исчерпан.' : 'Готово. Можно прослушать ещё раз.'; });
-    audioEl.addEventListener('error', () => { audioFailed = true; init(); }); // файл не загрузился — переходим на голос устройства
-    const playBtn = h('button', { class: 'btn primary', type: 'button', onclick: async () => {
-      if (limit && count >= limit) return;
-      count++; plays.textContent = `Прослушиваний: ${count}${limit ? ' из ' + limit : ''}`;
-      if (limit && count >= limit) playBtn.dataset.spent = '1';
-      audioEl.currentTime = 0; audioEl.playbackRate = parseFloat(rate.value);
-      playBtn.disabled = true; stopBtn.disabled = false; status.textContent = 'Звучит запись…';
-      try { await audioEl.play(); } catch { count--; playBtn.dataset.spent = ''; playBtn.disabled = false; stopBtn.disabled = true; plays.textContent = `Прослушиваний: ${count}`; status.textContent = 'Не удалось запустить запись. Нажмите «Слушать» ещё раз или покажите текст.'; }
+    const audio = h('audio', { src: entry.file, preload: 'metadata', controls: !limit, 'aria-label': 'Запись задания' });
+    audioEl = audio;
+    let fresh = true;
+    const updateCount = () => { plays.textContent = 'Прослушиваний: ' + count + (limit ? ' из ' + limit : ''); };
+    const rate = h('select', { class:'select', 'aria-label':'Скорость записи', onchange: () => { audio.playbackRate = Number(rate.value); } },
+      [0.75, 0.8, 1, 1.15, 1.25].map(v => h('option', { value:v, selected:v===1 }, v+'×')));
+    status.textContent = 'Запись тренажёра: ' + (entry.engine === 'neural' ? 'эстонские нейроголоса Anu и Kert.' : 'синтетическая речь.') + ' Устанавливать голос не нужно.';
+    const playBtn = h('button', { class:'btn primary', type:'button', onclick: async () => {
+      if (destroyed || (limit && count >= limit)) return;
+      audio.currentTime = 0; fresh = true;
+      playBtn.disabled = true;
+      try { await audio.play(); } catch { if (!destroyed) { playBtn.disabled = false; status.textContent = 'Не удалось запустить запись. Нажмите «Слушать» ещё раз.'; } }
     } }, '▶ Слушать');
-    const stopBtn = h('button', { class: 'btn', type: 'button', disabled: true, onclick: () => { stopAudio(); playBtn.disabled = playBtn.dataset.spent === '1'; stopBtn.disabled = true; status.textContent = 'Остановлено.'; } }, '■ Стоп');
-    setChildren(controls, playBtn, stopBtn, rate, h('button', { class: 'btn ghost', type: 'button', onclick: reveal }, 'Показать текст'), pos,
-      deviceVoice ? h('button', { class: 'btn', type: 'button', onclick: () => { stopAudio(); mode = 'voice'; init(); } }, 'Озвучить голосом устройства') : null);
+    const pauseBtn = h('button', { class:'btn', type:'button', disabled:true, onclick: async () => {
+      if (!audio.paused) audio.pause();
+      else { try { await audio.play(); } catch { status.textContent = 'Не удалось продолжить. Повторите попытку.'; } }
+    } }, 'Пауза');
+    const stopBtn = h('button', { class:'btn', type:'button', disabled:true, onclick: () => {
+      audio.pause(); audio.currentTime = 0; fresh = true;
+      pauseBtn.disabled = true; stopBtn.disabled = true;
+      playBtn.disabled = !!limit && count >= limit;
+      status.textContent = playBtn.disabled ? 'Лимит прослушиваний исчерпан.' : 'Остановлено.';
+    } }, '■ Стоп');
+    audio.addEventListener('playing', () => {
+      if (destroyed) { audio.pause(); return; }
+      if (fresh) { if (limit && count >= limit) { audio.pause(); return; } count++; fresh = false; updateCount(); }
+      heard = true; playBtn.disabled = true; pauseBtn.disabled = false; stopBtn.disabled = false;
+      pauseBtn.textContent = 'Пауза'; status.textContent = 'Звучит запись…';
+    });
+    audio.addEventListener('pause', () => { if (!destroyed && !audio.ended) { pauseBtn.textContent = 'Продолжить'; status.textContent = 'Пауза.'; } });
+    audio.addEventListener('ended', () => {
+      fresh = true; playBtn.disabled = !!limit && count >= limit; pauseBtn.disabled = true; stopBtn.disabled = true;
+      status.textContent = playBtn.disabled ? 'Лимит прослушиваний исчерпан.' : 'Готово. Можно прослушать ещё раз.';
+    });
+    audio.addEventListener('error', () => { if (!destroyed && audio === audioEl) { audioFailed = true; init(); } });
+    setChildren(controls, audio, h('div', {class:'row'}, playBtn, pauseBtn, stopBtn, h('label',null,'Скорость ',rate)),
+      !limit && h('div',{class:'row'},
+        h('button',{class:'btn',type:'button',onclick:()=>{if(Number.isFinite(audio.duration)) audio.currentTime=Math.max(0,audio.currentTime-10);}},'↶ 10 секунд'),
+        h('a',{class:'btn',href:entry.file,download:item.id+'.mp3'},'Скачать MP3'),
+        h('a',{class:'btn',href:entry.file,target:'_blank',rel:'noopener'},'Открыть аудио отдельно')),
+      h('button', {class:'btn ghost',type:'button',onclick:reveal},'Показать текст'));
   }
 
-  function reveal() { transcript.hidden = false; transcript.open = true; }
+  function reveal() { revealed = true; transcript.hidden = false; transcript.open = true; }
 
   async function init() {
+    const current = ++generation;
+    if (destroyed) return;
     player && player.stop();
     stopAudio();
     const entry = await audioEntry();
+    if (destroyed || current !== generation) return;
     if (entry && !audioFailed && mode === 'audio') {
-      const dv = speechSupported() ? await findEtVoice() : null;
-      return initAudio(entry, dv && voiceKind(dv) === 'et');
+      return initAudio(entry);
     }
     const voice = await findEtVoice();
     const voices = speechSupported() ? await allVoices() : [];
+    if (destroyed || current !== generation) return;
     voiceFound = !!voice;
     onVoice && onVoice(voiceFound);
     const kind = voice ? voiceKind(voice) : null;
@@ -85,7 +109,7 @@ export function listeningBlock(item, { onVoice, maxPlays } = {}) {
         h('li', null, 'iPhone и iPad: Настройки → Универсальный доступ → Устный контент → Голоса — добавьте эстонский, если он есть.'),
         h('li', null, 'После установки закройте и снова откройте браузер и нажмите «Проверить голос ещё раз».'),
         h('li', null, 'Набор голосов зависит от устройства; если эстонского нет, пользуйтесь финским или режимом чтения.')));
-    const backToAudio = entry && !audioFailed ? h('button', { class: 'btn', type: 'button', onclick: () => { mode = 'audio'; init(); } }, 'Вернуться к записи тренажёра') : null;
+    const backToAudio = entry ? h('button', { class: 'btn', type: 'button', onclick: () => { mode = 'audio'; audioFailed = false; init(); } }, audioFailed ? 'Повторить загрузку записи' : 'Вернуться к записи тренажёра') : null;
     const recheck = speechSupported() ? h('button', { class: 'btn', type: 'button', onclick: () => { resetVoice(); setChildren(status, 'Ищу голос…'); init(); } }, 'Проверить голос ещё раз') : null;
 
     if (!voice) {
@@ -107,7 +131,7 @@ export function listeningBlock(item, { onVoice, maxPlays } = {}) {
     player = createPlayer(item.script_et, voice, (s) => {
       playBtn.disabled = s === 'playing' || playBtn.dataset.spent === '1'; stopBtn.disabled = s !== 'playing';
       if (s === 'ended' || s === 'stopped') status.textContent = 'Готово. Можно прослушать ещё раз.';
-      if (s === 'playing') status.textContent = 'Звучит запись…';
+      if (s === 'playing') { heard = kind === 'et'; status.textContent = 'Звучит запись…'; }
       if (s === 'error') status.textContent = 'Ошибка воспроизведения. Нажмите «Слушать» ещё раз, выберите другой голос или покажите текст.';
     });
     const playBtn = h('button', { class: 'btn primary', type: 'button', onclick: () => {
@@ -121,7 +145,7 @@ export function listeningBlock(item, { onVoice, maxPlays } = {}) {
     if (help) controls.append(help);
   }
   init();
-  return { el, reveal, hasVoice: () => voiceFound, destroy: () => { stopAudio(); if (player) player.stop(); else { try { speechSynthesis.cancel(); } catch { /* ignore */ } } } };
+  return { el, reveal, hasVoice: () => heard && !revealed, destroy: () => { destroyed = true; generation++; stopAudio(); if (audioEl) { audioEl.removeAttribute('src'); audioEl.load(); } if (player) player.stop(); else { try { speechSynthesis.cancel(); } catch { /* ignore */ } } } };
 }
 
 export const SYNTH_NOTE = 'Озвучка — синтез речи (готовая запись тренажёра или голос вашего устройства), а не записи с экзамена. Голос, темп, паузы и качество звука на экзамене будут другими; тренажёр помогает привыкнуть к слуховому восприятию, но не имитирует экзаменационные записи.';

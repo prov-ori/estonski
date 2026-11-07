@@ -206,7 +206,7 @@ audio { max-width: 100%; }
 }
 
 /* две колонки: материал слева, ответы справа */
-main.wide { max-width: 1240px; }
+main.wide, main:has(.split) { max-width: 1240px; }
 .split { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start; }
 .pane-left:focus-visible { outline-offset: -3px; }
 .pane-toggle { margin-bottom: 8px; }
@@ -215,7 +215,7 @@ main.wide { max-width: 1240px; }
 .to-text { pointer-events: auto; box-shadow: 0 2px 8px rgba(0, 0, 0, .35); }
 @media (min-width: 1000px) {
   .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
-  .pane-left { position: sticky; top: 76px; max-height: calc(100vh - 92px); overflow: auto; padding-right: 8px; }
+  .pane-left { position: sticky; top: calc(var(--header-height, 60px) + 16px); max-height: calc(100dvh - var(--header-height, 60px) - 32px); overflow: auto; padding-right: 8px; }
   .pane-toggle, .to-text-wrap { display: none; }
   .pane-left.collapsed .pane-body { display: block; }
   .pane-left .card:first-child, .pane-right > h2:first-child { margin-top: 0; }
@@ -279,3 +279,6 @@ td.wrong { color: var(--bad); } td.right { color: var(--ok); font-weight: 600; }
 @media print { .pane-left { position: static !important; max-height: none !important; overflow: visible !important; } .split { display: block; } .plan progress { display: none; } }
 
 .audio-pos { width: 100%; max-width: 360px; flex-basis: 100%; }
+
+.listening audio { width: 100%; min-width: 0; }
+.listening .row { width: 100%; }

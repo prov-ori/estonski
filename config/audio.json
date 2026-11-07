@@ -1,136 +1,303 @@
 {
- "_comment": "Создано tools/gen-audio.js — не редактируйте вручную. hash — sha1 реплик задания.",
- "engine": "espeak-ng",
- "items": {
-  "l-01": {
-   "file": "audio/l-01.mp3",
-   "hash": "d68cd59cdd78aed6d5354f2293bebd3391982d39",
-   "seconds": 89.6
-  },
-  "l-02": {
-   "file": "audio/l-02.mp3",
-   "hash": "d424f9de4dd585ec5a5519e39ec661fb575783a4",
-   "seconds": 85.9
-  },
-  "l-03": {
-   "file": "audio/l-03.mp3",
-   "hash": "676ff7e527dc0ff048b39cd2a2fa733a86ee394a",
-   "seconds": 44.6
-  },
-  "l-04": {
-   "file": "audio/l-04.mp3",
-   "hash": "455adecf8fb0380f51df9cf4b8c8042bc7705acb",
-   "seconds": 35.5
-  },
-  "l-05": {
-   "file": "audio/l-05.mp3",
-   "hash": "fc77190a608160ea980938a30d1ce95e3b03ac0f",
-   "seconds": 39.8
-  },
-  "l-06": {
-   "file": "audio/l-06.mp3",
-   "hash": "acae9ed415aca2b8b8dfbfcba33d2cc4fd1d246f",
-   "seconds": 37.2
-  },
-  "l-07": {
-   "file": "audio/l-07.mp3",
-   "hash": "47dcf3ffbe79fe728e5ae136a3ab4383c1b6eab7",
-   "seconds": 35.3
-  },
-  "l-08": {
-   "file": "audio/l-08.mp3",
-   "hash": "92ac8132a92b6516c189621d2513739a262ac483",
-   "seconds": 42.1
-  },
-  "l-09": {
-   "file": "audio/l-09.mp3",
-   "hash": "010e7d0be140d9bb8ab683ee7ef791cc13ac8170",
-   "seconds": 41.4
-  },
-  "l-10": {
-   "file": "audio/l-10.mp3",
-   "hash": "5b2c299cbe6ea7744820e41b5869f67abe33d73e",
-   "seconds": 45.8
-  },
-  "l-11": {
-   "file": "audio/l-11.mp3",
-   "hash": "bcdefefe6dc6a963063442d24a9c998dc8a9b890",
-   "seconds": 28.4
-  },
-  "l-12": {
-   "file": "audio/l-12.mp3",
-   "hash": "f7d6847842af513edfa163ac0aaa5ef225bf2bfe",
-   "seconds": 32.6
-  },
-  "l-13": {
-   "file": "audio/l-13.mp3",
-   "hash": "8108088d92ee7f140796b3bed1f2ea77738ed945",
-   "seconds": 31.7
-  },
-  "l-14": {
-   "file": "audio/l-14.mp3",
-   "hash": "72f7de0e028ff0bfcae91ac2455d42b5e4f62d11",
-   "seconds": 38.3
-  },
-  "l-series-3": {
-   "file": "audio/l-series-3.mp3",
-   "hash": "69c795ca18cde3099e9cd63ef5b695ad7b5f179d",
-   "seconds": 65.8
-  },
-  "l-series-4": {
-   "file": "audio/l-series-4.mp3",
-   "hash": "f78f5b35d235d3d106d40a0cefff783934021b63",
-   "seconds": 66.7
-  },
-  "l-series-5": {
-   "file": "audio/l-series-5.mp3",
-   "hash": "f38b98e34b3ce5f14a069dd91b13385aa0676449",
-   "seconds": 69
-  },
-  "l-series-6": {
-   "file": "audio/l-series-6.mp3",
-   "hash": "e95dd54da45344a514ed2323b35c9ee3219d235f",
-   "seconds": 63.8
-  },
-  "l-series-7": {
-   "file": "audio/l-series-7.mp3",
-   "hash": "4d1eb5ffc12ec874e94f0174e7f8eb91a2437c96",
-   "seconds": 63.8
-  },
-  "l-series-8": {
-   "file": "audio/l-series-8.mp3",
-   "hash": "4cd6173e5730acdf209a1c48e5d305b1df33928d",
-   "seconds": 64.7
-  },
-  "l-series-9": {
-   "file": "audio/l-series-9.mp3",
-   "hash": "d7c4a131348603e7ec5154b51a2d6e730e780140",
-   "seconds": 63.3
-  },
-  "l-series-10": {
-   "file": "audio/l-series-10.mp3",
-   "hash": "d983f764d0cdefcc86650b2a1d3cce2bb2388c43",
-   "seconds": 69.5
-  },
-  "l-02-part2": {
-   "file": "audio/l-02-part2.mp3",
-   "hash": "07ca5bc471b89263dd334616ca2c0b2fadab9cbe",
-   "seconds": 72.4
-  },
-  "l-15": {
-   "file": "audio/l-15.mp3",
-   "hash": "a400345fb3f2880b91a55bd69d61c38de8aa096c",
-   "seconds": 57.1
-  },
-  "l-16": {
-   "file": "audio/l-16.mp3",
-   "hash": "a6754fd14a0833f245e2410f5eb00c03ec8eb0fd",
-   "seconds": 52.6
-  },
-  "l-17": {
-   "file": "audio/l-17.mp3",
-   "hash": "605d6be07b63c821c276fbf184034b1f4a13e820",
-   "seconds": 55.9
+  "_comment": "Аудиозаписи: tools/gen-neural-audio.py или tools/gen-audio.js. hash — sha1 реплик задания.",
+  "engine": "neural",
+  "items": {
+    "l-01": {
+      "file": "audio/l-01.mp3",
+      "hash": "d68cd59cdd78aed6d5354f2293bebd3391982d39",
+      "seconds": 75.1,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-02": {
+      "file": "audio/l-02.mp3",
+      "hash": "d424f9de4dd585ec5a5519e39ec661fb575783a4",
+      "seconds": 76.3,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-03": {
+      "file": "audio/l-03.mp3",
+      "hash": "676ff7e527dc0ff048b39cd2a2fa733a86ee394a",
+      "seconds": 41.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-04": {
+      "file": "audio/l-04.mp3",
+      "hash": "455adecf8fb0380f51df9cf4b8c8042bc7705acb",
+      "seconds": 30.4,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-05": {
+      "file": "audio/l-05.mp3",
+      "hash": "fc77190a608160ea980938a30d1ce95e3b03ac0f",
+      "seconds": 33.5,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-06": {
+      "file": "audio/l-06.mp3",
+      "hash": "acae9ed415aca2b8b8dfbfcba33d2cc4fd1d246f",
+      "seconds": 35.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-07": {
+      "file": "audio/l-07.mp3",
+      "hash": "47dcf3ffbe79fe728e5ae136a3ab4383c1b6eab7",
+      "seconds": 30.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-08": {
+      "file": "audio/l-08.mp3",
+      "hash": "92ac8132a92b6516c189621d2513739a262ac483",
+      "seconds": 39.8,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-09": {
+      "file": "audio/l-09.mp3",
+      "hash": "010e7d0be140d9bb8ab683ee7ef791cc13ac8170",
+      "seconds": 33.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-10": {
+      "file": "audio/l-10.mp3",
+      "hash": "5b2c299cbe6ea7744820e41b5869f67abe33d73e",
+      "seconds": 42.8,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-11": {
+      "file": "audio/l-11.mp3",
+      "hash": "bcdefefe6dc6a963063442d24a9c998dc8a9b890",
+      "seconds": 24.6,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-12": {
+      "file": "audio/l-12.mp3",
+      "hash": "f7d6847842af513edfa163ac0aaa5ef225bf2bfe",
+      "seconds": 31.4,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-13": {
+      "file": "audio/l-13.mp3",
+      "hash": "8108088d92ee7f140796b3bed1f2ea77738ed945",
+      "seconds": 30.6,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-14": {
+      "file": "audio/l-14.mp3",
+      "hash": "72f7de0e028ff0bfcae91ac2455d42b5e4f62d11",
+      "seconds": 33.4,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-series-3": {
+      "file": "audio/l-series-3.mp3",
+      "hash": "69c795ca18cde3099e9cd63ef5b695ad7b5f179d",
+      "seconds": 55.8,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-series-4": {
+      "file": "audio/l-series-4.mp3",
+      "hash": "f78f5b35d235d3d106d40a0cefff783934021b63",
+      "seconds": 58.8,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-series-5": {
+      "file": "audio/l-series-5.mp3",
+      "hash": "f38b98e34b3ce5f14a069dd91b13385aa0676449",
+      "seconds": 59.7,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-series-6": {
+      "file": "audio/l-series-6.mp3",
+      "hash": "e95dd54da45344a514ed2323b35c9ee3219d235f",
+      "seconds": 54.7,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-series-7": {
+      "file": "audio/l-series-7.mp3",
+      "hash": "4d1eb5ffc12ec874e94f0174e7f8eb91a2437c96",
+      "seconds": 55.3,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-series-8": {
+      "file": "audio/l-series-8.mp3",
+      "hash": "4cd6173e5730acdf209a1c48e5d305b1df33928d",
+      "seconds": 55,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-series-9": {
+      "file": "audio/l-series-9.mp3",
+      "hash": "d7c4a131348603e7ec5154b51a2d6e730e780140",
+      "seconds": 54.6,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-series-10": {
+      "file": "audio/l-series-10.mp3",
+      "hash": "d983f764d0cdefcc86650b2a1d3cce2bb2388c43",
+      "seconds": 59.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-02-part2": {
+      "file": "audio/l-02-part2.mp3",
+      "hash": "07ca5bc471b89263dd334616ca2c0b2fadab9cbe",
+      "seconds": 61.1,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    },
+    "l-15": {
+      "file": "audio/l-15.mp3",
+      "hash": "a400345fb3f2880b91a55bd69d61c38de8aa096c",
+      "seconds": 55.8,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-16": {
+      "file": "audio/l-16.mp3",
+      "hash": "a6754fd14a0833f245e2410f5eb00c03ec8eb0fd",
+      "seconds": 49,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "l-17": {
+      "file": "audio/l-17.mp3",
+      "hash": "605d6be07b63c821c276fbf184034b1f4a13e820",
+      "seconds": 52.4,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-06"
+    },
+    "mock-01-l": {
+      "file": "audio/mock-01-l.mp3",
+      "hash": "ab07c633d8e0d39e3cff33bc486e37a346c522cd",
+      "seconds": 32.5,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-07"
+    }
   }
- }
 }

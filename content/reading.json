@@ -111,6 +111,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Ta tahab arendada iseseisvat põhjendamist."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -216,6 +234,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Ta peab koosolemist täpsest programmist tähtsamaks."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Millist järeldust ei saa kirjeldatud kogemuse põhjal üldistada?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -862,6 +898,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et otsustada, kas proovitud töökorraldust on vaja muuta."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -912,6 +966,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Lühike ja selgelt tähistatud tee võimaldas raha säästa."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Milline piirang mõjutab tegelaste lõplikku valikut?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -964,6 +1036,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et planeerida koguseid ja vähendada ooteaega."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas saab teenusepakkuja usaldust hoida või taastada?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -1014,6 +1104,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Täpset vaatlemist ja põhjendatud järeldusi."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Millist järeldust ei saa kirjeldatud kogemuse põhjal üldistada?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -1066,6 +1174,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et paremini mõista enesetunde ja treeningu seoseid."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas tasakaalustatakse huve ja praktilisi piiranguid?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -1116,6 +1242,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Nad tahtsid kõigepealt oma tegelikke vajadusi mõista."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas arvestatakse erinevate inimeste vajadustega?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -1168,6 +1312,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Kingitus peaks arvestama saaja soovide ja võimalustega."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Miks ei pruugi hea kavatsus üksi tagada sobivat tulemust?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -1218,6 +1380,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et olulised küsimused vastuvõtul ei ununeks."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas eristatakse kinnitatud infot oletusest?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -2218,6 +2398,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et ühendada selge vastutus mitmekülgse õppimisega."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -2274,6 +2472,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Tema nimele laenatud raamatu tagastamise korraldamises."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -2332,6 +2548,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et sobitada uus tegevus olemasoleva ajakavaga."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Milline piirang mõjutab tegelaste lõplikku valikut?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -2388,6 +2622,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: See aitas leida tellimuse edastamise puuduse."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas saab teenusepakkuja usaldust hoida või taastada?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -2446,6 +2698,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Et vältida andmetest kaugemale ulatuvaid järeldusi."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Millist järeldust ei saa kirjeldatud kogemuse põhjal üldistada?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -2502,6 +2772,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Harjutuste eesmärgid ja ülesanded erinesid."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas tasakaalustatakse huve ja praktilisi piiranguid?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -2560,6 +2848,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Kõik elanikud ei kasuta seda."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas arvestatakse erinevate inimeste vajadustega?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -2616,6 +2922,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Olemasolevad mälestused ei võimaldanud kindlat vastust."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Miks ei pruugi hea kavatsus üksi tagada sobivat tulemust?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -2674,6 +2998,24 @@
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Kinnitus näitas saatmist, mitte taotluse sisulist täitmist."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas eristatakse kinnitatud infot oletusest?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -2730,6 +3072,24 @@
      ],
      "answer": 0,
      "explanation_ru": "Сопоставьте действия героя с объяснением их цели. Поддержанный текстом вывод: Allikate ja ebakindlate andmete selget eristamist."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Millist järeldust ei saa kirjeldatud kogemuse põhjal üldistada?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },
@@ -2798,6 +3158,24 @@
      "answer": false,
      "explanation_ru": "Неверно: результаты различались, число ответивших тоже; предложено дополнительно оценить эффект."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -2865,6 +3243,24 @@
      "answer": true,
      "explanation_ru": "Верно: автор подчёркивает, что эксперимент уточнил потребности и проблемы, хотя единогласия не было."
     }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Milline piirang mõjutab tegelaste lõplikku valikut?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
+    }
    ]
   },
   {
@@ -2931,6 +3327,24 @@
      "prompt_et": "Töötoa korraldajad käsitlesid parandamisest loobumist alati keskkonnahoiu ebaõnnestumisena.",
      "answer": false,
      "explanation_ru": "Неверно: безопасное восстановление оказалось невозможным; автор допускает обоснованную замену."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Millist järeldust ei saa kirjeldatud kogemuse põhjal üldistada?",
+     "rubric_ru": "Опирайтесь на два конкретных места именно этого текста. Если вопрос не описывает явный конфликт, объясните, как его предотвращают."
+    },
+    {
+     "prompt_et": "Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.",
+     "rubric_ru": "Укажите событие, последствие и текстовое основание связи. Одной последовательности событий недостаточно для вывода о причине."
+    },
+    {
+     "prompt_et": "Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.",
+     "rubric_ru": "Объясните выбор детали и предложите заголовок, который не преувеличивает содержание."
+    },
+    {
+     "prompt_et": "Sõnasta teksti kohta üks eksitav järeldus ja paranda see.",
+     "rubric_ru": "Покажите, какое ограничение или условие потеряно, затем сформулируйте точный вывод с опорой на текст."
     }
    ]
   },

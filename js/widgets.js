@@ -175,7 +175,6 @@ export function wideLayout() {
  * На узком экране — друг под другом; материал можно свернуть, а кнопка «↑ …» возвращает к нему.
  */
 export function splitView(left, right, { leftTitle = 'Материал' } = {}) {
-  wideLayout();
   const body = h('div', { class: 'pane-body' }, left);
   const toggle = h('button', {
     type: 'button', class: 'btn small pane-toggle', 'aria-expanded': 'true',

@@ -32,6 +32,7 @@ function walk(file, node, ctx) {
   for (const k of INHERIT) if (node[k]) eff[k] = node[k];
   if (node.id && eff.status === 'draft') {
     const id = node.id;
+    for (const key of ['review_questions', 'tasks']) if (Array.isArray(node[key])) node[key].forEach((q,i)=>{ if(q.prompt_et) addText(file, id + ' (развёрнутый вопрос ' + (i+1) + ')', q.prompt_et); });
     if (node.type) {
       addText(file, id, fill(node));
       if (node.type === 'choice' && node.options_lang !== 'ru' && node.options.some((o) => o.split(' ').length >= 3)) node.options.forEach((o) => addText(file, id + ' (вариант)', o));

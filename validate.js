@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
-const LEVELS = new Set(['A2', 'B1', 'B2']);
+const LEVELS = new Set(['A2', 'B1', 'B2', 'C1']);
 const STATUSES = new Set(['draft', 'reviewed']);
 const QTYPES = new Set(['choice', 'tf', 'tf3', 'input', 'match']);
 const INHERIT = ['topic', 'level', 'status'];
@@ -135,7 +135,7 @@ function walk(file, node, ctx, where) {
       if (!eff.topic) err(file, id, 'нет topic');
       else if (!TOPICS.has(eff.topic)) err(file, id, `topic «${eff.topic}» отсутствует в config/topics.json`);
       if (!eff.level) err(file, id, 'нет level');
-      else if (!LEVELS.has(eff.level)) err(file, id, `level «${eff.level}» — допустимо A2 | B1 | B2`);
+      else if (!LEVELS.has(eff.level)) err(file, id, `level «${eff.level}» — допустимо A2 | B1 | B2 | C1`);
       if (node.source !== undefined) checkSource(file, id, node.source);
       if (node.type !== undefined) {
         if (!QTYPES.has(node.type)) err(file, id, `неизвестный type «${node.type}»`);
@@ -200,7 +200,7 @@ for (const p of (data.pronunciation?.items || [])) {
 {
   const { scriptHash } = require('./tools/gen-audio.js');
   const audio = readJSON('config/audio.json');
-  const listening = data.listening?.items || [];
+  const listening = [...(data.listening?.items || []), ...(data['mock-exam']?.items || []).map(x=>x.parts.listening).filter(x=>x.script_et)];
   const idxItems = (audio && audio.items) || {};
   let missing = 0;
   for (const it of listening) {
@@ -253,6 +253,11 @@ try {
   if (r.status !== 0) errors.push('config/series.json устарел — запустите node tools/build-index.js');
 } catch (e) { warns.push('не удалось проверить config/series.json'); }
 
+for (const item of data.sources?.items || []) {
+  need(String(item.url || '').startsWith('https://') && item.publisher && item.checked_on && item.guide_ru,'content/sources.json',item.id,'нет происхождения или HTTPS-ссылки');
+  need(item.tasks?.length >= 6 && item.tasks.every(q=>q.prompt_et && q.rubric_ru),'content/sources.json',item.id,'нужны вопросы с критериями');
+}
+for (const item of data.reading?.items || []) if (item.review_questions) need(item.review_questions.every(q=>q.prompt_et && q.rubric_ru),'content/reading.json',item.id,'нет критерия открытого ответа');
 // ---- отчёт ----
 const counts = {
   'Грамматика (вопросы)': data.grammar?.items?.length,
@@ -262,6 +267,8 @@ const counts = {
   'Аудирование (тексты)': data.listening?.items?.length,
   'Письмо (задания)': data.writing?.items?.length,
   'Говорение (карточки)': data.speaking?.items?.length,
+  'Маршруты к оригиналам B1–C1': data.sources?.items?.length,
+  'Развёрнутые вопросы к чтению': data.reading?.items?.reduce((n,x)=>n+(x.review_questions?.length||0),0),
   'Пробные экзамены': data['mock-exam']?.items?.length,
   'Формы слов (существительные + глаголы)': data.forms?.items?.length,
   'Порядок слов': data.order?.items?.length,

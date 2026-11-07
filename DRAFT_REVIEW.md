@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 4203. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 4251. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -1788,8 +1788,12 @@
 - `pr-phrases` — Tüdruk joob õunamahla.
 - `pr-phrases` — Ülesanne on päris raske.
 
-## reading.json (1338)
+## reading.json (1349)
 
+- `r-01 (развёрнутый вопрос 1)` — Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?
+- `r-01 (развёрнутый вопрос 2)` — Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.
+- `r-01 (развёрнутый вопрос 3)` — Milline oluline detail jääb pealkirjast välja? Paku täpsem pealkiri.
+- `r-01 (развёрнутый вопрос 4)` — Sõnasta teksti kohta üks eksitav järeldus ja paranda see.
 - `r-01` — Uus ring meie koolis
 - `r-01` — Sügisel hakkas meie koolis tööle robootikaring.
 - `r-01` — Ringi juhendaja on informaatikaõpetaja Marek, kes armastab tehnikat ja õpetab ka teisi.
@@ -1838,6 +1842,7 @@
 - `r-01-inference-b1 (вариант)` — Ta tahab arendada iseseisvat põhjendamist.
 - `r-01-inference-b1 (вариант)` — Tal puuduvad robootikateadmised.
 - `r-01-inference-b1 (вариант)` — Ta soovib võistlusest loobuda.
+- `r-02 (развёрнутый вопрос 1)` — Millist järeldust ei saa kirjeldatud kogemuse põhjal üldistada?
 - `r-02` — Kiri sõbrale
 - `r-02` — Tere, Liisa!
 - `r-02` — Kirjutan sulle, sest tahan sind laupäeval külla kutsuda.
@@ -2103,6 +2108,7 @@
 - `r-expand-2-inference-b1 (вариант)` — Et otsustada, kas proovitud töökorraldust on vaja muuta.
 - `r-expand-2-inference-b1 (вариант)` — Et rühmatöö kindlasti keelata.
 - `r-expand-2-inference-b1 (вариант)` — Et otsustada raamatute müügihind.
+- `r-expand-3 (развёрнутый вопрос 1)` — Milline piirang mõjutab tegelaste lõplikku valikut?
 - `r-expand-3` — Bussireis
 - `r-expand-3` — Mari sõidab laupäeval Tartusse.
 - `r-expand-3` — Buss väljub Tallinnast kell üheksa ja jõuab Tartusse kell pool kaksteist.
@@ -2125,6 +2131,7 @@
 - `r-expand-3-inference-b1 (вариант)` — Lühike ja selgelt tähistatud tee võimaldas raha säästa.
 - `r-expand-3-inference-b1 (вариант)` — Taksod ei sõida Tartus.
 - `r-expand-3-inference-b1 (вариант)` — Anna ei teadnud muuseumi aadressi.
+- `r-expand-4 (развёрнутый вопрос 1)` — Kuidas saab teenusepakkuja usaldust hoida või taastada?
 - `r-expand-4` — Kohvik
 - `r-expand-4` — Uus kohvik asub pargi kõrval.
 - `r-expand-4` — Lõunasööki pakutakse tööpäeviti kell 12–15.
@@ -2173,6 +2180,7 @@
 - `r-expand-5-inference-b1 (вариант)` — Täpset vaatlemist ja põhjendatud järeldusi.
 - `r-expand-5-inference-b1 (вариант)` — Võimalikult paljude fotode avaldamist.
 - `r-expand-5-inference-b1 (вариант)` — Kõigi rühmade ühesuguseid kirjeldusi.
+- `r-expand-6 (развёрнутый вопрос 1)` — Kuidas tasakaalustatakse huve ja praktilisi piiranguid?
 - `r-expand-6` — Ujumine
 - `r-expand-6` — Jüri käib ujumas kaks korda nädalas: teisipäeval ja neljapäeval.
 - `r-expand-6` — Trenn algab kell viis ja kestab ühe tunni.
@@ -2194,6 +2202,7 @@
 - `r-expand-6-inference-b1 (вариант)` — Et paremini mõista enesetunde ja treeningu seoseid.
 - `r-expand-6-inference-b1 (вариант)` — Et tõestada, et ujumine pole vajalik.
 - `r-expand-6-inference-b1 (вариант)` — Et muusikakooli õpetajale hinnet panna.
+- `r-expand-7 (развёрнутый вопрос 1)` — Kuidas arvestatakse erinevate inimeste vajadustega?
 - `r-expand-7` — Uus korter
 - `r-expand-7` — Liisi pere kolis uude korterisse.
 - `r-expand-7` — Korteris on kolm tuba ja suur köök, aga rõdu ei ole.
@@ -2216,6 +2225,7 @@
 - `r-expand-7-inference-b1 (вариант)` — Nad tahtsid kõigepealt oma tegelikke vajadusi mõista.
 - `r-expand-7-inference-b1 (вариант)` — Korteris oli mööbli ostmine keelatud.
 - `r-expand-7-inference-b1 (вариант)` — Nad kavatsesid järgmisel päeval ära kolida.
+- `r-expand-8 (развёрнутый вопрос 1)` — Miks ei pruugi hea kavatsus üksi tagada sobivat tulemust?
 - `r-expand-8` — Sünnipäev
 - `r-expand-8` — Vanaema sünnipäev on pühapäeval.
 - `r-expand-8` — Pere koguneb tema juurde kell kaks.
@@ -2239,6 +2249,7 @@
 - `r-expand-8-inference-b1 (вариант)` — Kingitus peaks arvestama saaja soovide ja võimalustega.
 - `r-expand-8-inference-b1 (вариант)` — Kõige kallim kingitus on alati sobivaim.
 - `r-expand-8-inference-b1 (вариант)` — Üllatuse puhul ei tohi kunagi midagi küsida.
+- `r-expand-9 (развёрнутый вопрос 1)` — Kuidas eristatakse kinnitatud infot oletusest?
 - `r-expand-9` — Arsti aeg
 - `r-expand-9` — Peeter helistas hommikul perearstikeskusse.
 - `r-expand-9` — Tal on juba kolm päeva kurk valus.
@@ -3128,6 +3139,46 @@
 - `r-25-q5 (вариант)` — kaks muna
 - `r-25-q5 (вариант)` — kolm lusikat
 - `r-25-q6` — Mida pannile enne taigent pannakse? Kirjuta sõna: õli
+
+## sources.json (37)
+
+- `source-bike-B1 (развёрнутый вопрос 1)` — Kellele on teade suunatud?
+- `source-bike-B1 (развёрнутый вопрос 2)` — Millised tingimused puudutavad juhiluba ja ostuarvet?
+- `source-bike-B1 (развёрнутый вопрос 3)` — Miks ei saa toetuse suurust pidada jalgratta hinnaks?
+- `source-bike-B1 (развёрнутый вопрос 4)` — Tee loetust viie lausega kokkuvõte.
+- `source-bike-B1 (развёрнутый вопрос 5)` — Vali viis vajalikku sõna ja kasuta igaüht uues lauses.
+- `source-bike-B1 (развёрнутый вопрос 6)` — Sõnasta kaks täpsustavat küsimust teksti autorile.
+- `source-bike-B2 (развёрнутый вопрос 4)` — Sõnasta põhiväide ning erista seda kahest toetavast põhjendusest.
+- `source-bike-B2 (развёрнутый вопрос 5)` — Esita üks põhjendatud vastuväide ja sellele võimalik vastus.
+- `source-bike-B2 (развёрнутый вопрос 6)` — Kirjuta 180–220-sõnaline ülevaade konkreetsele adressaadile.
+- `source-bike-C1 (развёрнутый вопрос 4)` — Milline sõnastamata eeldus mõjutab teksti järeldusi? Näita, millele sinu tõlgendus toetub.
+- `source-bike-C1 (развёрнутый вопрос 5)` — Hinda väidete tugevust: mida allikas näitab ja mida selle põhjal veel väita ei saa?
+- `source-bike-C1 (развёрнутый вопрос 6)` — Kirjuta 250–320-sõnaline kriitiline süntees ning kohanda selle põhijäreldus ametlikuks soovituseks.
+- `source-library-news-B1 (развёрнутый вопрос 1)` — Milliseid aastaid võrreldakse?
+- `source-library-news-B1 (развёрнутый вопрос 2)` — Kas ürituste ja nende osalejate arv muutus samas suunas?
+- `source-library-news-B1 (развёрнутый вопрос 3)` — Miks ei tähenda laenutus tingimata üht lugejat?
+- `source-reading-blog-B1 (развёрнутый вопрос 1)` — Millist rolli omistatakse ühisele arutelule?
+- `source-reading-blog-B1 (развёрнутый вопрос 2)` — Kuidas seostab autor eeskuju ja lugemisharjumust?
+- `source-reading-blog-B1 (развёрнутый вопрос 3)` — Kas ettelugemine peaks iseseisva lugemise asendama?
+- `source-reading-interview-B1 (развёрнутый вопрос 1)` — Kuidas seostub isiklik lugemiskogemus ühise kultuuriruumiga?
+- `source-reading-interview-B1 (развёрнутый вопрос 2)` — Mis roll on raamatukoguhoidjal peale laenutamise?
+- `source-reading-interview-B1 (развёрнутый вопрос 3)` — Kuidas eristad intervjueerija küsimust vastaja seisukohast?
+- `source-ai-guidance-B1 (развёрнутый вопрос 1)` — Mida peab üliõpilane suutma kaitsmisel põhjendada?
+- `source-ai-guidance-B1 (развёрнутый вопрос 2)` — Mille poolest erineb keeleline toimetamine järelduste delegeerimisest?
+- `source-ai-guidance-B1 (развёрнутый вопрос 3)` — Miks peab õppija ise allikatega tutvuma?
+- `source-statistics-B1 (развёрнутый вопрос 1)` — Millised aastad ja ühikud on näitajate juures?
+- `source-statistics-B1 (развёрнутый вопрос 2)` — Võrdle tabelis kahe järjestikuse aasta trükitud ja e-raamatute nimetusi.
+- `source-statistics-B1 (развёрнутый вопрос 3)` — Miks ei tõesta väljaannete arv iseenesest inimeste lugemissagedust?
+- `harno-B1-reading (развёрнутый вопрос 1)` — Millise näidisülesande valisid? Salvesta selle pealkiri või otselink.
+- `harno-B1-reading (развёрнутый вопрос 2)` — Täida valitud ülesanne enne vastuste või hindamiskriteeriumide vaatamist.
+- `harno-B1-reading (развёрнутый вопрос 3)` — Võrdle oma tööd ametliku võtme või hindamiskriteeriumidega, kui need on avaldatud.
+- `harno-B1-reading (развёрнутый вопрос 4)` — Kirjelda kolme raskust ja leia igaühele parandamise viis.
+- `source-ai-course-B1 (развёрнутый вопрос 1)` — Kuidas põhjendavad autorid õppematerjali ajakohasuse piire?
+- `source-ai-course-B1 (развёрнутый вопрос 2)` — Miks eristatakse üldisi põhimõtteid kiiresti muutuvatest tööriistadest?
+- `source-ai-course-B1 (развёрнутый вопрос 3)` — Mida tähendab sisuliselt põhjendatud kasutamine selles sissejuhatuses?
+- `source-ai-article-B1 (развёрнутый вопрос 1)` — Milliseid erinevaid põhjuseid esitatakse õppejõudude ettevaatlikkusele?
+- `source-ai-article-B1 (развёрнутый вопрос 2)` — Miks ei asenda üldpädevused autori käsitluses teadmisi?
+- `source-ai-article-B1 (развёрнутый вопрос 3)` — Kuidas muutub koduse ettevalmistuse ja kohapealse hindamise suhe?
 
 ## speaking.json (180)
 

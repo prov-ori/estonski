@@ -10,7 +10,8 @@
     "check": "node validate.js && node tools/contrast.js && node tools/build-index.js --check && node tools/build-sw.js --check",
     "smoke": "node tools/smoke.js",
     "axe": "node tools/axe-audit.js",
-    "draft": "node tools/list-draft.js"
+    "draft": "node tools/list-draft.js",
+    "test:audio": "node tools/audio-layout-test.js"
   },
   "devDependencies": {
     "axe-core": "^4.14.0",

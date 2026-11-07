@@ -11,6 +11,7 @@ const MODULES = [
   ['grammar', 'Грамматика', 'views/grammar.js'],
   ['drills', 'Тренажёры', 'views/drills.js'],
   ['vocab', 'Словарь', 'views/vocab.js'],
+  ['originals', 'Оригиналы B1–C1', 'views/originals.js'],
   ['reading', 'Чтение', 'views/reading.js'],
   ['listening', 'Аудирование', 'views/listening.js'],
   ['writing', 'Письмо', 'views/writing.js'],
@@ -47,7 +48,7 @@ function setActive(name) {
 async function render() {
   const my = ++renderToken;
   const hash = location.hash.replace(/^#\/?/, '');
-  const [name = '', ...args] = hash.split('/').map(decodeURIComponent);
+  const [name = '', ...args] = hash.split('/').map(part => { try { return decodeURIComponent(part); } catch { return part; } });
   const entry = MODULES.find((m) => m[0] === name);
   const file = entry ? entry[2] : EXTRA[name];
   if (typeof cleanup === 'function') { try { cleanup(); } catch { /* ignore */ } }
@@ -64,9 +65,10 @@ async function render() {
     const mod = await import(`./${file}`);
     if (my !== renderToken) return; // пользователь уже ушёл на другую страницу
     const view = mod.default;
-    setChildren(main, );
-    const c = await view.mount(main, args);
+    const container = h('div', {class:'view'});
+    const c = await view.mount(container, args);
     if (my !== renderToken) { if (typeof c === 'function') c(); return; }
+    setChildren(main, container);
     cleanup = c;
     document.title = `${view.title} — Eesti keel B1`;
     if (!store.persistent) {
@@ -78,6 +80,7 @@ async function render() {
     firstRender = false;
     window.scrollTo(0, 0);
   } catch (e) {
+    if (my !== renderToken) return;
     console.warn(e);
     setChildren(main, 
       h('h1', null, 'Не удалось загрузить страницу'),
@@ -104,6 +107,9 @@ function buildPrefs() {
   applyPrefs(prefs);
 }
 
+document.querySelector('.skip').addEventListener('click', e => { e.preventDefault(); main.focus(); main.scrollIntoView(); });
+const header = document.querySelector('.site-header');
+if ('ResizeObserver' in window) new ResizeObserver(() => document.documentElement.style.setProperty('--header-height',header.getBoundingClientRect().height+'px')).observe(header);
 buildPrefs();
 buildNav();
 window.addEventListener('hashchange', render);

@@ -19,16 +19,15 @@ export default {
   title: 'План подготовки',
   async mount(root) {
     const prefs = getPrefs();
-    const all = await standaloneQuestions();
-    const topics = await topicMap();
-    const examDate = new Date(prefs.examDate + 'T09:00:00');
-    const left = Math.ceil((examDate.getTime() - Date.now()) / DAY);
-    const weeksLeft = Math.floor(left / 7);
-    const ph = phase(weeksLeft);
+    const [all, topics, writing] = await Promise.all([standaloneQuestions(), topicMap(), content('writing')]);
+    const today = new Date();
+    const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+    const left = (Date.parse(prefs.examDate) - todayUTC) / DAY;
+    const ph = phase(Math.ceil(left / 7));
     const ws = monday();
     const weekAnswers = Object.values(store.state.answers).filter((a) => a.ts >= ws);
     const byMod = (m) => weekAnswers.filter((a) => a.m === m).length;
-    const writingDone = Object.values(store.state.writing).filter((w) => w.ts >= ws && w.text).length;
+    const writingDone = writing.items.map((item) => store.getWriting(item.id)).filter((w) => w.ts >= ws && w.text?.trim()).length;
     const speakingDone = Object.values(store.state.speaking).filter((s) => s.ts >= ws).length;
     const daysActive = store.lastDays(7).filter((d) => d.date.getTime() >= ws && d.n > 0).length;
     const mockThisWeek = store.getMock().filter((m) => m.ts >= ws).length;
@@ -48,7 +47,7 @@ export default {
       h('h1', null, 'План подготовки'),
       h('p', { class: 'lead' }, 'Недельные цели считаются по вашим ответам. Тренажёр ничего не отправляет и не напоминает сам — заглядывайте сюда раз в день.'),
       h('div', { class: 'card' },
-        left > 0 ? h('p', { class: 'big' }, `До экзамена: ${left} дн. (${weeksLeft} нед.)`) : h('p', { class: 'big' }, 'Дата экзамена прошла'),
+        h('p', { class: 'big' }, left > 0 ? `До экзамена: ${left} дн.` : left === 0 ? 'Экзамен сегодня' : 'Дата экзамена прошла'),
         h('div', { class: 'field' }, h('label', { for: 'exam-date' }, 'Дата экзамена (по умолчанию условная — апрель 2027; уточните на harno.ee)'), dateInput),
         h('p', null, h('strong', null, `Этап: ${ph.name}. `), ph.text)),
       !diag && h('p', { class: 'notice' }, 'Диагностики ещё не было — ', h('a', { href: '#/diagnostic' }, 'пройдите её'), ', чтобы увидеть слабые темы.'),

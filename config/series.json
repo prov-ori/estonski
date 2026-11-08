@@ -195,6 +195,18 @@
    "module": "reading",
    "title_ru": "Как приготовить блины"
   },
+  "r-museum-b1": {
+   "module": "reading",
+   "title_ru": "Класс исследует музей"
+  },
+  "r-repair-b2": {
+   "module": "reading",
+   "title_ru": "Что измеряет мастерская ремонта?"
+  },
+  "r-forecast-c1": {
+   "module": "reading",
+   "title_ru": "Когда прогноз превращается в решение"
+  },
   "l-01": {
    "module": "listening",
    "title_ru": "Объявление директора"

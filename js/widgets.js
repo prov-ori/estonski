@@ -58,6 +58,8 @@ export function recorderWidget() {
   const supported = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder);
   const takes = [];
   let active = null;
+  let stream = null;
+  let destroyed = false;
   const list = h('ul', { class: 'takes' });
   const msg = h('p', { class: 'muted', role: 'status', 'aria-live': 'polite' });
   const notice = h('p', { class: 'notice privacy' },
@@ -70,17 +72,25 @@ export function recorderWidget() {
     msg, list);
 
   async function start() {
+    recBtn.disabled = true;
     msg.textContent = '';
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const rec = new MediaRecorder(stream);
+      const input = await navigator.mediaDevices.getUserMedia({ audio: true });
+      if (destroyed) {
+        input.getTracks().forEach((track) => track.stop());
+        return;
+      }
+      stream = input;
+      const rec = new MediaRecorder(input);
       const chunks = [];
       rec.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
       rec.onstop = () => {
-        stream.getTracks().forEach((t) => t.stop());
+        input.getTracks().forEach((track) => track.stop());
+        stream = null;
+        active = null;
+        if (destroyed) return;
         const blob = new Blob(chunks, { type: rec.mimeType || 'audio/webm' });
         addTake(blob);
-        active = null;
         recBtn.disabled = false; stopBtn.disabled = true;
         msg.textContent = 'Запись сохранена ниже. Прослушайте её и заполните чек-лист.';
       };
@@ -89,6 +99,10 @@ export function recorderWidget() {
       recBtn.disabled = true; stopBtn.disabled = false;
       msg.textContent = 'Идёт запись…';
     } catch (e) {
+      stream?.getTracks().forEach((track) => track.stop());
+      stream = null;
+      if (destroyed) return;
+      recBtn.disabled = false;
       const denied = e && (e.name === 'NotAllowedError' || e.name === 'SecurityError');
       msg.textContent = denied
         ? 'Нет доступа к микрофону. Разрешите его в настройках браузера (значок замка рядом с адресом) и попробуйте снова.'
@@ -109,7 +123,10 @@ export function recorderWidget() {
     list.append(li);
   }
   function destroy() {
+    destroyed = true;
     try { if (active && active.state !== 'inactive') active.stop(); } catch { /* ignore */ }
+    stream?.getTracks().forEach((track) => track.stop());
+    list.querySelectorAll('audio').forEach((audio) => audio.pause());
     takes.forEach((u) => URL.revokeObjectURL(u));
   }
   return { el, destroy };

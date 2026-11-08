@@ -3898,6 +3898,269 @@
      "answer": "õli"
     }
    ]
+  },
+  {
+   "id": "r-museum-b1",
+   "topic": "city",
+   "level": "B1",
+   "status": "draft",
+   "title_et": "Klass otsib muuseumis vastuseid",
+   "title_ru": "Класс исследует музей",
+   "explanation_ru": "Авторский учебный текст. Сначала найдите подтверждения в тексте, затем сформулируйте собственный вывод.",
+   "text_et": "Reedel läheb üheksas klass loodusmuuseumisse. Õpetaja palub õpilastel juba enne külastust mõelda, mida nad tahavad Eesti looduse kohta teada saada. Mia tahab teada, miks rabas ei kasva puud sama kiiresti kui metsas. Tema sõber Erik on lugenud lindude rändest ja otsib näitelt üht lindu, kes talveks Eestist lahkub. Klass jaguneb väikesteks rühmadeks, kuid iga õpilane valib oma küsimuse.\n\nMuuseumis leiab Mia soode kohta palju infot. Kõigepealt teeb ta sildist foto, sest arvab, et nii ei lähe midagi kaduma. Hiljem märkab ta, et fotol olev tekst on liiga pikk, et seda klassile ette lugeda. Ta paneb telefoni taskusse ning kirjutab märkmikku kaks mõtet oma sõnadega. Ühe mõtte juurde lisab ta küsimärgi, sest ta ei ole selgitusest päris hästi aru saanud. Erik seevastu leiab sobiva linnu, kuid unustab üles märkida, kust tema info pärineb.\n\nTagasi koolis ei pea rühmad tegema pikka esitlust. Igaüks räägib ühe minuti jooksul, millise vastuse ta leidis ja milline küsimus jäi veel lahtiseks. Õpetaja soovitab järgmine kord märkida üles ka näitusesildi pealkirja. Nii saab teine inimene vajaduse korral vastust kontrollida. Mia arvates oli kõige kasulikum see, et ta pidi muuseumis ise otsustama, milline info aitab just tema küsimusele vastata.",
+   "questions": [
+    {
+     "id": "r-museum-q1",
+     "prompt_et": "Mida palub õpetaja teha enne muuseumisse minekut?",
+     "type": "choice",
+     "options": [
+      "Valida looduse kohta küsimus",
+      "Kirjutada valmis ettekanne",
+      "Koguda teiste klasside märkmed"
+     ],
+     "answer": 0,
+     "explanation_ru": "До экскурсии ученики выбирают вопрос о природе."
+    },
+    {
+     "id": "r-museum-q2",
+     "prompt_et": "Miks paneb Mia telefoni lõpuks taskusse?",
+     "type": "choice",
+     "options": [
+      "Ta ei leia fotot üles",
+      "Ta eelistab panna olulise oma sõnadega kirja",
+      "Tal ei ole enam küsimusi"
+     ],
+     "answer": 1,
+     "explanation_ru": "Текст на фотографии слишком длинный, поэтому Мия записывает две мысли своими словами."
+    },
+    {
+     "id": "r-museum-q3",
+     "prompt_et": "Kõik rühmaliikmed peavad vastama samale küsimusele.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Каждый выбирает собственный вопрос."
+    },
+    {
+     "id": "r-museum-q4",
+     "prompt_et": "Mia teeb külastuse jooksul rohkem kui ühe foto.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Текст говорит об одной сделанной фотографии и не сообщает, были ли другие."
+    },
+    {
+     "id": "r-museum-q5",
+     "prompt_et": "Kui kaua räägib iga õpilane pärast külastust? Vastake sõnadega.",
+     "type": "input",
+     "answer": "ühe minuti",
+     "explanation_ru": "В тексте сказано «ühe minuti jooksul».",
+     "also_ok": [
+      "üks minut",
+      "ühe minuti jooksul"
+     ]
+    },
+    {
+     "id": "r-museum-q6",
+     "prompt_et": "Miks soovitab õpetaja kirjutada üles ka näitusesildi pealkirja?",
+     "type": "choice",
+     "options": [
+      "Et otsustada, kes räägib esimesena",
+      "Et leida pärast sama koht üles ja infot kontrollida",
+      "Et rühmadele uusi küsimusi jagada"
+     ],
+     "answer": 1,
+     "explanation_ru": "Заголовок позволяет другому человеку найти источник ответа."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Selgitage, mille poolest Mia märkmed ja Eriku märkmed erinevad.",
+     "rubric_ru": "Сопоставьте собственную формулировку Мии и пропущенный источник у Эрика."
+    },
+    {
+     "prompt_et": "Kirjutage näituse kohta üks küsimus ning selgitage, kuidas te sellele vastust otsiksite.",
+     "rubric_ru": "Назовите вопрос, способ поиска и способ проверки."
+    },
+    {
+     "prompt_et": "Koostage nelja lausega kokkuvõte muuseumikülastusest.",
+     "rubric_ru": "Укажите цель, действие, трудность и вывод."
+    }
+   ]
+  },
+  {
+   "id": "r-repair-b2",
+   "topic": "city",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Mida mõõdab paranduskohvik?",
+   "title_ru": "Что измеряет мастерская ремонта?",
+   "explanation_ru": "Авторский учебный текст. Сначала найдите подтверждения в тексте, затем сформулируйте собственный вывод.",
+   "text_et": "Kui ühe linna raamatukogus avati kord kuus tegutsev paranduskohvik, pidas korraldaja alguses kõige tähtsamaks parandatud esemete arvu. See näitaja oli lihtne: laual oli kaks nimekirja, ühte märgiti töökorda saadud esemed ja teise need, mida sel päeval parandada ei õnnestunud. Esimese kolme kohtumise järel oli aga selge, et nimekirjad ei kajasta kõike, mis töökojas toimub. Mõni külastaja tuli teist korda tagasi, sest oli esimesel kohtumisel õppinud, kuidas viga ise otsida. Teine sai teada, et vana seadet ei ole ohutu edasi kasutada, kuigi see läheb veel käima.\n\nVabatahtlike seas tekkis vaidlus. Ühe rühma arvates peaks paranduskohvik eelkõige vähendama jäätmeid. Nende meelest oleks aus küsida mõne kuu pärast, kas parandatud ese on endiselt kasutusel. Teised pidasid tähtsaks oskuste jagamist. Kui inimene oskab järgmine kord ise lahtise kruvi kinni keerata või katkise õmbluse parandada, on kohtumisest kasu ka siis, kui seekordne ese koju töökorras ei jõua. Samas ei saa ürituse mõju hinnata ainult selle põhjal, mida külastajad lahkudes enda kohta ütlevad. Hea tuju võib panna inimest oma uusi oskusi üle hindama.\n\nKorraldaja pakkus seetõttu välja kaheosalise ülevaate. Ürituse lõpus pannakse kirja, mis esemega juhtus ja mida külastaja proovis. Mõne nädala pärast saadetakse vabatahtlikult nõusoleku andnud inimestele kaks lühikest küsimust. Ühega uuritakse, kas ese on kasutusel, teisega seda, kas inimene on õpitut uuesti rakendanud. Korraldaja rõhutas, et vastuste põhjal ei saa teha järeldusi kõigi külastajate kohta. Need, kellel läks hästi, võivad vastata sagedamini.\n\nUus ülevaade nõuab rohkem aega, kuid aitab eristada vahetut tulemust ja pikemaajalist muutust. Paranduskohviku edu ei pea tingimata tähendama, et kõik esemed saavad korda. Pigem peab korraldaja enne hindamist otsustama, millist muutust ta üldse näha tahab ja millised andmed seda muutust näitaksid.",
+   "questions": [
+    {
+     "id": "r-repair-q1",
+     "prompt_et": "Mis jäi esialgses arvestuses tähelepanuta?",
+     "type": "choice",
+     "options": [
+      "Kohale toodud esemete arv",
+      "Külastajate õpitu ja esemete hilisem kasutus",
+      "Paranduskohviku toimumise aeg"
+     ],
+     "answer": 1,
+     "explanation_ru": "Первоначальная ведомость отражала состояние предметов в день встречи."
+    },
+    {
+     "id": "r-repair-q2",
+     "prompt_et": "Miks ei piisa külastajate hinnangust lahkumise ajal?",
+     "type": "choice",
+     "options": [
+      "Mulje võib olla tegelikest oskustest parem",
+      "Korraldajad ei luba oskustest rääkida",
+      "Külastajad ei tea, mis ese neile kuulub"
+     ],
+     "answer": 0,
+     "explanation_ru": "Хорошее настроение может привести к завышенной самооценке."
+    },
+    {
+     "id": "r-repair-q3",
+     "prompt_et": "Järelküsimused saadetakse kõigile külastajatele.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Только тем, кто согласился."
+    },
+    {
+     "id": "r-repair-q4",
+     "prompt_et": "Korraldaja võrdleb tulemusi teise linna paranduskohvikuga.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Сравнение с другим городом в тексте отсутствует."
+    },
+    {
+     "id": "r-repair-q5",
+     "prompt_et": "Mida uurib üks järelküsimus eseme kohta?",
+     "type": "choice",
+     "options": [
+      "Kas ese on endiselt kasutusel",
+      "Kui palju ese alguses maksis",
+      "Millisest poest ese osteti"
+     ],
+     "answer": 0,
+     "explanation_ru": "Важна дальнейшая судьба предмета."
+    },
+    {
+     "id": "r-repair-q6",
+     "prompt_et": "Millist kallutatust peab korraldaja võimalikuks?",
+     "type": "choice",
+     "options": [
+      "Kogenud vabatahtlikud jätavad nimekirjad täitmata",
+      "Õnnestunud kogemusega inimesed võivad sagedamini vastata",
+      "Külastajad unustavad alati vastata esimesele küsimusele"
+     ],
+     "answer": 1,
+     "explanation_ru": "В выборке могут быть чрезмерно представлены удачные случаи."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Võrrelge kahte arusaama paranduskohviku eesmärgist.",
+     "rubric_ru": "Сопоставьте сокращение отходов и передачу навыков. Для каждой цели предложите показатель."
+    },
+    {
+     "prompt_et": "Selgitage, kuidas vastamata jätnud inimesed võivad järeldust mõjutada.",
+     "rubric_ru": "Назовите механизм смещения и ограничьте силу вывода."
+    },
+    {
+     "prompt_et": "Kirjutage korraldajale soovitus, mida tasub järgmisel kohtumisel mõõta.",
+     "rubric_ru": "Дайте практическую рекомендацию и обоснуйте её, опираясь на текст."
+    }
+   ]
+  },
+  {
+   "id": "r-forecast-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Kui prognoosist saab otsus",
+   "title_ru": "Когда прогноз превращается в решение",
+   "explanation_ru": "Авторский учебный текст. Сначала найдите подтверждения в тексте, затем сформулируйте собственный вывод.",
+   "text_et": "Kujutlegem, et omavalitsus kaalub kahe väikese kooli ühendamist. Arutelu alguses esitatakse graafik, mille järgi väheneb kooliealiste laste arv piirkonnas kümne aasta jooksul. Ühinemise pooldaja nimetab graafikut tõendiks, et praegust koolivõrku pole võimalik säilitada. Vastane omakorda meenutab varasemat prognoosi, mis ei täitunud, ja järeldab, et arvutusi pole üldse mõtet arvesse võtta. Mõlemad seisukohad on arusaadavad, ent kummaski läheb kaduma vahe prognoosi ja otsuse vahel.\n\nPrognoos aitab hinnata, mis võiks juhtuda teatud eeldustel. See, kas sellest tuleneb koolide ühendamine, sõltub lisaks kuludest, sõiduaegadest, õppe korraldusest ning sellest, millist teenust peetakse piirkonnas vastuvõetavaks. Viimane küsimus ei ole lahendatav üksnes parema statistika abil. Kui kaks otsustajat nõustuvad laste arvu hinnanguga, võivad nad koolivõrgu suhtes ikkagi eriarvamusele jääda. Näiteks võib üks pidada väiksemaid kulusid määravaks, teine aga eelistada seda, et esimeses kooliastmes oleks kool kodu lähedal.\n\nArutelus püütakse ebakindlust mõnikord lahendada lihtsalt uue prognoosi tellimisega. Täpsemad lähteandmed on kahtlemata kasulikud, kuid mudeli täiendamine ei kaota vajadust arvestada eri võimalustega. Kui ehitatakse uusi elamuid, ei sõltu laste arv ainult eluruumide arvust. Oluline on ka see, kes sinna kolib ning kas kolijad tulevad samast omavalitsusest või mujalt. Seetõttu võivad sama elamuehituse kavaga sobida erinevad arengud. Mõistlik võrdlus vaataks, kuidas kavandatav otsus toimiks mitmes sellises olukorras.\n\nSamuti tuleb tähele panna, et otsus ise võib prognoosi aluseks olnud tingimusi muuta. Kui kool suletakse, võib osa peresid valida teise elukoha. Sellisel juhul ei saa hilisemat laste arvu vähenemist automaatselt pidada tõendiks, et sulgemine oli algusest peale vältimatu. Tegemist võib olla osaliselt otsuse enda tagajärjega. See ei tähenda, et kooli säilitamine tooks kindlasti peresid juurde. See tähendab, et põhjusliku seose hindamiseks tuleb küsida, mis oleks tõenäoliselt juhtunud teistsuguse otsuse korral.\n\nÜks lahendus on leppida enne lõpliku otsuse tegemist kokku näitajad, mida regulaarselt jälgida, ning tingimused, mille täitumisel plaan uuesti läbi vaadatakse. Selline kord ei vabasta omavalitsust vastutusest. Küll aga teeb see nähtavaks, millised eeldused ja väärtusvalikud otsuse taga on ning millise uue info korral ollakse valmis seda muutma.",
+   "questions": [
+    {
+     "id": "r-forecast-q1",
+     "prompt_et": "Milline probleem on mõlemal esimeses lõigus kirjeldatud seisukohal?",
+     "type": "choice",
+     "options": [
+      "Nad käsitlevad prognoosi ja otsust ühe küsimusena",
+      "Nad eelistavad mõlemad koolide ühendamist",
+      "Nad tuginevad ühele ja samale varasemale arvutusele"
+     ],
+     "answer": 0,
+     "explanation_ru": "Один выводит решение прямо из прогноза, другой отвергает прогноз из-за старой ошибки."
+    },
+    {
+     "id": "r-forecast-q2",
+     "prompt_et": "Millist väidet toetab näide kahe otsustaja kohta?",
+     "type": "choice",
+     "options": [
+      "Parema statistika korral kaovad väärtuserinevused",
+      "Ühesugune arvuline hinnang võib viia erinevate otsusteni",
+      "Kulude kohta ei saa midagi arvutada"
+     ],
+     "answer": 1,
+     "explanation_ru": "Совпадение оценок не устраняет различий в приоритетах."
+    },
+    {
+     "id": "r-forecast-q3",
+     "prompt_et": "Autori hinnangul mõjutab kooli sulgemine alati perede elukohavalikut.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Автор говорит о возможной реакции части семей, а не о неизбежной."
+    },
+    {
+     "id": "r-forecast-q4",
+     "prompt_et": "Kujuteldava omavalitsuse prognoos on tellitud ülikoolilt.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Исполнитель прогноза не назван."
+    },
+    {
+     "id": "r-forecast-q5",
+     "prompt_et": "Millise küsimuse abil saab arutada sulgemise võimalikku mõju?",
+     "type": "choice",
+     "options": [
+      "Kas sulgemise järel laste arv muutus?",
+      "Mis oleks tõenäoliselt juhtunud, kui kool oleks alles jäänud?",
+      "Kas prognoosi graafik oli hästi loetav?"
+     ],
+     "answer": 1,
+     "explanation_ru": "Чтобы говорить о причинности, нужно сравнить с альтернативным ходом событий."
+    },
+    {
+     "id": "r-forecast-q6",
+     "prompt_et": "Mis on viimase lõigu ettepaneku ülesanne?",
+     "type": "choice",
+     "options": [
+      "Anda otsustajale võimalus vastutust vältida",
+      "Tagada, et otsus jääb ka uue info korral samaks",
+      "Teha eeldused ja plaani muutmise tingimused läbipaistvaks"
+     ],
+     "answer": 2,
+     "explanation_ru": "Предлагается заранее определить показатели и основания для пересмотра."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Eristage tekstis kirjeldav väide ja väärtushinnang ning põhjendage oma valikut.",
+     "rubric_ru": "Приведите пример прогноза и пример критерия, выражающего приоритет."
+    },
+    {
+     "prompt_et": "Selgitage, kuidas otsus võib tekitada näiliselt ennast kinnitava prognoosi.",
+     "rubric_ru": "Опишите цепочку от решения до последствий. Укажите, почему совпадение прогноза и результата не доказывает неизбежность."
+    },
+    {
+     "prompt_et": "Kirjutage 180–220 sõna pikkune memo. Pakkuge välja kaks stsenaariumi ja plaani läbivaatamise tingimus.",
+     "rubric_ru": "Назовите допущения каждого сценария, критерий пересмотра и ограничение данных."
+    }
+   ]
   }
  ]
 }

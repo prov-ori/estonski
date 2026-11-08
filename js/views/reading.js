@@ -29,13 +29,15 @@ export default {
     const item = data.items.find((x) => x.id === id);
 
     if (!item) {
-      const requestedLevel = args[0] && args[0].startsWith('level-') ? args[0].slice(6) : 'B1-B2';
+      const levels = ['B1-B2', 'A2', 'B1', 'B2', 'C1'];
+      const level = args[0]?.replace(/^level-/, '');
+      const requestedLevel = levels.includes(level) ? level : 'B1-B2';
       const shown = data.items.filter((t) => (requestedLevel === 'B1-B2' ? ['B1', 'B2'].includes(t.level) : t.level === requestedLevel));
       addChildren(root, 
         h('h1', null, 'Чтение'),
         h('a',{class:'btn',href:'#/originals'},'Оригиналы B1 · B2 · C1'),
-        h('p', { class: 'lead' }, 'Тексты с вопросами четырёх типов: выбор ответа, верно/неверно, соответствие (плюс короткий ответ с клавиатуры).'),
-        h('nav', { class: 'chips', 'aria-label': 'Уровень чтения' }, ['B1-B2', 'B1', 'B2', 'A2'].map((l) => h('a', { class: 'chip', href: '#/reading/level-' + l, 'aria-current': l === requestedLevel ? 'true' : null }, l))),
+        h('p', { class: 'lead' }, 'Выберите уровень и тему. В заданиях есть выбор ответа, утверждения, соответствия и ответы с клавиатуры. К некоторым текстам добавлены развёрнутые вопросы.'),
+        h('nav', { class: 'chips', 'aria-label': 'Уровень чтения' }, levels.map((l) => h('a', { class: 'chip', href: '#/reading/level-' + l, 'aria-current': l === requestedLevel ? 'true' : null }, l))),
         filteredList(shown, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
           h('a', { class: 'card link-card', href: `#/reading/${t.id}` }, h('h2', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
       return;

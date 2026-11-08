@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 4251. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 4396. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -1788,7 +1788,7 @@
 - `pr-phrases` — Tüdruk joob õunamahla.
 - `pr-phrases` — Ülesanne on päris raske.
 
-## reading.json (1349)
+## reading.json (1476)
 
 - `r-01 (развёрнутый вопрос 1)` — Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?
 - `r-01 (развёрнутый вопрос 2)` — Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.
@@ -3139,8 +3139,135 @@
 - `r-25-q5 (вариант)` — kaks muna
 - `r-25-q5 (вариант)` — kolm lusikat
 - `r-25-q6` — Mida pannile enne taigent pannakse? Kirjuta sõna: õli
+- `r-museum-b1 (развёрнутый вопрос 1)` — Selgitage, mille poolest Mia märkmed ja Eriku märkmed erinevad.
+- `r-museum-b1 (развёрнутый вопрос 2)` — Kirjutage näituse kohta üks küsimus ning selgitage, kuidas te sellele vastust otsiksite.
+- `r-museum-b1 (развёрнутый вопрос 3)` — Koostage nelja lausega kokkuvõte muuseumikülastusest.
+- `r-museum-b1` — Klass otsib muuseumis vastuseid
+- `r-museum-b1` — Reedel läheb üheksas klass loodusmuuseumisse.
+- `r-museum-b1` — Õpetaja palub õpilastel juba enne külastust mõelda, mida nad tahavad Eesti looduse kohta teada saada.
+- `r-museum-b1` — Mia tahab teada, miks rabas ei kasva puud sama kiiresti kui metsas.
+- `r-museum-b1` — Tema sõber Erik on lugenud lindude rändest ja otsib näitelt üht lindu, kes talveks Eestist lahkub.
+- `r-museum-b1` — Klass jaguneb väikesteks rühmadeks, kuid iga õpilane valib oma küsimuse.
+- `r-museum-b1` — Muuseumis leiab Mia soode kohta palju infot.
+- `r-museum-b1` — Kõigepealt teeb ta sildist foto, sest arvab, et nii ei lähe midagi kaduma.
+- `r-museum-b1` — Hiljem märkab ta, et fotol olev tekst on liiga pikk, et seda klassile ette lugeda.
+- `r-museum-b1` — Ta paneb telefoni taskusse ning kirjutab märkmikku kaks mõtet oma sõnadega.
+- `r-museum-b1` — Ühe mõtte juurde lisab ta küsimärgi, sest ta ei ole selgitusest päris hästi aru saanud.
+- `r-museum-b1` — Erik seevastu leiab sobiva linnu, kuid unustab üles märkida, kust tema info pärineb.
+- `r-museum-b1` — Tagasi koolis ei pea rühmad tegema pikka esitlust.
+- `r-museum-b1` — Igaüks räägib ühe minuti jooksul, millise vastuse ta leidis ja milline küsimus jäi veel lahtiseks.
+- `r-museum-b1` — Õpetaja soovitab järgmine kord märkida üles ka näitusesildi pealkirja.
+- `r-museum-b1` — Nii saab teine inimene vajaduse korral vastust kontrollida.
+- `r-museum-b1` — Mia arvates oli kõige kasulikum see, et ta pidi muuseumis ise otsustama, milline info aitab just tema küsimusele vastata.
+- `r-museum-q1` — Mida palub õpetaja teha enne muuseumisse minekut?
+- `r-museum-q1 (вариант)` — Valida looduse kohta küsimus
+- `r-museum-q1 (вариант)` — Kirjutada valmis ettekanne
+- `r-museum-q1 (вариант)` — Koguda teiste klasside märkmed
+- `r-museum-q2` — Miks paneb Mia telefoni lõpuks taskusse?
+- `r-museum-q2 (вариант)` — Ta ei leia fotot üles
+- `r-museum-q2 (вариант)` — Ta eelistab panna olulise oma sõnadega kirja
+- `r-museum-q2 (вариант)` — Tal ei ole enam küsimusi
+- `r-museum-q3` — Kõik rühmaliikmed peavad vastama samale küsimusele.
+- `r-museum-q4` — Mia teeb külastuse jooksul rohkem kui ühe foto.
+- `r-museum-q5` — Kui kaua räägib iga õpilane pärast külastust? Vastake sõnadega.
+- `r-museum-q5 (вариант)` — üks minut
+- `r-museum-q5 (вариант)` — ühe minuti jooksul
+- `r-museum-q6` — Miks soovitab õpetaja kirjutada üles ka näitusesildi pealkirja?
+- `r-museum-q6 (вариант)` — Et otsustada, kes räägib esimesena
+- `r-museum-q6 (вариант)` — Et leida pärast sama koht üles ja infot kontrollida
+- `r-museum-q6 (вариант)` — Et rühmadele uusi küsimusi jagada
+- `r-repair-b2 (развёрнутый вопрос 1)` — Võrrelge kahte arusaama paranduskohviku eesmärgist.
+- `r-repair-b2 (развёрнутый вопрос 2)` — Selgitage, kuidas vastamata jätnud inimesed võivad järeldust mõjutada.
+- `r-repair-b2 (развёрнутый вопрос 3)` — Kirjutage korraldajale soovitus, mida tasub järgmisel kohtumisel mõõta.
+- `r-repair-b2` — Mida mõõdab paranduskohvik?
+- `r-repair-b2` — Kui ühe linna raamatukogus avati kord kuus tegutsev paranduskohvik, pidas korraldaja alguses kõige tähtsamaks parandatud esemete arvu.
+- `r-repair-b2` — See näitaja oli lihtne: laual oli kaks nimekirja, ühte märgiti töökorda saadud esemed ja teise need, mida sel päeval parandada ei õnnestunud.
+- `r-repair-b2` — Esimese kolme kohtumise järel oli aga selge, et nimekirjad ei kajasta kõike, mis töökojas toimub.
+- `r-repair-b2` — Mõni külastaja tuli teist korda tagasi, sest oli esimesel kohtumisel õppinud, kuidas viga ise otsida.
+- `r-repair-b2` — Teine sai teada, et vana seadet ei ole ohutu edasi kasutada, kuigi see läheb veel käima.
+- `r-repair-b2` — Vabatahtlike seas tekkis vaidlus.
+- `r-repair-b2` — Ühe rühma arvates peaks paranduskohvik eelkõige vähendama jäätmeid.
+- `r-repair-b2` — Nende meelest oleks aus küsida mõne kuu pärast, kas parandatud ese on endiselt kasutusel.
+- `r-repair-b2` — Teised pidasid tähtsaks oskuste jagamist.
+- `r-repair-b2` — Kui inimene oskab järgmine kord ise lahtise kruvi kinni keerata või katkise õmbluse parandada, on kohtumisest kasu ka siis, kui seekordne ese koju töökorras ei jõua.
+- `r-repair-b2` — Samas ei saa ürituse mõju hinnata ainult selle põhjal, mida külastajad lahkudes enda kohta ütlevad.
+- `r-repair-b2` — Hea tuju võib panna inimest oma uusi oskusi üle hindama.
+- `r-repair-b2` — Korraldaja pakkus seetõttu välja kaheosalise ülevaate.
+- `r-repair-b2` — Ürituse lõpus pannakse kirja, mis esemega juhtus ja mida külastaja proovis.
+- `r-repair-b2` — Mõne nädala pärast saadetakse vabatahtlikult nõusoleku andnud inimestele kaks lühikest küsimust.
+- `r-repair-b2` — Ühega uuritakse, kas ese on kasutusel, teisega seda, kas inimene on õpitut uuesti rakendanud.
+- `r-repair-b2` — Korraldaja rõhutas, et vastuste põhjal ei saa teha järeldusi kõigi külastajate kohta.
+- `r-repair-b2` — Need, kellel läks hästi, võivad vastata sagedamini.
+- `r-repair-b2` — Uus ülevaade nõuab rohkem aega, kuid aitab eristada vahetut tulemust ja pikemaajalist muutust.
+- `r-repair-b2` — Paranduskohviku edu ei pea tingimata tähendama, et kõik esemed saavad korda.
+- `r-repair-b2` — Pigem peab korraldaja enne hindamist otsustama, millist muutust ta üldse näha tahab ja millised andmed seda muutust näitaksid.
+- `r-repair-q1` — Mis jäi esialgses arvestuses tähelepanuta?
+- `r-repair-q1 (вариант)` — Kohale toodud esemete arv
+- `r-repair-q1 (вариант)` — Külastajate õpitu ja esemete hilisem kasutus
+- `r-repair-q1 (вариант)` — Paranduskohviku toimumise aeg
+- `r-repair-q2` — Miks ei piisa külastajate hinnangust lahkumise ajal?
+- `r-repair-q2 (вариант)` — Mulje võib olla tegelikest oskustest parem
+- `r-repair-q2 (вариант)` — Korraldajad ei luba oskustest rääkida
+- `r-repair-q2 (вариант)` — Külastajad ei tea, mis ese neile kuulub
+- `r-repair-q3` — Järelküsimused saadetakse kõigile külastajatele.
+- `r-repair-q4` — Korraldaja võrdleb tulemusi teise linna paranduskohvikuga.
+- `r-repair-q5` — Mida uurib üks järelküsimus eseme kohta?
+- `r-repair-q5 (вариант)` — Kas ese on endiselt kasutusel
+- `r-repair-q5 (вариант)` — Kui palju ese alguses maksis
+- `r-repair-q5 (вариант)` — Millisest poest ese osteti
+- `r-repair-q6` — Millist kallutatust peab korraldaja võimalikuks?
+- `r-repair-q6 (вариант)` — Kogenud vabatahtlikud jätavad nimekirjad täitmata
+- `r-repair-q6 (вариант)` — Õnnestunud kogemusega inimesed võivad sagedamini vastata
+- `r-repair-q6 (вариант)` — Külastajad unustavad alati vastata esimesele küsimusele
+- `r-forecast-c1 (развёрнутый вопрос 1)` — Eristage tekstis kirjeldav väide ja väärtushinnang ning põhjendage oma valikut.
+- `r-forecast-c1 (развёрнутый вопрос 2)` — Selgitage, kuidas otsus võib tekitada näiliselt ennast kinnitava prognoosi.
+- `r-forecast-c1 (развёрнутый вопрос 3)` — Kirjutage 180–220 sõna pikkune memo. Pakkuge välja kaks stsenaariumi ja plaani läbivaatamise tingimus.
+- `r-forecast-c1` — Kui prognoosist saab otsus
+- `r-forecast-c1` — Kujutlegem, et omavalitsus kaalub kahe väikese kooli ühendamist.
+- `r-forecast-c1` — Arutelu alguses esitatakse graafik, mille järgi väheneb kooliealiste laste arv piirkonnas kümne aasta jooksul.
+- `r-forecast-c1` — Ühinemise pooldaja nimetab graafikut tõendiks, et praegust koolivõrku pole võimalik säilitada.
+- `r-forecast-c1` — Vastane omakorda meenutab varasemat prognoosi, mis ei täitunud, ja järeldab, et arvutusi pole üldse mõtet arvesse võtta.
+- `r-forecast-c1` — Mõlemad seisukohad on arusaadavad, ent kummaski läheb kaduma vahe prognoosi ja otsuse vahel.
+- `r-forecast-c1` — Prognoos aitab hinnata, mis võiks juhtuda teatud eeldustel.
+- `r-forecast-c1` — See, kas sellest tuleneb koolide ühendamine, sõltub lisaks kuludest, sõiduaegadest, õppe korraldusest ning sellest, millist teenust peetakse piirkonnas vastuvõetavaks.
+- `r-forecast-c1` — Viimane küsimus ei ole lahendatav üksnes parema statistika abil.
+- `r-forecast-c1` — Kui kaks otsustajat nõustuvad laste arvu hinnanguga, võivad nad koolivõrgu suhtes ikkagi eriarvamusele jääda.
+- `r-forecast-c1` — Näiteks võib üks pidada väiksemaid kulusid määravaks, teine aga eelistada seda, et esimeses kooliastmes oleks kool kodu lähedal.
+- `r-forecast-c1` — Arutelus püütakse ebakindlust mõnikord lahendada lihtsalt uue prognoosi tellimisega.
+- `r-forecast-c1` — Täpsemad lähteandmed on kahtlemata kasulikud, kuid mudeli täiendamine ei kaota vajadust arvestada eri võimalustega.
+- `r-forecast-c1` — Kui ehitatakse uusi elamuid, ei sõltu laste arv ainult eluruumide arvust.
+- `r-forecast-c1` — Oluline on ka see, kes sinna kolib ning kas kolijad tulevad samast omavalitsusest või mujalt.
+- `r-forecast-c1` — Seetõttu võivad sama elamuehituse kavaga sobida erinevad arengud.
+- `r-forecast-c1` — Mõistlik võrdlus vaataks, kuidas kavandatav otsus toimiks mitmes sellises olukorras.
+- `r-forecast-c1` — Samuti tuleb tähele panna, et otsus ise võib prognoosi aluseks olnud tingimusi muuta.
+- `r-forecast-c1` — Kui kool suletakse, võib osa peresid valida teise elukoha.
+- `r-forecast-c1` — Sellisel juhul ei saa hilisemat laste arvu vähenemist automaatselt pidada tõendiks, et sulgemine oli algusest peale vältimatu.
+- `r-forecast-c1` — Tegemist võib olla osaliselt otsuse enda tagajärjega.
+- `r-forecast-c1` — See ei tähenda, et kooli säilitamine tooks kindlasti peresid juurde.
+- `r-forecast-c1` — See tähendab, et põhjusliku seose hindamiseks tuleb küsida, mis oleks tõenäoliselt juhtunud teistsuguse otsuse korral.
+- `r-forecast-c1` — Üks lahendus on leppida enne lõpliku otsuse tegemist kokku näitajad, mida regulaarselt jälgida, ning tingimused, mille täitumisel plaan uuesti läbi vaadatakse.
+- `r-forecast-c1` — Selline kord ei vabasta omavalitsust vastutusest.
+- `r-forecast-c1` — Küll aga teeb see nähtavaks, millised eeldused ja väärtusvalikud otsuse taga on ning millise uue info korral ollakse valmis seda muutma.
+- `r-forecast-q1` — Milline probleem on mõlemal esimeses lõigus kirjeldatud seisukohal?
+- `r-forecast-q1 (вариант)` — Nad käsitlevad prognoosi ja otsust ühe küsimusena
+- `r-forecast-q1 (вариант)` — Nad eelistavad mõlemad koolide ühendamist
+- `r-forecast-q1 (вариант)` — Nad tuginevad ühele ja samale varasemale arvutusele
+- `r-forecast-q2` — Millist väidet toetab näide kahe otsustaja kohta?
+- `r-forecast-q2 (вариант)` — Parema statistika korral kaovad väärtuserinevused
+- `r-forecast-q2 (вариант)` — Ühesugune arvuline hinnang võib viia erinevate otsusteni
+- `r-forecast-q2 (вариант)` — Kulude kohta ei saa midagi arvutada
+- `r-forecast-q3` — Autori hinnangul mõjutab kooli sulgemine alati perede elukohavalikut.
+- `r-forecast-q4` — Kujuteldava omavalitsuse prognoos on tellitud ülikoolilt.
+- `r-forecast-q5` — Millise küsimuse abil saab arutada sulgemise võimalikku mõju?
+- `r-forecast-q5 (вариант)` — Kas sulgemise järel laste arv muutus?
+- `r-forecast-q5 (вариант)` — Mis oleks tõenäoliselt juhtunud, kui kool oleks alles jäänud?
+- `r-forecast-q5 (вариант)` — Kas prognoosi graafik oli hästi loetav?
+- `r-forecast-q6` — Mis on viimase lõigu ettepaneku ülesanne?
+- `r-forecast-q6 (вариант)` — Anda otsustajale võimalus vastutust vältida
+- `r-forecast-q6 (вариант)` — Tagada, et otsus jääb ka uue info korral samaks
+- `r-forecast-q6 (вариант)` — Teha eeldused ja plaani muutmise tingimused läbipaistvaks
 
-## sources.json (37)
+## sources.json (55)
 
 - `source-bike-B1 (развёрнутый вопрос 1)` — Kellele on teade suunatud?
 - `source-bike-B1 (развёрнутый вопрос 2)` — Millised tingimused puudutavad juhiluba ja ostuarvet?
@@ -3179,6 +3306,24 @@
 - `source-ai-article-B1 (развёрнутый вопрос 1)` — Milliseid erinevaid põhjuseid esitatakse õppejõudude ettevaatlikkusele?
 - `source-ai-article-B1 (развёрнутый вопрос 2)` — Miks ei asenda üldpädevused autori käsitluses teadmisi?
 - `source-ai-article-B1 (развёрнутый вопрос 3)` — Kuidas muutub koduse ettevalmistuse ja kohapealse hindamise suhe?
+- `source-museum-B1 (развёрнутый вопрос 1)` — Kus muuseum asub? Pange kirja linn ja aadress.
+- `source-museum-B1 (развёрнутый вопрос 2)` — Millistel korrustel asub püsinäitus?
+- `source-museum-B1 (развёрнутый вопрос 3)` — Mida saab soode kohta teada? Nimetage kaks asja.
+- `source-museum-B1 (развёрнутый вопрос 4)` — Milliseid loomarühmi saab näitusel tundma õppida?
+- `source-museum-B1 (развёрнутый вопрос 5)` — Valige üks väljapanek ja selgitage, miks tahaksite seda näha.
+- `source-museum-B1 (развёрнутый вопрос 6)` — Kirjutage sõbrale kolm lauset külastuse plaanist.
+- `source-register-B2 (развёрнутый вопрос 1)` — Millises vormingus on avalikud andmed alla laaditavad? Millal on saadaval CSV?
+- `source-register-B2 (развёрнутый вопрос 2)` — Kelle kohta andmekogumid teavet sisaldavad?
+- `source-register-B2 (развёрнутый вопрос 3)` — Mida tähendab siin väide, et enamikku faile uuendatakse kord päevas?
+- `source-register-B2 (развёрнутый вопрос 4)` — Kas üks fail sobiks kõigi äritegevuse vormide võrdlemiseks? Põhjendage.
+- `source-register-B2 (развёрнутый вопрос 5)` — Koostage uurimisküsimus, millele üks loetelus olev fail võiks vastata.
+- `source-register-B2 (развёрнутый вопрос 6)` — Kirjutage kolleegile lühike juhis andmete kontrollimiseks enne analüüsi.
+- `source-population-C1 (развёрнутый вопрос 1)` — Millised kolm põhikomponenti määravad prognoosi? Selgitage, kuidas need vanuselist koosseisu mõjutavad.
+- `source-population-C1 (развёрнутый вопрос 2)` — Miks on vaja mitut stsenaariumi isegi siis, kui praegune trend on selge?
+- `source-population-C1 (развёрнутый вопрос 3)` — Eristage lehel esitatud vaatlus ja prognoos. Mis võimaldab neid eristada?
+- `source-population-C1 (развёрнутый вопрос 4)` — Selgitage, miks prognoosi ja tegeliku rahvaarvu erinevus ei näita iseenesest, et meetod on vigane.
+- `source-population-C1 (развёрнутый вопрос 5)` — Sõnastage üks tingimuslik ja üks eksitavalt kindel pealkiri. Selgitage erinevust.
+- `source-population-C1 (развёрнутый вопрос 6)` — Kirjutage 150–180 sõnaga memo, kuidas võiks kohalik omavalitsus prognoosi kasutada.
 
 ## speaking.json (180)
 

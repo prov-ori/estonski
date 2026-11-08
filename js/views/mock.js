@@ -23,6 +23,7 @@ export default {
     const done = {};
     let live = null;
     let notice = '';
+    let disposed = false;
     const guard = (e) => { e.preventDefault(); e.returnValue = ''; };
     const armGuard = () => window.addEventListener('beforeunload', guard);
     const disarmGuard = () => window.removeEventListener('beforeunload', guard);
@@ -48,24 +49,38 @@ export default {
         hist.length > 0 && h('div', null, h('h2', null, 'Прошлые попытки'), h('ul', null, [...hist].reverse().slice(0, 5).map((r) => h('li', null, `${fmtDate(r.ts)} — ${r.pct} % (${r.got}/${r.max})${r.partial ? ', частичный' : ''}`)))));
     }
 
-    async function begin() {
+    async function begin(event) {
       parts = fmt.parts.filter((p) => selected.has(p.id));
       if (!parts.length) { await alertDialog('Выберите хотя бы одну часть.'); return; }
+      event.currentTarget.disabled = true;
       Object.keys(done).forEach((k) => delete done[k]);
       partIdx = 0; notice = '';
       armGuard();
       startPart();
     }
 
-    async function startPart() {
+    async function startPart(event) {
+      if (event) event.currentTarget.disabled = true;
       if (live) { live.destroy(); live = null; }
       if (partIdx >= parts.length) return results();
       const p = parts[partIdx];
-      const q = await resolvePart(mock.parts[p.id]);
+      let q;
+      try {
+        q = await resolvePart(mock.parts[p.id]);
+      } catch {
+        if (disposed) return;
+        disarmGuard();
+        setChildren(root, h('h1', null, 'Не удалось загрузить часть'), h('p', null, 'Проверьте соединение и повторите попытку.'),
+          h('button', { class: 'btn primary', type: 'button', onclick: startPart }, 'Повторить'));
+        return;
+      }
+      if (disposed) return;
+      armGuard();
       const body = h('div');
       let finished = false;
       const finishPart = (byTimer) => {
-        if (finished) return; finished = true;
+        if (disposed || finished) return;
+        finished = true;
         done[p.id] = { ...live.collect(), byTimer };
         notice = byTimer ? `Время части «${p.title_ru}» вышло — ответы сохранены.` : '';
         partIdx++; startPart();
@@ -159,6 +174,6 @@ export default {
     }
 
     intro();
-    return () => { disarmGuard(); if (live) live.destroy(); };
+    return () => { disposed = true; disarmGuard(); if (live) live.destroy(); };
   },
 };

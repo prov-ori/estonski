@@ -79,5 +79,55 @@ const server=http.createServer((req,res)=>{
     await page.waitForTimeout(300);assert.equal(await page.locator('main h1').count(),1);assert((await page.locator('main h1').innerText()).startsWith('Письмо:'));
     await page.goto(base+'#/%E0%A4%A');await page.waitForSelector('main h1');assert((await page.locator('main h1').innerText()).includes('не найдена'));
     await context.close();console.log('PASS route race and malformed URL');
+
+    const compact = await browser.newContext({ viewport: { width: 320, height: 568 }, serviceWorkers: 'block' });
+    const narrow = await compact.newPage();
+    await compact.addInitScript(() => {
+      localStorage.setItem('estonski.prefs', JSON.stringify({ font: 'xlarge' }));
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', { value: () => new Promise(resolve => {
+        window.grantMicrophone = () => resolve({ getTracks: () => [{ stop() { window.microphoneReleased = true; } }] });
+      }) });
+    });
+    await narrow.goto(base + '#/speaking/s-01');
+    await narrow.getByRole('button', { name: 'Меню', exact: true }).click();
+    const lastLink = narrow.locator('#nav').getByRole('link', { name: 'Прогресс', exact: true });
+    await lastLink.scrollIntoViewIfNeeded();
+    const lastBox = await lastLink.boundingBox();
+    assert(lastBox.y >= 0 && lastBox.y + lastBox.height <= 568, 'last menu item stays within the viewport');
+    await lastLink.focus();
+    await narrow.keyboard.press('Escape');
+    assert.equal(await narrow.locator('#menu-btn').getAttribute('aria-expanded'), 'false');
+    assert(await narrow.locator('#menu-btn').evaluate(button => button === document.activeElement));
+    await narrow.getByRole('button', { name: /Записать/ }).click();
+    await narrow.waitForFunction(() => typeof window.grantMicrophone === 'function');
+    await narrow.evaluate(() => { location.hash = '#/reading/level-C1'; });
+    await narrow.locator('a[href="#/reading/r-forecast-c1"]').waitFor();
+    await narrow.evaluate(() => window.grantMicrophone());
+    await narrow.waitForFunction(() => window.microphoneReleased);
+    await narrow.locator('a[href="#/reading/r-forecast-c1"]').click();
+    await narrow.locator('.open-tasks textarea').first().waitFor();
+    assert.equal(await narrow.locator('.qset .question').count(), 6);
+    assert(await narrow.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await narrow.setViewportSize({ width: 1024, height: 420 });
+    const contextBox = await narrow.locator('.pane-left').boundingBox();
+    const tasksBox = await narrow.locator('.pane-right').boundingBox();
+    assert(contextBox.x + contextBox.width <= tasksBox.x + 1);
+    assert.equal(await narrow.locator('.pane-left').evaluate(el => getComputedStyle(el).position), 'static');
+    await compact.close();
+    console.log('PASS 320px menu, keyboard focus, delayed microphone cleanup and C1 reading on short screens');
+
+    const progress = await browser.newPage({serviceWorkers:'block'});
+    await progress.goto(base);
+    const imported = await progress.evaluate(async () => {
+      const {store} = await import('/js/store.js');
+      store.setWriting('w-01', { text: 'Minu tekst' });
+      const before = localStorage.getItem('estonski.v1');
+      const malformed = [{v:1,answers:null}, {v:1,answers:[]}, {v:1,answers:{bad:null}}, {v:1,answers:{},mock:[null]}];
+      return malformed.every(data => !store.importJSON(JSON.stringify(data)).ok) &&
+        localStorage.getItem('estonski.v1') === before && store.getWriting('w-01').text === 'Minu tekst';
+    });
+    assert(imported, 'malformed imports must preserve the saved progress');
+    await progress.close();
+    console.log('PASS malformed progress imports preserve drafts');
   } finally {await browser.close();server.close();}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});

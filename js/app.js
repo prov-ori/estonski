@@ -29,11 +29,23 @@ let cleanup = null;
 let renderToken = 0;
 let firstRender = true;
 
+function toggleMenu(open) {
+  nav.classList.toggle('open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+}
+
 function buildNav() {
   setChildren(nav, ...MODULES.map(([id, title]) => h('a', { href: `#/${id}`, 'data-id': id }, title)));
-  menuBtn.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.addEventListener('click', () => toggleMenu(!nav.classList.contains('open')));
+  nav.addEventListener('click', (event) => {
+    if (event.target.closest('a')?.hash !== location.hash || !nav.classList.contains('open')) return;
+    toggleMenu(false);
+    menuBtn.focus();
+  });
+  document.querySelector('.site-header').addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !nav.classList.contains('open')) return;
+    toggleMenu(false);
+    menuBtn.focus();
   });
 }
 
@@ -41,8 +53,7 @@ function setActive(name) {
   nav.querySelectorAll('a').forEach((a) => {
     if (a.dataset.id === name) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
-  nav.classList.remove('open');
-  menuBtn.setAttribute('aria-expanded', 'false');
+  toggleMenu(false);
 }
 
 async function render() {

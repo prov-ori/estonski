@@ -3,17 +3,27 @@ const KEY = 'estonski.v1';
 
 const empty = () => ({ v: 1, answers: {}, cards: {}, diag: null, mock: [], writing: {}, speaking: {}, activity: {} });
 
+const isObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
+const safeKey = (key) => typeof key === 'string' && key.length > 0 && !(key in Object.prototype);
+const count = (value) => Number.isSafeInteger(value) && value >= 0;
+const records = {
+  answers: (a) => isObject(a) && safeKey(a.m) && safeKey(a.t) && count(a.r) && count(a.w) && typeof a.ok === 'boolean' && Number.isFinite(a.ts),
+  cards: (c) => isObject(c) && count(c.box) && Number.isFinite(c.due),
+  writing: (w) => isObject(w) && (w.text === undefined || typeof w.text === 'string') && (w.checks === undefined || isObject(w.checks)),
+  speaking: (s) => isObject(s) && (s.checks === undefined || isObject(s.checks)),
+  activity: count,
+};
+const validMock = (m) => isObject(m) && [m.ts, m.pct, m.got, m.max].every(Number.isFinite);
+const validDiag = (d) => isObject(d) && Number.isFinite(d.ts) && typeof d.zoneLabel === 'string' && count(d.got) && count(d.max);
+
 function sanitize(d) {
   const e = empty();
   if (!d || typeof d !== 'object' || d.v !== 1) return e;
-  const isObj = (x) => x && typeof x === 'object' && !Array.isArray(x);
-  if (isObj(d.answers)) e.answers = d.answers;
-  if (isObj(d.cards)) e.cards = d.cards;
-  if (isObj(d.writing)) e.writing = d.writing;
-  if (isObj(d.speaking)) e.speaking = d.speaking;
-  if (isObj(d.activity)) e.activity = d.activity;
-  if (isObj(d.diag)) e.diag = d.diag;
-  if (Array.isArray(d.mock)) e.mock = d.mock;
+  for (const [key, valid] of Object.entries(records)) {
+    if (isObject(d[key])) e[key] = Object.fromEntries(Object.entries(d[key]).filter(([id, value]) => safeKey(id) && valid(value)));
+  }
+  if (validDiag(d.diag)) e.diag = d.diag;
+  if (Array.isArray(d.mock)) e.mock = d.mock.filter(validMock);
   return e;
 }
 
@@ -104,7 +114,13 @@ export const store = {
   importJSON(text) {
     try {
       const d = JSON.parse(text);
-      if (!d || d.v !== 1 || typeof d.answers !== 'object') return { ok: false, error: 'Это не файл прогресса этого тренажёра.' };
+      if (!isObject(d) || d.v !== 1 || !isObject(d.answers)) return { ok: false, error: 'Это не файл прогресса этого тренажёра.' };
+      const invalidRecord = Object.entries(records).some(([key, valid]) => d[key] !== undefined &&
+        (!isObject(d[key]) || !Object.entries(d[key]).every(([id, value]) => safeKey(id) && valid(value))));
+      if (invalidRecord || (d.mock !== undefined && (!Array.isArray(d.mock) || !d.mock.every(validMock))) ||
+          (d.diag != null && !validDiag(d.diag))) {
+        return { ok: false, error: 'В файле повреждены записи прогресса. Текущие данные сохранены.' };
+      }
       state = sanitize(d);
       save();
       return { ok: true };

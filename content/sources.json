@@ -1508,6 +1508,123 @@
         }
       ],
       "published_on": "2025"
+    },
+    {
+      "id": "source-museum-B1",
+      "topic": "city",
+      "level": "B1",
+      "status": "draft",
+      "title_ru": "Постоянная экспозиция Музея природы",
+      "publisher": "Eesti Loodusmuuseum",
+      "kind": "Справочный материал",
+      "url": "https://www.loodusmuuseum.ee/et/exhibitions/pusinaitus",
+      "checked_on": "2026-11-08",
+      "guide_ru": "Откройте оригинал в соседней вкладке и запишите ответы по-эстонски. В критериях указано, какие детали стоит проверить.",
+      "explanation_ru": "Задания составлены по материалу издателя. Уровень относится к сложности вопросов.",
+      "tasks": [
+        {
+          "prompt_et": "Kus muuseum asub? Pange kirja linn ja aadress.",
+          "rubric_ru": "Назовите город и адрес из страницы."
+        },
+        {
+          "prompt_et": "Millistel korrustel asub püsinäitus?",
+          "rubric_ru": "Укажите оба этажа."
+        },
+        {
+          "prompt_et": "Mida saab soode kohta teada? Nimetage kaks asja.",
+          "rubric_ru": "Подойдут любые две темы из описания болот."
+        },
+        {
+          "prompt_et": "Milliseid loomarühmi saab näitusel tundma õppida?",
+          "rubric_ru": "Перечислите группы животных, указанные в описании."
+        },
+        {
+          "prompt_et": "Valige üks väljapanek ja selgitage, miks tahaksite seda näha.",
+          "rubric_ru": "Свяжите личный интерес с конкретным экспонатом или темой."
+        },
+        {
+          "prompt_et": "Kirjutage sõbrale kolm lauset külastuse plaanist.",
+          "rubric_ru": "Укажите место, выбранную часть экспозиции и вопрос для совместного поиска."
+        }
+      ]
+    },
+    {
+      "id": "source-register-B2",
+      "topic": "city",
+      "level": "B2",
+      "status": "draft",
+      "title_ru": "Как читать описание открытых данных",
+      "publisher": "Registrite ja Infosüsteemide Keskus",
+      "kind": "Справочный материал",
+      "url": "https://avaandmed.ariregister.rik.ee/et/avaandmete-allalaadimine",
+      "checked_on": "2026-11-08",
+      "guide_ru": "Откройте оригинал в соседней вкладке и запишите ответы по-эстонски. В критериях указано, какие детали стоит проверить.",
+      "explanation_ru": "Задания составлены по материалу издателя. Уровень относится к сложности вопросов.",
+      "tasks": [
+        {
+          "prompt_et": "Millises vormingus on avalikud andmed alla laaditavad? Millal on saadaval CSV?",
+          "rubric_ru": "Различите основные форматы и ограниченную доступность CSV."
+        },
+        {
+          "prompt_et": "Kelle kohta andmekogumid teavet sisaldavad?",
+          "rubric_ru": "Отметьте, что речь о публичных данных зарегистрированных юридических лиц с указанными статусами."
+        },
+        {
+          "prompt_et": "Mida tähendab siin väide, et enamikku faile uuendatakse kord päevas?",
+          "rubric_ru": "Объясните разницу между большинством и всеми файлами."
+        },
+        {
+          "prompt_et": "Kas üks fail sobiks kõigi äritegevuse vormide võrdlemiseks? Põhjendage.",
+          "rubric_ru": "Укажите ограничения охвата и необходимость проверить выбранный набор."
+        },
+        {
+          "prompt_et": "Koostage uurimisküsimus, millele üks loetelus olev fail võiks vastata.",
+          "rubric_ru": "Свяжите вопрос с конкретным набором и полем из описания."
+        },
+        {
+          "prompt_et": "Kirjutage kolleegile lühike juhis andmete kontrollimiseks enne analüüsi.",
+          "rubric_ru": "Предложите проверить дату, охват и формат. Объясните, что может исказить вывод."
+        }
+      ]
+    },
+    {
+      "id": "source-population-C1",
+      "topic": "city",
+      "level": "C1",
+      "status": "draft",
+      "title_ru": "Как оценивать демографический прогноз",
+      "publisher": "Statistikaamet",
+      "kind": "Справочный материал",
+      "url": "https://www.stat.ee/et/avasta-statistikat/valdkonnad/rahvastik/rahvastikuprognoos",
+      "checked_on": "2026-11-08",
+      "guide_ru": "Откройте оригинал в соседней вкладке и запишите ответы по-эстонски. В критериях указано, какие детали стоит проверить.",
+      "explanation_ru": "Задания составлены по материалу издателя. Уровень относится к сложности вопросов.",
+      "tasks": [
+        {
+          "prompt_et": "Millised kolm põhikomponenti määravad prognoosi? Selgitage, kuidas need vanuselist koosseisu mõjutavad.",
+          "rubric_ru": "Назовите рождаемость, смертность и миграцию, поясните хотя бы один механизм."
+        },
+        {
+          "prompt_et": "Miks on vaja mitut stsenaariumi isegi siis, kui praegune trend on selge?",
+          "rubric_ru": "Объясните, почему разные допустимые предположения меняют результат."
+        },
+        {
+          "prompt_et": "Eristage lehel esitatud vaatlus ja prognoos. Mis võimaldab neid eristada?",
+          "rubric_ru": "Укажите дату и подписи показателей. Разделите наблюдаемое и расчётное значение."
+        },
+        {
+          "prompt_et": "Selgitage, miks prognoosi ja tegeliku rahvaarvu erinevus ei näita iseenesest, et meetod on vigane.",
+          "rubric_ru": "Обсудите изменение исходных условий и предложите способ оценить метод."
+        },
+        {
+          "prompt_et": "Sõnastage üks tingimuslik ja üks eksitavalt kindel pealkiri. Selgitage erinevust.",
+          "rubric_ru": "Сравните осторожную формулировку с утверждением неизбежного результата."
+        },
+        {
+          "prompt_et": "Kirjutage 150–180 sõnaga memo, kuidas võiks kohalik omavalitsus prognoosi kasutada.",
+          "rubric_ru": "Укажите решение, два сценария, ограничение прогноза и критерий пересмотра."
+        }
+      ]
     }
   ]
 }

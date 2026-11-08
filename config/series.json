@@ -207,6 +207,18 @@
    "module": "reading",
    "title_ru": "Когда прогноз превращается в решение"
   },
+  "r-shared-tools-b2": {
+   "module": "reading",
+   "title_ru": "Кому подходит прокат инструментов?"
+  },
+  "r-appeal-c1": {
+   "module": "reading",
+   "title_ru": "Что делает обжалование содержательным?"
+  },
+  "r-memory-c1": {
+   "module": "reading",
+   "title_ru": "Что упускают воспоминания о школе?"
+  },
   "l-01": {
    "module": "listening",
    "title_ru": "Объявление директора"
@@ -319,6 +331,22 @@
   "l-17": {
    "module": "listening",
    "title_ru": "Короткие фрагменты 3"
+  },
+  "l-bus-b2": {
+   "module": "listening",
+   "title_ru": "Пробный маршрут ночного автобуса"
+  },
+  "l-seed-b2": {
+   "module": "listening",
+   "title_ru": "Новые правила обмена семенами"
+  },
+  "l-survey-c1": {
+   "module": "listening",
+   "title_ru": "Что говорит молчание респондента?"
+  },
+  "l-archive-c1": {
+   "module": "listening",
+   "title_ru": "Открытие архива и контекст"
   },
   "w-01": {
    "module": "writing",
@@ -522,6 +550,30 @@
   "w-29": {
    "module": "writing",
    "title_ru": "Мнение: нужна ли школьная форма"
+  },
+  "w-access-b2": {
+   "module": "writing",
+   "title_ru": "Письмо о доступности кружка"
+  },
+  "w-queue-b2": {
+   "module": "writing",
+   "title_ru": "Предложение по записи в библиотеку"
+  },
+  "w-shift-b2": {
+   "module": "writing",
+   "title_ru": "Обмен рабочими сменами"
+  },
+  "w-metric-c1": {
+   "module": "writing",
+   "title_ru": "Служебная записка об оценке сервиса"
+  },
+  "w-subtitles-c1": {
+   "module": "writing",
+   "title_ru": "Обращение о субтитрах к лекциям"
+  },
+  "w-rent-c1": {
+   "module": "writing",
+   "title_ru": "Рекомендация по использованию общественного зала"
   },
   "s-01": {
    "module": "speaking",
@@ -734,6 +786,30 @@
   "s-30": {
    "module": "speaking",
    "title_ru": "Интервью: планы"
+  },
+  "s-feedback-b2": {
+   "module": "speaking",
+   "title_ru": "Интервью об обратной связи"
+  },
+  "s-delivery-b2": {
+   "module": "speaking",
+   "title_ru": "Монолог о получении покупок"
+  },
+  "s-green-b2": {
+   "module": "speaking",
+   "title_ru": "Переговоры о школьном дворе"
+  },
+  "s-attribution-c1": {
+   "module": "speaking",
+   "title_ru": "Интервью о проверке цифровых источников"
+  },
+  "s-noise-c1": {
+   "module": "speaking",
+   "title_ru": "Дискуссия о вечерних мероприятиях"
+  },
+  "s-training-c1": {
+   "module": "speaking",
+   "title_ru": "Монолог о качестве обучения сотрудников"
   }
  }
 }

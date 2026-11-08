@@ -168,7 +168,9 @@ export default {
         h('h1', null, 'Аудирование'),
         h('p', { class: 'notice warn' }, SYNTH_NOTE),
         filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) =>
-          h('a', { class: 'card link-card', href: `#/listening/${t.id}` }, h('h2', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru), h('p', { class: 'muted small-text' }, statusLine(t)))))));
+          h('a', { class: 'card link-card', href: `#/listening/${t.id}` },
+            h('h2', { lang: 'et' }, t.title_et), h('p', { class: 'muted' }, t.title_ru),
+            h('p', { class: 'muted small-text' }, statusLine(t))))), { withLevels: true }));
       return;
     }
     const series = await seriesLinks(item, 'listening');

@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 4396. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 4682. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -1065,7 +1065,7 @@
 - `ls-20 (неверно)` — Ma küsin õpetaja abi.
 - `ls-20 (верно)` — Ma küsin õpetajalt abi.
 
-## listening.json (473)
+## listening.json (549)
 
 - `l-01` — Direktori teade
 - `l-01` — Tere, kallid õpilased! Siin räägib kooli direktor.
@@ -1540,6 +1540,82 @@
 - `l-17-q5 (вариант)` — tund aega varem
 - `l-17-q5 (вариант)` — kümme minutit varem
 - `l-17-q5 (вариант)` — õigel ajal
+- `l-bus-b2` — Ööbussi katse
+- `l-bus-b2` — Meie linn katsetas kaheksa nädalavahetust ööbussi. Alguses loendasime sõitjaid ainult kesklinna peatuses ja järeldasime, et liin on populaarne. Kui vaatasime kõiki peatusi, selgus, et äärelinnas väljus reisijaid oodatust vähem.
+- `l-bus-b2` — Kas see tähendab, et äärelinna inimesi teenus ei huvita? Mina jõuan hiliselt vahetuselt peatusesse alles pärast viimase bussi väljumist. Nõudlust ei saa hinnata ainult nende järgi, kellele praegune sõiduplaan sobib.
+- `l-bus-b2` — Sellepärast nihutame järgmises katses viimast väljumist poole tunni võrra hilisemaks. Marsruut ja piletihind jäävad samaks. Tahame teada, kas hilisem buss aitab töötajatel koju jõuda, mitte lihtsalt varasemalt reisilt sõitjaid üle tuua.
+- `l-bus-b2` — Siis tasuks lisaks sõitjate arvule küsida, kuidas nad varem koju said. Kui inimesed jätsid varem vahetuse vastu võtmata või kasutasid taksot, on muutusel teine tähendus kui lihtsalt ühelt bussilt teisele ümberistumisel.
+- `l-bus-q1` — Miks osutus esialgne hinnang puudulikuks?
+- `l-bus-q1 (вариант)` — Sõitjaid loendati ainult ühes peatuses
+- `l-bus-q1 (вариант)` — Kõik peatused olid suletud
+- `l-bus-q1 (вариант)` — Piletihinda polnud veel määratud
+- `l-bus-q2` — Mis raskus on teisel kõnelejal?
+- `l-bus-q2 (вариант)` — Ta peab kaks korda ümber istuma
+- `l-bus-q2 (вариант)` — Ta jääb pärast töövahetust viimasest bussist maha
+- `l-bus-q2 (вариант)` — Ta ei leia kesklinna peatust
+- `l-bus-q3` — Järgmises katses muudetakse ka piletihinda.
+- `l-bus-q4` — Ööbussi juhid töötavad ka päevasel liinil.
+- `l-bus-q5` — Mida aitaks mõista küsimus varasema kojusõidu kohta?
+- `l-bus-q5 (вариант)` — Mitu peatust tuleb juurde ehitada
+- `l-bus-q5 (вариант)` — Kui sageli buss graafikust maha jäi
+- `l-bus-q5 (вариант)` — Kas sõitjatel oli varem sobiv ühendus
+- `l-seed-b2` — Seemnevahetuse uus kord
+- `l-seed-b2` — Eelmisel aastal tõid inimesed seemnevahetusele palju pakke, kuid pooled jäid üle. Mõni külastaja arvas, et pakke oli lihtsalt liiga palju. Mina märkasin hoopis, et siltidelt puudus sageli info kasvukoha kohta.
+- `l-seed-b2` — Märgistus aitaks, aga ära tee sellest pikka ankeeti. Mõni aednik teab täpselt taime sorti, teine oskab vaid öelda, et see kasvas rõdul poolvarjus. Mõlemast teadmisest võib alustajale kasu olla.
+- `l-seed-b2` — Nõus. Palume kirja panna taime nime, kogumise aasta ja selle, mida tooja kasvutingimustest teab. Kui midagi pole teada, võib selle ausalt märkida. Lisaks teeme näidislaua, kus külastaja saab enne valimist nõu küsida.
+- `l-seed-b2` — Pärast üritust võiks küsida, kui paljud proovisid midagi kasvatada. Üksi jagatud pakkide arv ei ütle, kas seemned leidsid kasutust. Samas ei tasu eeldada, et idanemata seeme tähendab halba nõu, sest tulemust mõjutavad ka ilm ja hooldus.
+- `l-seed-q1` — Mida märkas esimene kõneleja eelmisel üritusel?
+- `l-seed-q1 (вариант)` — Pakkide siltidel nappis teavet
+- `l-seed-q1 (вариант)` — Külastajaid tuli oodatust vähem
+- `l-seed-q1 (вариант)` — Enamik pakke võeti kaasa
+- `l-seed-q2` — Miks teine kõneleja ei soovi pikka ankeeti?
+- `l-seed-q2 (вариант)` — Ta ei usu kirjalikesse juhistesse
+- `l-seed-q2 (вариант)` — Osalejate teadmised on erineva täpsusega
+- `l-seed-q2 (вариант)` — Ta soovib vahetuse tühistada
+- `l-seed-q3` — Teadmata asjaolu võib sildil välja tuua.
+- `l-seed-q4` — Korraldajad saadavad ankeedi e-postiga.
+- `l-seed-q5` — Miks ei saa idanemist seostada ainult saadud nõuga?
+- `l-seed-q5 (вариант)` — Külastaja ei pruugi seemneid kohe ära anda
+- `l-seed-q5 (вариант)` — Pakendil ei ole enamasti taime nime
+- `l-seed-q5 (вариант)` — Tulemust mõjutavad ka kasvutingimused ja hooldus
+- `l-survey-c1` — Mida näitab vaikiv vastaja?
+- `l-survey-c1` — Meie veebiküsitlusele vastas kakssada lugejat. Neist suur enamus eelistab digitaalset ajalehte. Toimetus tahaks selle põhjal vähendada paberlehe tiraaži, sest küsitluse tulemus näib üsna veenev.
+- `l-survey-c1` — Vastuste arv üksi ei lahenda valimi küsimust. Link oli ainult digilehes. Inimesed, kes tellivad üksnes paberlehte, ei pruukinud küsitlusest üldse kuulda. Kui nende eelistused erinevad, ei saa praegust osakaalu kõigile lugejatele üle kanda.
+- `l-survey-c1` — Saame panna paberlehte sama küsimuse ja koguda vastuseid telefoni teel. Ent ka siis ei vasta kõik. Kui ühendame vastused lihtsalt ühte tabelisse, võib rohkem vastuseid andnud rühma hääl jääda ebaproportsionaalselt tugevaks.
+- `l-survey-c1` — Just. Näitame esmalt vastuseid kanalite kaupa ja lisame, kui suure osa tellijatest kumbki rühm moodustab. Otsus tiraaži kohta vajab peale eelistuse ka infot kulude ja ligipääsu kohta. Küsitlus võib anda otsusele sisendi, kuid ei asenda selgitust, kelle jaoks oleks muutus kõige raskem.
+- `l-survey-q1` — Mis ohustab kõige otsesemalt esialgse tulemuse üldistatavust?
+- `l-survey-q1 (вариант)` — Paberlehe lugejad ei pruukinud linki näha
+- `l-survey-q1 (вариант)` — Vastajaid oli rohkem kui oodati
+- `l-survey-q1 (вариант)` — Küsimus esitati telefoni teel
+- `l-survey-q2` — Millise ohu toob välja esimene kõneleja vastuste ühendamisel?
+- `l-survey-q2 (вариант)` — Inimesed võivad küsimust lugedes meelt muuta
+- `l-survey-q2 (вариант)` — Üks kanal võib saada tulemuses liiga suure kaalu
+- `l-survey-q2 (вариант)` — Kulude kohta võib tekkida kaks tabelit
+- `l-survey-q3` — Teine kõneleja soovitab tulemused kõigepealt kanalite kaupa esitada.
+- `l-survey-q4` — Ajalehe tiraaži on juba vähendatud.
+- `l-survey-q5` — Kuidas eristab teine kõneleja andmeid ja otsust?
+- `l-survey-q5 (вариант)` — Küsitlusele tuleb anda lõpliku otsuse jõud
+- `l-survey-q5 (вариант)` — Ligipääsu küsimus tuleb jätta lugejate enda lahendada
+- `l-survey-q5 (вариант)` — Tiraaži määramisel tuleb arvestada ka kulu ja ligipääsu
+- `l-archive-c1` — Arhiivi avamine ja selgitus
+- `l-archive-c1` — Meie asutuse fotokogu on digiteeritud, kuid avaldada tahame seda osade kaupa. Ühel pildil on näiteks kuupäev ja koht teada, inimeste nimed aga puuduvad. Kui lisame oletatava nime ilma märkuseta, hakkab see hiljem kergesti faktina levima.
+- `l-archive-c1` — Aga kui ootame, kuni iga kirjeldus on täielik, ei pääse ka uurijad materjalile ligi. Just nemad võivad aidata inimesi ära tunda. Minu meelest tuleks kindel teave ja oletused juba esimeses versioonis nähtavalt eristada.
+- `l-archive-c1` — See lahendaks osa probleemist. Lisaks võiks paranduse juurde jääda selgitus, kust uus teave pärineb. Pelgalt uue nime salvestamine ei näita järgmisele uurijale, kas see pärineb kirjalikust allikast või ühe inimese mälestusest.
+- `l-archive-c1` — Siis ei pea avaldamine tähendama töö lõpetamist. Kogu võib olla kasutatav ka siis, kui kirjed täienevad, tingimusel et kasutaja näeb, mis on kontrollitud ja mis on alles hüpotees. Me ei luba eksimatut kataloogi, vaid teeme paranduste aluse lugejale jälgitavaks.
+- `l-archive-q1` — Millist riski kirjeldab esimene kõneleja?
+- `l-archive-q1 (вариант)` — Märkimata oletus võib hakata levima faktina
+- `l-archive-q1 (вариант)` — Fotode digiteerimine muudab kuupäevi
+- `l-archive-q1 (вариант)` — Uurijad ei taha avalikke andmeid kontrollida
+- `l-archive-q2` — Miks teine kõneleja pooldab varasemat avaldamist?
+- `l-archive-q2 (вариант)` — Nii saab allikaandmed edaspidi kustutada
+- `l-archive-q2 (вариант)` — See võimaldab uurijatel kirjeldusi täiendada
+- `l-archive-q2 (вариант)` — Sellega saab kõik vead kohe kõrvaldada
+- `l-archive-q3` — Esimene kõneleja soovib paranduse juurde jätta uue info päritolu.
+- `l-archive-q4` — Fotokogu sisaldab ka helisalvestisi.
+- `l-archive-q5` — Milline põhimõte võtab kokkuleppe kokku?
+- `l-archive-q5 (вариант)` — Mälestus tuleb alati eelistada kirjalikule allikale
+- `l-archive-q5 (вариант)` — Kirje võib avaldada üksnes pärast täielikku kontrolli
+- `l-archive-q5 (вариант)` — Täiendatav avalik kirje peab näitama teadmise alust
 
 ## mock-exam.json (91)
 
@@ -1788,7 +1864,7 @@
 - `pr-phrases` — Tüdruk joob õunamahla.
 - `pr-phrases` — Ülesanne on päris raske.
 
-## reading.json (1476)
+## reading.json (1590)
 
 - `r-01 (развёрнутый вопрос 1)` — Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?
 - `r-01 (развёрнутый вопрос 2)` — Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.
@@ -3266,6 +3342,120 @@
 - `r-forecast-q6 (вариант)` — Anda otsustajale võimalus vastutust vältida
 - `r-forecast-q6 (вариант)` — Tagada, et otsus jääb ka uue info korral samaks
 - `r-forecast-q6 (вариант)` — Teha eeldused ja plaani muutmise tingimused läbipaistvaks
+- `r-shared-tools-b2 (развёрнутый вопрос 1)` — Võrrelge kahte eelarvevalikut ja nimetage olukord, kus kumbki oleks põhjendatud.
+- `r-shared-tools-b2 (развёрнутый вопрос 2)` — Sõnastage kaks küsimust inimesele, kes ei laenanud ühtki tööriista.
+- `r-shared-tools-b2` — Kellele sobib tööriistalaenutus?
+- `r-shared-tools-b2` — Ühe linnaosa elanikud avasid raamatukogu kõrval tööriistalaenutuse.
+- `r-shared-tools-b2` — Idee oli lihtne: kui akutrelli läheb vaja vaid mõnel korral aastas, ei pea seda iga pere ostma.
+- `r-shared-tools-b2` — Esimesel kuul oli laenutusi rohkem, kui korraldajad ootasid.
+- `r-shared-tools-b2` — Kõige kiiremini võeti ära tööriistad, mida oli lihtne kaasa võtta ja mille kasutamist enamik tundis.
+- `r-shared-tools-b2` — Suuremad seadmed seisid sageli riiulis, kuigi küsitluses olid inimesed nende vastu huvi näidanud.
+- `r-shared-tools-b2` — Vabatahtlikud hakkasid uurima, miks huvi laenutuseks ei muutunud.
+- `r-shared-tools-b2` — Mõni elanik ei teadnud, kas oskab tööriista ohutult kasutada.
+- `r-shared-tools-b2` — Teisel polnud võimalust rasket seadet koju viia.
+- `r-shared-tools-b2` — Kolmandale ei sobinud see, et laenutus oli avatud ainult ühel tööpäeva õhtul.
+- `r-shared-tools-b2` — Kõigile neile oleks olnud vähe kasu sellest, kui riiulisse oleks lihtsalt rohkem seadmeid pandud.
+- `r-shared-tools-b2` — Järgmisel kuul prooviti kolme muudatust.
+- `r-shared-tools-b2` — Laupäeval sai tulla lühikesele kasutusõpetusele, kahte suuremat seadet sai ette tellida ning kord nädalas aitas vabatahtlik neid koju viia.
+- `r-shared-tools-b2` — Kuna muudatused tehti peaaegu samal ajal, ei saanud korraldajad hiljem kindlalt öelda, milline neist kõige rohkem mõjus.
+- `r-shared-tools-b2` — Küll aga said nad tähele panna, milliseid võimalusi külastajad tegelikult kasutasid.
+- `r-shared-tools-b2` — Aasta lõpus tuli otsustada, kuidas piiratud eelarvet jagada.
+- `r-shared-tools-b2` — Ühed soovisid osta uusi tööriistu, teised maksta transpordi eest.
+- `r-shared-tools-b2` — Koosolekul lepiti kokku, et kõigepealt uuritakse tagastamisel või teeninduslauas, millise takistuse ületamiseks inimene abi vajas.
+- `r-shared-tools-b2` — Küsimusele võib vastata ka see, kes lõpuks midagi ei laenanud.
+- `r-shared-tools-b2` — Nii on otsustamisel kuulda ka neid, kelle jaoks teenus praegusel kujul ei tööta.
+- `r-shared-tools-q1` — Miks seisid mõned seadmed riiulis hoolimata esialgsest huvist?
+- `r-shared-tools-q1 (вариант)` — Teenuse kasutamist takistasid oskused, transport ja aeg
+- `r-shared-tools-q1 (вариант)` — Neid seadmeid ei olnud küsitluses mainitud
+- `r-shared-tools-q1 (вариант)` — Raamatukogu kõrval oli teine tasuta laenutus
+- `r-shared-tools-q2` — Mida näitas esimese kuu kasutus kõige otsesemalt?
+- `r-shared-tools-q2 (вариант)` — Kui palju seadmeid pered kokku ostmata jätsid
+- `r-shared-tools-q2 (вариант)` — Milliseid seadmeid inimesed olemasolevatel tingimustel laenasid
+- `r-shared-tools-q2 (вариант)` — Kuidas muutusid tööriistade hinnad
+- `r-shared-tools-q3` — Pärast muudatusi oli võimalik eraldi kindlaks teha iga meetme mõju.
+- `r-shared-tools-q4` — Kasutusõpetus kestis täpselt pool tundi.
+- `r-shared-tools-q5` — Miks soovitakse tagasisidet ka mittelaenajatelt?
+- `r-shared-tools-q5 (вариант)` — Et teha kindlaks, kas nad elavad samas majas
+- `r-shared-tools-q5 (вариант)` — Et panna nad järgmine kord seadet laenama
+- `r-shared-tools-q5 (вариант)` — Et mõista, kelle jaoks teenus on endiselt raskesti kasutatav
+- `r-appeal-c1 (развёрнутый вопрос 1)` — Selgitage, millal läbipaistvus ja süsteemi kuritarvitamise vältimine võivad omavahel pingesse sattuda.
+- `r-appeal-c1 (развёрнутый вопрос 2)` — Koostage lühike näidispõhjendus, mille põhjal saaks taotleja konkreetset viga parandada.
+- `r-appeal-c1` — Mida tähendab sisuline vaie?
+- `r-appeal-c1` — Kujutlegem avalikku teenust, mis jaotab koolitustoetusi.
+- `r-appeal-c1` — Taotlusi tuleb korraga palju ja ametnikud kasutavad esmast järjestust, mille koostab arvutiprogramm.
+- `r-appeal-c1` — Osa taotlejaid saab eitava otsuse.
+- `r-appeal-c1` — Neile saadetakse kirjalik teade, milles on kirjas tulemus ja vaide esitamise tähtaeg.
+- `r-appeal-c1` — Selline teade täidab olulist ülesannet, kuid jätab lahtiseks küsimuse, mille põhjal saaks inimene otsust sisuliselt vaidlustada.
+- `r-appeal-c1` — Kui teates seisab üksnes, et taotlus jäi pingereas liiga madalale, ei tea taotleja, kas probleem oli puudulikes andmetes, hindamiskriteeriumis või selles, kuidas kriteeriumi tema olukorrale rakendati.
+- `r-appeal-c1` — Kõigi arvutuskäikude lisamine ei pruugi aidata.
+- `r-appeal-c1` — Tehniline kirjeldus võib olla täielik ja samal ajal nii keerukas, et inimene ei leia sealt enda jaoks olulist seost.
+- `r-appeal-c1` — Selgitus peaks võimaldama tal kindlaks teha, mida kontrollida ja millist lisateavet esitada.
+- `r-appeal-c1` — Otsustajal võib olla põhjendatud soov vältida seda, et taotlejad hakkavad oma avaldusi ainult punktisumma suurendamiseks kohandama.
+- `r-appeal-c1` — Sellest ei järeldu siiski, et igasugune üksikasjalik põhjendus oleks kahjulik.
+- `r-appeal-c1` — Tuleb eristada juhist, mis paljastab süsteemi kergesti ärakasutatava nõrkuse, ja teadet selle kohta, millist asjaolu konkreetsel juhul arvesse võeti.
+- `r-appeal-c1` — Viimane võib vähendada vaideid, kui taotleja saab otsuse alusest aru, või tuua esile vea, mida asutus muidu ei märkaks.
+- `r-appeal-c1` — Vaide väärtus sõltub ka sellest, kes seda läbi vaatab.
+- `r-appeal-c1` — Kui uus kontroll piirdub sama teabe uuesti sisestamisega samasse programmi, võib tulemus olla järjekindel, kuid esialgne viga jääb alles.
+- `r-appeal-c1` — Sisuline läbivaatamine eeldab võimalust kontrollida lähteandmeid, hinnata erandit ja vajaduse korral põhjendust muuta.
+- `r-appeal-c1` — See ei tähenda, et iga vaie peab lõppema algse otsuse tühistamisega.
+- `r-appeal-c1` — Edu võib seisneda ka selles, et inimene saab arusaadava põhjenduse ning asutus kogub teavet korduvate vigade kohta.
+- `r-appeal-c1` — Seega on vaidlustamise võimalus osa teenuse toimimisest, mitte üksnes sellele järgnev vormitäide.
+- `r-appeal-c1` — Selle kvaliteeti tuleb hinnata küsimuse järgi, kas inimene saab oma juhtumi kohta esitada midagi, mis võiks otsuse läbivaatamist tegelikult mõjutada.
+- `r-appeal-q1` — Mis teeb algse teate artikli järgi ebapiisavaks?
+- `r-appeal-q1 (вариант)` — See ei aita tuvastada konkreetset asjaolu, mida kontrollida
+- `r-appeal-q1 (вариант)` — See annab taotlejale liiga pika tähtaja
+- `r-appeal-q1 (вариант)` — See nõuab, et ametnik vaataks läbi kõik taotlused uuesti
+- `r-appeal-q2` — Miks ei võrdu täielik tehniline kirjeldus hea selgitusega?
+- `r-appeal-q2 (вариант)` — Kõiki arvutuskäike on võimatu kirja panna
+- `r-appeal-q2 (вариант)` — Taotlejal võib olla raske leida seost oma juhtumiga
+- `r-appeal-q2 (вариант)` — Iga taotleja peab saama süsteemi ise muuta
+- `r-appeal-q3` — Autori meelest peab sisuline vaie alati muutma algset otsust.
+- `r-appeal-q4` — Näites kasutatud programm osteti väliselt arendajalt.
+- `r-appeal-q5` — Millist erinevust rõhutab vaide läbivaatamise näide?
+- `r-appeal-q5 (вариант)` — Uus otsustaja peab kasutama alati teist programmi
+- `r-appeal-q5 (вариант)` — Järjekindel tulemus näitab, et viga pole võimalik
+- `r-appeal-q5 (вариант)` — Korduv arvutus ja andmete sisuline kontroll on eri asjad
+- `r-memory-c1 (развёрнутый вопрос 1)` — Eristage tekstis valikukallutatus ja allika sisuline piirang.
+- `r-memory-c1 (развёрнутый вопрос 2)` — Sõnastage kaks väidet kooli huvitegevuse kohta: üks põhjendatud ja üks allikate põhjal liiga tugev.
+- `r-memory-c1` — Mida kooli mälestused välja jätavad?
+- `r-memory-c1` — Kooli juubeli eel paluti vilistlastel saata mälestusi.
+- `r-memory-c1` — Esimeste kirjade põhjal paistis kool paigana, kus peaaegu kõik olid osalenud mõnes ringis ning tundnud ennast kogukonna liikmena.
+- `r-memory-c1` — Kogumiku koostaja tahtis alustada teksti väitega, et kooli tugevus on alati olnud kõigile avatud huvitegevus.
+- `r-memory-c1` — Üks endine õpetaja küsis siiski, kelle mälestusi kogumiku koostaja lugenud oli.
+- `r-memory-c1` — Kutse levis peamiselt vilistlaste ühismeediakanalis ja endiste klassivanemate kaudu.
+- `r-memory-c1` — On mõistetav, et eriti kiiresti vastasid need, kes olid kooliga sidet hoidnud.
+- `r-memory-c1` — Nende lood on väärtuslikud, kuid need kirjeldavad üht osa kogemusest.
+- `r-memory-c1` — Inimesed, kes vahetasid kooli või ei saanud pärast tunde bussi tõttu ringi jääda, ei pruukinud kutset näha.
+- `r-memory-c1` — Isegi kui nad seda nägid, ei pruukinud nad pidada oma lugu juubeliväljaande jaoks sobivaks.
+- `r-memory-c1` — Koostaja otsis lisaks dokumente.
+- `r-memory-c1` — Ringide nimekirjad näitasid, et tegevusi oli tõesti palju.
+- `r-memory-c1` — Nimekiri ei öelnud aga, miks mõni õpilane neis ei osalenud.
+- `r-memory-c1` — Osalemata jätmist ei saa pidada tõendiks, et võimalus puudus.
+- `r-memory-c1` — Sama vähe saab nimekirja olemasolust järeldada, et võimalus oli kõigile võrdselt kasutatav.
+- `r-memory-c1` — Dokument ja mälestus vastavad erinevatele küsimustele ning mõlemal on oma piirid.
+- `r-memory-c1` — Uues versioonis valiti teksti kõrvuti mitu lugu.
+- `r-memory-c1` — Üks vilistlane meenutas ringi kui võimalust leida sõpru, teine kirjeldas, miks ta pidi kohe pärast tunde koju minema.
+- `r-memory-c1` — Koostaja ei püüdnud teise loo abil esimest ümber lükata.
+- `r-memory-c1` — Ta näitas, et ühes asutuses võivad eri õpilased kogeda sama korraldust väga erinevalt.
+- `r-memory-c1` — Lisatud märkuses selgitati, kuidas kutse levis ja mida olemasolevate allikate põhjal väita ei saa.
+- `r-memory-c1` — Selline kogumik võib esmapilgul tunduda vähem pidulik, sest selles ei ole üht kõiki ühendavat lugu.
+- `r-memory-c1` — Ometi annab see koolile võimaluse arutada, millised varasemad lahendused toimisid ning kelle jaoks oli vaja teistsuguseid tingimusi.
+- `r-memory-c1` — Mälestuste ülesanne ei pea olema ainult ühist minevikku kinnitada.
+- `r-memory-c1` — Need võivad teha nähtavaks ka erinevused, millest õppida.
+- `r-memory-q1` — Miks võisid esimesed kirjad jätta liiga ühetaolise mulje?
+- `r-memory-q1 (вариант)` — Kutse jõudis eeskätt nendeni, kes olid kooliga sidet hoidnud
+- `r-memory-q1 (вариант)` — Koostaja jättis nimekirjast kõik ringid välja
+- `r-memory-q1 (вариант)` — Õpetajad kirjutasid vilistlaste eest vastused
+- `r-memory-q2` — Mida ringide nimekirjad võimaldasid kinnitada?
+- `r-memory-q2 (вариант)` — Et osalemata jätnud õpilased polnud huvitatud
+- `r-memory-q2 (вариант)` — Et tegevusi korraldati
+- `r-memory-q2 (вариант)` — Et bussigraafik sobis kõigile
+- `r-memory-q3` — Koostaja kasutas teist mälestust esimese loo ümberlükkamiseks.
+- `r-memory-q4` — Kogumik anti välja kahes keeles.
+- `r-memory-q5` — Mis on lõpulõigu põhiväide?
+- `r-memory-q5 (вариант)` — Kogumik peaks käsitlema üksnes kõige edukamaid õpilasi
+- `r-memory-q5 (вариант)` — Juubeliks sobivad ainult ühesugused lood
+- `r-memory-q5 (вариант)` — Erinevad mälestused võivad aidata mõista, kellele kooli lahendused sobisid
 
 ## sources.json (55)
 
@@ -3325,7 +3515,7 @@
 - `source-population-C1 (развёрнутый вопрос 5)` — Sõnastage üks tingimuslik ja üks eksitavalt kindel pealkiri. Selgitage erinevust.
 - `source-population-C1 (развёрнутый вопрос 6)` — Kirjutage 150–180 sõnaga memo, kuidas võiks kohalik omavalitsus prognoosi kasutada.
 
-## speaking.json (180)
+## speaking.json (214)
 
 - `s-01` — Ma pakun, et ...
 - `s-01` — See on hea mõte.
@@ -3507,8 +3697,42 @@
 - `s-30` — Milline on sinu unistuste töö?
 - `s-30` — Ma tahaksin …
 - `s-30` — Suvel …
+- `s-feedback-b2` — Millal on õpetaja tagasiside teid kõige rohkem aidanud?
+- `s-feedback-b2` — Kuidas erinevad suuline ja kirjalik tagasiside õppija jaoks?
+- `s-feedback-b2` — Mis võib juhtuda, kui kommentaar antakse liiga hilja?
+- `s-feedback-b2` — Millise lahenduse valiksite suure klassi puhul?
+- `s-feedback-b2` — Minu kogemuse põhjal ...
+- `s-feedback-b2` — Ühelt poolt ..., teiselt poolt ...
+- `s-feedback-b2` — Sellises olukorras eelistaksin ...
+- `s-delivery-b2` — Kirjeldage kummagi võimaluse eeliseid.
+- `s-delivery-b2` — Arvestage hinna, aja ja paki kaaluga.
+- `s-delivery-b2` — Tooge näide ostjast, kellele teie valik ei sobiks.
+- `s-delivery-b2` — Tehke tingimuslik soovitus.
+- `s-delivery-b2` — Sobivus sõltub sellest, kas ...
+- `s-delivery-b2` — Erandiks võib olla olukord, kus ...
+- `s-delivery-b2` — Kui ..., siis soovitaksin ...
+- `s-green-b2` — Kas saame alustada sellest, et ...?
+- `s-green-b2` — Selle lahenduse puudus on ...
+- `s-green-b2` — Leppisime kokku, et ...
+- `s-attribution-c1` — Mille poolest erineb korduv väide sõltumatust kinnitusest?
+- `s-attribution-c1` — Kuidas kontrolliksite, kas allikad toetuvad samale algmaterjalile?
+- `s-attribution-c1` — Mida ütleksite kuulajale, kui algallikat ei õnnestu leida?
+- `s-attribution-c1` — Kuidas parandada hiljem avaldatud ebatäpsust?
+- `s-attribution-c1` — Väite päritolu saab jälgida ...
+- `s-attribution-c1` — Praeguste andmete põhjal saab öelda üksnes ...
+- `s-attribution-c1` — Parandus peaks näitama, et ...
+- `s-noise-c1` — Meie hinnang tugineb ...
+- `s-noise-c1` — Nõustun sellega eeldusel, et ...
+- `s-noise-c1` — Kui näitaja ületab ..., tuleb ...
+- `s-training-c1` — Mida kursuse lõpetamise määr tegelikult mõõdab?
+- `s-training-c1` — Tooge olukord, kus kõrge määr varjab probleemi.
+- `s-training-c1` — Pakkuge kaks lisamõõdikut ja selgitage nende piire.
+- `s-training-c1` — Lõpetage soovitusega, kuidas tulemusi juhtkonnale esitada.
+- `s-training-c1` — Siin tuleb eristada ...
+- `s-training-c1` — Sellest ei saa veel järeldada, et ...
+- `s-training-c1` — Tulemuse tõlgendamisel tasub arvestada ...
 
-## vocab.json (678)
+## vocab.json (710)
 
 - `v-school-01` — õpilane (õpilase, õpilast)
 - `v-school-01` — Meie klassis on kakskümmend õpilast.
@@ -4188,8 +4412,40 @@
 - `v-phrases-338` — Aitäh abi eest, see oli väga tore.
 - `v-phrases-339` — Soovin sulle edu! (устойчивое выражение)
 - `v-phrases-339` — Soovin sulle edu eksamil!
+- `v-argument-1` — ligipääs (ligipääsu, ligipääsu)
+- `v-argument-1` — Hiljem lisati saalile ratastooliga ligipääs.
+- `v-argument-2` — takistus (takistuse, takistust)
+- `v-argument-2` — Piiratud lahtiolekuaeg on paljudele takistus.
+- `v-argument-3` — kokkulepe (kokkuleppe, kokkulepet)
+- `v-argument-3` — Pärast arutelu jõudsime kokkuleppele.
+- `v-argument-4` — vastuväide (vastuväite, vastuväidet)
+- `v-argument-4` — Kuulasime vastuväite ära ja muutsime ettepanekut.
+- `v-argument-5` — kaaluma (kaaluda, kaalun)
+- `v-argument-5` — Kaalume võimalust avada saal ka laupäeval.
+- `v-argument-6` — viitama (viidata, viitan)
+- `v-argument-6` — Autor viitab artiklis varasemale uuringule.
+- `v-argument-7` — eeldus (eelduse, eeldust)
+- `v-argument-7` — Meie plaan põhineb eeldusel, et huvi kasvab.
+- `v-argument-8` — võrdlema (võrrelda, võrdlen)
+- `v-argument-8` — Võrdlesime uut sõiduplaani varasemaga.
+- `v-argument-9` — kallutatus (kallutatuse, kallutatust)
+- `v-argument-9` — Üksnes veebis vastamine võib suurendada valimi kallutatust.
+- `v-argument-10` — üldistama (üldistada, üldistan)
+- `v-argument-10` — Ühe klassi tulemust ei saa üldistada kogu koolile.
+- `v-argument-11` — põhjendatus (põhjendatuse, põhjendatust)
+- `v-argument-11` — Komisjon kontrollib otsuse põhjendatust.
+- `v-argument-12` — vaidlustama (vaidlustada, vaidlustan)
+- `v-argument-12` — Taotleja vaidlustas otsuse, sest andmed olid puudulikud.
+- `v-argument-13` — mööndus (möönduse, mööndust)
+- `v-argument-13` — Autor teeb möönduse, et katse oli lühike.
+- `v-argument-14` — kaasnev mõju (kaasneva mõju, kaasnevat mõju)
+- `v-argument-14` — Reegli kaasnev mõju ilmnes alles mõne kuu pärast.
+- `v-argument-15` — läbivaatamine (läbivaatamise, läbivaatamist)
+- `v-argument-15` — Uus teave andis aluse otsuse läbivaatamiseks.
+- `v-argument-16` — tingimuslik (tingimusliku, tingimuslikku)
+- `v-argument-16` — See hinnang on tingimuslik ja sõltub lähteandmetest.
 
-## writing.json (253)
+## writing.json (283)
 
 - `w-01 (образец)` — Tere, Karl!
 - `w-01 (образец)` — Kuidas sul läheb?
@@ -4428,6 +4684,36 @@
 - `w-29 (образец)` — Samas aitaks vorm vähendada erinevusi õpilaste vahel.
 - `w-29 (образец)` — Kokkuvõttes arvan, et õpilased võiksid ise riided valida, kui need on korralikud.
 - `w-29` — Kas koolis peaks olema koolivorm? Kirjuta oma arvamus.
+- `w-access-b2` — Kool avas pärast tunde tasuta fotoringi. Ringi lõpuaeg ei sobi õpilastele, kes peavad viimase bussiga koju sõitma. Kirjutage ringi juhendajale ja pakkuge lahendus.
+- `w-access-b2` — Selgitage, kellele ja miks aeg ei sobi.
+- `w-access-b2` — Pakkuge kaks võimalust ja võrrelge neid.
+- `w-access-b2` — Arvestage juhendaja võimaliku ajapiiranguga.
+- `w-access-b2` — Paluge vastust kindlaks kuupäevaks.
+- `w-queue-b2` — Raamatukogu kaalub, kas arvutitöökohti tuleks broneerida või kasutada elava järjekorra alusel. Kirjutage lugejate foorumisse põhjendatud arvamus.
+- `w-queue-b2` — Sõnastage probleem nii, et mõlema rühma vajadused oleksid nähtavad.
+- `w-queue-b2` — Võrrelge broneerimist ja elavat järjekorda ühe kriteeriumi põhjal.
+- `w-queue-b2` — Tooge enda eelistuse vastu üks tõsiseltvõetav vastuväide.
+- `w-queue-b2` — Pakkuge kompromiss ja näitaja, mille abil seda hinnata.
+- `w-shift-b2` — Olete nõus kolleegiga vahetust vahetama, kuid uus vahetus kattub teie koolitusega. Kirjutage töökorraldajale viisakas kiri.
+- `w-shift-b2` — Kirjeldage olemasolevat kokkulepet ja tekkinud takistust.
+- `w-shift-b2` — Pakkuge lahendus, mis jätab mõlemad vahetused kaetuks.
+- `w-shift-b2` — Märkige, mis tuleb enne muudatust kinnitada.
+- `w-shift-b2` — Lõpetage kiri konkreetse küsimusega.
+- `w-metric-c1` — Klienditoe vastamise aeg lühenes, kuid korduvate pöördumiste arv kasvas. Koostage juhile memo, mis selgitab, kuidas hinnata muudatuse tegelikku mõju.
+- `w-metric-c1` — Eristage näitaja ja soovitud tulemus.
+- `w-metric-c1` — Pakkuge kaks võimalikku seletust ning andmed, mis neid eristaksid.
+- `w-metric-c1` — Soovitage ajutist töökorraldust ja määrake hindamise tähtaeg.
+- `w-metric-c1` — Sõnastage järelduse piirang.
+- `w-subtitles-c1` — Ülikooli avalike loengute automaatsed subtiitrid valmivad kiiresti, kuid nimed ja erialaterminid on vahel valed. Kirjutage õppejuhile ettepanek.
+- `w-subtitles-c1` — Võrrelge kiire avaldamise ja hilisema kontrolli eeliseid.
+- `w-subtitles-c1` — Pakkuge eri tüüpi loengutele erinev kontrollitase.
+- `w-subtitles-c1` — Selgitage, kuidas vaataja saab ebakindlast kohast teada ja veast teatada.
+- `w-subtitles-c1` — Paluge kinnitada katse ulatus ja vastutaja.
+- `w-rent-c1` — Linn annab kogukonnasaali ühingutele tasuta kasutada. Populaarsed ajad on hõivatud, kuid osa broneeringuid jääb kasutamata. Koostage soovitus linnavalitsusele.
+- `w-rent-c1` — Eristage nõudlus, tegelik kasutus ja ligipääs.
+- `w-rent-c1` — Võrrelge tagatisraha ja ootenimekirja võimalikke mõjusid.
+- `w-rent-c1` — Arvestage väikese eelarvega ühingute olukorraga.
+- `w-rent-c1` — Pakkuge katse ja tingimus, mille korral reeglit muudetakse.
 - `c-03` — Ootan sinu vastust.
 - `c-06` — lisaks
 - `c-07` — samuti

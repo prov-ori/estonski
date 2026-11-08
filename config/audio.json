@@ -298,6 +298,50 @@
         "et-EE-KertNeural"
       ],
       "generated_on": "2026-11-07"
+    },
+    "l-seed-b2": {
+      "file": "audio/l-seed-b2.mp3",
+      "hash": "4d11574b13d86e27ef239e8de7acb48f2219ebe6",
+      "seconds": 65.3,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-08"
+    },
+    "l-bus-b2": {
+      "file": "audio/l-bus-b2.mp3",
+      "hash": "8ba9a9bebc14fa31c83fc7ddf192ff2e20ebb99c",
+      "seconds": 65.5,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-08"
+    },
+    "l-survey-c1": {
+      "file": "audio/l-survey-c1.mp3",
+      "hash": "f8c7cbda15b0494c2f8665cd89d6e5988ba66ec0",
+      "seconds": 71.5,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-08"
+    },
+    "l-archive-c1": {
+      "file": "audio/l-archive-c1.mp3",
+      "hash": "8e2ab784ab92ce3f94d8e3896a9f1eb056cec4db",
+      "seconds": 69.2,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-08"
     }
   }
 }

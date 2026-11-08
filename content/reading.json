@@ -4161,6 +4161,222 @@
      "rubric_ru": "Назовите допущения каждого сценария, критерий пересмотра и ограничение данных."
     }
    ]
+  },
+  {
+   "id": "r-shared-tools-b2",
+   "topic": "city",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Kellele sobib tööriistalaenutus?",
+   "title_ru": "Кому подходит прокат инструментов?",
+   "text_et": "Ühe linnaosa elanikud avasid raamatukogu kõrval tööriistalaenutuse. Idee oli lihtne: kui akutrelli läheb vaja vaid mõnel korral aastas, ei pea seda iga pere ostma. Esimesel kuul oli laenutusi rohkem, kui korraldajad ootasid. Kõige kiiremini võeti ära tööriistad, mida oli lihtne kaasa võtta ja mille kasutamist enamik tundis. Suuremad seadmed seisid sageli riiulis, kuigi küsitluses olid inimesed nende vastu huvi näidanud.\n\nVabatahtlikud hakkasid uurima, miks huvi laenutuseks ei muutunud. Mõni elanik ei teadnud, kas oskab tööriista ohutult kasutada. Teisel polnud võimalust rasket seadet koju viia. Kolmandale ei sobinud see, et laenutus oli avatud ainult ühel tööpäeva õhtul. Kõigile neile oleks olnud vähe kasu sellest, kui riiulisse oleks lihtsalt rohkem seadmeid pandud.\n\nJärgmisel kuul prooviti kolme muudatust. Laupäeval sai tulla lühikesele kasutusõpetusele, kahte suuremat seadet sai ette tellida ning kord nädalas aitas vabatahtlik neid koju viia. Kuna muudatused tehti peaaegu samal ajal, ei saanud korraldajad hiljem kindlalt öelda, milline neist kõige rohkem mõjus. Küll aga said nad tähele panna, milliseid võimalusi külastajad tegelikult kasutasid.\n\nAasta lõpus tuli otsustada, kuidas piiratud eelarvet jagada. Ühed soovisid osta uusi tööriistu, teised maksta transpordi eest. Koosolekul lepiti kokku, et kõigepealt uuritakse tagastamisel või teeninduslauas, millise takistuse ületamiseks inimene abi vajas. Küsimusele võib vastata ka see, kes lõpuks midagi ei laenanud. Nii on otsustamisel kuulda ka neid, kelle jaoks teenus praegusel kujul ei tööta.",
+   "explanation_ru": "Авторский учебный текст. Подкрепляйте ответы деталями текста и отделяйте выводы от предположений.",
+   "questions": [
+    {
+     "id": "r-shared-tools-q1",
+     "prompt_et": "Miks seisid mõned seadmed riiulis hoolimata esialgsest huvist?",
+     "type": "choice",
+     "options": [
+      "Teenuse kasutamist takistasid oskused, transport ja aeg",
+      "Neid seadmeid ei olnud küsitluses mainitud",
+      "Raamatukogu kõrval oli teine tasuta laenutus"
+     ],
+     "answer": 0,
+     "explanation_ru": "Названы практические барьеры, которые не видны в опросе об интересе."
+    },
+    {
+     "id": "r-shared-tools-q2",
+     "prompt_et": "Mida näitas esimese kuu kasutus kõige otsesemalt?",
+     "type": "choice",
+     "options": [
+      "Kui palju seadmeid pered kokku ostmata jätsid",
+      "Milliseid seadmeid inimesed olemasolevatel tingimustel laenasid",
+      "Kuidas muutusid tööriistade hinnad"
+     ],
+     "answer": 1,
+     "explanation_ru": "Число выдач описывает использование в данных условиях."
+    },
+    {
+     "id": "r-shared-tools-q3",
+     "prompt_et": "Pärast muudatusi oli võimalik eraldi kindlaks teha iga meetme mõju.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Меры ввели почти одновременно."
+    },
+    {
+     "id": "r-shared-tools-q4",
+     "prompt_et": "Kasutusõpetus kestis täpselt pool tundi.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Длительность занятия не указана."
+    },
+    {
+     "id": "r-shared-tools-q5",
+     "prompt_et": "Miks soovitakse tagasisidet ka mittelaenajatelt?",
+     "type": "choice",
+     "options": [
+      "Et teha kindlaks, kas nad elavad samas majas",
+      "Et panna nad järgmine kord seadet laenama",
+      "Et mõista, kelle jaoks teenus on endiselt raskesti kasutatav"
+     ],
+     "answer": 2,
+     "explanation_ru": "Обратная связь помогает увидеть тех, кто не смог воспользоваться услугой."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Võrrelge kahte eelarvevalikut ja nimetage olukord, kus kumbki oleks põhjendatud.",
+     "rubric_ru": "Сравните закупку и транспорт. Свяжите каждое решение с конкретным барьером."
+    },
+    {
+     "prompt_et": "Sõnastage kaks küsimust inimesele, kes ei laenanud ühtki tööriista.",
+     "rubric_ru": "Уточните препятствие и условие, при котором человек воспользовался бы услугой."
+    }
+   ]
+  },
+  {
+   "id": "r-appeal-c1",
+   "topic": "tech",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Mida tähendab sisuline vaie?",
+   "title_ru": "Что делает обжалование содержательным?",
+   "text_et": "Kujutlegem avalikku teenust, mis jaotab koolitustoetusi. Taotlusi tuleb korraga palju ja ametnikud kasutavad esmast järjestust, mille koostab arvutiprogramm. Osa taotlejaid saab eitava otsuse. Neile saadetakse kirjalik teade, milles on kirjas tulemus ja vaide esitamise tähtaeg. Selline teade täidab olulist ülesannet, kuid jätab lahtiseks küsimuse, mille põhjal saaks inimene otsust sisuliselt vaidlustada.\n\nKui teates seisab üksnes, et taotlus jäi pingereas liiga madalale, ei tea taotleja, kas probleem oli puudulikes andmetes, hindamiskriteeriumis või selles, kuidas kriteeriumi tema olukorrale rakendati. Kõigi arvutuskäikude lisamine ei pruugi aidata. Tehniline kirjeldus võib olla täielik ja samal ajal nii keerukas, et inimene ei leia sealt enda jaoks olulist seost. Selgitus peaks võimaldama tal kindlaks teha, mida kontrollida ja millist lisateavet esitada.\n\nOtsustajal võib olla põhjendatud soov vältida seda, et taotlejad hakkavad oma avaldusi ainult punktisumma suurendamiseks kohandama. Sellest ei järeldu siiski, et igasugune üksikasjalik põhjendus oleks kahjulik. Tuleb eristada juhist, mis paljastab süsteemi kergesti ärakasutatava nõrkuse, ja teadet selle kohta, millist asjaolu konkreetsel juhul arvesse võeti. Viimane võib vähendada vaideid, kui taotleja saab otsuse alusest aru, või tuua esile vea, mida asutus muidu ei märkaks.\n\nVaide väärtus sõltub ka sellest, kes seda läbi vaatab. Kui uus kontroll piirdub sama teabe uuesti sisestamisega samasse programmi, võib tulemus olla järjekindel, kuid esialgne viga jääb alles. Sisuline läbivaatamine eeldab võimalust kontrollida lähteandmeid, hinnata erandit ja vajaduse korral põhjendust muuta. See ei tähenda, et iga vaie peab lõppema algse otsuse tühistamisega. Edu võib seisneda ka selles, et inimene saab arusaadava põhjenduse ning asutus kogub teavet korduvate vigade kohta.\n\nSeega on vaidlustamise võimalus osa teenuse toimimisest, mitte üksnes sellele järgnev vormitäide. Selle kvaliteeti tuleb hinnata küsimuse järgi, kas inimene saab oma juhtumi kohta esitada midagi, mis võiks otsuse läbivaatamist tegelikult mõjutada.",
+   "explanation_ru": "Авторский учебный текст. Подкрепляйте ответы деталями текста и отделяйте выводы от предположений.",
+   "questions": [
+    {
+     "id": "r-appeal-q1",
+     "prompt_et": "Mis teeb algse teate artikli järgi ebapiisavaks?",
+     "type": "choice",
+     "options": [
+      "See ei aita tuvastada konkreetset asjaolu, mida kontrollida",
+      "See annab taotlejale liiga pika tähtaja",
+      "See nõuab, et ametnik vaataks läbi kõik taotlused uuesti"
+     ],
+     "answer": 0,
+     "explanation_ru": "Формальная информация не объясняет, что проверить или уточнить."
+    },
+    {
+     "id": "r-appeal-q2",
+     "prompt_et": "Miks ei võrdu täielik tehniline kirjeldus hea selgitusega?",
+     "type": "choice",
+     "options": [
+      "Kõiki arvutuskäike on võimatu kirja panna",
+      "Taotlejal võib olla raske leida seost oma juhtumiga",
+      "Iga taotleja peab saama süsteemi ise muuta"
+     ],
+     "answer": 1,
+     "explanation_ru": "Важна применимость объяснения к конкретному случаю."
+    },
+    {
+     "id": "r-appeal-q3",
+     "prompt_et": "Autori meelest peab sisuline vaie alati muutma algset otsust.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Обоснованный пересмотр может оставить решение в силе."
+    },
+    {
+     "id": "r-appeal-q4",
+     "prompt_et": "Näites kasutatud programm osteti väliselt arendajalt.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Поставщик программы не назван."
+    },
+    {
+     "id": "r-appeal-q5",
+     "prompt_et": "Millist erinevust rõhutab vaide läbivaatamise näide?",
+     "type": "choice",
+     "options": [
+      "Uus otsustaja peab kasutama alati teist programmi",
+      "Järjekindel tulemus näitab, et viga pole võimalik",
+      "Korduv arvutus ja andmete sisuline kontroll on eri asjad"
+     ],
+     "answer": 2,
+     "explanation_ru": "Повтор той же процедуры не проверяет исходные данные и исключения."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Selgitage, millal läbipaistvus ja süsteemi kuritarvitamise vältimine võivad omavahel pingesse sattuda.",
+     "rubric_ru": "Объясните конфликт и предложите, какую информацию можно сообщить заявителю."
+    },
+    {
+     "prompt_et": "Koostage lühike näidispõhjendus, mille põhjal saaks taotleja konkreetset viga parandada.",
+     "rubric_ru": "Назовите учтённое обстоятельство, его роль и способ предоставить уточнение."
+    }
+   ]
+  },
+  {
+   "id": "r-memory-c1",
+   "topic": "school",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Mida kooli mälestused välja jätavad?",
+   "title_ru": "Что упускают воспоминания о школе?",
+   "text_et": "Kooli juubeli eel paluti vilistlastel saata mälestusi. Esimeste kirjade põhjal paistis kool paigana, kus peaaegu kõik olid osalenud mõnes ringis ning tundnud ennast kogukonna liikmena. Kogumiku koostaja tahtis alustada teksti väitega, et kooli tugevus on alati olnud kõigile avatud huvitegevus. Üks endine õpetaja küsis siiski, kelle mälestusi kogumiku koostaja lugenud oli.\n\nKutse levis peamiselt vilistlaste ühismeediakanalis ja endiste klassivanemate kaudu. On mõistetav, et eriti kiiresti vastasid need, kes olid kooliga sidet hoidnud. Nende lood on väärtuslikud, kuid need kirjeldavad üht osa kogemusest. Inimesed, kes vahetasid kooli või ei saanud pärast tunde bussi tõttu ringi jääda, ei pruukinud kutset näha. Isegi kui nad seda nägid, ei pruukinud nad pidada oma lugu juubeliväljaande jaoks sobivaks.\n\nKoostaja otsis lisaks dokumente. Ringide nimekirjad näitasid, et tegevusi oli tõesti palju. Nimekiri ei öelnud aga, miks mõni õpilane neis ei osalenud. Osalemata jätmist ei saa pidada tõendiks, et võimalus puudus. Sama vähe saab nimekirja olemasolust järeldada, et võimalus oli kõigile võrdselt kasutatav. Dokument ja mälestus vastavad erinevatele küsimustele ning mõlemal on oma piirid.\n\nUues versioonis valiti teksti kõrvuti mitu lugu. Üks vilistlane meenutas ringi kui võimalust leida sõpru, teine kirjeldas, miks ta pidi kohe pärast tunde koju minema. Koostaja ei püüdnud teise loo abil esimest ümber lükata. Ta näitas, et ühes asutuses võivad eri õpilased kogeda sama korraldust väga erinevalt. Lisatud märkuses selgitati, kuidas kutse levis ja mida olemasolevate allikate põhjal väita ei saa.\n\nSelline kogumik võib esmapilgul tunduda vähem pidulik, sest selles ei ole üht kõiki ühendavat lugu. Ometi annab see koolile võimaluse arutada, millised varasemad lahendused toimisid ning kelle jaoks oli vaja teistsuguseid tingimusi. Mälestuste ülesanne ei pea olema ainult ühist minevikku kinnitada. Need võivad teha nähtavaks ka erinevused, millest õppida.",
+   "explanation_ru": "Авторский учебный текст. Подкрепляйте ответы деталями текста и отделяйте выводы от предположений.",
+   "questions": [
+    {
+     "id": "r-memory-q1",
+     "prompt_et": "Miks võisid esimesed kirjad jätta liiga ühetaolise mulje?",
+     "type": "choice",
+     "options": [
+      "Kutse jõudis eeskätt nendeni, kes olid kooliga sidet hoidnud",
+      "Koostaja jättis nimekirjast kõik ringid välja",
+      "Õpetajad kirjutasid vilistlaste eest vastused"
+     ],
+     "answer": 0,
+     "explanation_ru": "Каналы распространения выделяли связанных со школой людей."
+    },
+    {
+     "id": "r-memory-q2",
+     "prompt_et": "Mida ringide nimekirjad võimaldasid kinnitada?",
+     "type": "choice",
+     "options": [
+      "Et osalemata jätnud õpilased polnud huvitatud",
+      "Et tegevusi korraldati",
+      "Et bussigraafik sobis kõigile"
+     ],
+     "answer": 1,
+     "explanation_ru": "Документы подтверждают наличие занятий, но не равный доступ."
+    },
+    {
+     "id": "r-memory-q3",
+     "prompt_et": "Koostaja kasutas teist mälestust esimese loo ümberlükkamiseks.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Истории показывают разные опыты и не исключают друг друга."
+    },
+    {
+     "id": "r-memory-q4",
+     "prompt_et": "Kogumik anti välja kahes keeles.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Языки издания не названы."
+    },
+    {
+     "id": "r-memory-q5",
+     "prompt_et": "Mis on lõpulõigu põhiväide?",
+     "type": "choice",
+     "options": [
+      "Kogumik peaks käsitlema üksnes kõige edukamaid õpilasi",
+      "Juubeliks sobivad ainult ühesugused lood",
+      "Erinevad mälestused võivad aidata mõista, kellele kooli lahendused sobisid"
+     ],
+     "answer": 2,
+     "explanation_ru": "Разные рассказы показывают, для кого работали прошлые решения."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Eristage tekstis valikukallutatus ja allika sisuline piirang.",
+     "rubric_ru": "Отдельно объясните, кто ответил на приглашение и какие вопросы не решает список кружков."
+    },
+    {
+     "prompt_et": "Sõnastage kaks väidet kooli huvitegevuse kohta: üks põhjendatud ja üks allikate põhjal liiga tugev.",
+     "rubric_ru": "Объясните, где заканчиваются выводы, допустимые по документам и воспоминаниям."
+    }
+   ]
   }
  ]
 }

@@ -1575,6 +1575,152 @@
     "Suvel …"
    ],
    "explanation_ru": "Отвечайте полными предложениями (2–3 слова недостаточно). Запишите ответы и послушайте себя."
+  },
+  {
+   "id": "s-feedback-b2",
+   "topic": "school",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Интервью об обратной связи",
+   "kind": "interview",
+   "situation_ru": "Ответьте на вопросы о комментариях к учебной работе. Приведите конкретный пример, затем сравните два способа получить обратную связь.",
+   "prompts_et": [
+    "Millal on õpetaja tagasiside teid kõige rohkem aidanud?",
+    "Kuidas erinevad suuline ja kirjalik tagasiside õppija jaoks?",
+    "Mis võib juhtuda, kui kommentaar antakse liiga hilja?",
+    "Millise lahenduse valiksite suure klassi puhul?"
+   ],
+   "phrases_et": [
+    "Minu kogemuse põhjal ...",
+    "Ühelt poolt ..., teiselt poolt ...",
+    "Sellises olukorras eelistaksin ..."
+   ],
+   "explanation_ru": "Дайте пример, сравните два способа по одному критерию и свяжите вывод с размером класса."
+  },
+  {
+   "id": "s-delivery-b2",
+   "topic": "shopping",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Монолог о получении покупок",
+   "kind": "monologue",
+   "situation_ru": "Сравните доставку домой и получение из постамата. Представьте, что заказ тяжёлый, а покупатель редко бывает дома.",
+   "prompts_et": [
+    "Kirjeldage kummagi võimaluse eeliseid.",
+    "Arvestage hinna, aja ja paki kaaluga.",
+    "Tooge näide ostjast, kellele teie valik ei sobiks.",
+    "Tehke tingimuslik soovitus."
+   ],
+   "phrases_et": [
+    "Sobivus sõltub sellest, kas ...",
+    "Erandiks võib olla olukord, kus ...",
+    "Kui ..., siis soovitaksin ..."
+   ],
+   "explanation_ru": "Свяжите рекомендацию с ограничениями покупателя, а не только с собственной привычкой."
+  },
+  {
+   "id": "s-green-b2",
+   "topic": "nature",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Переговоры о школьном дворе",
+   "kind": "dialogue",
+   "situation_ru": "Класс предлагает сделать школьный двор зеленее. Вдвоём договоритесь, какой участок менять первым и кто будет за ним ухаживать.",
+   "role_a": {
+    "title_ru": "Участник A",
+    "prompts_et": [
+     "Pakkuge välja ala, kus varju on kõige rohkem vaja.",
+     "Põhjendage valikut kahe argumendiga.",
+     "Küsige partneri hooldusplaani kohta."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Участник B",
+    "prompts_et": [
+     "Selgitage, miks läbipääs peab vabaks jääma.",
+     "Pakkuge väiksema hooldusvajadusega lahendus.",
+     "Kinnitage ühine esimene samm."
+    ]
+   },
+   "phrases_et": [
+    "Kas saame alustada sellest, et ...?",
+    "Selle lahenduse puudus on ...",
+    "Leppisime kokku, et ..."
+   ],
+   "explanation_ru": "Повторите решение и распределите обязанности."
+  },
+  {
+   "id": "s-attribution-c1",
+   "topic": "tech",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Интервью о проверке цифровых источников",
+   "kind": "interview",
+   "situation_ru": "Вы выступаете в школьном подкасте. Объясните, как проверить утверждение, если разные сайты ссылаются друг на друга.",
+   "prompts_et": [
+    "Mille poolest erineb korduv väide sõltumatust kinnitusest?",
+    "Kuidas kontrolliksite, kas allikad toetuvad samale algmaterjalile?",
+    "Mida ütleksite kuulajale, kui algallikat ei õnnestu leida?",
+    "Kuidas parandada hiljem avaldatud ebatäpsust?"
+   ],
+   "phrases_et": [
+    "Väite päritolu saab jälgida ...",
+    "Praeguste andmete põhjal saab öelda üksnes ...",
+    "Parandus peaks näitama, et ..."
+   ],
+   "explanation_ru": "Назовите шаг проверки, предел уверенности и способ исправить публичную ошибку."
+  },
+  {
+   "id": "s-noise-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Дискуссия о вечерних мероприятиях",
+   "kind": "dialogue",
+   "situation_ru": "Городской квартал обсуждает открытые концерты. Один участник представляет организаторов, другой — жителей. Согласуйте пробный формат и правила оценки.",
+   "role_a": {
+    "title_ru": "Участник A",
+    "prompts_et": [
+     "Selgitage, miks osa üritusi peab algama hiljem.",
+     "Eristage külastajate huvi ja tegelikku mõju naabrusele.",
+     "Pakkuge piirang, mis jätaks ürituse teostatavaks."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Участник B",
+    "prompts_et": [
+     "Kirjeldage ka nende elanike olukorda, kes koosolekul ei osale.",
+     "Küsige, kuidas kogutakse tagasisidet ja hinnatakse müra.",
+     "Sõnastage tingimus, mille korral katse lõpetatakse."
+    ]
+   },
+   "phrases_et": [
+    "Meie hinnang tugineb ...",
+    "Nõustun sellega eeldusel, et ...",
+    "Kui näitaja ületab ..., tuleb ..."
+   ],
+   "explanation_ru": "Решение должно содержать срок, условия остановки и способ учесть отсутствующих жителей."
+  },
+  {
+   "id": "s-training-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Монолог о качестве обучения сотрудников",
+   "kind": "monologue",
+   "situation_ru": "Руководитель хочет оценивать обучение по доле завершённых курсов. Объясните, что этот показатель отражает, и предложите более полную оценку.",
+   "prompts_et": [
+    "Mida kursuse lõpetamise määr tegelikult mõõdab?",
+    "Tooge olukord, kus kõrge määr varjab probleemi.",
+    "Pakkuge kaks lisamõõdikut ja selgitage nende piire.",
+    "Lõpetage soovitusega, kuidas tulemusi juhtkonnale esitada."
+   ],
+   "phrases_et": [
+    "Siin tuleb eristada ...",
+    "Sellest ei saa veel järeldada, et ...",
+    "Tulemuse tõlgendamisel tasub arvestada ..."
+   ],
+   "explanation_ru": "Разделите участие, освоение и применение навыка. Объясните, почему два показателя дают разную информацию."
   }
  ],
  "checklist": [

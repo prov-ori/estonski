@@ -21,8 +21,10 @@ export default {
   async mount(root, args) {
     const [data, topicsCfg] = await Promise.all([content('vocab'), config('topics')]);
     const themes = topicsCfg.themes;
-    const cards = data.items;
     const filter = args[0] || 'all';
+    const levels = ['A2', 'B1', 'B2', 'C1'];
+    const level = levels.includes(args[1]) ? args[1] : '';
+    const cards = level ? data.items.filter((c) => c.level === level) : data.items;
     let dir = 'et-ru'; // et-ru | ru-et | type
     const inScope = cards.filter((c) => filter === 'all' || c.topic === filter);
 
@@ -37,13 +39,15 @@ export default {
       return h('div', null,
         h('h1', null, 'Словарь'),
         h('p', { class: 'lead' }, 'Карточки по школьным темам. Правильно вспомнили — карточка уходит в следующую «коробку» и вернётся позже; ошиблись — вернётся в первую.'),
+        h('nav', { class: 'chips', 'aria-label': 'Уровни словаря' },
+          ['', ...levels].map((value) => h('a', { class: 'chip', href: '#/vocab/all' + (value ? '/' + value : ''), 'aria-current': value === level ? 'true' : null }, value || 'Все уровни'))),
         h('nav', { class: 'chips', 'aria-label': 'Темы словаря' },
           chip('all', `Все (${cards.length})`),
-          themes.map((t) => chip(t.id, `${t.name_ru} (${cards.filter((c) => c.topic === t.id).length})`))),
+          themes.filter((t) => cards.some((c) => c.topic === t.id)).map((t) => chip(t.id, `${t.name_ru} (${cards.filter((c) => c.topic === t.id).length})`))),
         h('p', { class: 'muted', 'aria-label': 'Коробки Лейтнера' }, `Новые: ${b[0]} · коробка 1: ${b[1]} · 2: ${b[2]} · 3: ${b[3]} · 4: ${b[4]} · 5: ${b[5]}`));
     }
     function chip(id, label) {
-      return h('a', { class: 'chip', href: `#/vocab/${id === 'all' ? '' : id}`, 'aria-current': id === filter ? 'true' : null }, label);
+      return h('a', { class: 'chip', href: `#/vocab/${id}${level ? '/' + level : ''}`, 'aria-current': id === filter ? 'true' : null }, label);
     }
 
     const area = h('div', { class: 'trainer' });

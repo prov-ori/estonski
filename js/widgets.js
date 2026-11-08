@@ -157,17 +157,27 @@ export function bar(value, max, label) {
 }
 
 /** Список с фильтром по теме: renderItems(items) → узел. Возвращает контейнер. */
-export function filteredList(items, topicNames, renderItems) {
-  let topic = 'all';
+export function filteredList(items, topicNames, renderItems, { withLevels = false } = {}) {
+  let level = 'all';
+  const levels = [...new Set(items.map((x) => x.level))].filter(Boolean).sort();
   const topics = [...new Set(items.map((x) => x.topic))];
   const box = h('div', { class: 'filtered' });
   const list = h('div');
-  const sel = h('select', { class: 'select', id: 'topic-filter', onchange: (e) => { topic = e.target.value; draw(); } },
+  const sel = h('select', { class: 'select', id: 'topic-filter', onchange: () => draw() },
     h('option', { value: 'all' }, `Все темы (${items.length})`),
     topics.map((t) => h('option', { value: t }, `${topicNames.get(t) ? topicNames.get(t).name_ru : t} (${items.filter((x) => x.topic === t).length})`)));
   function draw() {
-    const rows = items.filter((x) => topic === 'all' || x.topic === topic);
+    const rows = items.filter((x) => (level === 'all' || x.level === level) && (sel.value === 'all' || x.topic === sel.value));
+    if (!rows.length) {
+      list.replaceChildren(h('p', { class: 'notice', role: 'status' }, 'Для этого уровня и темы пока нет заданий. Выберите другую тему или уровень.'));
+      return;
+    }
     list.replaceChildren(renderItems(rows));
+  }
+  if (withLevels) {
+    const levelSelect = h('select', { class: 'select', id: 'level-filter', onchange: (event) => { level = event.target.value; draw(); } },
+      h('option', { value: 'all' }, 'Все уровни'), levels.map((value) => h('option', { value }, value)));
+    box.append(h('div', { class: 'field' }, h('label', { for: 'level-filter' }, 'Уровень'), levelSelect));
   }
   box.append(h('div', { class: 'field' }, h('label', { for: 'topic-filter' }, 'Тема'), sel), list);
   draw();

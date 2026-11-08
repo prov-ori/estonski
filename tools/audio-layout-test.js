@@ -116,6 +116,24 @@ const server=http.createServer((req,res)=>{
     await compact.close();
     console.log('PASS 320px menu, keyboard focus, delayed microphone cleanup and C1 reading on short screens');
 
+    const levels = await browser.newPage({ viewport: { width: 390, height: 800 }, serviceWorkers: 'block' });
+    for (const [section, id, count, ready] of [
+      ['listening', 'l-archive-c1', 2, '.listening audio'],
+      ['writing', 'w-metric-c1', 3, 'textarea'],
+      ['speaking', 's-training-c1', 3, '.role'],
+    ]) {
+      await levels.goto(base + '#/' + section);
+      await levels.getByLabel('Уровень', { exact: true }).selectOption('C1');
+      assert.equal(await levels.locator('main .link-card').count(), count);
+      await levels.locator(`a[href="#/${section}/${id}"]`).click();
+      await levels.locator(ready).first().waitFor();
+    }
+    await levels.goto(base + '#/vocab');
+    await levels.getByRole('navigation', { name: 'Уровни словаря' }).getByRole('link', { name: 'C1', exact: true }).click();
+    await levels.getByRole('link', { name: 'Все (8)', exact: true }).waitFor();
+    await levels.close();
+    console.log('PASS C1 filters expose listening, writing, speaking and vocabulary');
+
     const progress = await browser.newPage({serviceWorkers:'block'});
     await progress.goto(base);
     const imported = await progress.evaluate(async () => {

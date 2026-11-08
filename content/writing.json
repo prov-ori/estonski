@@ -1279,6 +1279,168 @@
    ],
    "sample_et": "Minu arvates ei peaks koolis olema koolivormi. Esiteks tahavad õpilased väljendada oma isikupära riiete kaudu. Teiseks on vorm sageli kallis ja mitte alati mugav. Samas aitaks vorm vähendada erinevusi õpilaste vahel. Kokkuvõttes arvan, et õpilased võiksid ise riided valida, kui need on korralikud.",
    "sample_notes_ru": "Образец: структура мнение → две причины → контраргумент (samas) → вывод; условное peaks/võiksid."
+  },
+  {
+   "id": "w-access-b2",
+   "topic": "school",
+   "level": "B2",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Письмо о доступности кружка",
+   "prompt_et": "Kool avas pärast tunde tasuta fotoringi. Ringi lõpuaeg ei sobi õpilastele, kes peavad viimase bussiga koju sõitma. Kirjutage ringi juhendajale ja pakkuge lahendus.",
+   "prompt_ru": "Школьный фотокружок заканчивается после последнего автобуса. Напишите руководителю и предложите решение.",
+   "content_points_et": [
+    "Selgitage, kellele ja miks aeg ei sobi.",
+    "Pakkuge kaks võimalust ja võrrelge neid.",
+    "Arvestage juhendaja võimaliku ajapiiranguga.",
+    "Paluge vastust kindlaks kuupäevaks."
+   ],
+   "content_points_ru": [
+    "Поясните, кому и почему не подходит время.",
+    "Предложите и сравните два варианта.",
+    "Учтите возможное ограничение руководителя.",
+    "Попросите ответ к определённой дате."
+   ],
+   "explanation_ru": "Проверьте, ясно ли адресату, какое действие от него ожидается.",
+   "practice_words": [
+    180,
+    240
+   ]
+  },
+  {
+   "id": "w-queue-b2",
+   "topic": "city",
+   "level": "B2",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Предложение по записи в библиотеку",
+   "prompt_et": "Raamatukogu kaalub, kas arvutitöökohti tuleks broneerida või kasutada elava järjekorra alusel. Kirjutage lugejate foorumisse põhjendatud arvamus.",
+   "prompt_ru": "Библиотека выбирает между бронированием компьютеров и живой очередью. Напишите мнение для форума читателей.",
+   "content_points_et": [
+    "Sõnastage probleem nii, et mõlema rühma vajadused oleksid nähtavad.",
+    "Võrrelge broneerimist ja elavat järjekorda ühe kriteeriumi põhjal.",
+    "Tooge enda eelistuse vastu üks tõsiseltvõetav vastuväide.",
+    "Pakkuge kompromiss ja näitaja, mille abil seda hinnata."
+   ],
+   "content_points_ru": [
+    "Покажите потребности обеих групп.",
+    "Сравните решения по одному критерию.",
+    "Разберите существенное возражение против своего выбора.",
+    "Предложите компромисс и критерий оценки."
+   ],
+   "explanation_ru": "Укажите, кого затронет компромисс и как можно заметить проблему после запуска.",
+   "practice_words": [
+    180,
+    240
+   ]
+  },
+  {
+   "id": "w-shift-b2",
+   "topic": "work",
+   "level": "B2",
+   "status": "draft",
+   "kind": "email",
+   "title_ru": "Обмен рабочими сменами",
+   "prompt_et": "Olete nõus kolleegiga vahetust vahetama, kuid uus vahetus kattub teie koolitusega. Kirjutage töökorraldajale viisakas kiri.",
+   "prompt_ru": "Вы готовы поменяться сменой, но новая смена совпадает с обучением. Напишите координатору.",
+   "content_points_et": [
+    "Kirjeldage olemasolevat kokkulepet ja tekkinud takistust.",
+    "Pakkuge lahendus, mis jätab mõlemad vahetused kaetuks.",
+    "Märkige, mis tuleb enne muudatust kinnitada.",
+    "Lõpetage kiri konkreetse küsimusega."
+   ],
+   "content_points_ru": [
+    "Опишите договорённость и возникшее препятствие.",
+    "Предложите решение, при котором обе смены закрыты.",
+    "Укажите, что нужно подтвердить заранее.",
+    "Завершите письмо конкретным вопросом."
+   ],
+   "explanation_ru": "Разделите подтверждённые факты и предложение, которое пока обсуждается.",
+   "practice_words": [
+    180,
+    240
+   ]
+  },
+  {
+   "id": "w-metric-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Служебная записка об оценке сервиса",
+   "prompt_et": "Klienditoe vastamise aeg lühenes, kuid korduvate pöördumiste arv kasvas. Koostage juhile memo, mis selgitab, kuidas hinnata muudatuse tegelikku mõju.",
+   "prompt_ru": "Служба поддержки стала отвечать быстрее, но повторных обращений стало больше. Подготовьте записку руководителю.",
+   "content_points_et": [
+    "Eristage näitaja ja soovitud tulemus.",
+    "Pakkuge kaks võimalikku seletust ning andmed, mis neid eristaksid.",
+    "Soovitage ajutist töökorraldust ja määrake hindamise tähtaeg.",
+    "Sõnastage järelduse piirang."
+   ],
+   "content_points_ru": [
+    "Разделите показатель и желаемый результат.",
+    "Дайте два объяснения и способ их различить.",
+    "Предложите временное решение и срок оценки.",
+    "Укажите предел обоснованного вывода."
+   ],
+   "explanation_ru": "Проверьте, что рост повторных обращений не объявлен доказанной причиной или следствием без данных.",
+   "practice_words": [
+    230,
+    320
+   ]
+  },
+  {
+   "id": "w-subtitles-c1",
+   "topic": "tech",
+   "level": "C1",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Обращение о субтитрах к лекциям",
+   "prompt_et": "Ülikooli avalike loengute automaatsed subtiitrid valmivad kiiresti, kuid nimed ja erialaterminid on vahel valed. Kirjutage õppejuhile ettepanek.",
+   "prompt_ru": "Автосубтитры к открытым лекциям готовы быстро, но в них ошибочные имена и термины. Подготовьте официальное предложение.",
+   "content_points_et": [
+    "Võrrelge kiire avaldamise ja hilisema kontrolli eeliseid.",
+    "Pakkuge eri tüüpi loengutele erinev kontrollitase.",
+    "Selgitage, kuidas vaataja saab ebakindlast kohast teada ja veast teatada.",
+    "Paluge kinnitada katse ulatus ja vastutaja."
+   ],
+   "content_points_ru": [
+    "Сопоставьте скорость публикации и последующую проверку.",
+    "Предложите разную глубину проверки для разных лекций.",
+    "Опишите пометку сомнительных мест и способ сообщить об ошибке.",
+    "Попросите согласовать масштаб пилота и ответственного."
+   ],
+   "explanation_ru": "Различите доступность, точность и нагрузку на редакторов.",
+   "practice_words": [
+    230,
+    320
+   ]
+  },
+  {
+   "id": "w-rent-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Рекомендация по использованию общественного зала",
+   "prompt_et": "Linn annab kogukonnasaali ühingutele tasuta kasutada. Populaarsed ajad on hõivatud, kuid osa broneeringuid jääb kasutamata. Koostage soovitus linnavalitsusele.",
+   "prompt_ru": "Город бесплатно предоставляет зал объединениям. Удобные часы заняты, но часть броней не используется. Подготовьте рекомендацию.",
+   "content_points_et": [
+    "Eristage nõudlus, tegelik kasutus ja ligipääs.",
+    "Võrrelge tagatisraha ja ootenimekirja võimalikke mõjusid.",
+    "Arvestage väikese eelarvega ühingute olukorraga.",
+    "Pakkuge katse ja tingimus, mille korral reeglit muudetakse."
+   ],
+   "content_points_ru": [
+    "Разделите спрос, фактическое использование и доступ.",
+    "Сравните последствия залога и списка ожидания.",
+    "Учтите положение организаций с небольшим бюджетом.",
+    "Предложите эксперимент и условие пересмотра правил."
+   ],
+   "explanation_ru": "Укажите, по каким данным можно заметить, что выбранное правило кого-то исключает.",
+   "practice_words": [
+    230,
+    320
+   ]
   }
  ],
  "connectors": [

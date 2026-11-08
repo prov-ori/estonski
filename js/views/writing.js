@@ -37,8 +37,8 @@ export default {
         h('p', { class: 'notice warn' }, 'Автоматической оценки нет — и не будет: тренажёр не умеет надёжно оценивать тексты. Проверьте себя по чек-листу или покажите текст учителю.'),
         filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => {
           const saved = store.getWriting(t.id);
-          return h('a', { class: 'card link-card', href: `#/writing/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, KINDS[t.kind] || 'Письмо'), saved.text && h('p', { class: 'muted small-text' }, `Есть черновик: ${countWords(saved.text)} слов`));
-        }))),
+          return h('a', { class: 'card link-card', href: `#/writing/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, `${t.level} · ${KINDS[t.kind] || 'Письмо'}`), saved.text && h('p', { class: 'muted small-text' }, `Есть черновик: ${countWords(saved.text)} слов`));
+        })), { withLevels: true }),
         h('h2', null, 'Связки и полезные фразы'), connectors(data.connectors));
       return;
     }

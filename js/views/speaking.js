@@ -27,9 +27,9 @@ export default {
     if (!card) {
       addChildren(root, 
         h('h1', null, 'Говорение'),
-        h('p', { class: 'lead' }, 'Карточки для работы в паре. Один говорит за роль A, другой за роль B, потом меняетесь. Записывайте диалог и слушайте себя.'),
+        h('p', { class: 'lead' }, 'Выберите диалог, интервью или монолог. Запишите ответ и оцените его по чек-листу.'),
         h('p', { class: 'notice privacy' }, h('strong', null, 'Запись только у вас. '), 'Звук записывается в браузере и никуда не отправляется.'),
-        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => h('a', { class: 'card link-card', href: `#/speaking/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted' }, t.situation_ru))))));
+        filteredList(data.items, topicNames, (rows) => h('div', { class: 'grid' }, rows.map((t) => h('a', { class: 'card link-card', href: `#/speaking/${t.id}` }, h('h2', null, t.title_ru), h('p', { class: 'muted small-text' }, t.level), h('p', { class: 'muted' }, t.situation_ru)))), { withLevels: true }));
       return;
     }
     const series = await seriesLinks(card, 'speaking');

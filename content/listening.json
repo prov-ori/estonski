@@ -2616,6 +2616,322 @@
      "answer": 0
     }
    ]
+  },
+  {
+   "id": "l-bus-b2",
+   "level": "B2",
+   "topic": "travel",
+   "status": "draft",
+   "title_et": "Ööbussi katse",
+   "title_ru": "Пробный маршрут ночного автобуса",
+   "explanation_ru": "Учебный диалог с готовой озвучкой. При первом прослушивании определите позиции собеседников, при втором проверьте детали и выводы.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Meie linn katsetas kaheksa nädalavahetust ööbussi. Alguses loendasime sõitjaid ainult kesklinna peatuses ja järeldasime, et liin on populaarne. Kui vaatasime kõiki peatusi, selgus, et äärelinnas väljus reisijaid oodatust vähem."
+    },
+    {
+     "sp": "B",
+     "text": "Kas see tähendab, et äärelinna inimesi teenus ei huvita? Mina jõuan hiliselt vahetuselt peatusesse alles pärast viimase bussi väljumist. Nõudlust ei saa hinnata ainult nende järgi, kellele praegune sõiduplaan sobib."
+    },
+    {
+     "sp": "A",
+     "text": "Sellepärast nihutame järgmises katses viimast väljumist poole tunni võrra hilisemaks. Marsruut ja piletihind jäävad samaks. Tahame teada, kas hilisem buss aitab töötajatel koju jõuda, mitte lihtsalt varasemalt reisilt sõitjaid üle tuua."
+    },
+    {
+     "sp": "B",
+     "text": "Siis tasuks lisaks sõitjate arvule küsida, kuidas nad varem koju said. Kui inimesed jätsid varem vahetuse vastu võtmata või kasutasid taksot, on muutusel teine tähendus kui lihtsalt ühelt bussilt teisele ümberistumisel."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-bus-q1",
+     "prompt_et": "Miks osutus esialgne hinnang puudulikuks?",
+     "type": "choice",
+     "options": [
+      "Sõitjaid loendati ainult ühes peatuses",
+      "Kõik peatused olid suletud",
+      "Piletihinda polnud veel määratud"
+     ],
+     "answer": 0,
+     "explanation_ru": "Учитывали лишь одну остановку."
+    },
+    {
+     "id": "l-bus-q2",
+     "prompt_et": "Mis raskus on teisel kõnelejal?",
+     "type": "choice",
+     "options": [
+      "Ta peab kaks korda ümber istuma",
+      "Ta jääb pärast töövahetust viimasest bussist maha",
+      "Ta ei leia kesklinna peatust"
+     ],
+     "answer": 1,
+     "explanation_ru": "Смена заканчивается слишком поздно."
+    },
+    {
+     "id": "l-bus-q3",
+     "prompt_et": "Järgmises katses muudetakse ka piletihinda.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Цена и маршрут остаются прежними."
+    },
+    {
+     "id": "l-bus-q4",
+     "prompt_et": "Ööbussi juhid töötavad ka päevasel liinil.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "График водителей не обсуждается."
+    },
+    {
+     "id": "l-bus-q5",
+     "prompt_et": "Mida aitaks mõista küsimus varasema kojusõidu kohta?",
+     "type": "choice",
+     "options": [
+      "Mitu peatust tuleb juurde ehitada",
+      "Kui sageli buss graafikust maha jäi",
+      "Kas sõitjatel oli varem sobiv ühendus"
+     ],
+     "answer": 2,
+     "explanation_ru": "Предыдущий способ добраться домой помогает оценить пользу."
+    }
+   ]
+  },
+  {
+   "id": "l-seed-b2",
+   "level": "B2",
+   "topic": "nature",
+   "status": "draft",
+   "title_et": "Seemnevahetuse uus kord",
+   "title_ru": "Новые правила обмена семенами",
+   "explanation_ru": "Учебный диалог с готовой озвучкой. При первом прослушивании определите позиции собеседников, при втором проверьте детали и выводы.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Eelmisel aastal tõid inimesed seemnevahetusele palju pakke, kuid pooled jäid üle. Mõni külastaja arvas, et pakke oli lihtsalt liiga palju. Mina märkasin hoopis, et siltidelt puudus sageli info kasvukoha kohta."
+    },
+    {
+     "sp": "B",
+     "text": "Märgistus aitaks, aga ära tee sellest pikka ankeeti. Mõni aednik teab täpselt taime sorti, teine oskab vaid öelda, et see kasvas rõdul poolvarjus. Mõlemast teadmisest võib alustajale kasu olla."
+    },
+    {
+     "sp": "A",
+     "text": "Nõus. Palume kirja panna taime nime, kogumise aasta ja selle, mida tooja kasvutingimustest teab. Kui midagi pole teada, võib selle ausalt märkida. Lisaks teeme näidislaua, kus külastaja saab enne valimist nõu küsida."
+    },
+    {
+     "sp": "B",
+     "text": "Pärast üritust võiks küsida, kui paljud proovisid midagi kasvatada. Üksi jagatud pakkide arv ei ütle, kas seemned leidsid kasutust. Samas ei tasu eeldada, et idanemata seeme tähendab halba nõu, sest tulemust mõjutavad ka ilm ja hooldus."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-seed-q1",
+     "prompt_et": "Mida märkas esimene kõneleja eelmisel üritusel?",
+     "type": "choice",
+     "options": [
+      "Pakkide siltidel nappis teavet",
+      "Külastajaid tuli oodatust vähem",
+      "Enamik pakke võeti kaasa"
+     ],
+     "answer": 0,
+     "explanation_ru": "Наблюдение касалось сведений на этикетках."
+    },
+    {
+     "id": "l-seed-q2",
+     "prompt_et": "Miks teine kõneleja ei soovi pikka ankeeti?",
+     "type": "choice",
+     "options": [
+      "Ta ei usu kirjalikesse juhistesse",
+      "Osalejate teadmised on erineva täpsusega",
+      "Ta soovib vahetuse tühistada"
+     ],
+     "answer": 1,
+     "explanation_ru": "Полезная информация возможна и без знания сорта."
+    },
+    {
+     "id": "l-seed-q3",
+     "prompt_et": "Teadmata asjaolu võib sildil välja tuua.",
+     "type": "tf3",
+     "answer": true,
+     "explanation_ru": "Можно прямо отметить отсутствие сведений."
+    },
+    {
+     "id": "l-seed-q4",
+     "prompt_et": "Korraldajad saadavad ankeedi e-postiga.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Способ последующего опроса не указан."
+    },
+    {
+     "id": "l-seed-q5",
+     "prompt_et": "Miks ei saa idanemist seostada ainult saadud nõuga?",
+     "type": "choice",
+     "options": [
+      "Külastaja ei pruugi seemneid kohe ära anda",
+      "Pakendil ei ole enamasti taime nime",
+      "Tulemust mõjutavad ka kasvutingimused ja hooldus"
+     ],
+     "answer": 2,
+     "explanation_ru": "На результат влияют погода и уход."
+    }
+   ]
+  },
+  {
+   "id": "l-survey-c1",
+   "level": "C1",
+   "topic": "tech",
+   "status": "draft",
+   "title_et": "Mida näitab vaikiv vastaja?",
+   "title_ru": "Что говорит молчание респондента?",
+   "explanation_ru": "Учебный диалог с готовой озвучкой. При первом прослушивании определите позиции собеседников, при втором проверьте детали и выводы.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Meie veebiküsitlusele vastas kakssada lugejat. Neist suur enamus eelistab digitaalset ajalehte. Toimetus tahaks selle põhjal vähendada paberlehe tiraaži, sest küsitluse tulemus näib üsna veenev."
+    },
+    {
+     "sp": "B",
+     "text": "Vastuste arv üksi ei lahenda valimi küsimust. Link oli ainult digilehes. Inimesed, kes tellivad üksnes paberlehte, ei pruukinud küsitlusest üldse kuulda. Kui nende eelistused erinevad, ei saa praegust osakaalu kõigile lugejatele üle kanda."
+    },
+    {
+     "sp": "A",
+     "text": "Saame panna paberlehte sama küsimuse ja koguda vastuseid telefoni teel. Ent ka siis ei vasta kõik. Kui ühendame vastused lihtsalt ühte tabelisse, võib rohkem vastuseid andnud rühma hääl jääda ebaproportsionaalselt tugevaks."
+    },
+    {
+     "sp": "B",
+     "text": "Just. Näitame esmalt vastuseid kanalite kaupa ja lisame, kui suure osa tellijatest kumbki rühm moodustab. Otsus tiraaži kohta vajab peale eelistuse ka infot kulude ja ligipääsu kohta. Küsitlus võib anda otsusele sisendi, kuid ei asenda selgitust, kelle jaoks oleks muutus kõige raskem."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-survey-q1",
+     "prompt_et": "Mis ohustab kõige otsesemalt esialgse tulemuse üldistatavust?",
+     "type": "choice",
+     "options": [
+      "Paberlehe lugejad ei pruukinud linki näha",
+      "Vastajaid oli rohkem kui oodati",
+      "Küsimus esitati telefoni teel"
+     ],
+     "answer": 0,
+     "explanation_ru": "Проблема в охвате, а не в размере выборки."
+    },
+    {
+     "id": "l-survey-q2",
+     "prompt_et": "Millise ohu toob välja esimene kõneleja vastuste ühendamisel?",
+     "type": "choice",
+     "options": [
+      "Inimesed võivad küsimust lugedes meelt muuta",
+      "Üks kanal võib saada tulemuses liiga suure kaalu",
+      "Kulude kohta võib tekkida kaks tabelit"
+     ],
+     "answer": 1,
+     "explanation_ru": "При простом объединении доминирует группа с большим числом ответов."
+    },
+    {
+     "id": "l-survey-q3",
+     "prompt_et": "Teine kõneleja soovitab tulemused kõigepealt kanalite kaupa esitada.",
+     "type": "tf3",
+     "answer": true,
+     "explanation_ru": "Он предлагает сначала показать результаты по каналам."
+    },
+    {
+     "id": "l-survey-q4",
+     "prompt_et": "Ajalehe tiraaži on juba vähendatud.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Обсуждается возможное решение, его выполнение не описано."
+    },
+    {
+     "id": "l-survey-q5",
+     "prompt_et": "Kuidas eristab teine kõneleja andmeid ja otsust?",
+     "type": "choice",
+     "options": [
+      "Küsitlusele tuleb anda lõpliku otsuse jõud",
+      "Ligipääsu küsimus tuleb jätta lugejate enda lahendada",
+      "Tiraaži määramisel tuleb arvestada ka kulu ja ligipääsu"
+     ],
+     "answer": 2,
+     "explanation_ru": "Опрос — один из факторов решения, наряду с затратами и доступностью."
+    }
+   ]
+  },
+  {
+   "id": "l-archive-c1",
+   "level": "C1",
+   "topic": "work",
+   "status": "draft",
+   "title_et": "Arhiivi avamine ja selgitus",
+   "title_ru": "Открытие архива и контекст",
+   "explanation_ru": "Учебный диалог с готовой озвучкой. При первом прослушивании определите позиции собеседников, при втором проверьте детали и выводы.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Meie asutuse fotokogu on digiteeritud, kuid avaldada tahame seda osade kaupa. Ühel pildil on näiteks kuupäev ja koht teada, inimeste nimed aga puuduvad. Kui lisame oletatava nime ilma märkuseta, hakkab see hiljem kergesti faktina levima."
+    },
+    {
+     "sp": "B",
+     "text": "Aga kui ootame, kuni iga kirjeldus on täielik, ei pääse ka uurijad materjalile ligi. Just nemad võivad aidata inimesi ära tunda. Minu meelest tuleks kindel teave ja oletused juba esimeses versioonis nähtavalt eristada."
+    },
+    {
+     "sp": "A",
+     "text": "See lahendaks osa probleemist. Lisaks võiks paranduse juurde jääda selgitus, kust uus teave pärineb. Pelgalt uue nime salvestamine ei näita järgmisele uurijale, kas see pärineb kirjalikust allikast või ühe inimese mälestusest."
+    },
+    {
+     "sp": "B",
+     "text": "Siis ei pea avaldamine tähendama töö lõpetamist. Kogu võib olla kasutatav ka siis, kui kirjed täienevad, tingimusel et kasutaja näeb, mis on kontrollitud ja mis on alles hüpotees. Me ei luba eksimatut kataloogi, vaid teeme paranduste aluse lugejale jälgitavaks."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-archive-q1",
+     "prompt_et": "Millist riski kirjeldab esimene kõneleja?",
+     "type": "choice",
+     "options": [
+      "Märkimata oletus võib hakata levima faktina",
+      "Fotode digiteerimine muudab kuupäevi",
+      "Uurijad ei taha avalikke andmeid kontrollida"
+     ],
+     "answer": 0,
+     "explanation_ru": "Гипотеза без пометки может стать мнимым фактом."
+    },
+    {
+     "id": "l-archive-q2",
+     "prompt_et": "Miks teine kõneleja pooldab varasemat avaldamist?",
+     "type": "choice",
+     "options": [
+      "Nii saab allikaandmed edaspidi kustutada",
+      "See võimaldab uurijatel kirjeldusi täiendada",
+      "Sellega saab kõik vead kohe kõrvaldada"
+     ],
+     "answer": 1,
+     "explanation_ru": "Доступ исследователей помогает опознать людей."
+    },
+    {
+     "id": "l-archive-q3",
+     "prompt_et": "Esimene kõneleja soovib paranduse juurde jätta uue info päritolu.",
+     "type": "tf3",
+     "answer": true,
+     "explanation_ru": "Происхождение новой информации должно быть видно."
+    },
+    {
+     "id": "l-archive-q4",
+     "prompt_et": "Fotokogu sisaldab ka helisalvestisi.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Аудиозаписи не упоминаются."
+    },
+    {
+     "id": "l-archive-q5",
+     "prompt_et": "Milline põhimõte võtab kokkuleppe kokku?",
+     "type": "choice",
+     "options": [
+      "Mälestus tuleb alati eelistada kirjalikule allikale",
+      "Kirje võib avaldada üksnes pärast täielikku kontrolli",
+      "Täiendatav avalik kirje peab näitama teadmise alust"
+     ],
+     "answer": 2,
+     "explanation_ru": "Открытый архив может дополняться, если основания изменений прозрачны."
+    }
+   ]
   }
  ]
 }

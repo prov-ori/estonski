@@ -1600,6 +1600,806 @@
     "imp": "uju"
    },
    "explanation_ru": "Основные формы глагола ujuma: ma-инфинитив, da-инфинитив, 1 и 3 л. настоящего, 1 л. прошедшего, причастие на -nud, повелительное."
+  },
+  {
+   "id": "f-n-advanced-1",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "aruanne",
+   "ru": "отчёт",
+   "forms": {
+    "nom": "aruanne",
+    "gen": "aruande",
+    "part": "aruannet",
+    "ill": "aruandesse",
+    "ine": "aruandes",
+    "ela": "aruandest",
+    "all": "aruandele",
+    "ade": "aruandel",
+    "abl": "aruandelt",
+    "pln": "aruanded",
+    "plp": "aruandeid"
+   },
+   "explanation_ru": "Формы существительного aruanne. Обратите внимание на основу aruande и партитив множественного числа aruandeid."
+  },
+  {
+   "id": "f-n-advanced-2",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "kokkulepe",
+   "ru": "договорённость",
+   "forms": {
+    "nom": "kokkulepe",
+    "gen": "kokkuleppe",
+    "part": "kokkulepet",
+    "ill": "kokkuleppesse",
+    "ine": "kokkuleppes",
+    "ela": "kokkuleppest",
+    "all": "kokkuleppele",
+    "ade": "kokkuleppel",
+    "abl": "kokkuleppelt",
+    "pln": "kokkulepped",
+    "plp": "kokkuleppeid"
+   },
+   "explanation_ru": "Формы существительного kokkulepe. Обратите внимание на основу kokkuleppe и партитив множественного числа kokkuleppeid."
+  },
+  {
+   "id": "f-n-advanced-3",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "taotlus",
+   "ru": "заявка",
+   "forms": {
+    "nom": "taotlus",
+    "gen": "taotluse",
+    "part": "taotlust",
+    "ill": "taotlusesse",
+    "ine": "taotluses",
+    "ela": "taotlusest",
+    "all": "taotlusele",
+    "ade": "taotlusel",
+    "abl": "taotluselt",
+    "pln": "taotlused",
+    "plp": "taotlusi"
+   },
+   "explanation_ru": "Формы существительного taotlus. Обратите внимание на основу taotluse и партитив множественного числа taotlusi."
+  },
+  {
+   "id": "f-n-advanced-4",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "juhis",
+   "ru": "инструкция",
+   "forms": {
+    "nom": "juhis",
+    "gen": "juhise",
+    "part": "juhist",
+    "ill": "juhisesse",
+    "ine": "juhises",
+    "ela": "juhisest",
+    "all": "juhisele",
+    "ade": "juhisel",
+    "abl": "juhiselt",
+    "pln": "juhised",
+    "plp": "juhiseid"
+   },
+   "explanation_ru": "Формы существительного juhis. Обратите внимание на основу juhise и партитив множественного числа juhiseid."
+  },
+  {
+   "id": "f-n-advanced-5",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "ajakava",
+   "ru": "расписание",
+   "forms": {
+    "nom": "ajakava",
+    "gen": "ajakava",
+    "part": "ajakava",
+    "ill": "ajakavasse",
+    "ine": "ajakavas",
+    "ela": "ajakavast",
+    "all": "ajakavale",
+    "ade": "ajakaval",
+    "abl": "ajakavalt",
+    "pln": "ajakavad",
+    "plp": "ajakavasid"
+   },
+   "explanation_ru": "Формы существительного ajakava. Обратите внимание на основу ajakava и партитив множественного числа ajakavasid."
+  },
+  {
+   "id": "f-n-advanced-6",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "võrdlus",
+   "ru": "сравнение",
+   "forms": {
+    "nom": "võrdlus",
+    "gen": "võrdluse",
+    "part": "võrdlust",
+    "ill": "võrdlusesse",
+    "ine": "võrdluses",
+    "ela": "võrdlusest",
+    "all": "võrdlusele",
+    "ade": "võrdlusel",
+    "abl": "võrdluselt",
+    "pln": "võrdlused",
+    "plp": "võrdlusi"
+   },
+   "explanation_ru": "Формы существительного võrdlus. Обратите внимание на основу võrdluse и партитив множественного числа võrdlusi."
+  },
+  {
+   "id": "f-n-advanced-7",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "sündmus",
+   "ru": "событие",
+   "forms": {
+    "nom": "sündmus",
+    "gen": "sündmuse",
+    "part": "sündmust",
+    "ill": "sündmusesse",
+    "ine": "sündmuses",
+    "ela": "sündmusest",
+    "all": "sündmusele",
+    "ade": "sündmusel",
+    "abl": "sündmuselt",
+    "pln": "sündmused",
+    "plp": "sündmusi"
+   },
+   "explanation_ru": "Формы существительного sündmus. Обратите внимание на основу sündmuse и партитив множественного числа sündmusi."
+  },
+  {
+   "id": "f-n-advanced-8",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "tööriist",
+   "ru": "инструмент",
+   "forms": {
+    "nom": "tööriist",
+    "gen": "tööriista",
+    "part": "tööriista",
+    "ill": "tööriistasse",
+    "ine": "tööriistas",
+    "ela": "tööriistast",
+    "all": "tööriistale",
+    "ade": "tööriistal",
+    "abl": "tööriistalt",
+    "pln": "tööriistad",
+    "plp": "tööriistu"
+   },
+   "explanation_ru": "Формы существительного tööriist. Обратите внимание на основу tööriista и партитив множественного числа tööriistu."
+  },
+  {
+   "id": "f-n-advanced-9",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "võimalus",
+   "ru": "возможность",
+   "forms": {
+    "nom": "võimalus",
+    "gen": "võimaluse",
+    "part": "võimalust",
+    "ill": "võimalusesse",
+    "ine": "võimaluses",
+    "ela": "võimalusest",
+    "all": "võimalusele",
+    "ade": "võimalusel",
+    "abl": "võimaluselt",
+    "pln": "võimalused",
+    "plp": "võimalusi"
+   },
+   "explanation_ru": "Формы существительного võimalus. Обратите внимание на основу võimaluse и партитив множественного числа võimalusi."
+  },
+  {
+   "id": "f-n-advanced-10",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "et": "ettepanek",
+   "ru": "предложение",
+   "forms": {
+    "nom": "ettepanek",
+    "gen": "ettepaneku",
+    "part": "ettepanekut",
+    "ill": "ettepanekusse",
+    "ine": "ettepanekus",
+    "ela": "ettepanekust",
+    "all": "ettepanekule",
+    "ade": "ettepanekul",
+    "abl": "ettepanekult",
+    "pln": "ettepanekud",
+    "plp": "ettepanekuid"
+   },
+   "explanation_ru": "Формы существительного ettepanek. Обратите внимание на основу ettepaneku и партитив множественного числа ettepanekuid."
+  },
+  {
+   "id": "f-n-advanced-11",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "hinnang",
+   "ru": "оценка, суждение",
+   "forms": {
+    "nom": "hinnang",
+    "gen": "hinnangu",
+    "part": "hinnangut",
+    "ill": "hinnangusse",
+    "ine": "hinnangus",
+    "ela": "hinnangust",
+    "all": "hinnangule",
+    "ade": "hinnangul",
+    "abl": "hinnangult",
+    "pln": "hinnangud",
+    "plp": "hinnanguid"
+   },
+   "explanation_ru": "Формы существительного hinnang. Обратите внимание на основу hinnangu и партитив множественного числа hinnanguid."
+  },
+  {
+   "id": "f-n-advanced-12",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "eeldus",
+   "ru": "предпосылка",
+   "forms": {
+    "nom": "eeldus",
+    "gen": "eelduse",
+    "part": "eeldust",
+    "ill": "eeldusesse",
+    "ine": "eelduses",
+    "ela": "eeldusest",
+    "all": "eeldusele",
+    "ade": "eeldusel",
+    "abl": "eelduselt",
+    "pln": "eeldused",
+    "plp": "eeldusi"
+   },
+   "explanation_ru": "Формы существительного eeldus. Обратите внимание на основу eelduse и партитив множественного числа eeldusi."
+  },
+  {
+   "id": "f-n-advanced-13",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "järeldus",
+   "ru": "вывод",
+   "forms": {
+    "nom": "järeldus",
+    "gen": "järelduse",
+    "part": "järeldust",
+    "ill": "järeldusesse",
+    "ine": "järelduses",
+    "ela": "järeldusest",
+    "all": "järeldusele",
+    "ade": "järeldusel",
+    "abl": "järelduselt",
+    "pln": "järeldused",
+    "plp": "järeldusi"
+   },
+   "explanation_ru": "Формы существительного järeldus. Обратите внимание на основу järelduse и партитив множественного числа järeldusi."
+  },
+  {
+   "id": "f-n-advanced-14",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "erand",
+   "ru": "исключение",
+   "forms": {
+    "nom": "erand",
+    "gen": "erandi",
+    "part": "erandit",
+    "ill": "erandisse",
+    "ine": "erandis",
+    "ela": "erandist",
+    "all": "erandile",
+    "ade": "erandil",
+    "abl": "erandilt",
+    "pln": "erandid",
+    "plp": "erandeid"
+   },
+   "explanation_ru": "Формы существительного erand. Обратите внимание на основу erandi и партитив множественного числа erandeid."
+  },
+  {
+   "id": "f-n-advanced-15",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "mõju",
+   "ru": "влияние",
+   "forms": {
+    "nom": "mõju",
+    "gen": "mõju",
+    "part": "mõju",
+    "ill": "mõjusse",
+    "ine": "mõjus",
+    "ela": "mõjust",
+    "all": "mõjule",
+    "ade": "mõjul",
+    "abl": "mõjult",
+    "pln": "mõjud",
+    "plp": "mõjusid"
+   },
+   "explanation_ru": "Формы существительного mõju. Обратите внимание на основу mõju и партитив множественного числа mõjusid."
+  },
+  {
+   "id": "f-n-advanced-16",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "seos",
+   "ru": "связь",
+   "forms": {
+    "nom": "seos",
+    "gen": "seose",
+    "part": "seost",
+    "ill": "seosesse",
+    "ine": "seoses",
+    "ela": "seosest",
+    "all": "seosele",
+    "ade": "seosel",
+    "abl": "seoselt",
+    "pln": "seosed",
+    "plp": "seoseid"
+   },
+   "explanation_ru": "Формы существительного seos. Обратите внимание на основу seose и партитив множественного числа seoseid."
+  },
+  {
+   "id": "f-n-advanced-17",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "nähtus",
+   "ru": "явление",
+   "forms": {
+    "nom": "nähtus",
+    "gen": "nähtuse",
+    "part": "nähtust",
+    "ill": "nähtusesse",
+    "ine": "nähtuses",
+    "ela": "nähtusest",
+    "all": "nähtusele",
+    "ade": "nähtusel",
+    "abl": "nähtuselt",
+    "pln": "nähtused",
+    "plp": "nähtusi"
+   },
+   "explanation_ru": "Формы существительного nähtus. Обратите внимание на основу nähtuse и партитив множественного числа nähtusi."
+  },
+  {
+   "id": "f-n-advanced-18",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "tõend",
+   "ru": "доказательство",
+   "forms": {
+    "nom": "tõend",
+    "gen": "tõendi",
+    "part": "tõendit",
+    "ill": "tõendisse",
+    "ine": "tõendis",
+    "ela": "tõendist",
+    "all": "tõendile",
+    "ade": "tõendil",
+    "abl": "tõendilt",
+    "pln": "tõendid",
+    "plp": "tõendeid"
+   },
+   "explanation_ru": "Формы существительного tõend. Обратите внимание на основу tõendi и партитив множественного числа tõendeid."
+  },
+  {
+   "id": "f-n-advanced-19",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "otsus",
+   "ru": "решение",
+   "forms": {
+    "nom": "otsus",
+    "gen": "otsuse",
+    "part": "otsust",
+    "ill": "otsusesse",
+    "ine": "otsuses",
+    "ela": "otsusest",
+    "all": "otsusele",
+    "ade": "otsusel",
+    "abl": "otsuselt",
+    "pln": "otsused",
+    "plp": "otsuseid"
+   },
+   "explanation_ru": "Формы существительного otsus. Обратите внимание на основу otsuse и партитив множественного числа otsuseid."
+  },
+  {
+   "id": "f-n-advanced-20",
+   "topic": "cases",
+   "level": "C1",
+   "status": "draft",
+   "et": "käsitlus",
+   "ru": "трактовка, рассмотрение",
+   "forms": {
+    "nom": "käsitlus",
+    "gen": "käsitluse",
+    "part": "käsitlust",
+    "ill": "käsitlusesse",
+    "ine": "käsitluses",
+    "ela": "käsitlusest",
+    "all": "käsitlusele",
+    "ade": "käsitlusel",
+    "abl": "käsitluselt",
+    "pln": "käsitlused",
+    "plp": "käsitlusi"
+   },
+   "explanation_ru": "Формы существительного käsitlus. Обратите внимание на основу käsitluse и партитив множественного числа käsitlusi."
+  },
+  {
+   "id": "f-v-advanced-1",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "teatama",
+   "ru": "сообщать",
+   "forms": {
+    "ma": "teatama",
+    "da": "teatada",
+    "pres1": "teatan",
+    "pres3": "teatab",
+    "past1": "teatasin",
+    "nud": "teatanud",
+    "imp": "teata"
+   },
+   "explanation_ru": "Формы глагола teatama. Сравните da-инфинитив teatada и причастие teatanud."
+  },
+  {
+   "id": "f-v-advanced-2",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "kandideerima",
+   "ru": "подавать свою кандидатуру",
+   "forms": {
+    "ma": "kandideerima",
+    "da": "kandideerida",
+    "pres1": "kandideerin",
+    "pres3": "kandideerib",
+    "past1": "kandideerisin",
+    "nud": "kandideerinud",
+    "imp": "kandideeri"
+   },
+   "explanation_ru": "Формы глагола kandideerima. Сравните da-инфинитив kandideerida и причастие kandideerinud."
+  },
+  {
+   "id": "f-v-advanced-3",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "soovitama",
+   "ru": "рекомендовать",
+   "forms": {
+    "ma": "soovitama",
+    "da": "soovitada",
+    "pres1": "soovitan",
+    "pres3": "soovitab",
+    "past1": "soovitasin",
+    "nud": "soovitanud",
+    "imp": "soovita"
+   },
+   "explanation_ru": "Формы глагола soovitama. Сравните da-инфинитив soovitada и причастие soovitanud."
+  },
+  {
+   "id": "f-v-advanced-4",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "vahetama",
+   "ru": "менять, обменивать",
+   "forms": {
+    "ma": "vahetama",
+    "da": "vahetada",
+    "pres1": "vahetan",
+    "pres3": "vahetab",
+    "past1": "vahetasin",
+    "nud": "vahetanud",
+    "imp": "vaheta"
+   },
+   "explanation_ru": "Формы глагола vahetama. Сравните da-инфинитив vahetada и причастие vahetanud."
+  },
+  {
+   "id": "f-v-advanced-5",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "võrdlema",
+   "ru": "сравнивать",
+   "forms": {
+    "ma": "võrdlema",
+    "da": "võrrelda",
+    "pres1": "võrdlen",
+    "pres3": "võrdleb",
+    "past1": "võrdlesin",
+    "nud": "võrrelnud",
+    "imp": "võrdle"
+   },
+   "explanation_ru": "Формы глагола võrdlema. Сравните da-инфинитив võrrelda и причастие võrrelnud."
+  },
+  {
+   "id": "f-v-advanced-6",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "põhjendama",
+   "ru": "обосновывать",
+   "forms": {
+    "ma": "põhjendama",
+    "da": "põhjendada",
+    "pres1": "põhjendan",
+    "pres3": "põhjendab",
+    "past1": "põhjendasin",
+    "nud": "põhjendanud",
+    "imp": "põhjenda"
+   },
+   "explanation_ru": "Формы глагола põhjendama. Сравните da-инфинитив põhjendada и причастие põhjendanud."
+  },
+  {
+   "id": "f-v-advanced-7",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "leppima",
+   "ru": "мириться, соглашаться",
+   "forms": {
+    "ma": "leppima",
+    "da": "leppida",
+    "pres1": "lepin",
+    "pres3": "lepib",
+    "past1": "leppisin",
+    "nud": "leppinud",
+    "imp": "lepi"
+   },
+   "explanation_ru": "Формы глагола leppima. Сравните da-инфинитив leppida и причастие leppinud."
+  },
+  {
+   "id": "f-v-advanced-8",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "vaatlema",
+   "ru": "наблюдать",
+   "forms": {
+    "ma": "vaatlema",
+    "da": "vaadelda",
+    "pres1": "vaatlen",
+    "pres3": "vaatleb",
+    "past1": "vaatlesin",
+    "nud": "vaadelnud",
+    "imp": "vaatle"
+   },
+   "explanation_ru": "Формы глагола vaatlema. Сравните da-инфинитив vaadelda и причастие vaadelnud."
+  },
+  {
+   "id": "f-v-advanced-9",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "osalema",
+   "ru": "участвовать",
+   "forms": {
+    "ma": "osalema",
+    "da": "osaleda",
+    "pres1": "osalen",
+    "pres3": "osaleb",
+    "past1": "osalesin",
+    "nud": "osalenud",
+    "imp": "osale"
+   },
+   "explanation_ru": "Формы глагола osalema. Сравните da-инфинитив osaleda и причастие osalenud."
+  },
+  {
+   "id": "f-v-advanced-10",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "et": "kirjeldama",
+   "ru": "описывать",
+   "forms": {
+    "ma": "kirjeldama",
+    "da": "kirjeldada",
+    "pres1": "kirjeldan",
+    "pres3": "kirjeldab",
+    "past1": "kirjeldasin",
+    "nud": "kirjeldanud",
+    "imp": "kirjelda"
+   },
+   "explanation_ru": "Формы глагола kirjeldama. Сравните da-инфинитив kirjeldada и причастие kirjeldanud."
+  },
+  {
+   "id": "f-v-advanced-11",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "järeldama",
+   "ru": "делать вывод",
+   "forms": {
+    "ma": "järeldama",
+    "da": "järeldada",
+    "pres1": "järeldan",
+    "pres3": "järeldab",
+    "past1": "järeldasin",
+    "nud": "järeldanud",
+    "imp": "järelda"
+   },
+   "explanation_ru": "Формы глагола järeldama. Сравните da-инфинитив järeldada и причастие järeldanud."
+  },
+  {
+   "id": "f-v-advanced-12",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "tõlgendama",
+   "ru": "интерпретировать",
+   "forms": {
+    "ma": "tõlgendama",
+    "da": "tõlgendada",
+    "pres1": "tõlgendan",
+    "pres3": "tõlgendab",
+    "past1": "tõlgendasin",
+    "nud": "tõlgendanud",
+    "imp": "tõlgenda"
+   },
+   "explanation_ru": "Формы глагола tõlgendama. Сравните da-инфинитив tõlgendada и причастие tõlgendanud."
+  },
+  {
+   "id": "f-v-advanced-13",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "vaidlustama",
+   "ru": "оспаривать",
+   "forms": {
+    "ma": "vaidlustama",
+    "da": "vaidlustada",
+    "pres1": "vaidlustan",
+    "pres3": "vaidlustab",
+    "past1": "vaidlustasin",
+    "nud": "vaidlustanud",
+    "imp": "vaidlusta"
+   },
+   "explanation_ru": "Формы глагола vaidlustama. Сравните da-инфинитив vaidlustada и причастие vaidlustanud."
+  },
+  {
+   "id": "f-v-advanced-14",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "piiritlema",
+   "ru": "очерчивать границы",
+   "forms": {
+    "ma": "piiritlema",
+    "da": "piiritleda",
+    "pres1": "piiritlen",
+    "pres3": "piiritleb",
+    "past1": "piiritlesin",
+    "nud": "piiritlenud",
+    "imp": "piiritle"
+   },
+   "explanation_ru": "Формы глагола piiritlema. Сравните da-инфинитив piiritleda и причастие piiritlenud."
+  },
+  {
+   "id": "f-v-advanced-15",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "tõendama",
+   "ru": "доказывать, подтверждать",
+   "forms": {
+    "ma": "tõendama",
+    "da": "tõendada",
+    "pres1": "tõendan",
+    "pres3": "tõendab",
+    "past1": "tõendasin",
+    "nud": "tõendanud",
+    "imp": "tõenda"
+   },
+   "explanation_ru": "Формы глагола tõendama. Сравните da-инфинитив tõendada и причастие tõendanud."
+  },
+  {
+   "id": "f-v-advanced-16",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "üldistama",
+   "ru": "обобщать",
+   "forms": {
+    "ma": "üldistama",
+    "da": "üldistada",
+    "pres1": "üldistan",
+    "pres3": "üldistab",
+    "past1": "üldistasin",
+    "nud": "üldistanud",
+    "imp": "üldista"
+   },
+   "explanation_ru": "Формы глагола üldistama. Сравните da-инфинитив üldistada и причастие üldistanud."
+  },
+  {
+   "id": "f-v-advanced-17",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "täpsustama",
+   "ru": "уточнять",
+   "forms": {
+    "ma": "täpsustama",
+    "da": "täpsustada",
+    "pres1": "täpsustan",
+    "pres3": "täpsustab",
+    "past1": "täpsustasin",
+    "nud": "täpsustanud",
+    "imp": "täpsusta"
+   },
+   "explanation_ru": "Формы глагола täpsustama. Сравните da-инфинитив täpsustada и причастие täpsustanud."
+  },
+  {
+   "id": "f-v-advanced-18",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "välistama",
+   "ru": "исключать",
+   "forms": {
+    "ma": "välistama",
+    "da": "välistada",
+    "pres1": "välistan",
+    "pres3": "välistab",
+    "past1": "välistasin",
+    "nud": "välistanud",
+    "imp": "välista"
+   },
+   "explanation_ru": "Формы глагола välistama. Сравните da-инфинитив välistada и причастие välistanud."
+  },
+  {
+   "id": "f-v-advanced-19",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "möönma",
+   "ru": "признавать с оговоркой",
+   "forms": {
+    "ma": "möönma",
+    "da": "möönda",
+    "pres1": "möönan",
+    "pres3": "möönab",
+    "past1": "möönsin",
+    "nud": "möönnud",
+    "imp": "mööna"
+   },
+   "explanation_ru": "Формы глагола möönma. Сравните da-инфинитив möönda и причастие möönnud."
+  },
+  {
+   "id": "f-v-advanced-20",
+   "topic": "verbs",
+   "level": "C1",
+   "status": "draft",
+   "et": "lähtuma",
+   "ru": "исходить из чего-либо",
+   "forms": {
+    "ma": "lähtuma",
+    "da": "lähtuda",
+    "pres1": "lähtun",
+    "pres3": "lähtub",
+    "past1": "lähtusin",
+    "nud": "lähtunud",
+    "imp": "lähtu"
+   },
+   "explanation_ru": "Формы глагола lähtuma. Сравните da-инфинитив lähtuda и причастие lähtunud."
   }
  ]
 }

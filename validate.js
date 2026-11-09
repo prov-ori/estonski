@@ -238,6 +238,9 @@ for (const f of (data.forms?.items || [])) {
 const toks = (t) => t.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(Boolean).sort().join(' ');
 for (const o of (data.order?.items || [])) {
   need(o.answer_et && o.ru, 'content/order.json', o.id, 'нужны answer_et и ru');
+  if (o.chunks_et !== undefined) need(Array.isArray(o.chunks_et) && o.chunks_et.length >= 2 &&
+    o.chunks_et.every(chunk => typeof chunk === 'string' && chunk.trim()) &&
+    o.chunks_et.join(' ') === o.answer_et, 'content/order.json', o.id, 'части предложения должны составлять основной ответ');
   for (const a of (o.also_ok || [])) need(toks(a) === toks(o.answer_et), 'content/order.json', o.id, `also_ok «${a}» — не перестановка слов основного ответа`);
   need(o.answer_et && !hasCyr(o.answer_et), 'content/order.json', o.id, 'кириллица в answer_et');
 }

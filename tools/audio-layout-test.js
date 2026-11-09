@@ -145,6 +145,24 @@ const server=http.createServer((req,res)=>{
     await levels.getByLabel('Уровень', { exact: true }).selectOption('B2');
     await levels.getByRole('button', { name: 'Начать (10 заданий)', exact: true }).click();
     await levels.getByText('Задание 1 из 10 · B2', { exact: true }).waitFor();
+    await levels.goto(base + '#/drills/forms');
+    await levels.getByLabel('Уровень', { exact: true }).selectOption('C1');
+    await levels.getByLabel('Что тренируем', { exact: true }).selectOption('verbs');
+    await levels.getByRole('button', { name: 'Начать (10 заданий)', exact: true }).click();
+    await levels.getByText('Задание 1 из 10 · C1', { exact: true }).waitFor();
+    await levels.goto(base + '#/drills/order');
+    await levels.getByLabel('Уровень', { exact: true }).selectOption('B2');
+    await levels.getByRole('button', { name: 'Начать (10 заданий)', exact: true }).click();
+    await levels.getByText('Задание 1 из 10 · B2', { exact: true }).waitFor();
+    const orderRows = JSON.parse(fs.readFileSync(path.join(root, 'content/order.json'), 'utf8')).items;
+    const parts = levels.getByRole('group', { name: 'Части предложения' });
+    const translation = await levels.locator('.q-prompt .muted').innerText();
+    const sentence = orderRows.find(row => row.level === 'B2' && row.ru === translation);
+    assert(sentence);
+    for (const chunk of sentence.chunks_et) await parts.getByRole('button', { name: chunk, exact: true }).click();
+    await levels.getByRole('button', { name: 'Проверить', exact: true }).click();
+    await levels.locator('.feedback.ok').waitFor();
+    assert(await levels.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await levels.close();
     console.log('PASS advanced level filters and lesson-to-practice navigation');
 

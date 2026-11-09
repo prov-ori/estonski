@@ -104,7 +104,7 @@ export function formsQuestion(entry, mode) {
   const [label, hint] = info[key];
   const sentenceBase = isNoun ? entry.et : entry.forms.ma;
   const explanation = Object.entries(entry.forms).map(([k, v]) => `${k}: ${v}`).join(' · ');
-  const common = { prompt_et: `${sentenceBase} → ___`, hint: `(${label}: ${hint})`, ru: `${entry.et} — ${entry.ru}`, explanation_ru: `Формы слова ${entry.et} (${entry.ru}): ${explanation}.` };
+  const common = { level: entry.level || 'B1', prompt_et: `${sentenceBase} → ___`, hint: `(${label}: ${hint})`, ru: `${entry.et} — ${entry.ru}`, explanation_ru: `Формы слова ${entry.et} (${entry.ru}): ${explanation}.` };
   const id = `gen:f:${entry.id}:${key}`;
   if (mode === 'input') return base(id, entry.topic, { type: 'input', answer, ...common });
   const others = [...new Set(Object.values(entry.forms).filter((v) => v !== answer))];
@@ -114,6 +114,7 @@ export function formsQuestion(entry, mode) {
 
 export function formsSession(entries, kind, mode, count = 10) {
   const pool = entries.filter((e) => (kind === 'nouns' ? e.id.startsWith('f-n-') : e.id.startsWith('f-v-')));
+  if (!pool.length) return [];
   const out = [];
   let guard = 0;
   while (out.length < count && guard++ < 200) {

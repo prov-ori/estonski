@@ -774,6 +774,306 @@
    ],
    "ru": "Мы встречаемся в шесть перед кинотеатром.",
    "explanation_ru": "Одинаковый порядок слов в эстонском не всегда один: допустимые варианты перечислены в also_ok. Типичный порядок: подлежащее — сказуемое — остальные члены; если предложение начинается с обстоятельства (täna, homme, eile), сказуемое обычно идёт сразу после него."
+  },
+  {
+   "id": "o-advanced-1",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Kuigi kohtumine lükkus edasi, saatis korraldaja osalejatele uue päevakorra.",
+   "chunks_et": [
+    "Kuigi kohtumine lükkus edasi,",
+    "saatis korraldaja",
+    "osalejatele",
+    "uue päevakorra."
+   ],
+   "ru": "Хотя встречу перенесли, организатор отправил участникам новую повестку.",
+   "explanation_ru": "Уступка с kuigi идёт первой. После неё сказуемое saatis стоит перед подлежащим."
+  },
+  {
+   "id": "o-advanced-2",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Kui uus bussiliin avatakse, saavad elanikud hilisõhtul lihtsamini koju sõita.",
+   "chunks_et": [
+    "Kui uus bussiliin avatakse,",
+    "saavad elanikud",
+    "hilisõhtul",
+    "lihtsamini koju sõita."
+   ],
+   "ru": "Когда откроется новый автобусный маршрут, жителям будет проще добираться домой поздно вечером.",
+   "explanation_ru": "Придаточное с kui задаёт условие, затем следует главная часть."
+  },
+  {
+   "id": "o-advanced-3",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Enne kui tellimuse kinnitate, kontrollige kas tarneaadress on õigesti kirjas.",
+   "chunks_et": [
+    "Enne kui tellimuse kinnitate,",
+    "kontrollige",
+    "kas tarneaadress",
+    "on õigesti kirjas."
+   ],
+   "ru": "Прежде чем подтвердить заказ, проверьте, верно ли указан адрес доставки.",
+   "explanation_ru": "После повелительного kontrollige идёт косвенный вопрос с kas."
+  },
+  {
+   "id": "o-advanced-4",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Kuna saal oli hõivatud, otsustas rühm korraldada kohtumise raamatukogu lugemissaalis.",
+   "chunks_et": [
+    "Kuna saal oli hõivatud,",
+    "otsustas rühm",
+    "korraldada kohtumise",
+    "raamatukogu lugemissaalis."
+   ],
+   "ru": "Поскольку зал был занят, группа решила провести встречу в читальном зале библиотеки.",
+   "explanation_ru": "Kuna вводит причину. После otsustas используется da-инфинитив korraldada."
+  },
+  {
+   "id": "o-advanced-5",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Õpetaja palus, et me võrdleksime kaht allikat enne vastamist.",
+   "chunks_et": [
+    "Õpetaja palus,",
+    "et me",
+    "võrdleksime kaht allikat",
+    "enne vastamist."
+   ],
+   "ru": "Учитель попросил, чтобы мы сравнили два источника перед ответом.",
+   "explanation_ru": "Et me võrdleksime передаёт просьбу о действии, а enne vastamist — время."
+  },
+  {
+   "id": "o-advanced-6",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Kui sul on aega, loe palun läbi meie uus juhend ja saada mulle oma märkused.",
+   "chunks_et": [
+    "Kui sul on aega,",
+    "loe palun läbi",
+    "meie uus juhend",
+    "ja saada mulle oma märkused."
+   ],
+   "ru": "Если у тебя есть время, прочитай, пожалуйста, нашу новую инструкцию и пришли мне замечания.",
+   "explanation_ru": "Сначала условие, затем два повелительных действия: loe и saada."
+  },
+  {
+   "id": "o-advanced-7",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Uus otsing on kiirem, kuid osa lugejaid ei leia veel üles varem salvestatud artikleid.",
+   "chunks_et": [
+    "Uus otsing on kiirem,",
+    "kuid osa lugejaid",
+    "ei leia veel üles",
+    "varem salvestatud artikleid."
+   ],
+   "ru": "Новый поиск быстрее, но часть читателей пока не находит сохранённые ранее статьи.",
+   "explanation_ru": "Kuid вводит противопоставление. В отрицании объект artikleid стоит в партитиве."
+  },
+  {
+   "id": "o-advanced-8",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Juhendaja küsis, kas me jõuame töö lõpetada enne reedet.",
+   "chunks_et": [
+    "Juhendaja küsis,",
+    "kas me",
+    "jõuame töö lõpetada",
+    "enne reedet."
+   ],
+   "ru": "Руководитель спросил, успеем ли мы закончить работу до пятницы.",
+   "explanation_ru": "Kas me jõuame образует косвенный вопрос после küsis."
+  },
+  {
+   "id": "o-advanced-9",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Selleks et seadme kasutamist harjutada, registreerisime end laupäeval toimuvale lühikoolitusele.",
+   "chunks_et": [
+    "Selleks et seadme kasutamist harjutada,",
+    "registreerisime end",
+    "laupäeval toimuvale",
+    "lühikoolitusele."
+   ],
+   "ru": "Чтобы потренироваться пользоваться устройством, мы записались на короткое субботнее обучение.",
+   "explanation_ru": "Selleks et выражает цель. Toimuvale согласуется с lühikoolitusele."
+  },
+  {
+   "id": "o-advanced-10",
+   "topic": "order",
+   "level": "B2",
+   "status": "draft",
+   "answer_et": "Rada oli pärast vihma libe, mistõttu valisime tagasiteeks teise marsruudi.",
+   "chunks_et": [
+    "Rada oli pärast vihma libe,",
+    "mistõttu valisime",
+    "tagasiteeks",
+    "teise marsruudi."
+   ],
+   "ru": "После дождя тропа была скользкой, поэтому на обратном пути мы выбрали другой маршрут.",
+   "explanation_ru": "Mistõttu связывает следствие с причиной в предыдущей части."
+  },
+  {
+   "id": "o-advanced-11",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Isegi kui valim suureneks, ei võimaldaks see ilma täiendavate andmeteta põhjuslikku seost kindlaks teha.",
+   "chunks_et": [
+    "Isegi kui valim suureneks,",
+    "ei võimaldaks see",
+    "ilma täiendavate andmeteta",
+    "põhjuslikku seost kindlaks teha."
+   ],
+   "ru": "Даже если бы выборка увеличилась, без дополнительных данных это не позволило бы установить причинную связь.",
+   "explanation_ru": "Isegi kui вводит гипотетическую уступку. Ei võimaldaks сохраняет условность вывода."
+  },
+  {
+   "id": "o-advanced-12",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Kui juhend oleks varem avaldatud, oleksid osalejad võinud vältida mitut korduvat viga.",
+   "chunks_et": [
+    "Kui juhend oleks varem avaldatud,",
+    "oleksid osalejad",
+    "võinud vältida",
+    "mitut korduvat viga."
+   ],
+   "ru": "Если бы инструкцию опубликовали раньше, участники могли бы избежать нескольких повторяющихся ошибок.",
+   "explanation_ru": "Oleks avaldatud и oleksid võinud описывают альтернативный сценарий в прошлом."
+  },
+  {
+   "id": "o-advanced-13",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Komisjon vaatab otsuse uuesti läbi ainult juhul, kui taotleja esitab uusi tõendeid.",
+   "chunks_et": [
+    "Komisjon vaatab otsuse uuesti läbi",
+    "ainult juhul,",
+    "kui taotleja esitab",
+    "uusi tõendeid."
+   ],
+   "ru": "Комиссия пересмотрит решение только в случае, если заявитель представит новые доказательства.",
+   "explanation_ru": "Ainult juhul, kui задаёт необходимое условие пересмотра."
+  },
+  {
+   "id": "o-advanced-14",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Kuigi vastuseid tuli oodatust vähem, ei jätnud uurijad tulemusi avaldamata, vaid kirjeldasid nende piiranguid.",
+   "chunks_et": [
+    "Kuigi vastuseid tuli oodatust vähem,",
+    "ei jätnud uurijad",
+    "tulemusi avaldamata,",
+    "vaid kirjeldasid nende piiranguid."
+   ],
+   "ru": "Хотя ответов пришло меньше ожидаемого, исследователи опубликовали результаты и описали их ограничения.",
+   "explanation_ru": "Ei jätnud avaldamata означает, что публикация состоялась. Vaid вводит уточнение."
+  },
+  {
+   "id": "o-advanced-15",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Sellest, et teenust kasutati harva, ei saa veel järeldada, et selle järele puudus vajadus.",
+   "chunks_et": [
+    "Sellest, et teenust kasutati harva,",
+    "ei saa veel järeldada,",
+    "et selle järele",
+    "puudus vajadus."
+   ],
+   "ru": "Из того, что услугой пользовались редко, ещё нельзя заключить, что в ней не было потребности.",
+   "explanation_ru": "Первое et раскрывает sellest, второе вводит вывод, который автор ограничивает."
+  },
+  {
+   "id": "o-advanced-16",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Andmeid tõlgendades tuleb arvestada, et eri rühmades kasutati erinevaid juhiseid.",
+   "chunks_et": [
+    "Andmeid tõlgendades",
+    "tuleb arvestada,",
+    "et eri rühmades",
+    "kasutati erinevaid juhiseid."
+   ],
+   "ru": "При интерпретации данных нужно учитывать, что в разных группах использовались разные инструкции.",
+   "explanation_ru": "Tõlgendades задаёт сопутствующее действие. После arvestada идёт придаточное с et."
+  },
+  {
+   "id": "o-advanced-17",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Taotluses jäeti täpsustamata, millisel eeldusel prognoos põhines ja millal see koostati.",
+   "chunks_et": [
+    "Taotluses jäeti täpsustamata,",
+    "millisel eeldusel",
+    "prognoos põhines",
+    "ja millal see koostati."
+   ],
+   "ru": "В заявке не уточнили, на какой предпосылке основан прогноз и когда его составили.",
+   "explanation_ru": "Два косвенных вопроса с millisel и millal соединены союзом ja."
+  },
+  {
+   "id": "o-advanced-18",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Eeldusel et ligipääs säilib, võiks muudatus vähendada koormust ilma teenuse ulatust piiramata.",
+   "chunks_et": [
+    "Eeldusel et ligipääs säilib,",
+    "võiks muudatus",
+    "vähendada koormust",
+    "ilma teenuse ulatust piiramata."
+   ],
+   "ru": "При условии сохранения доступности изменение могло бы снизить нагрузку без сокращения объёма услуги.",
+   "explanation_ru": "Eeldusel et задаёт условие, võiks — возможный эффект, ilma … piiramata — ограничение."
+  },
+  {
+   "id": "o-advanced-19",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Selle asemel et võrrelda üksnes vastuste arvu, tuleks uurida, millised rühmad jäid küsitluses esindamata.",
+   "chunks_et": [
+    "Selle asemel et võrrelda üksnes vastuste arvu,",
+    "tuleks uurida,",
+    "millised rühmad",
+    "jäid küsitluses esindamata."
+   ],
+   "ru": "Вместо сравнения только числа ответов следует выяснить, какие группы остались непредставленными в опросе.",
+   "explanation_ru": "После selle asemel et — da-инфинитив. Millised вводит косвенный вопрос."
+  },
+  {
+   "id": "o-advanced-20",
+   "topic": "order",
+   "level": "C1",
+   "status": "draft",
+   "answer_et": "Mida selgemalt on piirangud kirjas, seda lihtsam on lugejal eristada põhjendatud järeldust oletusest.",
+   "chunks_et": [
+    "Mida selgemalt on piirangud kirjas,",
+    "seda lihtsam on lugejal",
+    "eristada põhjendatud järeldust",
+    "oletusest."
+   ],
+   "ru": "Чем яснее описаны ограничения, тем проще читателю отличить обоснованный вывод от предположения.",
+   "explanation_ru": "Mida …, seda … связывает две степени сравнения. Eristama midagi millest? требует элатива."
   }
  ]
 }

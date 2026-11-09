@@ -19,6 +19,10 @@ const sel = (id, opts, value, on) => {
   s.value = value; return s;
 };
 const field = (label, id, control) => h('div', { class: 'field' }, h('label', { for: id }, label), control);
+const levelField = (id, items, selected, onChange) => {
+  const levels = [...new Set(items.map((item) => item.level))].sort();
+  return field('Уровень', id, sel(id, levels.map((value) => [value, value]), selected, onChange));
+};
 
 export default {
   title: 'Тренажёры',
@@ -47,16 +51,21 @@ export default {
 // ---------- формы слов ----------
 async function forms(area) {
   const data = (await content('forms')).items;
-  let kind = 'nouns', mode = 'choice';
-  setChildren(area, h('div', { class: 'card' },
-    field('Что тренируем', 'k', sel('k', [['nouns', 'Падежи существительных'], ['verbs', 'Формы глаголов']], kind, (v) => { kind = v; })),
-    field('Режим', 'm', sel('m', [['choice', 'Выбор из вариантов'], ['input', 'Ввод с клавиатуры']], mode, (v) => { mode = v; })),
-    h('p', { class: 'muted small-text' }, 'В заданиях только такие формы, которые отличаются друг от друга — совпадающие (например, родительный и партитив у слова kool) не спрашиваются.'),
-    h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (10 заданий)'))));
-  function start() {
-    const qs = formsSession(data, kind, mode, 10);
-    runTrainer(area, qs.map((q) => ({ q, module: 'drills' })), { again: start, extraButtons: h('a', { class: 'btn', href: '#/drills/forms' }, 'Изменить настройки') });
+  let kind = 'nouns', mode = 'choice', level = 'B1';
+  function menu() {
+    setChildren(area, h('div', { class: 'card' },
+      levelField('forms-level', data, level, (value) => { level = value; }),
+      field('Что тренируем', 'k', sel('k', [['nouns', 'Падежи существительных'], ['verbs', 'Формы глаголов']], kind, (v) => { kind = v; })),
+      field('Режим', 'm', sel('m', [['choice', 'Выбор из вариантов'], ['input', 'Ввод с клавиатуры']], mode, (v) => { mode = v; })),
+      h('p', { class: 'muted small-text' }, 'В заданиях только такие формы, которые отличаются друг от друга — совпадающие (например, родительный и партитив у слова kool) не спрашиваются.'),
+      h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (10 заданий)'))));
   }
+  function start() {
+    const qs = formsSession(data.filter((entry) => entry.level === level), kind, mode, 10);
+    runTrainer(area, qs.map((q) => ({ q, module: 'drills' })), { again: start,
+      extraButtons: h('button', { class: 'btn', type: 'button', onclick: menu }, 'Изменить настройки') });
+  }
+  menu();
 }
 
 // ---------- числительные ----------
@@ -100,32 +109,36 @@ const words = (s) => s.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(
 
 async function order(area) {
   const items = (await content('order')).items;
+  let level = 'B1';
   const start = () => {
-    const queue = shuffle(items).slice(0, 10);
+    const queue = shuffle(items.filter((item) => item.level === level)).slice(0, 10);
     let i = 0, score = 0;
     const next = () => {
       if (i >= queue.length) {
         setChildren(area, h('div', { class: 'card result' }, h('h2', null, 'Сессия завершена'), h('p', { class: 'big' }, `${score} из ${queue.length} (${pct(score, queue.length)} %)`)),
-          h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Ещё раз'), h('a', { class: 'btn', href: '#/progress' }, 'Прогресс')));
+          h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Ещё раз'),
+            h('button', { class: 'btn', type: 'button', onclick: menu }, 'Изменить уровень'), h('a', { class: 'btn', href: '#/progress' }, 'Прогресс')));
         return;
       }
       const it = queue[i];
-      const tokens = shuffle(words(it.answer_et).map((w, k) => ({ w, k })));
+      const chunks = it.chunks_et;
+      const tokens = shuffle((chunks || words(it.answer_et)).map((w, k) => ({ w, k })));
       const chosen = [];
       let done = false;
-      const bank = h('div', { class: 'tokens', role: 'group', 'aria-label': 'Слова' });
+      const bank = h('div', { class: 'tokens', role: 'group', 'aria-label': chunks ? 'Части предложения' : 'Слова' });
       const built = h('div', { class: 'tokens built', role: 'group', 'aria-label': 'Ваше предложение', 'aria-live': 'polite' });
       const fb = h('div', { class: 'feedback', role: 'status', 'aria-live': 'polite' });
       const checkBtn = h('button', { class: 'btn primary', type: 'button', onclick: check }, 'Проверить');
       const nextBtn = h('button', { class: 'btn primary', type: 'button', hidden: true, onclick: () => { i++; next(); } }, i === queue.length - 1 ? 'Завершить' : 'Дальше →');
       const draw = () => {
         setChildren(bank, tokens.filter((t) => !chosen.includes(t)).map((t) => h('button', { type: 'button', class: 'token', lang: 'et', disabled: done, onclick: () => { chosen.push(t); draw(); } }, t.w)));
-        setChildren(built, chosen.length ? chosen.map((t) => h('button', { type: 'button', class: 'token placed', lang: 'et', disabled: done, 'aria-label': `${t.w} — убрать`, onclick: () => { chosen.splice(chosen.indexOf(t), 1); draw(); } }, t.w)) : h('span', { class: 'muted' }, 'Нажимайте на слова ниже по порядку'));
+        setChildren(built, chosen.length ? chosen.map((t) => h('button', { type: 'button', class: 'token placed', lang: 'et', disabled: done, 'aria-label': `${t.w} — убрать`, onclick: () => { chosen.splice(chosen.indexOf(t), 1); draw(); } }, t.w)) : h('span', { class: 'muted' }, chunks ? 'Выберите части предложения по порядку' : 'Нажимайте на слова ниже по порядку'));
       };
       function check() {
         if (done) return;
-        const got = chosen.map((t) => t.w).join(' ');
-        const ok = [it.answer_et, ...(it.also_ok || [])].some((a) => words(a).join(' ') === got) && chosen.length === tokens.length;
+        const normalize = chunks ? (text) => text.trim().replace(/\s+/g, ' ') : (text) => words(text).join(' ');
+        const got = normalize(chosen.map((t) => t.w).join(' '));
+        const ok = [it.answer_et, ...(it.also_ok || [])].some((a) => normalize(a) === got) && chosen.length === tokens.length;
         done = true; if (ok) score++;
         store.recordAnswer({ id: it.id, module: 'drills', topic: it.topic, ok });
         draw();
@@ -135,14 +148,19 @@ async function order(area) {
         checkBtn.hidden = true; nextBtn.hidden = false; nextBtn.focus();
       }
       draw();
-      setChildren(area, h('p', { class: 'muted', role: 'status' }, `Задание ${i + 1} из ${queue.length}`), h('progress', { max: queue.length, value: i + 1, 'aria-label': 'Прогресс' }),
+      setChildren(area, h('p', { class: 'muted', role: 'status' }, `Задание ${i + 1} из ${queue.length} · ${it.level}`), h('progress', { max: queue.length, value: i + 1, 'aria-label': 'Прогресс' }),
         h('div', { class: 'card' }, h('p', { class: 'q-prompt' }, 'Составьте предложение: ', h('span', { class: 'muted' }, it.ru)), built, bank,
           h('div', { class: 'row' }, checkBtn, h('button', { class: 'btn ghost', type: 'button', onclick: () => { if (!done) { chosen.length = 0; draw(); } } }, 'Сбросить'), nextBtn), fb));
     };
     next();
   };
-  setChildren(area, h('div', { class: 'card' }, h('p', null, 'Нажимайте на слова, чтобы выложить предложение. Нажатие на выложенное слово возвращает его обратно. Допустимые варианты порядка слов учитываются.'),
-    h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (10 заданий)'))));
+  function menu() {
+    setChildren(area, h('div', { class: 'card' },
+      levelField('order-level', items, level, (value) => { level = value; }),
+      h('p', null, 'Соберите предложение из слов на B1 или из смысловых частей на B2 и C1. Нажмите на выбранную часть ещё раз, чтобы вернуть её.'),
+      h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (10 заданий)'))));
+  }
+  menu();
 }
 
 // ---------- диктант ----------

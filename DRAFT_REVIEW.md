@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 4946. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 5006. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -274,7 +274,7 @@
 - `fx-advanced-20 (с ошибкой)` — Juhendaja olevat märkused lisama juba enne koosolekut.
 - `fx-advanced-20` — Juhendaja olevat märkused lisanud juba enne koosolekut.
 
-## forms.json (80)
+## forms.json (120)
 
 - `f-n-01` — raamat: raamat, raamatu, raamatut, raamatusse, raamatus, raamatust, raamatule, raamatul, raamatult, raamatud, raamatuid
 - `f-n-02` — sõber: sõber, sõbra, sõpra, sõbrasse, sõbras, sõbrast, sõbrale, sõbral, sõbralt, sõbrad, sõpru
@@ -356,6 +356,46 @@
 - `f-v-38` — sulgema: sulgema, sulgeda, sulen, sulgeb, sulgesin, sulgenud, sulge
 - `f-v-39` — jooksma: jooksma, joosta, jooksen, jookseb, jooksin, jooksnud, jookse
 - `f-v-40` — ujuma: ujuma, ujuda, ujun, ujub, ujusin, ujunud, uju
+- `f-n-advanced-1` — aruanne: aruanne, aruande, aruannet, aruandesse, aruandes, aruandest, aruandele, aruandel, aruandelt, aruanded, aruandeid
+- `f-n-advanced-2` — kokkulepe: kokkulepe, kokkuleppe, kokkulepet, kokkuleppesse, kokkuleppes, kokkuleppest, kokkuleppele, kokkuleppel, kokkuleppelt, kokkulepped, kokkuleppeid
+- `f-n-advanced-3` — taotlus: taotlus, taotluse, taotlust, taotlusesse, taotluses, taotlusest, taotlusele, taotlusel, taotluselt, taotlused, taotlusi
+- `f-n-advanced-4` — juhis: juhis, juhise, juhist, juhisesse, juhises, juhisest, juhisele, juhisel, juhiselt, juhised, juhiseid
+- `f-n-advanced-5` — ajakava: ajakava, ajakava, ajakava, ajakavasse, ajakavas, ajakavast, ajakavale, ajakaval, ajakavalt, ajakavad, ajakavasid
+- `f-n-advanced-6` — võrdlus: võrdlus, võrdluse, võrdlust, võrdlusesse, võrdluses, võrdlusest, võrdlusele, võrdlusel, võrdluselt, võrdlused, võrdlusi
+- `f-n-advanced-7` — sündmus: sündmus, sündmuse, sündmust, sündmusesse, sündmuses, sündmusest, sündmusele, sündmusel, sündmuselt, sündmused, sündmusi
+- `f-n-advanced-8` — tööriist: tööriist, tööriista, tööriista, tööriistasse, tööriistas, tööriistast, tööriistale, tööriistal, tööriistalt, tööriistad, tööriistu
+- `f-n-advanced-9` — võimalus: võimalus, võimaluse, võimalust, võimalusesse, võimaluses, võimalusest, võimalusele, võimalusel, võimaluselt, võimalused, võimalusi
+- `f-n-advanced-10` — ettepanek: ettepanek, ettepaneku, ettepanekut, ettepanekusse, ettepanekus, ettepanekust, ettepanekule, ettepanekul, ettepanekult, ettepanekud, ettepanekuid
+- `f-n-advanced-11` — hinnang: hinnang, hinnangu, hinnangut, hinnangusse, hinnangus, hinnangust, hinnangule, hinnangul, hinnangult, hinnangud, hinnanguid
+- `f-n-advanced-12` — eeldus: eeldus, eelduse, eeldust, eeldusesse, eelduses, eeldusest, eeldusele, eeldusel, eelduselt, eeldused, eeldusi
+- `f-n-advanced-13` — järeldus: järeldus, järelduse, järeldust, järeldusesse, järelduses, järeldusest, järeldusele, järeldusel, järelduselt, järeldused, järeldusi
+- `f-n-advanced-14` — erand: erand, erandi, erandit, erandisse, erandis, erandist, erandile, erandil, erandilt, erandid, erandeid
+- `f-n-advanced-15` — mõju: mõju, mõju, mõju, mõjusse, mõjus, mõjust, mõjule, mõjul, mõjult, mõjud, mõjusid
+- `f-n-advanced-16` — seos: seos, seose, seost, seosesse, seoses, seosest, seosele, seosel, seoselt, seosed, seoseid
+- `f-n-advanced-17` — nähtus: nähtus, nähtuse, nähtust, nähtusesse, nähtuses, nähtusest, nähtusele, nähtusel, nähtuselt, nähtused, nähtusi
+- `f-n-advanced-18` — tõend: tõend, tõendi, tõendit, tõendisse, tõendis, tõendist, tõendile, tõendil, tõendilt, tõendid, tõendeid
+- `f-n-advanced-19` — otsus: otsus, otsuse, otsust, otsusesse, otsuses, otsusest, otsusele, otsusel, otsuselt, otsused, otsuseid
+- `f-n-advanced-20` — käsitlus: käsitlus, käsitluse, käsitlust, käsitlusesse, käsitluses, käsitlusest, käsitlusele, käsitlusel, käsitluselt, käsitlused, käsitlusi
+- `f-v-advanced-1` — teatama: teatama, teatada, teatan, teatab, teatasin, teatanud, teata
+- `f-v-advanced-2` — kandideerima: kandideerima, kandideerida, kandideerin, kandideerib, kandideerisin, kandideerinud, kandideeri
+- `f-v-advanced-3` — soovitama: soovitama, soovitada, soovitan, soovitab, soovitasin, soovitanud, soovita
+- `f-v-advanced-4` — vahetama: vahetama, vahetada, vahetan, vahetab, vahetasin, vahetanud, vaheta
+- `f-v-advanced-5` — võrdlema: võrdlema, võrrelda, võrdlen, võrdleb, võrdlesin, võrrelnud, võrdle
+- `f-v-advanced-6` — põhjendama: põhjendama, põhjendada, põhjendan, põhjendab, põhjendasin, põhjendanud, põhjenda
+- `f-v-advanced-7` — leppima: leppima, leppida, lepin, lepib, leppisin, leppinud, lepi
+- `f-v-advanced-8` — vaatlema: vaatlema, vaadelda, vaatlen, vaatleb, vaatlesin, vaadelnud, vaatle
+- `f-v-advanced-9` — osalema: osalema, osaleda, osalen, osaleb, osalesin, osalenud, osale
+- `f-v-advanced-10` — kirjeldama: kirjeldama, kirjeldada, kirjeldan, kirjeldab, kirjeldasin, kirjeldanud, kirjelda
+- `f-v-advanced-11` — järeldama: järeldama, järeldada, järeldan, järeldab, järeldasin, järeldanud, järelda
+- `f-v-advanced-12` — tõlgendama: tõlgendama, tõlgendada, tõlgendan, tõlgendab, tõlgendasin, tõlgendanud, tõlgenda
+- `f-v-advanced-13` — vaidlustama: vaidlustama, vaidlustada, vaidlustan, vaidlustab, vaidlustasin, vaidlustanud, vaidlusta
+- `f-v-advanced-14` — piiritlema: piiritlema, piiritleda, piiritlen, piiritleb, piiritlesin, piiritlenud, piiritle
+- `f-v-advanced-15` — tõendama: tõendama, tõendada, tõendan, tõendab, tõendasin, tõendanud, tõenda
+- `f-v-advanced-16` — üldistama: üldistama, üldistada, üldistan, üldistab, üldistasin, üldistanud, üldista
+- `f-v-advanced-17` — täpsustama: täpsustama, täpsustada, täpsustan, täpsustab, täpsustasin, täpsustanud, täpsusta
+- `f-v-advanced-18` — välistama: välistama, välistada, välistan, välistab, välistasin, välistanud, välista
+- `f-v-advanced-19` — möönma: möönma, möönda, möönan, möönab, möönsin, möönnud, mööna
+- `f-v-advanced-20` — lähtuma: lähtuma, lähtuda, lähtun, lähtub, lähtusin, lähtunud, lähtu
 
 ## grammar.json (768)
 
@@ -1905,7 +1945,7 @@
 - `mock-07-g-8 (вариант)` — Enamik toetas plaani, seega pooldasid seda kõik.
 - `mock-07-g-8 (вариант)` — Plaan oli üksmeelne, sest vastuseid oli palju.
 
-## order.json (107)
+## order.json (127)
 
 - `o-01` — Ma lähen homme kinno.
 - `o-01 (вариант)` — Homme lähen ma kinno.
@@ -2014,6 +2054,26 @@
 - `o-69` — Mu klassis on kolm uut õpilast.
 - `o-70` — Me kohtume kell kuus kino ees.
 - `o-70 (вариант)` — Kell kuus kohtume me kino ees.
+- `o-advanced-1` — Kuigi kohtumine lükkus edasi, saatis korraldaja osalejatele uue päevakorra.
+- `o-advanced-2` — Kui uus bussiliin avatakse, saavad elanikud hilisõhtul lihtsamini koju sõita.
+- `o-advanced-3` — Enne kui tellimuse kinnitate, kontrollige kas tarneaadress on õigesti kirjas.
+- `o-advanced-4` — Kuna saal oli hõivatud, otsustas rühm korraldada kohtumise raamatukogu lugemissaalis.
+- `o-advanced-5` — Õpetaja palus, et me võrdleksime kaht allikat enne vastamist.
+- `o-advanced-6` — Kui sul on aega, loe palun läbi meie uus juhend ja saada mulle oma märkused.
+- `o-advanced-7` — Uus otsing on kiirem, kuid osa lugejaid ei leia veel üles varem salvestatud artikleid.
+- `o-advanced-8` — Juhendaja küsis, kas me jõuame töö lõpetada enne reedet.
+- `o-advanced-9` — Selleks et seadme kasutamist harjutada, registreerisime end laupäeval toimuvale lühikoolitusele.
+- `o-advanced-10` — Rada oli pärast vihma libe, mistõttu valisime tagasiteeks teise marsruudi.
+- `o-advanced-11` — Isegi kui valim suureneks, ei võimaldaks see ilma täiendavate andmeteta põhjuslikku seost kindlaks teha.
+- `o-advanced-12` — Kui juhend oleks varem avaldatud, oleksid osalejad võinud vältida mitut korduvat viga.
+- `o-advanced-13` — Komisjon vaatab otsuse uuesti läbi ainult juhul, kui taotleja esitab uusi tõendeid.
+- `o-advanced-14` — Kuigi vastuseid tuli oodatust vähem, ei jätnud uurijad tulemusi avaldamata, vaid kirjeldasid nende piiranguid.
+- `o-advanced-15` — Sellest, et teenust kasutati harva, ei saa veel järeldada, et selle järele puudus vajadus.
+- `o-advanced-16` — Andmeid tõlgendades tuleb arvestada, et eri rühmades kasutati erinevaid juhiseid.
+- `o-advanced-17` — Taotluses jäeti täpsustamata, millisel eeldusel prognoos põhines ja millal see koostati.
+- `o-advanced-18` — Eeldusel et ligipääs säilib, võiks muudatus vähendada koormust ilma teenuse ulatust piiramata.
+- `o-advanced-19` — Selle asemel et võrrelda üksnes vastuste arvu, tuleks uurida, millised rühmad jäid küsitluses esindamata.
+- `o-advanced-20` — Mida selgemalt on piirangud kirjas, seda lihtsam on lugejal eristada põhjendatud järeldust oletusest.
 
 ## pronunciation.json (40)
 

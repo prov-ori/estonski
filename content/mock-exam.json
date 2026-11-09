@@ -931,6 +931,236 @@
      "ref": "s-15"
     }
    }
+  },
+  {
+   "id": "mock-06",
+   "topic": "city",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Тренировочный вариант B2 · город и повседневные решения",
+   "explanation_ru": "Комплексный тренировочный вариант: аудирование, чтение, языковой блок, письмо и говорение. Процент учитывает только задания с автоматической проверкой.",
+   "parts": {
+    "listening": {
+     "ref": "l-bus-b2"
+    },
+    "reading": {
+     "ref": "r-heat-b2"
+    },
+    "language": {
+     "id": "mock-06-g",
+     "title_et": "Keelestruktuurid",
+     "explanation_ru": "Практика конструкций и точности формулировок.",
+     "questions": [
+      {
+       "id": "mock-06-g-1",
+       "prompt_et": "Sõiduplaan muutus. Palun teavitage reisijaid ___.",
+       "explanation_ru": "Teavitama кого? + millest? — информировать о чём-либо.",
+       "topic": "cases",
+       "type": "input",
+       "hint": "(muudatus, millest?)",
+       "answer": "muudatusest"
+      },
+      {
+       "id": "mock-06-g-2",
+       "prompt_et": "Pärast ___ kontrollimist avaldati uus ajakava.",
+       "explanation_ru": "Andmete kontrollimine — проверка данных, существительное andmed во множественном генитиве.",
+       "topic": "cases",
+       "type": "input",
+       "hint": "(andmed, mitmuse omastav)",
+       "answer": "andmete"
+      },
+      {
+       "id": "mock-06-g-3",
+       "prompt_et": "Linn otsustas ettepaneku järgmisele koosolekule ___.",
+       "explanation_ru": "Otsustama + da-инфинитив: jätta.",
+       "topic": "cases",
+       "type": "input",
+       "hint": "(jätma, da-tegevusnimi)",
+       "answer": "jätta"
+      },
+      {
+       "id": "mock-06-g-4",
+       "prompt_et": "Kui uus peatus avatakse, ___ me graafikut.",
+       "explanation_ru": "Условие о будущем выражается настоящим временем в обеих частях.",
+       "topic": "transform",
+       "type": "choice",
+       "options": [
+        "muudame",
+        "muutsime",
+        "muutnud"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "mock-06-g-5",
+       "prompt_et": "Nimekiri oli pikk, ___ kõik soovijad pääsesid lõpuks sisse.",
+       "explanation_ru": "Kuid выражает противопоставление.",
+       "topic": "transform",
+       "type": "choice",
+       "options": [
+        "seetõttu",
+        "kuid",
+        "enne kui"
+       ],
+       "answer": 1
+      },
+      {
+       "id": "mock-06-g-6",
+       "prompt_et": "Tuleb otsustada, kas raha jätkub ___ jaoks.",
+       "explanation_ru": "Послелог jaoks требует генитива.",
+       "topic": "transform",
+       "type": "choice",
+       "options": [
+        "uus varjualune",
+        "uut varjualust",
+        "uue varjualuse"
+       ],
+       "answer": 2
+      },
+      {
+       "id": "mock-06-g-7",
+       "topic": "cases",
+       "type": "input",
+       "prompt_et": "Me ei lükanud ___ edasi.",
+       "hint": "(koosolek)",
+       "answer": "koosolekut",
+       "explanation_ru": "При отрицании нужен партитив: koosolekut."
+      },
+      {
+       "id": "mock-06-g-8",
+       "prompt_et": "Milline lause väljendab ettepanekut viisakalt?",
+       "explanation_ru": "Kas oleks võimalik… — вежливая просьба или предложение.",
+       "topic": "transform",
+       "type": "choice",
+       "options": [
+        "Muuda see kohe ära!",
+        "Kas oleks võimalik algusaega muuta?",
+        "Algusaega muudeti eile."
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-queue-b2"
+    },
+    "speaking": {
+     "ref": "s-green-b2"
+    }
+   }
+  },
+  {
+   "id": "mock-07",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Тренировочный вариант C1 · источники и аргументация",
+   "explanation_ru": "Комплексный тренировочный вариант: аудирование, чтение, языковой блок, письмо и говорение. Процент учитывает только задания с автоматической проверкой.",
+   "parts": {
+    "listening": {
+     "ref": "l-archive-c1"
+    },
+    "reading": {
+     "ref": "r-summary-c1"
+    },
+    "language": {
+     "id": "mock-07-g",
+     "title_et": "Keelestruktuurid",
+     "explanation_ru": "Практика конструкций и точности формулировок.",
+     "questions": [
+      {
+       "id": "mock-07-g-1",
+       "prompt_et": "Uurija juhtis tähelepanu ___, et järeldus ei kehti kõigi juhtumite kohta.",
+       "explanation_ru": "Juhtima tähelepanu millele? требует аллатива.",
+       "topic": "cases",
+       "type": "input",
+       "hint": "(see, millele?)",
+       "answer": "sellele"
+      },
+      {
+       "id": "mock-07-g-2",
+       "prompt_et": "Lähtume ___, et mõlemad rühmad said samad juhised.",
+       "explanation_ru": "Lähtuma millest? требует элатива.",
+       "topic": "cases",
+       "type": "input",
+       "hint": "(eeldus, millest?)",
+       "answer": "eeldusest"
+      },
+      {
+       "id": "mock-07-g-3",
+       "prompt_et": "Tulemusi ___ varem kontrollitud näitajatega.",
+       "explanation_ru": "Võrreldi — безличное прошедшее. Второй объект сравнения в комитативе.",
+       "topic": "verbs",
+       "type": "input",
+       "hint": "(võrdlema, umbisikuline lihtminevik)",
+       "answer": "võrreldi"
+      },
+      {
+       "id": "mock-07-g-4",
+       "prompt_et": "Põhjendust saab muuta ainult tingimusel, ___ ilmneb uus asjaolu.",
+       "explanation_ru": "Tingimusel, et вводит условие пересмотра.",
+       "topic": "conjunctions",
+       "type": "input",
+       "hint": "(sidesõna)",
+       "answer": "et"
+      },
+      {
+       "id": "mock-07-g-5",
+       "prompt_et": "Milline lause hoiab alles väite ebakindluse?",
+       "explanation_ru": "Võis выражает возможность, а osa ограничивает объём вывода.",
+       "topic": "transform",
+       "type": "choice",
+       "options": [
+        "Uus kord lahendas kõik probleemid.",
+        "Uus kord võis vähendada osa vigadest.",
+        "Uus kord põhjustas kindlasti kõik muutused."
+       ],
+       "answer": 1
+      },
+      {
+       "id": "mock-07-g-6",
+       "prompt_et": "Milline sõnastus eristab tulemust ja seletust?",
+       "explanation_ru": "Первое предложение описывает наблюдение, второе представляет гипотезу.",
+       "topic": "transform",
+       "type": "choice",
+       "options": [
+        "Vastuste arv langes, seega oli küsimus kindlasti halb.",
+        "Küsimus oli halb, sest muud seletust ei ole.",
+        "Vastuste arv langes. Küsimuse sõnastus on üks võimalik seletus."
+       ],
+       "answer": 2
+      },
+      {
+       "id": "mock-07-g-7",
+       "prompt_et": "Aruanne olevat juba üle ___.",
+       "explanation_ru": "Olevat üle vaadatud — сообщение о завершённой проверке.",
+       "topic": "verbs",
+       "type": "input",
+       "hint": "(vaatama, -tud)",
+       "answer": "vaadatud"
+      },
+      {
+       "id": "mock-07-g-8",
+       "prompt_et": "Milline lause ei järelda enamusest üksmeelt?",
+       "explanation_ru": "Enamik не означает kõik. Kuid сохраняет различие.",
+       "topic": "transform",
+       "type": "choice",
+       "options": [
+        "Enamik toetas plaani, kuid kõigil ei olnud sama seisukoht.",
+        "Enamik toetas plaani, seega pooldasid seda kõik.",
+        "Plaan oli üksmeelne, sest vastuseid oli palju."
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-metric-c1"
+    },
+    "speaking": {
+     "ref": "s-attribution-c1"
+    }
+   }
   }
  ]
 }

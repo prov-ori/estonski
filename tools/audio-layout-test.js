@@ -148,6 +148,42 @@ const server=http.createServer((req,res)=>{
     await levels.close();
     console.log('PASS advanced level filters and lesson-to-practice navigation');
 
+    const practice = await browser.newPage({ viewport: { width: 390, height: 800 }, serviceWorkers: 'block' });
+    await practice.addInitScript(() => {
+      if (window.speechSynthesis) window.speechSynthesis.getVoices = () => [];
+    });
+    await practice.goto(base + '#/drills/dictation');
+    await practice.getByLabel('Уровень', { exact: true }).selectOption('C1');
+    await practice.getByRole('button', { name: 'Начать (8 фраз)', exact: true }).click();
+    await practice.getByText('Фраза 1 из 8 · C1', { exact: true }).waitFor();
+    await practice.getByRole('button', { name: '▶ Слушать', exact: true }).click();
+    await practice.waitForFunction(() => document.querySelector('.trainer audio')?.currentTime > 0);
+    const recording = await practice.locator('.trainer audio').getAttribute('src');
+    const item = JSON.parse(fs.readFileSync(path.join(root, 'content/dictation.json'), 'utf8')).items
+      .find(row => recording === `audio/${row.id}.mp3`);
+    assert.equal(item.level, 'C1');
+    assert(await practice.locator('.trainer .q-et').isHidden());
+    await practice.getByRole('textbox', { name: 'Ваш ответ' }).fill(item.text_et);
+    await practice.getByRole('button', { name: 'Проверить', exact: true }).click();
+    await practice.locator('.feedback.ok').waitFor();
+    await practice.goto(base + '#/mock');
+    for (const [variant, range] of [['mock-06', '180–240'], ['mock-07', '230–320']]) {
+      await practice.locator('#mock').selectOption(variant);
+      await practice.getByRole('checkbox', { name: /Использовать таймер частей/ }).uncheck();
+      await practice.getByRole('button', { name: 'Начать пробный экзамен', exact: true }).click();
+      for (let i = 1; i <= 4; i++) {
+        await practice.getByRole('heading', { name: new RegExp(`Часть ${i} из 5`) }).waitFor();
+        if (i === 4) await practice.getByText(new RegExp(range)).first().waitFor();
+        await practice.getByRole('button', { name: 'Завершить часть →', exact: true }).click();
+      }
+      await practice.getByRole('button', { name: 'Завершить экзамен', exact: true }).click();
+      await practice.getByRole('heading', { name: 'Результат пробного экзамена', exact: true }).waitFor();
+      assert.equal(await practice.locator('.threshold').count(), 0);
+      await practice.getByRole('button', { name: 'В начало', exact: true }).click();
+    }
+    await practice.close();
+    console.log('PASS recorded C1 dictation and both five-part advanced practice variants');
+
     const progress = await browser.newPage({serviceWorkers:'block'});
     await progress.goto(base);
     const imported = await progress.evaluate(async () => {

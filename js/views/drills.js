@@ -1,5 +1,5 @@
 // Тренажёры: формы слов, числительные и время, порядок слов, диктант.
-import { h, content, shuffle, norm, pct, addChildren, setChildren } from '../util.js';
+import { h, content, config, shuffle, norm, pct, addChildren, setChildren } from '../util.js';
 import { runTrainer } from '../trainer.js';
 import { formsSession, numberQuestion } from '../gen.js';
 import { store } from '../store.js';
@@ -161,32 +161,65 @@ export function diffWords(user, correct) {
 }
 
 async function dictation(area) {
-  const items = (await content('dictation')).items;
-  const voice = await findEtVoice();
+  const [data, recordings, voice] = await Promise.all([content('dictation'), config('audio').catch(() => ({})), findEtVoice()]);
+  const items = data.items;
+  const levels = [...new Set(items.map((item) => item.level))].sort();
+  let level = 'B1';
   let player = null;
-  const cleanup = () => { if (player) player.stop(); };
-  window.addEventListener('hashchange', cleanup, { once: true });
+  let audio = null;
+  const cleanup = () => {
+    if (player) { player.stop(); player = null; }
+    if (audio) {
+      const current = audio;
+      audio = null;
+      current.pause();
+      current.removeAttribute('src');
+      current.load();
+    }
+  };
   const start = () => {
-    const queue = shuffle(items).slice(0, 8);
+    const queue = shuffle(items.filter((item) => item.level === level)).slice(0, 8);
     let i = 0, score = 0;
     const next = () => {
       cleanup();
       if (i >= queue.length) {
         setChildren(area, h('div', { class: 'card result' }, h('h2', null, 'Диктант завершён'), h('p', { class: 'big' }, `Без ошибок: ${score} из ${queue.length}`)),
-          h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Ещё раз'), h('a', { class: 'btn', href: '#/progress' }, 'Прогресс')));
+          h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Ещё раз'),
+            h('button', { class: 'btn', type: 'button', onclick: menu }, 'Изменить уровень'), h('a', { class: 'btn', href: '#/progress' }, 'Прогресс')));
         return;
       }
       const it = queue[i];
       const input = h('input', { type: 'text', class: 'text-input', lang: 'et', autocomplete: 'off', autocapitalize: 'off', autocorrect: 'off', spellcheck: 'false', 'aria-label': 'Ваш ответ',
         onkeydown: (e) => { if (e.key === 'Enter') { e.preventDefault(); check(); } } });
       const fb = h('div', { class: 'feedback', role: 'status', 'aria-live': 'polite' });
-      let shown = !voice;
+      const file = recordings.items?.[it.id]?.file;
+      const shown = !file && !voice;
       const textBox = h('p', { class: 'q-et', lang: 'et', hidden: !shown }, it.text_et);
       const controls = h('div', { class: 'row' });
-      if (voice) {
+      const fallback = h('p', { class: 'notice warn', role: 'status', hidden: !shown }, 'Эстонского голоса нет на этом устройстве — режим переписывания: перепишите показанный текст.');
+      if (file) {
+        const recording = h('audio', { src: file, preload: 'none', hidden: true });
+        audio = recording;
+        const unavailable = () => {
+          if (audio !== recording) return;
+          fallback.textContent = 'Запись не загрузилась. Можно переписать показанную фразу или ещё раз нажать «Слушать».';
+          fallback.hidden = false;
+          textBox.hidden = false;
+        };
+        recording.addEventListener('error', unavailable);
+        const rate = sel('rate', [['0.75', 'Медленно'], ['1', 'Обычно']], '0.75', () => {});
+        controls.append(recording, h('button', { class: 'btn primary', type: 'button', onclick: async () => {
+          try {
+            if (recording.error) recording.load();
+            recording.currentTime = 0;
+            recording.playbackRate = Number(rate.value);
+            await recording.play();
+          } catch { unavailable(); }
+        } }, '▶ Слушать'), h('label', { for: 'rate' }, 'Скорость'), rate);
+      } else if (voice) {
         player = createPlayer([{ sp: 'A', text: it.text_et }], voice, () => {});
         const rate = sel('rate', [['0.75', 'Медленно'], ['0.9', 'Обычно']], '0.75', () => {});
-        controls.append(h('button', { class: 'btn primary', type: 'button', onclick: () => player.play(parseFloat(rate.value)) }, '▶ Слушать'), rate);
+        controls.append(h('button', { class: 'btn primary', type: 'button', onclick: () => player.play(parseFloat(rate.value)) }, '▶ Слушать'), h('label', { for: 'rate' }, 'Скорость'), rate);
       }
       const checkBtn = h('button', { class: 'btn primary', type: 'button', onclick: check }, 'Проверить');
       const nextBtn = h('button', { class: 'btn primary', type: 'button', hidden: true, onclick: () => { i++; next(); } }, i === queue.length - 1 ? 'Завершить' : 'Дальше →');
@@ -203,18 +236,22 @@ async function dictation(area) {
           h('span', { class: 'expl' }, `${it.explanation_ru} Перевод: ${it.ru}`));
         checkBtn.hidden = true; nextBtn.hidden = false; nextBtn.focus();
       }
-      setChildren(area, h('p', { class: 'muted', role: 'status' }, `Фраза ${i + 1} из ${queue.length}`), h('progress', { max: queue.length, value: i + 1, 'aria-label': 'Прогресс' }),
+      setChildren(area, h('p', { class: 'muted', role: 'status' }, `Фраза ${i + 1} из ${queue.length} · ${it.level}`), h('progress', { max: queue.length, value: i + 1, 'aria-label': 'Прогресс' }),
         h('div', { class: 'card' },
-          !voice && h('p', { class: 'notice warn' }, speechSupported() ? 'Эстонского голоса нет на этом устройстве — режим переписывания: текст показан, перепишите его с клавиатуры (тренируем õ ä ö ü и окончания). ' : 'Синтез речи не поддерживается — режим переписывания. '),
+          fallback,
           controls, textBox, h('div', { class: 'field' }, h('label', { for: 'dk' }, 'Напишите фразу'), (input.id = 'dk', input)), charPad(input),
           h('div', { class: 'row' }, checkBtn, nextBtn), fb));
       input.focus();
     };
     next();
   };
-  setChildren(area, h('div', { class: 'card' },
-    h('p', null, voice ? `Голос найден: ${voice.name}. Прослушайте фразу (можно несколько раз) и напечатайте её. Знаки препинания и регистр не проверяются.` : 'Эстонского голоса нет — будет режим переписывания.'),
-    h('p', { class: 'muted small-text' }, 'Синтез речи не равен экзаменационным записям: это тренировка слуха и написания, а не имитация экзамена.'),
-    h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (8 фраз)'), !voice && speechSupported() && h('button', { class: 'btn', type: 'button', onclick: () => { resetVoice(); location.reload(); } }, 'Проверить голос ещё раз'))));
+  function menu() {
+    setChildren(area, h('div', { class: 'card' },
+      field('Уровень', 'dictation-level', sel('dictation-level', levels.map((value) => [value, value]), level, (value) => { level = value; })),
+      h('p', null, 'Прослушайте фразу и напечатайте её. Регистр и основные знаки препинания не проверяются.'),
+      h('p', { class: 'muted small-text' }, 'Для B2 и C1 есть готовые записи. На B1 используется голос устройства или режим переписывания.'),
+      h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (8 фраз)'), !voice && speechSupported() && h('button', { class: 'btn', type: 'button', onclick: () => { resetVoice(); location.reload(); } }, 'Проверить голос ещё раз'))));
+  }
+  menu();
   return cleanup;
 }

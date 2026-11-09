@@ -37,7 +37,7 @@ export default {
         h('h1', null, 'Пробный экзамен'),
         h('p', { class: 'lead' }, 'Части идут подряд. Ответы вводятся с клавиатуры, как и на экзамене в EIS. Не уходите со страницы в середине: незавершённый пробник не сохраняется.'),
         h('div', { class: 'notice warn' },
-          h('p', null, h('strong', null, 'Что здесь условно. '), 'Длительность и состав частей и порог ', String(fmt.pass_threshold_percent), ' % взяты из ', h('code', null, 'config/exam-format.json'), ' с пометкой «не проверено» (verified: ', String(fmt.verified), '). Проверьте актуальный формат на ', h('a', { href: fmt.check_at, rel: 'noopener' }, 'harno.ee'), '.'),
+          h('p', null, 'Состав и время частей заданы для тренировки. Условный порог ', String(fmt.pass_threshold_percent), ' % показывается только в полном варианте B1. Актуальные правила опубликованы на ', h('a', { href: fmt.check_at, rel: 'noopener' }, 'harno.ee'), '.'),
           h('p', null, 'Процент считается только по автоматически проверяемым частям. Письмо и говорение вы оцениваете сами по чек-листам.')),
         h('div', { class: 'field' }, h('label', { for: 'mock' }, 'Вариант'), mockSel),
         h('fieldset', null, h('legend', null, 'Части'),
@@ -118,7 +118,7 @@ export default {
       }
       if (p.id === 'writing') {
         let text = '';
-        const ed = editor({ range: fmt.writing_practice_words, onInput: (v) => { text = v; } });
+        const ed = editor({ range: q.practice_words || fmt.writing_practice_words, onInput: (v) => { text = v; } });
         body.append(splitView(h('div', { class: 'card' }, h('p', { class: 'q-et', lang: 'et' }, q.prompt_et), h('p', { class: 'muted' }, q.prompt_ru),
           h('ul', null, q.content_points_et.map((x, i) => h('li', null, h('span', { lang: 'et' }, x), ' ', h('span', { class: 'muted' }, `— ${q.content_points_ru[i]}`))))), ed.el, { leftTitle: 'задание' }));
         return { collect: () => ({ text }) };
@@ -136,6 +136,7 @@ export default {
       const partial = parts.length < fmt.parts.length;
       const percent = pct(got, max);
       const threshold = fmt.pass_threshold_percent;
+      const showThreshold = mock.level === 'B1' && !partial;
       const rec = [];
       rows.forEach(({ r }) => (r.results || []).forEach(({ q, g }) => rec.push({ id: q.id, module: 'mock', topic: q.topic, ok: g.ok })));
       store.recordMany(rec);
@@ -148,13 +149,13 @@ export default {
         h('h1', null, 'Результат пробного экзамена'),
         max ? h('div', { class: 'card result' },
           h('p', { class: 'big' }, `Ориентировочно: ${percent} %`),
-          h('p', null, percent >= threshold ? `Это не ниже условного порога ${threshold} %.` : `Это ниже условного порога ${threshold} %.`),
-          h('div', { class: 'threshold', role: 'img', 'aria-label': `Результат ${percent}%, порог ${threshold}%` },
+          showThreshold && h('p', null, percent >= threshold ? `Это не ниже условного порога ${threshold} %.` : `Это ниже условного порога ${threshold} %.`),
+          showThreshold && h('div', { class: 'threshold', role: 'img', 'aria-label': `Результат ${percent}%, порог ${threshold}%` },
             h('div', { class: 'bar' }, h('div', { class: 'bar-fill', style: `width:${percent}%` })), h('div', { class: 'marker', style: `left:${threshold}%` }, h('span', null, `${threshold} %`))),
           h('p', { class: 'muted' }, `Набрано ${got} из ${max} условных баллов (${fmt.practice_points_per_answer} балл за ответ).`),
-          partial && h('p', { class: 'muted' }, 'Это частичный пробник (выбраны не все части): сравнивать с порогом ещё менее надёжно.'))
+          partial && h('p', { class: 'muted' }, 'Результат только по выбранным частям.'))
           : h('p', { class: 'notice' }, 'Автоматически проверяемые части не выбирались — процента нет.'),
-        h('p', { class: 'notice warn' }, 'Цифра — ориентир только по автоматически проверяемым частям. Письмо и говорение в процент не входят. Порог взят из config/exam-format.json (verified: ' + fmt.verified + ') — это не предсказание результата и не оценка экзамена.'),
+        h('p', { class: 'notice warn' }, 'Процент показывает результат автоматически проверяемых частей этой тренировки. Письмо и говорение оцениваются по чек-листам.'),
         rows.length > 0 && h('h2', null, 'По частям'),
         h('ul', null, rows.map(({ p, r }) => h('li', null, `${p.title_ru}: ${r.got} из ${r.max}`, r.byTimer ? ' (время вышло)' : '', r.fallback ? ' — запись не прослушана или открыт текст; это не проверка аудирования' : ''))),
         writeDone && h('div', null, h('h2', null, `${writeDone.title_ru} (самооценка)`),

@@ -52,6 +52,8 @@ const args = process.argv.slice(2);
 const only = args.includes('--only') ? args[args.indexOf('--only') + 1].split(',') : null;
 const all = args.includes('--all');
 const items = [...JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'listening.json'), 'utf8')).items, ...JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'mock-exam.json'), 'utf8')).items.map(x=>x.parts.listening).filter(x=>x.script_et)];
+const dictations = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'dictation.json'), 'utf8')).items;
+items.push(...dictations.filter(item => item.recorded).map(item => ({ id: item.id, script_et: [{ sp: 'A', text: item.text_et }] })));
 const idx = fs.existsSync(IDX) ? JSON.parse(fs.readFileSync(IDX, 'utf8')) : { _comment: '', engine: 'espeak-ng', items: {} };
 idx._comment = 'Аудиозаписи: tools/gen-neural-audio.py или tools/gen-audio.js. hash — sha1 реплик задания.';
 idx.engine = 'mixed (see each entry)';

@@ -558,6 +558,166 @@
    "text_et": "Saatsin sulle e-kirja, aga vastust ei tulnud.",
    "ru": "Я отправил(а) тебе письмо, но ответа не пришло.",
    "explanation_ru": "Слушайте фразу целиком, затем печатайте. Проверьте õ, ä, ö, ü, двойные согласные и окончания падежей."
+  },
+  {
+   "id": "dk-advanced-1",
+   "level": "B2",
+   "topic": "work",
+   "text_et": "Kuigi koosolek lükkus edasi, saatsime osalejatele uue päevakorra juba hommikul.",
+   "ru": "Хотя заседание перенесли, мы отправили участникам новую повестку уже утром.",
+   "explanation_ru": "Обратите внимание на долготу в словах lükkus и saatsime.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-2",
+   "level": "B2",
+   "topic": "travel",
+   "text_et": "Kui ühendus katkeb, salvestage aadress ja proovige hiljem uuesti.",
+   "ru": "Если соединение прервётся, сохраните адрес и попробуйте снова позже.",
+   "explanation_ru": "Различайте окончания повелительных форм salvestage и proovige.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-3",
+   "level": "B2",
+   "topic": "city",
+   "text_et": "Linnavalitsus lubas elanike ettepanekud enne lõplikku otsust läbi vaadata.",
+   "ru": "Городская управа пообещала рассмотреть предложения жителей до окончательного решения.",
+   "explanation_ru": "Сочетание läbi vaadata пишется раздельно.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-4",
+   "level": "B2",
+   "topic": "school",
+   "text_et": "Õpetaja soovitas võrrelda kaht allikat, enne kui me järelduse sõnastame.",
+   "ru": "Учитель посоветовал сравнить два источника, прежде чем мы сформулируем вывод.",
+   "explanation_ru": "После võrrelda здесь партитив kaht allikat.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-5",
+   "level": "B2",
+   "topic": "nature",
+   "text_et": "Rada muutus pärast öist vihma libedaks, mistõttu valisime teise marsruudi.",
+   "ru": "После ночного дождя тропа стала скользкой, поэтому мы выбрали другой маршрут.",
+   "explanation_ru": "Слушайте гласные в öist и окончание результата libedaks.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-6",
+   "level": "B2",
+   "topic": "tech",
+   "text_et": "Andmed tuleb varundada enne uuendust, sest hiljem võib nende taastamine võtta aega.",
+   "ru": "Резервную копию данных нужно сделать до обновления, поскольку восстановление может занять время.",
+   "explanation_ru": "В слове uuendus два u, в taastamine два a.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-7",
+   "level": "B2",
+   "topic": "work",
+   "text_et": "Kolleeg küsis, kas meil õnnestub töö nädala lõpuks valmis saada.",
+   "ru": "Коллега спросил, удастся ли закончить работу к концу недели.",
+   "explanation_ru": "Не пропустите õ в õnnestub и lõpuks. Сочетание valmis saada пишется раздельно.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-8",
+   "level": "B2",
+   "topic": "health",
+   "text_et": "Pärast pikka pausi soovitas treener koormust suurendada järk-järgult.",
+   "ru": "После длительного перерыва тренер посоветовал повышать нагрузку постепенно.",
+   "explanation_ru": "Наречие järk-järgult пишется через дефис.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-9",
+   "level": "C1",
+   "topic": "work",
+   "text_et": "Kuigi tulemused osutavad paranemisele, ei võimalda lühike katse veel mõju kestust hinnata.",
+   "ru": "Хотя результаты указывают на улучшение, короткий эксперимент ещё не позволяет оценить длительность эффекта.",
+   "explanation_ru": "В управлении osutama millele? слышно окончание -le: paranemisele.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-10",
+   "level": "C1",
+   "topic": "tech",
+   "text_et": "Kui viga oleks varem avastatud, oleks andmete taastamine võtnud vähem aega.",
+   "ru": "Если бы ошибку обнаружили раньше, восстановление данных заняло бы меньше времени.",
+   "explanation_ru": "Сопоставьте безличное avastatud и личное võtnud.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-11",
+   "level": "C1",
+   "topic": "city",
+   "text_et": "Ettepanek võetakse uuesti arutusele ainult juhul, kui ilmnevad uued asjaolud.",
+   "ru": "Предложение вернут на обсуждение только при появлении новых обстоятельств.",
+   "explanation_ru": "В слове asjaolud нет дефиса, у arutusele окончание -le.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-12",
+   "level": "C1",
+   "topic": "school",
+   "text_et": "Õpilaste vastuseid tõlgendades tuleb arvestada, et juhiseid ei loetud kõigis rühmades ühtemoodi.",
+   "ru": "При интерпретации ответов учеников следует учесть, что инструкции прочли не во всех группах одинаково.",
+   "explanation_ru": "Форма tõlgendades передаёт сопутствующее действие, а loetud — безличное причастие.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-13",
+   "level": "C1",
+   "topic": "work",
+   "text_et": "Protokollist ei selgu, kas kokkulepe puudutas tähtaega või üksnes tööde järjekorda.",
+   "ru": "Из протокола неясно, касалась ли договорённость срока или только очерёдности работ.",
+   "explanation_ru": "Слушайте окончания партитива tähtaega и järjekorda.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-14",
+   "level": "C1",
+   "topic": "nature",
+   "text_et": "Mõõtmiste erinevus võib tuleneda ilmast, kuid see võimalus vajab veel kontrollimist.",
+   "ru": "Различие между измерениями может объясняться погодой, но эту возможность ещё нужно проверить.",
+   "explanation_ru": "Tulenema millest? — ilmast; сравните долготу в mõõtmiste и ilmast.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-15",
+   "level": "C1",
+   "topic": "tech",
+   "text_et": "Kuna osalejad kasutasid erinevaid seadmeid, ei saa kiiruse vahet seostada üksnes programmiga.",
+   "ru": "Поскольку участники использовали разные устройства, разницу в скорости нельзя связывать только с программой.",
+   "explanation_ru": "Seostama millega? — programmiga. Не пропустите ei saa.",
+   "status": "draft",
+   "recorded": true
+  },
+  {
+   "id": "dk-advanced-16",
+   "level": "C1",
+   "topic": "city",
+   "text_et": "Elanike hinnangul oleks muudatus vastuvõetav, eeldusel et teenuse kättesaadavus ei halvene.",
+   "ru": "По оценке жителей, изменение было бы приемлемым при условии, что доступность услуги не ухудшится.",
+   "explanation_ru": "Сложные слова vastuvõetav и kättesaadavus пишутся слитно.",
+   "status": "draft",
+   "recorded": true
   }
  ]
 }

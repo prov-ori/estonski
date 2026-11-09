@@ -12,6 +12,8 @@ async def main():
     parser=argparse.ArgumentParser(); parser.add_argument('--only'); parser.add_argument('--reuse-dir'); args=parser.parse_args()
     items=read(ROOT/'content/listening.json')['items']
     items += [m['parts']['listening'] for m in read(ROOT/'content/mock-exam.json')['items'] if m['parts']['listening'].get('script_et')]
+    items += [{'id': d['id'], 'script_et': [{'sp': 'A', 'text': d['text_et']}]}
+              for d in read(ROOT/'content/dictation.json')['items'] if d.get('recorded')]
     index=read(ROOT/'config/audio.json'); index['engine']='mixed (see each entry)'
     gate=asyncio.Semaphore(2)
     async def make(item):
@@ -46,9 +48,9 @@ async def main():
             shutil.copyfile(result,target)
         seconds=float(command('ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(target)))
         index['items'][item['id']]={'file':'audio/'+target.name,'hash':digest,'seconds':round(seconds,1),'engine':'neural','voices':['et-EE-AnuNeural','et-EE-KertNeural'],'generated_on':str(datetime.date.today())}
-        (ROOT/'config/audio.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        (ROOT/'config/audio.json').write_bytes((json.dumps(index,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
         print('Prepared '+item['id'],flush=True)
     await asyncio.gather(*(make(item) for item in items))
     if all(x.get('engine')=='neural' for x in index['items'].values()): index['engine']='neural'
-    (ROOT/'config/audio.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'config/audio.json').write_bytes((json.dumps(index,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
 asyncio.run(main())

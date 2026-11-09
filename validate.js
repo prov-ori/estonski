@@ -201,6 +201,8 @@ for (const p of (data.pronunciation?.items || [])) {
   const { scriptHash } = require('./tools/gen-audio.js');
   const audio = readJSON('config/audio.json');
   const listening = [...(data.listening?.items || []), ...(data['mock-exam']?.items || []).map(x=>x.parts.listening).filter(x=>x.script_et)];
+  listening.push(...(data.dictation?.items || []).filter(item => item.recorded)
+    .map(item => ({ id: item.id, script_et: [{ sp: 'A', text: item.text_et }] })));
   const idxItems = (audio && audio.items) || {};
   let missing = 0;
   for (const it of listening) {
@@ -211,7 +213,7 @@ for (const p of (data.pronunciation?.items || [])) {
   }
   for (const id of Object.keys(idxItems)) need(listening.some((x) => x.id === id), 'config/audio.json', id, 'запись для несуществующего задания');
   if (missing) {
-    const msg = `нет аудиозаписи у ${missing} из ${listening.length} заданий аудирования (сайт использует голос устройства; создайте записи: node tools/gen-audio.js)`;
+    const msg = `нет аудиозаписи у ${missing} из ${listening.length} заданий с озвучкой (создайте записи: node tools/gen-audio.js)`;
     if (process.argv.includes('--require-audio')) errors.push('config/audio.json: ' + msg); else warns.push('config/audio.json: ' + msg);
   }
 }

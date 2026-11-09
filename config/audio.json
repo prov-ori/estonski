@@ -342,6 +342,182 @@
         "et-EE-KertNeural"
       ],
       "generated_on": "2026-11-08"
+    },
+    "dk-advanced-1": {
+      "file": "audio/dk-advanced-1.mp3",
+      "hash": "679f02717d8bd82304f95dc7e2815702da6c31d1",
+      "seconds": 6.5,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-2": {
+      "file": "audio/dk-advanced-2.mp3",
+      "hash": "a7f262a10f2450702b0797085db58cdae10d77c7",
+      "seconds": 5.4,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-3": {
+      "file": "audio/dk-advanced-3.mp3",
+      "hash": "fcf902d81c2d4d0f4bdffac3f64e8970d55875bd",
+      "seconds": 6.0,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-4": {
+      "file": "audio/dk-advanced-4.mp3",
+      "hash": "9c081eb6da3e95d4aefcc4bea9417557b5eaa812",
+      "seconds": 5.8,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-5": {
+      "file": "audio/dk-advanced-5.mp3",
+      "hash": "f0e48fb925c0763f6b934dc2b9a859145bd90048",
+      "seconds": 5.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-6": {
+      "file": "audio/dk-advanced-6.mp3",
+      "hash": "526394514b474b89cce6098c698b17fc2e673554",
+      "seconds": 6.2,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-7": {
+      "file": "audio/dk-advanced-7.mp3",
+      "hash": "9d790365d399387f2a839467ca9f45369528d8aa",
+      "seconds": 5.1,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-8": {
+      "file": "audio/dk-advanced-8.mp3",
+      "hash": "3ce9ebd663ec87f953d40a7dba1a6d2a6d18d129",
+      "seconds": 5.8,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-9": {
+      "file": "audio/dk-advanced-9.mp3",
+      "hash": "e305603f3887acb593f134b4ffd1c35c76858583",
+      "seconds": 6.7,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-10": {
+      "file": "audio/dk-advanced-10.mp3",
+      "hash": "6ad659a4a7d2b1820426ddabfc5fcb878c237685",
+      "seconds": 5.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-11": {
+      "file": "audio/dk-advanced-11.mp3",
+      "hash": "6f7e21d3fa9f670fdd491171f1ed8cf786f6eb48",
+      "seconds": 6.1,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-12": {
+      "file": "audio/dk-advanced-12.mp3",
+      "hash": "a5ced63d493ac0401e18db4686ef6fe8a3e63c12",
+      "seconds": 7.5,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-13": {
+      "file": "audio/dk-advanced-13.mp3",
+      "hash": "db11e2c2c026eb789fc74f957cd005eae96ad231",
+      "seconds": 6.7,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-14": {
+      "file": "audio/dk-advanced-14.mp3",
+      "hash": "552ad91699d74117bc3407ae29540d714d895830",
+      "seconds": 6.2,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-15": {
+      "file": "audio/dk-advanced-15.mp3",
+      "hash": "a9cd22926f8fbf69fc1959871e585b1293a5409d",
+      "seconds": 6.9,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
+    },
+    "dk-advanced-16": {
+      "file": "audio/dk-advanced-16.mp3",
+      "hash": "5cd4a213f18cc0d720def6f8c6252338fb671afe",
+      "seconds": 7.3,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-09"
     }
   }
 }

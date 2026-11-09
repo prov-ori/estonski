@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 4901. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 4946. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -73,7 +73,7 @@
 - `d-65` — Kuigi buss hilines, jõudsime õigeks ajaks kohale, sest sõitsime kiiresti.
 - `d-66` — Ta on klassi parim õpilane.
 
-## dictation.json (62)
+## dictation.json (78)
 
 - `dk-01` — Täna on ilus ilm.
 - `dk-02` — Ma elan väikeses linnas.
@@ -137,6 +137,22 @@
 - `dk-60` — Palun näidake oma passi ja piletit.
 - `dk-61` — Ära unusta oma parooli!
 - `dk-62` — Saatsin sulle e-kirja, aga vastust ei tulnud.
+- `dk-advanced-1` — Kuigi koosolek lükkus edasi, saatsime osalejatele uue päevakorra juba hommikul.
+- `dk-advanced-2` — Kui ühendus katkeb, salvestage aadress ja proovige hiljem uuesti.
+- `dk-advanced-3` — Linnavalitsus lubas elanike ettepanekud enne lõplikku otsust läbi vaadata.
+- `dk-advanced-4` — Õpetaja soovitas võrrelda kaht allikat, enne kui me järelduse sõnastame.
+- `dk-advanced-5` — Rada muutus pärast öist vihma libedaks, mistõttu valisime teise marsruudi.
+- `dk-advanced-6` — Andmed tuleb varundada enne uuendust, sest hiljem võib nende taastamine võtta aega.
+- `dk-advanced-7` — Kolleeg küsis, kas meil õnnestub töö nädala lõpuks valmis saada.
+- `dk-advanced-8` — Pärast pikka pausi soovitas treener koormust suurendada järk-järgult.
+- `dk-advanced-9` — Kuigi tulemused osutavad paranemisele, ei võimalda lühike katse veel mõju kestust hinnata.
+- `dk-advanced-10` — Kui viga oleks varem avastatud, oleks andmete taastamine võtnud vähem aega.
+- `dk-advanced-11` — Ettepanek võetakse uuesti arutusele ainult juhul, kui ilmnevad uued asjaolud.
+- `dk-advanced-12` — Õpilaste vastuseid tõlgendades tuleb arvestada, et juhiseid ei loetud kõigis rühmades ühtemoodi.
+- `dk-advanced-13` — Protokollist ei selgu, kas kokkulepe puudutas tähtaega või üksnes tööde järjekorda.
+- `dk-advanced-14` — Mõõtmiste erinevus võib tuleneda ilmast, kuid see võimalus vajab veel kontrollimist.
+- `dk-advanced-15` — Kuna osalejad kasutasid erinevaid seadmeid, ei saa kiiruse vahet seostada üksnes programmiga.
+- `dk-advanced-16` — Elanike hinnangul oleks muudatus vastuvõetav, eeldusel et teenuse kättesaadavus ei halvene.
 
 ## fixes.json (117)
 
@@ -1766,7 +1782,7 @@
 - `l-archive-q5 (вариант)` — Kirje võib avaldada üksnes pärast täielikku kontrolli
 - `l-archive-q5 (вариант)` — Täiendatav avalik kirje peab näitama teadmise alust
 
-## mock-exam.json (91)
+## mock-exam.json (120)
 
 - `mock-01-l` — Bussiteade
 - `mock-01-l` — Tähelepanu, bussireisijad!
@@ -1859,6 +1875,35 @@
 - `mock-05-g6` — Täna on ilm parem kui eile.
 - `mock-05-g7` — Ma armastan joosta.
 - `mock-05-g8` — Ma lähen sõbra juurde.
+- `mock-06-g` — Keelestruktuurid
+- `mock-06-g-1` — Sõiduplaan muutus. Palun teavitage reisijaid muudatusest.
+- `mock-06-g-2` — Pärast andmete kontrollimist avaldati uus ajakava.
+- `mock-06-g-3` — Linn otsustas ettepaneku järgmisele koosolekule jätta.
+- `mock-06-g-4` — Kui uus peatus avatakse, muudame me graafikut.
+- `mock-06-g-5` — Nimekiri oli pikk, kuid kõik soovijad pääsesid lõpuks sisse.
+- `mock-06-g-6` — Tuleb otsustada, kas raha jätkub uue varjualuse jaoks.
+- `mock-06-g-7` — Me ei lükanud koosolekut edasi.
+- `mock-06-g-8` — Milline lause väljendab ettepanekut viisakalt?
+- `mock-06-g-8 (вариант)` — Muuda see kohe ära!
+- `mock-06-g-8 (вариант)` — Kas oleks võimalik algusaega muuta?
+- `mock-06-g-8 (вариант)` — Algusaega muudeti eile.
+- `mock-07-g-1` — Uurija juhtis tähelepanu sellele, et järeldus ei kehti kõigi juhtumite kohta.
+- `mock-07-g-2` — Lähtume eeldusest, et mõlemad rühmad said samad juhised.
+- `mock-07-g-3` — Tulemusi võrreldi varem kontrollitud näitajatega.
+- `mock-07-g-4` — Põhjendust saab muuta ainult tingimusel, et ilmneb uus asjaolu.
+- `mock-07-g-5` — Milline lause hoiab alles väite ebakindluse?
+- `mock-07-g-5 (вариант)` — Uus kord lahendas kõik probleemid.
+- `mock-07-g-5 (вариант)` — Uus kord võis vähendada osa vigadest.
+- `mock-07-g-5 (вариант)` — Uus kord põhjustas kindlasti kõik muutused.
+- `mock-07-g-6` — Milline sõnastus eristab tulemust ja seletust?
+- `mock-07-g-6 (вариант)` — Vastuste arv langes, seega oli küsimus kindlasti halb.
+- `mock-07-g-6 (вариант)` — Küsimus oli halb, sest muud seletust ei ole.
+- `mock-07-g-6 (вариант)` — Vastuste arv langes. Küsimuse sõnastus on üks võimalik seletus.
+- `mock-07-g-7` — Aruanne olevat juba üle vaadatud.
+- `mock-07-g-8` — Milline lause ei järelda enamusest üksmeelt?
+- `mock-07-g-8 (вариант)` — Enamik toetas plaani, kuid kõigil ei olnud sama seisukoht.
+- `mock-07-g-8 (вариант)` — Enamik toetas plaani, seega pooldasid seda kõik.
+- `mock-07-g-8 (вариант)` — Plaan oli üksmeelne, sest vastuseid oli palju.
 
 ## order.json (107)
 

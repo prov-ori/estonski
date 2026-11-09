@@ -368,7 +368,7 @@
     "dk-advanced-3": {
       "file": "audio/dk-advanced-3.mp3",
       "hash": "fcf902d81c2d4d0f4bdffac3f64e8970d55875bd",
-      "seconds": 6.0,
+      "seconds": 6,
       "engine": "neural",
       "voices": [
         "et-EE-AnuNeural",

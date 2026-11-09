@@ -8670,6 +8670,522 @@
    ],
    "answer": 1,
    "explanation_ru": "Armastama + партитив: muusikat."
+  },
+  {
+   "id": "g-object-advanced-1",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Projektijuht luges ___ läbi.",
+   "type": "input",
+   "hint": "(aruanne)",
+   "answer": "aruande",
+   "explanation_ru": "Прочитал отчёт целиком: в утвердительной личной конструкции нужен генитив."
+  },
+  {
+   "id": "g-object-advanced-2",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Projektijuht ei lugenud ___ läbi.",
+   "type": "input",
+   "hint": "(aruanne)",
+   "answer": "aruannet",
+   "explanation_ru": "При отрицании нужен партитив, даже если есть läbi."
+  },
+  {
+   "id": "g-object-advanced-3",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Kinnita ___ kohe!",
+   "type": "input",
+   "hint": "(tellimus)",
+   "answer": "tellimus",
+   "explanation_ru": "Полное дополнение при прямом повелительном наклонении стоит в номинативе."
+  },
+  {
+   "id": "g-object-advanced-4",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "___ kinnitati eile.",
+   "type": "input",
+   "hint": "(tellimus)",
+   "answer": "tellimus",
+   "explanation_ru": "В безличной утвердительной фразе полное дополнение в номинативе."
+  },
+  {
+   "id": "g-object-advanced-5",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Laps sõi ___ ära.",
+   "type": "input",
+   "hint": "(võileib)",
+   "answer": "võileiva",
+   "explanation_ru": "Завершённое действие с целым предметом: генитив võileiva."
+  },
+  {
+   "id": "g-object-advanced-6",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Ma kuulasin ___, kui buss peatus.",
+   "type": "input",
+   "hint": "(saade)",
+   "answer": "saadet",
+   "explanation_ru": "Фраза описывает процесс слушания, а не дослушивание до конца."
+  },
+  {
+   "id": "g-object-advanced-7",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Milline lause ütleb, et töö sai valmis?",
+   "type": "choice",
+   "options": [
+    "Ta parandas jalgratast.",
+    "Ta parandas jalgratta ära.",
+    "Ta hakkas jalgratast parandama."
+   ],
+   "answer": 1,
+   "explanation_ru": "Ära и генитив jalgratta выражают результат."
+  },
+  {
+   "id": "g-object-advanced-8",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Milline lause kirjeldab tegevust selle kestel?",
+   "type": "choice",
+   "options": [
+    "Ta pakkis kohvri kokku.",
+    "Ta pani kohvri esikusse.",
+    "Ta pakkis kohvrit, kui ma helistasin."
+   ],
+   "answer": 2,
+   "explanation_ru": "Партитив kohvrit и придаточное с kui показывают действие в процессе."
+  },
+  {
+   "id": "g-object-advanced-9",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Aknad pesti enne koosolekut puhtaks. Mis vormis on täissihitis?",
+   "type": "choice",
+   "options": [
+    "Mitmuse nimetavas",
+    "Ainsuse omastavas",
+    "Mitmuse osastavas"
+   ],
+   "answer": 0,
+   "explanation_ru": "Aknad — номинатив множественного числа в безличной фразе."
+  },
+  {
+   "id": "g-object-advanced-10",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Loe ___ lõpuni ja anna teada, mida arvad.",
+   "type": "input",
+   "hint": "(see artikkel)",
+   "answer": "see artikkel",
+   "explanation_ru": "Команда с ограниченным объектом и явно указанным результатом."
+  },
+  {
+   "id": "g-reported-advanced-1",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Kuuldavasti ___ saal täna avatud.",
+   "type": "input",
+   "hint": "(olema, -vat)",
+   "answer": "olevat",
+   "explanation_ru": "Olema → olevat, форма передачи чужого сообщения."
+  },
+  {
+   "id": "g-reported-advanced-2",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Kuuldavasti ___ rong varem kui tavaliselt.",
+   "type": "input",
+   "hint": "(väljuma, -vat)",
+   "answer": "väljuvat",
+   "explanation_ru": "Väljuma → väljuvat."
+  },
+  {
+   "id": "g-reported-advanced-3",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Kuuldavasti olevat ta juba Tartusse ___.",
+   "type": "input",
+   "hint": "(jõudma, -nud)",
+   "answer": "jõudnud",
+   "explanation_ru": "Olevat jõudnud передаёт сообщение о состоявшемся прибытии."
+  },
+  {
+   "id": "g-reported-advanced-4",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Kava olevat eelmisel nädalal ___.",
+   "type": "input",
+   "hint": "(kinnitama, -tud)",
+   "answer": "kinnitatud",
+   "explanation_ru": "В центре внимания результат: план, как сообщают, утвердили."
+  },
+  {
+   "id": "g-reported-advanced-5",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Millises lauses annab kõneleja info edasi kaudses kõneviisis?",
+   "type": "choice",
+   "options": [
+    "Rong väljub kell seitse.",
+    "Rong väljuvat kell seitse.",
+    "Rong väljuks kell seitse."
+   ],
+   "answer": 1,
+   "explanation_ru": "Väljuvat — форма косвенного наклонения, väljuks — условного."
+  },
+  {
+   "id": "g-reported-advanced-6",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Milline lause vahendab teadet juba toimunud sündmusest?",
+   "type": "choice",
+   "options": [
+    "Arutelu algab homme.",
+    "Arutelu algavat varsti.",
+    "Arutelu olevat alanud enne lõunat."
+   ],
+   "answer": 2,
+   "explanation_ru": "Olevat alanud — чужое сообщение о прошлом событии."
+  },
+  {
+   "id": "g-reported-advanced-7",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Milline lause nimetab otseselt teate allika?",
+   "type": "choice",
+   "options": [
+    "Valvur ütles, et uks on lukus.",
+    "Uks olevat lukus.",
+    "Uks näib lukus olevat."
+   ],
+   "answer": 0,
+   "explanation_ru": "Valvur ütles называет автора сообщения."
+  },
+  {
+   "id": "g-reported-advanced-8",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Vastuse saatmise kohta öeldi: „Vastus saadeti eile.” Milline lause vahendab sama sündmust kaudses kõneviisis?",
+   "type": "choice",
+   "options": [
+    "Vastus saadetaks homme.",
+    "Vastus olevat eile saadetud.",
+    "Vastus saadetakse praegu."
+   ],
+   "answer": 1,
+   "explanation_ru": "Olevat saadetud передаёт уже случившуюся отправку."
+  },
+  {
+   "id": "g-reported-advanced-9",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Meeskond olevat eelmisel kuul uue korra ___.",
+   "type": "input",
+   "hint": "(kehtestama, -nud)",
+   "answer": "kehtestanud",
+   "explanation_ru": "Подлежащее meeskond выполняло действие: olevat kehtestanud."
+  },
+  {
+   "id": "g-reported-advanced-10",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "prompt_et": "Mida saab järeldada lausest „Töötuba olevat ära jäänud”?",
+   "type": "choice",
+   "options": [
+    "Kõneleja oli ise tühistamise juures.",
+    "Teade osutus kindlasti valeks.",
+    "Kõneleja vahendab infot töötoa ärajäämise kohta."
+   ],
+   "answer": 2,
+   "explanation_ru": "Форма маркирует источник сообщения, а не истинность или ложность."
+  },
+  {
+   "id": "g-concession-advanced-1",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "___ andmed on puudulikud, võib esimese hinnangu siiski avaldada.",
+   "type": "input",
+   "hint": "(kasutage möönvat sidesõna)",
+   "answer": "kuigi",
+   "explanation_ru": "Kuigi вводит уступку. Допустимы синонимичные уступительные союзы.",
+   "also_ok": [
+    "ehkki",
+    "olgugi et"
+   ]
+  },
+  {
+   "id": "g-concession-advanced-2",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "___ hind järgmisel kuul tõuseb, jääb meie soovitus samaks.",
+   "type": "input",
+   "hint": "(kasutage ühendit sõnaga isegi)",
+   "answer": "isegi kui",
+   "explanation_ru": "Isegi kui — вывод сохраняется и при возможном росте цены."
+  },
+  {
+   "id": "g-concession-advanced-3",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Leping jõustub ainult juhul, ___ mõlemad pooled sellele alla kirjutavad.",
+   "type": "input",
+   "hint": "(sidesõna)",
+   "answer": "kui",
+   "explanation_ru": "Juhul, kui вводит условие."
+  },
+  {
+   "id": "g-concession-advanced-4",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Pakkumine kehtib tingimusel, ___ kaup võetakse vastu reedel.",
+   "type": "input",
+   "hint": "(sidesõna)",
+   "answer": "et",
+   "explanation_ru": "Tingimusel, et вводит условие действия предложения."
+  },
+  {
+   "id": "g-concession-advanced-5",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Milline lause tunnistab, et proov kestis vähe aega?",
+   "type": "choice",
+   "options": [
+    "Isegi kui proov kestaks vähe aega, koguksime andmeid.",
+    "Kuigi proov kestis vähe aega, jõuti andmeid koguda.",
+    "Kui proov kestaks vähe aega, lükkaksime otsuse edasi."
+   ],
+   "answer": 1,
+   "explanation_ru": "Kuigi и прошедшее kestis показывают признанное обстоятельство."
+  },
+  {
+   "id": "g-concession-advanced-6",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "„Toetust antakse ainult juhul, kui taotlus on täielik.” Mida saab sellest järeldada?",
+   "type": "choice",
+   "options": [
+    "Iga täielik taotlus saab toetuse.",
+    "Täielik taotlus ei mõjuta otsust.",
+    "Puuduliku taotluse korral toetust ei anta."
+   ],
+   "answer": 2,
+   "explanation_ru": "Полнота заявки необходима. Гарантии выплаты из этого не следует."
+  },
+  {
+   "id": "g-concession-advanced-7",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "„Isegi kui vastajaid on vähe, avaldame tulemuse koos piirangutega.” Mida lause kinnitab?",
+   "type": "choice",
+   "options": [
+    "Tulemuse avaldamine ei sõltu sellest, kas vastajaid on vähe.",
+    "Vastajaid on kindlasti vähe.",
+    "Piiranguid kirjeldatakse ainult suure valimi korral."
+   ],
+   "answer": 0,
+   "explanation_ru": "Публикация состоится и при малом числе ответов. Их фактическое число не задано."
+  },
+  {
+   "id": "g-concession-advanced-8",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Milline lause jätab ajakava muutmise võimaluse alles, kuid nõuab enne kokkulepet?",
+   "type": "choice",
+   "options": [
+    "Muudame ajakava hoolimata kokkuleppest.",
+    "Muudame ajakava ainult siis, kui pooled on kokku leppinud.",
+    "Kokkulepe tähendab, et ajakava on juba muudetud."
+   ],
+   "answer": 1,
+   "explanation_ru": "Ainult siis, kui вводит необходимое условие."
+  },
+  {
+   "id": "g-concession-advanced-9",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Muudatus jääb jõusse ___ osa kasutajaid eelistab varasemat korda.",
+   "type": "input",
+   "hint": "(kasutage ühendit hoolimata sellest)",
+   "answer": "hoolimata sellest, et",
+   "explanation_ru": "Hoolimata sellest, et присоединяет придаточное уступки."
+  },
+  {
+   "id": "g-concession-advanced-10",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Milline lause säilitab mõtte „Erand ei muuda üldreeglit ka siis, kui seda kasutatakse sageli”?",
+   "type": "choice",
+   "options": [
+    "Erand muudab üldreeglit, kui seda kasutatakse sageli.",
+    "Üldreegel kehtib ainult juhul, kui erandit ei kasutata.",
+    "Isegi kui erandit kasutatakse sageli, jääb üldreegel samaks."
+   ],
+   "answer": 2,
+   "explanation_ru": "Isegi kui сохраняет смысл уступки при возможном условии."
+  },
+  {
+   "id": "g-conditional-advanced-1",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Kui kutse oleks varem ___, oleks rohkem inimesi tulnud.",
+   "type": "input",
+   "hint": "(saatma, -tud)",
+   "answer": "saadetud",
+   "explanation_ru": "Пассивное причастие показывает гипотетическую отправку в прошлом."
+  },
+  {
+   "id": "g-conditional-advanced-2",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Kui oleksime veast teadnud, oleksime juhendit ___.",
+   "type": "input",
+   "hint": "(muutma, -nud)",
+   "answer": "muutnud",
+   "explanation_ru": "Прошедшая условная форма oleksime muutnud."
+  },
+  {
+   "id": "g-conditional-advanced-3",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Kui saal ___ suurem, mahuks sinna veel üks rühm.",
+   "type": "input",
+   "hint": "(olema, tingiv kõneviis)",
+   "answer": "oleks",
+   "explanation_ru": "Oleks выражает воображаемое состояние зала."
+  },
+  {
+   "id": "g-conditional-advanced-4",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Kui proovi oleks korratud, ___ tulemus võinud erineda.",
+   "type": "input",
+   "hint": "(olema, tingiv kõneviis)",
+   "answer": "oleks",
+   "explanation_ru": "Oleks võinud представляет возможный результат неосуществлённого повтора."
+  },
+  {
+   "id": "g-conditional-advanced-5",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Milline lause kirjeldab täitmata jäänud võimalust minevikus?",
+   "type": "choice",
+   "options": [
+    "Koosolek algas hiljem.",
+    "Kui teade oleks jõudnud õigel ajal, oleks koosolek alanud varem.",
+    "Kui teade jõuab õigel ajal, algab koosolek varem."
+   ],
+   "answer": 1,
+   "explanation_ru": "Обе части с oleks описывают гипотезу о прошлом."
+  },
+  {
+   "id": "g-conditional-advanced-6",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Milline väide väljendab võimalikku põhjust seda kindlaks kuulutamata?",
+   "type": "choice",
+   "options": [
+    "Hinnamuutus põhjustas languse.",
+    "Langus tõestab hinnamuutuse mõju.",
+    "Hinnamuutus võis langusele kaasa aidata."
+   ],
+   "answer": 2,
+   "explanation_ru": "Võis ограничивает уверенность в причинной связи."
+  },
+  {
+   "id": "g-conditional-advanced-7",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Mida ütleb lause „Ilma toetuseta oleks projekt võinud katkeda”?",
+   "type": "choice",
+   "options": [
+    "Katkemine oleks olnud võimalik, kuid polnud vältimatu.",
+    "Projekt katkes kindlasti.",
+    "Toetus tekitas katkestuse."
+   ],
+   "answer": 0,
+   "explanation_ru": "Oleks võinud — возможный исход в альтернативных обстоятельствах."
+  },
+  {
+   "id": "g-conditional-advanced-8",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Milline lause jätab tulevase tingimuse veel avatuks?",
+   "type": "choice",
+   "options": [
+    "Kui luba saabub reedeks, alustame esmaspäeval.",
+    "Kui luba oleks reedeks saabunud, oleksime alustanud esmaspäeval.",
+    "Luba saabus ja me alustasime esmaspäeval."
+   ],
+   "answer": 0,
+   "explanation_ru": "Saabub и alustame указывают на открытое условие о будущем."
+  },
+  {
+   "id": "g-conditional-advanced-9",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Kui nad oleksid mõõtmist korranud, oleksid nad ___ viga varem märgata.",
+   "type": "input",
+   "hint": "(võima, -nud)",
+   "answer": "võinud",
+   "explanation_ru": "Oleksid võinud маркирует нереализованную возможность."
+  },
+  {
+   "id": "g-conditional-advanced-10",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "prompt_et": "Milline ümbersõnastus säilitab väite „Viga võis tekkida andmete sisestamisel”?",
+   "type": "choice",
+   "options": [
+    "Viga tekkis sisestamisel.",
+    "Üks võimalik vea tekkekoht on andmete sisestamine.",
+    "Andmete sisestamisel viga kindlasti ei tekkinud."
+   ],
+   "answer": 1,
+   "explanation_ru": "Сохраняется лишь одна возможность, без утверждения установленной причины."
   }
  ]
 }

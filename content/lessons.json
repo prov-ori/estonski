@@ -1223,6 +1223,237 @@
    ],
    "practice": "grammar/cases",
    "explanation_ru": "Падеж после глагола нужно учить вместе с глаголом."
+  },
+  {
+   "id": "ls-object-b2",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Дополнение и завершённость действия",
+   "intro_ru": "Как выбрать форму дополнения, если действие закончено, ещё идёт или отрицается.",
+   "sections": [
+    {
+     "h": "Процесс и результат",
+     "p": [
+      "Партитив часто показывает процесс, неопределённое количество или действие без заявленного результата. Для глаголов, допускающих полное дополнение, в утвердительном предложении важны оба признака: действие ведёт к результату, а предмет или количество рассматриваются целиком."
+     ],
+     "examples": [
+      {
+       "et": "Kaur kirjutas aruannet, kui telefon helises.",
+       "ru": "Каур писал отчёт, когда зазвонил телефон."
+      },
+      {
+       "et": "Kaur kirjutas aruande valmis.",
+       "ru": "Каур дописал отчёт."
+      }
+     ]
+    },
+    {
+     "h": "Отрицание и форма полного дополнения",
+     "p": [
+      "При обычном отрицании дополнение ставится в партитиве. Полное дополнение в утвердительной фразе может стоять в генитиве или номинативе: сравните обычное личное предложение, прямую команду и безличную конструкцию."
+     ],
+     "examples": [
+      {
+       "et": "Kaur ei kirjutanud aruannet.",
+       "ru": "Каур не написал отчёт."
+      },
+      {
+       "et": "Kirjuta aruanne valmis!",
+       "ru": "Допиши отчёт!"
+      },
+      {
+       "et": "Aruanne kirjutati valmis.",
+       "ru": "Отчёт дописали."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Kaur ei esitanud taotluse.",
+     "right": "Kaur ei esitanud taotlust.",
+     "why": "Обычное отрицание требует партитива."
+    },
+    {
+     "wrong": "Loe selle peatüki lõpuni!",
+     "right": "Loe see peatükk lõpuni!",
+     "why": "В прямой команде полное дополнение здесь в номинативе."
+    }
+   ],
+   "practice": "grammar/cases/B2",
+   "reference_url": "https://eki.ee/teatmik/osasihitis-ja-taissihitis/",
+   "explanation_ru": "Как выбрать форму дополнения, если действие закончено, ещё идёт или отрицается."
+  },
+  {
+   "id": "ls-reported-b2",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Как передать чужие слова",
+   "intro_ru": "Формы на -vat, прошедшее время и разница между пересказом и собственным утверждением.",
+   "sections": [
+    {
+     "h": "Сообщение со слов другого человека",
+     "p": [
+      "Форма на -vat помогает обозначить, что говорящий передаёт полученное сообщение. Можно также назвать источник и построить нейтральную фразу с ütles, et. Сам выбор -vat не доказывает, что сообщение ложно."
+     ],
+     "examples": [
+      {
+       "et": "Saal olevat juba lahti.",
+       "ru": "Говорят, зал уже открыт."
+      },
+      {
+       "et": "Korraldaja ütles, et saal on juba lahti.",
+       "ru": "Организатор сказал, что зал уже открыт."
+      }
+     ]
+    },
+    {
+     "h": "Событие уже произошло",
+     "p": [
+      "В этом уроке для прошедшего времени используем сочетание olevat с причастием на -nud или -tud. Контекст показывает, произошло ли событие или ещё планируется."
+     ],
+     "examples": [
+      {
+       "et": "Koosolek olevat lõppenud kell viis.",
+       "ru": "Говорят, заседание закончилось в пять."
+      },
+      {
+       "et": "Leping olevat eile allkirjastatud.",
+       "ru": "Сообщают, что договор подписали вчера."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Saal olevad täna suletud.",
+     "right": "Saal olevat täna suletud.",
+     "why": "Передаваемое сообщение выражает olevat."
+    },
+    {
+     "wrong": "Töö olevat eile lõpetada.",
+     "right": "Töö olevat eile lõpetatud.",
+     "why": "Завершённое действие в безличной конструкции выражено причастием lõpetatud."
+    }
+   ],
+   "practice": "grammar/verbs/B2",
+   "reference_url": "https://arhiiv.eki.ee/books/ekk09/index.php?link=M_95",
+   "explanation_ru": "Формы на -vat, прошедшее время и разница между пересказом и собственным утверждением."
+  },
+  {
+   "id": "ls-concession-c1",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Уступка, условие и необходимое условие",
+   "intro_ru": "Научитесь различать «хотя», «даже если» и «только если» в сложном аргументе.",
+   "sections": [
+    {
+     "h": "Признанный факт или возможное препятствие",
+     "p": [
+      "Kuigi и ehkki вводят уступку. В типичном контексте автор признаёт указанное обстоятельство. Isegi kui позволяет представить возможное препятствие и показать, что вывод сохраняется и при нём."
+     ],
+     "examples": [
+      {
+       "et": "Kuigi saal oli väike, mahtusid kõik sisse.",
+       "ru": "Хотя зал был маленьким, все поместились."
+      },
+      {
+       "et": "Isegi kui saal osutub väikeseks, leiame lahenduse.",
+       "ru": "Даже если зал окажется маленьким, найдём решение."
+      }
+     ]
+    },
+    {
+     "h": "Только если",
+     "p": [
+      "Ainult juhul, kui задаёт необходимое условие. Его выполнение само по себе не означает, что решение гарантировано."
+     ],
+     "examples": [
+      {
+       "et": "Avaldame faili ainult juhul, kui autor on nõus.",
+       "ru": "Опубликуем файл только при согласии автора."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Isegi saal on väike, leiame lahenduse.",
+     "right": "Isegi kui saal on väike, leiame lahenduse.",
+     "why": "Для придаточного условия в этой конструкции нужен kui."
+    },
+    {
+     "wrong": "Avaldame faili ainult juhul, et autor on nõus.",
+     "right": "Avaldame faili ainult juhul, kui autor on nõus.",
+     "why": "В конструкции juhul, kui употребляется союз kui."
+    }
+   ],
+   "practice": "grammar/conjunctions/C1",
+   "reference_url": "https://arhiiv.eki.ee/dict/ekss/index.cgi?Q=kuigi",
+   "explanation_ru": "Научитесь различать «хотя», «даже если» и «только если» в сложном аргументе."
+  },
+  {
+   "id": "ls-conditional-c1",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Контрфактическое условие и осторожный вывод",
+   "intro_ru": "Различайте предположение о будущем, нереализованную возможность в прошлом и вывод из данных.",
+   "sections": [
+    {
+     "h": "Гипотеза о настоящем или будущем",
+     "p": [
+      "Формы на -ks помогают представить возможный или воображаемый сценарий. Контекст задаёт, насколько он реален."
+     ],
+     "examples": [
+      {
+       "et": "Kui teenus oleks odavam, kasutaks seda rohkem inimesi.",
+       "ru": "Если бы услуга была дешевле, ею пользовалось бы больше людей."
+      }
+     ]
+    },
+    {
+     "h": "Гипотеза о прошлом",
+     "p": [
+      "Oleks с причастием на -nud или -tud позволяет обсуждать прошлое, которое могло сложиться иначе. Указание времени и соседние фразы отличают такой сценарий от сообщения о случившемся."
+     ],
+     "examples": [
+      {
+       "et": "Kui kutse oleks varem saadetud, oleks rohkem inimesi tulnud.",
+       "ru": "Если бы приглашение отправили раньше, пришло бы больше людей."
+      }
+     ]
+    },
+    {
+     "h": "Степень уверенности",
+     "p": [
+      "Võis и võinuks выражают возможность. Они не превращают предлагаемую причину в установленный факт. В аналитическом тексте это различие особенно важно."
+     ],
+     "examples": [
+      {
+       "et": "Viivitus võis tulemust mõjutada.",
+       "ru": "Задержка могла повлиять на результат."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Kui kutse oleks saadeti varem, oleks tulnud rohkem inimesi.",
+     "right": "Kui kutse oleks saadetud varem, oleks tulnud rohkem inimesi.",
+     "why": "После oleks здесь требуется причастие saadetud."
+    },
+    {
+     "wrong": "Kui oleksime teadnud, oleksime plaani muutma.",
+     "right": "Kui oleksime teadnud, oleksime plaani muutnud.",
+     "why": "Прошедшая условная форма требует причастия muutnud."
+    }
+   ],
+   "practice": "grammar/transform/C1",
+   "explanation_ru": "Различайте предположение о будущем, нереализованную возможность в прошлом и вывод из данных."
   }
  ]
 }

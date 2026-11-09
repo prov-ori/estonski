@@ -376,6 +376,186 @@
     "Ma lugesin eile raamatu."
    ],
    "explanation_ru": "Объект — партитив (raamatut) или родительный (raamatu, если прочитал до конца)."
+  },
+  {
+   "id": "fx-advanced-1",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Komisjon ei kinnitanud uue ajakava.",
+   "answer_et": "Komisjon ei kinnitanud uut ajakava.",
+   "explanation_ru": "При отрицании полное дополнение заменяется партитивом."
+  },
+  {
+   "id": "fx-advanced-2",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Saada see dokumenti mulle täna õhtuks!",
+   "answer_et": "Saada see dokument mulle täna õhtuks!",
+   "explanation_ru": "Документ отправляется целиком: в прямой команде номинатив see dokument."
+  },
+  {
+   "id": "fx-advanced-3",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Korraldaja sõltub vabatahtlike abile.",
+   "answer_et": "Korraldaja sõltub vabatahtlike abist.",
+   "explanation_ru": "Sõltuma millest? требует элатива."
+  },
+  {
+   "id": "fx-advanced-4",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Toimetaja pööras tähelepanu raporti viimast lõiku.",
+   "answer_et": "Toimetaja pööras tähelepanu raporti viimasele lõigule.",
+   "explanation_ru": "Pöörama tähelepanu millele? требует аллатива."
+  },
+  {
+   "id": "fx-advanced-5",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Osalejad harjusid muutunud töökorraldusele.",
+   "answer_et": "Osalejad harjusid muutunud töökorraldusega.",
+   "explanation_ru": "Harjuma millega? требует комитатива."
+  },
+  {
+   "id": "fx-advanced-6",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Palun teatage mulle eelseisvast muudatusele.",
+   "answer_et": "Palun teatage mulle eelseisvast muudatusest.",
+   "explanation_ru": "Teatama millest? Согласуйте существительное с eelseisvast в элативе."
+  },
+  {
+   "id": "fx-advanced-7",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Juhend oli selge kuid näiteid oli vähe.",
+   "answer_et": "Juhend oli selge, kuid näiteid oli vähe.",
+   "explanation_ru": "Перед противительным союзом kuid ставится запятая."
+  },
+  {
+   "id": "fx-advanced-8",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Pärast koosolek saadeti osalejatele kokkuvõte.",
+   "answer_et": "Pärast koosolekut saadeti osalejatele kokkuvõte.",
+   "explanation_ru": "В этом временном обороте pärast требует партитива."
+  },
+  {
+   "id": "fx-advanced-9",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Ta olevad eile linnast lahkunud.",
+   "answer_et": "Ta olevat eile linnast lahkunud.",
+   "explanation_ru": "Косвенное наклонение: olevat lahkunud."
+  },
+  {
+   "id": "fx-advanced-10",
+   "topic": "errors",
+   "level": "B2",
+   "status": "draft",
+   "wrong_et": "Meil õnnestus õigeks ajaks kohale jõudma.",
+   "answer_et": "Meil õnnestus õigeks ajaks kohale jõuda.",
+   "explanation_ru": "После õnnestus используется da-инфинитив."
+  },
+  {
+   "id": "fx-advanced-11",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Kui juhend oleks õigel ajal avaldati, oleks segadust olnud vähem.",
+   "answer_et": "Kui juhend oleks õigel ajal avaldatud, oleks segadust olnud vähem.",
+   "explanation_ru": "Прошедшая условная безличная форма: oleks avaldatud."
+  },
+  {
+   "id": "fx-advanced-12",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Tulemusi võrreldi varasemate hinnangutele.",
+   "answer_et": "Tulemusi võrreldi varasemate hinnangutega.",
+   "explanation_ru": "Võrdlema midagi millegagi требует комитатива у второго объекта сравнения."
+  },
+  {
+   "id": "fx-advanced-13",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Vastus avaldatakse ainult juhul, et autor annab nõusoleku.",
+   "answer_et": "Vastus avaldatakse ainult juhul, kui autor annab nõusoleku.",
+   "explanation_ru": "Исправьте союз после juhul."
+  },
+  {
+   "id": "fx-advanced-14",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Isegi valim oleks suurem, ei saaks sellest põhjuslikku seost järeldada.",
+   "answer_et": "Isegi kui valim oleks suurem, ei saaks sellest põhjuslikku seost järeldada.",
+   "explanation_ru": "В уступительном условии даже если нужна конструкция isegi kui."
+  },
+  {
+   "id": "fx-advanced-15",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Hoolimata sellest et vastuseid laekus vähe, tehti kokkuvõte.",
+   "answer_et": "Hoolimata sellest, et vastuseid laekus vähe, tehti kokkuvõte.",
+   "explanation_ru": "Запятая разделяет sellest и придаточное с et."
+  },
+  {
+   "id": "fx-advanced-16",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Arvamust ei saa üldistada kõiki elanikke.",
+   "answer_et": "Arvamust ei saa üldistada kõigile elanikele.",
+   "explanation_ru": "Üldistama midagi kellele? Здесь речь о распространении вывода на группу."
+  },
+  {
+   "id": "fx-advanced-17",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Me ei ole veendunud selle meetme tõhususele.",
+   "answer_et": "Me ei ole veendunud selle meetme tõhususes.",
+   "explanation_ru": "Veendunud milles? Здесь нужен инессив."
+  },
+  {
+   "id": "fx-advanced-18",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Otsuse tegemisel tuleb arvestada, et kasu ei jagune kõigi osalejatele võrdselt.",
+   "answer_et": "Otsuse tegemisel tuleb arvestada, et kasu ei jagune kõigile osalejatele võrdselt.",
+   "explanation_ru": "Определение kõigile согласуется с osalejatele в аллативе."
+  },
+  {
+   "id": "fx-advanced-19",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Kui oleksime hilinemisest teadnud, oleksime valinud teist marsruuti.",
+   "answer_et": "Kui oleksime hilinemisest teadnud, oleksime valinud teise marsruudi.",
+   "explanation_ru": "Утвердительное условное наклонение допускает полное дополнение при завершённом выборе."
+  },
+  {
+   "id": "fx-advanced-20",
+   "topic": "errors",
+   "level": "C1",
+   "status": "draft",
+   "wrong_et": "Juhendaja olevat märkused lisama juba enne koosolekut.",
+   "answer_et": "Juhendaja olevat märkused lisanud juba enne koosolekut.",
+   "explanation_ru": "Сообщение о прошлом действии: olevat lisanud."
   }
  ]
 }

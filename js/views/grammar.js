@@ -3,6 +3,7 @@ import { runTrainer, prioritize } from '../trainer.js';
 import { store } from '../store.js';
 
 const SIZES = [['10', '10 заданий'], ['20', '20 заданий'], ['50', '50 заданий'], ['all', 'Все задания темы']];
+const LEVELS = [['B1-B2', 'B1–B2'], ['A2', 'A2'], ['B1', 'B1'], ['B2', 'B2'], ['C1', 'C1'], ['all', 'Все уровни']];
 
 export default {
   title: 'Грамматика',
@@ -11,7 +12,8 @@ export default {
     const topics = topicsCfg.grammar;
     const filter = args[0] || 'all';
     const all = data.items.filter((q) => q.kind !== 'vocab'); // словарные задания — в разделе «Словарь»
-    let size = '10', level = 'B1-B2', type = 'all', onlyNew = false;
+    let size = '10', type = 'all', onlyNew = false;
+    let level = LEVELS.some(([value]) => value === args[1]) ? args[1] : 'B1-B2';
 
     const countFor = (id) => all.filter((q) => q.topic === id).length;
     const missed = () => all.filter((q) => { const a = store.getAnswer(q.id); return a && !a.ok; });
@@ -55,7 +57,7 @@ export default {
         h('p', null, `В выбранной теме заданий: ${pool.length}`),
         h('div', { class: 'grid two' },
           mk('size', 'Размер сессии', SIZES, size, (v) => { size = v; }),
-          mk('level', 'Уровень', [['B1-B2', 'B1–B2'], ['B1', 'B1'], ['B2', 'B2'], ['all', 'Все уровни'], ['A2', 'A2']], level, (v) => { level = v; }),
+          mk('level', 'Уровень', LEVELS, level, (v) => { level = v; }),
           mk('type', 'Тип задания', [['all', 'Все типы'], ['choice', 'Выбор ответа'], ['input', 'Ввод с клавиатуры']], type, (v) => { type = v; })),
         h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: onlyNew, onchange: (e) => { onlyNew = e.target.checked; } }), h('span', null, 'Только новые задания (ещё не решались)')),
         h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать'))));

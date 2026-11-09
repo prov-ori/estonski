@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 4682. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 4901. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -138,7 +138,7 @@
 - `dk-61` — Ära unusta oma parooli!
 - `dk-62` — Saatsin sulle e-kirja, aga vastust ei tulnud.
 
-## fixes.json (77)
+## fixes.json (117)
 
 - `fx-01 (с ошибкой)` — Ma lähen koolis.
 - `fx-01` — Ma lähen kooli.
@@ -217,6 +217,46 @@
 - `fx-37 (с ошибкой)` — Ma lugesin eile raamat.
 - `fx-37` — Ma lugesin eile raamatut.
 - `fx-37 (вариант)` — Ma lugesin eile raamatu.
+- `fx-advanced-1 (с ошибкой)` — Komisjon ei kinnitanud uue ajakava.
+- `fx-advanced-1` — Komisjon ei kinnitanud uut ajakava.
+- `fx-advanced-2 (с ошибкой)` — Saada see dokumenti mulle täna õhtuks!
+- `fx-advanced-2` — Saada see dokument mulle täna õhtuks!
+- `fx-advanced-3 (с ошибкой)` — Korraldaja sõltub vabatahtlike abile.
+- `fx-advanced-3` — Korraldaja sõltub vabatahtlike abist.
+- `fx-advanced-4 (с ошибкой)` — Toimetaja pööras tähelepanu raporti viimast lõiku.
+- `fx-advanced-4` — Toimetaja pööras tähelepanu raporti viimasele lõigule.
+- `fx-advanced-5 (с ошибкой)` — Osalejad harjusid muutunud töökorraldusele.
+- `fx-advanced-5` — Osalejad harjusid muutunud töökorraldusega.
+- `fx-advanced-6 (с ошибкой)` — Palun teatage mulle eelseisvast muudatusele.
+- `fx-advanced-6` — Palun teatage mulle eelseisvast muudatusest.
+- `fx-advanced-7 (с ошибкой)` — Juhend oli selge kuid näiteid oli vähe.
+- `fx-advanced-7` — Juhend oli selge, kuid näiteid oli vähe.
+- `fx-advanced-8 (с ошибкой)` — Pärast koosolek saadeti osalejatele kokkuvõte.
+- `fx-advanced-8` — Pärast koosolekut saadeti osalejatele kokkuvõte.
+- `fx-advanced-9 (с ошибкой)` — Ta olevad eile linnast lahkunud.
+- `fx-advanced-9` — Ta olevat eile linnast lahkunud.
+- `fx-advanced-10 (с ошибкой)` — Meil õnnestus õigeks ajaks kohale jõudma.
+- `fx-advanced-10` — Meil õnnestus õigeks ajaks kohale jõuda.
+- `fx-advanced-11 (с ошибкой)` — Kui juhend oleks õigel ajal avaldati, oleks segadust olnud vähem.
+- `fx-advanced-11` — Kui juhend oleks õigel ajal avaldatud, oleks segadust olnud vähem.
+- `fx-advanced-12 (с ошибкой)` — Tulemusi võrreldi varasemate hinnangutele.
+- `fx-advanced-12` — Tulemusi võrreldi varasemate hinnangutega.
+- `fx-advanced-13 (с ошибкой)` — Vastus avaldatakse ainult juhul, et autor annab nõusoleku.
+- `fx-advanced-13` — Vastus avaldatakse ainult juhul, kui autor annab nõusoleku.
+- `fx-advanced-14 (с ошибкой)` — Isegi valim oleks suurem, ei saaks sellest põhjuslikku seost järeldada.
+- `fx-advanced-14` — Isegi kui valim oleks suurem, ei saaks sellest põhjuslikku seost järeldada.
+- `fx-advanced-15 (с ошибкой)` — Hoolimata sellest et vastuseid laekus vähe, tehti kokkuvõte.
+- `fx-advanced-15` — Hoolimata sellest, et vastuseid laekus vähe, tehti kokkuvõte.
+- `fx-advanced-16 (с ошибкой)` — Arvamust ei saa üldistada kõiki elanikke.
+- `fx-advanced-16` — Arvamust ei saa üldistada kõigile elanikele.
+- `fx-advanced-17 (с ошибкой)` — Me ei ole veendunud selle meetme tõhususele.
+- `fx-advanced-17` — Me ei ole veendunud selle meetme tõhususes.
+- `fx-advanced-18 (с ошибкой)` — Otsuse tegemisel tuleb arvestada, et kasu ei jagune kõigi osalejatele võrdselt.
+- `fx-advanced-18` — Otsuse tegemisel tuleb arvestada, et kasu ei jagune kõigile osalejatele võrdselt.
+- `fx-advanced-19 (с ошибкой)` — Kui oleksime hilinemisest teadnud, oleksime valinud teist marsruuti.
+- `fx-advanced-19` — Kui oleksime hilinemisest teadnud, oleksime valinud teise marsruudi.
+- `fx-advanced-20 (с ошибкой)` — Juhendaja olevat märkused lisama juba enne koosolekut.
+- `fx-advanced-20` — Juhendaja olevat märkused lisanud juba enne koosolekut.
 
 ## forms.json (80)
 
@@ -301,7 +341,7 @@
 - `f-v-39` — jooksma: jooksma, joosta, jooksen, jookseb, jooksin, jooksnud, jookse
 - `f-v-40` — ujuma: ujuma, ujuda, ujun, ujub, ujusin, ujunud, uju
 
-## grammar.json (675)
+## grammar.json (768)
 
 - `g-cases-01` — Ma lähen homme kooli.
 - `g-cases-02` — Raamat on laua peal.
@@ -978,8 +1018,101 @@
 - `g-gov-05` — Ma kardan pimedust.
 - `g-gov-06` — Ma aitan venda.
 - `g-gov-07` — Ma armastan muusikat.
+- `g-object-advanced-1` — Projektijuht luges aruande läbi.
+- `g-object-advanced-2` — Projektijuht ei lugenud aruannet läbi.
+- `g-object-advanced-3` — Kinnita tellimus kohe!
+- `g-object-advanced-4` — tellimus kinnitati eile.
+- `g-object-advanced-5` — Laps sõi võileiva ära.
+- `g-object-advanced-6` — Ma kuulasin saadet, kui buss peatus.
+- `g-object-advanced-7` — Milline lause ütleb, et töö sai valmis?
+- `g-object-advanced-7 (вариант)` — Ta parandas jalgratast.
+- `g-object-advanced-7 (вариант)` — Ta parandas jalgratta ära.
+- `g-object-advanced-7 (вариант)` — Ta hakkas jalgratast parandama.
+- `g-object-advanced-8` — Milline lause kirjeldab tegevust selle kestel?
+- `g-object-advanced-8 (вариант)` — Ta pakkis kohvri kokku.
+- `g-object-advanced-8 (вариант)` — Ta pani kohvri esikusse.
+- `g-object-advanced-8 (вариант)` — Ta pakkis kohvrit, kui ma helistasin.
+- `g-object-advanced-9` — Aknad pesti enne koosolekut puhtaks. Mis vormis on täissihitis?
+- `g-object-advanced-10` — Loe see artikkel lõpuni ja anna teada, mida arvad.
+- `g-reported-advanced-1` — Kuuldavasti olevat saal täna avatud.
+- `g-reported-advanced-2` — Kuuldavasti väljuvat rong varem kui tavaliselt.
+- `g-reported-advanced-3` — Kuuldavasti olevat ta juba Tartusse jõudnud.
+- `g-reported-advanced-4` — Kava olevat eelmisel nädalal kinnitatud.
+- `g-reported-advanced-5` — Millises lauses annab kõneleja info edasi kaudses kõneviisis?
+- `g-reported-advanced-5 (вариант)` — Rong väljub kell seitse.
+- `g-reported-advanced-5 (вариант)` — Rong väljuvat kell seitse.
+- `g-reported-advanced-5 (вариант)` — Rong väljuks kell seitse.
+- `g-reported-advanced-6` — Milline lause vahendab teadet juba toimunud sündmusest?
+- `g-reported-advanced-6 (вариант)` — Arutelu algab homme.
+- `g-reported-advanced-6 (вариант)` — Arutelu algavat varsti.
+- `g-reported-advanced-6 (вариант)` — Arutelu olevat alanud enne lõunat.
+- `g-reported-advanced-7` — Milline lause nimetab otseselt teate allika?
+- `g-reported-advanced-7 (вариант)` — Valvur ütles, et uks on lukus.
+- `g-reported-advanced-7 (вариант)` — Uks olevat lukus.
+- `g-reported-advanced-7 (вариант)` — Uks näib lukus olevat.
+- `g-reported-advanced-8` — Vastuse saatmise kohta öeldi: „Vastus saadeti eile.” Milline lause vahendab sama sündmust kaudses kõneviisis?
+- `g-reported-advanced-8 (вариант)` — Vastus saadetaks homme.
+- `g-reported-advanced-8 (вариант)` — Vastus olevat eile saadetud.
+- `g-reported-advanced-8 (вариант)` — Vastus saadetakse praegu.
+- `g-reported-advanced-9` — Meeskond olevat eelmisel kuul uue korra kehtestanud.
+- `g-reported-advanced-10` — Mida saab järeldada lausest „Töötuba olevat ära jäänud”?
+- `g-reported-advanced-10 (вариант)` — Kõneleja oli ise tühistamise juures.
+- `g-reported-advanced-10 (вариант)` — Teade osutus kindlasti valeks.
+- `g-reported-advanced-10 (вариант)` — Kõneleja vahendab infot töötoa ärajäämise kohta.
+- `g-concession-advanced-1` — kuigi andmed on puudulikud, võib esimese hinnangu siiski avaldada.
+- `g-concession-advanced-1 (вариант)` — ehkki
+- `g-concession-advanced-1 (вариант)` — olgugi et
+- `g-concession-advanced-2` — isegi kui hind järgmisel kuul tõuseb, jääb meie soovitus samaks.
+- `g-concession-advanced-3` — Leping jõustub ainult juhul, kui mõlemad pooled sellele alla kirjutavad.
+- `g-concession-advanced-4` — Pakkumine kehtib tingimusel, et kaup võetakse vastu reedel.
+- `g-concession-advanced-5` — Milline lause tunnistab, et proov kestis vähe aega?
+- `g-concession-advanced-5 (вариант)` — Isegi kui proov kestaks vähe aega, koguksime andmeid.
+- `g-concession-advanced-5 (вариант)` — Kuigi proov kestis vähe aega, jõuti andmeid koguda.
+- `g-concession-advanced-5 (вариант)` — Kui proov kestaks vähe aega, lükkaksime otsuse edasi.
+- `g-concession-advanced-6` — „Toetust antakse ainult juhul, kui taotlus on täielik.” Mida saab sellest järeldada?
+- `g-concession-advanced-6 (вариант)` — Iga täielik taotlus saab toetuse.
+- `g-concession-advanced-6 (вариант)` — Täielik taotlus ei mõjuta otsust.
+- `g-concession-advanced-6 (вариант)` — Puuduliku taotluse korral toetust ei anta.
+- `g-concession-advanced-7` — „Isegi kui vastajaid on vähe, avaldame tulemuse koos piirangutega.” Mida lause kinnitab?
+- `g-concession-advanced-7 (вариант)` — Tulemuse avaldamine ei sõltu sellest, kas vastajaid on vähe.
+- `g-concession-advanced-7 (вариант)` — Vastajaid on kindlasti vähe.
+- `g-concession-advanced-7 (вариант)` — Piiranguid kirjeldatakse ainult suure valimi korral.
+- `g-concession-advanced-8` — Milline lause jätab ajakava muutmise võimaluse alles, kuid nõuab enne kokkulepet?
+- `g-concession-advanced-8 (вариант)` — Muudame ajakava hoolimata kokkuleppest.
+- `g-concession-advanced-8 (вариант)` — Muudame ajakava ainult siis, kui pooled on kokku leppinud.
+- `g-concession-advanced-8 (вариант)` — Kokkulepe tähendab, et ajakava on juba muudetud.
+- `g-concession-advanced-9` — Muudatus jääb jõusse hoolimata sellest, et osa kasutajaid eelistab varasemat korda.
+- `g-concession-advanced-10` — Milline lause säilitab mõtte „Erand ei muuda üldreeglit ka siis, kui seda kasutatakse sageli”?
+- `g-concession-advanced-10 (вариант)` — Erand muudab üldreeglit, kui seda kasutatakse sageli.
+- `g-concession-advanced-10 (вариант)` — Üldreegel kehtib ainult juhul, kui erandit ei kasutata.
+- `g-concession-advanced-10 (вариант)` — Isegi kui erandit kasutatakse sageli, jääb üldreegel samaks.
+- `g-conditional-advanced-1` — Kui kutse oleks varem saadetud, oleks rohkem inimesi tulnud.
+- `g-conditional-advanced-2` — Kui oleksime veast teadnud, oleksime juhendit muutnud.
+- `g-conditional-advanced-3` — Kui saal oleks suurem, mahuks sinna veel üks rühm.
+- `g-conditional-advanced-4` — Kui proovi oleks korratud, oleks tulemus võinud erineda.
+- `g-conditional-advanced-5` — Milline lause kirjeldab täitmata jäänud võimalust minevikus?
+- `g-conditional-advanced-5 (вариант)` — Koosolek algas hiljem.
+- `g-conditional-advanced-5 (вариант)` — Kui teade oleks jõudnud õigel ajal, oleks koosolek alanud varem.
+- `g-conditional-advanced-5 (вариант)` — Kui teade jõuab õigel ajal, algab koosolek varem.
+- `g-conditional-advanced-6` — Milline väide väljendab võimalikku põhjust seda kindlaks kuulutamata?
+- `g-conditional-advanced-6 (вариант)` — Hinnamuutus põhjustas languse.
+- `g-conditional-advanced-6 (вариант)` — Langus tõestab hinnamuutuse mõju.
+- `g-conditional-advanced-6 (вариант)` — Hinnamuutus võis langusele kaasa aidata.
+- `g-conditional-advanced-7` — Mida ütleb lause „Ilma toetuseta oleks projekt võinud katkeda”?
+- `g-conditional-advanced-7 (вариант)` — Katkemine oleks olnud võimalik, kuid polnud vältimatu.
+- `g-conditional-advanced-7 (вариант)` — Projekt katkes kindlasti.
+- `g-conditional-advanced-7 (вариант)` — Toetus tekitas katkestuse.
+- `g-conditional-advanced-8` — Milline lause jätab tulevase tingimuse veel avatuks?
+- `g-conditional-advanced-8 (вариант)` — Kui luba saabub reedeks, alustame esmaspäeval.
+- `g-conditional-advanced-8 (вариант)` — Kui luba oleks reedeks saabunud, oleksime alustanud esmaspäeval.
+- `g-conditional-advanced-8 (вариант)` — Luba saabus ja me alustasime esmaspäeval.
+- `g-conditional-advanced-9` — Kui nad oleksid mõõtmist korranud, oleksid nad võinud viga varem märgata.
+- `g-conditional-advanced-10` — Milline ümbersõnastus säilitab väite „Viga võis tekkida andmete sisestamisel”?
+- `g-conditional-advanced-10 (вариант)` — Viga tekkis sisestamisel.
+- `g-conditional-advanced-10 (вариант)` — Üks võimalik vea tekkekoht on andmete sisestamine.
+- `g-conditional-advanced-10 (вариант)` — Andmete sisestamisel viga kindlasti ei tekkinud.
 
-## lessons.json (83)
+## lessons.json (99)
 
 - `ls-01 (неверно)` — Ma lähen koolis.
 - `ls-01 (верно)` — Ma lähen kooli.
@@ -1064,6 +1197,22 @@
 - `ls-20 (верно)` — Ma helistan sulle.
 - `ls-20 (неверно)` — Ma küsin õpetaja abi.
 - `ls-20 (верно)` — Ma küsin õpetajalt abi.
+- `ls-object-b2 (неверно)` — Kaur ei esitanud taotluse.
+- `ls-object-b2 (верно)` — Kaur ei esitanud taotlust.
+- `ls-object-b2 (неверно)` — Loe selle peatüki lõpuni!
+- `ls-object-b2 (верно)` — Loe see peatükk lõpuni!
+- `ls-reported-b2 (неверно)` — Saal olevad täna suletud.
+- `ls-reported-b2 (верно)` — Saal olevat täna suletud.
+- `ls-reported-b2 (неверно)` — Töö olevat eile lõpetada.
+- `ls-reported-b2 (верно)` — Töö olevat eile lõpetatud.
+- `ls-concession-c1 (неверно)` — Isegi saal on väike, leiame lahenduse.
+- `ls-concession-c1 (верно)` — Isegi kui saal on väike, leiame lahenduse.
+- `ls-concession-c1 (неверно)` — Avaldame faili ainult juhul, et autor on nõus.
+- `ls-concession-c1 (верно)` — Avaldame faili ainult juhul, kui autor on nõus.
+- `ls-conditional-c1 (неверно)` — Kui kutse oleks saadeti varem, oleks tulnud rohkem inimesi.
+- `ls-conditional-c1 (верно)` — Kui kutse oleks saadetud varem, oleks tulnud rohkem inimesi.
+- `ls-conditional-c1 (неверно)` — Kui oleksime teadnud, oleksime plaani muutma.
+- `ls-conditional-c1 (верно)` — Kui oleksime teadnud, oleksime plaani muutnud.
 
 ## listening.json (549)
 
@@ -1864,7 +2013,7 @@
 - `pr-phrases` — Tüdruk joob õunamahla.
 - `pr-phrases` — Ülesanne on päris raske.
 
-## reading.json (1590)
+## reading.json (1660)
 
 - `r-01 (развёрнутый вопрос 1)` — Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?
 - `r-01 (развёрнутый вопрос 2)` — Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.
@@ -3456,6 +3605,76 @@
 - `r-memory-q5 (вариант)` — Kogumik peaks käsitlema üksnes kõige edukamaid õpilasi
 - `r-memory-q5 (вариант)` — Juubeliks sobivad ainult ühesugused lood
 - `r-memory-q5 (вариант)` — Erinevad mälestused võivad aidata mõista, kellele kooli lahendused sobisid
+- `r-heat-b2 (развёрнутый вопрос 1)` — Võrrelge varjualust ja puud ühe lühiajalise ning ühe pikaajalise kriteeriumi järgi.
+- `r-heat-b2 (развёрнутый вопрос 2)` — Pakkuge üks viis koguda arvamusi inimestelt, kes veebiküsitlust ei näinud.
+- `r-heat-b2` — Kuidas valida varjukohta?
+- `r-heat-b2` — Ühes linnas paluti elanikel kaardile märkida kohad, kus suvel on kõige ebamugavam liikuda.
+- `r-heat-b2` — Kõige rohkem märke kogunes keskväljakule.
+- `r-heat-b2` — Seal toimusid üritused ning paljud inimesed oskasid täpselt näidata, kus nad päikese käes seisid.
+- `r-heat-b2` — Mõnele kõrvaltänavale ei tehtud peaaegu ühtki märget.
+- `r-heat-b2` — Esialgu tekkis mulje, et need tänavad ei vaja varju.
+- `r-heat-b2` — Linna töötaja läks ühel kuumal pärastlõunal märgitud kohtadesse ja vaatas ka lähedasi tänavaid.
+- `r-heat-b2` — Ta märkas, et apteegi ees seisid inimesed väljas järjekorras, kuid koht polnud kaardil märgitud.
+- `r-heat-b2` — Hiljem selgus, et osa külastajaid ei olnud veebiküsitlusest kuulnud.
+- `r-heat-b2` — Üks apteegi töötaja lisas, et inimesed vajavad varju ka ajal, mil väljakul ühtegi üritust ei toimu.
+- `r-heat-b2` — Linn võrdles kahte lahendust: teisaldatavaid varjualuseid ning puude istutamist.
+- `r-heat-b2` — Varjualuseid saaks paigaldada juba sel suvel ja vajaduse korral ümber tõsta.
+- `r-heat-b2` — Puud annavad suuremat varju alles hiljem ning vajavad kasvuruumi, kuid sobivas kohas pakuvad nad varju pikemat aega.
+- `r-heat-b2` — Ühegi meetme puhul ei piisa ainult sellest, et kaardile ilmub uus märk.
+- `r-heat-b2` — Tuleb vaadata, kas inimesed saavad varjulises kohas päriselt oodata ja kas seal on vaba läbipääs.
+- `r-heat-b2` — Esimeseks suveks valiti kaks erinevat kohta: üks suure väljakuga ja teine apteegi lähedal.
+- `r-heat-b2` — Mõlemas jälgitakse, kui palju inimesi eri kellaaegadel varju kasutab.
+- `r-heat-b2` — Korraldajad loodavad selle põhjal mõista, kas varju on vaja eelkõige lühikese rahvarohke sündmuse ajal või ka igapäevaseks asjaajamiseks.
+- `r-heat-q1` — Miks kogunes väljakule palju märke?
+- `r-heat-q1 (вариант)` — Seal toimusid üritused ja elanikel oli konkreetne kogemus
+- `r-heat-q1 (вариант)` — Seal asus ainus apteek
+- `r-heat-q1 (вариант)` — Linn kogus vastuseid ainult väljakul
+- `r-heat-q2` — Mida näitas töötaja käik apteegi juurde?
+- `r-heat-q2 (вариант)` — Apteeki külastati ainult ürituste ajal
+- `r-heat-q2 (вариант)` — Ka märkimata kohas võis inimestel varju vaja minna
+- `r-heat-q2 (вариант)` — Veebiküsitluses osalesid kõik järjekorras seisjad
+- `r-heat-q3` — Teisaldatavat varjualust saab vajaduse korral mujale viia.
+- `r-heat-q4` — Apteek maksis uue varjualuse eest.
+- `r-heat-q5` — Miks võrreldakse eri kellaaegu ja erinevaid kohti?
+- `r-heat-q5 (вариант)` — Et leida kõige odavam materjal
+- `r-heat-q5 (вариант)` — Et otsustada, millal apteek peaks sulgema
+- `r-heat-q5 (вариант)` — Et eristada ürituste ja igapäevase tegevuse vajadusi
+- `r-summary-c1 (развёрнутый вопрос 1)` — Sõnastage juhatusele kaks lauset: üks tulemuse kohta ja teine selle piiri kohta.
+- `r-summary-c1 (развёрнутый вопрос 2)` — Pakkuge oma valdkonnast näide, kus vähemuse tähelepanek muudab otsuse tingimusi.
+- `r-summary-c1` — Kokkuvõte, mis muudab otsust
+- `r-summary-c1` — Kujutlegem töörühma, kes peab valima uue dokumendihalduse lahenduse.
+- `r-summary-c1` — Kuus inimest proovivad kaht programmi ja kirjutavad oma kogemusest.
+- `r-summary-c1` — Esimese programmi kohta saadakse rohkem positiivseid hinnanguid: tavatoimingud on selles kiired ja liides tundub tuttav.
+- `r-summary-c1` — Teise programmi kohta on arvamused ebaühtlasemad, kuid kaks töötajat märgivad, et neil õnnestus seal kasutada klaviatuuri toiminguteks, mille puhul esimeses programmis oli vaja hiirt.
+- `r-summary-c1` — Koosoleku kokkuvõttes kirjutab sekretär, et enamik katsetajaid eelistas esimest programmi.
+- `r-summary-c1` — Lause vastab laekunud hinnangutele, kuid juhatuse jaoks jääb sellest varju, milliseid ülesandeid inimesed tegid.
+- `r-summary-c1` — Kahe töötaja tähelepanek võib otsust oluliselt muuta, kui klaviatuuriga ligipääs on tingimus, millele lahendus peab vastama.
+- `r-summary-c1` — Kui seda käsitleda lihtsalt kahe inimese eelistusena, võrreldakse omavahel küsimusi, millel on erinev kaal.
+- `r-summary-c1` — Üks töörühma liige pakub välja, et protokollis tuleks kirja panna kõik tähelepanekud.
+- `r-summary-c1` — See vähendaks ohtu, et midagi olulist kaob, kuid muudaks kokkuvõtte raskesti loetavaks.
+- `r-summary-c1` — Teine soovitab enne kirjutamist eristada otsuse tingimused ja võrdluskriteeriumid.
+- `r-summary-c1` — Lahendus, mis ei vasta vältimatule tingimusele, vajab parandust ka siis, kui see on enamiku jaoks mugav.
+- `r-summary-c1` — Mugavust saab omakorda võrrelda siis, kui mõlemad lahendused vastavad tingimustele.
+- `r-summary-c1` — Töörühm valib teise lähenemise ja lisab kokkuvõttesse ka ebakindluse põhjuse: igal osalejal ei olnud täpselt samu tööülesandeid.
+- `r-summary-c1` — Selle põhjal ei saa veel väita, et üks lahendus on alati kiirem.
+- `r-summary-c1` — Küll aga saab kavandada järgmise katse, kus kõik proovivad sama ülesannet ja osa osalejaid teeb selle ainult klaviatuuriga.
+- `r-summary-c1` — Selline katse ei lahenda kõiki valiku küsimusi, kuid võimaldab kontrollida asjaolu, mis eelmises kokkuvõttes jäi peaaegu märkamata.
+- `r-summary-c1` — Hea kokkuvõte on seega valik, ent see valik peab olema põhjendatav.
+- `r-summary-c1` — Kui üks tähelepanek muudab otsuse tingimusi, võib see vajada rohkem ruumi kui mitu sarnast arvamust.
+- `r-summary-q1` — Milline puudus on esimesel kokkuvõttel?
+- `r-summary-q1 (вариант)` — See varjab erinevust eelistuse ja võimaliku vältimatu tingimuse vahel
+- `r-summary-q1 (вариант)` — See muudab enamuse eelistuse vastupidiseks
+- `r-summary-q1 (вариант)` — See väidab, et katsetajad tegid samu ülesandeid
+- `r-summary-q2` — Miks ei ole kõigi tähelepanekute lisamine lõplik lahendus?
+- `r-summary-q2 (вариант)` — See tühistaks katse tulemuse
+- `r-summary-q2 (вариант)` — Otsustajal oleks raske olulist üles leida
+- `r-summary-q2 (вариант)` — Sellisel juhul ei tohiks enam teha uut katset
+- `r-summary-q3` — Kokkuvõtte põhjal tõestati, et esimene programm on iga ülesande puhul kiirem.
+- `r-summary-q4` — Mõlemad programmid maksid sama palju.
+- `r-summary-q5` — Mida võimaldab ühine ülesanne järgmises katses paremini kontrollida?
+- `r-summary-q5 (вариант)` — Kas osalejatel on sama ametinimetus
+- `r-summary-q5 (вариант)` — Milline programm on turul populaarsem
+- `r-summary-q5 (вариант)` — Kas erinevust saab näha võrreldavates töötingimustes
 
 ## sources.json (55)
 

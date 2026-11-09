@@ -4377,6 +4377,150 @@
      "rubric_ru": "Объясните, где заканчиваются выводы, допустимые по документам и воспоминаниям."
     }
    ]
+  },
+  {
+   "id": "r-heat-b2",
+   "topic": "nature",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Kuidas valida varjukohta?",
+   "title_ru": "Как выбрать место для тени?",
+   "text_et": "Ühes linnas paluti elanikel kaardile märkida kohad, kus suvel on kõige ebamugavam liikuda. Kõige rohkem märke kogunes keskväljakule. Seal toimusid üritused ning paljud inimesed oskasid täpselt näidata, kus nad päikese käes seisid. Mõnele kõrvaltänavale ei tehtud peaaegu ühtki märget. Esialgu tekkis mulje, et need tänavad ei vaja varju.\n\nLinna töötaja läks ühel kuumal pärastlõunal märgitud kohtadesse ja vaatas ka lähedasi tänavaid. Ta märkas, et apteegi ees seisid inimesed väljas järjekorras, kuid koht polnud kaardil märgitud. Hiljem selgus, et osa külastajaid ei olnud veebiküsitlusest kuulnud. Üks apteegi töötaja lisas, et inimesed vajavad varju ka ajal, mil väljakul ühtegi üritust ei toimu.\n\nLinn võrdles kahte lahendust: teisaldatavaid varjualuseid ning puude istutamist. Varjualuseid saaks paigaldada juba sel suvel ja vajaduse korral ümber tõsta. Puud annavad suuremat varju alles hiljem ning vajavad kasvuruumi, kuid sobivas kohas pakuvad nad varju pikemat aega. Ühegi meetme puhul ei piisa ainult sellest, et kaardile ilmub uus märk. Tuleb vaadata, kas inimesed saavad varjulises kohas päriselt oodata ja kas seal on vaba läbipääs.\n\nEsimeseks suveks valiti kaks erinevat kohta: üks suure väljakuga ja teine apteegi lähedal. Mõlemas jälgitakse, kui palju inimesi eri kellaaegadel varju kasutab. Korraldajad loodavad selle põhjal mõista, kas varju on vaja eelkõige lühikese rahvarohke sündmuse ajal või ka igapäevaseks asjaajamiseks.",
+   "explanation_ru": "Авторский учебный текст. Подкрепите выводы деталями из текста.",
+   "questions": [
+    {
+     "id": "r-heat-q1",
+     "prompt_et": "Miks kogunes väljakule palju märke?",
+     "type": "choice",
+     "options": [
+      "Seal toimusid üritused ja elanikel oli konkreetne kogemus",
+      "Seal asus ainus apteek",
+      "Linn kogus vastuseid ainult väljakul"
+     ],
+     "answer": 0,
+     "explanation_ru": "Многие могли отметить место, где стояли на солнце во время мероприятий."
+    },
+    {
+     "id": "r-heat-q2",
+     "prompt_et": "Mida näitas töötaja käik apteegi juurde?",
+     "type": "choice",
+     "options": [
+      "Apteeki külastati ainult ürituste ajal",
+      "Ka märkimata kohas võis inimestel varju vaja minna",
+      "Veebiküsitluses osalesid kõik järjekorras seisjad"
+     ],
+     "answer": 1,
+     "explanation_ru": "Отсутствие отметки не означало отсутствия потребности."
+    },
+    {
+     "id": "r-heat-q3",
+     "prompt_et": "Teisaldatavat varjualust saab vajaduse korral mujale viia.",
+     "type": "tf3",
+     "answer": true,
+     "explanation_ru": "В тексте это указано как преимущество."
+    },
+    {
+     "id": "r-heat-q4",
+     "prompt_et": "Apteek maksis uue varjualuse eest.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Оплата в тексте не обсуждается."
+    },
+    {
+     "id": "r-heat-q5",
+     "prompt_et": "Miks võrreldakse eri kellaaegu ja erinevaid kohti?",
+     "type": "choice",
+     "options": [
+      "Et leida kõige odavam materjal",
+      "Et otsustada, millal apteek peaks sulgema",
+      "Et eristada ürituste ja igapäevase tegevuse vajadusi"
+     ],
+     "answer": 2,
+     "explanation_ru": "Проверка показывает разные сценарии использования."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Võrrelge varjualust ja puud ühe lühiajalise ning ühe pikaajalise kriteeriumi järgi.",
+     "rubric_ru": "Назовите критерии и привяжите вывод к срокам или условиям места."
+    },
+    {
+     "prompt_et": "Pakkuge üks viis koguda arvamusi inimestelt, kes veebiküsitlust ei näinud.",
+     "rubric_ru": "Опишите способ и объясните, кого он позволит услышать."
+    }
+   ]
+  },
+  {
+   "id": "r-summary-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Kokkuvõte, mis muudab otsust",
+   "title_ru": "Резюме, которое меняет решение",
+   "text_et": "Kujutlegem töörühma, kes peab valima uue dokumendihalduse lahenduse. Kuus inimest proovivad kaht programmi ja kirjutavad oma kogemusest. Esimese programmi kohta saadakse rohkem positiivseid hinnanguid: tavatoimingud on selles kiired ja liides tundub tuttav. Teise programmi kohta on arvamused ebaühtlasemad, kuid kaks töötajat märgivad, et neil õnnestus seal kasutada klaviatuuri toiminguteks, mille puhul esimeses programmis oli vaja hiirt.\n\nKoosoleku kokkuvõttes kirjutab sekretär, et enamik katsetajaid eelistas esimest programmi. Lause vastab laekunud hinnangutele, kuid juhatuse jaoks jääb sellest varju, milliseid ülesandeid inimesed tegid. Kahe töötaja tähelepanek võib otsust oluliselt muuta, kui klaviatuuriga ligipääs on tingimus, millele lahendus peab vastama. Kui seda käsitleda lihtsalt kahe inimese eelistusena, võrreldakse omavahel küsimusi, millel on erinev kaal.\n\nÜks töörühma liige pakub välja, et protokollis tuleks kirja panna kõik tähelepanekud. See vähendaks ohtu, et midagi olulist kaob, kuid muudaks kokkuvõtte raskesti loetavaks. Teine soovitab enne kirjutamist eristada otsuse tingimused ja võrdluskriteeriumid. Lahendus, mis ei vasta vältimatule tingimusele, vajab parandust ka siis, kui see on enamiku jaoks mugav. Mugavust saab omakorda võrrelda siis, kui mõlemad lahendused vastavad tingimustele.\n\nTöörühm valib teise lähenemise ja lisab kokkuvõttesse ka ebakindluse põhjuse: igal osalejal ei olnud täpselt samu tööülesandeid. Selle põhjal ei saa veel väita, et üks lahendus on alati kiirem. Küll aga saab kavandada järgmise katse, kus kõik proovivad sama ülesannet ja osa osalejaid teeb selle ainult klaviatuuriga. Selline katse ei lahenda kõiki valiku küsimusi, kuid võimaldab kontrollida asjaolu, mis eelmises kokkuvõttes jäi peaaegu märkamata.\n\nHea kokkuvõte on seega valik, ent see valik peab olema põhjendatav. Kui üks tähelepanek muudab otsuse tingimusi, võib see vajada rohkem ruumi kui mitu sarnast arvamust.",
+   "explanation_ru": "Авторский учебный текст. Подкрепите выводы деталями из текста.",
+   "questions": [
+    {
+     "id": "r-summary-q1",
+     "prompt_et": "Milline puudus on esimesel kokkuvõttel?",
+     "type": "choice",
+     "options": [
+      "See varjab erinevust eelistuse ja võimaliku vältimatu tingimuse vahel",
+      "See muudab enamuse eelistuse vastupidiseks",
+      "See väidab, et katsetajad tegid samu ülesandeid"
+     ],
+     "answer": 0,
+     "explanation_ru": "Резюме отражает большинство, но скрывает разный вес замечаний."
+    },
+    {
+     "id": "r-summary-q2",
+     "prompt_et": "Miks ei ole kõigi tähelepanekute lisamine lõplik lahendus?",
+     "type": "choice",
+     "options": [
+      "See tühistaks katse tulemuse",
+      "Otsustajal oleks raske olulist üles leida",
+      "Sellisel juhul ei tohiks enam teha uut katset"
+     ],
+     "answer": 1,
+     "explanation_ru": "Исчерпывающий список без отбора затрудняет чтение."
+    },
+    {
+     "id": "r-summary-q3",
+     "prompt_et": "Kokkuvõtte põhjal tõestati, et esimene programm on iga ülesande puhul kiirem.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Задания различались, поэтому такого вывода сделать нельзя."
+    },
+    {
+     "id": "r-summary-q4",
+     "prompt_et": "Mõlemad programmid maksid sama palju.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Стоимость не приводится."
+    },
+    {
+     "id": "r-summary-q5",
+     "prompt_et": "Mida võimaldab ühine ülesanne järgmises katses paremini kontrollida?",
+     "type": "choice",
+     "options": [
+      "Kas osalejatel on sama ametinimetus",
+      "Milline programm on turul populaarsem",
+      "Kas erinevust saab näha võrreldavates töötingimustes"
+     ],
+     "answer": 2,
+     "explanation_ru": "Одинаковая задача делает условия сравнимыми."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Sõnastage juhatusele kaks lauset: üks tulemuse kohta ja teine selle piiri kohta.",
+     "rubric_ru": "Передайте предпочтение большинства и отдельно поясните, почему оно не решает вопрос доступности."
+    },
+    {
+     "prompt_et": "Pakkuge oma valdkonnast näide, kus vähemuse tähelepanek muudab otsuse tingimusi.",
+     "rubric_ru": "Укажите, что именно становится обязательным условием и почему подсчёта голосов недостаточно."
+    }
+   ]
   }
  ]
 }

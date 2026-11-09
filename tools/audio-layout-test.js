@@ -131,8 +131,22 @@ const server=http.createServer((req,res)=>{
     await levels.goto(base + '#/vocab');
     await levels.getByRole('navigation', { name: 'Уровни словаря' }).getByRole('link', { name: 'C1', exact: true }).click();
     await levels.getByRole('link', { name: 'Все (8)', exact: true }).waitFor();
+    await levels.goto(base + '#/lessons');
+    await levels.getByLabel('Уровень', { exact: true }).selectOption('C1');
+    assert.equal(await levels.locator('main .link-card').count(), 2);
+    await levels.locator('a[href="#/lessons/ls-conditional-c1"]').click();
+    await levels.getByRole('link', { name: 'Практика по теме', exact: true }).click();
+    const grammarLevel = levels.getByLabel('Уровень', { exact: true });
+    await grammarLevel.waitFor();
+    assert.equal(await grammarLevel.inputValue(), 'C1');
+    await levels.getByRole('button', { name: 'Начать', exact: true }).click();
+    await levels.getByText('Задание 1 из 10 · C1', { exact: true }).waitFor();
+    await levels.goto(base + '#/drills/fix');
+    await levels.getByLabel('Уровень', { exact: true }).selectOption('B2');
+    await levels.getByRole('button', { name: 'Начать (10 заданий)', exact: true }).click();
+    await levels.getByText('Задание 1 из 10 · B2', { exact: true }).waitFor();
     await levels.close();
-    console.log('PASS C1 filters expose listening, writing, speaking and vocabulary');
+    console.log('PASS advanced level filters and lesson-to-practice navigation');
 
     const progress = await browser.newPage({serviceWorkers:'block'});
     await progress.goto(base);

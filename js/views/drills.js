@@ -76,15 +76,23 @@ async function numbers(area) {
 // ---------- исправь ошибку ----------
 async function fixes(area) {
   const items = (await content('fixes')).items;
+  const levels = [...new Set(items.map((item) => item.level))].sort();
+  let level = 'all';
   const start = () => {
-    const qs = shuffle(items).slice(0, 10).map((x) => ({
+    const matching = level === 'all' ? items : items.filter((item) => item.level === level);
+    const qs = shuffle(matching).slice(0, 10).map((x) => ({
       id: x.id, topic: x.topic, level: x.level, status: x.status, type: 'input',
       prompt_et: `Paranda viga: ${x.wrong_et}`, answer: x.answer_et, also_ok: x.also_ok, explanation_ru: x.explanation_ru,
     }));
-    runTrainer(area, qs.map((q) => ({ q, module: 'drills' })), { again: start });
+    runTrainer(area, qs.map((q) => ({ q, module: 'drills' })), { again: start,
+      extraButtons: h('button', { class: 'btn', type: 'button', onclick: menu }, 'Изменить уровень') });
   };
-  setChildren(area, h('div', { class: 'card' }, h('p', null, 'В каждом предложении одна ошибка. Напечатайте всё предложение правильно (регистр и точка в конце не важны).'),
-    h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (10 заданий)'))));
+  function menu() {
+    setChildren(area, h('div', { class: 'card' }, h('p', null, 'В каждом предложении одна ошибка. Напечатайте всё предложение правильно (регистр и точка в конце не важны).'),
+      field('Уровень', 'fix-level', sel('fix-level', [['all', 'Все уровни'], ...levels.map((value) => [value, value])], level, (value) => { level = value; })),
+      h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: start }, 'Начать (10 заданий)'))));
+  }
+  menu();
 }
 
 // ---------- порядок слов ----------

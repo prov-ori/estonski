@@ -12,6 +12,8 @@ function reportText(topics, byMod, byTopic) {
   lines.push(`Серия занятий: ${store.streak()} дн.; ответов сегодня: ${store.todayCount()}`);
   const diag = store.getDiag();
   if (diag) lines.push(`Диагностика (${new Date(diag.ts).toLocaleDateString('ru-RU')}): ориентировочная зона ${diag.zoneLabel}, ${diag.got} из ${diag.max}`);
+  const advanced = store.getDiag(true);
+  if (advanced) lines.push(`Диагностика B2–C1 (${new Date(advanced.ts).toLocaleDateString('ru-RU')}): ${advanced.got} из ${advanced.max}`);
   lines.push('', 'По разделам (верно / всего):');
   Object.entries(byMod).forEach(([m, v]) => lines.push(`  ${MODNAME[m] || m}: ${v.r} / ${v.r + v.w}`));
   lines.push('', 'По темам, от слабых к сильным:');
@@ -79,6 +81,7 @@ export default {
       const missed = ans.filter(([, a]) => !a.ok).sort((a, b) => b[1].ts - a[1].ts).slice(0, 10);
       const cards = Object.values(store.state.cards);
       const diag = store.getDiag();
+      const advanced = store.getDiag(true);
       const mocks = store.getMock();
       const name = (t) => (topics.get(t) ? topics.get(t).name_ru : t);
       const link = (t) => { const g = topics.get(t)?.group; return g === 'grammar' ? `#/grammar/${t}` : g === 'themes' ? `#/vocab/${t}` : t === 'order' ? '#/drills/order' : t === 'dictation' ? '#/drills/dictation' : '#/drills'; };
@@ -94,7 +97,7 @@ export default {
 
       setChildren(root, 
         h('h1', null, 'Прогресс'),
-        !ans.length && !cards.length && !diag
+        !ans.length && !cards.length && !diag && !advanced
           ? h('p', { class: 'notice' }, 'Пока нет данных. Пройдите ', h('a', { href: '#/diagnostic' }, 'диагностику'), ' или потренируйтесь в ', h('a', { href: '#/grammar' }, 'грамматике'), '.')
           : null,
         h('p', { class: 'muted' }, 'Данные хранятся только в этом браузере. Процент — по последним и накопленным ответам; он ориентировочный.'),
@@ -124,6 +127,7 @@ export default {
         h('h2', null, 'Словарь'),
         h('p', null, cards.length ? `Карточек в работе: ${cards.length}. В коробках 4–5: ${cards.filter((c) => c.box >= 4).length}.` : 'Карточки ещё не начаты.'),
         diag && h('div', null, h('h2', null, 'Последняя диагностика'), h('p', null, `${fmtDate(diag.ts)}: ориентировочная зона ${diag.zoneLabel}, ${diag.got} из ${diag.max}.`)),
+        advanced && h('div', null, h('h2', null, 'Последняя диагностика B2–C1'), h('p', null, `${fmtDate(advanced.ts)}: ${advanced.got} из ${advanced.max}.`)),
         mocks.length > 0 && h('div', null, h('h2', null, 'Пробные экзамены'), h('ul', null, [...mocks].reverse().slice(0, 5).map((r) => h('li', null, `${fmtDate(r.ts)}: ${r.pct} % (ориентировочно)`)))),
         h('h2', null, 'Перенос между устройствами'),
         h('p', { class: 'muted' }, 'Сохраните прогресс в файл и загрузите его на другом устройстве. Файл остаётся у вас: никуда не отправляется.'),

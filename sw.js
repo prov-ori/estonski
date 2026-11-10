@@ -1,5 +1,5 @@
 // Файл создан tools/build-sw.js — не редактируйте вручную.
-const CACHE = 'estonski-e13d87d92c';
+const CACHE = 'estonski-8d53124d69';
 const FILES = [
  "./",
  "apple-touch-icon.png",

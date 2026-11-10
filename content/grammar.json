@@ -9186,6 +9186,203 @@
    ],
    "answer": 1,
    "explanation_ru": "Сохраняется лишь одна возможность, без утверждения установленной причины."
+  },
+  {
+   "id": "g-government-b2-01",
+   "level": "B2",
+   "topic": "cases",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vaidlus tekkis seoses ___.",
+   "options": [
+    "uuest eeskirjast",
+    "uuele eeskirjale",
+    "uue eeskirjaga",
+    "uuel eeskirjal"
+   ],
+   "answer": 2,
+   "explanation_ru": "Seoses millega? — в связи с чем-либо. Kaasaütlev: uue eeskirjaga. Прилагательное остаётся в родительном падеже."
+  },
+  {
+   "id": "g-government-b2-02",
+   "level": "B2",
+   "topic": "cases",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kogukonna huvi ___ vastu üllatas korraldajaid.",
+   "options": [
+    "uuest algatusest",
+    "uue algatuse",
+    "uut algatust",
+    "uuele algatusele"
+   ],
+   "answer": 1,
+   "explanation_ru": "Vastu стоит после формы родительного падежа: mille vastu? → uue algatuse vastu."
+  },
+  {
+   "id": "g-government-b2-03",
+   "level": "B2",
+   "topic": "cases",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Avada saab ainult neid faile, ___ teile on antud juurdepääs.",
+   "options": [
+    "millest",
+    "millega",
+    "milles",
+    "millele"
+   ],
+   "answer": 3,
+   "explanation_ru": "Juurdepääs millele? Относительное местоимение millele обозначает файлы, к которым предоставлен доступ."
+  },
+  {
+   "id": "g-past-reference-b2-01",
+   "level": "B2",
+   "topic": "verbs",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kell kolm kontrollis juhendaja nimekirja. Selleks ajaks ___ ta kõik nimed juba üle vaadanud.",
+   "options": [
+    "oli",
+    "on",
+    "oleks",
+    "oli olnud"
+   ],
+   "answer": 0,
+   "explanation_ru": "Проверка списка завершилась к прошлому моменту. Для этого употребляем oli üle vaadanud."
+  },
+  {
+   "id": "g-past-reference-b2-02",
+   "level": "B2",
+   "topic": "verbs",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Milline lause annab ülevaate praegusest seisust?",
+   "options": [
+    "Eile saabus kolm avaldust.",
+    "Praeguseks on saabunud kolm avaldust.",
+    "Esmaspäeva hommikuks oli saabunud kolm avaldust.",
+    "Järgmisel nädalal peaks saabuma kolm avaldust."
+   ],
+   "answer": 1,
+   "explanation_ru": "Praeguseks on saabunud показывает результат к настоящему моменту. Ülevaade praegusest seisust — обзор текущего состояния."
+  },
+  {
+   "id": "g-past-reference-b2-03",
+   "level": "B2",
+   "topic": "verbs",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kui jõudsime kassasse, olid viimased piletid juba müüdud.",
+   "prompt_ru": "Выберите фразу, которая сохраняет порядок событий.",
+   "options": [
+    "Piletid müüdi meile kohe pärast saabumist.",
+    "Piletimüük algas meie saabudes.",
+    "Piletid müüdi enne seda, kui me kassasse jõudsime.",
+    "Piletite müümine lükati järgmisele päevale."
+   ],
+   "answer": 2,
+   "explanation_ru": "Oli(d) juba müüdud показывает, что к моменту нашего прихода продажа завершилась."
+  },
+  {
+   "id": "g-cohesion-c1-01",
+   "level": "C1",
+   "topic": "conjunctions",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Paberil täidetav vorm on lihtsam. Veebivorm ___ võimaldab vastuse kohe saata.",
+   "options": [
+    "seetõttu",
+    "teisisõnu",
+    "seevastu",
+    "näiteks"
+   ],
+   "answer": 2,
+   "explanation_ru": "Seevastu сопоставляет преимущества бумажной и электронной формы. Наличие одного преимущества не становится причиной другого."
+  },
+  {
+   "id": "g-cohesion-c1-02",
+   "level": "C1",
+   "topic": "conjunctions",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Kõigi vastajate vanus ei ole teada. ___ jätame vanuserühmade võrdluse sellest ülevaatest välja.",
+   "options": [
+    "Seevastu",
+    "Ometi",
+    "Teisisõnu",
+    "Seetõttu"
+   ],
+   "answer": 3,
+   "explanation_ru": "Seetõttu указывает, что отсутствие данных стало причиной решения исключить сравнение."
+  },
+  {
+   "id": "g-cohesion-c1-03",
+   "level": "C1",
+   "topic": "conjunctions",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Vähendame vormi väljade arvu. Ühtlasi lisame lõppu võimaluse jätta vabas vormis kommentaar.",
+   "prompt_ru": "Как связаны предложения?",
+   "options": [
+    "Teine lause selgitab, miks välju on praegu liiga palju.",
+    "Teine lause nimetab veel ühe kavandatud muudatuse.",
+    "Teine lause kordab esimest teiste sõnadega.",
+    "Teine lause tühistab esimeses kirjeldatud muudatuse."
+   ],
+   "answer": 1,
+   "explanation_ru": "Ühtlasi присоединяет самостоятельное действие. Добавление поля для комментария не отменяет сокращение числа полей."
+  },
+  {
+   "id": "g-plain-language-c1-01",
+   "level": "C1",
+   "topic": "transform",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Koosoleku protokolli avaldamine toimub sekretäri poolt hiljemalt teisipäeval.",
+   "prompt_ru": "Как сформулировать проще, сохранив действие и крайний срок?",
+   "options": [
+    "Sekretär avaldab protokolli hiljemalt teisipäeval.",
+    "Sekretär kirjutab protokolli teisipäeval.",
+    "Protokoll avaldatakse pärast teisipäeva.",
+    "Teisipäeval otsustab sekretär, kas protokoll avaldada."
+   ],
+   "answer": 0,
+   "explanation_ru": "Avaldab прямо называет действие. Hiljemalt сохраняет крайний срок, в том числе возможность опубликовать раньше."
+  },
+  {
+   "id": "g-plain-language-c1-02",
+   "level": "C1",
+   "topic": "transform",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Osalejal on õigus esitada kirjalik vastuväide kümne päeva jooksul.",
+   "prompt_ru": "Как сохранить право и срок в более прямой формулировке?",
+   "options": [
+    "Osaleja peab kümne päeva jooksul esitama kirjaliku vastuväite.",
+    "Osaleja võib vastuväite esitada kümne päeva pärast.",
+    "Osaleja võib kümne päeva jooksul esitada kirjaliku vastuväite.",
+    "Osaleja peab esitama suulise vastuväite."
+   ],
+   "answer": 2,
+   "explanation_ru": "Võib сохраняет право, kirjaliku — письменную форму, jooksul — период, в который можно подать возражение."
+  },
+  {
+   "id": "g-plain-language-c1-03",
+   "level": "C1",
+   "topic": "transform",
+   "status": "draft",
+   "type": "choice",
+   "prompt_et": "Edastasime tellijale pakkumise ja lepingu kavandi. Seda saab muuta kuni allkirjastamiseni.",
+   "prompt_ru": "Уточните вторую фразу, если менять можно проект договора.",
+   "options": [
+    "Mõlemat dokumenti saab muuta kuni allkirjastamiseni.",
+    "Lepingu kavandit saab muuta kuni allkirjastamiseni.",
+    "Pakkumist saab muuta kuni allkirjastamiseni.",
+    "Lepingut tuleb pärast allkirjastamist muuta."
+   ],
+   "answer": 1,
+   "explanation_ru": "Lepingu kavandit заменяет двусмысленное seda. Можно изменить только упомянутый проект, и только до подписания."
   }
  ]
 }

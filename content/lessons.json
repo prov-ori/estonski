@@ -1454,6 +1454,246 @@
    ],
    "practice": "grammar/transform/C1",
    "explanation_ru": "Различайте предположение о будущем, нереализованную возможность в прошлом и вывод из данных."
+  },
+  {
+   "id": "ls-government-b2",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Управление в рабочих и учебных текстах",
+   "intro_ru": "Выбирайте падеж по эстонскому глаголу и проверяйте, как он меняется вместе со значением.",
+   "sections": [
+    {
+     "h": "Запоминайте слово вместе с вопросом",
+     "p": [
+      "Перевод глагола помогает понять смысл, но падеж проверяйте по эстонскому вопросу. Например, lähtuma, sõltuma и loobuma обычно отвечают на millest?"
+     ],
+     "examples": [
+      {
+       "et": "Töörühm lähtus elanike ettepanekutest.",
+       "ru": "Рабочая группа исходила из предложений жителей."
+      },
+      {
+       "et": "Me loobusime esialgsest ajakavast.",
+       "ru": "Мы отказались от первоначального графика."
+      }
+     ]
+    },
+    {
+     "h": "Похожий смысл, разные формы",
+     "p": [
+      "В конструкции juurdepääs millele? нужен аллатив, а в huvi mille vastu? — форма родительного падежа перед vastu."
+     ],
+     "examples": [
+      {
+       "et": "Kõigil töötajatel peab olema juurdepääs juhendile.",
+       "ru": "У всех сотрудников должен быть доступ к инструкции."
+      },
+      {
+       "et": "Huvi kursuse vastu kasvas pärast proovitundi.",
+       "ru": "Интерес к курсу вырос после пробного занятия."
+      }
+     ]
+    },
+    {
+     "h": "Когда у глагола несколько моделей",
+     "p": [
+      "Arvestama в значении «учитывать» встречается и с осаставом, и с комитативом. Полезно учить сочетания целиком, например arvestama kulusid и arvestama võimaliku viivitusega."
+     ],
+     "examples": [
+      {
+       "et": "Planeerimisel tuleb arvestada võimaliku viivitusega.",
+       "ru": "При планировании нужно учитывать возможную задержку."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Me loobusime esialgse ajakavaga.",
+     "right": "Me loobusime esialgsest ajakavast.",
+     "why": "В модели loobuma millest? согласуйте и существительное, и прилагательное."
+    }
+   ],
+   "practice": "grammar/cases/B2",
+   "reference_url": "https://arhiiv.eki.ee/books/ekk09/index.php?paring=rektsioon",
+   "explanation_ru": "Выбирайте падеж по эстонскому глаголу и проверяйте, как он меняется вместе со значением."
+  },
+  {
+   "id": "ls-past-reference-b2",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Прошедшее время и точка отсчёта",
+   "intro_ru": "Различайте событие в рассказе, результат к настоящему моменту и результат к моменту в прошлом.",
+   "sections": [
+    {
+     "h": "Простое прошедшее продвигает рассказ",
+     "p": [
+      "В последовательности событий простое прошедшее часто сообщает, что произошло дальше. Порядок уточняют слова seejärel и siis."
+     ],
+     "examples": [
+      {
+       "et": "Toimetaja avas faili ja märkas puuduvat tabelit.",
+       "ru": "Редактор открыл файл и заметил, что в нём нет таблицы."
+      }
+     ]
+    },
+    {
+     "h": "Перфект связывает событие с настоящим",
+     "p": [
+      "On, olen или oleme с причастием на -nud часто описывают опыт либо результат к настоящему моменту. Praeguseks подчёркивает эту точку отсчёта."
+     ],
+     "examples": [
+      {
+       "et": "Praeguseks oleme tabeli taastanud.",
+       "ru": "К настоящему моменту мы восстановили таблицу."
+      }
+     ]
+    },
+    {
+     "h": "Плюсквамперфект переносит точку отсчёта в прошлое",
+     "p": [
+      "Oli, olin или olime с причастием показывают, что действие предшествовало другому моменту в прошлом. В безличной форме используется причастие на -tud или -dud."
+     ],
+     "examples": [
+      {
+       "et": "Kui toimetaja faili avas, oli kolleeg tabeli juba taastanud.",
+       "ru": "Когда редактор открыл файл, коллега уже восстановил таблицу."
+      },
+      {
+       "et": "Kui arutelu algas, oli kutse juba avaldatud.",
+       "ru": "Когда обсуждение началось, приглашение уже опубликовали."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Kui kontroll algas, oli tehnik seadme parandada.",
+     "right": "Kui kontroll algas, oli tehnik seadme juba parandanud.",
+     "why": "В личной форме после oli нужно причастие parandanud."
+    }
+   ],
+   "practice": "grammar/verbs/B2",
+   "reference_url": "https://arhiiv.eki.ee/books/ekk09/index.php?paring=t%C3%A4isminevik",
+   "explanation_ru": "Различайте событие в рассказе, результат к настоящему моменту и результат к моменту в прошлом."
+  },
+  {
+   "id": "ls-cohesion-c1",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Связки в аргументации",
+   "intro_ru": "Различайте сопоставление, оговорку, добавление и вывод в аналитическом тексте.",
+   "sections": [
+    {
+     "h": "Сопоставление и оговорка",
+     "p": [
+      "Seevastu сопоставляет две ситуации. Ometi или siiski показывают, что второе утверждение расходится с ожиданием, которое создаёт первое."
+     ],
+     "examples": [
+      {
+       "et": "Esimeses rühmas vastati kiiresti. Teises seevastu oodati mitu päeva.",
+       "ru": "В первой группе ответили быстро. Во второй, напротив, ждали несколько дней."
+      },
+      {
+       "et": "Juhend oli lühike. Ometi jäi osa küsimusi vastuseta.",
+       "ru": "Инструкция была короткой. Тем не менее часть вопросов осталась без ответа."
+      }
+     ]
+    },
+    {
+     "h": "Вывод и дополнительная мера",
+     "p": [
+      "Seetõttu помогает показать причину, из которой следует описанный результат. Ühtlasi присоединяет ещё одно обстоятельство или действие."
+     ],
+     "examples": [
+      {
+       "et": "Proov hõlmas ainult üht osakonda. Seetõttu ei saa järeldust kogu asutusele laiendada.",
+       "ru": "В испытании участвовал только один отдел. Поэтому вывод нельзя распространить на всё учреждение."
+      },
+      {
+       "et": "Teeme juhendi lühemaks. Ühtlasi lisame näite.",
+       "ru": "Сократим инструкцию. Заодно добавим пример."
+      }
+     ]
+    },
+    {
+     "h": "Проверьте связку по смыслу",
+     "p": [
+      "Уберите связку и сформулируйте отношение своими словами. Если два факта можно лишь сопоставить, причинная связка может приписать автору вывод, которого в данных нет."
+     ],
+     "examples": [
+      {
+       "et": "Veebis vastati kiiremini. Telefonis seevastu lahendati rohkem keerulisi juhtumeid.",
+       "ru": "В интернете отвечали быстрее. По телефону, напротив, решили больше сложных вопросов."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "practice": "grammar/conjunctions/C1",
+   "reference_url": "https://teatmik.eki.ee/teatmik/tekstisidusus/",
+   "explanation_ru": "Различайте сопоставление, оговорку, добавление и вывод в аналитическом тексте."
+  },
+  {
+   "id": "ls-plain-language-c1",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Как сделать деловой текст яснее",
+   "intro_ru": "Редактируйте сложные формулировки и сохраняйте исполнителя, срок и степень обязательности.",
+   "sections": [
+    {
+     "h": "Назовите исполнителя и действие",
+     "p": [
+      "Если исполнитель уже известен и важен читателю, поставьте его в подлежащее, а действие выразите глаголом. Не добавляйте исполнителя, если исходный текст его не называет."
+     ],
+     "examples": [
+      {
+       "et": "Paranduste kontrollimine toimub töörühma poolt reedel.",
+       "ru": "Проверка исправлений будет проводиться рабочей группой в пятницу."
+      },
+      {
+       "et": "Töörühm kontrollib parandusi reedel.",
+       "ru": "Рабочая группа проверит исправления в пятницу."
+      }
+     ]
+    },
+    {
+     "h": "Сохраните разницу между возможностью и обязанностью",
+     "p": [
+      "Saab и võib передают возможность или разрешение. Peab выражает обязанность. При сокращении фразы отдельно проверьте условие и момент, к которому действие должно быть выполнено."
+     ],
+     "examples": [
+      {
+       "et": "Osalejal on võimalik muuta oma valikut reedeni.",
+       "ru": "У участника есть возможность изменить свой выбор до пятницы."
+      },
+      {
+       "et": "Osaleja saab oma valikut reedeni muuta.",
+       "ru": "Участник может изменить свой выбор до пятницы."
+      }
+     ]
+    },
+    {
+     "h": "Замените двусмысленное местоимение",
+     "p": [
+      "Если перед see названы два возможных предмета, повтор ключевого слова может сделать фразу яснее. Назовите конкретный предмет только после того, как установите, о каком из них речь."
+     ],
+     "examples": [
+      {
+       "et": "Saadame teile lepingu ja maksegraafiku. Palun allkirjastage leping.",
+       "ru": "Мы отправим вам договор и график платежей. Пожалуйста, подпишите договор."
+      }
+     ]
+    }
+   ],
+   "mistakes": [],
+   "practice": "grammar/transform/C1",
+   "reference_url": "https://teatmik.eki.ee/teatmik/halduskeel-ja-kantseliit/",
+   "explanation_ru": "Редактируйте сложные формулировки и сохраняйте исполнителя, срок и степень обязательности."
   }
  ]
 }

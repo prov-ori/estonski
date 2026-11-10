@@ -1,5 +1,5 @@
 {
- "_comment": "Диагностика: 20 вопросов (A2: 7, B1: 8, B2: 5). Пороги зон — условные параметры автора, НЕ связаны с экзаменом.",
+ "_comment": "Базовый тест: 7 A2, 8 B1, 5 B2. Тест B2–C1: по 8 из банка advanced. Пороги зон применяются только к базовому тесту.",
  "zone_rules": {
   "_comment": "above: доля верных на B1 >= b1_min И на B2 >= b2_min. b1: на A2 >= a2_min И на B1 >= b1_min. Иначе A2.",
   "above": {
@@ -1197,6 +1197,526 @@
    ],
    "answer": 0,
    "explanation_ru": "Hea — parem — parim: превосходная степень — parim."
+  },
+  {
+   "id": "d-advanced-b2-01",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Projektijuht lähtus eelarve koostamisel eelmise aasta ___.",
+   "hint": "andmed",
+   "answer": "andmetest",
+   "explanation_ru": "Lähtuma требует элатив. Вопрос millest? → andmetest."
+  },
+  {
+   "id": "d-advanced-b2-02",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Kas teie hinnang põhineb ka elanike ___?",
+   "hint": "tagasiside",
+   "answer": "tagasisidel",
+   "explanation_ru": "Põhinema чаще употребляется с адессивом: millel? → tagasisidel. Реже встречается аллатив: millele? → tagasisidele.",
+   "also_ok": [
+    "tagasisidele"
+   ]
+  },
+  {
+   "id": "d-advanced-b2-03",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Tulemuste tõlgendamisel tuleb arvestada väikese ___.",
+   "hint": "valim",
+   "answer": "valimiga",
+   "explanation_ru": "Arvestama в значении «учитывать» допускает вопрос millega? или mida? Valim означает выборку. Подходят valimiga и valimit.",
+   "also_ok": [
+    "valimit"
+   ]
+  },
+  {
+   "id": "d-advanced-b2-04",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Otsustasime loobuda esialgsest ___.",
+   "hint": "lahendus",
+   "answer": "lahendusest",
+   "explanation_ru": "Loobuma millest? — отказываться от чего-либо. Прилагательное esialgsest и существительное стоят в элативе."
+  },
+  {
+   "id": "d-advanced-b2-05",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Lõplik hind sõltub ___, seega ei saa ma veel täpset summat öelda.",
+   "options": [
+    "tellimuse mahule",
+    "tellimuse mahuga",
+    "tellimuse mahust",
+    "tellimuse mahul"
+   ],
+   "answer": 2,
+   "explanation_ru": "Sõltuma millest? — зависеть от чего-либо. Элатив выражен окончанием -st у слова maht."
+  },
+  {
+   "id": "d-advanced-b2-06",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Koordinaator veenis vabatahtlikke ___ ka järgmisel kuul.",
+   "options": [
+    "osalema",
+    "osaleda",
+    "osalenud",
+    "osalemast"
+   ],
+   "answer": 0,
+   "explanation_ru": "Veensime kedagi midagi tegema — убедили кого-то что-то сделать. После veenma здесь нужен ma-инфинитив."
+  },
+  {
+   "id": "d-advanced-b2-07",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Meie ülesanne on tagada, et kõigil oleks juurdepääs ___.",
+   "options": [
+    "vajalikust teabest",
+    "vajaliku teabega",
+    "vajalikul teabel",
+    "vajalikule teabele"
+   ],
+   "answer": 3,
+   "explanation_ru": "Juurdepääs millele? — доступ к чему-либо. И прилагательное, и существительное получают окончание аллатива -le."
+  },
+  {
+   "id": "d-advanced-b2-08",
+   "topic": "cases",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Kutsume huvilisi osa võtma järgmisel nädalal toimuvast ___.",
+   "options": [
+    "arutelule",
+    "arutelust",
+    "aruteluga",
+    "arutelul"
+   ],
+   "answer": 1,
+   "explanation_ru": "Osa võtma millest? — участвовать в чём-либо. Toimuvast arutelust — оба слова в элативе."
+  },
+  {
+   "id": "d-advanced-b2-09",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Kell kümme algas kontroll. Selleks ajaks ___ tehnik seadme juba ___.",
+   "options": [
+    "on … parandanud",
+    "oli … parandanud",
+    "oli … parandada",
+    "oleks … parandanud"
+   ],
+   "answer": 1,
+   "explanation_ru": "Ремонт завершился до другого события в прошлом. Selleks ajaks связывает ремонт с началом проверки, поэтому здесь oli parandanud."
+  },
+  {
+   "id": "d-advanced-b2-10",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Kui uus vahetus tööle tuli, ___ eelmise vahetuse töötajad juba lahkunud.",
+   "prompt_ru": "Впишите форму глагола olema.",
+   "answer": "olid",
+   "explanation_ru": "Люди ушли до прихода смены. Подлежащее во множественном числе даёт olid lahkunud."
+  },
+  {
+   "id": "d-advanced-b2-11",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Praeguseks ___ meie meeskond katsetanud kõiki kolme lahendust.",
+   "prompt_ru": "Впишите форму глагола olema.",
+   "answer": "on",
+   "explanation_ru": "Praeguseks задаёт точку отсчёта «к настоящему моменту». Здесь on katsetanud."
+  },
+  {
+   "id": "d-advanced-b2-12",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Eilseks ___ ma juba kaks pakkumist saanud, kolmas saabus täna.",
+   "prompt_ru": "Впишите форму глагола olema.",
+   "answer": "olin",
+   "explanation_ru": "Два предложения поступили к вчерашнему дню. Для ma нужно olin saanud."
+  },
+  {
+   "id": "d-advanced-b2-13",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Praegu on uks lahti, sest hooldaja ___ selle juba ___.",
+   "prompt_ru": "Выберите форму, которая связывает завершённое действие с состоянием сейчас.",
+   "options": [
+    "oli … avanud",
+    "on … avanud",
+    "oleks … avanud",
+    "on … avama"
+   ],
+   "answer": 1,
+   "explanation_ru": "Точка отсчёта — настоящее: praegu on uks lahti. On avanud связывает предшествующее действие с текущим состоянием."
+  },
+  {
+   "id": "d-advanced-b2-14",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Kui rühm kell kuus kohale jõudis, oli näitus juba suletud.",
+   "prompt_ru": "Какое событие произошло раньше?",
+   "options": [
+    "Rühm jõudis kohale enne sulgemist.",
+    "Näitus suleti alles järgmisel päeval.",
+    "Näitus suleti enne rühma saabumist.",
+    "Rühm sulges näituse kell kuus."
+   ],
+   "answer": 2,
+   "explanation_ru": "Oli juba suletud описывает состояние к моменту приезда. К этому моменту выставка уже закрылась."
+  },
+  {
+   "id": "d-advanced-b2-15",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Selleks ajaks, kui külalised saabusid, ___ me ruumi valmis seadnud.",
+   "options": [
+    "oleme",
+    "oleksime",
+    "olevat",
+    "olime"
+   ],
+   "answer": 3,
+   "explanation_ru": "Selleks ajaks, kui külalised saabusid — точка отсчёта в прошлом. С me употребляем olime valmis seadnud."
+  },
+  {
+   "id": "d-advanced-b2-16",
+   "topic": "verbs",
+   "level": "B2",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Töötuba on lõppenud, kuid kokkuvõtet ei ole veel ___.",
+   "options": [
+    "avaldatud",
+    "avaldada",
+    "avaldanud",
+    "avaldama"
+   ],
+   "answer": 0,
+   "explanation_ru": "В безличной конструкции о публикации нужно причастие avaldatud. Avaldanud предполагает подлежащее, которое публикует."
+  },
+  {
+   "id": "d-advanced-c1-01",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Esimeses rühmas tõusis osalus kaheksa protsendipunkti. Teises rühmas ___ jäi osalus samale tasemele.",
+   "options": [
+    "seetõttu",
+    "seevastu",
+    "teisisõnu",
+    "ühtlasi"
+   ],
+   "answer": 1,
+   "explanation_ru": "Seevastu показывает контраст между двумя группами. Seetõttu представило бы второе наблюдение как следствие первого."
+  },
+  {
+   "id": "d-advanced-c1-02",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Katse hõlmas ainult vabatahtlikke. ___ ei saa saadud tulemust üldistada kõigile elanikele.",
+   "options": [
+    "Seevastu",
+    "Ometi",
+    "Seetõttu",
+    "Näiteks"
+   ],
+   "answer": 2,
+   "explanation_ru": "Seetõttu связывает ограничение выборки с выводом. Ometi обозначило бы результат вопреки ожиданию."
+  },
+  {
+   "id": "d-advanced-c1-03",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Teenus on veebis tasuta. ___ tuleb kohapeal tellitud paberkoopia eest maksta.",
+   "prompt_ru": "Вставьте одно слово, которое показывает контраст.",
+   "answer": "samas",
+   "explanation_ru": "Samas позволяет сопоставить два положения с оговоркой. Siiski и seevastu также передают нужный контраст.",
+   "also_ok": [
+    "siiski",
+    "seevastu",
+    "ometi",
+    "ent",
+    "aga",
+    "kuid",
+    "teisalt"
+   ]
+  },
+  {
+   "id": "d-advanced-c1-04",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Keskmine ooteaeg lühenes, ___ ei saanud kõik kliendid senisest kiiremini teenindatud.",
+   "options": [
+    "ent",
+    "sest",
+    "et",
+    "kuni"
+   ],
+   "answer": 0,
+   "explanation_ru": "Ent противопоставляет средний результат положению отдельных клиентов. Снижение среднего не означает улучшения для каждого."
+  },
+  {
+   "id": "d-advanced-c1-05",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Aruandes ei ole kulud piirkonniti välja toodud. ___ pole võimalik võrrelda, kui palju raha eri piirkondades kasutati.",
+   "prompt_ru": "Вставьте одно слово, которое вводит следствие.",
+   "answer": "seetõttu",
+   "explanation_ru": "Второе предложение сообщает следствие. Seetõttu, seepärast и seega естественно связывают эти предложения.",
+   "also_ok": [
+    "seepärast",
+    "seega",
+    "niisiis"
+   ]
+  },
+  {
+   "id": "d-advanced-c1-06",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Pakume võimalust vastata ka telefoni teel. Ühtlasi pikendame vastamistähtaega nädala võrra.",
+   "prompt_ru": "Какое отношение выражает ühtlasi?",
+   "options": [
+    "Teine lause toob esimese kohta näite.",
+    "Teine lause piirab esimese kehtivust.",
+    "Teine lause esitab esimese põhjuse.",
+    "Teine lause lisab esimesele veel ühe meetme."
+   ],
+   "answer": 3,
+   "explanation_ru": "Ühtlasi означает «заодно», «вдобавок». Продление срока — дополнительная мера."
+  },
+  {
+   "id": "d-advanced-c1-07",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Eelnõu on avalik, see tähendab, et igaüks saab sellega tutvuda.",
+   "prompt_ru": "Что делает часть после see tähendab, et?",
+   "options": [
+    "Selgitab sõna „avalik” tähendust selles olukorras.",
+    "Toob näite olukorrast, kus eelnõu ei ole avalik.",
+    "Nimetab eelnõu avalikustamise tingimuse.",
+    "Kahtleb selles, kas eelnõu on avalik."
+   ],
+   "answer": 0,
+   "explanation_ru": "See tähendab, et поясняет, что означает доступность проекта для читателя."
+  },
+  {
+   "id": "d-advanced-c1-08",
+   "topic": "conjunctions",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Küsitlus näitab, et paljud elanikud soovivad pikemaid lahtiolekuaegu. Ometi ei pruugi nad õhtuti keskust külastada.",
+   "prompt_ru": "Какую оговорку делает автор?",
+   "options": [
+    "Soov pikemate aegade järele on kõigi elanike seas ühesugune.",
+    "Külastuste arv kasvab kindlasti kohe.",
+    "Soov ei taga, et inimesed võimalust kasutavad.",
+    "Elanikud eelistavad tingimata hommikusi aegu."
+   ],
+   "answer": 2,
+   "explanation_ru": "Ometi вводит оговорку вопреки ожиданию. Ei pruugi выражает возможность того, что желаемым временем не воспользуются."
+  },
+  {
+   "id": "d-advanced-c1-09",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Taotluste läbivaatamine toimub komisjoni poolt järgmise nädala jooksul.",
+   "prompt_ru": "Выберите ясную формулировку с тем же смыслом.",
+   "options": [
+    "Komisjon vaatab taotlused järgmise nädala jooksul läbi.",
+    "Komisjon hakkab taotlusi läbi vaatama pärast järgmist nädalat.",
+    "Komisjon ootab taotlusi järgmise nädala lõpuni.",
+    "Taotlused tuleb järgmisel nädalal komisjonile esitada."
+   ],
+   "answer": 0,
+   "explanation_ru": "Глагол vaatab läbi сохраняет действие и называет исполнителя. Остальные варианты меняют сроки или само действие."
+  },
+  {
+   "id": "d-advanced-c1-10",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Kui osaleja ei saa kokkulepitud ajal tulla, palume tal sellest hiljemalt eelmisel päeval teada anda.",
+   "prompt_ru": "Выберите ясное обращение к участнику с тем же смыслом.",
+   "options": [
+    "Osaleja peab eelmisel päeval uue aja kokku leppima.",
+    "Kui te ei saa tulla, andke sellest teada hiljemalt eelmisel päeval.",
+    "Kui te ei saa tulla, andke sellest teada samal päeval.",
+    "Palume kõigil osalejatel eelmisel päeval oma tulek kinnitada."
+   ],
+   "answer": 1,
+   "explanation_ru": "Прямое обращение сохраняет условие и крайний срок. В исходном тексте не требуется подтверждать участие или сразу договариваться о новом времени."
+  },
+  {
+   "id": "d-advanced-c1-11",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Ülevaates nimetatakse Koidu ja Kuuse tänavat. Remont algab Koidu tänaval. ___ suletakse kaheks päevaks.",
+   "prompt_ru": "Впишите название улицы в нужной форме. Закрытие касается улицы, на которой начинается ремонт.",
+   "answer": "Koidu tänav",
+   "explanation_ru": "Повтор названия точно показывает, о какой улице речь. Местоимение после двух названий может создать лишнюю двусмысленность."
+  },
+  {
+   "id": "d-advanced-c1-12",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Toimetaja saatis autorile uue sissejuhatuse ja kaaskirja. See oli liiga pikk.",
+   "prompt_ru": "Как уточнить второе предложение, если речь о вступлении?",
+   "options": [
+    "Uus sissejuhatus oli liiga pikk.",
+    "Need olid liiga pikad.",
+    "See oli autori meelest liiga pikk.",
+    "Saadetu oli liiga pikk."
+   ],
+   "answer": 0,
+   "explanation_ru": "Называем конкретный текст, который оказался слишком длинным. Замена see на saadetu всё ещё не разделяет два документа."
+  },
+  {
+   "id": "d-advanced-c1-13",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Taotluse kinnitamine ei tähenda toetuse väljamaksmist samal päeval.",
+   "prompt_ru": "Как переформулировать фразу, сохранив оговорку?",
+   "options": [
+    "Toetust makstakse ainult taotluse kinnitamise päeval.",
+    "Taotluse kinnitamise korral jääb toetus välja maksmata.",
+    "Taotluse kinnitamine ei taga, et toetus samal päeval välja makstakse.",
+    "Toetus makstakse välja enne taotluse kinnitamist."
+   ],
+   "answer": 2,
+   "explanation_ru": "Ei taga точно сохраняет ограничение исходного утверждения. Из текста нельзя вывести, что выплата в тот же день исключена."
+  },
+  {
+   "id": "d-advanced-c1-14",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Muudatuste sisseviimise eelduseks on juhatuse kirjaliku nõusoleku olemasolu.",
+   "prompt_ru": "Как сократить фразу, сохранив требование?",
+   "options": [
+    "Juhatus nõustus muudatustega pärast nende tegemist.",
+    "Muudatused tehakse enne juhatuselt nõusoleku küsimist.",
+    "Juhatuse suulisest nõusolekust piisab.",
+    "Muudatusi saab teha ainult juhatuse kirjalikul nõusolekul."
+   ],
+   "answer": 3,
+   "explanation_ru": "Новая фраза сохраняет условие и письменную форму согласия. Saab teha передаёт возможность при выполнении условия."
+  },
+  {
+   "id": "d-advanced-c1-15",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "input",
+   "prompt_et": "Kool plaanib korraldada kaks õpituba. Esimene käsitleb andmekaitset, teine tehisaru kasutamist. ___ toimub veebis.",
+   "prompt_ru": "Назовите второе занятие двумя словами, используя слово õpituba.",
+   "answer": "teine õpituba",
+   "explanation_ru": "Сочетание teine õpituba однозначно указывает на занятие о tehisaru."
+  },
+  {
+   "id": "d-advanced-c1-16",
+   "topic": "transform",
+   "level": "C1",
+   "status": "draft",
+   "advanced": true,
+   "type": "choice",
+   "prompt_et": "Taotlejale antakse võimalus andmete täiendamiseks viie tööpäeva jooksul.",
+   "prompt_ru": "Выберите ясную формулировку с тем же смыслом.",
+   "options": [
+    "Taotleja peab viie tööpäeva jooksul andmeid täiendama.",
+    "Taotleja saab viie tööpäeva jooksul andmeid täiendada.",
+    "Taotleja saab andmeid täiendada alles viie tööpäeva pärast.",
+    "Taotlejal on andmete täiendamiseks viis kalendripäeva."
+   ],
+   "answer": 1,
+   "explanation_ru": "Saab выражает предоставленную возможность. Формулировка сохраняет срок в рабочих днях и не делает действие обязательным."
   }
  ]
 }

@@ -182,8 +182,15 @@ for (const m of (data['mock-exam']?.items || [])) {
 }
 for (const c of (data.vocab?.items || [])) need(c.et && c.ru && c.example_et, 'content/vocab.json', c.id, 'нужны et, ru, example_et');
 const dg = data.diagnostic?.items || [];
-const lv = (l) => dg.filter((x) => x.level === l).length;
+const lv = (l) => dg.filter((x) => x.level === l && x.advanced !== true).length;
 need(lv('A2') >= 7 && lv('B1') >= 8 && lv('B2') >= 5, 'content/diagnostic.json', 'items', `в банке нужно минимум 7 A2, 8 B1, 5 B2 (сейчас ${lv('A2')}/${lv('B1')}/${lv('B2')}) — из него случайно берётся тест из 20 вопросов`);
+for (const q of dg) {
+  need(q.advanced === undefined || q.advanced === true, 'content/diagnostic.json', q.id, 'advanced допускает только true');
+  if (q.advanced || q.level === 'C1') need(q.advanced === true && ['B2', 'C1'].includes(q.level), 'content/diagnostic.json', q.id, 'расширенный тест содержит только B2 и C1, все вопросы C1 относятся к нему');
+}
+for (const level of ['B2', 'C1']) {
+  need(dg.filter((q) => q.level === level && q.advanced === true).length >= 8, 'content/diagnostic.json', 'items', `в расширенном банке нужно минимум 8 вопросов ${level}`);
+}
 
 // refs в пробных экзаменах
 for (const m of (data['mock-exam']?.items || [])) {

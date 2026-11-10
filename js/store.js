@@ -1,7 +1,7 @@
 // Прогресс в localStorage. Все чтения/записи — в try/catch; при недоступном хранилище работаем из памяти.
 const KEY = 'estonski.v1';
 
-const empty = () => ({ v: 1, answers: {}, cards: {}, diag: null, mock: [], writing: {}, speaking: {}, activity: {} });
+const empty = () => ({ v: 1, answers: {}, cards: {}, diag: null, diagAdvanced: null, mock: [], writing: {}, speaking: {}, activity: {} });
 
 const isObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
 const safeKey = (key) => typeof key === 'string' && key.length > 0 && !(key in Object.prototype);
@@ -14,7 +14,8 @@ const records = {
   activity: count,
 };
 const validMock = (m) => isObject(m) && [m.ts, m.pct, m.got, m.max].every(Number.isFinite);
-const validDiag = (d) => isObject(d) && Number.isFinite(d.ts) && typeof d.zoneLabel === 'string' && count(d.got) && count(d.max);
+const validDiagScore = (d) => isObject(d) && Number.isFinite(d.ts) && count(d.got) && count(d.max);
+const validDiag = (d) => validDiagScore(d) && typeof d.zoneLabel === 'string';
 
 function sanitize(d) {
   const e = empty();
@@ -23,6 +24,7 @@ function sanitize(d) {
     if (isObject(d[key])) e[key] = Object.fromEntries(Object.entries(d[key]).filter(([id, value]) => safeKey(id) && valid(value)));
   }
   if (validDiag(d.diag)) e.diag = d.diag;
+  if (validDiagScore(d.diagAdvanced)) e.diagAdvanced = d.diagAdvanced;
   if (Array.isArray(d.mock)) e.mock = d.mock.filter(validMock);
   return e;
 }
@@ -118,7 +120,7 @@ export const store = {
       const invalidRecord = Object.entries(records).some(([key, valid]) => d[key] !== undefined &&
         (!isObject(d[key]) || !Object.entries(d[key]).every(([id, value]) => safeKey(id) && valid(value))));
       if (invalidRecord || (d.mock !== undefined && (!Array.isArray(d.mock) || !d.mock.every(validMock))) ||
-          (d.diag != null && !validDiag(d.diag))) {
+          (d.diag != null && !validDiag(d.diag)) || (d.diagAdvanced != null && !validDiagScore(d.diagAdvanced))) {
         return { ok: false, error: 'В файле повреждены записи прогресса. Текущие данные сохранены.' };
       }
       state = sanitize(d);
@@ -146,8 +148,8 @@ export const store = {
   getCard: (id) => state.cards[id] || null,
   setCard(id, rec) { state.cards[id] = rec; save(); },
 
-  getDiag: () => state.diag,
-  setDiag(d) { state.diag = d; save(); },
+  getDiag: (advanced = false) => advanced ? state.diagAdvanced : state.diag,
+  setDiag(d, advanced = false) { state[advanced ? 'diagAdvanced' : 'diag'] = d; save(); },
 
   getMock: () => state.mock,
   addMock(r) { state.mock = [...state.mock, r].slice(-20); save(); },

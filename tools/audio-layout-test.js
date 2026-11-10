@@ -151,7 +151,7 @@ const server=http.createServer((req,res)=>{
     await levels.getByRole('link', { name: 'Все (20)', exact: true }).waitFor();
     await levels.goto(base + '#/lessons');
     await levels.getByLabel('Уровень', { exact: true }).selectOption('C1');
-    assert.equal(await levels.locator('main .link-card').count(), 2);
+    assert.equal(await levels.locator('main .link-card').count(), 4);
     await levels.locator('a[href="#/lessons/ls-conditional-c1"]').click();
     await levels.getByRole('link', { name: 'Практика по теме', exact: true }).click();
     const grammarLevel = levels.getByLabel('Уровень', { exact: true });
@@ -183,6 +183,61 @@ const server=http.createServer((req,res)=>{
     assert(await levels.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await levels.close();
     console.log('PASS advanced level filters and lesson-to-practice navigation');
+
+    const diag = await browser.newPage({ viewport: { width: 390, height: 800 }, serviceWorkers: 'block' });
+    await diag.addInitScript(() => {
+      Math.random = () => 0.9999;
+      window.__realDialogs = true;
+      if (!localStorage.getItem('estonski.v1')) {
+        localStorage.setItem('estonski.v1', JSON.stringify({
+          v: 1, answers: {}, diag: { ts: 1, zoneLabel: 'B1', got: 12, max: 20 },
+        }));
+      }
+    });
+    const diagBank = new Map(JSON.parse(fs.readFileSync(path.join(root, 'content/diagnostic.json'), 'utf8')).items.map(q => [q.id, q]));
+    await diag.goto(base + '#/diagnostic');
+    await diag.getByRole('link', { name: 'Диагностика B2–C1', exact: true }).click();
+    await diag.getByRole('button', { name: 'Начать', exact: true }).click();
+    const ids = new Set();
+    for (let i = 0; i < 16; i++) {
+      await diag.getByText(`Вопрос ${i + 1} из 16`, { exact: true }).waitFor();
+      const question = diag.locator('.question');
+      const id = await question.getAttribute('data-qid');
+      const q = diagBank.get(id);
+      assert(q?.advanced);
+      assert.equal(q.level, i < 8 ? 'B2' : 'C1');
+      ids.add(id);
+      if (i === 15) break;
+      if (q.type === 'input') await question.locator('input[type=text]').fill(q.also_ok?.[0] || q.answer);
+      else await question.locator(`input[value="${q.answer}"]`).check({ force: true });
+      assert.equal(await question.locator('.feedback').innerText(), '');
+      await diag.getByRole('button', { name: 'Дальше →', exact: true }).click();
+      if (i === 0) {
+        await diag.getByRole('button', { name: '← Назад', exact: true }).click();
+        assert.equal(await diag.locator('.question input[type=text]').inputValue(), q.answer);
+        await diag.getByRole('button', { name: 'Дальше →', exact: true }).click();
+      }
+    }
+    assert.equal(ids.size, 16);
+    await diag.getByRole('button', { name: 'Завершить тест', exact: true }).click();
+    await diag.getByRole('dialog').getByRole('button', { name: 'Отмена', exact: true }).click();
+    await diag.getByText('Вопрос 16 из 16', { exact: true }).waitFor();
+    await diag.getByRole('button', { name: 'Завершить тест', exact: true }).click();
+    await diag.getByRole('dialog').getByRole('button', { name: 'Завершить', exact: true }).click();
+    await diag.getByRole('heading', { name: 'Результат диагностики B2–C1', exact: true }).waitFor();
+    await diag.getByText('B2: 8 из 8', { exact: true }).waitFor();
+    await diag.getByText('C1: 7 из 8', { exact: true }).waitFor();
+    assert.equal(await diag.locator('details.review').count(), 16);
+    assert(await diag.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await diag.getByRole('link', { name: 'Повторить ошибки', exact: true }).click();
+    await diag.getByText('Заданий с ошибками: 1', { exact: true }).waitFor();
+    await diag.reload();
+    await diag.goto(base + '#/progress');
+    await diag.getByRole('heading', { name: 'Последняя диагностика B2–C1', exact: true }).waitFor();
+    const saved = await diag.evaluate(() => JSON.parse(localStorage.getItem('estonski.v1')));
+    assert.deepEqual([saved.diag.zoneLabel, saved.diag.got, saved.diagAdvanced.got, saved.diagAdvanced.max], ['B1', 12, 15, 16]);
+    await diag.close();
+    console.log('PASS advanced diagnostics, alternate answers, review, mobile layout and separate saved scores');
 
     const practice = await browser.newPage({ viewport: { width: 390, height: 800 }, serviceWorkers: 'block' });
     await practice.addInitScript(() => {

@@ -36,7 +36,7 @@ export default {
     const stats = {};
     Object.values(store.state.answers).forEach((a) => { const t = (stats[a.t] ||= { r: 0, w: 0 }); t.r += a.r; t.w += a.w; });
     const weak = Object.entries(stats).filter(([, v]) => v.r + v.w >= 3 && v.r / (v.r + v.w) < 0.7).sort((a, b) => a[1].r / (a[1].r + a[1].w) - b[1].r / (b[1].r + b[1].w)).slice(0, 3);
-    const diag = store.getDiag();
+    const diag = store.getDiag() || store.getDiag(true);
 
     const row = (label, done, target, href, unit = '') => h('li', { class: 'plan-row' },
       h('a', { href }, label), h('span', { class: done >= target ? 'ok-text' : 'muted' }, ` ${Math.min(done, 9999)} из ${target}${unit}${done >= target ? ' ✓' : ''}`),

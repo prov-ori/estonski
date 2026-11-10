@@ -1441,6 +1441,172 @@
     230,
     320
    ]
+  },
+  {
+   "id": "w-museum-letter-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Официальное письмо о доступности выставки",
+   "prompt_et": "Muuseum kavandab uut näitust. Eelmisel näitusel olid pikad seinapaneelid, kuid lühikokkuvõtted olid saadaval ainult telefonis. Kirjutage kuraatorile ametlik ettepanek.",
+   "prompt_ru": "Предложите куратору способ сделать новую выставку удобной для посетителей с разными потребностями.",
+   "content_points_et": [
+    "Kirjeldage olukorda kahe erineva külastaja vaatenurgast.",
+    "Võrrelge kaht võimalust, kuidas sama teavet esitada.",
+    "Pakkuge etapiviisiline lahendus ja nimetage selle piirang.",
+    "Selgitage, kuidas hinnata muudatuse kasu."
+   ],
+   "content_points_ru": [
+    "Покажите ситуацию глазами двух разных посетителей.",
+    "Сравните два способа представить одну и ту же информацию.",
+    "Предложите поэтапное решение и укажите его ограничение.",
+    "Опишите, как проверить пользу изменения."
+   ],
+   "explanation_ru": "Адресат должен понять, что можно сделать сразу, что требует ресурсов и как оценить результат.",
+   "practice_words": [
+    200,
+    280
+   ]
+  },
+  {
+   "id": "w-shift-summary-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Критическое резюме двух сообщений",
+   "prompt_et": "Juht ütleb: „Pärast uue vahetusgraafiku kehtestamist vähenes hilinemiste arv.” Töötajate esindaja ütleb: „Samal ajal lubati mõnel töötajal päeva hiljem alustada ja töölt lahkujate arv kasvas.” Koostage juhatusele süntees.",
+   "prompt_ru": "Составьте для руководства резюме двух сообщений о новом графике. Объедините сведения и покажите, какие выводы можно проверить.",
+   "content_points_et": [
+    "Esitage mõlema allika väited neutraalselt.",
+    "Eristage tähelepanek ja põhjuslik seletus.",
+    "Nimetage kaks lisaküsimust ja vajalikud andmed.",
+    "Sõnastage ajutine soovitus järgmise kuu kohta."
+   ],
+   "content_points_ru": [
+    "Нейтрально передайте позиции обоих источников.",
+    "Отделите наблюдение от причинного объяснения.",
+    "Назовите два уточняющих вопроса и необходимые данные.",
+    "Предложите временное решение на следующий месяц."
+   ],
+   "explanation_ru": "Проверьте атрибуцию: читатель должен понимать, откуда взялось каждое утверждение.",
+   "practice_words": [
+    200,
+    280
+   ],
+   "sample_et": "Juhatusele\n\nPärast uue vahetusgraafiku kehtestamist registreeriti juhi sõnul vähem hilinemisi. Töötajate esindaja toob välja, et samal ajal nihutati osal töötajatel tööpäeva algust ning töölt lahkujaid oli varasemast rohkem. Need tähelepanekud ei ole omavahel vastuolus. Küll aga vastavad need eri küsimustele: üks puudutab tööle jõudmist kokkulepitud ajaks, teine töökorralduse laiemat mõju.\n\nEsimene küsimus on, kas hilinemisi võrreldi töötaja kohta või lihtsalt koguarvuna. Selleks vajame mõlema perioodi töötajate ja vahetuste arvu ning ühesugust hilinemise määratlust. Teine küsimus on, kas muutus puudutas ka neid, kelle tööpäeva algus ei nihkunud. Võrdleksin nende andmeid hilisema algusega rühma andmetega, pidades meeles, et rühmades võivad töötada erineva koormuse ja sõiduvõimalustega inimesed.\n\nEnne lõpliku otsuse tegemist küsiksin ka, kas lahkumiste põhjused on teada. Lahkumiste arvu kasv võib osutada probleemile, kuid ainult arvu põhjal ei ole võimalik öelda, kas inimesed lahkusid graafiku pärast. Võrdlusperioodide valikul tuleks arvestada puhkuste ja töömahu muutustega. Vastasel korral võib ajutine muutus näida püsiva mõjuna.\n\nSoovitan järgmisel kuul praegust graafikut jälgida, kuid jätta selle laiendamine ootele. Kogume nädala kaupa vahetuste, hilinemiste ja lahkumiste andmed. Lisame võimaluse anda vabatahtlikult tagasisidet, sealhulgas inimestel, kelle tööaeg ei muutunud. Kuu lõpus saab juhatus otsustada, kas muutus väärib pikemat katset või on vaja graafikut kohandada. Kui olemasolevad andmed on ebaühtlased, märgime selle otsuse põhjenduses ja jätkame võrdlust enne püsiva korra kinnitamist.",
+   "sample_notes_ru": "Образец сохраняет принадлежность утверждений, предлагает две проверки и формулирует ограниченное по времени решение."
+  },
+  {
+   "id": "w-park-editorial-c1",
+   "topic": "nature",
+   "level": "C1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Колонка о защите зелёных зон",
+   "prompt_et": "Linna uus park on populaarne, kuid populaarseimal rajal on pinnas kulunud. Ühed soovivad osa rajast ajutiselt sulgeda, teised kardavad, et see piirab liikumisvõimalusi. Kirjutage kohalikule lehele arvamuslugu.",
+   "prompt_ru": "Напишите колонку о временном закрытии участка популярной тропы. Рассмотрите охрану парка и доступ жителей.",
+   "content_points_et": [
+    "Sõnastage vastuolu nii, et mõlemad eesmärgid oleksid arusaadavad.",
+    "Võrrelge ajutist sulgemist ja teist liikumiskorraldust.",
+    "Käsitlege vastuväidet, mis seab teie lahendusele tingimuse.",
+    "Lõpetage kontrollitava soovitusega."
+   ],
+   "content_points_ru": [
+    "Сформулируйте конфликт так, чтобы обе цели были понятны.",
+    "Сравните временное закрытие и альтернативную организацию движения.",
+    "Ответьте на возражение, которое ограничивает ваше решение.",
+    "Завершите проверяемой рекомендацией."
+   ],
+   "explanation_ru": "Обоснуйте, почему ваше решение соразмерно проблеме, и назовите условие его пересмотра.",
+   "practice_words": [
+    200,
+    280
+   ]
+  },
+  {
+   "id": "w-data-correction-c1",
+   "topic": "tech",
+   "level": "C1",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Публичное исправление ошибки в отчёте",
+   "prompt_et": "Teie töörühm avaldas graafiku, mille teljel olid protsendid, kuigi andmed näitasid inimeste arvu. Graafikut on juba jagatud. Koostage avalik parandusteade.",
+   "prompt_ru": "Подготовьте публичное исправление к уже распространённому графику: на оси ошибочно указаны проценты вместо числа людей.",
+   "content_points_et": [
+    "Nimetage konkreetne viga ja näidake, mida andmed tegelikult mõõdavad.",
+    "Eristage järeldused, mis muutuvad, ja need, mis jäävad kehtima.",
+    "Öelge, kust lugeja leiab parandatud versiooni.",
+    "Kirjeldage lühidalt, kuidas sama viga edaspidi väldite."
+   ],
+   "content_points_ru": [
+    "Назовите ошибку и действительную единицу измерения.",
+    "Разделите выводы, которые надо изменить, и те, которые сохраняются.",
+    "Укажите, где найти исправленную версию.",
+    "Объясните, как будете предотвращать повторение ошибки."
+   ],
+   "explanation_ru": "Сделайте исправление заметным и понятным человеку, который видел только старый график.",
+   "practice_words": [
+    200,
+    280
+   ],
+   "sample_et": "Parandus: graafiku teljel kasutati valet ühikut\n\nMeie eelmises ülevaates ilmunud graafiku püstteljele oli märgitud protsendimärk. Tegelikult näitas telg inimeste arvu. Näiteks väärtus 24 tähistas kahtkümmet nelja vastajat, mitte kahtkümmet nelja protsenti vastanutest. Viga tekkis graafiku vormistamisel. Andmetabeli kirjeid me selle paranduse käigus ei muutnud.\n\nGraafik võimaldab endiselt võrrelda seda, kui palju vastajaid igasse rühma kuulus. Selle põhjal ei saa aga võrrelda rühmade osakaale, sest rühmade suurus oli erinev. Seetõttu võtsime ülevaatest tagasi lause, milles kirjeldasime ühe rühma tulemust protsendina. Ülejäänud arvulised tähelepanekud jäävad kehtima juhul, kui neid loetakse inimeste arvuna. Kui soovime edaspidi võrrelda osakaale, lisame iga rühma koguarvu ja näitame, kuidas protsent arvutati.\n\nParandatud graafik on samal ülevaatelehel esialgse joonise asemel. Graafiku all on paranduse kuupäev ja lühike selgitus. Kui olete varasemat pilti jaganud, palume viidata parandatud versioonile. Seda saab teha ka siis, kui vana jagamispostitust enam muuta ei saa. Kui viitasite oma tekstis konkreetsele protsendile, soovitame üle kontrollida ka seda väidet, mitte ainult pilti välja vahetada.\n\nEdaspidi kontrollib üks töörühma liige andmetabelit ja teine loeb enne avaldamist üle telgede nimetused ning ühikud. Võrdleme lisaks vähemalt üht graafikul kuvatud väärtust algtabeli vastava reaga. Kui märgistus ei ühti andmetega, peatame avaldamise kuni vea selgitamiseni. Nii jääb kontrollitav jälg ka juhul, kui kujundust enne avaldamist muudetakse.",
+   "sample_notes_ru": "Сначала названа конкретная ошибка. Затем объяснено, какие сравнения ещё допустимы, и даны инструкции тем, кто уже поделился графиком."
+  },
+  {
+   "id": "w-school-feature-c1",
+   "topic": "school",
+   "level": "C1",
+   "status": "draft",
+   "kind": "description",
+   "title_ru": "Репортаж о школьном обмене опытом",
+   "prompt_et": "Koolis toimus nädal, mil õpilased said üksteisele oma oskusi õpetada. Mõni osaleja leidis uue huviala, teine tundis, et tal oli raske võõrale rühmale midagi selgitada. Kirjutage koolilehele lugu.",
+   "prompt_ru": "Напишите материал для школьной газеты о неделе, на которой ученики учили друг друга своим навыкам.",
+   "content_points_et": [
+    "Alustage konkreetsest olukorrast töötoas.",
+    "Põimige loosse kahe osaleja erinev kogemus.",
+    "Eristage nähtut ja enda tõlgendust.",
+    "Lõpetage tähelepanekuga, mis aitab järgmist korda kavandada."
+   ],
+   "content_points_ru": [
+    "Начните с конкретной сцены на занятии.",
+    "Передайте разный опыт двух участников.",
+    "Отделите увиденное от собственной интерпретации.",
+    "Завершите наблюдением, которое пригодится организаторам."
+   ],
+   "explanation_ru": "Свяжите сцену, голоса участников и итог одной темой. Избегайте вывода о всех учениках по двум примерам.",
+   "practice_words": [
+    200,
+    280
+   ]
+  },
+  {
+   "id": "w-late-train-c1",
+   "topic": "travel",
+   "level": "C1",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Ответ на жалобу о пересадке",
+   "prompt_et": "Reisija teatas, et hilinenud rongi tõttu jäi tal bussist maha. Te teate rongi saabumisaega, kuid ei tea, kas bussijuht sai hilinemisest teate. Vastake teenindajana.",
+   "prompt_ru": "Ответьте пассажиру, который пропустил автобус из-за опоздания поезда. Время прибытия известно, но получение сообщения водителем ещё проверяется.",
+   "content_points_et": [
+    "Tunnistage reisija konkreetset probleemi.",
+    "Eristage kinnitatud andmed ja kontrollimist vajav asjaolu.",
+    "Pakkuge järgmine samm, mida saate ise teha.",
+    "Nimetage vastamise tähtaeg ja vajaliku info ulatus."
+   ],
+   "content_points_ru": [
+    "Признайте конкретное неудобство пассажира.",
+    "Разделите подтверждённые сведения и открытый вопрос.",
+    "Предложите следующий шаг в пределах своих возможностей.",
+    "Укажите срок ответа и какие сведения понадобятся."
+   ],
+   "explanation_ru": "Тон должен быть внимательным. Проверьте, не обещаете ли вы компенсацию или результат до проверки.",
+   "practice_words": [
+    200,
+    280
+   ]
   }
  ],
  "connectors": [

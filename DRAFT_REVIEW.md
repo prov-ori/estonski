@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 5006. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 5164. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -1270,7 +1270,7 @@
 - `ls-conditional-c1 (неверно)` — Kui oleksime teadnud, oleksime plaani muutma.
 - `ls-conditional-c1 (верно)` — Kui oleksime teadnud, oleksime plaani muutnud.
 
-## listening.json (549)
+## listening.json (587)
 
 - `l-01` — Direktori teade
 - `l-01` — Tere, kallid õpilased! Siin räägib kooli direktor.
@@ -1821,6 +1821,44 @@
 - `l-archive-q5 (вариант)` — Mälestus tuleb alati eelistada kirjalikule allikale
 - `l-archive-q5 (вариант)` — Kirje võib avaldada üksnes pärast täielikku kontrolli
 - `l-archive-q5 (вариант)` — Täiendatav avalik kirje peab näitama teadmise alust
+- `l-exhibition-c1` — Kelle hääl näituselt puudub?
+- `l-exhibition-c1` — Meie näituse külastajad hindasid selgitusi kõrgelt. Üheksa vastajat kümnest ütles, et neil oli lihtne väljapanekust aru saada. Selle põhjal taheti jätta tekstid järgmises saalis samasuguseks.
+- `l-exhibition-c1` — See annab kasulikku infot, aga küsimustik oli kättesaadav ainult viimases saalis. Kui keegi lahkus varem, võis tema kogemus olla teistsugune. Me ei tea ka seda, kas lahkumise põhjus oli tekst, ajapuudus või midagi muud.
+- `l-exhibition-c1` — Järgmisel korral võiks küsimuse esitada ka väljapääsu juures. Ma ei tahaks siiski küsida üksnes seda, kas tekst oli arusaadav. Palume külastajal oma sõnadega öelda, mis talle väljapaneku mõttest meelde jäi.
+- `l-exhibition-c1` — See aitaks märgata, kus tõlgendus erineb koostaja kavatsusest. Ent erinev tõlgendus ei ole alati viga. Kui inimene põhjendab oma arusaama eksponaadi põhjal, võib tema vastus avada seose, mida meie ei märganud.
+- `l-exhibition-q1` — Mis piirab esialgse küsitluse järeldust kõige enam?
+- `l-exhibition-q1 (вариант)` — Küsimustik ei jõudnud tingimata kõigi külastajateni
+- `l-exhibition-q1 (вариант)` — Kõik vastajad lahkusid enne viimast saali
+- `l-exhibition-q1 (вариант)` — Vastused koguti alles mitu aastat hiljem
+- `l-exhibition-q2` — Mida tahab esimene kõneleja järgmises küsitluses lisaks uurida?
+- `l-exhibition-q2 (вариант)` — Kui palju maksis iga külastaja pilet
+- `l-exhibition-q2 (вариант)` — Mida külastaja väljapaneku mõttest ise sõnastada oskab
+- `l-exhibition-q2 (вариант)` — Millises järjekorras eksponaadid üles pandi
+- `l-exhibition-q3` — Teise kõneleja arvates on näituse koostaja omast erinev tõlgendus alati ekslik.
+- `l-exhibition-q4` — Selgitavad tekstid kirjutati algselt kahes keeles.
+- `l-exhibition-q5` — Millise kokkuvõttega nõustuksid tõenäoliselt mõlemad?
+- `l-exhibition-q5 (вариант)` — Positiivne hinnang tõendab, et kõigile sobis sama tekst.
+- `l-exhibition-q5 (вариант)` — Edaspidi tuleb küsida ainult neid, kes lahkuvad varem.
+- `l-exhibition-q5 (вариант)` — Küsitluse ulatust tasub laiendada ning vastuseid sisuliselt vaadata.
+- `l-budget-c1` — Eelarvekärbe ja varjatud kulu
+- `l-budget-c1` — Meil paluti vähendada töövahendite hooldusele kuluvat raha. Üks ettepanek on teha ülevaatusi harvem. Arveid vaadates tundub see mõistlik, sest eelmisel aastal ei leitud mitmel ülevaatusel ühtegi puudust.
+- `l-budget-c1` — Puuduste puudumine ei näita veel, et ülevaatus oli tarbetu. Võimalik, et töötajad tegid enne kontrolli väiksemaid parandusi. Kui muudame ainult kontrollide arvu, võime kaotada harjumuse, mis aitas rikkeid vältida.
+- `l-budget-c1` — Siis ei tasu hinnata kokkuhoidu ainult hooldusarvete põhjal. Võiksime katsetada pikemat vahet seadmetel, mille kasutuskoormus on väike, ning mõõta lisaks kulule seda, kui kaua seadmed rikke korral seisavad.
+- `l-budget-c1` — Nõus, kui võrdlus hõlmab ka suure koormusega seadmeid, mille hooldus jääb samaks. Sellest ei saa puhast katset, sest rühmad erinevad, aga näeme vähemalt, kas seisakud sagenevad ka seal, kus korda ei muudeta.
+- `l-budget-q1` — Miks tundub ülevaatuste harvendamine esialgu mõistlik?
+- `l-budget-q1 (вариант)` — Seadmeid ei kasutatud eelmisel aastal üldse
+- `l-budget-q1 (вариант)` — Mitmel ülevaatusel ei leitud ühtegi puudust
+- `l-budget-q1 (вариант)` — Hoolduse hind oli juba langenud
+- `l-budget-q2` — Millise võimaliku seose pakub välja teine kõneleja?
+- `l-budget-q2 (вариант)` — Kontrolli ootus võis soodustada varajasi parandusi
+- `l-budget-q2 (вариант)` — Iga ülevaatus põhjustas seadmete rikke
+- `l-budget-q2 (вариант)` — Töötajad loobusid kontrollide tõttu parandamisest
+- `l-budget-q3` — Esimene kõneleja soovitab muuta kõigi seadmete hoolduskorda korraga.
+- `l-budget-q4` — Eelmisel aastal osteti seadmetele uus kindlustus.
+- `l-budget-q5` — Miks on võrdluse tulemust vaja ettevaatlikult tõlgendada?
+- `l-budget-q5 (вариант)` — Seisakuid ei ole võimalik mõõta.
+- `l-budget-q5 (вариант)` — Hoolduskulusid ei tohi omavahel võrrelda.
+- `l-budget-q5 (вариант)` — Erineva kasutuskoormusega seadmed ei moodusta samaväärseid rühmi.
 
 ## mock-exam.json (120)
 
@@ -3839,7 +3877,7 @@
 - `source-population-C1 (развёрнутый вопрос 5)` — Sõnastage üks tingimuslik ja üks eksitavalt kindel pealkiri. Selgitage erinevust.
 - `source-population-C1 (развёрнутый вопрос 6)` — Kirjutage 150–180 sõnaga memo, kuidas võiks kohalik omavalitsus prognoosi kasutada.
 
-## speaking.json (214)
+## speaking.json (266)
 
 - `s-01` — Ma pakun, et ...
 - `s-01` — See on hea mõte.
@@ -4055,6 +4093,58 @@
 - `s-training-c1` — Siin tuleb eristada ...
 - `s-training-c1` — Sellest ei saa veel järeldada, et ...
 - `s-training-c1` — Tulemuse tõlgendamisel tasub arvestada ...
+- `s-library-space-c1` — Meile sobiks see juhul, kui ...
+- `s-library-space-c1` — Millise näitaja põhjal otsustame ...?
+- `s-library-space-c1` — Proovime seda kuu aega ja seejärel ...
+- `s-repair-interview-c1` — Millal tasub katki läinud ese parandada?
+- `s-repair-interview-c1` — Kuidas eristaksite omaniku kokkuhoidu laiemast keskkonnakasust?
+- `s-repair-interview-c1` — Mida ütleksite kuulajale, kellele parandamine on liiga kallis?
+- `s-repair-interview-c1` — Milline näitaja võiks kirjeldada parandustöökoja tegelikku kasu?
+- `s-repair-interview-c1` — Omaniku seisukohast ...
+- `s-repair-interview-c1` — See sõltub muu hulgas sellest, kas ...
+- `s-repair-interview-c1` — Üksnes paranduste arv ei näita ...
+- `s-school-rules-c1 (образец)` — Rühmaprojekti tulemus võib olla väga hea ka siis, kui liikmete panus oli erinev.
+- `s-school-rules-c1 (образец)` — Samamoodi võib üksinda töötanud õpilane jõuda tugeva lahenduseni, kuigi tal ei olnud kellegagi ideid arutada.
+- `s-school-rules-c1 (образец)` — Seepärast hindaksin mõlemas vormis kõigepealt seda, kas õpilane oskab oma valikut tõenditega põhjendada.
+- `s-school-rules-c1 (образец)` — Näiteks võiks iga õpilane esitada ühe allika ja selgitada, kuidas see lõpptulemust mõjutas.
+- `s-school-rules-c1 (образец)` — Sellest ei piisa siiski koostöö hindamiseks.
+- `s-school-rules-c1 (образец)` — Rühmatöö puhul küsiksin eraldi, kuidas jagati ülesandeid ja mida tehti eriarvamuse korral.
+- `s-school-rules-c1 (образец)` — Üksinda töötanud õpilase puhul uuriksin, kuidas ta oma lahendust ise kontrollis.
+- `s-school-rules-c1 (образец)` — Pärast esimest katset võrdleksin tööde näiteid ja küsiksin õppijatelt, kas kriteeriumid olid enne alustamist selged.
+- `s-school-rules-c1 (образец)` — Kui sama nõue tekitab eri vormides põhjendamatult erineva koormuse, tuleks seda täpsustada.
+- `s-school-rules-c1` — Eristage projekti tulemus ja üksiku õpilase panus.
+- `s-school-rules-c1` — Pakkuge mõlemale töövormile ühine hindamiskriteerium.
+- `s-school-rules-c1` — Nimetage olukord, kus ühine kriteerium üksi ei piisa.
+- `s-school-rules-c1` — Tehke ettepanek, kuidas koguda tagasisidet pärast esimest katset.
+- `s-school-rules-c1` — Kõigepealt tuleb eristada ...
+- `s-school-rules-c1` — Võrreldavuse huvides ...
+- `s-school-rules-c1` — Selle meetodi piirang on ...
+- `s-bus-budget-c1` — Vähene kasutus võib tähendada ka seda, et ...
+- `s-bus-budget-c1` — Otsustaksin teisiti, kui ...
+- `s-bus-budget-c1` — Kokkuleppe järgi kontrollime kõigepealt ...
+- `s-labels-interview-c1` — Millal võib automaattõlge olla lugejale piisav?
+- `s-labels-interview-c1` — Tooge näide veast, millel oleks praktiline tagajärg.
+- `s-labels-interview-c1` — Kas hoiatus sildi kujul vähendab alati arusaamatust?
+- `s-labels-interview-c1` — Kuidas korraldaksite paranduste teatamise ja avaldamise?
+- `s-labels-interview-c1` — Märge aitab juhul, kui ...
+- `s-labels-interview-c1` — Suurim risk tekib siis, kui ...
+- `s-labels-interview-c1` — Parandus peaks olema nähtav ka ...
+- `s-team-handovers-c1 (образец)` — Malli kasutegur on selles, et üleandmisel meenub ka töö, mille tähtaeg saabub alles järgmisel nädalal.
+- `s-team-handovers-c1 (образец)` — Näiteks on korduva tellimuse puhul mõistlik märkida vastutaja, järgmine samm ja tähtaeg alati samasse kohta.
+- `s-team-handovers-c1 (образец)` — Keerukama juhtumi puhul võib aga oluline olla see, miks otsus tehti või millise erandiga klient juba nõustus.
+- `s-team-handovers-c1 (образец)` — Kui vormis sellist kohta ei ole, jääb järgmine töötaja küll kuupäevaga, kuid ilma otsuse põhjuseta.
+- `s-team-handovers-c1 (образец)` — ”.
+- `s-team-handovers-c1 (образец)` — Selle täitmine oleks vabatahtlik ning sinna saaks lisada ühe lühikese selgituse.
+- `s-team-handovers-c1 (образец)` — Kuu lõpus võrdleksin, kui sageli tuli pärast üleandmist täpsustusi küsida.
+- `s-team-handovers-c1 (образец)` — Eraldi vaataksin juhtumeid, mis ei mahtunud tavapärasesse töövoogu.
+- `s-team-handovers-c1 (образец)` — Nii saame hinnata, kas uus väli aitab päriselt või muudab üleandmise lihtsalt pikemaks.
+- `s-team-handovers-c1` — Selgitage, mida mall aitab meeles pidada.
+- `s-team-handovers-c1` — Nimetage olukord, kus valmis väljad takistavad olulise info edasiandmist.
+- `s-team-handovers-c1` — Pakkuge muudatus, mis jätab alles nii struktuuri kui ka paindlikkuse.
+- `s-team-handovers-c1` — Sõnastage näitaja ja tähtaeg, mille alusel muudatust hinnata.
+- `s-team-handovers-c1` — Malli eelis on selles, et ...
+- `s-team-handovers-c1` — Samas võivad erandid jääda märkamata, kui ...
+- `s-team-handovers-c1` — Kuu lõpus võrdleksin ...
 
 ## vocab.json (710)
 
@@ -4769,7 +4859,7 @@
 - `v-argument-16` — tingimuslik (tingimusliku, tingimuslikku)
 - `v-argument-16` — See hinnang on tingimuslik ja sõltub lähteandmetest.
 
-## writing.json (283)
+## writing.json (351)
 
 - `w-01 (образец)` — Tere, Karl!
 - `w-01 (образец)` — Kuidas sul läheb?
@@ -5038,6 +5128,74 @@
 - `w-rent-c1` — Võrrelge tagatisraha ja ootenimekirja võimalikke mõjusid.
 - `w-rent-c1` — Arvestage väikese eelarvega ühingute olukorraga.
 - `w-rent-c1` — Pakkuge katse ja tingimus, mille korral reeglit muudetakse.
+- `w-museum-letter-c1` — Muuseum kavandab uut näitust. Eelmisel näitusel olid pikad seinapaneelid, kuid lühikokkuvõtted olid saadaval ainult telefonis. Kirjutage kuraatorile ametlik ettepanek.
+- `w-museum-letter-c1` — Kirjeldage olukorda kahe erineva külastaja vaatenurgast.
+- `w-museum-letter-c1` — Võrrelge kaht võimalust, kuidas sama teavet esitada.
+- `w-museum-letter-c1` — Pakkuge etapiviisiline lahendus ja nimetage selle piirang.
+- `w-museum-letter-c1` — Selgitage, kuidas hinnata muudatuse kasu.
+- `w-shift-summary-c1 (образец)` — Juhatusele
+- `w-shift-summary-c1 (образец)` — Pärast uue vahetusgraafiku kehtestamist registreeriti juhi sõnul vähem hilinemisi.
+- `w-shift-summary-c1 (образец)` — Töötajate esindaja toob välja, et samal ajal nihutati osal töötajatel tööpäeva algust ning töölt lahkujaid oli varasemast rohkem.
+- `w-shift-summary-c1 (образец)` — Need tähelepanekud ei ole omavahel vastuolus.
+- `w-shift-summary-c1 (образец)` — Küll aga vastavad need eri küsimustele: üks puudutab tööle jõudmist kokkulepitud ajaks, teine töökorralduse laiemat mõju.
+- `w-shift-summary-c1 (образец)` — Esimene küsimus on, kas hilinemisi võrreldi töötaja kohta või lihtsalt koguarvuna.
+- `w-shift-summary-c1 (образец)` — Selleks vajame mõlema perioodi töötajate ja vahetuste arvu ning ühesugust hilinemise määratlust.
+- `w-shift-summary-c1 (образец)` — Teine küsimus on, kas muutus puudutas ka neid, kelle tööpäeva algus ei nihkunud.
+- `w-shift-summary-c1 (образец)` — Võrdleksin nende andmeid hilisema algusega rühma andmetega, pidades meeles, et rühmades võivad töötada erineva koormuse ja sõiduvõimalustega inimesed.
+- `w-shift-summary-c1 (образец)` — Enne lõpliku otsuse tegemist küsiksin ka, kas lahkumiste põhjused on teada.
+- `w-shift-summary-c1 (образец)` — Lahkumiste arvu kasv võib osutada probleemile, kuid ainult arvu põhjal ei ole võimalik öelda, kas inimesed lahkusid graafiku pärast.
+- `w-shift-summary-c1 (образец)` — Võrdlusperioodide valikul tuleks arvestada puhkuste ja töömahu muutustega.
+- `w-shift-summary-c1 (образец)` — Vastasel korral võib ajutine muutus näida püsiva mõjuna.
+- `w-shift-summary-c1 (образец)` — Soovitan järgmisel kuul praegust graafikut jälgida, kuid jätta selle laiendamine ootele.
+- `w-shift-summary-c1 (образец)` — Kogume nädala kaupa vahetuste, hilinemiste ja lahkumiste andmed.
+- `w-shift-summary-c1 (образец)` — Lisame võimaluse anda vabatahtlikult tagasisidet, sealhulgas inimestel, kelle tööaeg ei muutunud.
+- `w-shift-summary-c1 (образец)` — Kuu lõpus saab juhatus otsustada, kas muutus väärib pikemat katset või on vaja graafikut kohandada.
+- `w-shift-summary-c1 (образец)` — Kui olemasolevad andmed on ebaühtlased, märgime selle otsuse põhjenduses ja jätkame võrdlust enne püsiva korra kinnitamist.
+- `w-shift-summary-c1` — Juht ütleb: „Pärast uue vahetusgraafiku kehtestamist vähenes hilinemiste arv.” Töötajate esindaja ütleb: „Samal ajal lubati mõnel töötajal päeva hiljem alustada ja töölt lahkujate arv kasvas.” Koostage juhatusele süntees.
+- `w-shift-summary-c1` — Esitage mõlema allika väited neutraalselt.
+- `w-shift-summary-c1` — Eristage tähelepanek ja põhjuslik seletus.
+- `w-shift-summary-c1` — Nimetage kaks lisaküsimust ja vajalikud andmed.
+- `w-shift-summary-c1` — Sõnastage ajutine soovitus järgmise kuu kohta.
+- `w-park-editorial-c1` — Linna uus park on populaarne, kuid populaarseimal rajal on pinnas kulunud. Ühed soovivad osa rajast ajutiselt sulgeda, teised kardavad, et see piirab liikumisvõimalusi. Kirjutage kohalikule lehele arvamuslugu.
+- `w-park-editorial-c1` — Sõnastage vastuolu nii, et mõlemad eesmärgid oleksid arusaadavad.
+- `w-park-editorial-c1` — Võrrelge ajutist sulgemist ja teist liikumiskorraldust.
+- `w-park-editorial-c1` — Käsitlege vastuväidet, mis seab teie lahendusele tingimuse.
+- `w-park-editorial-c1` — Lõpetage kontrollitava soovitusega.
+- `w-data-correction-c1 (образец)` — Parandus: graafiku teljel kasutati valet ühikut
+- `w-data-correction-c1 (образец)` — Meie eelmises ülevaates ilmunud graafiku püstteljele oli märgitud protsendimärk.
+- `w-data-correction-c1 (образец)` — Tegelikult näitas telg inimeste arvu.
+- `w-data-correction-c1 (образец)` — Näiteks väärtus 24 tähistas kahtkümmet nelja vastajat, mitte kahtkümmet nelja protsenti vastanutest.
+- `w-data-correction-c1 (образец)` — Viga tekkis graafiku vormistamisel.
+- `w-data-correction-c1 (образец)` — Andmetabeli kirjeid me selle paranduse käigus ei muutnud.
+- `w-data-correction-c1 (образец)` — Graafik võimaldab endiselt võrrelda seda, kui palju vastajaid igasse rühma kuulus.
+- `w-data-correction-c1 (образец)` — Selle põhjal ei saa aga võrrelda rühmade osakaale, sest rühmade suurus oli erinev.
+- `w-data-correction-c1 (образец)` — Seetõttu võtsime ülevaatest tagasi lause, milles kirjeldasime ühe rühma tulemust protsendina.
+- `w-data-correction-c1 (образец)` — Ülejäänud arvulised tähelepanekud jäävad kehtima juhul, kui neid loetakse inimeste arvuna.
+- `w-data-correction-c1 (образец)` — Kui soovime edaspidi võrrelda osakaale, lisame iga rühma koguarvu ja näitame, kuidas protsent arvutati.
+- `w-data-correction-c1 (образец)` — Parandatud graafik on samal ülevaatelehel esialgse joonise asemel.
+- `w-data-correction-c1 (образец)` — Graafiku all on paranduse kuupäev ja lühike selgitus.
+- `w-data-correction-c1 (образец)` — Kui olete varasemat pilti jaganud, palume viidata parandatud versioonile.
+- `w-data-correction-c1 (образец)` — Seda saab teha ka siis, kui vana jagamispostitust enam muuta ei saa.
+- `w-data-correction-c1 (образец)` — Kui viitasite oma tekstis konkreetsele protsendile, soovitame üle kontrollida ka seda väidet, mitte ainult pilti välja vahetada.
+- `w-data-correction-c1 (образец)` — Edaspidi kontrollib üks töörühma liige andmetabelit ja teine loeb enne avaldamist üle telgede nimetused ning ühikud.
+- `w-data-correction-c1 (образец)` — Võrdleme lisaks vähemalt üht graafikul kuvatud väärtust algtabeli vastava reaga.
+- `w-data-correction-c1 (образец)` — Kui märgistus ei ühti andmetega, peatame avaldamise kuni vea selgitamiseni.
+- `w-data-correction-c1 (образец)` — Nii jääb kontrollitav jälg ka juhul, kui kujundust enne avaldamist muudetakse.
+- `w-data-correction-c1` — Teie töörühm avaldas graafiku, mille teljel olid protsendid, kuigi andmed näitasid inimeste arvu. Graafikut on juba jagatud. Koostage avalik parandusteade.
+- `w-data-correction-c1` — Nimetage konkreetne viga ja näidake, mida andmed tegelikult mõõdavad.
+- `w-data-correction-c1` — Eristage järeldused, mis muutuvad, ja need, mis jäävad kehtima.
+- `w-data-correction-c1` — Öelge, kust lugeja leiab parandatud versiooni.
+- `w-data-correction-c1` — Kirjeldage lühidalt, kuidas sama viga edaspidi väldite.
+- `w-school-feature-c1` — Koolis toimus nädal, mil õpilased said üksteisele oma oskusi õpetada. Mõni osaleja leidis uue huviala, teine tundis, et tal oli raske võõrale rühmale midagi selgitada. Kirjutage koolilehele lugu.
+- `w-school-feature-c1` — Alustage konkreetsest olukorrast töötoas.
+- `w-school-feature-c1` — Põimige loosse kahe osaleja erinev kogemus.
+- `w-school-feature-c1` — Eristage nähtut ja enda tõlgendust.
+- `w-school-feature-c1` — Lõpetage tähelepanekuga, mis aitab järgmist korda kavandada.
+- `w-late-train-c1` — Reisija teatas, et hilinenud rongi tõttu jäi tal bussist maha. Te teate rongi saabumisaega, kuid ei tea, kas bussijuht sai hilinemisest teate. Vastake teenindajana.
+- `w-late-train-c1` — Tunnistage reisija konkreetset probleemi.
+- `w-late-train-c1` — Eristage kinnitatud andmed ja kontrollimist vajav asjaolu.
+- `w-late-train-c1` — Pakkuge järgmine samm, mida saate ise teha.
+- `w-late-train-c1` — Nimetage vastamise tähtaeg ja vajaliku info ulatus.
 - `c-03` — Ootan sinu vastust.
 - `c-06` — lisaks
 - `c-07` — samuti

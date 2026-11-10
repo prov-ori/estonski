@@ -356,6 +356,14 @@
    "module": "listening",
    "title_ru": "Открытие архива и контекст"
   },
+  "l-exhibition-c1": {
+   "module": "listening",
+   "title_ru": "Чей голос не услышан на выставке?"
+  },
+  "l-budget-c1": {
+   "module": "listening",
+   "title_ru": "Бюджетное сокращение и скрытые издержки"
+  },
   "w-01": {
    "module": "writing",
    "title_ru": "Письмо другу: приглашение"
@@ -582,6 +590,30 @@
   "w-rent-c1": {
    "module": "writing",
    "title_ru": "Рекомендация по использованию общественного зала"
+  },
+  "w-museum-letter-c1": {
+   "module": "writing",
+   "title_ru": "Официальное письмо о доступности выставки"
+  },
+  "w-shift-summary-c1": {
+   "module": "writing",
+   "title_ru": "Критическое резюме двух сообщений"
+  },
+  "w-park-editorial-c1": {
+   "module": "writing",
+   "title_ru": "Колонка о защите зелёных зон"
+  },
+  "w-data-correction-c1": {
+   "module": "writing",
+   "title_ru": "Публичное исправление ошибки в отчёте"
+  },
+  "w-school-feature-c1": {
+   "module": "writing",
+   "title_ru": "Репортаж о школьном обмене опытом"
+  },
+  "w-late-train-c1": {
+   "module": "writing",
+   "title_ru": "Ответ на жалобу о пересадке"
   },
   "s-01": {
    "module": "speaking",
@@ -818,6 +850,30 @@
   "s-training-c1": {
    "module": "speaking",
    "title_ru": "Монолог о качестве обучения сотрудников"
+  },
+  "s-library-space-c1": {
+   "module": "speaking",
+   "title_ru": "Переговоры о тихой зоне в библиотеке"
+  },
+  "s-repair-interview-c1": {
+   "module": "speaking",
+   "title_ru": "Интервью о ремонтопригодности"
+  },
+  "s-school-rules-c1": {
+   "module": "speaking",
+   "title_ru": "Монолог о правилах школьного эксперимента"
+  },
+  "s-bus-budget-c1": {
+   "module": "speaking",
+   "title_ru": "Переговоры о вечернем автобусе"
+  },
+  "s-labels-interview-c1": {
+   "module": "speaking",
+   "title_ru": "Интервью о маркировке автоматических переводов"
+  },
+  "s-team-handovers-c1": {
+   "module": "speaking",
+   "title_ru": "Монолог о передаче дел"
   }
  }
 }

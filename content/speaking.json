@@ -1721,6 +1721,154 @@
     "Tulemuse tõlgendamisel tasub arvestada ..."
    ],
    "explanation_ru": "Разделите участие, освоение и применение навыка. Объясните, почему два показателя дают разную информацию."
+  },
+  {
+   "id": "s-library-space-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Переговоры о тихой зоне в библиотеке",
+   "kind": "dialogue",
+   "situation_ru": "Библиотека хочет выделить зал для совместных занятий. Студентам нужны обсуждения, а посетителям читального зала — тишина. Договоритесь об эксперименте, который можно оценить через месяц.",
+   "role_a": {
+    "title_ru": "Участник A",
+    "prompts_et": [
+     "Selgitage, miks rühm vajab vestlemiseks oma ruumi.",
+     "Pakkuge kaks ajavahemikku ja öelge, kellele need sobivad.",
+     "Leppige kokku, kuidas broneeringust loobumisest teatada."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Участник B",
+    "prompts_et": [
+     "Kirjeldage vaikse töö tegijate vajadusi ja võimalikku takistust.",
+     "Küsige, kuidas mõõdetakse häirimist väljaspool uut ala.",
+     "Pakkuge tingimus, mille korral katset muudetakse."
+    ]
+   },
+   "phrases_et": [
+    "Meile sobiks see juhul, kui ...",
+    "Millise näitaja põhjal otsustame ...?",
+    "Proovime seda kuu aega ja seejärel ..."
+   ],
+   "explanation_ru": "Подведите итог в одном абзаце: время, правила брони, критерий и дата проверки."
+  },
+  {
+   "id": "s-repair-interview-c1",
+   "topic": "nature",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Интервью о ремонтопригодности",
+   "kind": "interview",
+   "situation_ru": "Вас пригласили в местный подкаст поговорить об обмене и ремонте вещей. Сопоставьте выгоду для владельца и общую экологическую пользу.",
+   "prompts_et": [
+    "Millal tasub katki läinud ese parandada?",
+    "Kuidas eristaksite omaniku kokkuhoidu laiemast keskkonnakasust?",
+    "Mida ütleksite kuulajale, kellele parandamine on liiga kallis?",
+    "Milline näitaja võiks kirjeldada parandustöökoja tegelikku kasu?"
+   ],
+   "phrases_et": [
+    "Omaniku seisukohast ...",
+    "See sõltub muu hulgas sellest, kas ...",
+    "Üksnes paranduste arv ei näita ..."
+   ],
+   "explanation_ru": "Сначала отвечайте прямо, затем добавляйте пример или оговорку. Назовите ограничение предложенного показателя."
+  },
+  {
+   "id": "s-school-rules-c1",
+   "topic": "school",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Монолог о правилах школьного эксперимента",
+   "kind": "monologue",
+   "situation_ru": "Школа пробует давать ученикам выбор между индивидуальным и групповым проектом. Выступите на собрании и предложите, как сделать оценивание сопоставимым.",
+   "prompts_et": [
+    "Eristage projekti tulemus ja üksiku õpilase panus.",
+    "Pakkuge mõlemale töövormile ühine hindamiskriteerium.",
+    "Nimetage olukord, kus ühine kriteerium üksi ei piisa.",
+    "Tehke ettepanek, kuidas koguda tagasisidet pärast esimest katset."
+   ],
+   "phrases_et": [
+    "Kõigepealt tuleb eristada ...",
+    "Võrreldavuse huvides ...",
+    "Selle meetodi piirang on ..."
+   ],
+   "explanation_ru": "Сформулируйте общее правило и объясните, когда оно требует дополнения.",
+   "model_et": "Rühmaprojekti tulemus võib olla väga hea ka siis, kui liikmete panus oli erinev. Samamoodi võib üksinda töötanud õpilane jõuda tugeva lahenduseni, kuigi tal ei olnud kellegagi ideid arutada. Seepärast hindaksin mõlemas vormis kõigepealt seda, kas õpilane oskab oma valikut tõenditega põhjendada. Näiteks võiks iga õpilane esitada ühe allika ja selgitada, kuidas see lõpptulemust mõjutas. Sellest ei piisa siiski koostöö hindamiseks. Rühmatöö puhul küsiksin eraldi, kuidas jagati ülesandeid ja mida tehti eriarvamuse korral. Üksinda töötanud õpilase puhul uuriksin, kuidas ta oma lahendust ise kontrollis. Pärast esimest katset võrdleksin tööde näiteid ja küsiksin õppijatelt, kas kriteeriumid olid enne alustamist selged. Kui sama nõue tekitab eri vormides põhjendamatult erineva koormuse, tuleks seda täpsustada."
+  },
+  {
+   "id": "s-bus-budget-c1",
+   "topic": "travel",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Переговоры о вечернем автобусе",
+   "kind": "dialogue",
+   "situation_ru": "Денег хватает либо на дополнительный вечерний рейс, либо на продление маршрута до окраины. Один участник представляет тех, кто работает допоздна, второй — жителей окраины. Предложите способ проверить потребность обеих групп.",
+   "role_a": {
+    "title_ru": "Участник A",
+    "prompts_et": [
+     "Kirjeldage olukorda, kus hilisem väljumine oleks otsustav.",
+     "Küsige, keda marsruudi pikendamine tegelikult teenindaks.",
+     "Pakkuge katseperiood ja üks jälgitav näitaja."
+    ]
+   },
+   "role_b": {
+    "title_ru": "Участник B",
+    "prompts_et": [
+     "Selgitage, miks varasemad sõitjate loendused ei pruugi äärelinna vajadust näidata.",
+     "Pakkuge viis koguda teavet ka mittesõitjatelt.",
+     "Nimetage asjaolu, mille korral oleksite valmis oma eelistust muutma."
+    ]
+   },
+   "phrases_et": [
+    "Vähene kasutus võib tähendada ka seda, et ...",
+    "Otsustaksin teisiti, kui ...",
+    "Kokkuleppe järgi kontrollime kõigepealt ..."
+   ],
+   "explanation_ru": "Отделите данные о текущих пассажирах от сведений о тех, кому существующий маршрут не подходит."
+  },
+  {
+   "id": "s-labels-interview-c1",
+   "topic": "tech",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Интервью о маркировке автоматических переводов",
+   "kind": "interview",
+   "situation_ru": "Редакция публикует машинный перевод объявлений с пометкой об автоматическом происхождении. Объясните, когда такой пометки достаточно и где нужна проверка.",
+   "prompts_et": [
+    "Millal võib automaattõlge olla lugejale piisav?",
+    "Tooge näide veast, millel oleks praktiline tagajärg.",
+    "Kas hoiatus sildi kujul vähendab alati arusaamatust?",
+    "Kuidas korraldaksite paranduste teatamise ja avaldamise?"
+   ],
+   "phrases_et": [
+    "Märge aitab juhul, kui ...",
+    "Suurim risk tekib siis, kui ...",
+    "Parandus peaks olema nähtav ka ..."
+   ],
+   "explanation_ru": "Сравните простую информацию и сообщение с последствиями для читателя. Объясните, как он узнает об исправлении."
+  },
+  {
+   "id": "s-team-handovers-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Монолог о передаче дел",
+   "kind": "monologue",
+   "situation_ru": "Команда ввела обязательный шаблон передачи дел. Он уменьшил число пропущенных задач, но сотрудники стали уделять меньше внимания нестандартным ситуациям. Предложите изменение шаблона.",
+   "prompts_et": [
+    "Selgitage, mida mall aitab meeles pidada.",
+    "Nimetage olukord, kus valmis väljad takistavad olulise info edasiandmist.",
+    "Pakkuge muudatus, mis jätab alles nii struktuuri kui ka paindlikkuse.",
+    "Sõnastage näitaja ja tähtaeg, mille alusel muudatust hinnata."
+   ],
+   "phrases_et": [
+    "Malli eelis on selles, et ...",
+    "Samas võivad erandid jääda märkamata, kui ...",
+    "Kuu lõpus võrdleksin ..."
+   ],
+   "explanation_ru": "Назовите пример обычной и нестандартной передачи дел. Завершите предложением, которое можно проверить.",
+   "model_et": "Malli kasutegur on selles, et üleandmisel meenub ka töö, mille tähtaeg saabub alles järgmisel nädalal. Näiteks on korduva tellimuse puhul mõistlik märkida vastutaja, järgmine samm ja tähtaeg alati samasse kohta. Keerukama juhtumi puhul võib aga oluline olla see, miks otsus tehti või millise erandiga klient juba nõustus. Kui vormis sellist kohta ei ole, jääb järgmine töötaja küll kuupäevaga, kuid ilma otsuse põhjuseta. Jätaksin alles kolm põhivälja ja lisaksin välja „Mida järgmine töötaja peab veel teadma?”. Selle täitmine oleks vabatahtlik ning sinna saaks lisada ühe lühikese selgituse. Kuu lõpus võrdleksin, kui sageli tuli pärast üleandmist täpsustusi küsida. Eraldi vaataksin juhtumeid, mis ei mahtunud tavapärasesse töövoogu. Nii saame hinnata, kas uus väli aitab päriselt või muudab üleandmise lihtsalt pikemaks."
   }
  ],
  "checklist": [

@@ -2932,6 +2932,164 @@
      "explanation_ru": "Открытый архив может дополняться, если основания изменений прозрачны."
     }
    ]
+  },
+  {
+   "id": "l-exhibition-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Kelle hääl näituselt puudub?",
+   "title_ru": "Чей голос не услышан на выставке?",
+   "explanation_ru": "Прослушайте спор и отделите наблюдение от объяснения. При повторе отметьте, как меняется предложенное решение.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Meie näituse külastajad hindasid selgitusi kõrgelt. Üheksa vastajat kümnest ütles, et neil oli lihtne väljapanekust aru saada. Selle põhjal taheti jätta tekstid järgmises saalis samasuguseks."
+    },
+    {
+     "sp": "B",
+     "text": "See annab kasulikku infot, aga küsimustik oli kättesaadav ainult viimases saalis. Kui keegi lahkus varem, võis tema kogemus olla teistsugune. Me ei tea ka seda, kas lahkumise põhjus oli tekst, ajapuudus või midagi muud."
+    },
+    {
+     "sp": "A",
+     "text": "Järgmisel korral võiks küsimuse esitada ka väljapääsu juures. Ma ei tahaks siiski küsida üksnes seda, kas tekst oli arusaadav. Palume külastajal oma sõnadega öelda, mis talle väljapaneku mõttest meelde jäi."
+    },
+    {
+     "sp": "B",
+     "text": "See aitaks märgata, kus tõlgendus erineb koostaja kavatsusest. Ent erinev tõlgendus ei ole alati viga. Kui inimene põhjendab oma arusaama eksponaadi põhjal, võib tema vastus avada seose, mida meie ei märganud."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-exhibition-q1",
+     "prompt_et": "Mis piirab esialgse küsitluse järeldust kõige enam?",
+     "type": "choice",
+     "options": [
+      "Küsimustik ei jõudnud tingimata kõigi külastajateni",
+      "Kõik vastajad lahkusid enne viimast saali",
+      "Vastused koguti alles mitu aastat hiljem"
+     ],
+     "answer": 0,
+     "explanation_ru": "Последний зал охватывает только дошедших до него посетителей."
+    },
+    {
+     "id": "l-exhibition-q2",
+     "prompt_et": "Mida tahab esimene kõneleja järgmises küsitluses lisaks uurida?",
+     "type": "choice",
+     "options": [
+      "Kui palju maksis iga külastaja pilet",
+      "Mida külastaja väljapaneku mõttest ise sõnastada oskab",
+      "Millises järjekorras eksponaadid üles pandi"
+     ],
+     "answer": 1,
+     "explanation_ru": "Пересказ своими словами даёт больше информации, чем оценка понятности."
+    },
+    {
+     "id": "l-exhibition-q3",
+     "prompt_et": "Teise kõneleja arvates on näituse koostaja omast erinev tõlgendus alati ekslik.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Он считает, что иной обоснованный взгляд может выявить новую связь."
+    },
+    {
+     "id": "l-exhibition-q4",
+     "prompt_et": "Selgitavad tekstid kirjutati algselt kahes keeles.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Языки текстов не указаны."
+    },
+    {
+     "id": "l-exhibition-q5",
+     "prompt_et": "Millise kokkuvõttega nõustuksid tõenäoliselt mõlemad?",
+     "type": "choice",
+     "options": [
+      "Positiivne hinnang tõendab, et kõigile sobis sama tekst.",
+      "Edaspidi tuleb küsida ainult neid, kes lahkuvad varem.",
+      "Küsitluse ulatust tasub laiendada ning vastuseid sisuliselt vaadata."
+     ],
+     "answer": 2,
+     "explanation_ru": "Собеседники обсуждают охват и то, что именно выясняют ответы."
+    }
+   ]
+  },
+  {
+   "id": "l-budget-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Eelarvekärbe ja varjatud kulu",
+   "title_ru": "Бюджетное сокращение и скрытые издержки",
+   "explanation_ru": "Прослушайте спор и отделите наблюдение от объяснения. При повторе отметьте, как меняется предложенное решение.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Meil paluti vähendada töövahendite hooldusele kuluvat raha. Üks ettepanek on teha ülevaatusi harvem. Arveid vaadates tundub see mõistlik, sest eelmisel aastal ei leitud mitmel ülevaatusel ühtegi puudust."
+    },
+    {
+     "sp": "B",
+     "text": "Puuduste puudumine ei näita veel, et ülevaatus oli tarbetu. Võimalik, et töötajad tegid enne kontrolli väiksemaid parandusi. Kui muudame ainult kontrollide arvu, võime kaotada harjumuse, mis aitas rikkeid vältida."
+    },
+    {
+     "sp": "A",
+     "text": "Siis ei tasu hinnata kokkuhoidu ainult hooldusarvete põhjal. Võiksime katsetada pikemat vahet seadmetel, mille kasutuskoormus on väike, ning mõõta lisaks kulule seda, kui kaua seadmed rikke korral seisavad."
+    },
+    {
+     "sp": "B",
+     "text": "Nõus, kui võrdlus hõlmab ka suure koormusega seadmeid, mille hooldus jääb samaks. Sellest ei saa puhast katset, sest rühmad erinevad, aga näeme vähemalt, kas seisakud sagenevad ka seal, kus korda ei muudeta."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-budget-q1",
+     "prompt_et": "Miks tundub ülevaatuste harvendamine esialgu mõistlik?",
+     "type": "choice",
+     "options": [
+      "Seadmeid ei kasutatud eelmisel aastal üldse",
+      "Mitmel ülevaatusel ei leitud ühtegi puudust",
+      "Hoolduse hind oli juba langenud"
+     ],
+     "answer": 1,
+     "explanation_ru": "Предложение опирается на проверки, на которых не обнаружили дефектов."
+    },
+    {
+     "id": "l-budget-q2",
+     "prompt_et": "Millise võimaliku seose pakub välja teine kõneleja?",
+     "type": "choice",
+     "options": [
+      "Kontrolli ootus võis soodustada varajasi parandusi",
+      "Iga ülevaatus põhjustas seadmete rikke",
+      "Töötajad loobusid kontrollide tõttu parandamisest"
+     ],
+     "answer": 0,
+     "explanation_ru": "Ожидание проверки могло побуждать устранять мелкие проблемы заранее."
+    },
+    {
+     "id": "l-budget-q3",
+     "prompt_et": "Esimene kõneleja soovitab muuta kõigi seadmete hoolduskorda korraga.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Пилот предлагается только для устройств с небольшой нагрузкой."
+    },
+    {
+     "id": "l-budget-q4",
+     "prompt_et": "Eelmisel aastal osteti seadmetele uus kindlustus.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Страховка не обсуждается."
+    },
+    {
+     "id": "l-budget-q5",
+     "prompt_et": "Miks on võrdluse tulemust vaja ettevaatlikult tõlgendada?",
+     "type": "choice",
+     "options": [
+      "Seisakuid ei ole võimalik mõõta.",
+      "Hoolduskulusid ei tohi omavahel võrrelda.",
+      "Erineva kasutuskoormusega seadmed ei moodusta samaväärseid rühmi."
+     ],
+     "answer": 2,
+     "explanation_ru": "Различия между группами ограничивают причинный вывод."
+    }
+   ]
   }
  ]
 }

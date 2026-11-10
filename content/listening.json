@@ -3090,6 +3090,243 @@
      "explanation_ru": "Различия между группами ограничивают причинный вывод."
     }
    ]
+  },
+  {
+   "id": "l-canteen-b2",
+   "topic": "food",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Mida teha üle jääva toiduga?",
+   "title_ru": "Что делать с едой, которая остаётся?",
+   "explanation_ru": "Прослушайте диалог. При первом прослушивании определите проблему и решение, при повторе проверьте условия и детали.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Sööklas jääb reedeti rohkem toitu üle kui teistel päevadel. Algul mõtlesime teha reedeseid portsjoneid väiksemaks, kuid kokk märkis, et ülejääk tekib peamiselt enne serveerimist. Taldrikutelt tuleb toitu tagasi üsna vähe."
+    },
+    {
+     "sp": "B",
+     "text": "Siis ei lahendaks väiksem portsjon peamist probleemi. Reedeti lähevad mõned rühmad varem ära. Kas saaksime teada, mitu inimest jääb sööma, enne kui kokk viimase koguse valmis teeb?"
+    },
+    {
+     "sp": "A",
+     "text": "Saaksime küsida rühma juhendajalt hommikul ligikaudset arvu. Kõigil peaks siiski olema võimalik lõunat saada ka siis, kui plaan muutub. Seepärast jätaksime väikese varu ning valmistaksime teise koguse alles vajaduse korral."
+    },
+    {
+     "sp": "B",
+     "text": "Proovime seda kolm reedet. Paneme eraldi kirja valmistamata jäänud koguse ja selle, mis päeva lõpus päriselt üle jääb. Küsime ka, kas hiljem tulnud pidid toitu kauem ootama."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-canteen-q1",
+     "prompt_et": "Kus tekib peamine ülejääk?",
+     "type": "choice",
+     "options": [
+      "Enne serveerimist",
+      "Õpilaste taldrikutel",
+      "Toidu kojuviimisel"
+     ],
+     "answer": 0,
+     "explanation_ru": "Основной остаток образуется до выдачи порций."
+    },
+    {
+     "id": "l-canteen-q2",
+     "prompt_et": "Miks soovitab teine kõneleja küsida sööjate arvu varem?",
+     "type": "choice",
+     "options": [
+      "Et valida uus menüü",
+      "Et viimast toidukogust paremini planeerida",
+      "Et kontrollida rühma hinnet"
+     ],
+     "answer": 1,
+     "explanation_ru": "Оценка числа посетителей нужна до приготовления последней партии."
+    },
+    {
+     "id": "l-canteen-q3",
+     "prompt_et": "Muudatuse korral saavad süüa ainult need, kes on end varem kirja pannud.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Собеседник предлагает оставить резерв на случай изменения планов."
+    },
+    {
+     "id": "l-canteen-q4",
+     "prompt_et": "Reedel pakutakse alati suppi.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Конкретное блюдо в разговоре не названо."
+    },
+    {
+     "id": "l-canteen-q5",
+     "prompt_et": "Mida tahetakse lisaks toidujäägile jälgida?",
+     "type": "choice",
+     "options": [
+      "Kas söökla saab avada nädalavahetusel",
+      "Kas toidu hind muutus",
+      "Kas hiljem tulnud peavad kauem ootama"
+     ],
+     "answer": 2,
+     "explanation_ru": "Проверяют, не увеличилось ли ожидание для тех, кто пришёл позже."
+    }
+   ]
+  },
+  {
+   "id": "l-festival-b2",
+   "topic": "holidays",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Pidu ilma ühe pika järjekorrata",
+   "title_ru": "Праздник без одной длинной очереди",
+   "explanation_ru": "Прослушайте диалог. При первом прослушивании определите проблему и решение, при повторе проверьте условия и детали.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Eelmisel aastal alustasime tänavapeol kõiki töötubasid korraga. Algus oli lihtne meelde jätta, kuid registreerimislaua juurde tekkis pikk järjekord. Mõni külastaja jäi töötoa algusest ilma, kuigi koht oli talle olemas."
+    },
+    {
+     "sp": "B",
+     "text": "Kas töötoad võiksid alata eri aegadel? Siis ei tuleks kõigil samal hetkel kohale jõuda. Samas tahaks osa peresid külastada mitut töötuba. Neile peab jääma piisavalt aega ühest kohast teise liikumiseks."
+    },
+    {
+     "sp": "A",
+     "text": "Jätame kahe algusaja vahele kakskümmend minutit ja märgime kaardile teekonna. Registreerimine toimub iga töötoa juures. Osa kohti jätame neile, kes tulevad kohale ilma eelneva broneeringuta."
+    },
+    {
+     "sp": "B",
+     "text": "Hea. Teavitame algusaegadest ka kohapeal, sest kõik ei vaata kava telefonist. Pärast pidu võrdleme, kui kaua inimesed ootasid ja kas eri aegadel alustamine aitas neil rohkem kui ühes töötoas osaleda."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-festival-q1",
+     "prompt_et": "Miks jäid mõned inimesed algusest ilma?",
+     "type": "choice",
+     "options": [
+      "Nende kohad anti teistele",
+      "Järjekord registreerimislaua juures võttis aega",
+      "Töötubade algusajad muudeti ette teatamata"
+     ],
+     "answer": 1,
+     "explanation_ru": "Проблема заключалась в общей очереди, даже если место уже было."
+    },
+    {
+     "id": "l-festival-q2",
+     "prompt_et": "Millega peab algusaegade hajutamisel arvestama?",
+     "type": "choice",
+     "options": [
+      "Peredel peab olema aega ühest töötoast teise minna",
+      "Kõik pered peavad saabuma enne avamist",
+      "Iga töötuba peab kestma sama kaua"
+     ],
+     "answer": 0,
+     "explanation_ru": "Некоторые семьи хотят посетить несколько занятий."
+    },
+    {
+     "id": "l-festival-q3",
+     "prompt_et": "Kõik kohad tuleb seekord ette broneerida.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Часть мест предусмотрена для посетителей без записи."
+    },
+    {
+     "id": "l-festival-q4",
+     "prompt_et": "Eelmisel aastal osales peol rohkem kui sada inimest.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Число посетителей не сообщается."
+    },
+    {
+     "id": "l-festival-q5",
+     "prompt_et": "Mida aitab kohapealne teavitus lahendada?",
+     "type": "choice",
+     "options": [
+      "Vajadust teha töötubade vahel pikem paus",
+      "Kaardi trükkimise kulusid",
+      "Algusaegade kättesaadavust neile, kes telefoni ei vaata"
+     ],
+     "answer": 2,
+     "explanation_ru": "Информация о времени должна быть доступна и на месте."
+    }
+   ]
+  },
+  {
+   "id": "l-updates-b2",
+   "topic": "tech",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Kas automaatsed teated aitavad?",
+   "title_ru": "Помогают ли автоматические уведомления?",
+   "explanation_ru": "Прослушайте диалог. При первом прослушивании определите проблему и решение, при повторе проверьте условия и детали.",
+   "script_et": [
+    {
+     "sp": "A",
+     "text": "Meie õppekeskkond saadab nüüd meili iga kord, kui õpetaja faili uuendab. Õpilastele pidi see kasulik olema, kuid osa lülitas teated välja. Nad ütlesid, et tähtis muudatus kaob väikeste paranduste vahele ära."
+    },
+    {
+     "sp": "B",
+     "text": "Võiksime saata päeva lõpus ühe kokkuvõtte. See aitaks märgata, millised materjalid on muutunud. Kui aga tähtpäev nihkub tänasele, ei tohiks info alles õhtul kohale jõuda."
+    },
+    {
+     "sp": "A",
+     "text": "Teeme siis kaks valikut. Õpetaja saab märkida muudatuse kiireloomuliseks, näiteks kui tänane tund jääb ära. Muu info läheb päevakokkuvõttesse. Õpilane saab valida, milliste ainete kokkuvõtteid ta soovib."
+    },
+    {
+     "sp": "B",
+     "text": "Enne käivitamist lepime kokku, mida nimetame kiireloomuliseks. Kui iga muudatus nii märgitakse, tekib vana probleem uuesti. Kuu aja pärast küsime, kas õpilased märkasid tähtsaid muudatusi õigel ajal."
+    }
+   ],
+   "questions": [
+    {
+     "id": "l-updates-q1",
+     "prompt_et": "Miks osa õpilasi teated välja lülitas?",
+     "type": "choice",
+     "options": [
+      "Nad ei saanud üldse kirju",
+      "Kirjades polnud õpetaja nime",
+      "Olulist infot oli väikeste muudatuste seas raske märgata"
+     ],
+     "answer": 2,
+     "explanation_ru": "Частые мелкие уведомления мешали заметить важные."
+    },
+    {
+     "id": "l-updates-q2",
+     "prompt_et": "Milline teade ei peaks ootama õhtuse kokkuvõtteni?",
+     "type": "choice",
+     "options": [
+      "Tänase tunni ärajäämine",
+      "Vana faili kirjavea parandus",
+      "Järgmisel aastal kasutatava materjali uuendus"
+     ],
+     "answer": 0,
+     "explanation_ru": "Отмена сегодняшнего занятия требует немедленного сообщения."
+    },
+    {
+     "id": "l-updates-q3",
+     "prompt_et": "Õpilane saab valida, milliste ainete kokkuvõtteid ta soovib.",
+     "type": "tf3",
+     "answer": true,
+     "explanation_ru": "Выбор предметов предусмотрен."
+    },
+    {
+     "id": "l-updates-q4",
+     "prompt_et": "Kokkuvõtted saadetakse täpselt kell kuus.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Упоминается конец дня, но конкретный час не назван."
+    },
+    {
+     "id": "l-updates-q5",
+     "prompt_et": "Miks tuleb kiireloomulisus enne käivitamist kokku leppida?",
+     "type": "choice",
+     "options": [
+      "Et õpetajad saaksid meilist täielikult loobuda",
+      "Et liiga paljud kiirteated ei varjaks jälle olulist infot",
+      "Et kõik kokkuvõtted sisaldaksid sama arvu ridu"
+     ],
+     "answer": 1,
+     "explanation_ru": "Частая пометка обычных изменений как срочных воспроизведёт прежнюю проблему."
+    }
+   ]
   }
  ]
 }

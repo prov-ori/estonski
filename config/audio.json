@@ -540,6 +540,39 @@
         "et-EE-KertNeural"
       ],
       "generated_on": "2026-11-10"
+    },
+    "l-festival-b2": {
+      "file": "audio/l-festival-b2.mp3",
+      "hash": "7048d3862cef06c14c0c2e7710291071a90c1a70",
+      "seconds": 62.3,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-10"
+    },
+    "l-canteen-b2": {
+      "file": "audio/l-canteen-b2.mp3",
+      "hash": "298d326a64e15cee028a9d708528a035cbd08aba",
+      "seconds": 60.6,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-10"
+    },
+    "l-updates-b2": {
+      "file": "audio/l-updates-b2.mp3",
+      "hash": "e6437e54684c9dc93447e9abd6092a127822f8e4",
+      "seconds": 61,
+      "engine": "neural",
+      "voices": [
+        "et-EE-AnuNeural",
+        "et-EE-KertNeural"
+      ],
+      "generated_on": "2026-11-10"
     }
   }
 }

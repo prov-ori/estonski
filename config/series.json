@@ -227,6 +227,18 @@
    "module": "reading",
    "title_ru": "Резюме, которое меняет решение"
   },
+  "r-maintenance-c1": {
+   "module": "reading",
+   "title_ru": "Пилот перед постоянным решением"
+  },
+  "r-translation-c1": {
+   "module": "reading",
+   "title_ru": "Что читателю сообщает пометка о переводе?"
+  },
+  "r-committee-c1": {
+   "module": "reading",
+   "title_ru": "На кого рассчитан выбор по умолчанию?"
+  },
   "l-01": {
    "module": "listening",
    "title_ru": "Объявление директора"
@@ -363,6 +375,18 @@
   "l-budget-c1": {
    "module": "listening",
    "title_ru": "Бюджетное сокращение и скрытые издержки"
+  },
+  "l-canteen-b2": {
+   "module": "listening",
+   "title_ru": "Что делать с едой, которая остаётся?"
+  },
+  "l-festival-b2": {
+   "module": "listening",
+   "title_ru": "Праздник без одной длинной очереди"
+  },
+  "l-updates-b2": {
+   "module": "listening",
+   "title_ru": "Помогают ли автоматические уведомления?"
   },
   "w-01": {
    "module": "writing",

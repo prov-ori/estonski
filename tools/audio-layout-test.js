@@ -133,9 +133,22 @@ const server=http.createServer((req,res)=>{
         assert(await sample.locator('p[lang="et"]').isVisible());
       }
     }
+    await levels.goto(base + '#/listening');
+    await levels.getByLabel('Уровень', { exact: true }).selectOption('B2');
+    assert.equal(await levels.locator('main .link-card').count(), 5);
+    await levels.locator('a[href="#/listening/l-canteen-b2"]').click();
+    await levels.getByRole('button', { name: '▶ Слушать', exact: true }).click();
+    await levels.waitForFunction(() => document.querySelector('.listening audio')?.currentTime > 0);
+    await levels.goto(base + '#/reading/level-C1');
+    await levels.locator('a[href="#/reading/r-committee-c1"]').waitFor();
+    assert.equal(await levels.locator('main .link-card').count(), 7);
+    await levels.locator('a[href="#/reading/r-committee-c1"]').click();
+    await levels.locator('.open-tasks textarea').first().waitFor();
+    assert.equal(await levels.locator('.qset .question').count(), 5);
+    assert.equal(await levels.locator('.open-tasks textarea').count(), 3);
     await levels.goto(base + '#/vocab');
     await levels.getByRole('navigation', { name: 'Уровни словаря' }).getByRole('link', { name: 'C1', exact: true }).click();
-    await levels.getByRole('link', { name: 'Все (8)', exact: true }).waitFor();
+    await levels.getByRole('link', { name: 'Все (20)', exact: true }).waitFor();
     await levels.goto(base + '#/lessons');
     await levels.getByLabel('Уровень', { exact: true }).selectOption('C1');
     assert.equal(await levels.locator('main .link-card').count(), 2);

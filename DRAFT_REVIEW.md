@@ -1,6 +1,6 @@
 # Эстонские предложения со статусом draft — на проверку носителю или учителю
 
-Всего: 5164. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
+Всего: 5386. Сгенерировано `node tools/list-draft.js`. После проверки меняйте status на `reviewed` в соответствующем JSON.
 
 > В заданиях с пропуском показано предложение с подставленным верным ответом. Неверные варианты (distractors) намеренно содержат ошибки и здесь не перечислены.
 
@@ -1270,7 +1270,7 @@
 - `ls-conditional-c1 (неверно)` — Kui oleksime teadnud, oleksime plaani muutma.
 - `ls-conditional-c1 (верно)` — Kui oleksime teadnud, oleksime plaani muutnud.
 
-## listening.json (587)
+## listening.json (641)
 
 - `l-01` — Direktori teade
 - `l-01` — Tere, kallid õpilased! Siin räägib kooli direktor.
@@ -1859,6 +1859,60 @@
 - `l-budget-q5 (вариант)` — Seisakuid ei ole võimalik mõõta.
 - `l-budget-q5 (вариант)` — Hoolduskulusid ei tohi omavahel võrrelda.
 - `l-budget-q5 (вариант)` — Erineva kasutuskoormusega seadmed ei moodusta samaväärseid rühmi.
+- `l-canteen-b2` — Mida teha üle jääva toiduga?
+- `l-canteen-b2` — Sööklas jääb reedeti rohkem toitu üle kui teistel päevadel. Algul mõtlesime teha reedeseid portsjoneid väiksemaks, kuid kokk märkis, et ülejääk tekib peamiselt enne serveerimist. Taldrikutelt tuleb toitu tagasi üsna vähe.
+- `l-canteen-b2` — Siis ei lahendaks väiksem portsjon peamist probleemi. Reedeti lähevad mõned rühmad varem ära. Kas saaksime teada, mitu inimest jääb sööma, enne kui kokk viimase koguse valmis teeb?
+- `l-canteen-b2` — Saaksime küsida rühma juhendajalt hommikul ligikaudset arvu. Kõigil peaks siiski olema võimalik lõunat saada ka siis, kui plaan muutub. Seepärast jätaksime väikese varu ning valmistaksime teise koguse alles vajaduse korral.
+- `l-canteen-b2` — Proovime seda kolm reedet. Paneme eraldi kirja valmistamata jäänud koguse ja selle, mis päeva lõpus päriselt üle jääb. Küsime ka, kas hiljem tulnud pidid toitu kauem ootama.
+- `l-canteen-q1` — Kus tekib peamine ülejääk?
+- `l-canteen-q2` — Miks soovitab teine kõneleja küsida sööjate arvu varem?
+- `l-canteen-q2 (вариант)` — Et valida uus menüü
+- `l-canteen-q2 (вариант)` — Et viimast toidukogust paremini planeerida
+- `l-canteen-q2 (вариант)` — Et kontrollida rühma hinnet
+- `l-canteen-q3` — Muudatuse korral saavad süüa ainult need, kes on end varem kirja pannud.
+- `l-canteen-q4` — Reedel pakutakse alati suppi.
+- `l-canteen-q5` — Mida tahetakse lisaks toidujäägile jälgida?
+- `l-canteen-q5 (вариант)` — Kas söökla saab avada nädalavahetusel
+- `l-canteen-q5 (вариант)` — Kas toidu hind muutus
+- `l-canteen-q5 (вариант)` — Kas hiljem tulnud peavad kauem ootama
+- `l-festival-b2` — Pidu ilma ühe pika järjekorrata
+- `l-festival-b2` — Eelmisel aastal alustasime tänavapeol kõiki töötubasid korraga. Algus oli lihtne meelde jätta, kuid registreerimislaua juurde tekkis pikk järjekord. Mõni külastaja jäi töötoa algusest ilma, kuigi koht oli talle olemas.
+- `l-festival-b2` — Kas töötoad võiksid alata eri aegadel? Siis ei tuleks kõigil samal hetkel kohale jõuda. Samas tahaks osa peresid külastada mitut töötuba. Neile peab jääma piisavalt aega ühest kohast teise liikumiseks.
+- `l-festival-b2` — Jätame kahe algusaja vahele kakskümmend minutit ja märgime kaardile teekonna. Registreerimine toimub iga töötoa juures. Osa kohti jätame neile, kes tulevad kohale ilma eelneva broneeringuta.
+- `l-festival-b2` — Hea. Teavitame algusaegadest ka kohapeal, sest kõik ei vaata kava telefonist. Pärast pidu võrdleme, kui kaua inimesed ootasid ja kas eri aegadel alustamine aitas neil rohkem kui ühes töötoas osaleda.
+- `l-festival-q1` — Miks jäid mõned inimesed algusest ilma?
+- `l-festival-q1 (вариант)` — Nende kohad anti teistele
+- `l-festival-q1 (вариант)` — Järjekord registreerimislaua juures võttis aega
+- `l-festival-q1 (вариант)` — Töötubade algusajad muudeti ette teatamata
+- `l-festival-q2` — Millega peab algusaegade hajutamisel arvestama?
+- `l-festival-q2 (вариант)` — Peredel peab olema aega ühest töötoast teise minna
+- `l-festival-q2 (вариант)` — Kõik pered peavad saabuma enne avamist
+- `l-festival-q2 (вариант)` — Iga töötuba peab kestma sama kaua
+- `l-festival-q3` — Kõik kohad tuleb seekord ette broneerida.
+- `l-festival-q4` — Eelmisel aastal osales peol rohkem kui sada inimest.
+- `l-festival-q5` — Mida aitab kohapealne teavitus lahendada?
+- `l-festival-q5 (вариант)` — Vajadust teha töötubade vahel pikem paus
+- `l-festival-q5 (вариант)` — Kaardi trükkimise kulusid
+- `l-festival-q5 (вариант)` — Algusaegade kättesaadavust neile, kes telefoni ei vaata
+- `l-updates-b2` — Kas automaatsed teated aitavad?
+- `l-updates-b2` — Meie õppekeskkond saadab nüüd meili iga kord, kui õpetaja faili uuendab. Õpilastele pidi see kasulik olema, kuid osa lülitas teated välja. Nad ütlesid, et tähtis muudatus kaob väikeste paranduste vahele ära.
+- `l-updates-b2` — Võiksime saata päeva lõpus ühe kokkuvõtte. See aitaks märgata, millised materjalid on muutunud. Kui aga tähtpäev nihkub tänasele, ei tohiks info alles õhtul kohale jõuda.
+- `l-updates-b2` — Teeme siis kaks valikut. Õpetaja saab märkida muudatuse kiireloomuliseks, näiteks kui tänane tund jääb ära. Muu info läheb päevakokkuvõttesse. Õpilane saab valida, milliste ainete kokkuvõtteid ta soovib.
+- `l-updates-b2` — Enne käivitamist lepime kokku, mida nimetame kiireloomuliseks. Kui iga muudatus nii märgitakse, tekib vana probleem uuesti. Kuu aja pärast küsime, kas õpilased märkasid tähtsaid muudatusi õigel ajal.
+- `l-updates-q1` — Miks osa õpilasi teated välja lülitas?
+- `l-updates-q1 (вариант)` — Nad ei saanud üldse kirju
+- `l-updates-q1 (вариант)` — Kirjades polnud õpetaja nime
+- `l-updates-q1 (вариант)` — Olulist infot oli väikeste muudatuste seas raske märgata
+- `l-updates-q2` — Milline teade ei peaks ootama õhtuse kokkuvõtteni?
+- `l-updates-q2 (вариант)` — Tänase tunni ärajäämine
+- `l-updates-q2 (вариант)` — Vana faili kirjavea parandus
+- `l-updates-q2 (вариант)` — Järgmisel aastal kasutatava materjali uuendus
+- `l-updates-q3` — Õpilane saab valida, milliste ainete kokkuvõtteid ta soovib.
+- `l-updates-q4` — Kokkuvõtted saadetakse täpselt kell kuus.
+- `l-updates-q5` — Miks tuleb kiireloomulisus enne käivitamist kokku leppida?
+- `l-updates-q5 (вариант)` — Et õpetajad saaksid meilist täielikult loobuda
+- `l-updates-q5 (вариант)` — Et liiga paljud kiirteated ei varjaks jälle olulist infot
+- `l-updates-q5 (вариант)` — Et kõik kokkuvõtted sisaldaksid sama arvu ridu
 
 ## mock-exam.json (120)
 
@@ -2156,7 +2210,7 @@
 - `pr-phrases` — Tüdruk joob õunamahla.
 - `pr-phrases` — Ülesanne on päris raske.
 
-## reading.json (1660)
+## reading.json (1780)
 
 - `r-01 (развёрнутый вопрос 1)` — Kuidas mõjutab kirjeldatud töökorraldus osalejate võimalusi?
 - `r-01 (развёрнутый вопрос 2)` — Leia tekstist põhjus ja tagajärg. Selgita seost oma sõnadega.
@@ -3818,6 +3872,126 @@
 - `r-summary-q5 (вариант)` — Kas osalejatel on sama ametinimetus
 - `r-summary-q5 (вариант)` — Milline programm on turul populaarsem
 - `r-summary-q5 (вариант)` — Kas erinevust saab näha võrreldavates töötingimustes
+- `r-maintenance-c1 (развёрнутый вопрос 1)` — Sõnastage üks mõõdetud tulemus ja üks võimalik seletus sellele tulemusele.
+- `r-maintenance-c1 (развёрнутый вопрос 2)` — Pakkuge võrdlusviis, mis hõlmaks ka neid, kes keskusse ei jõudnud.
+- `r-maintenance-c1 (развёрнутый вопрос 3)` — Kirjutage juhatajale kaks lauset, mis sobiksid katse kokkuvõttesse.
+- `r-maintenance-c1` — Katse enne püsivat otsust
+- `r-maintenance-c1` — Kohalikus teeninduskeskuses katsetati neljal nädalal uut järjekorrakorraldust.
+- `r-maintenance-c1` — Külastaja võis valida, kas võtta number kohapeal või broneerida aeg veebis.
+- `r-maintenance-c1` — Korraldajad võrdlesid piloodi järel ooteaega varasema kuu omaga ning teatasid, et keskmine ooteaeg oli lühenenud.
+- `r-maintenance-c1` — Mõned töötajad soovitasid seetõttu suunata edaspidi suurema osa ajast veebibroneeringutele.
+- `r-maintenance-c1` — Keskuse administraator juhtis tähelepanu sellele, et katse ajal oli muutunud ka külastajate koosseis.
+- `r-maintenance-c1` — Tavaliselt käivad kuu alguses keskuses inimesed, kellel on vaja esitada mitu dokumenti.
+- `r-maintenance-c1` — Katse algas kuu teises pooles ja hõlmas rohkem lühikesi toiminguid.
+- `r-maintenance-c1` — Kui võrrelda ainult kuude keskmisi, võib kiiremini tehtud toimingute suurem osakaal näida järjekorrakorralduse tulemusena.
+- `r-maintenance-c1` — Üks töötaja pakkus välja, et ooteaega tuleks võrrelda teenuse liigi järgi.
+- `r-maintenance-c1` — Teine lisas, et külastaja jaoks algab ootamine mõnikord juba enne keskusse jõudmist.
+- `r-maintenance-c1` — Kui veebis vaba aega ei ole, võib inimene käigu mitu päeva edasi lükata.
+- `r-maintenance-c1` — Selle viivituse kohta ei anna saalis mõõdetud minutid mingit teavet.
+- `r-maintenance-c1` — Samas poleks mõistlik kõikidest broneeringutest loobuda, sest osa külastajaid sai tänu neile oma päeva paremini planeerida.
+- `r-maintenance-c1` — Järgmiseks katseks soovitati jätta mõlemad võimalused avatuks ja määrata kindlaks, mida iga mõõdik tähendab.
+- `r-maintenance-c1` — Keskuses mõõdetakse ooteaega saabumisest teeninduse alguseni.
+- `r-maintenance-c1` — Veebis vaadatakse, kui kaugel on järgmine vaba aeg.
+- `r-maintenance-c1` — Tagasisidet küsitakse ka nendelt, kes broneeringust loobusid, kui nad on nõus sellest teatama.
+- `r-maintenance-c1` — Nii saab näha, kas ühe näitaja paranemine tähendab teise halvenemist.
+- `r-maintenance-c1` — Juhataja otsustas püsivat jaotust veel mitte muuta.
+- `r-maintenance-c1` — Tema sõnul andis piloot piisavalt infot järgmise katse kavandamiseks, kuid mitte selleks, et öelda, kellele uus kord tervikuna kasulik oli.
+- `r-maintenance-c1` — Ta palus lõpparuandes selgelt eristada mõõdetud tulemust, võimalikku seletust ja küsimust, millele tuleb veel vastata.
+- `r-maintenance-q1` — Miks ei saa kuude keskmiste põhjal mõju üheselt omistada järjekorrakorraldusele?
+- `r-maintenance-q1 (вариант)` — Toimingute koosseis oli katse ajal teistsugune
+- `r-maintenance-q1 (вариант)` — Varasema kuu kohta polnud üldse andmeid
+- `r-maintenance-q1 (вариант)` — Broneeringuid ei kasutatud katse ajal
+- `r-maintenance-q2` — Mida saalis mõõdetud ooteaeg ei kajasta?
+- `r-maintenance-q2 (вариант)` — Kui kaua kestab toiming teenindaja juures
+- `r-maintenance-q2 (вариант)` — Kui kaua tuleb enne külastust vaba aega oodata
+- `r-maintenance-q2 (вариант)` — Kui mitu dokumenti külastaja esitab
+- `r-maintenance-q3` — Juhataja otsustas pärast esimest katset veebibroneeringust loobuda.
+- `r-maintenance-q4` — Keskuses mõõdeti ooteaega automaatse kaamera abil.
+- `r-maintenance-q5` — Millist järeldust esimene katse teksti järgi toetab?
+- `r-maintenance-q5 (вариант)` — Uus kord sobib kõige paremini kõigile keeruliste toimingutega külastajatele
+- `r-maintenance-q5 (вариант)` — Veebibroneerimise osakaalu tuleks kohe suurendada
+- `r-maintenance-q5 (вариант)` — Katse aitab valida järgmisi mõõdikuid, kuid mõju eri rühmadele vajab uurimist
+- `r-translation-c1 (развёрнутый вопрос 1)` — Tooge kaks näidet tõlkeprobleemist ja võrrelge nende võimalikku mõju lugejale.
+- `r-translation-c1 (развёрнутый вопрос 2)` — Selgitage, kuidas uuenduse kuupäev aitab eristada tõlkeviga ja ajutist lahknevust.
+- `r-translation-c1 (развёрнутый вопрос 3)` — Koostage lühike märkus hilinenud tõlke juurde.
+- `r-translation-c1` — Mida tõlke märgis lugejale ütleb?
+- `r-translation-c1` — Kujutlegem linnaosa veebilehte, kuhu avaldatakse eri keeltes teateid ehitustööde ja ajutiste liiklusmuudatuste kohta.
+- `r-translation-c1` — Toimetus kasutab mõnikord tõlke koostamiseks automaatset vahendit.
+- `r-translation-c1` — Lehe all seisab märge, et tekst võib sisaldada ebatäpsusi.
+- `r-translation-c1` — Toimetajatele tundub, et märge annab lugejale piisavalt teavet.
+- `r-translation-c1` — Osa lugejaid loeb aga ainult pealkirja ja seda lõiku, kus on kirjas tänava nimi ning tööde aeg.
+- `r-translation-c1` — Toimetuse koosolekul pakuti välja, et märge tuleks tõsta lehe algusesse.
+- `r-translation-c1` — See oleks nähtavam, kuid ei ütleks endiselt, milline osa tekstist vajab erilist tähelepanu.
+- `r-translation-c1` — Näiteks võib kirjeldava lõigu sõnastus olla kohmakas ilma praktilise tagajärjeta.
+- `r-translation-c1` — Kui aga tõlge vahetab ära tänava kaks eri lõiku või jätab märkamata kuupäeva muutuse, võib lugeja teha vale otsuse.
+- `r-translation-c1` — Mõlema probleemi nimetamine lihtsalt ebatäpsuseks jätab nende vahe varju.
+- `r-translation-c1` — Üks toimetaja soovitas kinnitada aadressid ja ajad enne tõlke avaldamist eraldi andmetabelis.
+- `r-translation-c1` — Teine juhtis tähelepanu sellele, et kinnitatud andmed võivad hiljem muutuda.
+- `r-translation-c1` — Tema meelest peaks paranduse kuupäev olema nähtav nii tõlkes kui ka originaalis.
+- `r-translation-c1` — Nii saab lugeja aru, kas erinevus versioonide vahel on tõlkeviga või on üks tekst pärast muudatust veel uuendamata.
+- `r-translation-c1` — Pakutud lahendus jagab kontrolli kaheks.
+- `r-translation-c1` — Teabe avaldamisel kontrollitakse kõigepealt fakte, millest lugeja tegevus sõltub.
+- `r-translation-c1` — Pärast avaldamist jälgitakse, kas sama muudatus jõuab kõigisse keeleversioonidesse.
+- `r-translation-c1` — Kui mõni versioon viibib, näidatakse selle juures viimase uuenduse aega ja viidatakse ajakohasele teatele.
+- `r-translation-c1` — Lugeja saab teatada ka konkreetsest lahknevusest, selle asemel et valida üldine hinnang „tõlge ei ole hea”.
+- `r-translation-c1` — Sellise töökorra eesmärk ei ole muuta hoiatust pikemaks.
+- `r-translation-c1` — Eesmärk on anda lugejale piisavalt infot, et ta oskaks vajaduse korral kontrollida just seda asjaolu, millest tema otsus sõltub.
+- `r-translation-q1` — Miks ei lahendaks probleemi üksnes hoiatuse viimine lehe algusesse?
+- `r-translation-q1 (вариант)` — See muudaks hoiatuse vähem nähtavaks
+- `r-translation-q1 (вариант)` — See ei näitaks endiselt, millised andmed vajavad kontrolli
+- `r-translation-q1 (вариант)` — See takistaks teksti tõlkimist
+- `r-translation-q2` — Millist vahet rõhutatakse teises lõigus?
+- `r-translation-q2 (вариант)` — Kohmakas sõnastus ja praktilise tagajärjega viga pole sama probleem
+- `r-translation-q2 (вариант)` — Avalik veebileht ja sisemine andmetabel peavad olema ühesugused
+- `r-translation-q2 (вариант)` — Tänava nimi on alati olulisem kui kuupäev
+- `r-translation-q3` — Paranduse kuupäev soovitatakse näidata nii tõlkes kui ka originaalis.
+- `r-translation-q4` — Lehel kasutatakse kindla ettevõtte tõlketarkvara.
+- `r-translation-q5` — Mis on kirjeldatud töökorra peamine eesmärk?
+- `r-translation-q5 (вариант)` — Anda kõigile keeleversioonidele sama pikkus
+- `r-translation-q5 (вариант)` — Avaldada tõlge alles siis, kui kõiki stiilivigu saab vältida
+- `r-translation-q5 (вариант)` — Aidata lugejal kontrollida otsuse jaoks olulist asjaolu
+- `r-committee-c1 (развёрнутый вопрос 1)` — Eristage kolm näitajat, mida juhatusele pakutakse, ja selgitage, milleks igaüks sobib.
+- `r-committee-c1 (развёрнутый вопрос 2)` — Pakkuge kaitsemeede ühendusele, kes ei saa kohtumist varakult kinnitada.
+- `r-committee-c1 (развёрнутый вопрос 3)` — Sõnastage tingimus, mille korral uus kord vääriks pikemat katset.
+- `r-committee-c1` — Kellele kehtib vaikimisi valik?
+- `r-committee-c1` — Kogukonnakeskus otsustas vähendada kasutamata jäävate ruumide hulka.
+- `r-committee-c1` — Seni tuli broneeringu kinnitamiseks kirjutada keskuse töötajale.
+- `r-committee-c1` — Uues süsteemis kinnitatakse broneering vaikimisi ja loobumisest peab teatama kasutaja.
+- `r-committee-c1` — Esimese kuu kokkuvõte näitas, et registreeritud broneeringute arv tõusis.
+- `r-committee-c1` — Juhatus tõlgendas kasvu märgina, et uus kord tegi ruumi leidmise lihtsamaks.
+- `r-committee-c1` — Keskuse töötaja märkas, et nimekirja tekkis ka rohkem aegu, mil ruumis kedagi ei olnud.
+- `r-committee-c1` — Varem jätsid ebakindlad korraldajad kinnituse andmata ja aeg sai uuesti vabaks.
+- `r-committee-c1` — Uue korra puhul püsis see kinni seni, kuni keegi broneeringu tühistas.
+- `r-committee-c1` — Nii sai korraga tõusta nii registreeritud broneeringute kui ka kasutamata tundide arv.
+- `r-committee-c1` — Kasv kirjeldas toimingut süsteemis, kuid ei näidanud veel, kas rohkem inimesi sai ruumi kasutada.
+- `r-committee-c1` — Mõned juhatuse liikmed soovisid vana korra taastada.
+- `r-committee-c1` — Teised arvasid, et probleem on lahendatav meeldetuletusega.
+- `r-committee-c1` — Mõlemad ettepanekud eeldavad, et inimesed oskavad piisavalt vara öelda, kas kohtumine toimub.
+- `r-committee-c1` — Mõnel ühendusel sõltub osalus aga teise organisatsiooni kinnitavast vastusest, mis saabub alles samal päeval.
+- `r-committee-c1` — Kui tühistamise tähtaeg on väga varane, võivad sellised ühendused hakata ruumi üldse vältima.
+- `r-committee-c1` — Töörühm tegi kolmanda ettepaneku.
+- `r-committee-c1` — Püsivat reeglit veel ei kehtestata.
+- `r-committee-c1` — Ühel kuul saadetakse meeldetuletus kõigile, kuid vabanenud aegu pakutakse ootenimekirjas olijatele.
+- `r-committee-c1` — Loobumise korral küsitakse vabatahtlikult põhjust.
+- `r-committee-c1` — Sellise korraldusega saab kontrollida, kas hilinenud tühistamisi on vähem ning kas ruum jõuab ka nende ühendusteni, kes varem aega ei leidnud.
+- `r-committee-c1` — Juhatusele tehakse eraldi ülevaade registreeritud, tegelikult kasutatud ja uuesti jagatud tundidest.
+- `r-committee-c1` — Küsimus pole üksnes selles, kumb kord on mugavam.
+- `r-committee-c1` — Vaikimisi valik määrab, kes peab tegutsema, et aeg saaks vabaks.
+- `r-committee-c1` — Kui see tegevus on mõnele rühmale keerulisem, ei näita broneeringute koguarv, kuidas võimalus ruumi kasutada erinevate ühenduste vahel jaguneb.
+- `r-committee-q1` — Miks võivad broneeringud ja kasutamata tunnid korraga kasvada?
+- `r-committee-q1 (вариант)` — Vaikimisi kinnitatud aeg võib jääda kinni ka siis, kui kohtumine ei toimu
+- `r-committee-q1 (вариант)` — Uue korra järgi ei saa ruumi varem broneerida
+- `r-committee-q1 (вариант)` — Töötaja eemaldab nimekirjast ainult kasutatud ajad
+- `r-committee-q2` — Mida eeldavad kaks esimest ettepanekut?
+- `r-committee-q2 (вариант)` — Kõik ühendused loobuvad ruumi kasutamisest
+- `r-committee-q2 (вариант)` — Korraldajad teavad piisavalt vara, kas kohtumine toimub
+- `r-committee-q2 (вариант)` — Ühelgi ühendusel pole teise osapoole kinnitust vaja
+- `r-committee-q3` — Katses pakutakse vabanenud aegu ootenimekirjas olijatele.
+- `r-committee-q4` — Broneeringu hilise tühistamise eest nõutakse tasu.
+- `r-committee-q5` — Mida lisab viimane lõik arutelule?
+- `r-committee-q5 (вариант)` — Koguarv peaks olema ainus otsuse alus
+- `r-committee-q5 (вариант)` — Tühistamise aeg on tähtsusetu, kui süsteem on mugav
+- `r-committee-q5 (вариант)` — Vaikimisi kord jaotab kohustuse tegutseda ning võib mõjutada eri rühmi erinevalt
 
 ## sources.json (55)
 
@@ -4146,7 +4320,7 @@
 - `s-team-handovers-c1` — Samas võivad erandid jääda märkamata, kui ...
 - `s-team-handovers-c1` — Kuu lõpus võrdleksin ...
 
-## vocab.json (710)
+## vocab.json (758)
 
 - `v-school-01` — õpilane (õpilase, õpilast)
 - `v-school-01` — Meie klassis on kakskümmend õpilast.
@@ -4858,6 +5032,54 @@
 - `v-argument-15` — Uus teave andis aluse otsuse läbivaatamiseks.
 - `v-argument-16` — tingimuslik (tingimusliku, tingimuslikku)
 - `v-argument-16` — See hinnang on tingimuslik ja sõltub lähteandmetest.
+- `v-context-1` — ülejääk (ülejäägi, ülejääki)
+- `v-context-1` — Söökla mõõtis päeva lõpus toidu ülejääki.
+- `v-context-2` — serveerima (serveerida, serveerin)
+- `v-context-2` — Sooja toitu serveeritakse kahes jaos.
+- `v-context-3` — varu (varu, varu)
+- `v-context-3` — Jätame veidi varu juhuks, kui külalisi tuleb rohkem.
+- `v-context-4` — töötuba (töötoa, töötuba)
+- `v-context-4` — Registreerisin end laupäevasesse töötuppa.
+- `v-context-5` — eelregistreerimine (eelregistreerimise, eelregistreerimist)
+- `v-context-5` — Osa kohti on saadaval ilma eelregistreerimiseta.
+- `v-context-6` — algusaeg (algusaja, algusaega)
+- `v-context-6` — Korraldaja palus uue algusaja kinnitada.
+- `v-context-7` — kiireloomuline (kiireloomulise, kiireloomulist)
+- `v-context-7` — Kiireloomuline teade ilmub kohe esilehele.
+- `v-context-8` — teavitus (teavituse, teavitust)
+- `v-context-8` — Lülitasin välja ainult korduvad teavitused.
+- `v-context-9` — uuendama (uuendada, uuendan)
+- `v-context-9` — Õpetaja uuendas juhendit pärast tundi.
+- `v-context-10` — järele proovima (järele proovida, proovin järele)
+- `v-context-10` — Proovime uut korda kõigepealt ühe rühmaga järele.
+- `v-context-11` — edasi lükkama (edasi lükata, lükkan edasi)
+- `v-context-11` — Lükkasime arutelu järgmisele nädalale edasi.
+- `v-context-12` — ligikaudne (ligikaudse, ligikaudset)
+- `v-context-12` — Palun teatage osalejate ligikaudne arv.
+- `v-context-13` — osakaal (osakaalu, osakaalu)
+- `v-context-13` — Lühikeste toimingute osakaal kasvas katse ajal.
+- `v-context-14` — viivitus (viivituse, viivitust)
+- `v-context-14` — Saalis mõõdetud aeg ei hõlma broneerimise viivitust.
+- `v-context-15` — mõõdik (mõõdiku, mõõdikut)
+- `v-context-15` — Valisime kaks mõõdikut, et võrrelda katse tulemusi.
+- `v-context-16` — lahknevus (lahknevuse, lahknevust)
+- `v-context-16` — Lugeja teatas kuupäevade lahknevusest.
+- `v-context-17` — ajakohane (ajakohase, ajakohast)
+- `v-context-17` — Kontrollige, kas teates olev liiklusinfo on ajakohane.
+- `v-context-18` — sõnastus (sõnastuse, sõnastust)
+- `v-context-18` — Parandasime sõnastust, sest esialgne teade jättis vale mulje.
+- `v-context-19` — vaikimisi (наречие)
+- `v-context-19` — Süsteem kinnitab broneeringu vaikimisi.
+- `v-context-20` — ootenimekiri (ootenimekirja, ootenimekirja)
+- `v-context-20` — Vabanenud aega pakuti kõigepealt ootenimekirjas olijatele.
+- `v-context-21` — loobumine (loobumise, loobumist)
+- `v-context-21` — Loobumise põhjuse võib märkida vabatahtlikult.
+- `v-context-22` — järeldama (järeldada, järeldan)
+- `v-context-22` — Sellest arvust ei saa veel järeldada, et teenus muutus paremaks.
+- `v-context-23` — tõlgendama (tõlgendada, tõlgendan)
+- `v-context-23` — Üht ja sama tulemust võib eri viisil tõlgendada.
+- `v-context-24` — omistama (omistada, omistan)
+- `v-context-24` — Kõiki muutusi ei saa omistada uuele töökorraldusele.
 
 ## writing.json (351)
 

@@ -4521,6 +4521,234 @@
      "rubric_ru": "Укажите, что именно становится обязательным условием и почему подсчёта голосов недостаточно."
     }
    ]
+  },
+  {
+   "id": "r-maintenance-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Katse enne püsivat otsust",
+   "title_ru": "Пилот перед постоянным решением",
+   "text_et": "Kohalikus teeninduskeskuses katsetati neljal nädalal uut järjekorrakorraldust. Külastaja võis valida, kas võtta number kohapeal või broneerida aeg veebis. Korraldajad võrdlesid piloodi järel ooteaega varasema kuu omaga ning teatasid, et keskmine ooteaeg oli lühenenud. Mõned töötajad soovitasid seetõttu suunata edaspidi suurema osa ajast veebibroneeringutele.\n\nKeskuse administraator juhtis tähelepanu sellele, et katse ajal oli muutunud ka külastajate koosseis. Tavaliselt käivad kuu alguses keskuses inimesed, kellel on vaja esitada mitu dokumenti. Katse algas kuu teises pooles ja hõlmas rohkem lühikesi toiminguid. Kui võrrelda ainult kuude keskmisi, võib kiiremini tehtud toimingute suurem osakaal näida järjekorrakorralduse tulemusena.\n\nÜks töötaja pakkus välja, et ooteaega tuleks võrrelda teenuse liigi järgi. Teine lisas, et külastaja jaoks algab ootamine mõnikord juba enne keskusse jõudmist. Kui veebis vaba aega ei ole, võib inimene käigu mitu päeva edasi lükata. Selle viivituse kohta ei anna saalis mõõdetud minutid mingit teavet. Samas poleks mõistlik kõikidest broneeringutest loobuda, sest osa külastajaid sai tänu neile oma päeva paremini planeerida.\n\nJärgmiseks katseks soovitati jätta mõlemad võimalused avatuks ja määrata kindlaks, mida iga mõõdik tähendab. Keskuses mõõdetakse ooteaega saabumisest teeninduse alguseni. Veebis vaadatakse, kui kaugel on järgmine vaba aeg. Tagasisidet küsitakse ka nendelt, kes broneeringust loobusid, kui nad on nõus sellest teatama. Nii saab näha, kas ühe näitaja paranemine tähendab teise halvenemist.\n\nJuhataja otsustas püsivat jaotust veel mitte muuta. Tema sõnul andis piloot piisavalt infot järgmise katse kavandamiseks, kuid mitte selleks, et öelda, kellele uus kord tervikuna kasulik oli. Ta palus lõpparuandes selgelt eristada mõõdetud tulemust, võimalikku seletust ja küsimust, millele tuleb veel vastata.",
+   "explanation_ru": "Авторский учебный текст. Сначала отделите описанные факты от предположений и только затем формулируйте вывод.",
+   "questions": [
+    {
+     "id": "r-maintenance-q1",
+     "prompt_et": "Miks ei saa kuude keskmiste põhjal mõju üheselt omistada järjekorrakorraldusele?",
+     "type": "choice",
+     "options": [
+      "Toimingute koosseis oli katse ajal teistsugune",
+      "Varasema kuu kohta polnud üldse andmeid",
+      "Broneeringuid ei kasutatud katse ajal"
+     ],
+     "answer": 0,
+     "explanation_ru": "Изменилась доля коротких операций, поэтому сравнение средних смешивает причины."
+    },
+    {
+     "id": "r-maintenance-q2",
+     "prompt_et": "Mida saalis mõõdetud ooteaeg ei kajasta?",
+     "type": "choice",
+     "options": [
+      "Kui kaua kestab toiming teenindaja juures",
+      "Kui kaua tuleb enne külastust vaba aega oodata",
+      "Kui mitu dokumenti külastaja esitab"
+     ],
+     "answer": 1,
+     "explanation_ru": "Ожидание подходящего времени до визита в показатель очереди не входит."
+    },
+    {
+     "id": "r-maintenance-q3",
+     "prompt_et": "Juhataja otsustas pärast esimest katset veebibroneeringust loobuda.",
+     "type": "tf3",
+     "answer": false,
+     "explanation_ru": "Руководитель отложил изменение постоянного распределения, сохранив обе возможности для следующего пилота."
+    },
+    {
+     "id": "r-maintenance-q4",
+     "prompt_et": "Keskuses mõõdeti ooteaega automaatse kaamera abil.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Способ измерения в тексте не назван."
+    },
+    {
+     "id": "r-maintenance-q5",
+     "prompt_et": "Millist järeldust esimene katse teksti järgi toetab?",
+     "type": "choice",
+     "options": [
+      "Uus kord sobib kõige paremini kõigile keeruliste toimingutega külastajatele",
+      "Veebibroneerimise osakaalu tuleks kohe suurendada",
+      "Katse aitab valida järgmisi mõõdikuid, kuid mõju eri rühmadele vajab uurimist"
+     ],
+     "answer": 2,
+     "explanation_ru": "Пилот полезен для проектирования следующего этапа, но не закрывает вопрос распределения пользы."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Sõnastage üks mõõdetud tulemus ja üks võimalik seletus sellele tulemusele.",
+     "rubric_ru": "Отделите установленное сокращение среднего ожидания от влияния состава посетителей."
+    },
+    {
+     "prompt_et": "Pakkuge võrdlusviis, mis hõlmaks ka neid, kes keskusse ei jõudnud.",
+     "rubric_ru": "Объясните, как собрать сведения об отказавшихся от записи и какие ограничения останутся."
+    },
+    {
+     "prompt_et": "Kirjutage juhatajale kaks lauset, mis sobiksid katse kokkuvõttesse.",
+     "rubric_ru": "Укажите результат, границу вывода и следующий шаг."
+    }
+   ]
+  },
+  {
+   "id": "r-translation-c1",
+   "topic": "tech",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Mida tõlke märgis lugejale ütleb?",
+   "title_ru": "Что читателю сообщает пометка о переводе?",
+   "text_et": "Kujutlegem linnaosa veebilehte, kuhu avaldatakse eri keeltes teateid ehitustööde ja ajutiste liiklusmuudatuste kohta. Toimetus kasutab mõnikord tõlke koostamiseks automaatset vahendit. Lehe all seisab märge, et tekst võib sisaldada ebatäpsusi. Toimetajatele tundub, et märge annab lugejale piisavalt teavet. Osa lugejaid loeb aga ainult pealkirja ja seda lõiku, kus on kirjas tänava nimi ning tööde aeg.\n\nToimetuse koosolekul pakuti välja, et märge tuleks tõsta lehe algusesse. See oleks nähtavam, kuid ei ütleks endiselt, milline osa tekstist vajab erilist tähelepanu. Näiteks võib kirjeldava lõigu sõnastus olla kohmakas ilma praktilise tagajärjeta. Kui aga tõlge vahetab ära tänava kaks eri lõiku või jätab märkamata kuupäeva muutuse, võib lugeja teha vale otsuse. Mõlema probleemi nimetamine lihtsalt ebatäpsuseks jätab nende vahe varju.\n\nÜks toimetaja soovitas kinnitada aadressid ja ajad enne tõlke avaldamist eraldi andmetabelis. Teine juhtis tähelepanu sellele, et kinnitatud andmed võivad hiljem muutuda. Tema meelest peaks paranduse kuupäev olema nähtav nii tõlkes kui ka originaalis. Nii saab lugeja aru, kas erinevus versioonide vahel on tõlkeviga või on üks tekst pärast muudatust veel uuendamata.\n\nPakutud lahendus jagab kontrolli kaheks. Teabe avaldamisel kontrollitakse kõigepealt fakte, millest lugeja tegevus sõltub. Pärast avaldamist jälgitakse, kas sama muudatus jõuab kõigisse keeleversioonidesse. Kui mõni versioon viibib, näidatakse selle juures viimase uuenduse aega ja viidatakse ajakohasele teatele. Lugeja saab teatada ka konkreetsest lahknevusest, selle asemel et valida üldine hinnang „tõlge ei ole hea”.\n\nSellise töökorra eesmärk ei ole muuta hoiatust pikemaks. Eesmärk on anda lugejale piisavalt infot, et ta oskaks vajaduse korral kontrollida just seda asjaolu, millest tema otsus sõltub.",
+   "explanation_ru": "Авторский учебный текст. Сначала отделите описанные факты от предположений и только затем формулируйте вывод.",
+   "questions": [
+    {
+     "id": "r-translation-q1",
+     "prompt_et": "Miks ei lahendaks probleemi üksnes hoiatuse viimine lehe algusesse?",
+     "type": "choice",
+     "options": [
+      "See muudaks hoiatuse vähem nähtavaks",
+      "See ei näitaks endiselt, millised andmed vajavad kontrolli",
+      "See takistaks teksti tõlkimist"
+     ],
+     "answer": 1,
+     "explanation_ru": "Видимость общей пометки не указывает, какая именно деталь могла быть неверной."
+    },
+    {
+     "id": "r-translation-q2",
+     "prompt_et": "Millist vahet rõhutatakse teises lõigus?",
+     "type": "choice",
+     "options": [
+      "Kohmakas sõnastus ja praktilise tagajärjega viga pole sama probleem",
+      "Avalik veebileht ja sisemine andmetabel peavad olema ühesugused",
+      "Tänava nimi on alati olulisem kui kuupäev"
+     ],
+     "answer": 0,
+     "explanation_ru": "Важен возможный эффект ошибки на действия читателя."
+    },
+    {
+     "id": "r-translation-q3",
+     "prompt_et": "Paranduse kuupäev soovitatakse näidata nii tõlkes kui ka originaalis.",
+     "type": "tf3",
+     "answer": true,
+     "explanation_ru": "Одинаково видимая дата помогает сравнить версии."
+    },
+    {
+     "id": "r-translation-q4",
+     "prompt_et": "Lehel kasutatakse kindla ettevõtte tõlketarkvara.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Название поставщика не указано."
+    },
+    {
+     "id": "r-translation-q5",
+     "prompt_et": "Mis on kirjeldatud töökorra peamine eesmärk?",
+     "type": "choice",
+     "options": [
+      "Anda kõigile keeleversioonidele sama pikkus",
+      "Avaldada tõlge alles siis, kui kõiki stiilivigu saab vältida",
+      "Aidata lugejal kontrollida otsuse jaoks olulist asjaolu"
+     ],
+     "answer": 2,
+     "explanation_ru": "Процесс ориентирован на проверяемость значимой информации."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Tooge kaks näidet tõlkeprobleemist ja võrrelge nende võimalikku mõju lugejale.",
+     "rubric_ru": "Приведите стилистический и фактический сбой. Объясните разницу последствий."
+    },
+    {
+     "prompt_et": "Selgitage, kuidas uuenduse kuupäev aitab eristada tõlkeviga ja ajutist lahknevust.",
+     "rubric_ru": "Опишите обе причины расхождения и зачем сравнивать даты версий."
+    },
+    {
+     "prompt_et": "Koostage lühike märkus hilinenud tõlke juurde.",
+     "rubric_ru": "Укажите актуальность, проверяемое действие читателя и способ узнать обновлённые данные."
+    }
+   ]
+  },
+  {
+   "id": "r-committee-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Kellele kehtib vaikimisi valik?",
+   "title_ru": "На кого рассчитан выбор по умолчанию?",
+   "text_et": "Kogukonnakeskus otsustas vähendada kasutamata jäävate ruumide hulka. Seni tuli broneeringu kinnitamiseks kirjutada keskuse töötajale. Uues süsteemis kinnitatakse broneering vaikimisi ja loobumisest peab teatama kasutaja. Esimese kuu kokkuvõte näitas, et registreeritud broneeringute arv tõusis. Juhatus tõlgendas kasvu märgina, et uus kord tegi ruumi leidmise lihtsamaks.\n\nKeskuse töötaja märkas, et nimekirja tekkis ka rohkem aegu, mil ruumis kedagi ei olnud. Varem jätsid ebakindlad korraldajad kinnituse andmata ja aeg sai uuesti vabaks. Uue korra puhul püsis see kinni seni, kuni keegi broneeringu tühistas. Nii sai korraga tõusta nii registreeritud broneeringute kui ka kasutamata tundide arv. Kasv kirjeldas toimingut süsteemis, kuid ei näidanud veel, kas rohkem inimesi sai ruumi kasutada.\n\nMõned juhatuse liikmed soovisid vana korra taastada. Teised arvasid, et probleem on lahendatav meeldetuletusega. Mõlemad ettepanekud eeldavad, et inimesed oskavad piisavalt vara öelda, kas kohtumine toimub. Mõnel ühendusel sõltub osalus aga teise organisatsiooni kinnitavast vastusest, mis saabub alles samal päeval. Kui tühistamise tähtaeg on väga varane, võivad sellised ühendused hakata ruumi üldse vältima.\n\nTöörühm tegi kolmanda ettepaneku. Püsivat reeglit veel ei kehtestata. Ühel kuul saadetakse meeldetuletus kõigile, kuid vabanenud aegu pakutakse ootenimekirjas olijatele. Loobumise korral küsitakse vabatahtlikult põhjust. Sellise korraldusega saab kontrollida, kas hilinenud tühistamisi on vähem ning kas ruum jõuab ka nende ühendusteni, kes varem aega ei leidnud. Juhatusele tehakse eraldi ülevaade registreeritud, tegelikult kasutatud ja uuesti jagatud tundidest.\n\nKüsimus pole üksnes selles, kumb kord on mugavam. Vaikimisi valik määrab, kes peab tegutsema, et aeg saaks vabaks. Kui see tegevus on mõnele rühmale keerulisem, ei näita broneeringute koguarv, kuidas võimalus ruumi kasutada erinevate ühenduste vahel jaguneb.",
+   "explanation_ru": "Авторский учебный текст. Сначала отделите описанные факты от предположений и только затем формулируйте вывод.",
+   "questions": [
+    {
+     "id": "r-committee-q1",
+     "prompt_et": "Miks võivad broneeringud ja kasutamata tunnid korraga kasvada?",
+     "type": "choice",
+     "options": [
+      "Vaikimisi kinnitatud aeg võib jääda kinni ka siis, kui kohtumine ei toimu",
+      "Uue korra järgi ei saa ruumi varem broneerida",
+      "Töötaja eemaldab nimekirjast ainult kasutatud ajad"
+     ],
+     "answer": 0,
+     "explanation_ru": "Автоматическое подтверждение сохраняет бронь, пока её явно не отменят."
+    },
+    {
+     "id": "r-committee-q2",
+     "prompt_et": "Mida eeldavad kaks esimest ettepanekut?",
+     "type": "choice",
+     "options": [
+      "Kõik ühendused loobuvad ruumi kasutamisest",
+      "Korraldajad teavad piisavalt vara, kas kohtumine toimub",
+      "Ühelgi ühendusel pole teise osapoole kinnitust vaja"
+     ],
+     "answer": 1,
+     "explanation_ru": "И возврат к подтверждению, и напоминание предполагают раннюю определённость."
+    },
+    {
+     "id": "r-committee-q3",
+     "prompt_et": "Katses pakutakse vabanenud aegu ootenimekirjas olijatele.",
+     "type": "tf3",
+     "answer": true,
+     "explanation_ru": "Это отдельный элемент предложенного пилота."
+    },
+    {
+     "id": "r-committee-q4",
+     "prompt_et": "Broneeringu hilise tühistamise eest nõutakse tasu.",
+     "type": "tf3",
+     "answer": "ns",
+     "explanation_ru": "Штраф или оплата не упоминаются."
+    },
+    {
+     "id": "r-committee-q5",
+     "prompt_et": "Mida lisab viimane lõik arutelule?",
+     "type": "choice",
+     "options": [
+      "Koguarv peaks olema ainus otsuse alus",
+      "Tühistamise aeg on tähtsusetu, kui süsteem on mugav",
+      "Vaikimisi kord jaotab kohustuse tegutseda ning võib mõjutada eri rühmi erinevalt"
+     ],
+     "answer": 2,
+     "explanation_ru": "Автор связывает обязанность отменять бронь с реальным доступом к помещению."
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Eristage kolm näitajat, mida juhatusele pakutakse, ja selgitage, milleks igaüks sobib.",
+     "rubric_ru": "Разберите число зарегистрированных, использованных и повторно распределённых часов."
+    },
+    {
+     "prompt_et": "Pakkuge kaitsemeede ühendusele, kes ei saa kohtumist varakult kinnitada.",
+     "rubric_ru": "Назовите правило и возможную цену для других участников."
+    },
+    {
+     "prompt_et": "Sõnastage tingimus, mille korral uus kord vääriks pikemat katset.",
+     "rubric_ru": "Используйте два показателя, чтобы рост бронирований не был единственным критерием."
+    }
+   ]
   }
  ]
 }

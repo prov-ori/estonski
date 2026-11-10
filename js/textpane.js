@@ -95,6 +95,7 @@ export function textPane(item, vocab = [], { exam = false } = {}) {
 
 export function sourceLine(src) {
   return h('p', { class: 'source muted small-text' },
-    'Источник: ', src.url ? h('a', { href: src.url, rel: 'noopener noreferrer' }, src.title) : src.title,
+    src.kind === 'reference' ? 'Материал по теме: ' : 'Источник: ',
+    src.url ? h('a', { href: src.url, rel: 'noopener noreferrer' }, src.title) : src.title,
     src.author ? `, ${src.author}` : '', src.license ? `. Лицензия: ${src.license}` : '', src.adapted ? '. Текст адаптирован.' : '');
 }

@@ -12,10 +12,11 @@ import { cardBlock } from './speaking.js';
 
 export default {
   title: 'Пробный экзамен',
-  async mount(root) {
+  async mount(root, args) {
     const [mockData, fmt, writingData] = await Promise.all([content('mock-exam'), config('exam-format'), content('writing')]);
     const mocks = mockData.items;
-    let mock = mocks[0];
+    const byId = new Map(mocks.map((variant) => [variant.id, variant]));
+    let mock = byId.get(args[0]) || mocks[0];
     let useTimer = true;
     const selected = new Set(fmt.parts.map((p) => p.id));
     let parts = fmt.parts;
@@ -31,7 +32,7 @@ export default {
     function intro() {
       disarmGuard();
       const hist = store.getMock();
-      const mockSel = h('select', { class: 'select', id: 'mock', onchange: (e) => { mock = mocks.find((m) => m.id === e.target.value); } }, mocks.map((m) => h('option', { value: m.id }, m.title_ru)));
+      const mockSel = h('select', { class: 'select', id: 'mock', onchange: (e) => { mock = byId.get(e.target.value); } }, mocks.map((m) => h('option', { value: m.id }, m.title_ru)));
       mockSel.value = mock.id;
       setChildren(root,
         h('h1', null, 'Пробный экзамен'),
@@ -46,7 +47,10 @@ export default {
             h('span', null, `${p.title_ru} — ${p.practice_minutes} мин (тренировочно)${p.scored_automatically ? '' : ', самооценка'}`)))),
         h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: useTimer, onchange: (e) => { useTimer = e.target.checked; } }), h('span', null, 'Использовать таймер частей (по истечении времени ответы сохраняются и открывается следующая часть)')),
         h('div', { class: 'row' }, h('button', { class: 'btn primary', type: 'button', onclick: begin }, 'Начать пробный экзамен')),
-        hist.length > 0 && h('div', null, h('h2', null, 'Прошлые попытки'), h('ul', null, [...hist].reverse().slice(0, 5).map((r) => h('li', null, `${fmtDate(r.ts)} — ${r.pct} % (${r.got}/${r.max})${r.partial ? ', частичный' : ''}`)))));
+        hist.length > 0 && h('div', null, h('h2', null, 'Прошлые попытки'), h('ul', null, [...hist].reverse().slice(0, 5).map((r) => {
+          const title = byId.get(r.variantId)?.title_ru;
+          return h('li', null, `${fmtDate(r.ts)} — `, title && `${title} — `, `${r.pct} % (${r.got}/${r.max})${r.partial ? ', частичный' : ''}`);
+        }))));
     }
 
     async function begin(event) {
@@ -140,13 +144,14 @@ export default {
       const rec = [];
       rows.forEach(({ r }) => (r.results || []).forEach(({ q, g }) => rec.push({ id: q.id, module: 'mock', topic: q.topic, ok: g.ok })));
       store.recordMany(rec);
-      if (max) store.addMock({ ts: Date.now(), pct: percent, got, max, partial, parts: Object.fromEntries(rows.map(({ p, r }) => [p.id, [r.got, r.max]])) });
+      if (max) store.addMock({ ts: Date.now(), variantId: mock.id, pct: percent, got, max, partial, parts: Object.fromEntries(rows.map(({ p, r }) => [p.id, [r.got, r.max]])) });
 
       const wrong = rows.flatMap(({ p, r }) => (r.results || []).filter((x) => !x.g.ok).map((x) => ({ p, ...x })));
       const writeDone = parts.find((p) => p.id === 'writing');
       const speakDone = parts.find((p) => p.id === 'speaking');
       setChildren(root,
         h('h1', null, 'Результат пробного экзамена'),
+        h('p', { class: 'lead' }, mock.title_ru),
         max ? h('div', { class: 'card result' },
           h('p', { class: 'big' }, `Ориентировочно: ${percent} %`),
           showThreshold && h('p', null, percent >= threshold ? `Это не ниже условного порога ${threshold} %.` : `Это ниже условного порога ${threshold} %.`),

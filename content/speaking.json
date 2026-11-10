@@ -1869,6 +1869,50 @@
    ],
    "explanation_ru": "Назовите пример обычной и нестандартной передачи дел. Завершите предложением, которое можно проверить.",
    "model_et": "Malli kasutegur on selles, et üleandmisel meenub ka töö, mille tähtaeg saabub alles järgmisel nädalal. Näiteks on korduva tellimuse puhul mõistlik märkida vastutaja, järgmine samm ja tähtaeg alati samasse kohta. Keerukama juhtumi puhul võib aga oluline olla see, miks otsus tehti või millise erandiga klient juba nõustus. Kui vormis sellist kohta ei ole, jääb järgmine töötaja küll kuupäevaga, kuid ilma otsuse põhjuseta. Jätaksin alles kolm põhivälja ja lisaksin välja „Mida järgmine töötaja peab veel teadma?”. Selle täitmine oleks vabatahtlik ning sinna saaks lisada ühe lühikese selgituse. Kuu lõpus võrdleksin, kui sageli tuli pärast üleandmist täpsustusi küsida. Eraldi vaataksin juhtumeid, mis ei mahtunud tavapärasesse töövoogu. Nii saame hinnata, kas uus väli aitab päriselt või muudab üleandmise lihtsalt pikemaks."
+  },
+  {
+   "id": "s-lunch-voice-b2",
+   "topic": "food",
+   "level": "B2",
+   "status": "draft",
+   "kind": "monologue",
+   "title_ru": "Монолог о выборе порций в столовой",
+   "situation_ru": "На школьном собрании обсуждают, как уменьшить количество остатков. Одни предлагают всем уменьшить порции, другие — разрешить выбирать размер.",
+   "prompts_et": [
+    "Kirjeldage ühe kindla portsjoni suuruse eelist ja puudust.",
+    "Tooge näide õpilasest, kellele valikuvõimalus võiks kasulik olla.",
+    "Pakkuge korraldus, mis ei pikenda järjekorda.",
+    "Selgitage, kuidas saaksite kuu aja pärast muutuse mõju hinnata."
+   ],
+   "phrases_et": [
+    "Ühelt poolt teeb see … lihtsamaks.",
+    "Valikust oleks eriti kasu siis, kui …",
+    "Selleks et järjekord ei pikeneks, võiks …"
+   ],
+   "explanation_ru": "Сравните решения на конкретном примере и завершите предложением, которое школа сможет испытать.",
+   "model_et": "Ühesuuruseid portsjoneid on köögis lihtne kiiresti jagada. Samas ei ole kõigil õpilastel lõuna ajal ühesugune isu. Näiteks võib pärast trenni olla vaja suuremat portsjonit, aga mõni õpilane tahab uut toitu enne ainult proovida. Ma ei vähendaks seetõttu kõigi portsjoneid korraga. Pakuksin katseks kahte suurust ja paneksin enne järjekorda nähtavale sildi, mis selgitab, kui suur on kumbki portsjon. Nii saab igaüks otsustada juba enne, kui ta toidujagaja juurde jõuab. Kuu pärast võrdleksin taldrikule jäänud toidu kogust ühe sööja kohta ning seda, kui kaua järjekorras oodati. Küsiksin eraldi neilt, kes valisid väiksema portsjoni, kas kõht sai täis. Kui toitu jääb vähem üle, aga järjekord muutub pikemaks, peaksime kõigepealt muutma jagamise korraldust."
+  },
+  {
+   "id": "s-maintenance-interview-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "kind": "interview",
+   "title_ru": "Интервью об отложенном ремонте",
+   "situation_ru": "Вы отвечаете на вопросы местного радио. Центр отложил замену части оборудования, и слушатели хотят понять, стала ли экономия на ремонте причиной отмены мероприятий.",
+   "prompts_et": [
+    "Mida on võimalik teada saada tühistamiste nimekirjast ja mida mitte?",
+    "Kuidas vastaksite väitele, et just remondi edasilükkamine põhjustas kõik katkestused?",
+    "Millist teavet tuleks järgmisel kvartalil koguda ja miks?",
+    "Mis tingimusel muudaksite senist otsust enne kvartali lõppu?"
+   ],
+   "phrases_et": [
+    "Praegused andmed kinnitavad üksnes, et …",
+    "Selle seose kontrollimiseks peaksime eraldi vaatama …",
+    "Ma ei ootaks kvartali lõpuni juhul, kui …"
+   ],
+   "explanation_ru": "Разведите подтверждённые факты, возможные причины и критерий досрочного пересмотра решения.",
+   "model_et": "Tühistamiste nimekirjast näeme, millised üritused jäid ära ja millal otsus tehti. Sellest ei selgu veel, kas ürituse ärajäämise põhjus oli seadmerike või näiteks korraldaja haigestumine. Seetõttu oleks ennatlik väita, et remondi edasilükkamine põhjustas kõik katkestused. Samas ei saa me võimaliku seose uurimisest loobuda. Järgmisel kvartalil paluksin halduril märkida iga juhtumi põhjuse, katkestuse kestuse ning selle, kas üritus õnnestus ümber tõsta. Tehnik võiks eraldi kirja panna, millise seadme rike kordus ja milliseid varuosi selle parandamiseks vajati. Nii saame otsustada, kas probleem on üksikus seadmes või kogu ruumi töökorralduses. Kui rike katkestaks korduvalt samas ruumis toimuvaid üritusi ja ajutine asendus poleks kättesaadav, ei ootaks ma kvartali lõpuni. Kutsuksin juhatuse kokku ja võrdleksin uuenduse kulu seniste katkestuste mõjuga."
   }
  ],
  "checklist": [

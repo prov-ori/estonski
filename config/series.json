@@ -239,6 +239,14 @@
    "module": "reading",
    "title_ru": "На кого рассчитан выбор по умолчанию?"
   },
+  "r-lunch-trial-b2": {
+   "module": "reading",
+   "title_ru": "Куда делся школьный обед?"
+  },
+  "r-lighting-cost-c1": {
+   "module": "reading",
+   "title_ru": "Что остаётся за пределами закупочной цены?"
+  },
   "l-01": {
    "module": "listening",
    "title_ru": "Объявление директора"
@@ -639,6 +647,14 @@
    "module": "writing",
    "title_ru": "Ответ на жалобу о пересадке"
   },
+  "w-lunch-letter-b2": {
+   "module": "writing",
+   "title_ru": "Предложение по школьному обеду"
+  },
+  "w-energy-memo-c1": {
+   "module": "writing",
+   "title_ru": "Служебная записка о выборе оборудования"
+  },
   "s-01": {
    "module": "speaking",
    "title_ru": "Планируем выходные"
@@ -898,6 +914,14 @@
   "s-team-handovers-c1": {
    "module": "speaking",
    "title_ru": "Монолог о передаче дел"
+  },
+  "s-lunch-voice-b2": {
+   "module": "speaking",
+   "title_ru": "Монолог о выборе порций в столовой"
+  },
+  "s-maintenance-interview-c1": {
+   "module": "speaking",
+   "title_ru": "Интервью об отложенном ремонте"
   }
  }
 }

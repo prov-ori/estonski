@@ -1607,6 +1607,64 @@
     200,
     280
    ]
+  },
+  {
+   "id": "w-lunch-letter-b2",
+   "topic": "food",
+   "level": "B2",
+   "status": "draft",
+   "kind": "formal",
+   "title_ru": "Предложение по школьному обеду",
+   "prompt_et": "Kooli sööklas on teise söögivahetuse lõpuks sageli supp otsas, kuid leiba jääb üle. Õpilasesindus kogus kahe nädala jooksul tähelepanekuid. Kirjutage toitlustajale kiri, milles pakute välja ühe väikese muudatuse.",
+   "prompt_ru": "К концу второй перемены в столовой часто заканчивается суп, а хлеб остаётся. Напишите поставщику питания от имени ученического совета и предложите небольшое изменение.",
+   "content_points_et": [
+    "Kirjeldage tähelepanekut ja selgitage, keda olukord mõjutab.",
+    "Eristage, mida õpilased teavad ja milline küsimus vajab veel kontrollimist.",
+    "Pakkuge teostatav muudatus ning selgitage, kuidas selle mõju jälgida.",
+    "Paluge toitlustajal nimetada sobiv aeg aruteluks."
+   ],
+   "content_points_ru": [
+    "Опишите наблюдение и кого затрагивает ситуация.",
+    "Отделите известное от того, что нужно ещё проверить.",
+    "Предложите выполнимое изменение и способ проверить его результат.",
+    "Попросите поставщика назвать удобное время для обсуждения."
+   ],
+   "practice_words": [
+    160,
+    210
+   ],
+   "explanation_ru": "Сформулируйте одно выполнимое предложение. Укажите, как проверите, хватает ли супа второй смене и не растёт ли объём остатков.",
+   "sample_et": "Tere!\n\nKirjutan Metsaserva kooli õpilasesinduse nimel. Kahe nädala jooksul märkasime kolmel päeval, et teise söögivahetuse lõpus ei jätkunud kõigile suppi. Samal ajal jäi lauale leiba, mida õpilased enam ei võtnud. See puudutab eelkõige klasse, kelle lõunavahetus algab hiljem.\n\nMe ei tea veel, kas suppi valmistati liiga vähe või võeti esimese vahetuse ajal tavalisest rohkem. Samuti pole meil andmeid selle kohta, kui paljud õpilased teises vahetuses supist loobusid, sest seda enam polnud. Seetõttu võiks enne suuremat menüümuudatust proovida üht lihtsat lahendust.\n\nPakume välja, et kahel järgmisel supipäeval jäetakse osa supist teise vahetuse alguseni kõrvale. Esimeses vahetuses võiks pärast esimest portsjonit vajaduse korral juurde küsida, kui selleks ette nähtud suppi veel jätkub. Köök võiks märkida, kas supp sai enne kummagi vahetuse lõppu otsa ja kui palju jäi päeva lõpus üle. Õpilasesindus küsiks mõlemalt vahetuselt tagasisidet ooteaja ja portsjoni suuruse kohta. Nii saaksime hinnata, kas muudatus aitab hiljem sööma tulijaid ega tekita esimeses vahetuses uut probleemi.\n\nKas leiaksite järgmisel nädalal veerand tundi, et katse korraldus koos läbi rääkida? Meile sobivad teisipäev ja neljapäev pärast viimast tundi.\n\nLugupidamisega\nMetsaserva kooli õpilasesindus",
+   "sample_notes_ru": "Письмо отделяет наблюдение от предполагаемой причины и проверяет эффект для обеих смен."
+  },
+  {
+   "id": "w-energy-memo-c1",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "kind": "opinion",
+   "title_ru": "Служебная записка о выборе оборудования",
+   "prompt_et": "Kultuurikeskus peab otsustama, kas asendada kaks vana heliseadet kohe või vahetada esialgu välja ainult suure saali seade. Suures saalis toimub tegevus peaaegu iga päev. Väikese saali kasutus on ebaregulaarne. Kirjutage juhatusele põhjendatud soovitus.",
+   "prompt_ru": "Культурный центр решает, заменить ли два старых комплекта звукового оборудования сразу или начать с большого зала. Подготовьте для правления аргументированную рекомендацию.",
+   "content_points_et": [
+    "Võrrelge kahe valiku otseseid kulusid ja töökorralduslikke tagajärgi.",
+    "Sõnastage, milline eeldus võiks teie soovitust muuta.",
+    "Selgitage, millist teavet tasub enne otsust täpsustada ja kellelt seda küsida.",
+    "Pakkuge otsus koos järelhindamise tähtaja ja mõõdikutega."
+   ],
+   "content_points_ru": [
+    "Сопоставьте прямые затраты и организационные последствия двух вариантов.",
+    "Укажите допущение, при изменении которого поменяется рекомендация.",
+    "Назовите, какие сведения стоит уточнить до решения и у кого их запросить.",
+    "Предложите решение, срок пересмотра и показатели."
+   ],
+   "practice_words": [
+    210,
+    280
+   ],
+   "explanation_ru": "Различайте цену покупки, затраты при эксплуатации и влияние перебоев на работу. Покажите, когда ваше решение имеет смысл пересмотреть.",
+   "sample_et": "Soovitus juhatusele\n\nSoovitan vahetada esmalt välja suure saali heliseadme ja jätta väikese saali kohta otsus järgmise kvartali lõppu. Suure saali puhul mõjutab rike peaaegu kohe mõnd proovi või avalikku üritust. Väikeses saalis on vahel võimalik broneering ümber tõsta. Seetõttu ei anna ühe lisaseadme ost mõlemas ruumis tingimata samaväärset tulemust.\n\nKahe seadme korraga ostmise eelis oleks ühtne paigaldus ja lihtsam kasutajakoolitus. Kui seadmed tellitakse eri ajal, võib teine paigalduskäik maksta rohkem. Lisaks peab tehnik seni tundma kahte lahendust ning hoidma käepärast erinevaid varuosi. Etapiviisiline ost jätaks seevastu praegu osa eelarvest vabaks. See võimaldaks katta ootamatuid kulusid juhul, kui suure saali paigaldus osutub arvatust keerulisemaks.\n\nSoovitus eeldab, et väikese saali praegust seadet saab vajaduse korral kiiresti parandada või asendada. Kui hooldaja kinnitab, et vajalikku varuosa ei ole enam võimalik mõistliku aja jooksul hankida, muutub kahe seadme korraga ostmine põhjendatumaks. Palun tehnikul koostada ülevaade viimase aasta riketest ning tarnijal esitada eraldi hind ühe ja kahe seadme paigaldusele. Broneeringute haldurilt küsiksin, kui sageli on väikese saali üritust tegelikult võimalik teise ruumi viia.\n\nJärgmise kvartali lõpus võrdleme suurde saali paigaldatud seadme tegelikku kasutust, hooldusele kulunud aega ja heliprobleemide tõttu ümber tõstetud ürituste arvu. Väikese saali kohta kogume samad andmed. Juba enne andmete kogumist lepime kokku, millise ooteaja korral ei saa keskuse töö enam tavapäraselt jätkuda. Kui mõne rikke tõttu jääb väikeses saalis tegevus korduvalt ära ja ajutist asendust ei leidu, toon teise ostu otsustamiseks varem juhatuse ette.",
+   "sample_notes_ru": "Рекомендация меняется при конкретном условии. Автор заранее задаёт срок и признаки для повторной оценки."
   }
  ],
  "connectors": [

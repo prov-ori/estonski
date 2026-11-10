@@ -4749,6 +4749,254 @@
      "rubric_ru": "Используйте два показателя, чтобы рост бронирований не был единственным критерием."
     }
    ]
+  },
+  {
+   "id": "r-lunch-trial-b2",
+   "topic": "food",
+   "level": "B2",
+   "status": "draft",
+   "title_et": "Kuhu jäi koolilõuna?",
+   "title_ru": "Куда делся школьный обед?",
+   "text_et": "Metsaserva koolis märkasid õpilased, et lõunavahetuse lõpuks oli tagastuslaua kõrval olev ämber sageli peaaegu täis. Õpilasesindus arvas, et toitu visatakse ära peamiselt sellepärast, et portsjonid on liiga suured. Köögitöötajad olid ettevaatlikumad. Nad olid näinud päevi, mil köögis jäi palju sööki üle, kuigi taldrikud toodi tagasi peaaegu puhtalt. Kooli juhtkond otsustas enne menüü muutmist uurida, kus ja millal toit üle jääb.\n\nKahe nädala jooksul kaalusid köögitöötajad eraldi toitu, mida polnud välja jagatud, ja seda, mis tuli tagasi õpilaste taldrikutel. Puuviljakoored ja muud osad, mida tavaliselt ei sööda, pandi eraldi nõusse. Tabelisse märgiti ka sööjate arv. See oli oluline, sest reedel viibis mitu klassi õppekäigul. Reede väiksem jäätmekogus ei näidanud iseenesest, et sel päeval viskas üks õpilane vähem toitu ära.\n\nEsimesest tabelist selgus, et köögis jäi sööki rohkem üle siis, kui mõni klass andis oma puudumisest teada alles vahetult enne lõunat. Taldrikutelt tuli rohkem tagasi päevadel, mil oli valida ainult üks soe roog. Köögijuht ei tahtnud sellest järeldada, et konkreetne roog õpilastele ei maitse. Mõnel sellisel päeval oli söögivahetus ürituse tõttu tavalisest lühem. Seetõttu küsiti õpilastelt ka seda, kas neil oli piisavalt aega söömiseks.\n\nJärgmisel kuul tehti kaks muudatust. Klassijuhatajad said märkida õppekäigu juba eelmise päeva õhtul ühisesse kalendrisse. Lisaks pakuti ühel nädalapäeval võimalust võtta alguses väiksem portsjon ja küsida hiljem juurde. Toitlustajad kartsid, et lisaportsjoni soovijad tekitavad toidujagamise kohas uue järjekorra. Et seda vältida, jagati lisaportsjoneid eraldi lauas. Kõigil päevadel uut korda ei rakendatud, sest kõige rahvarohkemal ajal polnud võimalik teise laua juurde töötajat panna.\n\nKuu lõpuks jäi köögis valmistatud toitu harvem üle. Väiksema portsjoni päeval vähenesid ka taldrikujäägid ühe sööja kohta. Õpilasesindus soovis kohe uusi portsjoneid kõigil päevadel. Köögijuht juhtis aga tähelepanu sellele, et väiksema portsjoni päeval pakuti suppi. Teistel päevadel võisid nii roog, sööjate arv kui ka lõunavahetuse pikkus olla teistsugused. Tulemuse kontrollimiseks soovitas ta proovida sama lahendust mõnel päeval, mil menüüs on teine roog, ning jälgida ka ooteaega.\n\nKool jättis õppekäikudest varem teatamise korra kehtima ja otsustas portsjonikatset jätkata. Järgmises ülevaates avaldatakse eraldi nii köögi ülejääk kui ka taldrikujäägid. Mõlema juures näidatakse, mitu õpilast söömas käis. Õpilased saavad pakkuda välja küsimusi, mida järgmisel ringil uurida. Näiteks soovivad nad teada, kas sööklas on lihtsam juurde küsida siis, kui lisaportsjoni laual on selge silt. Katse mõte on leida viis, kuidas pakkuda piisavalt süüa ja jätta vähem toitu kasutamata.",
+   "source": {
+    "kind": "reference",
+    "title": "Рекомендации Еврокомиссии по сокращению пищевых отходов в школьных столовых",
+    "url": "https://food.ec.europa.eu/system/files/2023-09/fw_leaflet_schools_en.pdf"
+   },
+   "explanation_ru": "Авторский учебный кейс по теме открытого руководства. Школа или муниципалитет, события и результаты в тексте вымышлены.",
+   "questions": [
+    {
+     "id": "r-lunch-trial-b2-q1",
+     "type": "choice",
+     "prompt_et": "Miks ei tahetud kohe portsjoneid muuta?",
+     "options": [
+      "Õpilased olid praeguste portsjonitega rahul ega soovinud muudatust.",
+      "Polnud selge, kus toit üle jäi.",
+      "Kool oli otsustanud teha muudatusi ainult reedel.",
+      "Köögis polnud võimalik toitu kaaluda enne vaheaja lõppu."
+     ],
+     "answer": 1,
+     "explanation_ru": "Сотрудники замечали остатки даже в дни с чистыми тарелками, поэтому школе нужно было установить, где они образуются.",
+     "evidence": "enne menüü muutmist uurida, kus ja millal toit üle jääb"
+    },
+    {
+     "id": "r-lunch-trial-b2-q2",
+     "type": "choice",
+     "prompt_et": "Miks lisati tabelisse sööjate arv?",
+     "options": [
+      "Et näha, mitu õpetajat käis eri nädalapäevadel õppekäigul.",
+      "Et teada saada, millist rooga valis iga lõunale tulnud õpilane.",
+      "Et võrrelda jäätmekogust sööja kohta.",
+      "Et otsustada, mitu õpilast saab võtta lisaportsjoni."
+     ],
+     "answer": 2,
+     "explanation_ru": "При разном количестве едоков общие объёмы отходов напрямую сравнивать нельзя.",
+     "evidence": "Reede väiksem jäätmekogus ei näidanud iseenesest, et sel päeval viskas üks õpilane vähem toitu ära"
+    },
+    {
+     "id": "r-lunch-trial-b2-q3",
+     "type": "tf3",
+     "prompt_et": "Mõnel ühe sooja roaga päeval oli lõunavahetus tavalisest lühem.",
+     "answer": true,
+     "explanation_ru": "В тексте короткая перемена указана как возможное альтернативное объяснение.",
+     "evidence": "Mõnel sellisel päeval oli söögivahetus ürituse tõttu tavalisest lühem"
+    },
+    {
+     "id": "r-lunch-trial-b2-q4",
+     "type": "choice",
+     "prompt_et": "Milline muudatus aitas köögil sööjate arvu paremini ette näha?",
+     "options": [
+      "Õppekäigud märgiti eelmisel õhtul kalendrisse.",
+      "Puuviljakoored koguti iga lõunavahetuse järel eraldi nõusse.",
+      "Lisaportsjoneid jagati selleks ette nähtud eraldi lauas.",
+      "Õpilastelt küsiti, kas nad jõudsid söögivahetuse jooksul süüa."
+     ],
+     "answer": 0,
+     "explanation_ru": "Кухня могла заранее узнать об отсутствии классов через календарь.",
+     "evidence": "Klassijuhatajad said märkida õppekäigu juba eelmise päeva õhtul ühisesse kalendrisse"
+    },
+    {
+     "id": "r-lunch-trial-b2-q5",
+     "type": "tf3",
+     "prompt_et": "Väiksemat portsjonit pakuti katse ajal igal koolipäeval.",
+     "answer": false,
+     "explanation_ru": "Меньшую порцию можно было брать в один день недели.",
+     "evidence": "ühel nädalapäeval võimalust võtta alguses väiksem portsjon"
+    },
+    {
+     "id": "r-lunch-trial-b2-q6",
+     "type": "choice",
+     "prompt_et": "Mida tahtis köögijuht järgmisel etapil kontrollida?",
+     "options": [
+      "Kas õpilased oleksid rahul, kui supp asendaks menüüs kõik teised soojad road.",
+      "Kas köögijääke saab kaaluda pärast koolipäeva lõppu.",
+      "Kas klassijuhatajad võiksid sööjate arvu märkimisest loobuda.",
+      "Kas tulemus kordub teise roaga ja kui pikk on ooteaeg."
+     ],
+     "answer": 3,
+     "explanation_ru": "Он предложил проверить результат на других блюдах и следить за очередью.",
+     "evidence": "proovida sama lahendust mõnel päeval, mil menüüs on teine roog, ning jälgida ka ooteaega"
+    },
+    {
+     "id": "r-lunch-trial-b2-q7",
+     "type": "tf3",
+     "prompt_et": "Katse käigus vähenes taldrikujääk täpselt veerandi võrra.",
+     "answer": "ns",
+     "explanation_ru": "Направление изменения названо, точный размер снижения не указан."
+    },
+    {
+     "id": "r-lunch-trial-b2-q8",
+     "type": "choice",
+     "prompt_et": "Mida otsustas kool kuu lõpus?",
+     "options": [
+      "Lõpetada jäätmete kaalumine seni, kuni kooli menüü on tervikuna muudetud.",
+      "Jätkata nii varasema teavitamise kui ka portsjonikatsega.",
+      "Võtta väiksemad portsjonid kõigil päevadel kohe kasutusele.",
+      "Asendada kaks eri näitajat ühe üldarvuga."
+     ],
+     "answer": 1,
+     "explanation_ru": "Ранние уведомления остаются, а проба с порциями продолжается.",
+     "evidence": "Kool jättis õppekäikudest varem teatamise korra kehtima ja otsustas portsjonikatset jätkata"
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Selgitage, kuidas ühine kalender aitab vähendada köögi ülejääki.",
+     "rubric_ru": "Свяжите более раннее уведомление с планированием числа порций."
+    },
+    {
+     "prompt_et": "Miks ei piisa ühest supipäevast, et hinnata väiksema portsjoni mõju?",
+     "rubric_ru": "Укажите хотя бы два различия между днями и объясните, как их учесть."
+    },
+    {
+     "prompt_et": "Pakkuge näitaja, millega kontrollida, kas lisaportsjonite jagamine tekitab järjekorra.",
+     "rubric_ru": "Предложите измеримый показатель и объясните, с чем его сравнить."
+    }
+   ]
+  },
+  {
+   "id": "r-lighting-cost-c1",
+   "topic": "city",
+   "level": "C1",
+   "status": "draft",
+   "title_et": "Mis jääb ostuhinna taha?",
+   "title_ru": "Что остаётся за пределами закупочной цены?",
+   "text_et": "Ranna vald kavandas kogukonnakeskuse valgustuse uuendamist. Senised valgustid vajasid sagedast hooldust ning mõnes ruumis tuli rikke ajal üritusi ümber korraldada. Esimeses hinnavõrdluses oli pakkumine A ostuhinnalt kõige soodsam. Pakkumise B eest oleks tulnud kohe rohkem maksta, kuid selle energiatarve oli väiksem ning tarnija lubas varuosi kauem müüa. Volikogu palus töörühmal selgitada, millisel juhul võiks kallim ost osutuda pikema aja jooksul soodsamaks.\n\nTöörühm koostas viie aasta kulutabeli. Ostuhinna kõrval arvestati paigaldust, elektrikulu, hooldust ning selliste osade vahetamist, mille eeldatav kasutusiga jäi vaatlusajast lühemaks. Üks liige tahtis lisada ka iga katkestuse tõttu saamata jäänud ruumirendi. Selliseid andmeid polnud keskuses varem eraldi kogutud. Seepärast jäeti võimalik renditulu kaotus rahalisest võrdlusest välja ja kirjeldati katkestuste mõju eraldi. Nii ei jäänud see otsuses tähelepanuta ega tekitanud kulutabelis näilist täpsust.\n\nEsialgne arvutus näitas, et pakkumine B tasuks end ära juhul, kui ruume kasutataks peaaegu iga päev. Kui saal oleks avatud peamiselt nädalavahetustel, oleks väiksem elektrikulu liiga väike, et katta kõrgemat ostuhinda. Töörühma liige soovitas lähtuda senisest elektriarvest. Haldaja meenutas aga, et osa hoonest oli eelmisel aastal remondi tõttu mitu kuud suletud. Varasem arve sobis kontrolliks, ent see ei kirjeldanud tingimata järgmist viit aastat. Seepärast näidati tulemusi nii tavapärase kui ka harvema kasutuse korral.\n\nTeine vaidlus puudutas varuosi. Mõlemad tarnijad kinnitasid, et nende seadmeid saab hooldada, kuid ainult pakkumises B oli konkreetne aeg, mille jooksul tarnija lubas varuosi pakkuda. Osa töörühmast tahtis käsitada seda lubadust garantiina, et rikkeid tuleb vähem. Teised juhtisid tähelepanu erinevusele: varuosade olemasolu võib lühendada rikke tõttu tekkinud katkestust, kuid ei näita, kui tihti seade rikki läheb. Tabelis hoiti seetõttu hooldusvajadus ja varuosade kättesaadavus eraldi.\n\nEelarves polnud kogu maja korraga uuendamiseks piisavalt raha. Töörühm pakkus välja, et kõige rohkem kasutatavates ruumides vahetatakse valgustid esimesena. Vähe kasutatavates ruumides jätkatakse ajutiselt seniste seadmetega, kui hooldaja kinnitab, et neid saab töökorras hoida. Sellise jaotuse puhul tuleb aga arvestada, et kahe eri lahenduse hooldamine võib nõuda rohkem varuosi ja tööaega. Seetõttu ei saanud maja osadeks jagamist pidada automaatselt kõige odavamaks teeks.\n\nVolikogule esitatud ülevaates eristati kolm asja: kulud, mille kohta oli pakkumustes kindel hind, kulud, mis sõltusid kasutusest, ning mõjud, millele ei olnud võimalik usaldusväärset rahalist väärtust anda. Töörühm soovitas pärast esimest kasutusaastat võrrelda tegelikku elektrikulu ja hooldust algsete eeldustega. Kui erinevus on suur, tuleb enne järgmiste ruumide uuendamist otsust põhjendada uute andmetega. Ülevaate mõte oli näidata, milliste eelduste korral võiks osutuda põhjendatuks ka teine valik.",
+   "source": {
+    "kind": "reference",
+    "title": "Руководство Минфина Эстонии по учёту стоимости жизненного цикла",
+    "url": "https://www.fin.ee/kasulik-teave-oigusaktid"
+   },
+   "explanation_ru": "Авторский учебный кейс по теме открытого руководства. Школа или муниципалитет, события и результаты в тексте вымышлены.",
+   "questions": [
+    {
+     "id": "r-lighting-cost-c1-q1",
+     "type": "choice",
+     "prompt_et": "Miks ei lisatud saamata jäänud renditulu kulutabelisse?",
+     "options": [
+      "Ruumide rentimisega tegeleb teine asutus, kelle kulud ei kuulu keskuse eelarvesse.",
+      "Tarnijad olid lubanud kõik katkestused hüvitada.",
+      "Renditulu kaotuse hindamiseks polnud piisavalt andmeid.",
+      "Töörühm leidis, et katkestused ei mõjuta keskuse tegevust."
+     ],
+     "answer": 2,
+     "explanation_ru": "Нет данных для надёжной оценки. Последствия перебоев всё равно описали отдельно.",
+     "evidence": "Selliseid andmeid polnud keskuses varem eraldi kogutud"
+    },
+    {
+     "id": "r-lighting-cost-c1-q2",
+     "type": "choice",
+     "prompt_et": "Miks pole senine elektriarve iseenesest hea prognoos?",
+     "options": [
+      "Võrdlusperioodil oli osa hoonest ajutiselt suletud.",
+      "Valla elektriarvel puudus tarbitud energia kogus.",
+      "Mõlemad pakkumised sisaldasid sama energiakulu.",
+      "Elektrit plaaniti kasutada ainult nädalavahetustel."
+     ],
+     "answer": 0,
+     "explanation_ru": "Ремонт изменил режим работы, поэтому историческое потребление может не отражать обычное.",
+     "evidence": "osa hoonest oli eelmisel aastal remondi tõttu mitu kuud suletud"
+    },
+    {
+     "id": "r-lighting-cost-c1-q3",
+     "type": "tf3",
+     "prompt_et": "Harvema kasutuse korral ei kata pakkumise B energiasääst suuremat ostuhinda.",
+     "answer": true,
+     "explanation_ru": "При использовании преимущественно по выходным экономия на электричестве недостаточна.",
+     "evidence": "väiksem elektrikulu liiga väike, et katta kõrgemat ostuhinda"
+    },
+    {
+     "id": "r-lighting-cost-c1-q4",
+     "type": "choice",
+     "prompt_et": "Mida saab järeldada pakkumises B antud lubadusest müüa varuosi?",
+     "options": [
+      "Pakkumisega kaasneb garantii, et rikkeid tekib kogu kasutusaja jooksul vähem.",
+      "Hooldusvajaduse võib kulude võrdlusest välja jätta.",
+      "Pakkumine muutub koos varuosadega ostuhinnalt soodsamaks.",
+      "Vajalikku osa võib olla lihtsam leida, ent rikete sagedus pole teada."
+     ],
+     "answer": 3,
+     "explanation_ru": "Доступность деталей может уменьшить последствия поломки. Частоту поломок она не определяет.",
+     "evidence": "varuosade olemasolu võib lühendada rikke tõttu tekkinud katkestust, kuid ei näita, kui tihti seade rikki läheb"
+    },
+    {
+     "id": "r-lighting-cost-c1-q5",
+     "type": "tf3",
+     "prompt_et": "Mõlemas pakkumises oli varuosade kättesaadavuse aeg kindlaks määratud.",
+     "answer": false,
+     "explanation_ru": "Только B назвал конкретный период доступности деталей.",
+     "evidence": "ainult pakkumises B oli konkreetne aeg"
+    },
+    {
+     "id": "r-lighting-cost-c1-q6",
+     "type": "choice",
+     "prompt_et": "Milline asjaolu nõrgendab väidet, et ruumide kaupa uuendamine on alati odavam?",
+     "options": [
+      "Saalide kasutussagedust ja sellest sõltuvat energiakulu ei saa eraldi mõõta.",
+      "Kahe süsteemi hooldus võib nõuda rohkem aega ja varuosi.",
+      "Kõigi ruumide valgustid läksid samal päeval rikki.",
+      "Uuendamise kulu ei sõltu valgustite arvust."
+     ],
+     "answer": 1,
+     "explanation_ru": "Обслуживание двух систем может потребовать больше времени и запчастей.",
+     "evidence": "kahe eri lahenduse hooldamine võib nõuda rohkem varuosi ja tööaega"
+    },
+    {
+     "id": "r-lighting-cost-c1-q7",
+     "type": "tf3",
+     "prompt_et": "Pakkumise B puhul oleks aastane hoolduskulu alla viiesaja euro.",
+     "answer": "ns",
+     "explanation_ru": "В тексте нет денежной оценки годового обслуживания B."
+    },
+    {
+     "id": "r-lighting-cost-c1-q8",
+     "type": "choice",
+     "prompt_et": "Mis on lõpuülevaate põhiülesanne?",
+     "options": [
+      "Näidata, millistel eeldustel on kumbki valik põhjendatud.",
+      "Kehtestada üks kindel lahendus kõigi valla hoonete ja ruumide jaoks.",
+      "Asendada hilisemad mõõtmised ühe kindla prognoosiga.",
+      "Tõendada, et ostuhind ei ole ühegi otsuse puhul oluline."
+     ],
+     "answer": 0,
+     "explanation_ru": "Обзор показывает, как изменение допущений может поменять предпочтительный вариант.",
+     "evidence": "milliste eelduste korral võiks osutuda põhjendatuks ka teine valik"
+    }
+   ],
+   "review_questions": [
+    {
+     "prompt_et": "Milline oluline teave kaoks, kui ülevaates oleks ainult ostuhind ja viie aasta kogukulu?",
+     "rubric_ru": "Назовите хотя бы одно допущение о нагрузке и одно последствие, не выраженное в деньгах."
+    },
+    {
+     "prompt_et": "Sõnastage tingimus, mille korral soovitaksite alustada pakkumisest B ainult osas ruumides.",
+     "rubric_ru": "Свяжите частоту использования с экономией и учтите дополнительные расходы на две системы."
+    },
+    {
+     "prompt_et": "Mida võrdleksite pärast esimest kasutusaastat, et kontrollida mudeli eeldusi?",
+     "rubric_ru": "Назовите наблюдаемые показатели и объясните, как они повлияют на следующий этап."
+    }
+   ]
   }
  ]
 }

@@ -11,7 +11,7 @@
     { "id": "reading",   "title_ru": "Чтение", "practice_minutes": 25, "scored_automatically": true },
     { "id": "language",  "title_ru": "Грамматика и лексика", "practice_minutes": 15, "scored_automatically": true },
     { "id": "writing",   "title_ru": "Письмо", "practice_minutes": 25, "scored_automatically": false },
-    { "id": "speaking",  "title_ru": "Говорение (в паре)", "practice_minutes": 10, "scored_automatically": false }
+    { "id": "speaking",  "title_ru": "Говорение", "practice_minutes": 10, "scored_automatically": false }
   ],
   "practice_points_per_answer": 1,
   "practice_points_comment": "В пробнике 1 балл за каждый верный ответ (для сопоставления частей match — 1 балл за пару). Это условность тренажёра, не баллы экзамена.",

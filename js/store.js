@@ -13,7 +13,8 @@ const records = {
   speaking: (s) => isObject(s) && (s.checks === undefined || isObject(s.checks)),
   activity: count,
 };
-const validMock = (m) => isObject(m) && [m.ts, m.pct, m.got, m.max].every(Number.isFinite);
+const validMock = (m) => isObject(m) && [m.ts, m.pct, m.got, m.max].every(Number.isFinite) &&
+  (m.variantId === undefined || safeKey(m.variantId));
 const validDiagScore = (d) => isObject(d) && Number.isFinite(d.ts) && count(d.got) && count(d.max);
 const validDiag = (d) => validDiagScore(d) && typeof d.zoneLabel === 'string';
 

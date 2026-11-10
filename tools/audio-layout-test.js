@@ -119,8 +119,8 @@ const server=http.createServer((req,res)=>{
     const levels = await browser.newPage({ viewport: { width: 390, height: 800 }, serviceWorkers: 'block' });
     for (const [section, id, count, ready] of [
       ['listening', 'l-exhibition-c1', 4, '.listening audio'],
-      ['writing', 'w-shift-summary-c1', 9, 'textarea'],
-      ['speaking', 's-school-rules-c1', 9, '.role'],
+      ['writing', 'w-energy-memo-c1', 10, 'textarea'],
+      ['speaking', 's-maintenance-interview-c1', 10, '.role'],
     ]) {
       await levels.goto(base + '#/' + section);
       await levels.getByLabel('Уровень', { exact: true }).selectOption('C1');
@@ -140,12 +140,13 @@ const server=http.createServer((req,res)=>{
     await levels.getByRole('button', { name: '▶ Слушать', exact: true }).click();
     await levels.waitForFunction(() => document.querySelector('.listening audio')?.currentTime > 0);
     await levels.goto(base + '#/reading/level-C1');
-    await levels.locator('a[href="#/reading/r-committee-c1"]').waitFor();
-    assert.equal(await levels.locator('main .link-card').count(), 7);
-    await levels.locator('a[href="#/reading/r-committee-c1"]').click();
+    await levels.locator('a[href="#/reading/r-lighting-cost-c1"]').waitFor();
+    assert.equal(await levels.locator('main .link-card').count(), 8);
+    await levels.locator('a[href="#/reading/r-lighting-cost-c1"]').click();
     await levels.locator('.open-tasks textarea').first().waitFor();
-    assert.equal(await levels.locator('.qset .question').count(), 5);
+    assert.equal(await levels.locator('.qset .question').count(), 8);
     assert.equal(await levels.locator('.open-tasks textarea').count(), 3);
+    await levels.getByText('Материал по теме:', { exact: false }).waitFor();
     await levels.goto(base + '#/vocab');
     await levels.getByRole('navigation', { name: 'Уровни словаря' }).getByRole('link', { name: 'C1', exact: true }).click();
     await levels.getByRole('link', { name: 'Все (20)', exact: true }).waitFor();
@@ -257,23 +258,70 @@ const server=http.createServer((req,res)=>{
     await practice.getByRole('textbox', { name: 'Ваш ответ' }).fill(item.text_et);
     await practice.getByRole('button', { name: 'Проверить', exact: true }).click();
     await practice.locator('.feedback.ok').waitFor();
-    await practice.goto(base + '#/mock');
-    for (const [variant, range] of [['mock-06', '180–240'], ['mock-07', '230–320']]) {
-      await practice.locator('#mock').selectOption(variant);
+    const readItems = (file) => JSON.parse(fs.readFileSync(path.join(root, 'content', file + '.json'), 'utf8')).items;
+    const mocks = new Map(readItems('mock-exam').map(m => [m.id, m]));
+    const questionBank = new Map([
+      ...readItems('listening').flatMap(i => i.questions),
+      ...readItems('reading').flatMap(i => i.questions),
+      ...[...mocks.values()].flatMap(m => m.parts.language.questions),
+    ].map(q => [q.id, q]));
+    for (const [variant, range, width] of [
+      ['mock-06', '180–240', 390], ['mock-07', '230–320', 390],
+      ['mock-08', '160–210', 390], ['mock-09', '210–280', 1280],
+    ]) {
+      const fullCheck = ['mock-08', 'mock-09'].includes(variant);
+      await practice.setViewportSize({ width, height: 800 });
+      await practice.goto(base + '#/mock/' + variant);
+      await practice.locator('#mock').waitFor();
+      assert.equal(await practice.locator('#mock').inputValue(), variant);
       await practice.getByRole('checkbox', { name: /Использовать таймер частей/ }).uncheck();
       await practice.getByRole('button', { name: 'Начать пробный экзамен', exact: true }).click();
+      let total = 0;
       for (let i = 1; i <= 4; i++) {
         await practice.getByRole('heading', { name: new RegExp(`Часть ${i} из 5`) }).waitFor();
-        if (i === 4) await practice.getByText(new RegExp(range)).first().waitFor();
+        if (fullCheck && i === 1) {
+          await practice.getByRole('button', { name: '▶ Слушать', exact: true }).click();
+          await practice.waitForFunction(() => document.querySelector('.listening audio')?.currentTime > 0);
+        }
+        if (fullCheck && i === 2) {
+          const left = await practice.locator('.pane-left').boundingBox();
+          const right = await practice.locator('.pane-right').boundingBox();
+          assert(width >= 1024 ? left.x + left.width <= right.x + 1 : left.y < right.y);
+          assert.equal(await practice.locator('.question').count(), 8);
+        }
+        if (fullCheck && i <= 3) {
+          for (const question of await practice.locator('.question').all()) {
+            const q = questionBank.get(await question.getAttribute('data-qid'));
+            assert(q);
+            if (q.type === 'input') await question.locator('input[type=text]').fill(q.answer);
+            else {
+              const index = q.type === 'tf3' ? { true: 0, false: 1, ns: 2 }[q.answer] : q.answer;
+              await question.locator(`input[value="${index}"]`).check({ force: true });
+            }
+            total++;
+          }
+        }
+        if (i === 4) {
+          await practice.getByText(new RegExp(range)).first().waitFor();
+          if (fullCheck) await practice.getByRole('textbox', { name: 'Ваш текст' }).fill('Minu ettepanek vajab arutelu.');
+        }
+        assert(await practice.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
         await practice.getByRole('button', { name: 'Завершить часть →', exact: true }).click();
       }
       await practice.getByRole('button', { name: 'Завершить экзамен', exact: true }).click();
       await practice.getByRole('heading', { name: 'Результат пробного экзамена', exact: true }).waitFor();
       assert.equal(await practice.locator('.threshold').count(), 0);
+      if (fullCheck) {
+        assert(total >= 25);
+        await practice.getByText('Ориентировочно: 100 %', { exact: true }).waitFor();
+        await practice.getByText('Minu ettepanek vajab arutelu.', { exact: true }).waitFor();
+      }
       await practice.getByRole('button', { name: 'В начало', exact: true }).click();
+      await practice.reload();
+      await practice.locator('main li').filter({ hasText: mocks.get(variant).title_ru }).first().waitFor();
     }
     await practice.close();
-    console.log('PASS recorded C1 dictation and both five-part advanced practice variants');
+    console.log('PASS recorded C1 dictation, four advanced variants, scoring and named attempt history');
 
     const progress = await browser.newPage({serviceWorkers:'block'});
     await progress.goto(base);

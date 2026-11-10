@@ -1161,6 +1161,379 @@
      "ref": "s-attribution-c1"
     }
    }
+  },
+  {
+   "id": "mock-08",
+   "topic": "food",
+   "level": "B2",
+   "status": "draft",
+   "title_ru": "Тренировочный вариант B2 · школьная столовая",
+   "explanation_ru": "Пять тренировочных частей. Итоговый процент учитывает только аудирование, чтение и языковой блок.",
+   "parts": {
+    "listening": {
+     "ref": "l-canteen-b2"
+    },
+    "reading": {
+     "ref": "r-lunch-trial-b2"
+    },
+    "language": {
+     "id": "mock-08-g",
+     "title_et": "Keelestruktuurid",
+     "explanation_ru": "Выбор точной формулировки, связи между фразами и формы слова в контексте.",
+     "questions": [
+      {
+       "id": "mock-08-g-1",
+       "topic": "cases",
+       "type": "input",
+       "prompt_et": "Köök teavitas õpilasi menüü ___.",
+       "hint": "(muudatus)",
+       "answer": "muudatusest",
+       "explanation_ru": "Teavitama keda millest? Учащиеся получают сообщение об изменении меню."
+      },
+      {
+       "id": "mock-08-g-2",
+       "topic": "cases",
+       "type": "input",
+       "prompt_et": "Enne ___ suurendamist tahame teada, kui palju suppi tegelikult üle jääb.",
+       "hint": "(portsjon, mitmus)",
+       "answer": "portsjonite",
+       "explanation_ru": "Suurendamine чего? В этом сочетании нужен генитив множественного числа portsjonite."
+      },
+      {
+       "id": "mock-08-g-3",
+       "topic": "verbs",
+       "type": "input",
+       "prompt_et": "Kui teine vahetus lõunale tuli, oli köök osa supist juba kõrvale ___.",
+       "hint": "(panema)",
+       "answer": "pannud",
+       "explanation_ru": "Oli kõrvale pannud означает «уже отложила» к другому моменту в прошлом."
+      },
+      {
+       "id": "mock-08-g-4",
+       "topic": "verbs",
+       "type": "choice",
+       "prompt_et": "Osa õpilasi loobus järjekorras ___, sest tund oli kohe algamas.",
+       "options": [
+        "ootama",
+        "oodates",
+        "ootamast",
+        "oodata"
+       ],
+       "answer": 2,
+       "explanation_ru": "Loobuma millest? При дополнении в виде действия используется ma-инфинитив в форме на -mast."
+      },
+      {
+       "id": "mock-08-g-5",
+       "topic": "conjunctions",
+       "type": "choice",
+       "prompt_et": "Suppi jäi seekord üle. ___ ei tohiks me homme automaatselt vähem valmistada, sest kaks klassi on tagasi.",
+       "options": [
+        "Seetõttu",
+        "Siiski",
+        "Teisisõnu",
+        "Näiteks"
+       ],
+       "answer": 1,
+       "explanation_ru": "Siiski вводит оговорку: сегодняшний остаток сам по себе не оправдывает уменьшение объёма завтра."
+      },
+      {
+       "id": "mock-08-g-6",
+       "topic": "cases",
+       "type": "choice",
+       "prompt_et": "Otsus sõltub ___.",
+       "options": [
+        "sellest, kui palju õpilasi homme sööb",
+        "sellega, kui palju õpilasi homme sööb",
+        "sellel, kui palju õpilasi homme sööb",
+        "sellele, kui palju õpilasi homme sööb"
+       ],
+       "answer": 0,
+       "explanation_ru": "Sõltuma millest? Здесь указательное местоимение sellest вводит придаточную часть."
+      },
+      {
+       "id": "mock-08-g-7",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Menüü järgi pidi valikus olema kaks suppi. Tegelikult oli alles ainult üks.",
+       "options": [
+        "Menüü lubas valida kahe supi vahel, kuid alles oli vaid üks.",
+        "Sööklas anti igale sööjale kaks suppi.",
+        "Sööklas oli valida kahe supi vahel, kuigi menüüs oli kirjas ainult üks roog.",
+        "Kahest supist jäi alles kumbki."
+       ],
+       "answer": 0,
+       "explanation_ru": "Kuid сохраняет различие между обещанным выбором и тем, что было доступно.",
+       "prompt_ru": "Как объединить фразы, сохранив смысл?"
+      },
+      {
+       "id": "mock-08-g-8",
+       "topic": "verbs",
+       "type": "choice",
+       "prompt_et": "Kokad ___ ülejääke juba kaks nädalat, nii et meil on nüüd esimesed andmed.",
+       "options": [
+        "oleksid kaalunud",
+        "on kaalunud",
+        "olid kaalutud",
+        "kaaluvat"
+       ],
+       "answer": 1,
+       "explanation_ru": "On kaalunud связывает наблюдения за последние две недели с данными, доступными сейчас."
+      },
+      {
+       "id": "mock-08-g-9",
+       "topic": "conjunctions",
+       "type": "choice",
+       "prompt_et": "Lisaportsjonit jagatakse eraldi lauas, ___ esimene järjekord ei pikeneks.",
+       "options": [
+        "sest",
+        "kuigi",
+        "et",
+        "kuni"
+       ],
+       "answer": 2,
+       "explanation_ru": "Et с условной формой pikeneks выражает цель."
+      },
+      {
+       "id": "mock-08-g-10",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Palume teatada hiljemalt neljapäeva õhtul, kui teie klass reedel lõunale ei tule.",
+       "options": [
+        "Kõik klassid peavad reedel enne lõunat oma osalemise toitlustajale kinnitama.",
+        "Kui klass reedel ei söö, tuleb teade saata alles reedel pärast lõunat.",
+        "Neljapäeva õhtul tuleb teatada, mitu õpilast üldse koolis käib.",
+        "Reedest puudumisest võib teatada ka enne neljapäeva õhtut."
+       ],
+       "answer": 3,
+       "explanation_ru": "Hiljemalt задаёт крайний срок и допускает более раннее уведомление. Уведомление требуется, если класс пропустит обед.",
+       "prompt_ru": "Какой вывод следует из объявления?"
+      },
+      {
+       "id": "mock-08-g-11",
+       "topic": "cases",
+       "type": "choice",
+       "prompt_et": "Köögijuht tutvus ___ ning valis aruteluks välja kaks ettepanekut.",
+       "options": [
+        "õpilaste vastustest",
+        "õpilaste vastustega",
+        "õpilaste vastustele",
+        "õpilaste vastuseid"
+       ],
+       "answer": 1,
+       "explanation_ru": "Tutvuma millega? — знакомиться с чем-либо. Нужен комитатив vastustega."
+      },
+      {
+       "id": "mock-08-g-12",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Kaalumine näitas, et suppi jäi üle just kolmapäeval. Põhjust me veel ei tea.",
+       "options": [
+        "Kolmapäeval jäi suppi üle, kuid põhjus vajab selgitamist.",
+        "Kolmapäeval jäi suppi üle, sest portsjonid olid liiga suured.",
+        "Kaalumine näitas, et supp jäi üle igal päeval.",
+        "Suppi kaaluti kolmapäeval, kuid üle ei jäänud midagi."
+       ],
+       "answer": 0,
+       "explanation_ru": "В краткой версии сохраняются и день, и отсутствие установленной причины.",
+       "prompt_ru": "Выберите краткую формулировку с тем же смыслом."
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-lunch-letter-b2"
+    },
+    "speaking": {
+     "ref": "s-lunch-voice-b2"
+    }
+   }
+  },
+  {
+   "id": "mock-09",
+   "topic": "work",
+   "level": "C1",
+   "status": "draft",
+   "title_ru": "Тренировочный вариант C1 · цена решений",
+   "explanation_ru": "Пять тренировочных частей. Итоговый процент учитывает только аудирование, чтение и языковой блок.",
+   "parts": {
+    "listening": {
+     "ref": "l-budget-c1"
+    },
+    "reading": {
+     "ref": "r-lighting-cost-c1"
+    },
+    "language": {
+     "id": "mock-09-g",
+     "title_et": "Keelestruktuurid",
+     "explanation_ru": "Выбор точной формулировки, связи между фразами и формы слова в контексте.",
+     "questions": [
+      {
+       "id": "mock-09-g-1",
+       "topic": "cases",
+       "type": "input",
+       "prompt_et": "Komisjon võrdles paigalduse hinda varasema ___.",
+       "hint": "(pakkumus)",
+       "answer": "pakkumusega",
+       "explanation_ru": "Võrdlema mida millega? Второй объект сравнения оформлен комитативом."
+      },
+      {
+       "id": "mock-09-g-2",
+       "topic": "verbs",
+       "type": "input",
+       "prompt_et": "Oleksime mõlema lahenduse hoolduskulu arvestanud, kui andmed oleksid õigel ajal ___.",
+       "hint": "(saabuma)",
+       "answer": "saabunud",
+       "explanation_ru": "В нереализованном условии о прошлом oleksid сочетается с причастием saabunud."
+      },
+      {
+       "id": "mock-09-g-3",
+       "topic": "verbs",
+       "type": "input",
+       "prompt_et": "Kui hoolduslepingut poleks eelmisel aastal pikendatud, oleksid mõned rikked jäänud ___.",
+       "hint": "(kõrvaldama, mata-vorm)",
+       "answer": "kõrvaldamata",
+       "explanation_ru": "Jääma + форма на -mata выражает действие, которое осталось невыполненным."
+      },
+      {
+       "id": "mock-09-g-4",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Pärast uue seadme kasutuselevõttu oli katkestusi vähem. Samal nädalal muutis tehnik ka hooldusgraafikut.",
+       "options": [
+        "Katkestusi oli pärast kaht muudatust vähem; kummagi mõju pole eraldi teada.",
+        "Hooldusgraafik oli kindlasti kõigi varasemate katkestuste põhjus ja seadme vahetus tulemust ei mõjutanud.",
+        "Katkestused vähenesid üksnes uue seadme tõttu.",
+        "Seadme vahetamine ei saanud katkestusi mõjutada."
+       ],
+       "answer": 0,
+       "explanation_ru": "Совпавшие изменения позволяют описать наблюдение, но по этим сведениям нельзя выделить эффект каждого изменения.",
+       "prompt_ru": "Как осторожно сформулировать наблюдение?"
+      },
+      {
+       "id": "mock-09-g-5",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Hoolduslepingu pikendamine toimub halduri poolt pärast seda, kui juhatus on kulud kinnitanud.",
+       "options": [
+        "Haldur kinnitab kulud ja teeb seejärel juhatusele ettepaneku.",
+        "Haldur pikendab hoolduslepingut pärast kulude kinnitamist juhatuses.",
+        "Juhatus pikendab hoolduslepingut enne, kui haldur kulud kinnitab.",
+        "Haldur võib lepingu kohe pikendada, sest juhatuse nõusolekut pole vaja."
+       ],
+       "answer": 1,
+       "explanation_ru": "Сохраняются исполнитель, подтверждение правлением и последовательность действий.",
+       "prompt_ru": "Выберите ясную формулировку с тем же смыслом."
+      },
+      {
+       "id": "mock-09-g-6",
+       "topic": "conjunctions",
+       "type": "choice",
+       "prompt_et": "Viie aasta kogukulu on väiksem juhul, kui saal on avatud peaaegu iga päev. ___ ei saa sama arvutust kasutada harva avatud ruumide puhul.",
+       "options": [
+        "Ometi",
+        "Näiteks",
+        "Seetõttu",
+        "Ühtlasi"
+       ],
+       "answer": 2,
+       "explanation_ru": "Seetõttu вводит следствие из зависимости расчёта от частоты использования."
+      },
+      {
+       "id": "mock-09-g-7",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Hinnavahe ei pruugi kaaluda üles sagedaste katkestuste mõju.",
+       "options": [
+        "Hinnavahe korvab katkestuste mõju igal juhul, olenemata sellest, kui kaua katkestused kestavad.",
+        "Katkestused muudavad hinnavahe kindlasti tähtsusetuks.",
+        "Hinnavahet ei ole võimalik üldse arvesse võtta.",
+        "Hinnavahe ei pruugi katkestuste mõju korvata."
+       ],
+       "answer": 3,
+       "explanation_ru": "Ei pruugi выражает возможность, что разницы в цене окажется недостаточно.",
+       "prompt_ru": "Выберите вариант, который сохраняет степень уверенности автора."
+      },
+      {
+       "id": "mock-09-g-8",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Varuosade hind on teada, kuid tellimisaeg võib muutuda. Seda tuleb enne otsust kontrollida.",
+       "options": [
+        "Enne otsust tuleb mõlemad hinnad üle kontrollida.",
+        "Enne otsust tuleb varuosade tarneaega täpsustada.",
+        "Enne otsust tuleb kontrollida, kas tarneaeg mõjutab varuosade hinda.",
+        "Enne otsust tuleb välja selgitada, kas varuosi üldse kasutatakse."
+       ],
+       "answer": 1,
+       "explanation_ru": "Вторая фраза прямо называет срок поставки и не добавляет причинной связи с ценой.",
+       "prompt_ru": "Уточните второе предложение, если проверять нужно срок поставки."
+      },
+      {
+       "id": "mock-09-g-9",
+       "topic": "conjunctions",
+       "type": "choice",
+       "prompt_et": "Uus süsteem on energiasäästlikum. ___ nõuab see töötajatelt väljaõpet, mida esialgne kalkulatsioon ei sisaldanud.",
+       "options": [
+        "Seega",
+        "Teisisõnu",
+        "Samas",
+        "Seepärast"
+       ],
+       "answer": 2,
+       "explanation_ru": "Samas добавляет встречное соображение. Обучение не следует из энергоэффективности."
+      },
+      {
+       "id": "mock-09-g-10",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Haldur nimetas tarnija lubadust varuosi viis aastat müüa. Juhatuse liige võttis selle kokku sõnadega „seade kestab vähemalt viis aastat”.",
+       "options": [
+        "Kokkuvõttes aetakse segi varuosade kättesaadavus ja seadme vastupidavus.",
+        "Kokkuvõte muudab garantiiaja alguskuupäeva, kuid jätab tarnija antud tähtaja samaks.",
+        "Kokkuvõte täpsustab, milliseid varuosi tuleb esimesena müüa.",
+        "Kokkuvõte selgitab, kuidas rikked tuleb registreerida."
+       ],
+       "answer": 0,
+       "explanation_ru": "Наличие деталей и срок службы самого устройства — разные характеристики.",
+       "prompt_ru": "Что исказило резюме?"
+      },
+      {
+       "id": "mock-09-g-11",
+       "topic": "verbs",
+       "type": "choice",
+       "prompt_et": "Valgustid ___ juba enne seda, kui ruumid uuesti avati.",
+       "options": [
+        "on välja vahetatud",
+        "olid välja vahetatud",
+        "olid välja vahetanud",
+        "oleksid välja vahetanud"
+       ],
+       "answer": 1,
+       "explanation_ru": "К открытию помещений замена уже завершилась. Valgustid обозначает предмет замены, поэтому нужно причастие vahetatud."
+      },
+      {
+       "id": "mock-09-g-12",
+       "topic": "transform",
+       "type": "choice",
+       "prompt_et": "Töörühm teeb ettepaneku investeeringut kaaluda, kui järgmise kvartali andmed kinnitavad senist kuluprognoosi.",
+       "options": [
+        "Töörühm kiitis investeeringu heaks, sest eelmise kvartali andmed on prognoosi juba kinnitanud.",
+        "Investeering tuleb tingimata teha järgmise kvartali alguses.",
+        "Prognoosi kinnitumisel tasub investeeringut kaaluda.",
+        "Kui prognoos ei kinnitu, peab töörühm investeeringu heaks kiitma."
+       ],
+       "answer": 2,
+       "explanation_ru": "Группа предлагает вернуться к рассмотрению при подтверждении прогноза. Здесь нет решения начать закупку.",
+       "prompt_ru": "Выберите формулировку, которая сохраняет условный характер предложения."
+      }
+     ]
+    },
+    "writing": {
+     "ref": "w-energy-memo-c1"
+    },
+    "speaking": {
+     "ref": "s-maintenance-interview-c1"
+    }
+   }
   }
  ]
 }

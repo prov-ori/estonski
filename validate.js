@@ -105,13 +105,14 @@ function checkQuestion(file, q) {
   }
 }
 
-const SRC_KINDS = new Set(['open', 'public-domain', 'exam', 'news', 'textbook', 'blog', 'other']);
+const SRC_KINDS = new Set(['open', 'public-domain', 'exam', 'news', 'textbook', 'blog', 'other', 'reference']);
 const SRC_NEED_PERMISSION = new Set(['exam', 'news', 'textbook', 'blog', 'other']);
 function checkSource(file, id, src) {
   if (!src || typeof src !== 'object') return err(file, id, 'source должен быть объектом');
   if (!src.title) err(file, id, 'source.title обязателен');
   if (!SRC_KINDS.has(src.kind)) err(file, id, `source.kind «${src.kind}» — допустимо: ${[...SRC_KINDS].join(' | ')}`);
   if (src.kind === 'open' && (!src.license || !src.url)) err(file, id, 'source (open): нужны license и url');
+  if (src.kind === 'reference' && (typeof src.url !== 'string' || !src.url.startsWith('https://'))) err(file, id, 'source (reference): нужна HTTPS-ссылка на справочный материал');
   if (src.kind === 'public-domain' && !src.license) err(file, id, 'source (public-domain): укажите, почему материал свободен (license)');
   if (SRC_NEED_PERMISSION.has(src.kind) && (!src.permission || !src.url)) err(file, id, `source (${src.kind}): нужны url и permission — как получено разрешение на использование`);
   if (src.retrieved && !/^\d{4}-\d{2}-\d{2}$/.test(src.retrieved)) err(file, id, 'source.retrieved — дата YYYY-MM-DD');
